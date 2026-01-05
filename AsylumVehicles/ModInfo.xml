@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="AsylumVehicles" /> <!-- Your Unique Mod Name Id -->
+    <DisplayName value="Asylum Vehicles" /> <!-- For Mods name -->
+    <Version value="1.0.0.1" compat="V1"/> <!-- Game Version in this Format only -->
+    <Description value="Adds horrifying apocalyptic vehicles to prowl the wasteland in the Asylum overhaul. Original content by scriptsHD." /> <!-- (Optional) More text to show on UIs -->
+    <Author value="AsylumMods/DuhWolf" />
+    <Website value=""/>
+</xml>

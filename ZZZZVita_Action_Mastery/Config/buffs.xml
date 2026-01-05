@@ -1,0 +1,719 @@
+<configs>
+    <!-- Created with Chat GPT and Gemini from Google - Gemini better lol -->
+
+    <append xpath="buffs/buff[@name='buffStatusCheck01']">
+        <effect_group name="MasteryBuffV">
+            <requirement name="NotHasBuff" buff="buffMasteryLevel"/>
+            <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMasteryLevel"/>
+        </effect_group>
+    </append>
+
+    <!-- Add Selfcontrollbuff-->
+    <append xpath="buffs">
+        <buff name="buffMasteryLevel" name_key="buffMasteryLevel" description_key="buffMasteryLeveldesc" icon="ui_game_symbol_perk" hidden="false">
+            <stack_type value="ignore"/>
+            <update_rate value="1"/>
+
+            <effect_group name="Init">
+                <requirement name="CVarCompare" cvar="$V_ML_Init" operation="Equals" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Init" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Exp_Mult" operation="set" value="1"/>
+                <!-- Set EXP Rate - NextExpRate def. the needed exp for level up increase with every level-->
+                <!-- Handgun -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_NextExpRate" operation="set" value="1.05"/>
+                <!-- Maschinegun -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_NextExpRate" operation="set" value="1.06"/>
+                <!-- Shotgun -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_NextExpRate" operation="set" value="1.04"/>
+                <!-- Rifle -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_NextExpRate" operation="set" value="1.03"/>
+                <!-- Sledgehammer -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_NextExpRate" operation="set" value="1.05"/>
+                <!-- Club -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_NextExpRate" operation="set" value="1.05"/>
+                <!-- Fist -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_NextExpRate" operation="set" value="1.05"/>
+                <!-- Blade -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_NextExpRate" operation="set" value="1.05"/>
+                <!-- Spear -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_NextExpRate" operation="set" value="1.05"/>
+                <!-- Repair Tool -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_NextExpRate" operation="set" value="1.05"/>
+                <!-- Salvage Tool -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_NextExpRate" operation="set" value="1.05"/>
+                <!-- Robotic -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_NextExpRate" operation="set" value="1.07"/>
+                <!-- Bow and Crossbow -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_NextExpRate" operation="set" value="1.02"/>
+                <!-- Pickaxe and Auger -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_NextExpRate" operation="set" value="1.06"/>
+                <!-- Axe and Chainsaw -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_NextExpRate" operation="set" value="1.06"/>
+                <!-- Shovel -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_Lv" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_Exp" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_NextExp" operation="set" value="100"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_NextExpRate" operation="set" value="1.03"/>
+
+                <!-- Set gained EXP here, HitEXP is by shooting an enemy, killexp is for killing, means doing lasthit, break is for tools, breaking a block with a pick for example-->
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_HitExp" operation="set" value="2"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_KillExp" operation="set" value="8"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_BreakExp" operation="set" value="2"/>
+            </effect_group>
+
+            <!-- Tags used for Hit -->
+            <effect_group name="Hit">
+                <requirements compare_type="or">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </requirements>
+                <triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$V_ML_Exp" operation="add" value="@$V_ML_HitExp"/>
+            </effect_group>
+
+            <!-- Tags used for Kill -->
+            <effect_group name="Kill">
+                <requirements compare_type="or">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </requirements>
+                <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$V_ML_Exp" operation="add" value="@$V_ML_KillExp"/>
+            </effect_group>
+
+            <!-- Tags used for Break -->
+            <effect_group name="Break">
+                <requirements compare_type="or">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </requirements>
+                <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$V_ML_Exp" operation="add" value="@$V_ML_BreakExp"/>
+            </effect_group>
+
+            <!-- Exp Add on Groups-->
+            <effect_group name="VExp">
+                <requirement name="CVarCompare" cvar="$V_ML_Exp" operation="GT" value="0"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Exp" operation="multiply" value="@$V_ML_Exp_Mult"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_Exp" operation="add" value="@$V_ML_Exp">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </triggered_effect>
+            <!-- Set to 0, for next Level farming-->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Exp" operation="set" value="0"/>
+            </effect_group>
+                
+            <!-- Set Index-->
+            <effect_group name="VIndex">
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="7">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="1">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="2">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="3">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="4">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="5">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="6">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="7">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="8">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="9">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="10">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="11">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="12">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="13">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="14">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="15">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_SI" operation="set" value="16">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </triggered_effect>
+            </effect_group>
+
+            <!-- Level up Form-->
+            <effect_group name="VLevelup">
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp1" >
+                    <requirement name="CVarCompare" cvar="$V_ML_1_Exp" operation="GTE" value="@$V_ML_1_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp2" >
+                    <requirement name="CVarCompare" cvar="$V_ML_2_Exp" operation="GTE" value="@$V_ML_2_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp3" >
+                    <requirement name="CVarCompare" cvar="$V_ML_3_Exp" operation="GTE" value="@$V_ML_3_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp4" >
+                    <requirement name="CVarCompare" cvar="$V_ML_4_Exp" operation="GTE" value="@$V_ML_4_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp5" >
+                    <requirement name="CVarCompare" cvar="$V_ML_5_Exp" operation="GTE" value="@$V_ML_5_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp6" >
+                    <requirement name="CVarCompare" cvar="$V_ML_6_Exp" operation="GTE" value="@$V_ML_6_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp7" >
+                    <requirement name="CVarCompare" cvar="$V_ML_7_Exp" operation="GTE" value="@$V_ML_7_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp8" >
+                    <requirement name="CVarCompare" cvar="$V_ML_8_Exp" operation="GTE" value="@$V_ML_8_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp9" >
+                    <requirement name="CVarCompare" cvar="$V_ML_9_Exp" operation="GTE" value="@$V_ML_9_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp10" >
+                    <requirement name="CVarCompare" cvar="$V_ML_10_Exp" operation="GTE" value="@$V_ML_10_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp11" >
+                    <requirement name="CVarCompare" cvar="$V_ML_11_Exp" operation="GTE" value="@$V_ML_11_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp12" >
+                    <requirement name="CVarCompare" cvar="$V_ML_12_Exp" operation="GTE" value="@$V_ML_12_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp13" >
+                    <requirement name="CVarCompare" cvar="$V_ML_13_Exp" operation="GTE" value="@$V_ML_13_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp14" >
+                    <requirement name="CVarCompare" cvar="$V_ML_14_Exp" operation="GTE" value="@$V_ML_14_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp15" >
+                    <requirement name="CVarCompare" cvar="$V_ML_15_Exp" operation="GTE" value="@$V_ML_15_NextExp"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMLUp16" >
+                    <requirement name="CVarCompare" cvar="$V_ML_16_Exp" operation="GTE" value="@$V_ML_16_NextExp"/>
+                </triggered_effect>
+            </effect_group>
+
+            <!-- Set Level Bonus-->
+            <effect_group name="VLevelbonus">
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="0">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus2" operation="set" value="0">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Melee" operation="set" value="0">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Ranged" operation="set" value="0">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_1_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_2_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_3_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_4_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_5_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_6_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_7_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_8_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_9_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_10_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_11_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_12_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_13_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_14_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_15_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/> 
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="set" value="@$V_ML_16_Lv">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/> 
+                </triggered_effect>
+                <!-- Even if it makes not 100% sense, every Bonus 1 get Bonus 2 too, sorry lazy-->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus2" operation="set" value="@$V_ML_Bonus1">
+                </triggered_effect>
+                <!-- To increase the Buffs, change Value here 0.005 are 0.5% per Level-->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus1" operation="multiply" value="0.005">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus2" operation="multiply" value="0.001">
+                </triggered_effect>
+
+                <!-- Create reduced bonuses for weapons -->
+                <!-- Melee weapons get 25% of normal block damage bonus -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Melee" operation="set" value="@$V_ML_Bonus1">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Melee" operation="multiply" value="0.25">
+                </triggered_effect>
+
+                <!-- Ranged weapons get 10% of normal block damage bonus -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Ranged" operation="set" value="@$V_ML_Bonus1">
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_Bonus_Ranged" operation="multiply" value="0.1">
+                </triggered_effect>
+
+                <!-- Bonus Set here-->
+                <passive_effect name="EntityDamage"     operation="perc_add" value="@$V_ML_Bonus1" />
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="@$V_ML_Bonus1" />
+                <passive_effect name="RoundsPerMinute"  operation="perc_add" value="@$V_ML_Bonus1" />
+                <passive_effect name="MagazineSize"     operation="perc_add" value="@$V_ML_Bonus1" />
+                <passive_effect name="DegradationPerUse" operation="perc_add" value="@$V_ML_Bonus2"/>
+
+                <!-- BLOCK DAMAGE BONUSES - Split by tool/weapon type -->
+                <!-- Tools get full block damage bonus (0.5% per level) -->
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRepair"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySalvage"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryPickAuger"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySawAxe"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShovel"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus1">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySledge"/>
+                </passive_effect>
+
+                <!-- Melee weapons get reduced block damage (25% of normal = 0.125% per level) -->
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Melee">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryClub"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Melee">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryKnuckles"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Melee">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBlade"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Melee">
+                    <requirement name="ItemHasTags" tags="VBuffMasterySpear"/>
+                </passive_effect>
+
+                <!-- Ranged weapons get minimal block damage (10% of normal = 0.05% per level) -->
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryHandgun"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryAR"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryShotgun"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRifle"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryBow"/>
+                </passive_effect>
+                <passive_effect name="BlockDamage" operation="perc_add" value="@$V_ML_Bonus_Ranged">
+                    <requirement name="ItemHasTags" tags="VBuffMasteryRobotic"/>
+                </passive_effect>
+            </effect_group>
+            <effect_group name="ERC">
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_Exp_R"  operation="set" value="@$V_ML_1_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_Exp_R"  operation="set" value="@$V_ML_2_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_Exp_R"  operation="set" value="@$V_ML_3_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_Exp_R"  operation="set" value="@$V_ML_4_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_Exp_R"  operation="set" value="@$V_ML_5_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_Exp_R"  operation="set" value="@$V_ML_6_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_Exp_R"  operation="set" value="@$V_ML_7_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_Exp_R"  operation="set" value="@$V_ML_8_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_Exp_R"  operation="set" value="@$V_ML_9_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_Exp_R" operation="set" value="@$V_ML_10_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_Exp_R" operation="set" value="@$V_ML_11_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_Exp_R" operation="set" value="@$V_ML_12_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_Exp_R" operation="set" value="@$V_ML_13_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_Exp_R" operation="set" value="@$V_ML_14_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_Exp_R" operation="set" value="@$V_ML_15_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_Exp_R" operation="set" value="@$V_ML_16_Exp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_17_Exp_R" operation="set" value="@$V_ML_17_Exp" />
+
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_1_Exp_R"  operation="divide" value="@$V_ML_1_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_2_Exp_R"  operation="divide" value="@$V_ML_2_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_3_Exp_R"  operation="divide" value="@$V_ML_3_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_4_Exp_R"  operation="divide" value="@$V_ML_4_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_5_Exp_R"  operation="divide" value="@$V_ML_5_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_6_Exp_R"  operation="divide" value="@$V_ML_6_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_7_Exp_R"  operation="divide" value="@$V_ML_7_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_8_Exp_R"  operation="divide" value="@$V_ML_8_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_9_Exp_R"  operation="divide" value="@$V_ML_9_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_10_Exp_R" operation="divide" value="@$V_ML_10_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_11_Exp_R" operation="divide" value="@$V_ML_11_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_12_Exp_R" operation="divide" value="@$V_ML_12_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_13_Exp_R" operation="divide" value="@$V_ML_13_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_14_Exp_R" operation="divide" value="@$V_ML_14_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_15_Exp_R" operation="divide" value="@$V_ML_15_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_16_Exp_R" operation="divide" value="@$V_ML_16_NextExp" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$V_ML_17_Exp_R" operation="divide" value="@$V_ML_17_NextExp" />
+            </effect_group>
+        </buff>
+
+        <buff name="buffMLUp1" name_key="buffMLUp1" description_key="buffMLUp1" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_1_Exp" operation="GTE" value="@$V_ML_1_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_1_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_1_Exp" operation="subtract" value="@$V_ML_1_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_1_NextExp" operation="multiply" value="@$V_ML_1_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp1Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp1"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp2" name_key="buffMLUp2" description_key="buffMLUp2" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_2_Exp" operation="GTE" value="@$V_ML_2_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_2_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_2_Exp" operation="subtract" value="@$V_ML_2_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_2_NextExp" operation="multiply" value="@$V_ML_2_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp2Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp2"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp3" name_key="buffMLUp3" description_key="buffMLUp3" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_3_Exp" operation="GTE" value="@$V_ML_3_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_3_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_3_Exp" operation="subtract" value="@$V_ML_3_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_3_NextExp" operation="multiply" value="@$V_ML_3_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp3Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp3"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp4" name_key="buffMLUp4" description_key="buffMLUp4" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_4_Exp" operation="GTE" value="@$V_ML_4_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_4_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_4_Exp" operation="subtract" value="@$V_ML_4_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_4_NextExp" operation="multiply" value="@$V_ML_4_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp4Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp4"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp5" name_key="buffMLUp5" description_key="buffMLUp5" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_5_Exp" operation="GTE" value="@$V_ML_5_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_5_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_5_Exp" operation="subtract" value="@$V_ML_5_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_5_NextExp" operation="multiply" value="@$V_ML_5_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp5Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp5"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp6" name_key="buffMLUp6" description_key="buffMLUp6" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_6_Exp" operation="GTE" value="@$V_ML_6_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_6_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_6_Exp" operation="subtract" value="@$V_ML_6_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_6_NextExp" operation="multiply" value="@$V_ML_6_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp6Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp6"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp7" name_key="buffMLUp7" description_key="buffMLUp7" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_7_Exp" operation="GTE" value="@$V_ML_7_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_7_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_7_Exp" operation="subtract" value="@$V_ML_7_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_7_NextExp" operation="multiply" value="@$V_ML_7_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp7Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp7"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp8" name_key="buffMLUp8" description_key="buffMLUp8" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_8_Exp" operation="GTE" value="@$V_ML_8_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_8_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_8_Exp" operation="subtract" value="@$V_ML_8_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_8_NextExp" operation="multiply" value="@$V_ML_8_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp8Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp8"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp9" name_key="buffMLUp9" description_key="buffMLUp9" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_9_Exp" operation="GTE" value="@$V_ML_9_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_9_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_9_Exp" operation="subtract" value="@$V_ML_9_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_9_NextExp" operation="multiply" value="@$V_ML_9_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp9Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp9"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp10" name_key="buffMLUp10" description_key="buffMLUp10" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_10_Exp" operation="GTE" value="@$V_ML_10_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_10_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_10_Exp" operation="subtract" value="@$V_ML_10_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_10_NextExp" operation="multiply" value="@$V_ML_10_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp10Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp10"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp11" name_key="buffMLUp11" description_key="buffMLUp11" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_11_Exp" operation="GTE" value="@$V_ML_11_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_11_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_11_Exp" operation="subtract" value="@$V_ML_11_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_11_NextExp" operation="multiply" value="@$V_ML_11_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp11Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp11"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp12" name_key="buffMLUp12" description_key="buffMLUp12" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_12_Exp" operation="GTE" value="@$V_ML_12_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_12_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_12_Exp" operation="subtract" value="@$V_ML_12_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_12_NextExp" operation="multiply" value="@$V_ML_12_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp12Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp12"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp13" name_key="buffMLUp13" description_key="buffMLUp13" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_13_Exp" operation="GTE" value="@$V_ML_13_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_13_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_13_Exp" operation="subtract" value="@$V_ML_13_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_13_NextExp" operation="multiply" value="@$V_ML_13_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp13Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp13"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp14" name_key="buffMLUp14" description_key="buffMLUp14" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_14_Exp" operation="GTE" value="@$V_ML_14_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_14_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_14_Exp" operation="subtract" value="@$V_ML_14_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_14_NextExp" operation="multiply" value="@$V_ML_14_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp14Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp14"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp15" name_key="buffMLUp15" description_key="buffMLUp15" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_15_Exp" operation="GTE" value="@$V_ML_15_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_15_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_15_Exp" operation="subtract" value="@$V_ML_15_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_15_NextExp" operation="multiply" value="@$V_ML_15_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp15Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp15"/>    
+            </effect_group>
+        </buff>
+        
+        <buff name="buffMLUp16" name_key="buffMLUp16" description_key="buffMLUp16" icon="ui_game_symbol_perk" hidden="true">
+            <stack_type value="ignore"/>
+            <update_rate value="0.1"/>
+            <effect_group name="Lv Up">
+                <requirement name="CVarCompare" cvar="$V_ML_16_Exp" operation="GTE" value="@$V_ML_16_NextExp"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_16_Lv" operation="add" value="1"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_16_Exp" operation="subtract" value="@$V_ML_16_NextExp"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$V_ML_16_NextExp" operation="multiply" value="@$V_ML_16_NextExpRate"/>    
+                    <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffMLUp16Message"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffMLUp16"/>    
+            </effect_group>
+        </buff>
+    
+    </append>
+</configs>

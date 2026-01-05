@@ -1,0 +1,36 @@
+<ScriptsMeleeArsenal-LegendaryWeapons>
+
+	<append xpath="recipes">
+
+	<!-- Legendary Repair Kit -->
+	
+		<recipe name="resourceSMALegendaryRepairKit" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+
+		<recipe name="decoLWMallfaka" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+		
+		<recipe name="decoLWSteen" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+		
+		<recipe name="decoLWWorm" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+		
+		<recipe name="decoLWWorm2" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	
+	</append>
+
+</ScriptsMeleeArsenal-LegendaryWeapons>

@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+asylumScreamerHorde,entities,Entity,,,"Asylum Izzi Jones"
+asylumScreamerHordeDesc,entities,Entity,,,"A terrifying screamer that summons hordes when attacked."
+

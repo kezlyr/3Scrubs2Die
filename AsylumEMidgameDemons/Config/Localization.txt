@@ -1,0 +1,23 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+# Midgame Demons Localization
+# Style: Deep crimson names, Asylum-themed color tags, real demon names
+
+belphegor,entities,Zombie,,,"[8B0000]Belphegor[-]"
+asmodeus,entities,Zombie,,,"[8B0000]Asmodeus[-]"
+mammon,entities,Zombie,,,"[8B0000]Mammon[-]"
+leviathan,entities,Zombie,,,"[8B0000]Leviathan[-]"
+beelzebub,entities,Zombie,,,"[8B0000]Beelzebub[-]"
+satan,entities,Zombie,,,"[8B0000]Satan[-]"
+lucifer,entities,Zombie,,,"[8B0000]Lucifer[-]"
+malphas,entities,Zombie,,,"[8B0000]Malphas[-]"
+gluttoth,entities,Zombie,,,"[8B0000]Gluttoth[-]"
+gorger,entities,Zombie,,,"[8B0000]Gorger[-]"
+valefor,entities,Zombie,,,"[8B0000]Valefor[-]"
+asteroth,entities,Zombie,,,"[8B0000]Asteroth[-]"
+baal,entities,Zombie,,,"[8B0000]Baal[-]"
+paimon,entities,Zombie,,,"[8B0000]Paimon[-]"
+beleth,entities,Zombie,,,"[8B0000]Beleth[-]"
+purson,entities,Zombie,,,"[8B0000]Purson[-]"
+azazel,entities,Zombie,,,"[8B0000]Azazel[-]"
+goliath,entities,Zombie,,,"[8B0000]Goliath[-]"

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pewpew>
+
+
+<append xpath="/buffs">
+
+<buff name="buffSirenCursedSummon" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="40"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Siren_Cursed_Summon" />
+			</effect_group>
+		</buff>
+		
+<buff name="Cursed" name_key="Cursed" icon="ui_game_symbol_skull" icon_color="247,138,42" description_key="YOU FEEL UNEASY." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="7200"/> 
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="Siren_Cursed_Summon_Stage_Two" />
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="CursedStage2" />
+			</effect_group>
+
+		</buff>
+		
+<buff name="CursedStage2" name_key="Cursed" icon="ui_game_symbol_skull" icon_color="179,99,29" description_key="YOU FEEL MORE ON THE EDGE." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="10800"/> 
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="Siren_Cursed_Summon_Stage_Three" />
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="CursedStage3" />
+			</effect_group>
+
+		</buff>
+		
+<buff name="CursedStage3" name_key="Cursed" icon="ui_game_symbol_skull" icon_color="179,46,29" description_key="THEY HAVE FOUND YOU!." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="9300"/> 
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="Siren_Cursed_Summon_Stage_Four" />
+			</effect_group>
+
+		</buff>
+		
+<buff name="CursedStage4" name_key="Cursed" icon="ui_game_symbol_skull" icon_color="245,5,5" description_key="THE GROUND BEGINS TO RUMBLE!." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="12600"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="Siren_Cursed_Summon_Stage_Five" />
+			</effect_group>
+
+		</buff>
+		
+ <buff name="CurseCure" name_key="Cure" icon="ui_game_symbol_skull" icon_color="0,255,0" description_key="YOUR ANXIETY BEGINS TO RELAX!." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffSirenCursedSummon" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="Cursed" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="CursedStage2" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="CursedStage3" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="CursedStage4" />
+			</effect_group>
+
+		</buff> 		
+
+<buff name="buffCSDeco" icon="ui_game_symbol_agility" icon_color="132,0,155">
+	<duration value="6000"/>
+		<effect_group>
+			
+	<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="chainsaw_fire_start"/> <!-- Chance the chainsaw doesn't rev (bug?) -->
+	<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="chainsaw_fire_start"/> <!-- Sound always goes away when the zombie dies -->
+			
+	<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" local_offset=".08,0,0.1" local_rotation="60,160,0" local_scale=".8,.8,.8" parent_transform="RightHand">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" parent_transform="RightHand" />
+		</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" local_offset=".08,0,0.1" local_rotation="60,160,0" local_scale=".8,.8,.8" parent_transform="RightHand">
+	<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" parent_transform="RightHand" />
+		</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="chainsawPrefab" parent_transform="RightHand" />
+	
+	<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="0,180,0" local_scale=".5,.5,.5" parent_transform="Spine1">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine1" />
+	</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="120,180,0" local_scale=".5,.5,.5" parent_transform="Spine2">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine2" />
+	</triggered_effect>
+	
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="90,180,0" local_scale=".5,.5,.5" parent_transform="Spine3">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine3" />
+	</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine1" />
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine2" />
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine3" />
+			
+</effect_group>
+			
+</buff> 
+
+<buff name="buffSpawnHordeOnDeath2" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true"> <!-- RadiatedSiren -->
+	<stack_type value="replace"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Siren_Death_Summon2" />
+	</effect_group>
+</buff>
+
+<buff name="buffCSDeco2" icon="ui_game_symbol_agility" icon_color="132,0,155"> <!-- RadiatedSiren -->
+	<duration value="6000"/>
+		<effect_group>
+			
+	<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="chainsaw_fire_start"/> <!-- Chance the chainsaw doesn't rev (bug?) -->
+	<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="chainsaw_fire_start"/> <!-- Sound always goes away when the zombie dies -->
+			
+	<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" local_offset=".08,0,0.1" local_rotation="60,160,0" local_scale=".8,.8,.8" parent_transform="RightHand">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" parent_transform="RightHand" />
+		</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" local_offset=".08,0,0.1" local_rotation="60,160,0" local_scale=".8,.8,.8" parent_transform="RightHand">
+	<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab" parent_transform="RightHand" />
+		</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="chainsawPrefab" parent_transform="RightHand" />
+	
+	<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="0,180,0" local_scale=".5,.5,.5" parent_transform="Spine1">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine1" />
+	</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="120,180,0" local_scale=".5,.5,.5" parent_transform="Spine2">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine2" />
+	</triggered_effect>
+	
+	<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" local_offset="-.06,.2,0.1" local_rotation="90,180,0" local_scale=".5,.5,.5" parent_transform="Spine3">
+		<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Melee/Spear/spear_stone_Prefab.prefab" parent_transform="Spine3" />
+	</triggered_effect>
+			
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine1" />
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine2" />
+	<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="spear_stone_Prefab" parent_transform="Spine3" />
+			
+</effect_group>
+			
+</buff> 
+
+<buff name="buffGhastRot" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true"> <!-- Ghast_Rot -->
+	<stack_type value="replace"/>
+	<duration value="30"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_spoil_ghast" />
+	</effect_group>
+</buff>
+
+<buff name="BuffGhastDeco"> <!-- Ghast_Deco -->
+		<stack_type value="replace"/>
+		<duration value="600"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchRadiation">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_left"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_right"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand">
+				<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_left" />
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand">
+				<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_right" />
+			</triggered_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffSpawnBirdHorde" icon="ui_game_symbol_agility" icon_color="132,0,155"> <!-- Leshii Swarm -->
+		<stack_type value="replace"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Leshii_Bird_Swarm" />
+		</effect_group>
+	</buff>
+
+	<buff name="buffLeshiiDeco" icon="ui_game_symbol_agility" icon_color="132,0,155"> <!-- Leshii -->
+		<duration value="6000"/>
+			
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0,0.3" local_rotation="105,0,0" parent_transform="Head"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab" local_offset="0.1,0,0" local_scale=".8,.8,.8" local_rotation="-95,25,0" parent_transform="Head">
+				<requirement name="!HasAttachedPrefab" prefab="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab" parent_transform="Head" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="animalBirdVulturePrefab" parent_transform="Head" />
+			</effect_group>
+			
+</buff> 
+
+<buff name="buffSpawnBirdHorde2" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true"> <!-- Leshii Swarm -->
+		<stack_type value="replace"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Leshii_Bird_Swarm2" />
+		</effect_group>
+	</buff>
+
+<buff name="BuffDeafened" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true"> <!-- Prototype Demolition -->
+	<stack_type value="replace"/>
+	<duration value="120"/>
+	<update_rate value="1"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_deafen_player" />
+	</effect_group>
+</buff>
+
+<buff name="Deafened" name_key="Deafened" icon="ui_game_symbol_character" icon_color="255,0,0" description_key="YOU'VE BEEN DEAFENED FOR A SHORT TIME." hidden="false">
+		<stack_type value="replace"/>
+		<duration value="120"/>
+		<update_rate value="1"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="SetAudioMixerState" state="Deafened" enabled="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="SetAudioMixerState" state="Deafened" enabled="false"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+		</effect_group>
+	</buff>
+	
+<buff name="BuffHosting" icon="ui_game_symbol_agility" icon_color="132,0,155" hidden="true"> <!-- Small Flood -->
+		<stack_type value="replace"/>
+		<duration value="300"/> <!-- 5 mins, this also functions as a cooldown from "resetting" the debuff while it's already active -->
+		<update_rate value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_Flood_Burrow" /> <!-- if using this in your own mods be very careful, triggering gameevents can be sus if you don't know what you're doing -->
+		</effect_group>
+	</buff>
+
+<buff name="Hosting" name_key="Hosting" icon="ui_game_symbol_zombie" icon_color="255,0,0" description_key="THE FLOOD HAVE BURROWED INTO YOUR SYSTEM. ALL SKILLS AND PERKS ARE REDUCED TO 1." hidden="false">
+		<stack_type value="replace"/>
+		<duration value="300"/>
+		<update_rate value="1"/>
+
+		<effect_group> <!-- Take away the players perks/skills for a short time, min maxers in absolute shambles tbh -->
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffme"/> <!-- this is a console command "buff buffme" which overrides the debuff, this cancels that out if you're using it for whatever reason (looking at you cheeky admins) -->
+			<passive_effect name="AttributeLevel" operation="base_set" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RefreshPerks"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RefreshPerks"/>
+
+			<passive_effect name="SkillLevel" operation="base_set" value="1"/>
+			<passive_effect name="PerkLevel" operation="base_set" value="0"/>
+		</effect_group>
+	</buff>
+	
+<buff name="buffSpawnFlood" icon="ui_game_symbol_agility" icon_color="132,0,155"> <!-- Flood Swarm -->
+		<stack_type value="replace"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Flood_Death_Summon" />
+		</effect_group>
+	</buff>
+	
+<buff name="HostingCure" name_key="Hosting Cure" icon="ui_game_symbol_zombie" icon_color="0,255,0" description_key="THE PARASITE CAN NO LONGER SURVIVE IN YOUR BODY AND ABANDONS IT." hidden="false">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="Hosting" />
+			</effect_group>
+
+		</buff> 
+		
+<buff name="buffResurrectKills" hidden="true"> 
+	<stack_type value="replace"/>
+	<duration value="30"/>
+
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="twitch_bad_buff_ended" play_in_head="true" />
+	</effect_group>
+
+	<effect_group>
+		<triggered_effect trigger="onSelfKilledOther" action="CallGameEvent" target="other" event="custom_buff_rez" sequence_link="simple_rez" allow_client_call="true">
+			<requirement name="EntityTagCompare" target="other" tags="zombie,animal"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffRemove" action="UnregisterSequenceLink" sequence_link="simple_rez"/>
+	</effect_group>
+</buff>
+
+<buff name="buffRecentlyResurrected" hidden="true"> <!-- swarming resurrect prevention -->
+	<stack_type value="ignore"/>
+	<duration value="7"/>
+</buff>
+		
+<buff name="buffDecoFlyingBoss" hidden="true">
+		<duration value="6000"/>
+		<update_rate value=".5"/> <!-- needed this to trigger the smoke, otherwise it applied once then stopped >:(  (not needed to attach ALL particles but I've found some that only trigger once) onSelfBuffUpdate + update_rate fixes that -->
+			
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0,0.3" local_rotation="105,0,0" parent_transform="Head"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab" local_offset="0.1,0,0" local_scale=".8,.8,.8" local_rotation="-95,25,0" parent_transform="Head">
+				<requirement name="!HasAttachedPrefab" prefab="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab" parent_transform="Head" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="animalBirdVulturePrefab" parent_transform="Head" />
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_big_smoke" parent_transform="Head" local_offset="0,-0.3,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_big_smoke" parent_transform="Head" local_offset="0,-0.3,0"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_big_smoke" parent_transform="Head" local_offset="0,-0.2,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_big_smoke" parent_transform="Head" local_offset="0,-0.2,0"/>
+			</effect_group>
+			
+		</buff>
+		
+<buff name="buffDecoStitch" hidden="true">
+		<duration value="6000"/>
+			
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0,0.3" local_rotation="105,0,0" parent_transform="Head"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="Spine1" local_offset="0,0.1,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="Spine1" local_offset="0,0.1,0"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/ClubWood/clubWoodPrefab.prefab" local_offset="0.07,0.05,0" local_rotation="-125,0,0" local_scale="1.7,1.7,1.7" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="RightHand" local_offset="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="RightHand" local_offset="0,0,0"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="LeftHand" local_offset="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_smokePlume" parent_transform="LeftHand" local_offset="0,0,0"/>
+			</effect_group>
+			
+		</buff>
+		
+<buff name="buffGraveSurgeonDeco" hidden="true">
+		<duration value="6000"/>
+			
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0,0.3" local_rotation="105,0,0" parent_transform="Head"/>
+			</effect_group>
+			
+		</buff>
+		
+<buff name="buffHuntressDeco" hidden="true">
+		<duration value="6000"/>
+			
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0,0.3" local_rotation="105,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/Axe/fireaxe_ironPrefab.prefab" local_offset="0.07,0.05,0" local_rotation="0,90,-90" local_scale="1,1,1" parent_transform="RightHand"/>
+			</effect_group>
+			
+		</buff>
+
+</append>
+</Pewpew>

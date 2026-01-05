@@ -1,0 +1,9 @@
+<ModInfo>
+  <Name value="AsylumCrusher"/>
+  <DisplayName value="Asylum Crusher"/>
+  <Version value="1.0.0"/>
+  <Description value="Asylum workstation that crushes items into base resources. Recycle ammo into components and forged ingots into scrap."/>
+  <Author value="AsylumMods/DuhWolf"/>
+  <Website value="https://github.com/AsylumMods"/>
+</ModInfo>
+

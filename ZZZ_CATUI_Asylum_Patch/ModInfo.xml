@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="CATUIZombieINCVehicleCompatibilityPatch" />
+	<DisplayName value="CATUI ZombieINC Patch" />
+	<Description value="Fixes CATUI vehicle speed binding errors with ZombieINC vehicles" />
+	<Author value="AsylumMods" />
+	<Version value="1.0.0" />
+	<Website value="" />
+</ModInfo>
+

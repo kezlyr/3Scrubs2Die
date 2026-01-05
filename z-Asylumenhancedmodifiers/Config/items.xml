@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/items">
+
+
+
+	<item name="egtskillmagazine">
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="enhancedgems,eg"/>
+		<property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+		<property name="CustomIconTint" value="#fb4f21"/>
+		<property name="DescriptionKey" value="egtmagazinedesc"/>
+		<property name="Unlocks" value="egtmodifier"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="egtmodifier" level="1"/>
+		</effect_group>
+			<!-- Adds chance for double points with nerd or intellect mastery 3 skilled -->
+		<effect_group tiered="false">
+			<requirements compare_type="or">
+				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
+				<requirement name="HasBuff" buff="buffNerdOutfit"/>
+			</requirements>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
+		</effect_group>
+
+		<effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="egtmodifier" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
+		</effect_group>
+	</item>
+
+
+	</append>
+</configs>

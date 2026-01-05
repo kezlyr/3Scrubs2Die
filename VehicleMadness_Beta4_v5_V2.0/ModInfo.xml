@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="VehicleMadnessModlet_v5_Beta_4" /> 
+    <DisplayName value="Vehicle Madness for V2.0" />
+    <Version value="2.0.5.41" compat="2.0"/>
+    <Description value="Lets Drive *Interim Version June 25*" /> <!-- (Optional) More text to show on UIs -->
+    <Author value="Ragsy2145,Keule,ActiniumTiger" />
+    <Website value=""/> 
+</xml>

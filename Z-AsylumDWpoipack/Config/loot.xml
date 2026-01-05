@@ -1,0 +1,34 @@
+﻿<lootcontainers>
+	<append xpath="/lootcontainers">
+		<lootcontainer name="DW_AutoTurretLoot" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="ammo9mmBulletBall" prob="0.4" count="10,40"/>
+		</lootcontainer>
+		<lootcontainer name="DW_ShotgunTurretLoot" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="resourcePaper" prob="1" count="6,15"/>
+			<item name="ammoShotgunShell" prob="0.4" count="10,20"/>
+		</lootcontainer>
+		<lootcontainer name="DW_DartTurretLoot" count="0,1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="ammoDartIron" prob="0.4" count="30,60"/>
+		</lootcontainer>
+		
+ <lootcontainer name="prisontoilet" count="1,3" size="6,1" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+        <item name="resourceLockPick" prob=".3" count="1,2"/>
+        <item name="resourcePaper" prob="0.8" count="1,3"/>
+        <item name="resourceCloth" prob="0.3" count="1,2"/>
+	<item name="twitchTurd" prob="0.3" count="1"/>
+        <item name="plantedGraceCorn1" prob="0.01" count="1"/>
+	<item name="drinkJarRiverWater" prob="0.02" count="1"/>
+        </lootcontainer>
+       
+
+        <lootcontainer name="asylumfurniture" count="1,3" size="6,1" sound_open="rollingtrashbin_open" sound_close="rollingtrashbin_close" loot_quality_template="qualBaseTemplate">
+       	<item name="oldCash" count="20,120"/>
+		<item name="casinoCoin" count="10,18"/>
+		<item name="resourceSilverNugget" count="1,2"/>
+		<item name="resourceGoldNugget" count="1,2"/>
+		<item name="resourceLockPick" prob=".3" count="1,2"/>
+        <item name="resourcePaper" prob="0.8" count="1,4"/>
+        <item name="resourceCloth" prob="0.3" count="1,5"/>
+        </lootcontainer>
+	</append>
+</lootcontainers>

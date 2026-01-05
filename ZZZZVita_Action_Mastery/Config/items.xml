@@ -1,0 +1,19 @@
+<configs>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkMachineGunner')and contains(@value,'machinegunSkill')]/@value">,VBuffMasteryAR</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'repairTool')and contains(@value,'repairingSkill')]/@value">,VBuffMasteryRepair</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'axe,')and contains(@value,'melee')]/@value">,VBuffMasterySawAxe</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'motorTool,')and contains(@value,'chainsaw')]/@value">,VBuffMasterySawAxe</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'salvageTool,')and contains(@value,'salvagingSkill')]/@value">,VBuffMasterySalvage</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'miningTool,')and contains(@value,'harvestingSkill')]/@value">,VBuffMasteryPickAuger</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'shovel,')and contains(@value,'harvestingSkill')]/@value">,VBuffMasteryShovel</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkDeepCuts,')and contains(@value,'bladeSkill')]/@value">,VBuffMasteryBlade</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkPummelPete,')and contains(@value,'clubSkill')]/@value">,VBuffMasteryClub</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkJavelinMaster,')and contains(@value,'spearSkill')]/@value">,VBuffMasterySpear</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkSkullCrusher,')and contains(@value,'sledgeSkill')]/@value">,VBuffMasterySledge</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkBrawler,')and contains(@value,'knuckleSkill')]/@value">,VBuffMasteryKnuckles</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'attIntellect,')and contains(@value,'roboticsSkill')]/@value">,VBuffMasteryRobotic</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkGunslinger,')and contains(@value,'handgunSkill')]/@value">,VBuffMasteryHandgun</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkBoomstick,')and contains(@value,'shotgunSkill')]/@value">,VBuffMasteryShotgun</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkDeadEye,')and contains(@value,'rifleSkill')]/@value">,VBuffMasteryRifle</append>
+    <append xpath="/items/item/property[@name='Tags'and contains(@value,'perkArchery,')and contains(@value,'bowSkill')]/@value">,VBuffMasteryBow</append>
+</configs>

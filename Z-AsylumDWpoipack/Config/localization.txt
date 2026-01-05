@@ -1,0 +1,42 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+<!-- Special loot from harvesting fish -->
+twitchTurd,,,,,KOSMIK Turd
+<!-- POI -->
+Discount Mart,,,,,"[00b33c]Discount Mart"
+DW_Abandoned_Base_01_wilderness,,,,,"[00b33c]Defense Base Jericho"
+DW_BreachedTrader_Bob,,,,,"[00b33c]Trader Bob"
+DW_BreachedTrader_Jen,,,,,"[00b33c]Trader Jen"
+DW_BreachedTrader_Bob,,,,,"[00b33c]Trader Joel"
+DW_BreachedTrader_Rekt,,,,,"[00b33c]Trader Rekt-um"
+DW_BreachedTrader_hugh,,,,,"[00b33c]Trader Hugh"
+DW_BreachedTrader_Joel,,,,,"[00b33c]Trader Joel"
+DW_Bunker_Multi_Trader,,,,,"[00b33c]Infested Bunker 51"
+DW_DocksTrader,,,,,"[00b33c]The Docks MultiTrader"
+DW_ForwardBaseSmall,,,,,"[00b33c]Abandoned Outpost"
+DW_Modern_Art_House,,,,,"[00b33c]Jens Vacation Home"
+DW_Rural_Horde_Base_Medium,,,,,"[00b33c]Defence Outpost Oscar."
+DW_Small_Horde_base01,,,,,"[00b33c]Scout Outpost Leamer"
+DW_SmallPipeBasDW_SmallPipeBase,,,,,"[00b33c]Abandoned Survivor Shack"
+DW_SmallPipeBase,,,,,"[00b33c]Abandoned Survivor Shack"
+DW_TraderREKT,,,,,"[00b33c]Trader Rekt"
+dw_TRADER_Bob",,,,,"[00b33c]Trader Bob"
+DW_Trader_hugh,,,,,"[00b33c]Trader Hugh"
+dw_Trader_Joel,,,,,"[00b33c]Trader Joel"
+DW_TraderBOB,,,,,"[00b33c]Trader Bob"
+DW_TraderHugh,,,,,"[00b33c]Trader Hugh
+DW_TraderJEN,,,,,"[00b33c]Trader Jen"
+DW_TraderJOEL,,,,,"[00b33c]Trader Joel"
+DW_TRADER_Rekt,,,,,"[00b33c]Trader Rekt-um"
+DW_WolfLegalServices,,,,,"[00b33c]Wolf Legal Services"
+Ground Zero Mart,,,,,"[00b33c]Apoco-Mart"
+TheAfterLife,,,,,"[00b33c]Club Afterlife"
+TM1_BunkerMultiTrader,,,,,"[00b33c]Lost Bunker"
+TM1_ServiceGas,,,,,"[00b33c]Pops Gas-N-Go"
+TRADE-BUNKER,,,,,"[00b33c]Infested Bunker Zebra"
+<!-- Props -->
+DW_antTable,,,,,"Table"
+DW_antSofa,,,,,"Couch"
+DW_ChairAnt,,,,,"Chair"
+DW_antVanity,,,,,"Vanity"
+ 

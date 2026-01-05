@@ -1,0 +1,90 @@
+<Config>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutalert']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutattack']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutdeath']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutpain']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutsense']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='horde_spawn']"/>
+	<append xpath="/Sounds">
+
+		<!-- *** Asylum Scout Zombie *** -->
+		
+		<SoundDataNode name="horde_spawn"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheescream"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheehordespwan"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>	
+
+		<SoundDataNode name="zombiefemalescoutalert"><AudioSource name="@:Sounds/Prefabs/AudioSource_ScreamerAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheeroaming"/>
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="3"/></SoundDataNode>
+
+		<SoundDataNode name="zombiefemalescoutattack"><AudioSource name="@:Sounds/Prefabs/AudioSource_Screamer.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheealert"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheealert1"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheealert2"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheealert3"/>
+			<Channel name="Mouth"/>
+			<Priority name="2"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="1.8"/></SoundDataNode>
+
+		<SoundDataNode name="zombiefemalescoutdeath"><AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheedeath"/>
+			<Channel name="Mouth"/>
+			<Priority name="0"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="1.111"/></SoundDataNode>
+
+		<SoundDataNode name="zombiefemalescoutpain"><AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheepain"/>
+			<Channel name="Mouth"/>
+			<Priority name="1"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="1.8"/></SoundDataNode>
+
+		<SoundDataNode name="zombiefemalescoutroam"><AudioSource name="@:Sounds/Prefabs/AudioSource_Screamer.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheeroaming"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="3"/></SoundDataNode>
+
+		<SoundDataNode name="zombiefemalescoutsense"><AudioSource name="@:Sounds/Prefabs/AudioSource_Screamer.prefab"/>
+
+			<Channel name="Mouth"/>
+			<Priority name="4"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="3"/></SoundDataNode>
+			
+			
+			<SoundDataNode name="bansheebuffattack">
+	<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheescream"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumBanshee.unity3d?bansheehordespwan"/>
+	<LocalCrouchVolumeScale value="1.0"/>
+	<CrouchNoiseScale value="0.5"/>
+	<NoiseScale value="1"/>
+	<MaxVoices value="10"/>
+	<MaxRepeatRate value="0.01"/>
+</SoundDataNode>
+	</append>
+
+
+
+</Config>

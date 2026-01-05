@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="150, 21, 150" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Zoning" value="none" />
+  <property name="POIMarkerSize" value="21, 5, 18#16, 0, 16#32, 4, 48#30, 11, 26#13, 8, 12#12, 3, 13#13, 4, 12#21, 5, 18#5, 2, 14#5, 5, 21#9, 13, 9#13, 15, 5#13, 17, 4#13, 17, 5#13, 16, 5#5, 16, 13#13, 16, 5#16, 0, 16#16, 0, 16#16, 0, 16#18, 2, 8#8, 2, 18#18, 2, 8#8, 2, 18" />
+  <property name="POIMarkerStart" value="9, 0, 27#142, 1, 67#59, 0, 51#60, 0, 62#39, 0, 130#124, 0, 26#114, 0, 124#9, 0, 27#77, 1, 31#68, 1, 100#50, 1, 51#85, 1, 126#52, 1, 18#84, 1, 24#53, 1, 140#54, 1, 89#85, 1, 126#67, 1, 142#67, 1, -8#-8, 1, 67#66, 0, 142#142, 0, 66#66, 0, 0#0, 0, 66" />
+  <property name="POIMarkerGroup" value="camps,new3,bridge,bridge,camps,camps,camps,camps,trucks,trucks,billboards,billboards,billboards,billboards,billboards,billboards,billboards,new,new2,new4,highwayN,highwayE,highwayS,highwayW" />
+  <property name="POIMarkerTags" value="#######################" />
+  <property name="POIMarkerType" value="PartSpawn,RoadExit,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,RoadExit,RoadExit,RoadExit,PartSpawn,PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_military_camp,,part_gateway_intersection_car_wreck,part_gateway_broken_bridge,part_survivor_camp_01,part_survivor_camp_02,part_survivor_camp_03,part_military_camp,part_trailer_sleepers,part_semi_truck,part_billboard_diagonal,part_billboard_umove,part_billboard_pills,part_billboard_mycell,part_billboard_mammapizza,part_billboard_luigi,part_billboard_meltdowns,,,,part_highway_transition,part_highway_transition,part_highway_transition,part_highway_transition" />
+  <property name="POIMarkerPartRotations" value="1,3,2,2,1,0,3,1,1,0,0,2,0,2,0,1,2,0,2,1,0,1,2,3" />
+  <property name="POIMarkerPartSpawnChance" value="0.1,1,0.1,0.11,0.1,0.1,0.09,0.1,0.1,0.1,1,1,1,1,1,0.85,1,1,1,1,0.03,0,0,0" />
+  <property name="YOffset" value="-1" />
+  <property name="Tags" value="hideui" />
+  <property class="Stats">
+    <property name="TotalVertices" value="398724" />
+    <property name="TotalTriangles" value="385907" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="292742" />
+      <property name="Triangles" value="263123" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="47382" />
+      <property name="Triangles" value="27592" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="58600" />
+      <property name="Triangles" value="95192" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="143, 1, 122" />
+    </property>
+    <property class="challenge_elec_parts">
+      <property name="0" value="144, 1, 86" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="144, 2, 86" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="85, 7, 119" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="72, 1, 136" />
+    </property>
+  </property>
+</prefab>

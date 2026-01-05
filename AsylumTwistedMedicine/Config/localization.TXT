@@ -1,0 +1,28 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+# ASYLUM TWISTED MEDICINE LOCALIZATION
+# Corrupted medical experiments from the asylum's darkest laboratories
+
+curebiotics,items,item,,,"[FF0000]Asylum Corruption Purge[-]",,
+curebioticsDesc,items,item,,,"[8B0000]A twisted concoction[-] brewed in the asylum's [FF4500]contaminated laboratories[-]. This [DC143C]crimson serum[-] burns through infections with the [666666]fury of hellfire[-], but at what cost to your [FF0000]sanity[-]? The asylum's [8B0000]medical staff[-] used these on unwilling subjects during their [FF4500]darkest experiments[-].",,
+
+theswiftshot,items,item,,,"[FF4500]Asylum Adrenaline Surge[-]",,
+theswiftshotDesc,items,item,,,"[DC143C]Extracted from the adrenal glands[-] of the asylum's most [FF0000]violent inmates[-]. This [FFFF00]volatile injection[-] floods your system with [8B0000]unnatural energy[-], allowing you to [FF4500]outrun the horrors[-] that stalk these cursed halls. Side effects may include [666666]paranoid delusions[-].",,
+
+bleednomore,items,item,,,"[8B0000]Asylum Hemostatic Compound[-]",,
+bleednomoreDesc,items,item,,,"[FF0000]Coagulated blood[-] mixed with [DC143C]experimental chemicals[-] from the asylum's [666666]torture chambers[-]. This [8B0000]viscous paste[-] seals wounds instantly, but the [FF4500]screams of its previous victims[-] echo in your mind with each application. The asylum's [FF0000]surgeons[-] perfected this during their [DC143C]live dissections[-].",,
+
+fatigueout,items,item,,,"[FFFF00]Asylum Stimulant Cocktail[-]",,
+fatigueoutDesc,items,item,,,"[FF4500]A nauseating blend[-] of [8B0000]amphetamines and desperation[-] created in the asylum's [DC143C]pharmaceutical wing[-]. This [FFFF00]bitter elixir[-] banishes exhaustion but fills your dreams with [FF0000]nightmarish visions[-] of the asylum's [666666]endless corridors[-]. Many inmates never woke up after taking this.",,
+
+medicalration,items,item,,,"[DC143C]Asylum Omnipanacea[-]",,
+medicalrationDesc,items,item,,,"[FF0000]The asylum's ultimate medical abomination[-] - a [8B0000]concentrated essence[-] of every [DC143C]twisted experiment[-] ever conducted within these walls. This [FF4500]unholy mixture[-] can heal any ailment, but consuming it means [666666]accepting the asylum's corruption[-] into your very soul. The [FF0000]head physician's[-] final creation before his [8B0000]descent into madness[-].",,
+
+# PROGRESSION SYSTEM LOCALIZATION
+# Display names for asylum medicine in the medical skill tree
+
+asylumMedicalT1-1,progression,skill,,,"[FF0000]Corruption Purge[-]",,
+asylumMedicalT1-2,progression,skill,,,"[8B0000]Hemostatic Compound[-]",,
+asylumMedicalT1-3,progression,skill,,,"[FFFF00]Stimulant Cocktail[-]",,
+asylumMedicalT2-1,progression,skill,,,"[FF4500]Adrenaline Surge[-]",,
+asylumMedicalT2-2,progression,skill,,,"[DC143C]Omnipanacea[-]",,

@@ -1,0 +1,994 @@
+<configs>
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[@name='corpseRemoval']">
+			<requirement name="IsCorpse" target="other"/>
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+			<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="1000" tags="corpseRemoval"/>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[19]">
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".15"/>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[20]">
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="2"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".3"/>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[21]">
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="3"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".45"/>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[22]">
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="4"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".6"/>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[41]">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="3"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="3.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="5"/>
+			</triggered_effect>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[45]">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="multiply" value="4.7">
+				<requirement name="HasBuff" buff="buffDrugHealthBar"/>
+			</triggered_effect>
+</set>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group[46]">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.15">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.25">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.75">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.9">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/>
+			</triggered_effect>
+</set>
+
+
+<append xpath="/buffs">
+<buff name="buffElementalRezist" hidden="true" remove_on_death="false">
+<stack_type value="ignore"/>
+<effect_group>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="10.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationPool,buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="10"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="30.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="2"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationPool,buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="20"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="2"/>
+		</triggered_effect>
+		
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="50.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="3"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationPool,buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="30"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="3"/>
+		</triggered_effect>
+</effect_group>
+</buff>
+
+<buff name="buffExplosionRezist" hidden="true" remove_on_death="false">
+<stack_type value="ignore"/>
+<effect_group>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.05">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.1">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.15">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.2">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.25">
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+		</passive_effect>
+</effect_group>
+</buff>
+
+<!-- ZZ_PerkOverhaul: Workbench tier crafting speed boosts via AOE buff (pattern mirrors vanilla buffCampfireAOE). -->
+<buff name="buffWorkBenchT2AOE" hidden="true" remove_on_death="false">
+	<stack_type value="ignore"/>
+	<duration value="1"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWorkBenchT2AOEEffect"/>
+	</effect_group>
+</buff>
+
+<buff name="buffWorkBenchT2AOEEffect" hidden="true" remove_on_death="false">
+	<stack_type value="replace"/>
+	<duration value="2"/>
+	<effect_group>
+		<!-- +50% crafting speed => time / 1.5 => -33.333% crafting time -->
+		<passive_effect name="CraftingTime" operation="perc_add" value="-0.33333334" tags="workbenchCrafting"/>
+	</effect_group>
+</buff>
+
+<buff name="buffWorkBenchT3AOE" hidden="true" remove_on_death="false">
+	<stack_type value="ignore"/>
+	<duration value="1"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWorkBenchT3AOEEffect"/>
+	</effect_group>
+</buff>
+
+<buff name="buffWorkBenchT3AOEEffect" hidden="true" remove_on_death="false">
+	<stack_type value="replace"/>
+	<duration value="2"/>
+	<effect_group>
+		<!-- +100% crafting speed => time / 2 => -50% crafting time -->
+		<passive_effect name="CraftingTime" operation="perc_add" value="-0.5" tags="workbenchCrafting"/>
+	</effect_group>
+</buff>
+</append>
+
+	<!-- credits to "DONTGIVEA" for this part -->
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='0']/../@value">10</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='1']/../@value">50</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='2']/../@value">100</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='3']/../@value">300</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='4']/../@value">600</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='5']/../@value">1000</set>
+	
+	<!-- credits to "Hoodlumdan" for this part -->
+	<append xpath="//buff[@name='buffBeer']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']">
+		<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+	</append>
+	
+	<insertAfter xpath="//buff[@name='buffBeer']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.15" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="GTE" value="2"/>
+		</triggered_effect>
+	</insertAfter>
+	
+
+<remove xpath="//buff[@name='buffDrunkGrandpasMoonshine']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']" />
+
+	<insertBefore xpath="//buff[@name='buffDrunkGrandpasMoonshine']//triggered_effect[@trigger='onSelfBuffRemove' and @effect_name='Drunk']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.86" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.72" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.58" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>	
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.44" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.3" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.7" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+		</triggered_effect>	
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.56" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.42" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.28" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.14" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+		</triggered_effect>
+	</insertBefore>
+
+<append xpath="//buff[@name='buffDrugSugarButts']/effect_group[3]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="//buff[@name='buffPumpkinCheesecake']/effect_group[1]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="//buff[@name='buffDrunkGrandpasAwesomeSauce']/effect_group[3]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffMasterChef" hidden="true" remove_on_death="false">
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="1"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.05">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.05">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="2"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.1">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.1">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="3"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.01">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.15">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.15">
+				<requirement name="ItemHasTags" tags="food"/>
+			</triggered_effect>
+	</effect_group>
+		<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="1"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.05">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.05">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="2"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.1">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.1">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="3"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.01">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.15">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.15">
+				<requirement name="ItemHasTags" tags="drinks"/>
+			</triggered_effect>
+	</effect_group>
+</buff>
+</append>
+
+<append xpath="//buff[@name='buffDrunkGrandpasMoonshine']/effect_group[3]">
+<passive_effect name="GeneralDamageResist" operation="base_add" value="0.5">
+<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="2"/>
+</passive_effect>
+</append>
+
+<append xpath="//buff[@name='buffDrugPainkillers']/effect_group[4]">
+<passive_effect name="GeneralDamageResist" operation="base_add" value="0.1">
+<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="2"/>
+</passive_effect>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffRambo" name_key="RATATATATATATA" description_key="KEEP SHOOTING! You gain 50% damage resistance." icon="ui_game_symbol_rifle" icon_color="212,84,84">
+<duration value="6"/>
+<stack_type value="replace"/>
+<display_value value="duration"/>
+
+<effect_group>
+<passive_effect name="GeneralDamageResist" operation="base_add" value="0.5">
+<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+</passive_effect>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffVENITEH" name_key="COME AT ME BRO!" description_key="THE FUCK YOU SAY TO ME YOU LITTLE SHIT?! You gain 50% damage resistance!" icon="ui_game_symbol_berserker" icon_color="0,255,255">
+<duration value="6"/>
+<stack_type value="replace"/>
+<display_value value="duration"/>
+
+<effect_group>
+<passive_effect name="GeneralDamageResist" operation="base_add" value="0.5">
+<requirement name="HoldingItemHasTags" tags="perkPummelPete,perkSkullCrusher,perkBoomstick,perkMiner69r,corpseRemoval"/>
+<requirement name="!HoldingItemHasTags" tags="perkBrawler,perkDeepCuts"/>
+</passive_effect>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffNolan">
+<duration value="90"/>
+<stack_type value="ignore"/>
+
+<effect_group>
+<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="bleedCounter,$bleedAmount,$bleedSlowdown,$bleedDuration">
+        <requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value="0.05"/>
+</triggered_effect>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffSmokeBomb" name_key="Smoke Bomb" description_key="You are pretty much invisible" icon="ui_game_symbol_lightbulb" icon_color="140,140,140">
+<duration value="10"/>
+<stack_type value="ignore"/>
+<display_value value="duration"/>
+
+<effect_group>
+<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="m136_fire"/>
+<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.1" fade="3" effect_name="Smoke"/>
+<passive_effect name="LightMultiplier" operation="perc_add" value="-2"/>
+<passive_effect name="NoiseMultiplier" operation="perc_add" value="-2"/>
+<passive_effect name="EnemySearchDuration" operation="perc_add" value="-2"/>
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Smoke"/>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffMUDA" name_key="MUDAMUDAMUDA!" description_key="Oh please. Did you really think you'd be that lucky? A piece of shit like you?[...] The lower your health, the faster you attack!" icon="ui_game_symbol_boxer" icon_color="212,84,84">
+<duration value="0"/>
+
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffHardTargetBW" name_key="NOPE!" description_key="You are more likely to evade incoming damage!" icon="ui_game_symbol_specters_grace" icon_color="0,255,0">
+<duration value="0"/>
+<stack_type value="replace"/>
+
+<effect_group>
+		<requirement name="!HasBuff" buff="buffInjuryBleeding"/>
+		<requirement name="!HasBuff" buff="buffInternalBleeding"/>
+		<requirement name="!HasBuff" buff="buffIsOnFire"/>
+		<requirement name="!HasBuff" buff="buffDrowning03"/>
+		<requirement name="!HasBuff" buff="buffShocked"/>
+		<requirement name="!HasBuff" buff="buffRadiationPool"/>
+		<requirement name="!HasBuff" buff="buffTwitchBurn"/>
+		<requirement name="!HasBuff" buff="buffTwitchShocked"/>
+		<requirement name="!HasBuff" buff="buffTwitchRadiation"/>
+		<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="1"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" level="1" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffBurningZombie,buffInjurySlow"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
+</effect_group>
+
+<effect_group>	
+		<requirement name="!HasBuff" buff="buffInjuryBleeding"/>
+		<requirement name="!HasBuff" buff="buffInternalBleeding"/>
+		<requirement name="!HasBuff" buff="buffIsOnFire"/>
+		<requirement name="!HasBuff" buff="buffDrowning03"/>
+		<requirement name="!HasBuff" buff="buffShocked"/>
+		<requirement name="!HasBuff" buff="buffRadiationPool"/>
+		<requirement name="!HasBuff" buff="buffTwitchBurn"/>
+		<requirement name="!HasBuff" buff="buffTwitchShocked"/>
+		<requirement name="!HasBuff" buff="buffTwitchRadiation"/>	
+		<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="2"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" level="2" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffBurningZombie,buffInjurySlow"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
+</effect_group>
+
+<effect_group>
+		<requirement name="!HasBuff" buff="buffInjuryBleeding"/>
+		<requirement name="!HasBuff" buff="buffInternalBleeding"/>
+		<requirement name="!HasBuff" buff="buffIsOnFire"/>
+		<requirement name="!HasBuff" buff="buffDrowning03"/>
+		<requirement name="!HasBuff" buff="buffShocked"/>
+		<requirement name="!HasBuff" buff="buffRadiationPool"/>
+		<requirement name="!HasBuff" buff="buffTwitchBurn"/>
+		<requirement name="!HasBuff" buff="buffTwitchShocked"/>
+		<requirement name="!HasBuff" buff="buffTwitchRadiation"/>
+		<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="3"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" level="3" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffBurningZombie,buffInjurySlow"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
+</effect_group>
+
+<effect_group>	
+		<requirement name="!HasBuff" buff="buffInjuryBleeding"/>
+		<requirement name="!HasBuff" buff="buffInternalBleeding"/>
+		<requirement name="!HasBuff" buff="buffIsOnFire"/>
+		<requirement name="!HasBuff" buff="buffDrowning03"/>
+		<requirement name="!HasBuff" buff="buffShocked"/>
+		<requirement name="!HasBuff" buff="buffRadiationPool"/>
+		<requirement name="!HasBuff" buff="buffTwitchBurn"/>
+		<requirement name="!HasBuff" buff="buffTwitchShocked"/>
+		<requirement name="!HasBuff" buff="buffTwitchRadiation"/>	
+		<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="4"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" level="4" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffBurningZombie,buffInjurySlow"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
+</effect_group>
+
+<effect_group>
+		<requirement name="!HasBuff" buff="buffInjuryBleeding"/>
+		<requirement name="!HasBuff" buff="buffInternalBleeding"/>
+		<requirement name="!HasBuff" buff="buffIsOnFire"/>
+		<requirement name="!HasBuff" buff="buffDrowning03"/>
+		<requirement name="!HasBuff" buff="buffShocked"/>
+		<requirement name="!HasBuff" buff="buffRadiationPool"/>
+		<requirement name="!HasBuff" buff="buffTwitchBurn"/>
+		<requirement name="!HasBuff" buff="buffTwitchShocked"/>
+		<requirement name="!HasBuff" buff="buffTwitchRadiation"/>
+		<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="5"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" level="5" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffBurningZombie,buffInjurySlow"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="twitch_bucket_hit" play_at_self="true"/>
+		</effect_group>
+
+<effect_group>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value=".05">
+			<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="1"/>
+		</passive_effect>
+		
+		<passive_effect name="GeneralDamageResist" operation="base_add" value=".1">
+			<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="2"/>
+		</passive_effect>
+		
+		<passive_effect name="GeneralDamageResist" operation="base_add" value=".15">
+			<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="3"/>
+		</passive_effect>
+		
+		<passive_effect name="GeneralDamageResist" operation="base_add" value=".2">
+			<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="4"/>
+		</passive_effect>
+		
+		<passive_effect name="GeneralDamageResist" operation="base_add" value=".25">
+			<requirement name="ProgressionLevel" progression_name="perkHardTarget" operation="EQ" value="5"/>
+		</passive_effect>
+</effect_group>
+</buff>
+</append>
+<!-- ASCENSION BUFFS -->
+<!--  MEDICAL HEALING BASELINE
+	Vanilla medical items commonly set medRegHealthIncSpeed from @$medicRegHealthIncreaseSpeed.
+	If $medicRegHealthIncreaseSpeed is unset/0, medical items will apply 0 healing per-second.
+	Keep a sane baseline so Health Recovery is never 0 just because the CVar wasn't initialized.
+-->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]">
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="set" value="2">
+		<requirement name="CVarCompare" cvar="$medicRegHealthIncreaseSpeed" operation="LTE" value="0"/>
+	</triggered_effect>
+</append>
+<append xpath="/buffs/buff[@name='buffHealHealth']">
+<effect_group>
+<!-- perkHealingArts / health regen per tick -->
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".08">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".16">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="2"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".24">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="3"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".32">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="4"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".4">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="5"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".48">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="6"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".56">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="7"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".64">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="8"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value=".72">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="9"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="add" value="1">
+<requirement name="ProgressionLevel" progression_name="perkTriage" operation="Equals" value="10"/>
+</triggered_effect>
+</effect_group>
+</append>
+<!--  =====================================================================================  -->
+<!--  BLEED STACK SYSTEM - Infernal Ascension Override  -->
+<!--  Vanilla buffStatusCheck01 sets $maxBleedCounter to 2-7 based on perk level 0-5.  -->
+<!--  We ADD stacks on top of that base for vgenhancedblades levels 5-10.  -->
+<!--  This MUST be in buffStatusCheck01 and run AFTER vanilla's set operations.  -->
+<!--  With max perkDeepCuts (5) = 7 base stacks, plus vgenhancedblades bonuses:  -->
+<!--  Level 5: 7+2=9, Level 6: 7+4=11, Level 7: 7+6=13, Level 8: 7+8=15, Level 9: 7+10=17, Level 10: 7+14=21  -->
+<!--  =====================================================================================  -->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]">
+<!--  vgenhancedblades adds CUMULATIVE bleed stacks (uses GTE so all lower levels also apply)  -->
+<!--  These run AFTER vanilla sets $maxBleedCounter to 7, so we ADD on top  -->
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="5"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="6"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="7"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="8"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="9"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="4">
+<requirement name="ProgressionLevel" progression_name="vgenhancedblades" operation="GTE" value="10"/>
+</triggered_effect>
+</append>
+<!--  =====================================================================================  -->
+<!--  END BLEED STACK SYSTEM  -->
+<!--  =====================================================================================  -->
+<!--  =====================================================================================  -->
+<!--  INFERNAL BLEED DAMAGE MULTIPLIER - Applied to buffInjuryBleeding on zombies  -->
+<!--  When a zombie has $infernalBleedMultiplier set (from player with vgenhancedblades),  -->
+<!--  set $bleedAmount = bleedCounter * multiplier. This only affects player-inflicted bleeds.  -->
+<!--  Target DPS: Level 5=180, 6=275, 7=455, 8=675, 9=935, 10=1512 HP/s  -->
+<!--  =====================================================================================  -->
+<append xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group[1]">
+<!--  INFERNAL BLEED: After vanilla sets $bleedAmount = bleedCounter, multiply by infernal multiplier if present  -->
+<!--  First store the multiplier in a temp var, then multiply $bleedAmount  -->
+<!--  On buff start: multiply $bleedAmount by the infernal multiplier  -->
+<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$bleedAmount" operation="multiply" value="@$infernalBleedMultiplier">
+<requirement name="CVarCompare" cvar="$infernalBleedMultiplier" operation="GTE" value="1"/>
+</triggered_effect>
+<!--  On buff update (every tick): multiply $bleedAmount by the infernal multiplier  -->
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$bleedAmount" operation="multiply" value="@$infernalBleedMultiplier">
+<requirement name="CVarCompare" cvar="$infernalBleedMultiplier" operation="GTE" value="1"/>
+</triggered_effect>
+<!--  Clean up the multiplier CVar when bleed ends  -->
+<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$infernalBleedMultiplier"/>
+</append>
+<!--  =====================================================================================  -->
+<!--  END INFERNAL BLEED DAMAGE MULTIPLIER  -->
+<!--  =====================================================================================  -->
+<!--  Light and Heavy armor Perks  -->
+<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+<effect_group>
+<!--  light armor, detemine how many pieces are worn  -->
+<requirements compare_type="or">
+<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GT" value="0"/>
+<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+</requirements>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightWorn" operation="set" value="1">
+<requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightWorn" operation="set" value="2">
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="2"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightWorn" operation="set" value="3">
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="3"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightWorn" operation="set" value="4">
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="4"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightWorn" operation="set" value="5">
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="5"/>
+</triggered_effect>
+</effect_group>
+<effect_group>
+<!--  light armor, determine how much of the armor-internal passives is discounted / added back in  -->
+<requirements compare_type="or">
+<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="0"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="Equals" value="0"/>
+</requirements>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="set" value="0"/>
+</effect_group>
+<effect_group>
+<!--  light armor, determine which % the armor perk restores  -->
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="1"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".02"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".03"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="2"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".04"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".06"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="3"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".06"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".09"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="4"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".08"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".12"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="5"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".1"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".15"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="6"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".12"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".18"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="7"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".14"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".21"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="8"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".16"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".24"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="9"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".18"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".27"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThinSkin" operation="Equals" value="10"/>
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="add" value=".25"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="add" value=".4"/>
+</effect_group>
+<effect_group>
+<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="set" value="1"/>
+</effect_group>
+<effect_group>
+<!--  light armor, add penalties back in  -->
+<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="set" value="@.ArmorLightStaminaWalk"/>
+<!--  the full penalty that 1 piece of light armor adds  -->
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="multiply" value="0.0562"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="multiply" value="0.0281"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="multiply" value="0.04"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="multiply" value="@.ArmorLightWorn"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="multiply" value="@.ArmorLightWorn"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="multiply" value="@.ArmorLightWorn"/>
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorLightStaminaWalk" tags="walking"/>
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorLightStaminaRun" tags="running"/>
+<passive_effect name="Mobility" operation="perc_add" value="@.ArmorLightMobility"/>
+</effect_group>
+<effect_group>
+<!--  heavy armor, detemine how many pieces are worn  -->
+<requirements compare_type="or">
+<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GT" value="0"/>
+<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+</requirements>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="1">
+<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="2">
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="2"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="3">
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="3"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="4">
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="4"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="5">
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="5"/>
+</triggered_effect>
+</effect_group>
+<effect_group>
+<!--  heavy armor, determine how much of the armor-internal passives is discounted / added back in  -->
+<requirements compare_type="or">
+<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="0"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+</requirements>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value="0"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="1"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".02"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="2"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".04"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="3"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".06"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="4"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".08"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="5"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".1"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="6"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".12"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="7"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".14"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="8"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".16"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="9"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value=".18"/>
+</effect_group>
+<effect_group>
+<requirement name="ProgressionLevel" progression_name="perkThickSkin" operation="Equals" value="10"/>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="add" value="0.25"/>
+</effect_group>
+<effect_group>
+<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="set" value="@.ArmorHeavyStaminaWalk"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value="@.ArmorHeavyStaminaWalk"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value="1">
+<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="0.09"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="0.045"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="0.06"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="@.ArmorHeavyWorn"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="@.ArmorHeavyWorn"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="@.ArmorHeavyWorn"/>
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorHeavyStaminaWalk" tags="walking"/>
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorHeavyStaminaRun" tags="running"/>
+<passive_effect name="Mobility" operation="perc_add" value="@.ArmorHeavyMobility"/>
+</effect_group>
+</append>
+
+<!-- Charismatic Nature 6-10 -->
+<append xpath="/buffs/buff[@name='buffPerkCharismaticNature']">
+    <effect_group>
+        <requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="6"/>
+        <passive_effect name="BarteringBuying" operation="perc_add" value=".2"/>
+        <passive_effect name="BarteringSelling" operation="perc_add" value=".2"/>
+    </effect_group>
+
+    <effect_group>
+        <requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="7"/>
+        <passive_effect name="DamageBonus" operation="perc_add" value=".25" tags="sneaking"/>
+        <passive_effect name="LightMultiplier" operation="perc_add" value="-.15"/>
+    </effect_group>
+
+    <effect_group>
+        <requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="8"/>
+        <passive_effect name="StaminaLoss" operation="perc_add" value="-.1"/>
+        <passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+    </effect_group>
+
+    <effect_group>
+        <requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="9"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+        <passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1"/>
+    </effect_group>
+
+    <effect_group>
+        <requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="10"/>
+        <passive_effect name="AttributeLevel" operation="base_add" value="1"/>
+        <passive_effect name="ExperienceGain" operation="perc_add" value=".15"/>
+    </effect_group>
+</append>
+
+<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+    <effect_group>
+        <requirement name="HoldingItemHasTags" tags="melee"/>
+        <requirement name="CVarCompare" cvar="SiphonHP" operation="GT" value="0"/>
+        
+        <triggered_effect trigger="onSelfDamagedOther" action="ModifyStats" stat="Health" operation="add" value="@SiphonHP">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+    </effect_group>
+</append>
+
+<!-- Prevent DW_BuffFullHeal (from Z-AsylumDWpoipack) from wiping the medical heal-over-time pool.
+	 That buff is applied by "BuffsWhenWalkedOn" blocks and was causing medical healing to instantly drop to 0. -->
+<remove xpath="/buffs/buff[@name='DW_BuffFullHeal']/effect_group/triggered_effect[@action='ModifyCVar' and @cvar='medicalRegHealthAmount' and @operation='set' and @value='0']"/>
+
+</configs>

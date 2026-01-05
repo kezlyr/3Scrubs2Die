@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!-- Advanced Ammunition Progression Unlocks -->
+	<!-- Chemical components unlock at chemistry station (50) -->
+	<!-- Ammunition unlocks at ammo press tiers (55 for incendiary, 65 for uranium) -->
+
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/effect_group">
+		<!-- Crafting components unlock at chemistry station level (50) -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="resourceDepletedUraniumCore,resourceNapalmGel"/>
+
+		<!-- Incendiary Ammo unlocks at level 55 (AP ammo tier) -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="ammoIncendiaryBullet9mm,ammoIncendiaryBullet44Mag,ammoIncendiaryBullet762mm,ammoIncendiaryShotgunShell"/>
+
+		<!-- Uranium Ammo unlocks at level 65 (ammo bundle tier - advanced ammunition) -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="ammoUraniumBullet9mm,ammoUraniumBullet44Mag,ammoUraniumBullet762mm,ammoUraniumShotgunShell"/>
+	</append>
+
+</configs>
+

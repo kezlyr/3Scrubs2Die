@@ -1,0 +1,74 @@
+<configs>
+
+<!-- ASYLUM TWISTED MEDICINE BUFFS -->
+<!-- Dark side effects from corrupted medical experiments -->
+
+<append xpath="/buffs">
+
+<!-- Asylum Corruption Purge side effect -->
+<buff name="buffAsylumCorruption" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="300"/>
+	<update_rate value="30"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player_pain"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="-.05"/>
+		<display_value name="dHealthMax" value="-.05"/>
+	</effect_group>
+</buff>
+
+<!-- Asylum Adrenaline Surge side effect -->
+<buff name="buffAsylumAdrenaline" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="600"/>
+	<update_rate value="60"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player_heartbeat"/>
+		<passive_effect name="StaminaMax" operation="perc_add" value="-.1"/>
+		<display_value name="dStaminaMax" value="-.1"/>
+	</effect_group>
+</buff>
+
+<!-- Asylum Hemostatic Compound side effect -->
+<buff name="buffAsylumHemostatic" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="900"/>
+	<update_rate value="90"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player_pain_light"/>
+		<passive_effect name="HealthChangeOT" operation="perc_add" value="-.15"/>
+		<display_value name="dHealthChangeOT" value="-.15"/>
+	</effect_group>
+</buff>
+
+<!-- Asylum Stimulant Cocktail side effect -->
+<buff name="buffAsylumStimulant" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="1200"/>
+	<update_rate value="120"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player_pain_light"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="-.08"/>
+		<passive_effect name="StaminaMax" operation="perc_add" value="-.08"/>
+		<display_value name="dHealthMax" value="-.08"/>
+		<display_value name="dStaminaMax" value="-.08"/>
+	</effect_group>
+</buff>
+
+<!-- Asylum Omnipanacea - the ultimate corruption -->
+<buff name="buffAsylumOmnipanacea" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="1800"/>
+	<update_rate value="180"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player_heartbeat"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="-.1"/>
+		<passive_effect name="StaminaMax" operation="perc_add" value="-.1"/>
+		<display_value name="dHealthMax" value="-.1"/>
+		<display_value name="dStaminaMax" value="-.1"/>
+	</effect_group>
+</buff>
+
+</append>
+
+</configs>

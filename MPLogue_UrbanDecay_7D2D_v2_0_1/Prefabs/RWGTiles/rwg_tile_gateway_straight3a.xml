@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="150, 33, 150" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Zoning" value="none" />
+  <property name="YOffset" value="-13" />
+  <property name="Tags" value="hideui" />
+  <property name="POIMarkerSize" value="18, 2, 8#18, 2, 8#16, 0, 16#16, 0, 16#13, 16, 5#5, 5, 19#20, 14, 13#23, 14, 15#12, 3, 13#13, 17, 5#5, 10, 6#5, 12, 10#5, 5, 18#5, 3, 13" />
+  <property name="POIMarkerStart" value="66, 12, 142#66, 12, 0#67, 13, -8#67, 13, 142#88, 13, 132#67, 14, 103#130, 0, 72#0, 0, 63#122, 12, 128#88, 13, 132#45, 1, 46#104, 2, 85#78, 14, 26#69, 14, 38" />
+  <property name="POIMarkerGroup" value="highwayN,highwayS,new,new2,billboard,truck,drain,dock,survivor,billboard2,raft,boat,trailer,army" />
+  <property name="POIMarkerTags" value="#############" />
+  <property name="POIMarkerType" value="PartSpawn,PartSpawn,RoadExit,RoadExit,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_highway_transition,part_highway_transition,,,part_billboard_meltdowns,part_semi_truck,part_lake_drain,part_lake_dock,part_survivor_camp_01,part_billboard_mycell,part_lake_raft,part_lake_boat,part_vehicle_w_trailer,part_armytruck_01" />
+  <property name="POIMarkerPartRotations" value="0,2,2,0,2,0,3,1,2,2,2,2,0,2" />
+  <property name="POIMarkerPartSpawnChance" value="0.01,1,1,1,0.2,0.8,0.4,0.4,0.2,0.2,0.73,0.4,0.6,0.4" />
+  <property name="SleeperVolumeSize" value="8, 2, 3#4, 2, 3#8, 2, 2#2, 2, 3" />
+  <property name="SleeperVolumeStart" value="71, 10, 123#74, 10, 121#71, 10, 27#74, 10, 28" />
+  <property name="SleeperVolumeGroupId" value="1,1,2,2" />
+  <property name="SleeperVolumeGroup" value="zombieSteveCrawler,1,2,zombieSteveCrawler,0,0,zombieSteveCrawler,1,2,zombieSteveCrawler,0,0" />
+  <property name="SleeperIsLootVolume" value="True,False,True,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,2,0,2" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # # " />
+  <property class="Stats">
+    <property name="TotalVertices" value="1277228" />
+    <property name="TotalTriangles" value="814430" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="355707" />
+      <property name="Triangles" value="257754" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="99247" />
+      <property name="Triangles" value="59784" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="748160" />
+      <property name="Triangles" value="374080" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="74114" />
+      <property name="Triangles" value="122812" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="142, 13, 142" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="83, 13, 140" />
+    </property>
+    <property class="challenge_stump">
+      <property name="0" value="30, 10, 18" />
+    </property>
+    <property class="quest_wood">
+      <property name="0" value="89, 13, 130" />
+      <property name="1" value="85, 13, 135" />
+      <property name="2" value="85, 13, 138" />
+    </property>
+    <property class="challenge_gore">
+      <property name="0" value="69, 14, 63" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="72, 14, 86" />
+    </property>
+  </property>
+</prefab>

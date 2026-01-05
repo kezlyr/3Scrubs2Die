@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<ModInfo>
+		<Name value="UraniumAmmo" />
+		<DisplayName value="Advanced Ammunition" />
+		<Version value="2.0.0" />
+		<Author value="AsylumMods" />
+		<Description value="Adds depleted uranium ammunition with extreme armor penetration and incendiary ammunition that sets targets on fire. Includes 9mm, .44 Magnum, 7.62mm, and shotgun variants." />
+		<Website value="" />
+	</ModInfo>

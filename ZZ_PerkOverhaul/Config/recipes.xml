@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<append xpath="/recipes">
+		<recipe name="modVehicleImprovedCarChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkGreaseMonkey">
+			<ingredient name="modVehicleFuelSaver" count="1"/>
+			<ingredient name="modVehicleSuperCharger" count="1"/>
+			<ingredient name="modVehicleReserveFuelTank" count="1"/>
+			<ingredient name="modVehiclePlow" count="1"/>
+			<ingredient name="modVehicleOffRoadHeadlights" count="1"/>
+		</recipe>
+
+		<recipe name="modVehicleImprovedMotorCycleChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkGreaseMonkey">
+			<ingredient name="modVehicleFuelSaver" count="1"/>
+			<ingredient name="modVehicleSuperCharger" count="1"/>
+			<ingredient name="modVehicleReserveFuelTank" count="1"/>
+			<ingredient name="modVehicleArmor" count="1"/>
+			<ingredient name="modVehicleOffRoadHeadlights" count="1"/>
+		</recipe>
+
+		<recipe name="modVehicleImprovedBirdChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkGreaseMonkey">
+			<ingredient name="modVehicleFuelSaver" count="1"/>
+			<ingredient name="modVehicleSuperCharger" count="1"/>
+			<ingredient name="modVehicleReserveFuelTank" count="1"/>
+			<ingredient name="modVehicleArmor" count="1"/>
+			<ingredient name="modVehicleOffRoadHeadlights" count="1"/>
+		</recipe>
+
+		<recipe name="ammoRocketIncendiary" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkDemolitionsExpert">
+			<ingredient name="resourceRocketTip" count="1"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="ammoGasCan" count="100"/>
+			<ingredient name="resourceRocketCasing" count="1"/>
+		</recipe>
+
+		<recipe name="ammoArrowElectric" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkArchery">
+			<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+		</recipe>
+
+		<recipe name="ammoArrowElectric" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkArchery">
+			<ingredient name="resourceArrowHeadIron" count="1"/>
+			<ingredient name="resourceFeather" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+
+		<recipe name="ammoCrossbowBoltElectric" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkArchery">
+			<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+		</recipe>
+
+		<recipe name="ammoCrossbowBoltElectric" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting,perkArchery">
+			<ingredient name="resourceArrowHeadIron" count="1"/>
+			<ingredient name="resourceFeather" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+
+<!-- New Foods -->
+		<!-- Corn -->
+		<recipe name="foodRoastedCornOnTheCob" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="1"/>
+		</recipe>
+
+		<recipe name="foodChiliLimeStreetCorn" count="1" craft_time="12" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="1"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+			<ingredient name="resourceFoodRedChillies" count="1"/>
+		</recipe>
+
+		<recipe name="foodCornbreadSlice" count="1" craft_time="15" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="2"/>
+		</recipe>
+
+		<recipe name="foodSkilletCornCakes" count="1" craft_time="15" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodCreamyCornChowder" count="1" craft_time="20" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="2"/>
+			<ingredient name="resourceFoodPotato" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodCornAndMushroomHash" count="1" craft_time="18" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCorn" count="1"/>
+			<ingredient name="resourceFoodMushroom" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<!-- Potato -->
+		<recipe name="foodBakedPotatoSalted" count="1" craft_time="12" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="1"/>
+		</recipe>
+
+		<recipe name="foodLoadedBakedPotato" count="1" craft_time="18" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+			<ingredient name="resourceFoodMushroom" count="1"/>
+		</recipe>
+
+		<recipe name="foodCrispyPotatoWedges" count="1" craft_time="14" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="2"/>
+			<ingredient name="resourceFoodPaprika" count="1"/>
+		</recipe>
+
+		<recipe name="foodPanFriedPotatoCakes" count="1" craft_time="16" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodPotatoAndOnionSkillet" count="1" craft_time="14" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodMushroomAndPotatoStew" count="1" craft_time="22" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPotato" count="2"/>
+			<ingredient name="resourceFoodMushroom" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodTomatoPotatoSoup" count="1" craft_time="22" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodPotato" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodCabbageAndPotatoSkillet" count="1" craft_time="18" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="resourceFoodPotato" count="1"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<!-- Cabbage -->
+		<recipe name="foodStuffedCabbageRolls" count="1" craft_time="25" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="resourceFoodRice" count="1"/>
+			<ingredient name="resourceFoodTomato" count="1"/>
+		</recipe>
+
+		<recipe name="foodCabbageSlawBowl" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+		</recipe>
+
+		<recipe name="foodCabbageStirFryPlate" count="1" craft_time="18" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+			<ingredient name="resourceFoodSoyBeans" count="1"/>
+		</recipe>
+
+		<recipe name="foodTomatoCabbageSoup" count="1" craft_time="22" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<!-- Pumpkin -->
+		<recipe name="foodPumpkinSoup" count="1" craft_time="20" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPumpkin" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodRoastedPumpkinWedges" count="1" craft_time="14" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPumpkin" count="2"/>
+			<ingredient name="resourceFoodPaprika" count="1"/>
+		</recipe>
+
+		<recipe name="foodPumpkinMashBowl" count="1" craft_time="16" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPumpkin" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodPumpkinCornStew" count="1" craft_time="24" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPumpkin" count="2"/>
+			<ingredient name="resourceFoodCorn" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<!-- Mushroom -->
+		<recipe name="foodMushroomStew" count="1" craft_time="20" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodMushroom" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodGarlicStyleMushroomSkillet" count="1" craft_time="16" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodMushroom" count="3"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodStuffedMushrooms" count="1" craft_time="18" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodMushroom" count="3"/>
+			<ingredient name="resourceFoodRice" count="1"/>
+		</recipe>
+
+		<recipe name="foodTomatoMushroomRagout" count="1" craft_time="22" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodMushroom" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<!-- Tomato -->
+		<recipe name="foodTomatoSoup" count="1" craft_time="18" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodSpicyTomatoSoup" count="1" craft_time="20" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="3"/>
+			<ingredient name="resourceFoodRedChillies" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodTomatoAndOnionSkilletSauce" count="1" craft_time="14" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodRoastedTomatoPlate" count="1" craft_time="12" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodPaprika" count="1"/>
+		</recipe>
+
+		<!-- Rice bowls -->
+		<recipe name="foodRiceBowlPlain" count="1" craft_time="12" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodTomatoRiceBowl" count="1" craft_time="16" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodTomato" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodSpicyChiliRiceBowl" count="1" craft_time="16" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodRedChillies" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodMushroomRiceBowl" count="1" craft_time="18" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodMushroom" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodCabbageFriedRice" count="1" craft_time="20" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodCabbage" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodPineappleFriedRice" count="1" craft_time="20" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodPineapple" count="1"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodSoyRiceBowl" count="1" craft_time="16" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodSoyBeans" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodOliveRiceBowl" count="1" craft_time="16" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodOlives" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodLimeRiceBowl" count="1" craft_time="14" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodMintRiceBowl" count="1" craft_time="14" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodRice" count="2"/>
+			<ingredient name="resourceFoodMint" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<!-- Dips / sides -->
+		<recipe name="foodTomatoOnionSalsaBowl" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodChiliLimeSalsaBowl" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+			<ingredient name="resourceFoodRedChillies" count="1"/>
+		</recipe>
+
+		<recipe name="foodPaprikaTomatoDip" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodTomato" count="2"/>
+			<ingredient name="resourceFoodPaprika" count="1"/>
+		</recipe>
+
+		<recipe name="foodOliveTapenadeBowl" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodOlives" count="3"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+		</recipe>
+
+		<recipe name="foodPickledOnionJar" count="1" craft_time="12" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodOnion" count="2"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodRoastedPaprikaVegPlate" count="1" craft_time="16" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="1"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+			<ingredient name="resourceFoodPaprika" count="1"/>
+		</recipe>
+
+		<recipe name="foodChiliSeasonedVegPlate" count="1" craft_time="16" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCabbage" count="1"/>
+			<ingredient name="resourceFoodOnion" count="1"/>
+			<ingredient name="resourceFoodRedChillies" count="1"/>
+		</recipe>
+
+		<!-- Fruit / snacks -->
+		<recipe name="foodFruitSaladCup" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodApple" count="1"/>
+			<ingredient name="resourceFoodOrange" count="1"/>
+			<ingredient name="resourceFoodPineapple" count="1"/>
+			<ingredient name="resourceFoodBlueberries" count="1"/>
+		</recipe>
+
+		<recipe name="foodAppleSlices" count="1" craft_time="5" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodApple" count="1"/>
+		</recipe>
+
+		<recipe name="foodBakedAppleTreat" count="1" craft_time="14" craft_tool="toolCookingGrill" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodApple" count="2"/>
+		</recipe>
+
+		<recipe name="foodOrangeSlices" count="1" craft_time="5" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodOrange" count="1"/>
+		</recipe>
+
+		<recipe name="foodCitrusMixCup" count="1" craft_time="6" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodOrange" count="1"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+		</recipe>
+
+		<recipe name="foodPineappleChunks" count="1" craft_time="6" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodPineapple" count="1"/>
+		</recipe>
+
+		<recipe name="foodBlueberryCup" count="1" craft_time="5" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodBlueberries" count="2"/>
+		</recipe>
+
+		<!-- Drinks -->
+		<recipe name="drinkMintLimeCooler" count="1" craft_time="8" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodMint" count="1"/>
+			<ingredient name="resourceFoodLime" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="drinkCitrusIcedTeaGoldenrod" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodGoldenrod" count="2"/>
+			<ingredient name="resourceFoodOrange" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="drinkChrysanthemumTea" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodChrysanthemum" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="drinkCoffeeHot" count="1" craft_time="10" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCoffee" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="drinkIcedCoffee" count="1" craft_time="12" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodCoffee" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+
+		<recipe name="drinkHopBrewLightBeer" count="1" craft_time="20" craft_tool="toolCookingPot" craft_area="campfire" tags="food,cooking,perkMasterChef,learnable">
+			<ingredient name="resourceFoodHops" count="2"/>
+			<ingredient name="resourceFoodCorn" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+
+	</append>
+</config>

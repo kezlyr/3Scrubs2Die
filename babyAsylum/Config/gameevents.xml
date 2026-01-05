@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AsylumOverhaul>
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<!-- /////////////////           Asylum Starter Class Events     ///////////////// -->
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<append xpath="/gameevents">
+		<action_sequence name="action_give_5points">
+			<!-- Start Class -->
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="5"/>
+			</action>
+		</action_sequence>
+	</append>
+
+	<!-- Override the vanilla first spawn event to include asylum welcome -->
+	<append xpath="/gameevents/action_sequence[@name='game_first_spawn']">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="Delay">
+			<property name="phase" value="1" />
+			<property name="time" value="5" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffDukeNote" />
+		</action>
+
+		<action class="ShowMessageWindow">
+			<property name="phase" value="3" />
+			<property name="title" value="Welcome to the Asylum" />
+			<property name="message" value="[FFFF00]Welcome to the Asylum![FFFFFF]The outbreak has begun and the asylum walls can no longer contain the madness within. You are one of the few survivors in this twisted facility.[FF6666]Your past life before the breakdown will be revealed through your journey.[FFFFFF] Complete the first set of challenges and when you're sent to the trader, you'll receive your Class Token to choose your background.[00FF00]Survival Tips:[FFFFFF]• Follow the quest objectives carefully• Complete all initial challenges• Visit the trader when instructed• Your Class Token will unlock unique advantages• Your bicycle will help you escape quickly.[FF00FF]Good luck, and remember... in the Asylum, madness is just the beginning.[FFFFFF]" />
+		</action>
+	</append>
+	
+	<append xpath="/gameevents">
+<action_sequence name="HXB">
+<action class="AddItems">
+<property name="added_items" value="HXB"/>
+<property name="added_item_counts" value="1-3"/>
+</action>
+</action_sequence>
+<action_sequence name="CFSJGJ">
+<action class="AddItems">
+<property name="added_items" value="SJGJ"/>
+<property name="added_item_counts" value="1"/>
+</action>
+</action_sequence>
+</append>
+
+	<!-- *** ASYLUM STUMP HARVEST INSECT2 EVENT *** -->
+	<!-- Custom event for tree stump destruction/harvesting -->
+	<!-- Guarantees 100% honey challenge progress + 15% chance for asylum insects -->
+	<append xpath="/gameevents">
+		<action_sequence name="asylum_stump_harvest_insect2">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Block"/>
+			<property name="allow_while_dead" value="true"/>
+
+			<!-- Award honey challenge stat EVERY TIME a stump is destroyed (100% reliable) -->
+			<!-- This buff triggers the AwardChallenge action for harvestHoneyStat -->
+			<action class="AddBuff">
+				<property name="buff_name" value="buffHarvestHoney"/>
+			</action>
+
+			<!-- Spawn asylum insects (15% chance) -->
+			<action class="SpawnEntity">
+				<property name="entity_names" value="asylumInsect2,asylumFeralInsect2"/>
+				<property name="single_choice" value="true"/>
+				<property name="spawn_count" value="1,2"/>
+				<property name="phase" value="0"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="2"/>
+				<property name="max_distance" value="4"/>
+				<property name="spawn_type" value="Position"/>
+				<property name="is_aggressive" value="true"/>
+
+				<requirement class="RandomRoll">
+					<property name="min_max" value="0,100"/>
+					<property name="operation" value="LTE"/>
+					<property name="value" value="15"/>
+				</requirement>
+			</action>
+		</action_sequence>
+	</append>
+
+</AsylumOverhaul>

@@ -1,0 +1,1012 @@
+<AsylumOverhaul>
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']"><!-- Red dot sight model replacement -->
+
+
+
+		<item_property_overrides name="TT-33">
+			<property name="ScopeCameraOffset" value="-0.00035,-0.0158,-0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+		<item_property_overrides name="DYZFZ">
+			<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?DYZFZ1"/> <!-- Model location -->
+			<property name="ScopeCameraOffset" value="0.0052,-0.0138,-0.07"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="VEPR12">
+			<property name="ScopeCameraOffset" value="0,-0.00898,0.15"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1AY">
+			<property name="ScopeCameraOffset" value="-0.00002,-0.047545,-0.1"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTJL">
+			<property name="ScopeCameraOffset" value="-0.00743,-.00155,-.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="BLTPTKL">
+			<property name="ScopeCameraOffset" value="-0.00743,-.00155,-.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+		<item_property_overrides name="BH">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?BH1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.00342,-0.01515,0.165"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3YSSS">
+		<property name="ScopeCameraOffset" value="0.001,-0.0015,0.1"/>
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3YSSS1"/> <!-- Model location -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="MG3CJ">
+		<property name="ScopeCameraOffset" value="0.001,-0.0015,0.1"/>
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3CJ1"/> <!-- Model location -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="MG3XL">
+		<property name="ScopeCameraOffset" value="0.001,-0.0015,0.1"/>
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3XL1"/> <!-- Model location -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="M24922">
+			<property name="ScopeCameraOffset" value="0.0006,-0.026,0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M249">
+			<property name="ScopeCameraOffset" value="0.0006,-0.026,0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1CL1">
+			<property name="ScopeCameraOffset" value="-0.0006,-0.034,-0.02"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+
+		
+		<item_property_overrides name="AK47NMW1">
+			<property name="ScopeCameraOffset" value="0.0008,-0.01,0.16"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1KK1">
+			<property name="ScopeCameraOffset" value="0.0397,-0.02542,-0.02"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="HK417CXLH1">
+			<property name="ScopeCameraOffset" value="-0.0002,-0.00075,-0.05"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1NMW1">
+			<property name="ScopeCameraOffset" value="-0.0011,-0.0587,-0.091"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="HK417CL1">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0118,-0.014"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M200BJL1">
+			<property name="ScopeCameraOffset" value="-0.0067,0.01625,-0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M200AJ">
+			<property name="ScopeCameraOffset" value="-0.0067,0.01625,-0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1LX">
+			<property name="ScopeCameraOffset" value="-0.00082,-0.0552,-0.07"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="AK47HS">
+			<property name="ScopeCameraOffset" value="0.0002,-0.0145,0.17"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="BLTCL1">
+			<property name="ScopeCameraOffset" value="-0.0068,0.001,-0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="BLTNMW1">
+			<property name="ScopeCameraOffset" value="0,-0.01055,-0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1HQS">
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0553,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1WZZS1">
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0553,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1YJ">
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0553,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1MJXW1">
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0553,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1ZSMC">
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0553,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1LS">
+			<property name="ScopeCameraOffset" value="-0.00115,-0.0476,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1LSQSZB">
+			<property name="ScopeCameraOffset" value="-0.00115,-0.0476,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1NT1">
+			<property name="ScopeCameraOffset" value="-0.00115,-0.0477,-0.08"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="AKNT1">
+			<property name="ScopeCameraOffset" value="-0.0006,-0.018363,0.15"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="AA12LT">
+			<property name="ScopeCameraOffset" value="0.0026,-0.018,-0.1"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1HL">
+			<property name="ScopeCameraOffset" value="0.0002,-0.03588,-0.075"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="MK23HS">
+			<property name="ScopeCameraOffset" value="0,-0.0175,-0.05"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="MK23">
+			<property name="ScopeCameraOffset" value="0,-0.0175,-0.05"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M200HS">
+			<property name="ScopeCameraOffset" value="-0.0086,0.0128,-0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M200MMT">
+			<property name="ScopeCameraOffset" value="-0.0086,0.0128,-0.12"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="JYSS2">
+			<property name="ScopeCameraOffset" value="-0.0002,-0.01415,-0.15"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="JYSS">
+			<property name="ScopeCameraOffset" value="-0.0002,-0.01415,-0.15"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="HQL">
+			<property name="ScopeCameraOffset" value="-0.00138,-0.00343,0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="WZZX">
+			<property name="ScopeCameraOffset" value="-0.00138,-0.00343,0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="QY">
+			<property name="ScopeCameraOffset" value="-0.00138,-0.00343,0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="HXZX">
+			<property name="ScopeCameraOffset" value="-0.00138,-0.00343,0.18"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+		
+		<item_property_overrides name="M4A1TJS1">
+			<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?M4TJS1"/> <!-- Model location -->
+			<property name="ScopeCameraOffset" value="0,-0.0019,0"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		</item_property_overrides>
+
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']"><!-- 2x scope replacement -->
+
+		<item_property_overrides name="TT-33">
+		<property name="ScopeCameraOffset" value="0.000475,-0.0242,-0.17"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="M4A1AY">
+		<property name="ScopeCameraOffset" value="-0.00095,-0.0398,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTJL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTKL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BH">
+		<property name="ScopeCameraOffset" value="0.003285,-0.00763,0.165"/>
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?BH1"/> <!-- Model location -->
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3YSSS">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3YSSS1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3CJ">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3CJ1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M249">
+		<property name="ScopeCameraOffset" value="-0.0005,-0.021,0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3XL">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3XL1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M24922">
+		<property name="ScopeCameraOffset" value="-0.0005,-0.021,0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1CL1">
+		<property name="ScopeCameraOffset" value="-0.00128,-0.0327,-0.01"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK47NMW1">
+		<property name="ScopeCameraOffset" value="0.0001,-0.005,0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1KK1">
+		<property name="ScopeCameraOffset" value="-0.00128,-0.0405,-0.025"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HK417CXLH1">
+		<property name="ScopeCameraOffset" value="-0.0003,-0.0065,-0.0293"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1NMW1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04955,-0.03"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HK417CL1">
+		<property name="ScopeCameraOffset" value="-0.000235,-0.009,-0.0293"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200BJL1">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200AJ">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LX">
+		<property name="ScopeCameraOffset" value="-0.00095,-0.04,-0.06"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK47HS">
+		<property name="ScopeCameraOffset" value="-0.00022,-0.0179,0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTCL1">
+		<property name="ScopeCameraOffset" value="-0.00695,-0.0001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTNMW1">
+		<property name="ScopeCameraOffset" value="-0.00015,-0.01315,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1HQS">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1ZSMC">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1WZZS1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1YJ">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1MJXW1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LS">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.0395,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LSQSZB">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.0395,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1NT1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04525,-0.06"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AKNT1">
+		<property name="ScopeCameraOffset" value="-0.0006,-0.01843,0.14"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1HL">
+		<property name="ScopeCameraOffset" value="0.00024,-0.032,-0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MK23HS">
+		<property name="ScopeCameraOffset" value="0.00055,-0.0277,-0.13"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MK23">
+		<property name="ScopeCameraOffset" value="0.00055,-0.0277,-0.13"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200HS">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200MMT">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="JYSS2">
+		<property name="ScopeCameraOffset" value="-0.00025,-0.0208,-0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="JYSS">
+		<property name="ScopeCameraOffset" value="-0.00025,-0.0208,-0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HQL">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="WZZX">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="QY">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HXZX">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1TJS1">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?M4TJS1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="-0,-0.00575,-0.032"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+		</item_property_overrides>
+		
+		
+		
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="scope_2x"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="scope_2x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="scope_2x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="scope_2x" transform_path="scopecamera2x"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="scope_2x" transform_path="scopecamera2x"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="ironsight_up"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="ironsight_down"/>
+		</effect_group>
+		
+		
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']"><!-- 4x scope replacement -->
+
+		<item_property_overrides name="M4A1AY">
+		<property name="ScopeCameraOffset" value="-0.00095,-0.0398,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTJL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTKL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BH">
+		<property name="ScopeCameraOffset" value="0.003285,-0.00763,0.165"/>
+		<property name="Meshfile" value="#@modfolder:Resources/BH.unity3d?BH1"/> <!-- Model location -->
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3YSSS">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3YSSS1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3XL">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3XL1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M24922">
+		<property name="ScopeCameraOffset" value="-0.0005,-0.021,0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1CL1">
+		<property name="ScopeCameraOffset" value="-0.00128,-0.0327,-0.01"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MG3CJ">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?MG3CJ1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="0.000625,0.01085,0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M249">
+		<property name="ScopeCameraOffset" value="-0.0005,-0.021,0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK47NMW1">
+		<property name="ScopeCameraOffset" value="0.0001,-0.005,0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1KK1">
+		<property name="ScopeCameraOffset" value="-0.00128,-0.0405,-0.025"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HK417CXLH1">
+		<property name="ScopeCameraOffset" value="-0.0003,-0.0065,-0.0293"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1NMW1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04955,-0.03"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HK417CL1">
+		<property name="ScopeCameraOffset" value="-0.000235,-0.009,-0.0293"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200BJL1">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200AJ">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LX">
+		<property name="ScopeCameraOffset" value="-0.00095,-0.04,-0.06"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK47HS">
+		<property name="ScopeCameraOffset" value="-0.00022,-0.0179,0.16"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTCL1">
+		<property name="ScopeCameraOffset" value="-0.00695,-0.0001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTNMW1">
+		<property name="ScopeCameraOffset" value="-0.00015,-0.01315,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1HQS">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1ZSMC">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1WZZS1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1YJ">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1MJXW1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04952,-0.043"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LS">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.0395,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1LSQSZB">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.0395,-0.062"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1NT1">
+		<property name="ScopeCameraOffset" value="-0.00115,-0.04525,-0.06"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AKNT1">
+		<property name="ScopeCameraOffset" value="-0.0006,-0.01843,0.14"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1HL">
+		<property name="ScopeCameraOffset" value="0.00024,-0.032,-0.065"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200HS">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200MMT">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HQL">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="WZZX">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="QY">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="HXZX">
+		<property name="ScopeCameraOffset" value="-0.0006,0.00113,0.167"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M4A1TJS1">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?M4TJS1"/> <!-- Model location -->
+		<property name="ScopeCameraOffset" value="-0,-0.00575,-0.032"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="30"/>
+		<property name="Zoom_max_in" value="20"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="scope_4x"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="scope_4x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="scope_4x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="scope_4x" transform_path="scopecamera4x"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="scope_4x" transform_path="scopecamera4x"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="ironsight_up"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="ironsight_down"/>
+		</effect_group>
+		
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']"><!-- 8x scope replacement -->
+
+		<item_property_overrides name="BLTPTJL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTKL">
+		<property name="ScopeCameraOffset" value="-0.007465,0.001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200BJL1">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200AJ">
+		<property name="ScopeCameraOffset" value="-0.0061,0.0258,-0.1"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTCL1">
+		<property name="ScopeCameraOffset" value="-0.00695,-0.0001,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTNMW1">
+		<property name="ScopeCameraOffset" value="-0.00015,-0.01315,-0.12"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200HS">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M200MMT">
+		<property name="ScopeCameraOffset" value="-0.00864,0.0243,-0.092"/>
+		<property name="CrosshairOnAim" value="true"/> <!-- Right-click crosshair: false=no, true=yes -->
+		<property name="Zoom_overlay" value="@:Other/Items/Weapons/HUD/sniper_zoom_overlay.tga"/> <!-- Right-click scope texture -->
+		<property name="Zoom_max_out" value="20"/>
+		<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="scope_8x"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="scope_8x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="scope_8x" transform_path="coverlens"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="scope_8x" transform_path="scopecamera8x"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="scope_8x" transform_path="scopecamera8x"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="ironsight_up"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="ironsight_down"/>
+		</effect_group>	
+	
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']"><!-- Silencer mod sound replacement -->
+
+
+
+		<item_property_overrides name="JYSS">
+		<property name="Sound_start" value="SYXY"/> <!-- Firing sound -->
+		<property name="Sound_loop" value="SYXY"/> <!-- Firing sound loop -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="JYSS2">
+		<property name="Sound_start" value="SYXY"/> <!-- Firing sound -->
+		<property name="Sound_loop" value="SYXY"/> <!-- Firing sound loop -->
+		</item_property_overrides>
+
+		<item_property_overrides name="BLTPTJL">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?BLTPTJL1"/> <!-- Model location -->
+		</item_property_overrides>
+		
+		<item_property_overrides name="BLTPTKL">
+		<property name="Meshfile" value="#@modfolder:Resources/CFWQB1.unity3d?BLTPTKL1"/> <!-- Model location -->
+		</item_property_overrides>
+</append>
+
+	<!-- Translated -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@installable_tags">weapon,tool</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@modifier_tags">modGunLaserSight</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@blocked_tags">noMods</set>
+	
+	<!-- Translated -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@installable_tags">weapon,tool</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@modifier_tags">modGunFlashlight</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@blocked_tags">noMods</set>
+
+	<!-- Extend Rad Remover to work on Cursed and Alpha zombies -->
+	<!-- This modifies the existing tag check to include all special zombie variants -->
+	<!-- The EntityTagCompare uses OR logic within the tags attribute, so all listed tags are checked -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']/effect_group/requirement[@name='EntityTagCompare']/@tags">radiated,charged,infernal,cursed,alpha</set>
+
+</AsylumOverhaul>

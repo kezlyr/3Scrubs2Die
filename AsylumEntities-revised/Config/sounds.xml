@@ -1,0 +1,296 @@
+<Config>
+	<!-- ========================================== -->
+	<!-- ASYLUM CLOWN/JESTER SHARED SOUND SYSTEM -->
+	<!-- ========================================== -->
+	<!-- These sounds are shared by all clown and jester entities:
+	     - Art the Clown (all 7 variants)
+	     - Twisty the Clown (all 7 variants)
+	     - Killerclown (all 7 variants)
+	     - Jester (all 7 variants)
+	-->
+
+	<append xpath="/Sounds">
+
+		<!-- CLOWN ROAM/IDLE SOUND (Priority 5 - Lowest) -->
+		<SoundDataNode name="asylumClownRoam">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clownroam"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- CLOWN SENSE SOUND (Priority 4) -->
+		<SoundDataNode name="asylumClownSense">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clownsense"/>
+			<Channel name="Mouth"/>
+			<Priority name="4"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- CLOWN ALERT SOUND (Priority 3) -->
+		<SoundDataNode name="asylumClownAlert">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clownalert"/>
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- CLOWN ATTACK SOUND (Priority 2) -->
+		<SoundDataNode name="asylumClownAttack">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clownattack"/>
+			<Channel name="Mouth"/>
+			<Priority name="2"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.8"/>
+		</SoundDataNode>
+
+		<!-- CLOWN PAIN/HURT SOUND (Priority 1) -->
+		<SoundDataNode name="asylumClownPain">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clownpain"/>
+			<Channel name="Mouth"/>
+			<Priority name="1"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.8"/>
+		</SoundDataNode>
+
+		<!-- CLOWN DEATH SOUND (Priority 0 - Highest) -->
+		<SoundDataNode name="asylumClownDeath">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clowndeath"/>
+			<Channel name="Mouth"/>
+			<Priority name="0"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+
+		<!-- CLOWN GIVE UP SOUND (Priority 5 - Low) -->
+		<SoundDataNode name="asylumClownGiveup">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumClownSounds.unity3d?clowngiveup"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+	</append>
+
+	<!-- ========================================== -->
+	<!-- ASYLUM DOLL SHARED SOUND SYSTEM -->
+	<!-- ========================================== -->
+	<!-- These sounds are shared by all doll entities:
+	     - Crueldoll (all 7 variants)
+	     - Demondoll (all 7 variants)
+	     - Evildoll (all 7 variants)
+	     - Chucky (all 7 variants)
+	     - Annabelle (all 7 variants)
+	-->
+
+	<append xpath="/Sounds">
+
+		<!-- DOLL ROAM/IDLE SOUND (Priority 5 - Lowest) -->
+		<SoundDataNode name="asylumDollRoam">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumDollSounds.unity3d?dollroam"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- DOLL SENSE SOUND (Priority 4) -->
+		<SoundDataNode name="asylumDollSense">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumDollSounds.unity3d?dollsense"/>
+			<Channel name="Mouth"/>
+			<Priority name="4"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+	</append>
+
+	<!-- ========================================== -->
+	<!-- ASYLUM ZOMBIE SHARED SOUND SYSTEM -->
+	<!-- ========================================== -->
+
+	<append xpath="/Sounds">
+
+		<!-- ZOMBIE ROAM/IDLE SOUND (Priority 5 - Lowest) -->
+		<SoundDataNode name="asylumZombieRoam">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombieroam"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE SENSE SOUND (Priority 4) -->
+		<SoundDataNode name="asylumZombieSense">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombiesense"/>
+			<Channel name="Mouth"/>
+			<Priority name="4"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE ALERT SOUND (Priority 3) -->
+		<SoundDataNode name="asylumZombieAlert">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombiealert"/>
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE ATTACK SOUND (Priority 2) -->
+		<SoundDataNode name="asylumZombieAttack">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombieattack"/>
+			<Channel name="Mouth"/>
+			<Priority name="2"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.8"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE PAIN/HURT SOUND (Priority 1) -->
+		<SoundDataNode name="asylumZombiePain">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombiepain"/>
+			<Channel name="Mouth"/>
+			<Priority name="1"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.8"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE DEATH SOUND (Priority 0 - Highest) -->
+		<SoundDataNode name="asylumZombieDeath">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombiedeath"/>
+			<Channel name="Mouth"/>
+			<Priority name="0"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="1.111"/>
+		</SoundDataNode>
+
+		<!-- ZOMBIE GIVE UP SOUND (Priority 5 - Low) -->
+		<SoundDataNode name="asylumZombieGiveup">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/AsylumZombieSounds.unity3d?zombiegiveup"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="3"/>
+		</SoundDataNode>
+
+	</append>
+
+</Config>
+

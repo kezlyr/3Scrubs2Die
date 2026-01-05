@@ -1,0 +1,73 @@
+<configs>
+	<!-- Infernal Enhancement System - Loot Tables -->
+
+	<!-- ========================================== -->
+	<!-- ZOMBIE LOOT BAGS - Black Stones drop from ALL zombie loot bags -->
+	<!-- Higher tier loot bags drop more Black Stones -->
+	<!-- ========================================== -->
+
+	<!-- Regular Zombie Loot Group (groupZpackReg) - 1-2 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg']">
+		<item name="infernalBlackStone" count="1,2" prob="1.0"/>
+	</append>
+
+	<!-- Nurse Zombie Loot Group (groupZpackNurse) - 1-2 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackNurse']">
+		<item name="infernalBlackStone" count="1,2" prob="1.0"/>
+	</append>
+
+	<!-- Lab Zombie Loot Group (groupZpackLab) - 2-3 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackLab']">
+		<item name="infernalBlackStone" count="2,3" prob="1.0"/>
+	</append>
+
+	<!-- Utility Zombie Loot Group (groupZpackUtility) - 2-4 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackUtility']">
+		<item name="infernalBlackStone" count="2,4" prob="1.0"/>
+	</append>
+
+	<!-- Soldier Zombie Loot Group (groupZpackSoldier) - 3-5 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackSoldier']">
+		<item name="infernalBlackStone" count="3,5" prob="1.0"/>
+	</append>
+
+	<!-- Thug Zombie Loot Group (groupZpackThug) - 3-6 Black Stones (100% chance) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackThug']">
+		<item name="infernalBlackStone" count="3,6" prob="1.0"/>
+	</append>
+
+	<!-- Strong Zombie Loot Group (groupZpackStrong) - 5-9 Black Stones (100% chance) + Concentrated (10% chance) + Minor Torment Essence (EXTREMELY RARE) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong']">
+		<item name="infernalBlackStone" count="5,9" prob="1.0"/>
+		<item name="infernalConcentratedStone" count="1,2" prob="0.10"/>
+		<item name="infernalTormentMinor" count="1" prob="0.01"/>
+	</append>
+
+	<!-- Boss Zombie Loot Group (groupZpackBoss) - 25-50 Black Stones (100% chance) + Concentrated (50% chance) + Cron (15% chance) + Torment Essences (EXTREMELY RARE) -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss']">
+		<item name="infernalBlackStone" count="25,50" prob="1.0"/>
+		<item name="infernalConcentratedStone" count="5,10" prob="0.50"/>
+		<item name="infernalCronStone" count="1,3" prob="0.15"/>
+		<!-- Torment Essences - EXTREMELY RARE drops -->
+		<item name="infernalTormentMinor" count="1" prob="0.01"/>
+		<item name="infernalTormentMajor" count="1" prob="0.005"/>
+		<item name="infernalTormentSuperior" count="1" prob="0.001"/>
+	</append>
+
+	<!-- ========================================== -->
+	<!-- SPECIAL LOOT GROUPS -->
+	<!-- ========================================== -->
+
+	<!-- Add to green boss loot group (special Asylum boss loot) - if it exists -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackBossGreen']">
+		<item name="infernalBlackStone" count="10,20" prob="1.0"/>
+		<item name="infernalConcentratedStone" count="5,10" prob="0.50"/>
+		<item name="infernalCronStone" count="2,5" prob="0.15"/>
+		<!-- Torment Essences - EXTREMELY RARE drops -->
+		<item name="infernalTormentMinor" count="1" prob="0.01"/>
+		<item name="infernalTormentMajor" count="1" prob="0.005"/>
+		<item name="infernalTormentSuperior" count="1" prob="0.001"/>
+	</append>
+
+</configs>
+

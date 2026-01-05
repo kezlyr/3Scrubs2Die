@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="True" />
+  <property name="DifficultyTier" value="0" />
+  <property name="Zoning" value="downtown" />
+  <property name="AllowedTownships" value="downtown,city" />
+  <property name="Tags" value="city, downtown, cave, entrance" />
+  <property name="EditorGroups" value="downtown, city" />
+  <property name="DuplicateRepeatDistance" value="4000" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="25, 24, 25" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="SleeperVolumeSize" value="23, 4, 21" />
+  <property name="SleeperVolumeStart" value="1, 7, 2" />
+  <property name="SleeperVolumeGroupId" value="0" />
+  <property name="SleeperVolumeGroup" value="GroupGenericZombie,6,6" />
+  <property name="SleeperIsLootVolume" value="False" />
+  <property name="SleeperIsQuestExclude" value="False" />
+  <property name="SleeperVolumeFlags" value="2" />
+  <property name="SleeperVolumeTriggeredBy" value=" " />
+  <property name="YOffset" value="-12" />
+  <property name="TriggerVolumeSize" value="5, 4, 5" />
+  <property name="TriggerVolumeStart" value="10, 10, 10" />
+  <property name="TriggerVolumeTriggers" value="1" />
+  <property name="POIMarkerSize" value="5, 5, 1" />
+  <property name="POIMarkerStart" value="10, 1, -1" />
+  <property name="POIMarkerGroup" value="cave" />
+  <property name="POIMarkerTags" value="cavenode" />
+  <property name="POIMarkerType" value="None" />
+  <property name="POIMarkerPartToSpawn" value="" />
+  <property name="POIMarkerPartRotations" value="2" />
+  <property name="POIMarkerPartSpawnChance" value="1" />
+  <property class="Stats">
+    <property name="TotalVertices" value="165909" />
+    <property name="TotalTriangles" value="58497" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="156659" />
+      <property name="Triangles" value="49387" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="5908" />
+      <property name="Triangles" value="3118" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="3342" />
+      <property name="Triangles" value="5992" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="POILight">
+      <property name="0" value="4, 13, 4" />
+      <property name="1" value="5, 7, 4" />
+    </property>
+    <property class="challenge_pallet">
+      <property name="0" value="2, 12, 7" />
+      <property name="1" value="3, 12, 7" />
+      <property name="2" value="3, 13, 7" />
+      <property name="3" value="3, 14, 7" />
+      <property name="4" value="4, 12, 7" />
+      <property name="5" value="3, 12, 8" />
+      <property name="6" value="3, 13, 8" />
+      <property name="7" value="3, 12, 9" />
+    </property>
+    <property class="challenge_gore">
+      <property name="0" value="19, 12, 20" />
+      <property name="1" value="19, 12, 21" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="21, 12, 22" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="3, 12, 22" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="21, 12, 18" />
+      <property name="1" value="22, 12, 18" />
+    </property>
+  </property>
+</prefab>

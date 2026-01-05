@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================== -->
+<!-- ASYLUM MIDGAME DEMONS - CUSTOM SOUND SET -->
+<!-- ============================================== -->
+<!-- Audio Bundle: Resources/AsylumDemonSounds.unity3d -->
+<!-- Audio Clips: demonroam, demonsense, demonalert, -->
+<!--              demonattack, demonpain, demondeath, -->
+<!--              demongiveup -->
+<!-- ============================================== -->
+<configs>
+
+<append xpath="/Sounds">
+
+	<!-- DEMON ROAM/IDLE SOUND (Priority 5 - Lowest) -->
+	<SoundDataNode name="asylumDemonRoam">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demonroam"/>
+		<Channel name="Mouth"/>
+		<Priority name="5"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="3"/>
+	</SoundDataNode>
+
+	<!-- DEMON SENSE SOUND (Priority 4) -->
+	<SoundDataNode name="asylumDemonSense">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demonsense"/>
+		<Channel name="Mouth"/>
+		<Priority name="4"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="3"/>
+	</SoundDataNode>
+
+	<!-- DEMON ALERT SOUND (Priority 3) -->
+	<SoundDataNode name="asylumDemonAlert">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demonalert"/>
+		<Channel name="Mouth"/>
+		<Priority name="3"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="3"/>
+	</SoundDataNode>
+
+	<!-- DEMON ATTACK SOUND (Priority 2) -->
+	<SoundDataNode name="asylumDemonAttack">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demonattack"/>
+		<Channel name="Mouth"/>
+		<Priority name="2"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="1.8"/>
+	</SoundDataNode>
+
+	<!-- DEMON PAIN/HURT SOUND (Priority 1) -->
+	<SoundDataNode name="asylumDemonPain">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demonpain"/>
+		<Channel name="Mouth"/>
+		<Priority name="1"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="1.8"/>
+	</SoundDataNode>
+
+	<!-- DEMON DEATH SOUND (Priority 0 - Highest) -->
+	<SoundDataNode name="asylumDemonDeath">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demondeath"/>
+		<Channel name="Mouth"/>
+		<Priority name="0"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="1.111"/>
+	</SoundDataNode>
+
+	<!-- DEMON GIVE UP SOUND (Priority 5 - Low) -->
+	<SoundDataNode name="asylumDemonGiveup">
+		<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/AsylumDemonSounds.unity3d?demongiveup"/>
+		<Channel name="Mouth"/>
+		<Priority name="5"/>
+		<maxVoicesPerEntity value="1"/>
+		<LowestPitch name="0.95"/>
+		<HighestPitch name="1.05"/>
+		<LocalCrouchVolumeScale value="1.0"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="3"/>
+	</SoundDataNode>
+
+</append>
+
+</configs>
+

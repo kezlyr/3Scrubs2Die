@@ -1,0 +1,39 @@
+<DW>
+	<append xpath="/materials">
+		<material id="MDW_Sheet">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="10000"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="99000"/>
+			<property name="MaxDamage" value="99000"/>
+			<property name="Experience" value="6"/>
+		</material>
+		<material id="Mcliffsolid">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="Hardness" type="float" value="10000"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="130"/>
+			<property name="Mass" type="int" value="11"/>
+			<property name="explosionresistance" value="99000"/>
+			<property name="MaxDamage" value="99000"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="Mcoalinv">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="Hardness" type="float" value="10000"/>
+			<property name="fertile_level" value="0"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="130"/>
+			<property name="Mass" type="int" value="1"/>
+			<property name="MaxDamage" value="50000"/>
+			<property name="Experience" value="2"/>
+			<property name="CanDestroy" value="false"/>
+		</material>
+	</append>
+</DW>

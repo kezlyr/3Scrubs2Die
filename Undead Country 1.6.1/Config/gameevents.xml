@@ -1,0 +1,517 @@
+<config>
+
+<!-- <set xpath="/gameevents/@max_entities">200</set> -->
+
+<append xpath="/gameevents">
+
+<action_sequence name="Juggernaut_horde">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieJuggernautAlly"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="4"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_distance" value="10"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Grumm_horde">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieRotnier"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_distance" value="10"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieSuperMutated"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_distance" value="10"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Mad_horde">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieSoldier"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_distance" value="10"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMaleHazmatFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="1"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_distance" value="10"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_01">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="8"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_02">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="10"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_03">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="12"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_04">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="14"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_05">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="16"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_06">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="16"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_07">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="16"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Hive_Horde_08">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="16"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="Bear_Horde_01">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieBear"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="12"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="DeadTreasureHorde">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="WanderingHorde"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="6"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="WelcomeParty01">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieBurntFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="6"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieBurnt"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="WelcomeParty02">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombiePlagueSpitterFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="6"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombiePlagueSpitter"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="WelcomeParty03">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFrostclawFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="6"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieLumberjackFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="WelcomeParty04">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMutatedRadiated"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="6"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMutatedFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="2"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="SleepingDogs">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieDog"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="7"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="false" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalDevilDog"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="3"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="55"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="false" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="HordeGigaFly">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalGigaFlySwarm"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="8"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="HordeVultures">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieVulture"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="8"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="air_spawn" value="true" />
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="NearTarget"/>
+			<property name="is_aggressive" value="false" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="AbominationHorde">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="WanderingHorde"/>
+			<property name="single_choice" value="false"/>
+			<property name="spawn_count" value="1"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="60"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="test509">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieDog"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="7"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="50"/>
+			<property name="max_distance" value="55"/>
+		<!--	<property name="attack_target" value="false"/> -->
+			<property name="spawn_type" value="Position"/>
+			<property name="is_aggressive" value="false" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="HordeLegendMutated">
+        <property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMutatedFeral"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="16"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="phase" value="1"/>
+			<property name="min_distance" value="20"/>
+			<property name="max_distance" value="30"/>
+			<property name="spawn_type" value="WanderingHorde"/>
+			<property name="is_aggressive" value="true" />
+		</action>
+	</action_sequence>
+	
+<!--	<action_sequence name="Smeed">
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game"/>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieJuggernautAlly" param1="zombiename" />
+			<property name="spawn_count" value="8" param1="spawncount" />
+			<property name="air_spawn" value="false" param1="airspawn" />
+		</action>
+	</action_sequence> -->
+
+</append>
+
+</config>

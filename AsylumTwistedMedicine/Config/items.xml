@@ -1,0 +1,356 @@
+<config>
+  <append xpath="/items">
+  
+<item name="curebiotics">
+	<property name="Tags" value="medical,medicalSkill,fitness,asylum"/>
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+   <property name="EconomicValue" value="15"/>
+    <property name="EconomicBundleSize" value="1"/>
+    <property name="SellableToTrader" value="false"/>
+    <property name="CraftingIngredientTime" value="8"/>
+	<property name="UnlockedBy" value="craftingMedical"/>
+	<property name="Stacknumber" value="8"/>
+	<property name="DisplayType" value="cureInfection"/>
+	<property name="Group" value="Science,CFMedical,Medical,TCMedical,AsylumMedicine"/>
+	<property name="SoundPickup" value="drug_antibiotics_grab"/>
+	<property name="SoundPlace" value="drug_antibiotics_place"/>
+	<property name="CustomIcon" value="curbiotics"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.5"/>
+		<property name="Sound_start" value="player_painkillers"/>
+	</property>
+	<effect_group tiered="false">
+		<display_value name="dCureInfection" value=".20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAsylumCorruption"/>
+	</effect_group>
+</item>
+
+<item name="theswiftshot">
+	<property name="Extends" value="drugPainkillers"/>
+	<property name="DisplayType" value="drugSteroids"/>
+	<property name="Tags" value="medical,medicalSkill,fitness,asylum"/>
+	<property name="EconomicValue" value="350"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="craftingMedical"/>
+	<property name="CraftingIngredientTime" value="8"/>
+	<property name="Group" value="Science,Medical,TCMedical,AsylumMedicine"/>
+    <property name="DescriptionKey" value="theswiftshotDesc"/>
+	<property name="SoundPickup" value="steroids_grab"/>
+	<property name="SoundPlace" value="steroids_place"/>
+	<property name="CustomIcon" value="swiftshot"/>
+	<effect_group tiered="false" name="Asylum Adrenaline Tier">
+		<display_value name="dCarryCapacity" value="80"/>
+		<display_value name="dRunSpeed" value=".3"/>
+		<display_value name="$waterAmountAdd" value="-60"/>
+		<display_value name="dDuration" value="900"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" operation="add" value="903"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" operation="set" value="2709">
+			<requirement name="CVarCompare" cvar="$buffDrugSteroidsDuration" operation="GT" value="2709"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSteroids"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAsylumAdrenaline"/>
+	</effect_group>
+</item>
+
+<item name="bleednomore">
+			<property name="Extends" value="medicalFirstAidBandage"/>
+			<property name="Tags" value="medical,medicalSkill,stopsBleeding,asylum"/>
+	        <property name="HoldType" value="16"/>
+	        <property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+	        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="Morganic"/>
+			<property name="Group" value="Science,Medical,TCMedical,AsylumMedicine"/>
+			<property name="EconomicValue" value="40"/>
+			<property name="DescriptionKey" value="bleednomoreDesc"/>
+			<property name="CustomIcon" value="bleednomore"/>
+			<property name="Stacknumber" value="20"/>
+			<property name="CraftingIngredientTime" value="6"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.3"/>
+		<property name="Sound_start" value="player_painkillers"/>
+	</property>
+<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value=".15"/>
+		<display_value name="dhealAbrasionMult" value=".15"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
+			<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="35"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		<display_value name="foodHealthAmount" value="35"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAsylumHemostatic"/>
+		<display_value name="dStopsBleeding" value="1"/>
+		</effect_group>
+</item>
+
+<item name="fatigueout">
+	<property name="Tags" value="medical,medicalSkill,fitness,asylum"/>
+	<property name="DisplayType" value="medicalVitamins"/>
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="EconomicValue" value="18"/>
+	<property name="DescriptionKey" value="fatigueoutDesc"/>
+	<property name="CustomIcon" value="fatigue"/>
+	<property name="Stacknumber" value="20"/>
+	<property name="CraftingIngredientTime" value="7"/>
+	<property name="Group" value="Science,CFChemicals,Medical,TCMedical,AsylumMedicine"/>
+	<property name="SoundPickup" value="drug_antibiotics_grab"/>
+	<property name="SoundPlace" value="drug_antibiotics_place"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.4"/>
+		<property name="Sound_start" value="player_painkillers"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffFatiguedTrigger"/>
+		<display_value name="dStopsWeakness" value="1"/>
+		<display_value name="dDiseaseResist" value="1.5"/>
+		<display_value name="dDuration" value="900"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugVitaminsDuration" operation="add" value="903"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugVitaminsDuration" operation="set" value="2709">
+			<requirement name="CVarCompare" cvar="$buffDrugVitaminsDuration" operation="GT" value="2709"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugVitamins"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAsylumStimulant"/>
+	</effect_group>
+</item>
+<item name="medicalration">
+	<property name="Tags" value="medical,medicalSkill,fitness,asylum"/>
+	<property name="DisplayType" value="medical"/>
+	<property name="HoldType" value="16"/>
+    <property name="Meshfile" value="@:Other/Items/Health/bandage.FBX"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="DescriptionKey" value="medicalrationDesc"/>
+	<property name="CustomIcon" value="medicalration"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="Group" value="Science,CFChemicals,Medical,TCMedical,AsylumMedicine"/>
+	<property name="SoundPickup" value="firstaidkit_grab"/>
+	<property name="SoundPlace" value="firstaidkit_place"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.5"/>
+<property name="Sound_start" value="player_firstAidKit"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="1"/>
+		<display_value name="dhealAbrasionMult" value="1"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
+			<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="180"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		<display_value name="foodHealthAmount" value="180"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/>
+		<display_value name="dStopsBleeding" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLaceration"/>
+		<display_value name="dStopsLaceration" value="1"/>
+
+		<!-- used on other -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="1"/>
+		
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffInjuryAbrasionTreated">
+			<requirement name="HasBuff" target="other" buff="buffInjuryAbrasion"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="180"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLaceration"/>
+
+		<!-- used on other, regular health per tick based on perkPhysician -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2.5">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/></triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<requirement name="HasBuff" buff="buffLegSprained"/>
+		<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLegSprained"/>
+	</effect_group>
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<requirement name="HasBuff" buff="buffLegBroken"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLegSplinted"/>
+	</effect_group>
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<requirement name="HasBuff" buff="buffArmSprained"/>
+		<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffArmSprained"/>
+	</effect_group>
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<requirement name="HasBuff" buff="buffArmBroken"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmSplinted"/>
+	</effect_group>
+	
+	<effect_group name="Secondary Action" tiered="false">
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLegSprained">
+			<requirement name="HasBuff" target="other" buff="buffLegSprained"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group name="Secondary Action" tiered="false"> <!-- splint other leg -->
+		<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffLegSplinted"/>
+	</effect_group>
+	<effect_group name="Secondary Action" tiered="false"> <!-- splint -->
+		<requirement name="HasBuff" target="other" buff="buffArmSprained"/>
+		<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffArmSprained"/>
+	</effect_group>
+	<effect_group name="Secondary Action" tiered="false"> <!-- splint other arm -->
+		<requirement name="HasBuff" target="other" buff="buffArmBroken"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffArmSplinted"/>
+	</effect_group>
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLegSprained">
+			<requirement name="HasBuff" buff="buffLegSprained"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLegBroken">
+			<requirement name="HasBuff" buff="buffLegBroken"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLegCast">
+			<requirement name="HasBuff" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLegCast">
+			<requirement name="HasBuff" buff="buffLegSplinted"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLegCast">
+			<requirement name="HasBuff" buff="buffLegCast"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffArmSprained">
+			<requirement name="HasBuff" buff="buffArmSprained"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffArmBroken">
+			<requirement name="HasBuff" buff="buffArmBroken"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmCast">
+			<requirement name="HasBuff" buff="buffArmBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArmCast">
+			<requirement name="HasBuff" buff="buffArmSplinted"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffArmCast">
+			<requirement name="HasBuff" buff="buffArmCast"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group name="Secondary Action" tiered="false">
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLegSprained">
+			<requirement name="HasBuff" target="other" buff="buffLegSprained"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLegBroken">
+			<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffLegCast">
+			<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffLegCast">
+			<requirement name="HasBuff" target="other" buff="buffLegSplinted"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLegCast">
+			<requirement name="HasBuff" target="other" buff="buffLegCast"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffArmSprained">
+			<requirement name="HasBuff" target="other" buff="buffArmSprained"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="1"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffArmBroken">
+			<requirement name="HasBuff" target="other" buff="buffArmBroken"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffArmCast">
+			<requirement name="HasBuff" target="other" buff="buffArmBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffArmCast">
+			<requirement name="HasBuff" target="other" buff="buffArmSplinted"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffArmCast">
+			<requirement name="HasBuff" target="other" buff="buffArmCast"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="GTE" value="3"/>
+		</triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<display_value name="dCureInfection" value=".35"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="35"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAsylumOmnipanacea"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- used on self -->
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		<display_value name="foodHealthAmount" value="30"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/>
+		<display_value name="dStopsBleeding" value="1"/>
+
+		<!-- used on other -->
+
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
+
+		<!-- used on other, regular health per tick based on perkPhysician -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2.5">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/></triggered_effect>
+	</effect_group>
+</item>
+
+
+</append>
+</config>

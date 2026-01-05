@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="150, 34, 150" />
+  <property name="RotationToFaceNorth" value="0" />
+  <property name="YOffset" value="-6" />
+  <property name="Zoning" value="none" />
+  <property name="Tags" value="streettile, rwgonly" />
+  <property class="Stats">
+    <property name="TotalVertices" value="789405" />
+    <property name="TotalTriangles" value="835355" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="661561" />
+      <property name="Triangles" value="697749" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="3480" />
+      <property name="Triangles" value="2488" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="60096" />
+      <property name="Triangles" value="30048" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="212" />
+      <property name="Triangles" value="106" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="64056" />
+      <property name="Triangles" value="104964" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="142, 6, 126" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="149, 12, 80" />
+    </property>
+  </property>
+</prefab>

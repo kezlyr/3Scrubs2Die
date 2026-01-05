@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+
+	
+	<append xpath="//biome[@name='pine_forest']//decorations" >	
+		<decoration type="block" blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_BirdsCircle01" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Flies_largeArea" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	</append>
+
+	
+	<append xpath="//biome[@name='snow']//decorations" >	
+		<decoration type="block" blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_BirdsCircle01" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Flies_largeArea" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	</append>
+	
+	<append xpath="//biome[@name='desert']//decorations" >	
+		<decoration type="block" blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_BirdsCircle01" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Flies_largeArea" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	</append>
+	
+	<append xpath="//biome[@name='wasteland']//decorations" >	
+		<decoration type="block" blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_BirdsCircle01" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Flies_largeArea" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	</append>
+	
+	<append xpath="//biome[@name='burnt_forest']//decorations" >	
+		<decoration type="block" blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_BirdsCircle01" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Flies_largeArea" prob="0.0002" rotatemax="7"/>
+		<decoration type="block" blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	</append>
+
+
+
+
+
+<!-- 	City Asphalt
+Country Road Asphalt -->
+
+
+	<append xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']">	
+	
+		<blockontop blockname="plantedtreeGrassAirRandomHelper" prob="0.01"/>
+		<blockontop blockname="treeBrownGrassDiagonal" prob="0.02"/>
+		<blockontop blockname="treeDeadPineLeaf" prob="0.0003"/>
+				
+		<blockontop blockname="mpl_RoadCrack_04_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_07_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_08_1x3" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_09_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_11_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_13_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_18_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_17" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_20" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_21" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_22" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_28_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_33_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_20_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_26" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_27" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_30" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_37_1x3" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch07" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="MPL_AsphaltPatch01b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch02b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch03b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch04b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch05b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch06b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch07b" prob="0.0003" rotatemax="7"/>
+		
+		
+		<blockontop blockname="MPL_PotHole01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole08" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole17" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole18" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole20" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_00" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_01" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_02" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_03" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_04" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_05" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_06" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_07" prob="0.004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_08" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_09" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_10" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_11" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_12" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_13" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_14" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_15" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_16" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_17" prob="0.001" rotatemax="7"/>
+		
+		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_08" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_14" prob="0.0002" rotatemax="7"/><!-- 
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_15" prob="0.0002" rotatemax="7"/> -->
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_17" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_18" prob="0.0002" rotatemax="7"/>		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_01" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_02" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_03" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_04" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_05" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_06" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_07" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_08" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_09" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_10" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_11" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_12" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_13" prob="0.0004" rotatemax="7"/>		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_18" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_20" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_21" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_22" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_23" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_24" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_25" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_26" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_27" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_28" prob="0.0002" rotatemax="7"/>			
+	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_01" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_02" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_03" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_04" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_05" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_06" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_07" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_08" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_09" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_10" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_11" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_12" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_13" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_14" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_15" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_16" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_17" prob="0.0003" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_18" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_19" prob="0.0003" rotatemax="7"/>	
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_05" prob="0.0002" rotatemax="7"/>
+		
+
+
+
+
+		
+		<blockontop blockname="mpl_ud_BonesScat_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_08" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_09" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_10" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_11" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_12" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_scat_corpse_1_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_2_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_3_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_4_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_5_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_6_fresh" prob="0.0001" rotatemax="7"/>
+		
+		
+		<blockontop blockname="mpl_ud_scat_corpse_1_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_2_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_3_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_4_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_5_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_6_bloat" prob="0.0001" rotatemax="7"/>
+
+
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_1_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_3_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_4_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_5_v1" prob="0.0001" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_1_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_3_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_4_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_5_v2" prob="0.0001" rotatemax="7"/>
+
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_pile_helper" prob="0.0001" rotatemax="7"/>
+
+				
+		<blockontop blockname="mpl_ud_DecoCarParts_Helper" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_Fog_Wispy" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Leaves" prob="0.002" rotatemax="7"/>		
+		<blockontop blockname="mpl_ud_BirdsCircle01" prob="0.0005" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Flies_largeArea" prob="0.0005" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+	
+	</append>
+	
+	
+	
+	
+	<append xpath="/worldgeneration/pois/poi[@name='City Asphalt']">	
+	
+		<blockontop blockname="plantedtreeGrassAirRandomHelper" prob="0.01"/>
+		<blockontop blockname="treeBrownGrassDiagonal" prob="0.02"/>
+		<blockontop blockname="treeDeadPineLeaf" prob="0.0003"/>
+				
+		<blockontop blockname="mpl_RoadCrack_04_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_07_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_08_1x3" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_09_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_11_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_13_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCrack_18_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_17" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_20" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_21" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_22" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_28_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadCutout_33_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_20_1x2" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_26" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_27" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_30" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_RoadStain_37_1x3" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch07" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="MPL_AsphaltPatch01b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch02b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch03b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch04b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch05b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch06b" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="MPL_AsphaltPatch07b" prob="0.0003" rotatemax="7"/>
+		
+		
+		<blockontop blockname="MPL_PotHole01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole08" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole14" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole17" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole18" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="MPL_PotHole20" prob="0.0002" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_00" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_01" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_02" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_03" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_04" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_05" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_06" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_07" prob="0.004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_08" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_09" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_10" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_11" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_12" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_13" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_14" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_15" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_16" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_17" prob="0.001" rotatemax="7"/>
+		
+		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_08" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_11" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_14" prob="0.0002" rotatemax="7"/><!-- 
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_15" prob="0.0002" rotatemax="7"/> -->
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_17" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Bottle_18" prob="0.0002" rotatemax="7"/>		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_01" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_02" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_03" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_04" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_05" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_06" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_07" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_08" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_09" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_10" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_11" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_12" prob="0.0004" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Cans_13" prob="0.0004" rotatemax="7"/>		
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_09" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_10" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_12" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_13" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_15" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_16" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_18" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_19" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_20" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_21" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_22" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_23" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_24" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_25" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_26" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_27" prob="0.0002" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Paint_28" prob="0.0002" rotatemax="7"/>			
+	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_01" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_02" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_03" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_04" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_05" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_06" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_07" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_08" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_09" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_10" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_11" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_12" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_13" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_14" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_15" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_16" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_17" prob="0.0003" rotatemax="7"/>	
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_18" prob="0.0003" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Trash_19" prob="0.0003" rotatemax="7"/>	
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_Wood_05" prob="0.0002" rotatemax="7"/>
+		
+		
+		<blockontop blockname="mpl_ud_BonesScat_01" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_02" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_03" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_04" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_05" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_06" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_07" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_08" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_09" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_10" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_11" prob="0.0006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_BonesScat_12" prob="0.0002" rotatemax="7"/>
+		
+		
+		<blockontop blockname="mpl_ud_scat_corpse_1_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_2_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_3_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_4_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_5_fresh" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_6_fresh" prob="0.0001" rotatemax="7"/>
+		
+		
+		<blockontop blockname="mpl_ud_scat_corpse_1_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_2_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_3_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_4_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_5_bloat" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_corpse_6_bloat" prob="0.0001" rotatemax="7"/>
+
+
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_1_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_3_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_4_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_5_v1" prob="0.0001" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_1_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_3_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_4_v2" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_5_v2" prob="0.0001" rotatemax="7"/>
+
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_pile_v1" prob="0.0001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_scat_Fallen_soldier_pile_v2" prob="0.0001" rotatemax="7"/>
+
+		<blockontop blockname="mpl_ud_DecoCarParts_Helper" prob="0.0002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Fog_Wispy" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Leaves" prob="0.002" rotatemax="7"/>
+		
+		<blockontop blockname="mpl_ud_BirdsCircle01" prob="0.0005" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Flies_largeArea" prob="0.0005" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Firefly_lrg" prob="0.0002" rotatemax="7"/>
+		
+		
+		
+		
+		
+		
+		
+	</append>
+
+
+
+
+
+
+	<append xpath="/worldgeneration/pois/poi[@name='Road Gravel']" >				
+		<blockontop blockname="plantedtreeGrassAirRandomHelper" prob="0.01"/>
+		<blockontop blockname="treeBrownGrassDiagonal" prob="0.02"/>
+		<blockontop blockname="treeDeadPineLeaf" prob="0.0003"/>
+		
+		<blockontop blockname="mpl_ud_Gnd_Scat_00" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_01" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_02" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_03" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_04" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_05" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_06" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_07" prob="0.006" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_08" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_09" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_10" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_11" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_12" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_13" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_14" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_15" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_16" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Gnd_Scat_17" prob="0.002" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Leaves" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Fog_Wispy" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="mpl_ud_Dust_Thick" prob="0.001" rotatemax="7"/>		
+		<blockontop blockname="mpl_ud_BirdsCircle01" prob="0.0005" rotatemax="7"/>
+		
+		
+	</append>
+
+
+
+
+	
+</configs>

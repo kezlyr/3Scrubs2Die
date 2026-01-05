@@ -1,0 +1,1594 @@
+<AsylumOverhaul>
+
+	<append xpath="/vehicles">
+			
+		<vehicle name="vehicleSVGMadMax">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="130"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="23, 16, 30, 12"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="400"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.190, -.058, -.266"/>
+				<property name="IKHandLRotation" value="-65.88229, 166.2278, -67.5802"/>
+				<property name="IKHandRPosition" value=".155, -.071, -.256"/>
+				<property name="IKHandRRotation" value="54.6357, 14.0615, 102.1651"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.34, -.38, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, -.36, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+			<!-- <property class="seat2">   Not set up but extras seats vanilla 4x4
+				<property name="class" value="Seat"/>
+				<property name="pose" value="44"/>
+				<property name="position" value="-.327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value="-.4,0,-3.6 ~ -1.4,0,-3.3 ~ -1.4,0,3.1 ~ -.8,0,-3.6 ~ -.8,0,3 ~ -.3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+				<property name="modT" value="M/Seat"/>
+				<property name="modRot" value="-90, 0, 0"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="45"/>
+				<property name="position" value=".327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value=".4,0,-3.6 ~ 1.4,0,-3.3 ~ 1.4,0,3.1 ~ .8,0,-3.6 ~ .8,0,3 ~ .3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+			</property> -->
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+				
+				<!-- 
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+				
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+				
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+	</vehicle>
+		
+		<vehicle name="vehicleSVGBloodPhoenix">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="130"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="22, 14, 28, 12"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="400"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.190, -.058, -.266"/>
+				<property name="IKHandLRotation" value="-65.88229, 166.2278, -67.5802"/>
+				<property name="IKHandRPosition" value=".155, -.071, -.256"/>
+				<property name="IKHandRRotation" value="54.6357, 14.0615, 102.1651"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.34, -.38, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, -.36, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+			<!-- <property class="seat2">   Not set up but extras seats vanilla 4x4
+				<property name="class" value="Seat"/>
+				<property name="pose" value="44"/>
+				<property name="position" value="-.327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value="-.4,0,-3.6 ~ -1.4,0,-3.3 ~ -1.4,0,3.1 ~ -.8,0,-3.6 ~ -.8,0,3 ~ -.3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+				<property name="modT" value="M/Seat"/>
+				<property name="modRot" value="-90, 0, 0"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="45"/>
+				<property name="position" value=".327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value=".4,0,-3.6 ~ 1.4,0,-3.3 ~ 1.4,0,3.1 ~ .8,0,-3.6 ~ .8,0,3 ~ .3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+			</property> -->
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+				
+				<!-- 
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+				
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+				
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+		</vehicle>
+		
+		<vehicle name="vehicleSVGRustyMate">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="150"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="23, 15, 31, 12"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="350"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.250, -.008, -.156"/>
+				<property name="IKHandLRotation" value="261.6, 89.1, 4"/>
+				<property name="IKHandRPosition" value=".245, -.021, -.166"/>
+				<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.334, -.4, 0.110"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".4, -.36, 0.21"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.250, -.008, -.156"/>
+				<property name="IKHandRPosition" value=".245, -.021, -.166"/>
+				<property name="IKHandLRotation" value="261.6, 89.1, 4"/>
+				<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+			</property>
+			
+				<property class="seat2">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="43"/>
+				<property name="position" value=".34, -.501, -.607"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="43"/>
+				<property name="position" value="-.35, -.501, -.607"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+				
+				<!-- 
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+				
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+				
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+		</vehicle>
+		
+		<vehicle name="vehicleSVGBuggy">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="150"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="25, 18, 34, 15"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="350"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.210, .01, -.06"/>
+				<property name="IKHandLRotation" value="270, 139.1, 0"/>
+				<property name="IKHandRPosition" value=".193, .0, -.06"/>
+				<property name="IKHandRRotation" value="71.4, 0, 133.0"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.350, -.110, 0.170"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, -.086, 0.155"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+			<!-- <property class="seat2">   Not set up but extras seats vanilla 4x4
+				<property name="class" value="Seat"/>
+				<property name="pose" value="44"/>
+				<property name="position" value="-.327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value="-.4,0,-3.6 ~ -1.4,0,-3.3 ~ -1.4,0,3.1 ~ -.8,0,-3.6 ~ -.8,0,3 ~ -.3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+				<property name="modT" value="M/Seat"/>
+				<property name="modRot" value="-90, 0, 0"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="45"/>
+				<property name="position" value=".327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value=".4,0,-3.6 ~ 1.4,0,-3.3 ~ 1.4,0,3.1 ~ .8,0,-3.6 ~ .8,0,3 ~ .3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+			</property> -->
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+				
+				<!-- 
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+				
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+				
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+		</vehicle>
+		
+		<vehicle name="vehicleSVGDHLTruck">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="150"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="20, 13, 27, 10"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="1000"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.210, .01, -.06"/>
+				<property name="IKHandLRotation" value="270, 139.1, 0"/>
+				<property name="IKHandRPosition" value=".193, .0, -.06"/>
+				<property name="IKHandRRotation" value="71.4, 0, 133.0"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.350, .110, 0.170"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, .069, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+				<property class="seat2">   
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, .069, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".34, .069, 0.42"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+				
+				<!-- 
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+				
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+				
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+		</vehicle>
+
+		<vehicle name="vehicleSVGForklift">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="150"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="9, 7, 12, 7"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+			
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Minibike/minibike_accel_,
+									Vehicles/Minibike/minibike_decel_,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Minibike/minibike_idle_lp_,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Minibike/minibike_run_lp_
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Minibike/minibike_accel_,
+									Vehicles/Minibike/minibike_decel_,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Minibike/minibike_run_lp_
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Minibike/minibike_accel_,
+									Vehicles/Minibike/minibike_decel_,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Minibike/minibike_run_lp_
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Minibike/minibike_decel_,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Minibike/minibike_run_lp_
+									"/>
+				<property name="sound_start" value="Vehicles/Minibike/minibike_start_"/>
+				<property name="sound_shut_off" value="Vehicles/Minibike/minibike_shutoff_"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Minibike/minibike_empty_"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property> 
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="1000"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+			
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.210, -.01, -.04"/>
+				<property name="IKHandLRotation" value="270, 139.1, 0"/>
+				<property name="IKHandRPosition" value=".193, -.10, -.03"/>
+				<property name="IKHandRRotation" value="71.4, 0, 133.0"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="43"/>
+				<property name="position" value="-.01, .05, 0.03"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+			
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="20"/>
+				<property name="position" value=".003, .862, -.644"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+			</property>
+
+			
+			<!-- <property class="seat2">   Not set up but extras seats vanilla 4x4
+				<property name="class" value="Seat"/>
+				<property name="pose" value="44"/>
+				<property name="position" value="-.327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value="-.4,0,-3.6 ~ -1.4,0,-3.3 ~ -1.4,0,3.1 ~ -.8,0,-3.6 ~ -.8,0,3 ~ -.3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+				<property name="modT" value="M/Seat"/>
+				<property name="modRot" value="-90, 0, 0"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="45"/>
+				<property name="position" value=".327, .304, -2.987"/>
+				<property name="rotation" value="0, 180, 0"/>
+				<property name="exit" value=".4,0,-3.6 ~ 1.4,0,-3.3 ~ 1.4,0,3.1 ~ .8,0,-3.6 ~ .8,0,3 ~ .3,1.4,-2.8"/>
+				<property name="mod" value="seat"/>
+			</property> -->
+			
+							
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+			
+			
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+			
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/> 
+			</property>-->
+			
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+		</vehicle>
+
+		<vehicle name="vehicleSVGAsylumClassic">
+
+			<property name="cameraDistance" value="5.5, 7"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="140"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+
+			<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+			<property name="velocityMax_turbo" value="24, 16, 32, 13"/>
+			<property name="brakeTorque" value="3300"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+			<property name="hornSound" value="suv_horn"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+			</property>
+
+
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="M/Particles/p_on"/>
+				<property name="particleDamaged" value="M/Particles/p_damaged"/>
+				<property name="particleBroken" value="M/Particles/p_broken"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/>
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									Vehicles/Suv/suv_accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+									-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									Vehicles/Suv/suv_accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									Vehicles/Suv/suv_accel3,
+									Vehicles/Suv/suv_decel2,
+									-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									Vehicles/Suv/suv_decel2,
+									-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+				<property name="mod" value="speed"/>
+				<!-- <property name="modT" value="M/Turbo"/>
+				<property name="modHideT" value="M/Hood"/>-->
+			</property>
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="375"/>
+				<!-- <property name="mod" value="fueltank"/>
+				<property name="modT" value="M/Fuel"/> -->
+			</property>
+
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="transform" value="M/SteeringWheel"/>
+				<property name="steerAngle" value="0, 0, -60"/>
+				<property name="IKHandLPosition" value="-.250, -.008, -.156"/>
+				<property name="IKHandLRotation" value="261.6, 89.1, 4"/>
+				<property name="IKHandRPosition" value=".245, -.021, -.166"/>
+				<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+				<property name="pose" value="40"/>
+				<property name="position" value="-.334, -.4, 0.110"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="41"/>
+				<property name="position" value=".4, -.36, 0.21"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.250, -.008, -.156"/>
+				<property name="IKHandRPosition" value=".245, -.021, -.166"/>
+				<property name="IKHandLRotation" value="261.6, 89.1, 4"/>
+				<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+			</property>
+
+			<property class="seat2">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="43"/>
+				<property name="position" value=".34, -.501, -.607"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+
+			<property class="seat3">
+				<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+				<property name="pose" value="43"/>
+				<property name="position" value="-.35, -.501, -.607"/>
+				<property name="rotation" value="356, 0, 0"/>
+				<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+				<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+				<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+				<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+				<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+			</property>
+
+
+			<property class="wheel0">
+				<property name="steerTransform" value="M/Wheel0/Wheel0"/>
+				<property name="tireTransform" value="M/Wheel0/Wheel0/Wheel0"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				<property name="steerTransform" value="M/Wheel1/Wheel1"/>
+				<property name="tireTransform" value="M/Wheel1/Wheel1/Wheel1"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="M/Wheel2/Wheel2"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="M/Wheel3/Wheel3"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="bright" value=".75"/>
+				<property name="transform" value="M/HeadLights/Lights"/>
+
+				<!--
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightBar"/>
+				<property name="modOnT" value="M/LightBar/Lights"/>
+				<property name="modMatEmissive" value="909090"/>
+
+				<property name="tailEmissive" value="c0c0c0"/>-->
+			</property>
+
+			<!--<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="M/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
+
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="Fuel"/>
+				 <property name="TODOmodRBT" value="FuelSaver"/>
+			</property>-->
+
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+
+	</vehicle>
+
+
+	<vehicle name="vehicleSVGAsylumHotrod">
+
+		<property name="cameraDistance" value="5.5, 7"/>
+		<property name="cameraTurnRate" value=".2, .35"/>
+		<property name="upAngleMax" value="70"/>
+		<property name="upForce" value="1"/>
+		<property name="steerRate" value="140"/>
+		<property name="steerCenteringRate" value="90"/>
+		<property name="tiltAngleMax" value="80"/>
+		<property name="tiltThreshold" value="3"/>
+		<property name="tiltDampening" value=".22"/>
+		<property name="tiltDampenThreshold" value="8"/>
+		<property name="tiltUpForce" value="0"/>
+
+		<property name="motorTorque_turbo" value="2500, 1500, 3800, 1800"/>
+		<property name="velocityMax_turbo" value="24, 16, 32, 13"/>
+		<property name="brakeTorque" value="3300"/>
+		<property name="unstickForce" value="1"/>
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+		<property name="wheelPtlScale" value=".3"/> <!-- Amount of dust particles from wheels 1 is 100%-->
+
+		<property name="hornSound" value="suv_horn"/>
+
+		<property class="chassis">
+			<property name="class" value="Chassis"/>
+			<!-- <property name="paint" value="your main vehicle mesh LOD name "/> -->
+		</property>
+
+
+		<property class="engine">
+			<property name="class" value="Engine"/>
+			<property name="particleOn" value="M/Particles/p_on"/>
+			<property name="particleDamaged" value="M/Particles/p_damaged"/>
+			<property name="particleBroken" value="M/Particles/p_broken"/>
+			<property name="fuelKmPerL" value=".1"/>
+			<property name="foodDrain" value=".002,.00811"/>
+			<property name="gear1" value="
+								500,2500, -1400,800,0, 700,2200,900,
+								Vehicles/Suv/suv_accel1,
+								Vehicles/Suv/suv_decel1,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+								"/>
+			<property name="gear2" value="
+								500,2500, -2000,1000,2000, 600,2200,800,
+								Vehicles/Suv/suv_accel2,
+								Vehicles/Suv/suv_decel1,
+								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								"/>
+			<property name="gear3" value="
+								500,2500, -2000,1000,2000, 500,2200,1000,
+								Vehicles/Suv/suv_accel3,
+								Vehicles/Suv/suv_decel2,
+								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								"/>
+			<property name="gear4" value="
+								500,2500, -2000,1000,2000, 500,9999,9999,
+								,
+								Vehicles/Suv/suv_decel2,
+								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+								"/>
+			<property name="sound_start" value="Vehicles/Suv/suv_startup"/>
+			<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+
+			<property name="mod" value="speed"/>
+			<!-- <property name="modT" value="M/Turbo"/>
+			<property name="modHideT" value="M/Hood"/>-->
+		</property>
+
+		<property class="fuelTank">
+			<property name="class" value="FuelTank"/>
+			<property name="capacity" value="400"/>
+			<!-- <property name="mod" value="fueltank"/>
+			<property name="modT" value="M/Fuel"/> -->
+		</property>
+
+		<property class="handlebars">
+			<property name="class" value="Steering"/>
+			<property name="transform" value="M/SteeringWheel"/>
+			<property name="steerAngle" value="0, 0, -60"/>
+			<property name="IKHandLPosition" value="-.190, -.058, -.266"/>
+			<property name="IKHandLRotation" value="-65.88229, 166.2278, -67.5802"/>
+			<property name="IKHandRPosition" value=".155, -.071, -.256"/>
+			<property name="IKHandRRotation" value="54.6357, 14.0615, 102.1651"/>
+		</property>
+
+		<property class="seat0">
+			<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+			<property name="pose" value="40"/>
+			<property name="position" value="-.34, -.38, 0.42"/>
+			<property name="rotation" value="356, 0, 0"/>
+			<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+		</property>
+
+		<property class="seat1">
+			<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+			<property name="pose" value="43"/>
+			<property name="position" value=".34, -.38, 0.42"/>
+			<property name="rotation" value="356, 0, 0"/>
+			<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+			<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+			<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+			<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+			<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+		</property>
+
+		<property class="seat2">
+			<property name="class" value="Seat"/> <!-- Drive Pose Front Seat-->
+			<property name="pose" value="40"/>
+			<property name="position" value="-.35, -.501, -.607"/>
+			<property name="rotation" value="356, 0, 0"/>
+			<property name="exit" value="-1.7,0,0 ~ 1.7,0,-1 ~ -.25,0,-3.6 ~ -.25,0,3 ~ -.4,2.1,0"/>
+			<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+			<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+			<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+			<property name="IKHandRRotation" value="37.2, 189.3, 279"/>
+		</property>
+
+		<property class="seat3">
+			<property name="class" value="Seat"/> <!-- Passenger Pose Front Seat-->
+			<property name="pose" value="43"/>
+			<property name="position" value="-.35, -.501, -.607"/>
+			<property name="rotation" value="356, 0, 0"/>
+			<property name="exit" value="1.7,0,0 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+			<property name="IKHandLPosition" value="-.365, 0.621, .441"/>
+			<property name="IKHandRPosition" value=".365, 0.621, 0.441"/>
+			<property name="IKHandLRotation" value="325.9, 34.6, 64.1"/>
+			<property name="IKHandRRotation" value="46.6, 279.3, 9.3"/>
+		</property>
+
+
+		<property class="wheel0">
+			<property name="steerTransform" value="M/Wheel0/Wheel0"/>
+			<property name="tireTransform" value="M/Wheel0/Wheel0/Wheel0"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, .8"/>
+		</property>
+
+		<property class="wheel1">
+			<property name="steerTransform" value="M/Wheel1/Wheel1"/>
+			<property name="tireTransform" value="M/Wheel1/Wheel1/Wheel1"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, .8"/>
+		</property>
+
+		<property class="wheel2">
+			<property name="tireTransform" value="M/Wheel2/Wheel2"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="wheel3">
+			<property name="tireTransform" value="M/Wheel3/Wheel3"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="headlight">
+			<property name="class" value="Headlight"/>
+			<property name="bright" value=".75"/>
+			<property name="transform" value="M/HeadLights/Lights"/>
+
+			<!--
+			<property name="matT" value="M/HeadLights"/>
+			<property name="matEmissive" value="808080"/>
+
+			<property name="mod" value="light"/>
+			<property name="modT" value="M/LightBar"/>
+			<property name="modOnT" value="M/LightBar/Lights"/>
+			<property name="modMatEmissive" value="909090"/>
+
+			<property name="tailEmissive" value="c0c0c0"/>-->
+		</property>
+
+		<!--<property class="plow">
+			<property name="class" value="VehiclePart"/>
+			<property name="mod" value="plow"/>
+			<property name="modT" value="M/Plow"/>
+			<property name="modRBT" value="Plow"/>
+		</property>
+
+		<property class="armor">
+			<property name="class" value="VehiclePart"/>
+			<property name="mod" value="armor"/>
+			<property name="modT" value="Armor"/>
+			<property name="TODOmodRBT" value="Armor"/>
+		</property>
+
+		<property class="fuelsaver">
+			<property name="class" value="VehiclePart"/>
+			<property name="mod" value="fuelsaver"/>
+			<property name="modT" value="Fuel"/>
+			 <property name="TODOmodRBT" value="FuelSaver"/>
+		</property>-->
+
+		<property class="storage">
+			<property name="class" value="Storage"/>
+		</property>
+
+</vehicle>
+
+
+
+
+
+
+	</append>
+
+</AsylumOverhaul>

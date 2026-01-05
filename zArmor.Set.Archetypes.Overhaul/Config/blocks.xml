@@ -1,0 +1,63 @@
+<ASAO>
+	<append xpath="/blocks">
+		<!-- 
+            This creates the new "Homestead Fire" block.
+            It functions exactly like a normal campfire but applies a special buff in a 20-block radius.
+        -->
+		<block name="campfireRancherHomestead">
+            <!-- Core Class & Workstation Logic -->
+            <property name="Class" value="Campfire"/>
+            <property name="Workstation" value="campfireRancherHomestead"/>
+            <property class="Workstation">
+                <property name="CraftingAreaRecipes" value="campfire"/>
+                <property name="Modules" value="tools,output,fuel,input"/>
+                <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            </property>
+            <property name="Tags" value="workstationSkill"/>
+            
+            <!-- UI & Display -->
+            <property name="CreativeMode" value="Player"/>
+            <property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+            <property name="CraftIcon" value="ui_game_symbol_spatula"/>
+            <property name="CraftActionName" value="lblContextActionCook"/>
+            <property name="Stacknumber" value="1"/>
+            
+            <!-- Visual & Model Properties -->
+            <property name="Material" value="MstoneNoGlue"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="@:Entities/Crafting/campfireCookStationPrefab.prefab"/>
+            <property name="ParticleName" value="campfire"/>
+	        <property name="ParticleOffset" value="0.5,0.1,0.5"/>
+            
+            <!-- Placement & Interaction -->
+            <property name="Place" value="TowardsPlacer90"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="StabilitySupport" value="false"/>
+            
+            <!-- Stats & Values -->
+            <property name="MaxDamage" value="100"/>
+            <property name="HeatMapStrength" value="6"/>
+            <property name="HeatMapTime" value="5000"/>
+            <property name="HeatMapFrequency" value="1000"/>
+            <property name="EconomicValue" value="12"/>
+            
+            <!-- Sounds, Effects, and Drops -->
+            <property name="OpenSound" value="campfire_open"/>
+            <property name="CloseSound" value="campfire_close"/>
+            <property name="CraftSound" value="campfire_cook_click"/>
+            <property name="CraftCompleteSound" value="campfire_complete_item"/>
+            <property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+            <property class="RepairItems"><property name="resourceRockSmall" value="10"/></property>
+            <drop event="Destroy" name="resourceRockSmall" count="1,5"/>
+            <property name="TakeDelay" value="5"/>
+            
+            <!-- MODDED & UNIQUE PROPERTIES -->
+            <property name="CustomIcon" value="campfire"/>
+            <property name="DescriptionKey" value="campfireRancherHomesteadDesc"/>
+            <property name="Group" value="Building,Tools"/>
+            <!-- CORRECTED PROPERTY: This will emit the aura buff in a 20-meter radius -->
+            <property name="ActiveRadiusEffects" value="buffRancherAura(20)"/>
+        </block>
+	</append>
+</ASAO>

@@ -1,0 +1,1079 @@
+Key,english
+
+trader_base,Survivor Stronghold
+
+quest_WhiteRiverCitizen1_description, "[03fc5a]Undead Country. Within it's borders is said to be the most dangerous region of land on the planet. No humans inhabit except for a few brave traders. Several large human settlements consider it suicide to explore within."
+quest_WhiteRiverCitizen1_description_title,Undead Country Drifter
+
+noteItsOver,Note
+noteItsOverDesc, "After being bitten by a strange zombie, you've become part of a zombie hive mind. Zombies know where you are, and hordes chase you relentlessly. You traveled to Undead Country to find a cure for your ailment. Being hunted by hordes of zombies, as well as the brutality of Undead Country, will make this an extremely difficult task. Good Luck."
+
+foodBurntSmoothie0,Burnt Forest Medicine
+foodOasisSmoothie0,Desert Medicine
+foodFrostbiteSmoothie0,Frostbite Medicine 
+foodAtomicSmoothie0,Wasteland Medicine
+
+buffBurnt_Storm1Desc, "You are in a severe Ember Storm!\n\nSeek shelter!\nWhile in the storm, stamina regenerates 50% slower."
+buffDesert_Storm1Desc, "You are in a severe Sand Storm!\n\nSeek shelter!\nWhile in the storm, stamina regenerates 50% slower."
+buffSnow_Storm1Desc, "You are in a severe Snow Storm!\n\nSeek shelter!\nWhile in the storm, you move 25% slower."
+buffWasteland_Storm1Desc, "You are in a severe Radiation Storm!\n\nSeek shelter!\nWhile in the storm, stamina regenerates 50% slower and you move 25% slower."
+
+foodAtomicSmoothieDesc, "Temporarily reduces biome hazard effects and grants faster movement while in the Wasteland."
+
+foodOasisSmoothieDesc, "Buys you time before the desert turns you into dust.\n\nTemporarily reduces biome hazard effects and grants faster movement while in the Desert."
+
+biomeBadge1Desc, "The Gas Mask permanently removes the negative effects of smoke inhalation in the Burnt Forest.\n\nDoes not protect against storms."
+biomeBadge2Desc, "Cooling mesh permanently removes the negative effects of heat in the Desert.\n\nDoes not protect against storms."
+biomeBadge3Desc, "Insulated Liner permanently removes the negative effects of cold in the Snow.\n\nDoes not protect against storms."
+biomeBadge4Desc, "Radiation Resistant Foil permanently removes the negative effects of radiation in the Wasteland.\n\nDoes not protect against storms."
+
+biomeWeatherItem1,Gas Mask
+biomeWeatherItem2,Cooling Mesh
+biomeWeatherItem3,Insulated Liner
+biomeWeatherItem4,Radiation Resistant Foil
+
+drugHealthBar,Health Boost
+drugHealthBarDesc, "Increases your max health as well as your resistance to critical injuries and the speed at which they heal naturally."
+
+castle_talmberg,Talmberg Castle
+
+attmutationperks,Wild Wastes
+
+perkbeastmasterKey,Beast Master
+perkbeastmasterDesc, "Become the best hunter in the wasteland."
+perkbeastmasterRank1Desc, "Beast Hunter"
+perkbeastmasterRank1LongDesc, "Reduces damage from all animals by 10%.\nIncreases damage to animals by 5%."
+perkbeastmasterRank2Desc, "Beast Expert"
+perkbeastmasterRank2LongDesc, "Reduces damage from all animals by 15%.\nIncreases damage to animals by 10%."
+perkbeastmasterRank3Desc, "Beast Master"
+perkbeastmasterRank3LongDesc, "Reduces damage from all animals by 20%.\nIncreases damage to animals by 15%."
+
+perkDeadsTreasureKey,Dead's Treasure
+perkDeadsTreasureDesc, "Hordes of undead are on the search."
+
+perkDeadsTreasureRank1Desc,Dead Treasure
+perkDeadsTreasureRank1LongDesc, "When you open any container, there is a 15% chance for a small horde to spawn and come after you."
+
+buffDeadTreasuretip, "[ff8052]You can hear them coming..."
+
+perkWelcomePartyKey,Welcome Party
+perkWelcomePartyDesc, "A welcoming party has come to greet you."
+
+perkWelcomePartyRank1Desc,Welcome Party
+perkWelcomePartyRank1LongDesc, "Upon entering any biome other than the pine forest, a welcoming party of that biome's zombies will attack you. 5 minute cooldown."
+
+perkStrayDogsKey,Stray Dogs
+perkStrayDogsDesc, "Roving packs of stray dogs have been spotted in the area."
+
+perkStrayDogsRank1Desc,Stray Dogs
+perkStrayDogsRank1LongDesc, "Upon entering combat, there is a 3% chance for a pack of dogs to be alerted and hunt you down. 7 minute cooldown."
+
+perkGigaFlyKey,Bug Country
+perkGigaFlyDesc, "Massive swarms of bugs have been attacking any living creature they see."
+
+perkWakeVultureskey,Dangerous Skies
+perkWakeVulturesDesc, "Hungry vultures fly high above looking for anything to eat."
+
+perkWakeVulturesRank1Desc,Dangerous Skies
+perkWakeVulturesRank1LongDesc, "Upon killing an enemy, there is an 8% chance for many vultures to descend upon you. 7 minute cooldown."
+
+perkGigaFlyRank1Desc,Bug Country
+perkGigaFlyRank1LongDesc, "When you get hit by a zombie, there is a 10% chance for swarms of bugs to come harass you."
+
+perkSunAndMoonKey,Sun And Moon
+perkSunAndMoonDesc, "During the Day you gain 30 max stamina but lose 10% XP from kills. During the night you lose 25 max stamina but gain 30% XP from kills."
+
+perkSunAndMoonRank1Desc,Sun And Moon
+perkSunAndMoonRank1LongDesc, "During the Day you gain 30 max stamina but lose 10% XP from kills. During the night you lose 25 max stamina but gain 30% XP from kills. During Blood Moon you gain 10% XP from kills."
+
+perkCorpseRobberkey,Corpse Robber
+perkCorpseRobberDesc, "You've become skilled in ripping everything useful off of dead bodies."
+
+perkCorpseRobberRank1Desc,Corpse Robber
+perkCorpseRobberRank1LongDesc, "When looting dead soldiers, lumberjacks or bikers you have a high chance of finding useable armor and other uncommon items. Some other zombies also have a chance to carry better items."
+
+perkBloodMoonRageKey,Blood Moon Barbarian 
+perkBloodMoonRageDesc, "The Blood Moon has empowered you."
+
+perkBloodMoonRageRank1Desc,Frenzy
+perkBloodMoonRageRank1LongDesc, "During Blood Moon you deal 50% more damage with melee weapons, attack 50% faster with melee weapons, move 30% faster, have 20% damage resist, regenerate stamina 20% faster and gain 50 stamina + 5 HP on kill."
+
+perkBrinkOfDeathKey,Brink Of Death
+perkBrinkOfDeathDesc, "Each critical injury increases your damage by 10%. "
+
+perkBrinkOfDeathRank1Desc,Brink Of Death
+perkBrinkOfDeathRank1LongDesc, "Each critical injury increases your damage by 10%, up to a maximum of 60%. Infection and dysentery do not count. Treating the injuries will remove the damage buff."
+
+perkZombificationKey,Zombification
+perkZombificationDesc, "As your infection gets worse, you get more and more positive effects. Does not get rid of the negative effects."
+
+perkZombificationRank1Desc,Zombification
+perkZombificationRank1LongDesc, "With a mild infection, you deal 5% more damage and run 5% faster. With a serious infection, + 5% to previous effects,10% less food and water usage and regen 1 health every 2 seconds. A life threatening infection gives all previous effects + 5%, as well as Bartering 5%."
+
+perkBrainDamageKey,Brain Damage 
+perkBrainDamageDesc, "30% headshot damage against radiated, charged, infernal and frenzied zombies."
+
+perkBrainDamageRank1Desc,Brain Damage
+perkBrainDamageRank1LongDesc, "Increases headshot damage by 30% against radiated, charged, infernal and frenzied zombies."
+
+perkSecretStashkey,Secret Stash 
+perkSecretStashDesc, "Gain acsess to better items sold by traders."
+
+perkSecretStashRank1Desc,Secret Stash 
+perkSecretStashRank1LongDesc, "Increases trader stage by 10."
+
+Reddit space 
+
+meleeSuperHeatedLaserSword,Super Heated Laser Sword
+meleeSuperHeatedLaserSwordDesc, "A super heated sword that causes bleed and burn on heavy attack. Falls under the electrocutioner perk."
+
+modMutationResilientDesc, "Created at the campfire using the DNA of highly mutated zombies.\nMax health 10+ \nMax stamina 10+\nCritical injury resistance 15%."
+modMutationResilient,Resilience Mutation 
+
+modMutationSwiftness,Swiftness Mutation
+modMutationSwiftnessDesc, "Created at the campfire using the DNA of highly mutated zombies.\nMelee attack speed 25%\nRun speed 5%."
+
+modMutationAssailant,Assailant Mutation
+modMutationAssailantDesc, "Created at the small chem station using the DNA of highly mutated zombies.\nDamage against zombies 15%.\nRun speed 5%."
+
+modMutationRampage,Rampage Mutation
+modMutationRampageDesc, "Created at the small chem station using the DNA of highly mutated zombies.\nMax health 5+\nMax stamina 5+\nKilling an enemy grants a 10% damage stack up to 30%. Decays over 4 seconds."
+
+modMutationAdrenaline,Adrenaline Mutation
+modMutationAdrenalineDesc, "Created at the chemistry station using the DNA of highly mutated zombies.\nMax health 10+\nMax stamina 10+\nWhen hit by an enemy, gain 20 stamina and 30% run speed for 2 seconds."
+
+AdrenalineDesc, "When hit by an enemy, gain 20 stamina and 50% run speed for 2 seconds."
+
+mutationDNA1,Subject 1-31 DNA
+mutationDNA2,Subject 2-52 DNA
+mutationDNA3,Subject 3-89 DNA
+mutationDNA4,Subject 4-675 DNA
+mutationDNA5,Subject 5-X DNA
+
+mutationDNADesc, "DNA samples extracted from highly mutated and uncommon zombies. Used in creating various mutations."
+
+Disassembled762AmmoBundle,Disassembled 7.62mm Ammo
+Disassembled9mmAmmoBundle,Disassembled 9mm Ammo
+Disassembled44AmmoBundle,Disassembled 44 Magnum Ammo
+DisassembledShotgunShellAmmoBundle,Disassembled Shotgun Ammo
+
+DisassembledAmmoDesc, "Break down bullets so it can be used to craft other types of ammo. Get 75% of the materials back."
+
+plantedHydroCropsGroupDesc, "Enhanced seeds grow 30% faster. Made at the hydroponic."
+plantedHydroCorn1,Enhanced Corn ([a6a451]Seed)
+plantedHydroCorn2,Enhanced Corn ([4a9cba]Growing)
+plantedHydroCorn3HarvestDesc, "Enhanced Corn"
+
+plantedHydroMushroom1,Enhanced Mushroom ([a6a451]Seed)
+plantedHydroMushroom2,Enhanced Mushroom ([4a9cba]Growing)
+plantedHydroMushroom3HarvestDesc, "Enhanced Mushroom"
+
+plantedHydroYucca1,Enhanced Yucca ([a6a451]Seed)
+plantedHydroYucca2,Enhanced Yucca ([4a9cba]Growing)
+plantedHydroYucca3HarvestDesc, "Enhanced Yucca"
+
+plantedHydroCotton1,Enhanced Cotton ([a6a451]Seed)
+plantedHydroCotton2,Enhanced Cotton ([4a9cba]Growing)
+plantedHydroCotton3HarvestDesc, "Enhanced Cotton"
+
+plantedHydroCoffee1,Enhanced Coffee ([a6a451]Seed)
+plantedHydroCoffee2,Enhanced Coffee ([4a9cba]Growing)
+plantedHydroCoffee3HarvestDesc, "Enhanced Coffee"
+
+plantedHydroGoldenrod1,Enhanced Goldenrod ([a6a451]Seed)
+plantedHydroGoldenrod2,Enhanced Goldenrod ([4a9cba]Growing)
+plantedHydroGoldenrod3HarvestDesc, "Enhanced Goldenrod"
+
+plantedHydroAloe1,Enhanced Aloe Vera ([a6a451]Seed)
+plantedHydroAloe2,Enhanced Aloe Vera ([4a9cba]Growing)
+plantedHydroAloe3HarvestDesc, "Enhanced Aloe Vera"
+
+plantedHydroBlueberry1,Enhanced Blueberry ([a6a451]Seed)
+plantedHydroBlueberry2,Enhanced Blueberry ([4a9cba]Growing)
+plantedHydroBlueberry3HarvestDesc, "Enhanced Blueberry"
+
+plantedHydroPotato1,Enhanced Potato ([a6a451]Seed)
+plantedHydroPotato2,Enhanced Potato ([4a9cba]Growing)
+plantedHydroPotato3HarvestDesc, "Enhanced Potato"
+
+plantedHydroChrysanthemum1,Enhanced Chrysanthemum ([a6a451]Seed)
+plantedHydroChrysanthemum2,Enhanced Chrysanthemum ([4a9cba]Growing)
+plantedHydroChrysanthemum3HarvestDesc, "Enhanced Chrysanthemum"
+
+plantedHydroGraceCorn1,Enhanced Super Corn ([a6a451]Seed)
+plantedHydroGraceCorn2,Enhanced Super Corn ([4a9cba]Growing)
+plantedHydroGraceCorn3HarvestDesc, "Enhanced Super Corn"
+
+plantedHydroPumpkin1,Enhanced Pumpkin ([a6a451]Seed)
+plantedHydroPumpkin2,Enhanced Pumpkin ([4a9cba]Growing)
+plantedHydroPumpkin3HarvestDesc, "Enhanced Pumpkin"
+
+plantedHydroHop1,Enhanced Hop ([a6a451]Seed)
+plantedHydroHop2,Enhanced Hop ([4a9cba]Growing)
+plantedHydroHop3HarvestDesc, "Enhanced Hop"
+
+buffRadpoisoning,Radiation Poisoning 
+buffRadpoisoningDesc, "ooooooh... I'M FUCKING DYING!"
+buffCombatInjection,Combat Injection 
+buffCInjectionDesc, "Increases run speed, stamina regen, damage with melee weapons, prevents stuns and makes you take less damage."
+buffCampfireAOEEffectName,Comfort
+buffCampfireAOEEffectDesc, "Heals 12 health a minute."
+
+buffRampageName,Rampage
+perkRampageLongDesc, "Killing an enemy grants a 10% damage stack up to 30%. Decays over 3 seconds."
+
+drinkJarInvasion,Hive Concoction
+drinkJarInvasionDesc, "Allows zombies to find and invade you on use."
+
+weatherStorm, " "
+weatherStormBuild, " "
+weatherStormBuildLeave, " "
+weatherStormBuildSafe, " "
+weatherStormLeave, " "
+weatherStormSafe, " "
+
+protectiveGearSchematicDesc, "Teaches you how to craft protective gear like gas masks and cooling mesh for biome survival. If you lose this schematic, completing the biome challenges will also let you craft protective gear."
+
+ChemStationSmall,Small Chemistry Station
+ChemStationSmallDesc, "Allows you to craft acid and advanced drugs."
+DBFermentationBarrel,Fermentation Barrel
+DBFermentationBarrelDesc, "Ferment alcohol and the main ingredient to acid."
+DBResearchBench,Research Bench
+DBResearchBenchDesc, "Learn how to craft various schematics."
+DBbarbedCoiledRazorWire,Coiled Razor Wire
+DBbarbedCoiledRazorWireDesc, "A 3 yard long coil of razor wire. Breaks after 1500 uses. Deals 20 damage."
+cntRustyGasBarrel,Rusty Gas Barrel
+cntRustyGasBarrelDesc, "A gas barrel."
+DBRetroFridge,Retro Fridge
+DBRetroFridgeDesc, "A fridge that stores items."
+DBFridge,Fridge
+DBFridgeDesc, "A modern fridge that stores items."
+DBComputer,Computer
+DBComputerDesc, "Order goods with Duke coins."
+cntCompactWaterFilter,Compact Water Filter
+cntCompactWaterFilterDesc, "Filter dirty water to make it drinkable."
+DBWoodBurningStove,Wood Burning Stove
+DBWoodBurningStoveDesc, "Allows you to cook tier 2 foods."
+DBOven,Oven
+DBOvenDesc, "Allows you to cook tier 3 and 4 foods."
+DBTableSaw,Table Saw
+DBTableSawDesc, "Efficiently create wood based traps and items."
+DBMicrowave,Microwave
+DBMicrowaveDesc, "Microwave meals."
+DBCooler,Cooler
+DBCoolerDesc, "A place to store your drinks."
+DBGearShelves,Gear Shelves 
+DBGearShelvesDesc, "Gear racks."
+DBAmmoStorage,Ammo Storage
+DBAmmoStorageDesc, "A place to store ammo."
+DBHydrophonic,Hydroponic
+DBHydrophonicDesc, "Grows enhanced seeds. Enhanced seeds grow 30% faster."
+DBCoffeeMaker,Coffee Maker
+DBCoffeeMakerDesc, "Brew two coffees at once."
+DBCommercialCoffeeMaker,Commercial Coffee Maker
+DBToaster,Toaster
+DBToasterDesc, "Toast two bread items at once."
+DBFirePlace,Fire Place
+DBFirePlaceDesc, "A fire place that will warm up your home and heal twelve health a minute when you stand next to it."
+cntCollapsedWorkbench,Basic Workbench
+cntCollapsedWorkbenchDesc, "A basic workbench to craft simple items at."
+
+palletBagFertilizerBaseFull,Bag of Fertilizer
+palletBagFertilizerTile,Bag of Fertilizer
+palletBagFertilizerBaseMed,Bag of Fertilizer
+palletBagFertilizerCapMed,Bag of Fertilizer
+palletBagFertilizerCapSml,Bag of Fertilizer
+palletBagFertilizerSingleBent,Bag of Fertilizer
+palletBagFertilizerSingleFlat,Bag of Fertilizer
+
+palletBagCowFeedBaseFull,Cow Feed
+palletBagCowFeedTile,Cow Feed
+palletBagCowFeedBaseMed,Cow Feed
+palletBagCowFeedCapMed,Cow Feed
+palletBagCowFeedCapSml,Cow Feed
+palletBagCowFeedSingleBent,Cow Feed
+palletBagCowFeedSingleFlat,Cow Feed
+
+drinkJarContaminatedWater,Contaminated Water
+drinkJarDrinkableWater,Drinkable Water
+
+drinkJarContaminatedWaterDesc, "Boiled but still not safe to drink."
+drinkJarDrinkableWaterDesc, "Boiled and filtered through cloth. Safe to drink. Gives 10 hydration."
+
+decoComputerDeskTopPC,Computer
+decoComputerMonitorKeyboardMousePC,Computer
+decoComputerMonitorKeyboardMouse,Computer
+decoComputerMonitorKeyboardMouse2,Computer
+decoComputerMonitor,Computer
+decoLaptop,Laptop
+
+cntStoreElectronicsPalletTvFallen,TV Box
+cntStoreElectronicsPalletTvStanding,TV Box
+
+resourceElectronicParts,Electronics
+resourceElectronicPartsDesc, "Electronic parts."
+
+resourceSneedSnowBall,Snow
+resourceSneedSnowBallDesc, "Used to make cold drinks."
+resourceSnowBallDesc, "Can be thrown to distract zombies."
+
+drinkJarColdWater,Cold Water
+drinkJarColdWaterDesc, "Cold water."
+
+vehicleRepairKitSchematic,Vehicle Repair Kit Schematic
+
+harvestToolsScrap,Scrap Tools
+
+challengeDesertWearArmor,Gas Mask
+challengeDesertWearArmorDesc, "Obtain a [DECEA3]Gas Mask[-]."
+challengeDesertWearArmorHint1,[00FF00]Equip a Gas Mask[-]
+challengeDesertWearArmorShort,Wear a Gas Mask
+
+challengeSnowWearArmor,Cooling Mesh
+challengeSnowWearArmorDesc, "Obtain a [DECEA3]Cooling Mesh[-]."
+challengeSnowWearArmorHint1,[00FF00]Equip a Cooling Mesh[-]
+challengeSnowWearArmorShort,Wear a Cooling Mesh
+
+challengeWastelandWearArmor,Insulated Liner
+challengeWastelandWearArmorDesc, "Obtain [DECEA3]Insulated Liner[-]."
+challengeWastelandWearArmorHint1,[00FF00]Equip Insulated Liner[-]
+challengeWastelandWearArmorShort,Wear Insulated Liner
+
+challengeBurntKillZombieShort, "Kill some Burnt Zombies,  or heavy Weakened zombies."
+challengeDesertKillZombieShort, "Kill some Plague Spitter Zombies, or heavy Weakened zombies."
+challengeSnowKillZombieShort, ",Kill some Frostclaw Zombies, or heavy Weakened zombies."
+challengeWastelandKillZombieShort, "Kill some Mutated Zombies, or heavy Weakened zombies."
+
+protectiveGearSchematic,Protective Gear Schematic
+
+zombieGrumm,Grumm
+zombieAcidCrawler,Acid Crawler
+zombieFireDevil,Fire Devil
+zombieJuggernaut,Juggernaut
+zombieFeralHunter,Feral Hunter
+zombieHunter,Hunter
+zombieRegenerator,Regenerator
+zombiePouncingGhoul,Pouncing Ghoul
+zombieGhoul,Ghoul
+zombieWight,Wight
+zombiePlagueBearer,Plague Bearer
+zombieScaredKenny,Scared Kenny
+animalDevilDog,Devil Dog
+zombieGhost,Ghost
+zombieRotnier,Rotnier
+zombieHazmatJoe,Hazmat Joe
+zombieBoomer,Boomer
+zombieSuperMutated,Super Mutated
+animalHellHound,Hell Hound
+zombiePsycho,Psycho
+zombieFrenziedHeavy,Frenzied Heavy
+zombieFrenziedReed,Frenzied Reed
+zombieFrenziedSoldier,Frenzied Soldier 
+zombieFrenziedWight,Frenzied Wight
+zombieFrenziedHazmat,Frenzied Hazmat
+zombieFrenziedYo,Frenzied Yo
+zombieFrenziedDreg,Frenzied Dreg
+zombieFrenziedInfested,Frenzied Infested
+zombieFrenziedBiker,Frenzied Biker
+zombieFrenziedCop,Frenzied Cop
+zombieFrenziedHobo,Frenzied Hobo
+
+zombieGhostQueen,Ghost Queen
+zombiePhantom,Phantom
+zombieRotting,Rotting Corpse
+zombieGiantSpider,Giant Spider
+zombieAcidTourist,Acid Tourist
+zombieAcidFat,Acid Mama
+zombieJuggernautAlly,Tourist
+zombieHobo,Convict
+zombieBloatedBowler,Bloated Corpse
+zombieStalker,Stalker
+
+zombieDiseased,Diseased
+zombieWeakenedFeralWight,Weakened Feral Wight
+zombieWeakenedCop,Weakened Cop
+zombieWeakenedSpider,Weakened Spider
+zombieWeakenedBiker,Weakened Biker
+zombieWeakenedSoldier,Weakened Soldier
+zombieWeakenedSkateboarder,Weakened Thug
+zombieWeakenedCorpse,Weakened Corpse
+zombieWeakenedTourist,Weakened Tourist
+zombieWeakenedArlene,Weakened Arlene
+zombieWeakenedBoe,Weakened Boe
+zombieWeakenedMarlene,Weakened Marlene
+zombieWeakenedJanitor,Weakened Janitor
+zombieWeakenedMoe,Weakened Moe
+zombieWeakenedDarlene,Weakened Darlene
+
+zombieMadScientist,Mad Scientist
+
+zombieBoeDB1,Loe
+zombieBoeDB2,Boe
+zombieBoeDB3,Boe
+
+zombieArleneDB1,Arlene
+zombieArleneDB2,Arlene
+zombieArleneDB3,Arlene
+zombieArleneDB4,Arlene
+zombieMarleneDB1,Marlene
+zombieMarleneDB2,Marlene
+zombieMarleneDB3,Marlene
+zombieMarleneDB4,Marlene
+zombiePartyGirlDB1,PartyGirl
+zombiePartyGirlDB2,PartyGirl
+zombiePartyGirlDB3,PartyGirl
+zombieNurseDB1,Nurse
+zombieNurseDB2,Nurse
+zombieNurseDB3,Nurse
+zombieJoeDB1,Joe
+zombieJoeDB2,Joe
+zombieJoeDB3,Joe
+zombieJoeDB4,Joe
+zombieSteveDB1,Steve
+zombieSteveDB2,Steve
+zombieSteveDB3,Steve
+zombieTomClarkDB1,Tom
+zombieTomClarkDB2,Tom
+zombieTomClarkDB3,Tom
+zombieBusinessManDB1,Business Man
+zombieBusinessManDB2,Business Man
+zombieBusinessManDB3,Business Man
+zombieBurntDB1,Burnt
+zombieBurntDB2,Burnt
+zombieBurntDB3,Burnt
+zombieBurntDB4,Burnt
+zombieMaleHazmatDB1,Hazmat
+zombieMaleHazmatDB2,Hazmat
+zombieMaleHazmatDB3,Hazmat
+zombieMoeDB1,Moe
+zombieMoeDB2,Moe
+zombieMoeDB3,Moe
+zombieDarleneDB1,Darlene
+zombieDarleneDB2,Darlene
+zombieDarleneDB3,Darlene
+zombieDarleneDB4,Darlene
+zombieYoDB1,Yo
+zombieYoDB2,Yo
+zombieYoDB3,Yo
+zombieYoDB4,Yo
+zombieUtilityWorkerDB1,Utility Worker
+zombieUtilityWorkerDB2,Utility Worker
+zombieUtilityWorkerDB3,Utility Worker
+zombieBikerDB2,Biker
+zombieBikerDB3,Biker
+zombieBikerDB1,Biker
+Mutated0,Mutated
+zombieLumberjackDB1,Lumberjack
+zombieLumberjackDB2,Lumberjack
+zombieLumberjackDB3,Lumberjack
+zombieFemaleFatDB1,Fat
+zombieFemaleFatDB2,Fat
+zombieFemaleFatDB3,Fat
+zombieFatHawaiianDB1,Tourist 
+zombieFatHawaiianDB2,Tourist
+zombieFatHawaiianDB3,Tourist
+zombieSkateboarderDB1,Thug
+zombieSkateboarderDB2,Thug
+zombieSkateboarderDB3,Thug
+zombieSoldierDB1,Soldier
+zombieSoldierDB2,Soldier
+zombieSoldierDB3,Soldier
+
+zombieFireMutated,Elemental Fire Mutated
+zombieShockMutated,Elemental Shock Mutated 
+zombieRadiatedMutated,Elemental Radiation Mutated 
+
+zombieTranscendentBurnt,Transcendent Burnt
+zombieTranscendentSoldier,Transcendent Soldier
+zombieTranscendentWight,Transcendent Wight
+zombieTranscendentMutated,Transcendent Mutated
+
+modArmorHeadGear,Headset Mod
+modArmorHeadgearDesc, "A headset made from enhancement chips. Boosts all attributes by 1."
+modBikeSpeedBoost,Bicycle Speed Boost
+modBikeSpeedBoostDesc, "Increases bicycle speed."
+modArmorSimpleArmorPlating,Simple Armor Plating
+modArmorSimpleArmorPlatingDesc, "Simple Armor Plating."
+modVehicleSpeedBooster,Vehicle Speed Booster
+modVehicleSpeedBoosterDesc, "Boosts vehicle speeds."
+modArrowReloadMod,Arrow Reload Mod
+modArrowReloadModDesc, "Allows you to reload arrows 30% faster."
+modGunDamage,Barrel Damage Boost
+modGunDamageDesc, "Increases weapon damage by 25%."
+modGunDamageSchematic,Barrel Damage Boost Schematic
+modGunleverInternalMagazineExtender,Lever Action Magazine
+modGunleverInternalMagazineExtenderDesc, "Increases the magazine size of the lever action rifle by three."
+modGunleverInternalMagazineExtenderSchematic,Lever Action Magazine Schematic
+
+DB_decaying_trader_05,Abandoned Trader Joels 
+DB_decaying_trader_compound_04,Trader Hugh...?
+DB_decaying_trader_compound03,Trader Bob...?
+decaying_trader_compound02,Trader Jen...?
+decaying_trader_rekt,Trader Rekt...?
+
+questRewardPistolBundleT1,Pistol Bundle
+questRewardPistolBundleT1Desc, "A pistol and 15 bullets."
+meleeWarhammer,Warhammer
+meleeWarhammerDesc, "A powerful warhammer that can only be found in loot. Falls under The Brawler. Has a 30% armor penetration."
+meleeDarkSpear,Dark Spear
+meleeDarkSpearDesc, "A spear."
+MeleeKukri,Kukri
+meleeKukriDesc, "Fast swinging kukri that can only be found in loot. Falls under Deep Cuts."
+MeleeLightSledgehammer,Light Sledgehammer 
+meleeLightSledgehammerDesc,"Lighter sledgehammer that swings faster. Can only found in loot. Falls under Skull Crusher."
+MeleeZweihander,Zweihander
+MeleeZweihanderDesc, "A huge and powerful sword with a high dismemberment chance."
+MeleeSpikedClubDesc, "A spiked club that has 20% armor penetration."
+MeleeIronClub,Iron Plated Club
+MeleeIronClubDesc, "A club plated with iron. Only found in loot. Falls under Pummel Pete."
+
+meleeFlangedMace,Flanged Mace
+meleeFlangedMaceDesc, "A beautifully decorated flanged mace."
+meleeWarMace,War Mace
+meleeWarMaceDesc, "A large war mace."
+meleeRapier,Rapier
+meleeRapierDesc, "An elegant rapier. can only be found in loot. Falls under Deep Cuts."
+meleeAxe,Battle Axe
+meleeAxeDesc, "An axe made for combat. Can only be found in loot. Falls under Spear Master."
+
+meleeScrapAxe,Scrap Axe
+meleeScrapPickaxe,Scrap Pickaxe
+meleeScrapCleaver,Scrap Cleaver
+meleeScrapSledgeHammer,Scrap Morning Star
+meleeScrapSpear,Scrap Pitchfork
+meleeScrapKnuckles,Scrap Knuckles
+MeleeSpikedClub,Scrap Club
+
+meleeScrapAxeDesc, "Improvised axe."
+meleeScrapPickaxeDesc, "Improvised pickaxe."
+meleeScrapCleaverDesc, "Improvised cleaver."
+meleeScrapSledgeHammerDesc, "Improvised sledgehammer."
+meleeScrapSpearDesc, "Improvised spear."
+meleeScrapKnucklesDesc, "Improvised knuckles."
+
+cntTraderSuperChest,Trader Super Chest
+
+BearCountryDesc, "Oh, what a grizzly turn of events."
+
+BearCountry,Bear Country
+
+foodBearHoney,Nightmare Honey 
+foodBearHoneyDesc, "Cures 10% infection. Said to have an unbearable taste."
+
+PoisonSac,Poison Sac
+ammo9mmPoison,9mm Poison Ammo
+ammo762mmPoison,7.62 Poison Ammo
+ammo44MagnumPoison,.44 Magnum Poison
+ammoPoisonArrowAP,Poison Arrow AP
+PoisonDesc, "Hollow tip bullets filled with a small amount of deadly venom. Deals 140 damage over 10 seconds." 
+PoisonsacDesc, "Used in poison ammo crafting."
+ammoPoisonarrowDesc, "Poisoned arrow."
+drugZxidePlus,Z-Xide Plus
+drugZxidePlusDesc, "Cures 10% infection and removes Invasions."
+resourceImpureAcid,Impure Acid
+resourceImpureAcidDesc, "Used in acid crafting. Made at the Fermentation Barrel."
+drinkJarPollutedWater,Polluted Water
+drinkJarPollutedWaterDesc, "Water so foul it can't be boiled in a campfire. Must be put through a compact water filter."
+foodGoulashDesc, "Throw a bunch of garbage in a pot and eat it.\nIncreases mining harvest by 20%."
+drinkJarBottledWater,Bottled Water
+drinkJarBottledWaterDesc, "Bottled Water."
+drinkCanBlueberryMegaCrush,Blueberry Mega Crush
+drinkCanBlueberryMegaCrushDesc, "Blueberry flavored mega crush."
+foodGrilledMushrooms,Grilled Mushrooms
+foodGrilledMushroomsDesc, "Simple grilled mushrooms."
+
+foodChiliDogDesc, "Tasty!\nIncreases melee attack speed by 40% and ranged fire rate by 10%."
+foodSteakAndPotatoDesc, "A filling meal fit for a king!\nIncreases melee damage by 50%."
+foodBlueberryPieDesc, "This homemade blueberry pie is just like Grandma used to make.\nGives 10% bartering."
+foodMeatStewDesc, "A survivor isn't worth his salt if he can't make a meat stew.\nIncreases your max health as well as your resistance to critical injuries and the speed at which they heal naturally. "
+foodPumpkinPieDesc, "If there is one thing to be thankful for in the apocalypse, it's pumpkin pie.\nIncreases salvage harvest by 20%."
+foodPumpkinBreadDesc, "Pumpkin bread is more filling than corn bread and tastes amazing.\nIncreases loot stage by 25."
+foodVegetableStewDesc, "Your mom always said eat your vegetables. Now's your chance to make her happy and guess what? They're good for you.\nGives Lockpicks a 100% to succeed."
+foodTunaFishGravyToastDesc, "Some call it shit on a shingle, but it's actually pretty tasty and filling.\nIncreases reload speed by 25%."
+foodSpaghettiDesc, "It's not a classy Italian dish, but it is very filling and has a full no money back guarantee that you won't vomit.\nIncreases damage to radiated zombies by 100%."
+foodShepardsPieDesc, "Shepards Pie sure is tasty and super filling.\nIncreases block damage by 100%."
+foodGumboStewDesc, "Vomiting is for the peasants! Eat like an apocalyptic king with this super filling, delicious gumbo stew.\nIncreases damage against zombies by 40%."
+foodShamChowderDesc, "Sham Chowder increases all attributes by 2."
+foodHoboStewDesc, "Nutritious and deli... it's edible, okay?\nIncreases run speed by 50%."
+foodFishTacosDesc, "Who wants to live off the land when it's taco Tuesday? Or is this Thursday?\nMelee weapons use 25% less stamina."
+
+foodMeatStew, "[30cc1f]Meat Stew"
+foodSteakAndPotato, "[30cc1f]Steak and Potato Meal"
+foodShamChowder, "[5c9aff]Sham Chowder"
+foodHoboStew, "[5c9aff]Hobo Stew"
+foodFishTacos, "[5c9aff]Fish Tacos"
+foodChiliDog, "[5c9aff]Chili Dog"
+foodBlueberryPie, "[30cc1f]Blueberry Pie"
+foodPumpkinPie, "[30cc1f]Pumpkin Pie"
+foodPumpkinCheesecake, "[30cc1f]Pumpkin Cheesecake"
+foodPumpkinBread, "[30cc1f]Pumpkin Bread"
+foodGumboStew, "[FFD700]Gumbo Stew"
+foodSpaghetti, "[FFD700]Spaghetti"
+foodShepardsPie, "[FFD700]Shepards Pie"
+foodTunaFishGravyToast, "[FFD700]Tuna Fish Gravy Toast"
+foodVegetableStew, "[30cc1f]Vegetable Stew"
+foodGoulash, "[5c9aff]Survivors Goulash"
+foodSupercornSoup, "[FFD700]Super Corn Soup"
+foodSuperCornOnTheCob, "[30cc1f]Super Corn On The Cob"
+foodSuperCornBread, "[30cc1f]Super Corn Bread"
+
+FoodMeleeDamage,Melee Damage
+FoodMeleeDamageDesc, "Inceases melee damage by 50%"
+FoodBartering,Bartering
+FoodBarteringDesc, "Gives 10% bartering."
+FoodCritHeal,Health Boost 
+FoodCritHealDesc, "Increases your max health as well as your resistance to critical injuries and the speed at which they heal naturally."
+FoodMining,Mining Harvest
+FoodMiningDesc, "Increases mining harvest by 20%."
+FoodLockpick,Lockpicking 
+FoodLockpickDesc, "Gives Lockpicks a 100% to succeed."
+FoodSalvage,Salvage Harvest
+FoodSalvageDesc, "Increases salvage harvest by 20%."
+FoodLoot,Loot Bonus 
+FoodLootDesc,"Increases loot stage by 25."
+FoodExplosive,Explosives Expert
+FoodExplosiveDesc, "Increases explosive damage by 50%."
+FoodFallDamage,Fall Damage
+FoodFallDamageDesc, "Removes fall damage."
+FoodZombieDamage,Zombie Damage
+FoodZombieDamageDesc, "Increases damage against zombies by 40%."
+FoodRunSpeed,Run Speed
+FoodRunSpeedDesc, "Increases run speed by 50%."
+FoodStaminaCost,Melee Stamina Reduction
+FoodStaminaCostDesc, "Melee weapons use 25% less stamina."
+FoodAttackSpeed,Attack Speed
+FoodAttackSpeedDesc, "Increases melee attack speed by 40% and ranged fire rate by 10%."
+FoodRadDamage,Radiated Zombie Damage
+FoodRadDamageDesc, "Increases damage to radiated zombies by 100%."
+FoodReload,Reload Speed
+FoodReloadDesc, "Increases reload speed by 25%."
+FoodAttributes,Attribute Bonus
+FoodAttributesDesc, "Increases all attributes by 2."
+FoodBlockDamage,Block Damage
+FoodBlockDamageDesc, "Increases block damage by 100%."
+FoodDigestion,Efficient Digestion
+FoodDigestionDesc, "Exertion will not make you hungry and thirsty as quickly."
+FoodSuperDamage,Elite Zombie Damage
+FoodSuperDamageDesc, "Increases damage against Infernal, Charged and Frenzied zombies by 100%."
+
+
+drugColloidalSilverSchematic,Colloidal Silver Schematic
+drugHealthInjectionSchematic,Health Injection Schematic
+drugCombatInjectionSchematic,Combat Injection Schematic
+drugZxidePlusSchematic,Zxide Plus Schematic
+drinkCanBlueberryMegaCrushSchematic,Blueberry Mega Crush Schematic
+toolBeakerSchematic,Beaker Schematic
+toolDewFilterSchematic,Water Filter Schematic
+foodCanChickenSoupSchematic,Chicken Stew Schematic
+foodCanChickenSchematic,Chicken Ration Schematic
+DBbarbedCoiledRazorWireSchematic,Coiled Razor Wire Schematic
+thrownN03GrenadeSchematic,N03 Grenade Schematic
+modVehicleSpeedBoosterSchematic,Vehicle Speed Booster Schematic
+drugPainkillersSchematic,Pain killer Schematic
+drugVitaminsSchematic,Vitamins Schematic
+resourceAcidSchematic,Acid Schematic
+drinkCanMegaCrushSchematic,Mega Crush Schematic
+
+foodCanChickenSoup,Chicken Stew
+treeStump,Tree Stump
+foodCanChickenSoupDesc, "Chicken stew in a can."
+
+craftingMealsName,Survival Consumables
+craftingMealsDesc, "learn to cook various uncommon recipes."
+craftingMealsLongDesc, "learn to cook various uncommon recipes."
+
+UndeadCountry,Invasion
+UndeadCountry01Desc, "Before escaping to Undead Country, you were bitten by a zombie and are now part of a Hive Mind. Zombies will periodically invade you as you try to survive. Luckily, I hear Z-Xide Plus cures this type of thing."
+UndeadCountryDesc, "As long as you're part of the Hive Mind, the hordes will never stop pursuing you."
+
+GrummRadiationAOEEffect,Intense Radiation
+GrummRadiationAOEEffectDesc, "Damaging radiation from a zombie. Kill or get away from it quick."
+GrummRadiationAOEEffecttip, "[ff0019]In An Area With A Radioactive Zombie"
+
+ScreamerStunnedName,Ghost Queen Scream
+ScreamerStunnedDesc, "The Ghost Queen's loud scream has distorted your senses."
+ScreamerStunnedTooltip,Your senses have been distorted.
+
+
+drinkCanEmpty,Empty Can
+researchNotes,Research Notes
+researchNotesDesc, "Used to craft schematics."
+resourceCharcoal,Charcoal
+resourceCharcoalDesc, "Charcoal is used in crafting water filters."
+foodSupercornSoupDesc, "Super corn soup.\nIncreases damage against Infernal, Charged and Frenzied zombies by 100%."
+foodDBShamSandwich,Fresh Sham Sandwich
+foodDBShamSandwichDesc, "Classic Sham Sandwich."
+foodBoneSoup,Bone Broth
+foodBoneSoupDesc, "Simple bone broth."
+thrownN03Grenade,N03 Grenade
+thrownN03GrenadeDesc, "Advanced frag grenade that has twice the power as normal."
+drugColloidalSilver,Colloidal Silver
+drugColloidalSilverDesc, "Used for treating infections."
+foodSuperCornOnTheCobDesc, "Super Corn On The Cob.\nIncreases explosive damage by 50%."
+foodSuperCornBreadDesc, "Super Corn Bread.\nRemoves fall damage."
+foodGrilledYucca,Grilled Yucca 
+foodGrilledYuccaDesc, "Grilled yucca."
+itemRadiatedFlesh,Radiated Flesh 
+itemRadiatedFleshDesc, "Used in crafting experimental drugs."
+foodCharredHumanMeat,Charred Human Meat
+foodCharredHumanMeatDesc, "Charred human, or zombie, meat."
+ScreamerHead,Screamer Head
+ScreamerHeadDesc, "Trophy head of a screamer. Can be sold to traders."
+itemVirusSample,Virus Sample 
+itemVirusSampleDesc, "Used in crafting experimental drugs."
+drugCombatInjection,Combat Injection
+drugCombatInjectionDesc, "Increases run speed, stamina regen, damage with melee weapons, prevents stuns and makes you take less damage. Deals 20 damage on use."
+drugHealthInjection,Health Injection
+drugHealthInjectionDesc, "Heals 40 health instantly."
+ammoBoneArrow,Bone Arrow
+ammoBoneArrowDesc, "Arrow made out of bone."
+CottonBandage,Herb Bandage
+DB_WeaponsBag,Weapons Bag
+DB_WeaponsBagDesc, "A bag containing supplies and weapons."
+DB_Bag,Duffle Bag
+DB_BagDesc, "A bag."
+
+vehicleMinibikeRepairKit,Minibike Repair Kit
+vehicleMinibikeRepairKitDesc, "A kit containing the parts to fix a broken minibike. Once you find a broken minibike, break it down with any tool and go to a Basic workbench."
+BrokenMinibike01,Broken Minibike
+BrokenMinibikeDesc01, "A broken minibike that can be repaired."
+BrokenMotorcycle,Broken Motorcycle
+BrokenMotorcycleDesc, "Broken Motorcycle that can be repaired at a workbench."
+vehicleMotorcycleRepairKit,Motorcycle Repair Kit
+vehicleMotorcycleRepairKitDesc, "A kit containing the parts to fix a broken Motorcycle. Once you find a broken motorcycle, break it down with any tool and take it to a workbench."
+Broken4x4,Broken 4x4 Truck
+Broken4x4Desc, "Broken 4x4 that can be repaired at a workbench."
+gyrocopterBroken,Broken Gyrocopter
+gyrocopterBrokenDesc, "Broken Gyrocopter that can be repaired at a workbench."
+vehicle4x4TruckRepairKit,4x4 Truck Repair Kit
+vehicle4x4TruckRepairKitDesc, "A kit containing the parts to fix a broken 4x4 truck. Once you find a broken 4x4, break it down with any tool and take it to a workbench."
+vehicleGyrocopterRepairKit,Gyrocopter Repair Kit
+vehicleGyrocopterRepairKitDesc, "A kit containing the parts to fix a broken gyrocopter. Once you find a broken gyrocopter, break it down with any tool and take it to a workbench."
+
+AppliancesT1-1,Retro Fridge
+AppliancesT1-2,Fridge
+AppliancesT1-3,Gear Shelves
+AppliancesT1-4,Ammo Storage
+AppliancesT1-5,Cooler
+AppliancesT1-6,Fermentation Barrel
+AppliancesT1-7,Table Saw
+
+AppliancesT2-1,Wood Burning Stove
+AppliancesT2-2,Compact Water Filter
+AppliancesT2-3,Coffee Maker
+AppliancesT2-4,Commercial Coffee Maker
+AppliancesT2-5,Small Chemistry Station
+AppliancesT2-6,Hydroponic
+AppliancesT2-7,Toaster
+AppliancesT2-8,Oven
+AppliancesT2-9,Computer
+
+MealsT1-1,Bone Broth
+MealsT1-2,Fresh Sham Sandwich
+MealsT1-3,Grilled Yucca
+MealsT1-4,Survivors Goulash
+
+MealsT2-1,Super Corn On The Cob
+MealsT2-2,Super Corn Bread
+MealsT2-3,Super Corn Soup
+
+craftingAppliancesName,Appliances
+craftingAppliancesDesc, "Useful appliances to help you survive."
+craftingAppliancesLongDesc, "?"
+
+plantHydroponicAloe,Hydroponic
+wineBarrel,Barrel
+wineBarrelSet,Barrel
+wineBarrelPlain,Barrel
+palletBrownBoxesBase,Cardboard Boxes 
+palletBrownBoxesTile,Cardboard Boxes
+palletBrownBoxesTop,Cardboard Boxes
+palletBrownBoxesTopSmall,Cardboard Boxes
+palletBrownBoxesLoose,Cardboard Boxes
+npcTraderRekt,Sneed
+trader_rekt,Sneed's Feed & Seed (Formerly Rekt's) 
+
+gun1911Pistol,1911 Pistol
+gunGSPistol,GS Pistol
+gunJerichoPistol,Jericho 941 Pistol
+
+gunSaiga12Shotgun,Saiga 12 Shotgun
+gunTrenchgun,Trench Gun
+
+gunThompsonSMG,Thompson
+gunScorpionEVO3SMG,Scorpion Evo 3 
+
+gunAR15Rifle,AR-15
+gunM4A1Rifle,M4A1
+
+gunBoltActionSniper,Bolt Action Sniper
+gunSaintEdgeSniper,Saints Edge Sniper
+
+gun1911PistolDesc, "Classic 1911 pistol chambered in 9mm."
+gunGSPistolDesc, "9mm GS Pistol."
+gunJerichoPistolDesc, "Baby Deagal chambered in .44 Magnum."
+gunSaiga12ShotgunDesc, "High damage automatic shotgun."
+gunTrenchgunDesc, "Trench gun."
+gunThompsonSMGDesc, "Thompson SMG chambered in .44 Magnum."
+gunScorpionEVO3SMGDesc, "Full auto SMG."
+gunAR15RifleDesc, "Semi auto rifle."
+gunM4A1RifleDesc, "Full auto M4A1 rifle."
+gunBoltActionSniperDesc, "Bolt action sniper."
+gunSaintEdgeSniperDesc, "High damage sniper rifle." 
+
+craftingAdvancedHandgunsName,Advanced Handguns
+
+craftingAdvancedShotgunsName,Advanced Shotguns
+
+craftingAdvancedRiflesName,Advanced Rifles
+
+craftingAdvancedMachineGunsName,Advanced Machine Guns
+
+DBTip1, "Chuck suffers when he takes seriously what Sneed made for fun." 
+
+drugOhShitzDrops,Fall Damage
+drugOhShitzDropsDesc, "Removes fall damage."
+
+challengeBurntUseReducer, "Craft Burnt Forest Medicine."
+challengeBurntUseReducerShort, "Craft Burnt Forest Medicine."
+challengeBurntUseReducerDesc, "[DECEA3]Burnt Forest Medicine[-] will help increase your survival time while exploring the [DECEA3]Burnt Forest[-].\n\nCraft [DECEA3]Burnt Forest Medicine[-]."
+
+challengeDesertUseReducer, "Craft Desert Medicine."
+challengeDesertUseReducerShort, "Craft Desert Medicine."
+challengeDesertUseReducerDesc, "[DECEA3]Desert Medicine[-] will help increase your survival time while exploring the [DECEA3]Desert[-].\n\nCraft [DECEA3]Desert Medicine[-]."
+
+challengeSnowUseReducer, "Craft Frostbite Medicine."
+challengeSnowUseReducerShort, "Craft Frostbite Medicine."
+challengeSnowUseReducerDesc, "[DECEA3]Frostbite Medicine[-] will help increase your survival time while exploring the [DECEA3]Snow[-].\n\nCraft [DECEA3]Frostbite Medicine[-]."
+
+challengeWastelandUseReducer, "Craft Wasteland Medicine."
+challengeWastelandUseReducerShort, "Craft Wasteland Medicine."
+challengeWastelandUseReducerDesc, "[DECEA3]Wasteland Medicine[-] will help increase your survival time while exploring the [DECEA3]Wasteland[-].\n\nCraft [DECEA3]Wasteland Medicine[-]."
+
+quest_KillHound,Hunt The Hell Hound
+quest_KillHound_subtitle,Hunt The Hell Hound
+quest_KillHound_description, "Kill the Hell Hound."
+quest_KillHound_offer, "Find and kill the Hell Hound. [DECEA3]{poi.name}"
+KillHound_statement, "There's a goddamn Hell Hound causing trouble way to close to here. Kill that thing and I'll pay you good."
+KillHound_response,Hunt The Hell Hound ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+kill_boss_Hound_key,The Hell Hound
+quest_KillHound_completion, "Thanks for getting rid of that monster. Things will be a lot safer now that it's dead."
+
+quest_KillCrawler,Kill The Acid Crawler
+quest_KillCrawler_subtitle,Kill The Acid Crawler
+quest_KillCrawler_description, "Kill The Acid Crawler."
+quest_KillCrawler_offer, "There's this Acid Crawler causing me trouble. Go and kill it for me. [DECEA3]{poi.name}"
+KillCrawler_statement, "Don't underestimate that thing just because it's slow. It's acid will burn to the bone."
+KillCrawler_response,Kill The Acid Crawler ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillCrawler_completion, "Good work. I feel a lot better with it gone."
+kill_boss_Crawler_key,The Acid Crawler
+
+quest_KillHazmat,Kill The Hazmat Horde
+quest_KillHazmat_subtitle,Kill The Hazmat Horde
+quest_KillHazmat_description, "Kill the Hazmat horde."
+quest_KillHazmat_offer, "A horde of Hazmat zombies are swarming a nearby building. Go and thin them out. [DECEA3]{poi.name}"
+KillHazmat_statement, "Watch out for the acid spit. Oh and if you piss them off they'll explode. Heh."
+KillHazmat_response,Kill The Hazmat Horde ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillHazmat_completion, "Great work. The horde should disperse now." 
+kill_boss_Hazmat_key,The Hazmat Horde
+
+quest_KillGhost,Kill The Ghost Queen
+quest_KillGhost_subtitle,Kill The Ghost Queen
+quest_KillGhost_description,Kill The Ghost Queen
+quest_KillGhost_offer, "A Ghost Queen is drawing every zombie in town to her. Go shut that bitch up. [DECEA3]{poi.name}"
+KillGhost_statement, "Go kill that thing before it draws the horde to us." 
+KillGhost_response,Kill The Ghost Queen ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillGhost_completion, "Thank goodness. All that screaming I thought I'd go insane."
+kill_boss_Ghost_key,The Ghost Queen
+
+quest_KillRotnier,Kill Rotnier
+quest_KillRotnier_subtitle,Kill Rotnier
+quest_KillRotnier_description,Kill Rotnier
+quest_KillRotnier_offer, "There's a group of mutated zombies spitting acid at our runners. Take care of them. [DECEA3]{poi.name}"
+KillRotnier_statement, "Can't do anything these days without some fucking zombie spitting at you."
+KillRotnier_response,Kill Rotnier ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillRotnier_completion, "That was a great help. Here's your reward."
+kill_boss_Rotnier_key,Rotnier
+
+quest_KillRegenerator,Kill The Regenerator
+quest_KillRegenerator_subtitle,Kill The Regenerator
+quest_KillRegenerator_description,Kill The Regenerator
+quest_KillRegenerator_offer, "Shit man I shot him right in the head with a 44. and he didn't even flinch! Lost a lot of guys to this thing. Blow him away, and take the big guns. [DECEA3]{poi.name}"
+KillRegenerator_statement, "No matter how many times we shot him he just kept healing."
+KillRegenerator_response,Kill The Regenerator ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillRegenerator_completion, "I didn't think anyone could kill that thing. You sure saved my ass."
+kill_boss_Regenerator_key,The Regenerator
+
+quest_KillMadScientist,Kill The Mad Scientist
+quest_KillMadScientist_subtitle,Kill The Mad Scientist
+quest_KillMadScientist_description,Kill The Mad Scientist
+quest_KillMadScientist_offer, "There's a zombie conducting crazy experiments on other zombies. Go kill it before it creates something dangerious. [DECEA3]{poi.name}"
+KillMadScientist_statement, "Watch out. Once the Scientist is attacked, it'll call for help."
+KillMadScientist_response,Kill The Mad Scientist ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillMadScientist_completion, "Great work eliminating it. Hope you didn't get too beat up."
+kill_boss_MadScientist_key,The Mad Scientist
+
+quest_KillPlagueBearer,Kill The Plague Bearer 
+quest_KillPlagueBearer_subtitle,Kill The Plague Bearer
+quest_KillPlagueBearer_description,Kill The Plague Bearer
+quest_KillPlagueBearer_offer, "We found a Plague Bearer stomping around. Watch out, if he touches you you'll get infected. [DECEA3]{poi.name}"
+KillPlagueBearer_statement, "Don't let him touch you."
+KillPlagueBearer_response,Kill The Plague Bearer ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillPlagueBearer_completion, "That's one less bio hazard to worry about."
+kill_boss_PlagueBearer_key,The Plague Bearer
+
+quest_KillHuntingParty,Kill The Hunting Party
+quest_KillHuntingParty_subtitle,Kill The Hunting Party
+quest_KillHuntingParty_description,Kill The Hunting Party
+quest_KillHuntingParty_offer, "There's a hunting party roaming around killing anyone they find. Be careful, they have dogs. [DECEA3]{poi.name}"
+KillHuntingParty_statement, "Go hunt the Hunters."
+KillHuntingParty_response,Kill The Hunting Party ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillHuntingParty_completion, "Very good. Here's what I owe you."
+kill_boss_HuntingParty_key,The Hunting Party
+
+quest_KillGrumm,Kill Grumm
+quest_KillGrumm_subtitle,Kill Grumm
+quest_KillGrumm_description,Kill Grumm
+quest_KillGrumm_offer, "You're about to face a really rare and dangerous zombie. Take a lot of ammo. [DECEA3]{poi.name}" 
+KillGrumm_statement, "This guy's real dangerous."
+KillGrumm_response,[0f9400]Kill Grumm ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillGrumm_completion, "I didn't think you could bring down such a monster."
+kill_boss_Grumm_key,Grumm
+
+quest_KillJuggernaut,Kill The Juggernaut
+quest_KillJuggernaut_subtitle,Kill The Juggernaut
+quest_KillJuggernaut_description,Kill The Juggernaut
+quest_KillJuggernaut_offer, "A Juggernaut is going on a rampage. Put an end to it. [DECEA3]{poi.name}" 
+KillJuggernaut_statement, "Even though he's big, that thing can run fast."
+KillJuggernaut_response,[0f9400]Kill The Juggernaut ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillJuggernaut_completion, "Finally someone killed it."
+kill_boss_Juggernaut_key,The Juggernaut
+
+quest_KillSuperHorde,Kill The Super Horde
+quest_KillSuperHorde_subtitle,Kill The Super Horde
+quest_KillSuperHorde_description,Kill The Super Horde
+quest_KillSuperHorde_offer, "A massive horde is moving through here. Go kill some of them and hope they disperse. [DECEA3]{poi.name}" 
+KillSuperHorde_statement, "That's a lot of zombies."
+KillSuperHorde_response,Kill The Super Horde ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_KillSuperHorde_completion, "Good job dealing with them. Hope we never see something like that ever again."
+kill_boss_SuperHorde_key,Juggernaut
+kill_boss_SuperHorde1_key,Grumm
+kill_boss_SuperHorde2_key,Regenerator
+
+quest_tier1_hive_clear,Tier 1 Clear The Hive
+quest_hive_subtitle,Clear The Hive
+quest_tier1_hive_clear_description, "Clear the Hive."
+quest_tier1_hive_clear_offer, "There's a whole Hive of zombies over there. Way too many to count. Go kill them. [DECEA3]{poi.name}"
+quest_hive_statement, "There's a whole Hive of zombies over there. Way too many to count. Go kill them."
+quest_hive_response,[f72828]Clear The Hive ([DECEA3]{poi.distance} {poi.direction}[-]) [FF9900]{poi.name}[-]
+quest_hive_clear_completion, "Wow, you actually came back. Here's your reward."
+
+quest_tier2_hive_clear,Tier 2 Clear The Hive
+quest_tier3_hive_clear,Tier 3 Clear The Hive
+quest_tier4_hive_clear,Tier 4 Clear The Hive
+quest_tier5_hive_clear,Tier 5 Clear The Hive
+
+loadingTipDB1_title,Arrow Reload Mod
+loadingTipDB1, "The Arrow Reload Mod can be crafted with simple resources. It allows you to reload the bow 30% faster."
+loadingTipDB2_title,Research Bench 
+loadingTipDB2, "When you scrap unneeded magazines you can use the notes at the research bench to craft all types of magazines and certain schematics."
+loadingTipDB3_title,Acid Crafting
+loadingTipDB3, "You can craft impure acid at the fermentation barrel. Impure acid is used at a chem station to craft acid."
+loadingTipDB4_title,Locked Chests
+loadingTipDB4, "Locked chests at the end of POIs ignore loot stage and will give you invaluable items, including guns."
+loadingTipDB5_title,Hydroponic 
+loadingTipDB5, "The Hydroponic allows you to craft enhanced seeds. Enhanced seeds grow 30% faster."
+loadingTipDB6_title,Trader Quests
+loadingTipDB6, "Excluding fetch quests, trader rewards have a chance to offer guns."
+loadingTipDB7_title,Injections
+loadingTipDB7, "The health and combat injections give some of the strongest buffs but their ingredients can only be found by looting hazmat and mutated zombies."
+loadingTipDB8_title,Small Chem Station
+loadingTipDB8, "At the small chem station you can craft acid, injections and other useful drugs."
+loadingTipDB9_title,Boss Quests
+loadingTipDB9, "Traders will give you quests to kill a boss zombie. These missions are shorter and give much more money." Cardboard boxes, wine barrels, ammo pallets and hydroponics
+loadingTipDB10_title,Looting
+loadingTipDB10, "You can loot Cardboard boxes, wine barrels, ammo pallets hydroponics, and many other containers."
+loadingTipDB11_title,Frenzied Zombies
+loadingTipDB11, "Frenzied zombies are the strongest enemies you'll encounter. You can tell them apart by their large size and purple glowing bodies."
+loadingTipDB12_title,Basic Workbench Crafting
+loadingTipDB12, "Most recipes require at least a basic workbench to craft."
+loadingTipDB13_title,Advanced Food
+loadingTipDB13, "Advanced foods will give you specific, powerful buffs. Additionally, the more complex the food the better cook station you will need to make it."
+loadingTipDB14_title,Hives
+loadingTipDB14, "Hive quests contain a massive amount of zombies. Always bring in extra supplies."
+loadingTipDB15_title,Nobody Reads The Tips
+loadingTipDB15, "Why do I even bother typing these out?"
+loadingTipScrub1_title,Ceraphix Sucks Dicks
+loadingTipScrub1, "Get your commemorative 2025 magnet now!"
+loadingTipScrub2_title,This mod is done
+loadingTipScrub2, "Parts of it definitely work sometimes. Maybe not in your game, but it worked in mine. So it's your fault. Oh wait, mine just errored out. What did you do????"
+loadingTipScrub3_title,New Better Perks
+loadingTipScrub3, "Attributes go to level 20 and most perks go to level 10. Many have new and unique effects unlocking at level 10, as well as enhanced bonuses."
+loadingTipScrub4_title,Saeko Gay?
+loadingTipScrub4, "Saeko v gay. Even randos on Rocket League know saeko gay. Also quit running into me, just get out of the fucking way- and they scored. Great."
+
+0perkPackMuleRank1LongDesc,Carry ten more items without being encumbered. Additionally you run one percent faster.
+0perkPackMuleRank2LongDesc,Carry twenty more items without being encumbered. Additionally you run two percent faster.
+0perkPackMuleRank3LongDesc,Carry thirty-two more items without being encumbered. Additionally you run three percent faster.
+0perkPackMuleRank4LongDesc,Carry fourty-five more items without being encumbered. Additionally you run four percent faster.
+0perkPackMuleRank5LongDesc,Carry sixty more items without being encumbered. Additionally you run five percent faster.
+
+palletCompressedCardboard,Cardboard Pallet
+cntVendingMachine2Broken,Broken Soda Machine
+cntVendingMachineEnergyBroken,Broken Soda Machine
+cntVendingMachineWaterBroken,Broken Soda Machine
+cntVendingMachineSnacksEmpty,Broken Vending Machine
+cntVendingMachineSnacksEmptyBroken,Broken Vending Machine
+
+foodBoiledRadiatedMeat,Boiled Radiated Meat
+foodBoiledRadiatedMeatDesc, "A stew so sickening it makes you wish for the end."
+
+foodCandy,Candy
+foodCandyDesc, "Candy."
+
+paperClassSelect,Starter Kit Select Paper
+paperClassSelectDesc, "Choose which kit you would like to start with."
+
+classFarmer,Homesteader
+classFarmerDesc, "Start with the following skill magazines\n[54c947]Food Skill + 5\nVehicle Skill + 5\nSeed Skill + 5"
+classMedic,Combat Medic
+classMedicDesc, "Start with the following skill magazines\n[54c947]Medical Skill + 5\nExplosives Skill + 5\nArmor Skill + 5"
+classNomad,Engineer
+classNomadDesc, "Start with the following skill magazines\n[54c947]Forge Ahead Skill + 5\nWiring Skill + 5\nElectrical Skill + 5"
+classRoboticsInventor,Scrapper
+classRoboticsInventorDesc, "Start with the following skill magazines\n[54c947]Harvesting Tools Skill + 5\nRepair Tools Skill + 5\nSalvage Tools Skill + 5"
+
+classMiner,Miner
+classMinerDesc, "Starts with a spiked club, a mining helmet, a shovel and a pickaxe."
+classHunter,Hunter
+classHunterDesc, "Starts with a knife, bow and an assassin hood."
+classChef,Chef
+classChefDesc, "Starts with a club, some food and a cooking pot and grill."
+
+paperSkillSelect,Starter Skills Select 
+paperSkillSelectDesc, "Choose which combat skills you want to start with."
+
+starterStrength,Strength Combat Skills
+starterStrengthDesc, "Start with the following skill magazines\n[bd3a2b]Club Skill + 5\nSledgehammer Skill + 5\nShotgun Skill + 5"
+
+starterPerception,Perception Combat Skills
+starterPerceptionDesc, "Start with the following skill magazines\n[bd3a2b]Rifle Skill + 5\nSpear Skill + 5\nExplosives Skill + 5"
+
+starterFortitude,Fortitude Combat Skills 
+starterFortitudeDesc, "Start with the following skill magazines\n[bd3a2b]Knuckles Skill + 5\nMachine Gun Skill + 5"
+
+starterAgility,Agility Combat Skills 
+starterAgilityDesc, "Start with the following skill magazines\n[bd3a2b]Blade Skill + 5\nBow Skill + 5\nHand Gun Skill + 5"
+
+starterIntellect,Intellect Combat Skills 
+starterIntellectDesc, "Start with the following skill magazines\n[bd3a2b]Robotics Skill + 5"
+
+TraderStarterBag,Supplies Bag
+TraderStarterBagDesc, "A bag of supplies given to you as a reward by the trader."
+
+
+
+
+
+
+

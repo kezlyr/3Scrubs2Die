@@ -1,0 +1,21 @@
+<config>
+	    <remove xpath="controls/item_part_slot" />
+    <append xpath="controls" >
+        <item_part_slot>
+    		<rect controller="${controller}" style="itemPartStack, hover" sound_play_on_hover="[default_hover]">
+    			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="187,3" width="197" height="63" color="[black]" type="sliced" fillcenter="false" />
+    			<sprite name="background" color="[darkGrey]" height="59" pos="190,1" type="sliced" width="195"/>
+    			<label depth="4" pos="206,-13" width="135" height="28" text="{partname}" font_size="26" justify="left" />
+    			<!-- <label depth="4" pos="230,-13" width="50" height="28" text="{partquality}" font_size="26" justify="right" /> -->
+
+    			<!-- <sprite depth="2" width="265" pos="15, -37" height="10" type="sliced" color="[black]" visible="{partvisible}" foregroundlayer="true" /> -->
+    			<!-- <sprite depth="2" width="263" pos="16, -38" height="8" type="sliced" color="[mediumGrey]" visible="{partvisible}" foregroundlayer="true" /> -->
+    			<!-- <sprite depth="2" name="sprFill" width="263" pos="16, -38" height="8" type="filled" color="{partcolor}" fill="{partfill}" visible="{partvisible}" foregroundlayer="true" /> -->
+
+    			<sprite name="itemIcon" depth="4" width="35" height="35" atlas="{partatlas}" sprite="{particon}" color="{particoncolor}" visible="{partvisible}" pos="353,-28" pivot="center" foregroundlayer="true" />
+
+    			<label depth="4" pos="206,-16" width="135" height="28" text="EMPTY MODIFIER SLOT" text_key="${empty_slot_text_key}" font_size="26" justify="center" visible="{emptyvisible}" />
+    		</rect>
+    	</item_part_slot>
+    </append>
+</config>

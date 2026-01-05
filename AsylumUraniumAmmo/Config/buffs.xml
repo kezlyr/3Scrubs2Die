@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+<!-- *** URANIUM AMMUNITION RADIATION DEBUFF *** -->
+<!-- Applied when enemies are hit by uranium bullets - causes radiation poisoning DoT -->
+
+<append xpath="/buffs">
+
+<!-- Uranium Radiation Poisoning - Stacking DoT applied by uranium ammunition -->
+<buff name="buffUraniumRadiation" name_key="buffUraniumRadiationName" description_key="buffUraniumRadiationDesc"
+      icon="ui_game_symbol_radiation" icon_color="102,255,102" icon_blink="true" 
+      tooltip_key="buffUraniumRadiationTooltip" remove_on_death="true">
+    <damage_type value="radiation"/>
+    <stack_type value="duration"/>
+    <duration value="6"/>
+    <update_rate value="1"/>
+    <effect_group>
+        <!-- Radiation screen effect - sickly green -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" 
+            effect_name="Radiation" intensity=".5" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" 
+            effect_name="Radiation" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" 
+            effect_name="Radiation" intensity="0" fade="0"/>
+        
+        <!-- Radiation damage: 12 HP per second (72 total over 6 sec base, stacks extend duration) -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="12"/>
+        
+        <!-- Slow movement by 15% while irradiated - cells breaking down -->
+        <passive_effect name="RunSpeed" operation="perc_add" value="-.15"/>
+        
+        <!-- Reduce stamina regen - radiation sickness weakness -->
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.25"/>
+    </effect_group>
+</buff>
+
+</append>
+</configs>
+

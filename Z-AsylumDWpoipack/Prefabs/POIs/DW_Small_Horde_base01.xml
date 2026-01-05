@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="2" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="YOffset" value="-1" />
+  <property name="PrefabSize" value="25, 12, 25" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="SleeperVolumeSize" value="7, 9, 11#6, 5, 13" />
+  <property name="SleeperVolumeStart" value="8, 3, 11#10, 7, 11" />
+  <property name="SleeperVolumeGroupId" value="0,0" />
+  <property name="SleeperVolumeGroup" value="GroupGenericZombie,5,6,zombieDemolition,1,2" />
+  <property name="SleeperIsLootVolume" value="True,False" />
+  <property name="SleeperIsQuestExclude" value="False,False" />
+  <property name="SleeperVolumeFlags" value="0,0" />
+  <property name="SleeperVolumeTriggeredBy" value=" # " />
+  <property name="Zoning" value="downtown, commercial, residential, rural, wilderness" />
+  <property name="AllowedTownships" value="city,town,citybig,wasteland_city,countrytown,bforest_town,forest_countrytown,bforest_countrytown,wilderness" />
+  <property name="EditorGroups" value="downtown, commercial, residential, rural, wilderness" />
+  <property name="Tags" value="wilderness, commercial, residential, rural, downtown" />
+  <property name="ThemeTags" value="wildernesspoi, ruralfiller" />
+  <property name="QuestTags" value="clear, fetch, infested" />
+  <property class="IndexedBlockOffsets">
+    <property class="FetchContainer">
+      <property name="0" value="9, 11, 18" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="13, 7, 16" />
+      <property name="1" value="12, 5, 17" />
+    </property>
+    <property class="Rally">
+      <property name="0" value="12, 1, 19" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="LightsVolume" value="4188.791" />
+    <property name="TotalVertices" value="86385" />
+    <property name="TotalTriangles" value="37288" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="61493" />
+      <property name="Triangles" value="21962" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="16220" />
+      <property name="Triangles" value="9190" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="7232" />
+      <property name="Triangles" value="3616" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="1440" />
+      <property name="Triangles" value="2520" />
+    </property>
+  </property>
+</prefab>

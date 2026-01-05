@@ -1,0 +1,12 @@
+<config>
+<append xpath="//item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group[2]">
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".6" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value="1.2">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				</passive_effect>
+</append>
+</config>

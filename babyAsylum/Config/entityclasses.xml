@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AsylumOverhaul>
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<!-- /////////////////           Asylum Player Starting Items    ///////////////// -->
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	
+	<!-- Fixed Character Class System - Players now get classStarter token from White River Citizen quest -->
+	<!-- modArmorHelmetLight and jcStarterNote moved to asylum starter kits in items.xml -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">noteDuke01</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">noteDuke01</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">noteDuke01</set>
+
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<!-- /////////////////           Asylum Entity Enhancements      ///////////////// -->
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+	<!-- Enhanced Knockdown Stun Durations -->
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,7.0</set>
+	<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,7.0</set>
+
+	<!-- Add Light to Junk Turret -->
+	<append xpath="/entity_classes/entity_class[@name='junkTurretGun']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" local_offset="0,0,-.19" local_rotation="0,0,180" prefab="@:Other/Items/Mods/Sides/side_attachment_flashlightPrefab.prefab" parent_transform="Muzzle"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="SetTransformActive" active="true" parent_transform="Muzzle" transform_path="lightSource"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']">
+<drop event="Harvest" name="foodSVETGRawChicken" tag="butcherHarvest" count="5,7" prob="1.25"/>
+</append>
+<append xpath="/entity_classes/entity_class[@name='animalBoar']">
+<drop event="Harvest" name="foodSVETGRawBacon" tag="butcherHarvest" count="4,9" prob="0.85"/>
+</append>
+
+<append xpath="/entity_classes">
+<!-- Vehicle entity classes removed -->
+</append>
+
+
+</AsylumOverhaul>

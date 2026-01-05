@@ -1,0 +1,110 @@
+<configs>
+	<!-- Infernal Enhancement System - Materials -->
+	
+	<!-- Black Stone (Armor) - Primary enhancement material -->
+	<append xpath="/items">
+		<item name="infernalBlackStone">
+			<property name="Extends" value="resourceScrapPolymers"/>
+			<property name="CustomIcon" value="infernalBlackStone"/>
+			<property name="DescriptionKey" value="infernalBlackStoneDesc"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="5"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+
+	<!-- Concentrated Black Stone - Higher tier material -->
+	<append xpath="/items">
+		<item name="infernalConcentratedStone">
+			<property name="Extends" value="resourceScrapPolymers"/>
+			<property name="CustomIcon" value="infernalConcentratedStone"/>
+			<property name="DescriptionKey" value="infernalConcentratedStoneDesc"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+
+	<!-- Cron Stone - Prevents regression on enhancement failure -->
+	<append xpath="/items">
+		<item name="infernalCronStone">
+			<property name="Extends" value="resourceScrapPolymers"/>
+			<property name="CustomIcon" value="infernalCronStone"/>
+			<property name="DescriptionKey" value="infernalCronStoneDesc"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="15"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+
+	<!-- Minor Torment Essence - Grants +1 failstack -->
+	<append xpath="/items">
+		<item name="infernalTormentMinor">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CustomIcon" value="infernalTormentMinor"/>
+			<property name="DescriptionKey" value="infernalTormentMinorDesc"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="5"/>
+			<property name="Group" value="Resources"/>
+			<property name="SoundPickup" value="book_grab"/>
+			<property name="SoundPlace" value="book_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="ItemNeedle/itemneedleuse_01"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- Major Torment Essence - Grants +10 failstacks -->
+	<append xpath="/items">
+		<item name="infernalTormentMajor">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CustomIcon" value="infernalTormentMajor"/>
+			<property name="DescriptionKey" value="infernalTormentMajorDesc"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Group" value="Resources"/>
+			<property name="SoundPickup" value="book_grab"/>
+			<property name="SoundPlace" value="book_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="ItemNeedle/itemneedleuse_01"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- Superior Torment Essence - Grants +15 failstacks -->
+	<append xpath="/items">
+		<item name="infernalTormentSuperior">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CustomIcon" value="infernalTormentSuperior"/>
+			<property name="DescriptionKey" value="infernalTormentSuperiorDesc"/>
+			<property name="Stacknumber" value="20"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="15"/>
+			<property name="Group" value="Resources"/>
+			<property name="SoundPickup" value="book_grab"/>
+			<property name="SoundPlace" value="book_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="ItemNeedle/itemneedleuse_01"/>
+			</property>
+		</item>
+	</append>
+
+</configs>
+

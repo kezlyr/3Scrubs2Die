@@ -1,0 +1,1014 @@
+<configs>
+
+<!-- Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1
+
+Change to more full cars in world and reduce others -->
+
+<set xpath="//placeholder[@name='carsRandomHelper']">
+		<block name="VMWreckCar7" prob=".63"/>
+		<block name="VMWreckCar8" prob=".52"/>
+		<block name="BlueEvoDamaged" prob=".51"/>
+		<block name="OrangeEvoDamaged" prob=".51"/>
+		<block name="GreyEvoDamaged" prob=".51"/>
+		<block name="CrusaderDamaged" prob=".51"/>
+		<block name="VMWreckSUV1" prob=".44"/>
+		<block name="DamagedRustySedan" prob=".41"/>
+		<block name="DamagedModernSedan" prob=".41"/>
+		<block name="RedBMWDamaged" prob=".41"/>
+		<block name="WhiteBMWDamaged" prob=".41"/>
+		<block name="OldsmobileDamaged" prob=".41"/>
+		<block name="GTODamaged" prob=".31"/>
+		
+		<block name="JeepDamaged" prob=".37"/>
+		<block name="DamagedCombiVan" prob=".34"/>
+		<block name="DamagedCutlassSedan" prob=".34"/>
+		<block name="VMWreckVan2_1" prob=".33"/>
+		<block name="MotorcycleDamaged" prob=".27"/>
+		<block name="DamagedBicycle" prob=".24"/>
+		<block name="4x4TruckDamaged" prob=".22"/>
+		<block name="DamagedBrownQuad" prob="0.211"/>
+		<block name="PontiacDamaged" prob="0.2"/>
+		<block name="VenturaDamaged" prob=".2"/>
+		<block name="DamagedRedVan" prob=".2"/>
+		<block name="VMVan2Damaged" prob=".2"/>
+		<block name="DamagedNPCVan" prob=".2"/>
+		
+		<block name="BigRigDamaged" prob=".19"/>
+		<block name="DamagedOldSemi" prob=".18"/>
+		<block name="DamagedBeetle" prob=".18"/>
+		<block name="DamagedApoTruck" prob=".13"/>
+		<block name="MilitaryTruckDamaged" prob=".13"/>	
+		<block name="DamagedMalice" prob=".13"/>
+		<block name="cntAmbulanceTruck01" prob=".11"/>
+		<block name="FuelTankerDamaged" prob=".1"/>
+		<block name="DamagedBigRig2" prob=".1"/>
+		<block name="cntBusCity" prob=".1"/>
+		
+		<block name="GasTankerTruck" prob=".1"/>
+		<block name="MilitaryHumVeeDamaged" prob=".1"/>
+		<block name="VMWreckRV" prob=".09"/>
+		<block name="DamagedMilitaryTruck2" prob=".09"/>
+		<block name="OldChevyTruckDamaged" prob=".08"/>
+		<block name="BelAirDamaged" prob=".08"/>
+		<block name="AmbulanceShell" prob=".08"/>
+		
+		
+		<block name="DamagedVespa" prob=".07"/>
+		<block name="DamagedVespaKart" prob=".07"/>
+		<block name="DamagedMotoGuppy" prob=".07"/>
+		<block name="DumperTruckDamaged" prob=".06"/>
+		<block name="GarbageTruckDamaged" prob=".06"/>
+		<block name="DamagedMustangJunker" prob=".06"/>
+		<block name="FastbackDamaged" prob=".06"/>
+		<block name="DamagedExplorer" prob=".051"/>
+		<block name="DamagedHotRod" prob=".041"/>
+		<block name="DamagedHunter" prob=".041"/>
+		<block name="DamagedVMBuggy" prob=".037"/>
+		<block name="SpikerDamaged" prob=".0361"/>
+				
+		<block name="TurboDamaged" prob=".036"/>		
+		<block name="DamagedM3ATruck" prob=".031"/>
+		<block name="DamagedSmallMTTruck" prob=".03"/>
+		<block name="DamagedMustangMach1" prob=".025"/>
+		<block name="DamagedCobra" prob=".025"/>
+		<block name="DamagedInterceptor" prob=".023"/>
+		<block name="DamagedWarthog" prob=".021"/>
+		<block name="DamagedJeepTA" prob=".021"/>
+		<block name="DamagedStrikerAPC" prob=".021"/>
+			
+	<!-- Repairable vehicles -->
+		<block name="RepairableBicycle" prob="0.57"/>
+		<block name="RepairableMotoGuppy" prob="0.24"/>
+		<block name="RepairableVespa" prob="0.23"/>
+		<block name="RepairableVespaKart" prob="0.22"/>
+		<block name="RepairableBrownQuad" prob="0.21"/>
+		<block name="RepairableSedan" prob="0.2"/>
+		<block name="RepairableCombiVan1" prob="0.2"/>
+		<block name="RepairableNPCVan" prob="0.2"/>
+		<block name="RepairableRedBMW" prob="0.2"/>
+		
+		<block name="RepairableWhiteBMW" prob="0.2"/>
+		<block name="RepairableCutlass" prob="0.2"/>
+		<block name="RepairableCrusader4x4" prob="0.2"/>
+		<block name="RepairableVan2" prob="0.18"/>
+		<block name="RepairableMotorcycle" prob="0.18"/>
+		<block name="RepairableBeetle" prob="0.14"/>
+		<block name="RepairableRedVan" prob="0.12"/>
+		<block name="RepairableBrownJeep" prob="0.12"/>
+		
+		<block name="Repairable4x4Truck" prob="0.1"/>
+		<block name="RepairableBigRig2" prob="0.1"/>
+		<block name="RepairableExplorer" prob="0.1"/>
+		<block name="RepairableFlatBed" prob="0.09"/>
+		<block name="RepairableBigBuggy" prob=".085"/>
+		<block name="RepairableEvoLancer" prob="0.08"/>
+		<block name="RepairableSpiker" prob="0.08"/>
+		
+		<block name="RepairableSmallAPOTruck" prob="0.08"/>
+		<block name="RepairableOldSemi" prob="0.08"/>
+		<block name="RepairableHotRod" prob="0.08"/>
+		<block name="RepairableHunter" prob="0.08"/>
+		<block name="RepairableRV" prob="0.07"/>
+		<block name="RepairableTurboMuscle" prob="0.061"/>
+		<block name="RepairableMalice" prob="0.06"/>
+		<block name="RepairableFastback" prob=".058"/>
+		<block name="RepairableCobra" prob="0.044"/>
+		<block name="RepairableMustangMach1" prob=".035"/>
+		<block name="RepairableInterceptor" prob="0.024"/>
+			
+	<!-- half wrecked cars -->
+		
+		<block name="VMWreckSUV1_2" prob=".48"/>
+		<block name="PontiacHalfWreck" prob=".46"/>
+		<block name="VMWreckCar7_2" prob=".44"/>
+		<block name="VMWreckCar8_2" prob=".44"/>
+		<block name="OldsmobileHalfWreck" prob=".43"/>
+		<block name="VMVan2HalfWreck" prob=".42"/>
+		<block name="BlueEvoHalfWreck" prob=".4"/>
+		<block name="OrangeEvoHalfWreck" prob=".4"/>
+		<block name="GreyEvoHalfWreck" prob=".4"/>
+		<block name="OldCar1HalfWreck" prob=".37"/>
+		<block name="VMWreckHatchback1" prob=".37"/>
+		<block name="MotorcycleHalfWreck" prob="0.34"/>
+		<block name="WhiteBMWHalfWreck" prob=".34"/>
+		<block name="CrusaderHalfWreck" prob=".34"/>
+		<block name="JeepHalfWreck" prob=".34"/>
+		<block name="VMPoliceBurned180Wreck0" prob=".3"/>
+		<block name="PoliceBurnedHalfWreck" prob="0.3"/>
+		<block name="4x4TruckHalfWreck" prob=".26"/>
+		<block name="RedBMWHalfWreck" prob=".24"/>
+		<block name="AbandonedMilitary" prob="0.23"/>
+		<block name="VMWreckRV1" prob=".17"/>
+		<block name="FiretruckDamagedWreck" prob=".14"/>
+		<block name="DumperTruckHalfWreck" prob="0.13"/>
+		<block name="BigRigDamaged" prob="0.13"/>
+		<block name="FastbackHalfWreck" prob=".13"/>
+		<block name="SpikerHalfWreck" prob=".11"/>
+		<block name="TurboHalfWreck" prob=".11"/>
+		<block name="GasTank" prob="0.09"/>
+		
+	<!--Wrecks in world on all road types -->
+		<block name="VMWreckCar1" prob=".35"/>
+		<block name="VMWreckCar2" prob=".2"/>
+		<block name="VMWreckCar3" prob=".3"/>
+		<block name="VMWreckCar4" prob=".3"/>
+		<block name="VMWreckCar5" prob=".3"/>
+		<block name="VMWreckCar6" prob=".3"/>
+		<block name="VMWreckCar7_3" prob=".4"/>
+		<block name="VMWreckCar8_3" prob=".41"/>
+		<block name="VMWreckSUV1_3" prob="1"/>
+		<block name="VMWreckTruck1" prob=".2"/>
+		<block name="VMWreckTruck2" prob=".2"/>
+		<block name="VMWreckVan" prob=".3"/>
+		<block name="VMWreckVan2_3" prob="1"/>
+		<block name="VMWreckWagon1" prob=".2"/>
+		<block name="VMWreckZuk1" prob="1"/>
+		<block name="SpikerShell" prob=".12"/>
+		<block name="DumperTruckShell" prob=".11"/>
+		<block name="GarbageTruckShell" prob=".11"/>
+		<block name="OldCar1Damaged" prob=".21"/>
+		<block name="MotorcycleShell" prob=".31"/>
+		<block name="WhiteBMWShell" prob=".21"/>
+		<block name="4x4TruckShell" prob=".211"/>
+		<block name="MilitaryHumVeeShell" prob=".05"/>
+		<block name="MilitaryHumVeeDamaged" prob=".07"/>
+		<block name="FastbackShell" prob=".21"/>
+</set>
+
+<append xpath="//placeholder[@name='carWrecksRandomHelper']">
+	<!--wrecks in biomes -->
+		<block name="VMWreckCar1" prob=".6"/>
+		<block name="VMWreckCar2" prob=".6"/>
+		<block name="VMWreckCar3" prob=".3"/>
+		<block name="VMWreckCar4" prob=".3"/>
+		<block name="VMWreckCar5" prob=".3"/>
+		<block name="VMWreckCar6" prob=".3"/>
+		<block name="VMWreckCar7_3" prob="1"/>
+		<block name="VMWreckCar8_3" prob="1"/>
+		<block name="VMWreckSUV1_3" prob="1"/>
+		<block name="VMWreckTruck1" prob=".3"/>
+		<block name="VMWreckTruck2" prob=".3"/>
+		<block name="VMWreckVan" prob=".2"/>
+		<block name="VMWreckVan2_3" prob="1"/>
+		<block name="VMWreckWagon1" prob=".2"/>
+		<block name="VMWreckZuk1" prob="1"/>
+		<block name="VMWreckLada1" prob=".5"/>
+		
+		<block name="VMPoliceBurned180Wreck2" prob=".5"/>
+		<block name="PontiacShell" prob=".42"/>
+		<block name="DumperTruckShell" prob=".13"/>
+		<block name="GarbageTruckShell" prob=".11"/>
+		<block name="MotorcycleShell" prob=".21"/>
+		<block name="OldCar1Shell" prob=".23"/>
+		<block name="4x4TruckShell" prob=".11"/>
+		<block name="BlueEvoShell" prob=".25"/>
+		<block name="OrangeEvoEvoShell" prob=".25"/>
+		<block name="GreyEvoEvoShell" prob=".25"/>
+		<block name="RedBMWShell" prob=".21"/>
+		<block name="VMVan2Shell" prob=".21"/>
+		<block name="VMWreckRV1" prob=".17"/>
+		
+		<block name="OldsmobileShell" prob=".21"/>
+		<block name="JeepShell" prob=".31"/>
+		<block name="WhiteBMWShell" prob=".11"/>
+		<block name="CrusaderShell" prob=".31"/>
+		<block name="BigRigShell" prob=".21"/>
+		<block name="FastbackShell" prob=".2"/>
+		<block name="SpikerShell" prob=".07"/>
+		<block name="TurboShell" prob=".2"/>
+		<block name="AbandonedMilitary" prob=".25"/>
+		<block name="PoliceCarDamaged" prob=".21"/>
+		<block name="DamagedBeetle" prob=".31"/>
+		<block name="4x4TruckShell" prob=".211"/>
+		<block name="MilitaryHumVeeShell" prob=".11"/>
+		<block name="MilitaryHumVeeDamaged" prob=".11"/>
+</append>
+
+<set xpath="//placeholder[@name='cntArmyTruckRandomLootHelper']">
+		<block name="cntArmyTruckOpen" prob=".055"/>
+		<block name="cntArmyTruckClosed" prob=".011"/>
+		<block name="MilitaryTruckDamaged" prob=".3"/>
+		<block name="DamagedMilitaryTruck2" prob=".2"/>
+		<block name="MilitaryHumVeeDamaged" prob=".2"/>
+		<block name="DamagedM3ATruck" prob=".15"/>
+		<block name="DamagedSmallMTTruck" prob=".12"/>
+		<block name="MilitaryHumVeeShell" prob=".11"/>
+		<block name="DamagedStrikerAPC" prob=".1"/>
+		<block name="DamagedWarthog" prob=".1"/>
+		<block name="DamagedJeepTA" prob=".1"/>
+		<block name="DamagedStrikerAPC" prob=".1"/>
+		<block name="RepairableMilitaryHumVee" prob=".16"/>
+		<block name="RepairableMilitaryTruck" prob=".14"/>
+		<block name="RepairableM3ATruck" prob="0.11"/>
+		<block name="RepairableStrikerAPC" prob="0.06"/>
+		<block name="RepairableTacticalJeep" prob="0.061"/>
+		<block name="RepairableWarthog" prob="0.046"/>
+</set>
+
+<!-- *** SEDAN -->
+<set xpath="//placeholder[@name='cntSedan01RandomHelper']">
+		<block name="OldsmobileDamaged" prob=".52"/>
+		<block name="BlueEvoDamaged" prob=".51"/>
+		<block name="OrangeEvoDamaged" prob=".51"/>
+		<block name="GreyEvoDamaged" prob=".51"/>
+		<block name="GTODamaged" prob=".41"/>
+		<block name="DamagedRustySedan" prob=".41"/>
+		<block name="DamagedModernSedan" prob=".41"/>
+		<block name="RedBMWDamaged" prob=".41"/>
+		<block name="WhiteBMWDamaged" prob=".41"/>
+		<block name="DamagedCutlassSedan" prob=".34"/>
+		<block name="PontiacDamaged" prob="0.27"/>
+		<block name="VenturaDamaged" prob=".2"/>
+		<block name="DamagedBeetle" prob=".18"/>
+		<block name="DamagedMalice" prob=".13"/>
+		<block name="PoliceCarDamaged" prob=".1"/>
+		<block name="BelAirDamaged" prob=".08"/>
+		<block name="FastbackDamaged" prob=".07"/>
+		<block name="SpikerDamaged" prob=".071"/>
+		
+		<block name="TurboDamaged" prob=".071"/>
+		<block name="DamagedExplorer" prob=".051"/>
+		<block name="DamagedHotRod" prob=".041"/>
+		<block name="DamagedHunter" prob=".041"/>
+		<block name="DamagedInterceptor" prob=".035"/>
+		<block name="DamagedCobra" prob=".022"/>
+		<block name="RepairableSedan" prob=".2"/>
+		<block name="RepairableRedBMW" prob="0.2"/>
+		<block name="RepairableWhiteBMW" prob="0.2"/>
+		<block name="RepairableCutlass" prob="0.2"/>
+		<block name="RepairableBeetle" prob=".14"/>
+		<block name="Repairable4x4Truck" prob=".1"/>
+		<block name="RepairableExplorer" prob="0.1"/>
+		<block name="RepairableEvoLancer" prob="0.08"/>
+		<block name="RepairableSpiker" prob="0.08"/>
+		<block name="RepairableHotRod" prob="0.08"/>
+		<block name="RepairableHunter" prob="0.08"/>
+		<block name="RepairableTurboMuscle" prob="0.061"/>
+		<block name="RepairableMalice" prob="0.06"/>
+		<block name="RepairableFastback" prob=".058"/>
+		<block name="RepairableCobra" prob="0.044"/>
+		<block name="RepairableMustangMach1" prob=".035"/>
+		<block name="RepairableInterceptor" prob="0.021"/>
+			
+		<block name="cntSedan01White" prob=".025"/>
+		<block name="cntSedan01Brown" prob=".025"/>
+		<block name="cntSedan01Red" prob=".025"/>
+		<block name="cntSedan01Orange" prob=".015"/>
+		<block name="cntSedan01Yellow" prob=".015"/>
+		<block name="cntSedan01Green" prob=".014"/>
+		<block name="cntSedan01Blue" prob=".015"/>
+		<block name="cntSedan01Purple" prob="0.015"/>
+		<block name="cntSedan01Grey" prob=".014"/>
+		<block name="cntSedan01Pink" prob="0.013"/>
+</set>
+<!-- *** SEDAN_VS_AIR -->
+<set xpath="//placeholder[@name='cntSedan01AirRandomHelper']">
+		<block name="OldsmobileDamaged" prob=".52"/>
+		<block name="air" prob="1"/>
+		<block name="BlueEvoDamaged" prob=".51"/>
+		<block name="air" prob="1"/>
+		<block name="OrangeEvoDamaged" prob=".51"/>
+		<block name="air" prob="1"/>
+		<block name="GreyEvoDamaged" prob=".51"/>
+		<block name="air" prob="1"/>
+		<block name="GTODamaged" prob=".41"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedRustySedan" prob=".41"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedModernSedan" prob=".41"/>
+		<block name="air" prob="1"/>
+		<block name="RedBMWDamaged" prob=".41"/>
+		<block name="air" prob="1"/>
+		<block name="WhiteBMWDamaged" prob=".41"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedCutlassSedan" prob=".34"/>
+		<block name="air" prob="1"/>
+		<block name="PontiacDamaged" prob="0.27"/>
+		<block name="air" prob="1"/>
+		<block name="VenturaDamaged" prob=".2"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBeetle" prob=".18"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedMalice" prob=".13"/>
+		<block name="air" prob="1"/>
+		<block name="PoliceCarDamaged" prob=".1"/>
+		<block name="air" prob="1"/>
+		<block name="BelAirDamaged" prob=".08"/>
+		<block name="air" prob="1"/>
+		<block name="FastbackDamaged" prob=".07"/>
+		<block name="air" prob="1"/>
+		<block name="SpikerDamaged" prob=".071"/>
+		<block name="air" prob="1"/>
+		<block name="TurboDamaged" prob=".071"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedExplorer" prob=".051"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedHotRod" prob=".041"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedHunter" prob=".041"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedInterceptor" prob=".035"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedCobra" prob=".022"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableSedan" prob=".2"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableRedBMW" prob="0.2"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableWhiteBMW" prob="0.2"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCutlass" prob="0.2"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBeetle" prob=".14"/>
+		<block name="air" prob="1"/>
+		<block name="Repairable4x4Truck" prob=".1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableExplorer" prob="0.1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableEvoLancer" prob="0.08"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableSpiker" prob="0.08"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableHotRod" prob="0.08"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableHunter" prob="0.08"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableTurboMuscle" prob="0.061"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMalice" prob="0.06"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableFastback" prob=".058"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCobra" prob="0.044"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMustangMach1" prob=".035"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableInterceptor" prob="0.021"/>
+		<block name="air" prob="1"/>	
+		<block name="cntSedan01White" prob=".025"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Brown" prob=".025"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Red" prob=".025"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Orange" prob=".015"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Yellow" prob=".015"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Green" prob=".014"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Blue" prob=".015"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Purple" prob="0.015"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Grey" prob=".014"/>
+		<block name="air" prob="1"/>
+		<block name="cntSedan01Pink" prob="0.013"/>
+		<block name="air" prob="1"/>
+		
+</set>
+
+<set xpath="//placeholder[@name='cntFarmTruckRandomLootHelper']">
+		<block name="OldChevyTruckDamaged" prob=".41"/>
+		<block name="OldCar1Damaged" prob=".31"/>
+		<block name="OldPickupTruck" prob=".3"/>
+		<block name="BelAirDamaged" prob=".23"/>
+		<block name="OldCar1Shell" prob=".23"/>
+		<block name="RepairableBrownQuad" prob="0.19"/>
+		<block name="DamagedApoTruck" prob=".19"/>
+		<block name="RepairableSmallAPOTruck" prob="0.12"/>
+		<block name="GasTankerTruck" prob=".11"/>
+		<block name="GasTank" prob="0.11"/>
+		<block name="DamagedBrownQuad" prob="0.111"/>
+		<block name="cntFarmTruckOpen" prob=".11"/>
+		<block name="cntFarmTruckClosed" prob=".02"/>
+</set>
+
+<set xpath="//placeholder[@name='cntBusCityRandomHelper']">
+		<block name="air" prob=".22"/>
+		<block name="DamagedRustyTaxi" prob=".18"/>
+		<block name="RepairableRustyTaxi" prob=".16"/>
+		<block name="BusDamaged" prob=".18"/>
+		<block name="BusDamaged2" prob=".18"/>
+		<block name="cntBusCity" prob=".16"/>
+</set>
+
+<!-- *** FIRE_TRUCK -->
+<set xpath="//placeholder[@name='cntFireTruck01RandomHelper']">
+		<block name="cntFireTruck01Red" prob=".25"/>
+		<block name="cntFireTruck01Orange" prob=".12"/>
+		<block name="cntFireTruck01Yellow" prob=".13"/>
+		<block name="FiretruckDamaged" prob=".25"/>
+		<block name="FiretruckDamagedWreck" prob=".25"/>
+</set>
+
+<set xpath="//placeholder[@name='cntFireTruck01AirRandomHelper']">
+		<block name="FiretruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FiretruckDamagedWreck" prob="1"/>
+		<block name="air" prob="1"/>
+</set>
+
+<!-- *** SUV  -->
+<append xpath="//placeholder[@name='cntSUV01RandomHelper']">
+		<block name="JeepDamaged" prob="1"/>
+		<block name="CrusaderDamaged" prob="1"/>
+		<block name="DamagedExplorer" prob="1"/>
+		<block name="RepairableExplorer" prob="0.3"/>
+		<block name="RepairableBrownJeep" prob="0.3"/>
+		<block name="RepairableCrusader4x4" prob="0.2"/>
+</append>
+
+	<!-- *** SUV_VS_AIR -->
+<set xpath="//placeholder[@name='cntSUV01AirRandomHelper']">
+		<block name="JeepDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="CrusaderDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBrownJeep" prob="0.5"/>
+		<block name="air" prob="0.5"/>
+		<block name="RepairableCrusader4x4" prob="0.5"/>
+		<block name="air" prob="0.5"/>
+		<block name="RepairableExplorer" prob="0.1"/>
+		<block name="air" prob="0.5"/>
+		<block name="DamagedExplorer" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="cntSUV01White" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Brown" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Red" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Orange" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Yellow" prob=".1"/>
+		<block name="air" prob=".9"/>
+		<block name="cntSUV01Green" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Blue" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Purple" prob="0.1"/>
+		<block name="air" prob=".9"/>
+		<block name="cntSUV01Grey" prob=".2"/>
+		<block name="air" prob=".8"/>
+		<block name="cntSUV01Pink" prob="0.1"/>
+		<block name="air" prob=".9"/>
+</set>
+	
+
+<!-- *** POLICE_CAR *** -->
+<set xpath="//placeholder[@name='cntPoliceCar01AirRandomHelper']">
+		<block name="cntPoliceCar01" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PoliceCarDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairablePoliceCar" prob="1"/>
+		<block name="air" prob="1"/>
+</set>
+
+<append xpath="//placeholder[@name='abandonedSUV01RandomHelper']">
+		<block name="VMWreckSUV1" prob="1"/>
+		<block name="VMWreckSUV1_3" prob="1"/>
+		<block name="VMWreckSUV1_2" prob="1"/>
+</append>
+
+<!-- *** Vans  -->
+<append xpath="//placeholder[@name='cntMinivan01RandomHelper']">
+		<block name="VMWreckVan2_1" prob="1"/>
+		<block name="VMWreckVan2_2" prob="1"/>
+		<block name="VMVan2Damaged" prob=".1"/>
+		<block name="VMWreckVan" prob="1"/>
+		<block name="DamagedRedVan" prob="0.51"/>
+		<block name="RepairableRedVan" prob="0.51"/>
+		<block name="RepairableVan2" prob="0.5"/>
+		<block name="RepairableNPCVan" prob="0.5"/>
+		<block name="VMWreckVan1" prob="1"/>
+		<block name="VMWreckZuk1" prob="1"/>
+</append>
+
+<!-- *** MINIVAN_VS_AIR -->
+<append xpath="//placeholder[@name='cntMinivan01AirRandomHelper']">
+		<block name="VMWreckVan2_1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan2_2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMVan2Damaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableVan2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableNPCVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckZuk1" prob="1"/>
+		<block name="air" prob="1"/>
+</append>
+
+		<!-- *** SHORT_BUS_50/50_AIR -->
+<append xpath="/blockplaceholders/placeholder[@name='cntBusSchoolShortRandomHelper']">	
+	<placeholder name="cntBusSchoolShortRandomHelper">
+		<block name="air" prob=".5"/>
+		<block name="cntBusSchoolShort" prob=".3"/>
+		<block name="RepairableSchoolBus" prob=".2"/>
+	</placeholder>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntSedan3Wide01RandomHelper']">
+		<block name="cntAmbulanceTruck01" prob=".4"/>
+		<block name="AmbulanceDamaged" prob=".5"/>
+		<block name="AmbulanceHalfWreck" prob="0.5"/>
+		<block name="RepairableAmbulance" prob=".4"/>
+</append>
+
+<append xpath="/blockplaceholders/placeholder[@name='cntPickupTruck3Wide01RandomHelper']">
+		<block name="cntAmbulanceTruck01" prob=".4"/>
+		<block name="AmbulanceDamaged" prob=".5"/>
+		<block name="AmbulanceHalfWreck" prob="0.4"/>
+		<block name="RepairableAmbulance" prob=".3"/>
+</append>
+
+<!-- *** SEMI_TRUCK -->
+<append xpath="//placeholder[@name='cntSemiTruck01RandomHelper']">
+		<block name="RepairableBigRig2" prob=".54"/>
+		<block name="RepairableOldSemi" prob=".54"/>
+		<block name="BigRigDamaged" prob="1"/>
+		<block name="DumperTruckDamaged" prob=".7"/>
+		<block name="GarbageTruckDamaged" prob=".71"/>
+		<block name="RepairableFlatBed" prob=".55"/>
+		<block name="DamagedBoxTruck" prob=".41"/>
+		<block name="DamagedOldSemi" prob=".41"/>
+</append>
+
+<!-- *** SEMI_TRUCK_VS_AIR -->
+<append xpath="//placeholder[@name='cntSemiTruck01AirRandomHelper']">
+		<block name="RepairableBigRig2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableOldSemi" prob=".54"/>
+		<block name="air" prob="1"/>
+		<block name="BigRigDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DumperTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GarbageTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableFlatBed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBoxTruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedOldSemi" prob="1"/>
+		<block name="air" prob="1"/>
+</append>
+
+<!-- *** Sedan_Crumpled Fronts -->
+<append xpath="//placeholder[@name='cntFrontCrumpledSedan01RandomHelper']">
+		<block name="BrownSedanDamaged" prob="1"/>
+		<block name="VMWreckCar1" prob="1"/>
+		<block name="VMWreckLada1" prob="1"/>
+</append>
+
+<append xpath="//placeholder[@name='cntPickupTruck01RandomHelper']">
+		<block name="VMWreckTruck1" prob="1"/>
+		<block name="VMWreckTruck2" prob="1"/>
+		<block name="VMWreckVan" prob="1"/>
+		<block name="VMWreckRV" prob=".45"/>
+</append>
+
+<append xpath="//placeholder[@name='abandonedPickupTruck01RandomHelper']">
+		<block name="OldPickupTruck" prob=".8"/>
+		<block name="OldChevyTruckDamaged" prob=".8"/>
+</append>
+
+<set xpath="//placeholder[@name='cntAmbulanceTruck01RandomLootHelper']">
+		<block name="air" prob=".4"/>
+		<block name="cntAmbulanceTruck01" prob=".4"/>
+		<block name="AmbulanceDamaged" prob=".5"/>
+		<block name="AmbulanceHalfWreck" prob="0.4"/>
+		<block name="RepairableAmbulance" prob=".3"/>
+</set>
+
+<set xpath="//placeholder[@name='cntServiceTruckMoPowerRandomLootHelper']">
+		<block name="air" prob=".3"/>
+		<block name="cntServiceTruckMoPower" prob=".4"/>
+		<block name="RepairableMoPower" prob=".4"/>
+</set>
+
+<set xpath="//placeholder[@name='cntServiceTruckWorkingStiffToolsRandomLootHelper']">
+		<block name="air" prob="1"/>
+		<block name="cntServiceTruckWorkingStiffTools" prob=".6"/>
+		<block name="RepairableWorkingStiffs" prob=".4"/>
+</set>
+
+<!-- *** FULL_CAR_VS_AIR -->
+<set xpath="//placeholder[@name='cntCar03SedanDamage0RandomHelper']">
+		<block name="VMWreckCar7" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar8" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BlueEvoDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OrangeEvoDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GreyEvoDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="CrusaderDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckSUV1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GTODamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedRustySedan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedModernSedan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RedBMWDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WhiteBMWDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldsmobileDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		<block name="JeepDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedCombiVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedCutlassSedan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan2_1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PontiacDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MotorcycleDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="4x4TruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBicycle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBrownQuad" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		<block name="cntBusCity" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FuelTankerDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VenturaDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedRedVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMVan2Damaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedNPCVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BigRigDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBeetle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedVespa" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedVespaKart" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedMotoGuppy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedApoTruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MilitaryTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedMalice" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="cntAmbulanceTruck01" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		<block name="DamagedBigRig2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedOldSemi" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckRV" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GasTankerTruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MilitaryHumVeeDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedMilitaryTruck2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldChevyTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BelAirDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="AmbulanceShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FastbackDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="SpikerDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		<block name="TurboDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DumperTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GarbageTruckDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedExplorer" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedHotRod" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedHunter" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedVMBuggy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedInterceptor" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedM3ATruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedSmallMTTruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedCobra" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedWarthog" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedJeepTA" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedStrikerAPC" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		
+			
+	<!-- Repairable vehicles -->
+		<block name="RepairableBicycle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMotoGuppy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableVespa" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableVespaKart" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBrownQuad" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableSedan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCombiVan1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableNPCVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableRedBMW" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableWhiteBMW" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCutlass" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCrusader4x4" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableVan2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMotorcycle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBeetle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableRedVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBrownJeep" prob="1"/>
+		<block name="air" prob="1"/>
+		
+		<block name="Repairable4x4Truck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBigRig2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableExplorer" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableFlatBed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableBigBuggy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableEvoLancer" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableSpiker" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableSmallAPOTruck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableHotRod" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableHunter" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableRV" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableTurboMuscle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMalice" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableFastback" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableCobra" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableInterceptor" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RepairableMustangMach1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage0v01" prob=".5"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage0v02" prob=".5"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage0v07" prob=".5"/>
+		<block name="air" prob="1"/>
+</set>
+
+<!-- *** 2ND_STAGE_CAR_VS_AIR -->	
+<set xpath="//placeholder[@name='cntCar03SedanDamage1RandomHelper']">
+		<block name="VMWreckSUV1_2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PontiacHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar7_2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar8_2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldsmobileHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMVan2HalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BlueEvoHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OrangeEvoHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GreyEvoHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldCar1HalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckHatchback1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MotorcycleHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WhiteBMWHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="CrusaderHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="JeepHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMPoliceBurned180Wreck0" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PoliceBurnedHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="4x4TruckHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RedBMWHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="AbandonedMilitary" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckRV1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FiretruckDamagedWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DumperTruckHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BigRigDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FastbackHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="SpikerHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="TurboHalfWreck" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GasTank" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage1v01" prob=".5"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage1v02" prob=".5"/>
+		<block name="air" prob="1"/>
+		<block name="cntCar03SedanDamage1v07" prob=".5"/>
+		<block name="air" prob="1"/>
+</set>
+
+<!-- *** WRECKED_CAR_VS_AIR -->
+<set xpath="//placeholder[@name='cntCar03SedanDamage2RandomHelper']">
+		<block name="VMWreckCar1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar3" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar4" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar5" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar6" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar7_3" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckCar8_3" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckSUV1_3" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckTruck1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckTruck2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckVan2_3" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckWagon1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckZuk1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckLada1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMPoliceBurned180Wreck2" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PontiacShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DumperTruckShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GarbageTruckShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MotorcycleShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldCar1Shell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="4x4TruckShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BlueEvoShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OrangeEvoEvoShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="GreyEvoEvoShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="RedBMWShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMVan2Shell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="VMWreckRV1" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldsmobileShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="JeepShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WhiteBMWShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="CrusaderShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="BigRigShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="FastbackShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="SpikerShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="TurboShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MilitaryHumVeeShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="4x4TruckShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="AbandonedMilitary" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="PoliceCarDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="DamagedBeetle" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="4x4TruckShell" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MilitaryHumVeeDamaged" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="air" prob="1"/>
+</set>
+		
+</configs>

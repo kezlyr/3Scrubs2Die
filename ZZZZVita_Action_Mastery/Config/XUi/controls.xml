@@ -1,0 +1,22 @@
+<configs>
+  <append xpath="controls">
+    <Vam_SI>
+      <rect pos="-0, -${(index*height)+height+7}" height="${height}">
+        <sprite color="60,60,60,255" type="sliced" globalopacity="true" fillcenter="false" />
+        <label pos=" 0, -${(font_size/2)+10}" depth="3" text_key="${name_key}" justify="left" width="${Round(width/4,0)*3}" pivot="left" color="[white]" />
+        <label pos="-5, -${(font_size/2)+10}" depth="4" text="Lv.${lv}" justify="right" font_size="${font_size}" pivot="left" color="[white]" />
+        <filledsprite depth="1" name="background" color="0,0,0,0" type="filled" fill="0" />
+				<filledsprite depth="2" name="BarContent" color="0,0,0,0" type="filled" fill="0"  />
+				<filledsprite depth="1" name="background" color="0,0,0,255" type="filled" fill="1" />
+				<filledsprite depth="2" name="BarContent" color="${gauge_color}" type="filled" fill="${exp_ratio}"  />
+      </rect>
+    </Vam_SI>
+    <Vam_EI>
+      <rect pos="5, -${(index*height)+height+7}" height="${height}">
+        <sprite color="60,60,60,255" type="sliced" globalopacity="true" fillcenter="false" />
+        <label pos=" 0, -${(font_size/2)+10}"                               depth="3" text_key="${name_key}" width="${Round(width/4,0)*3}" justify="left"  pivot="left" color="[white]" />
+        <label pos="${-10+width-Round(width/4,0)*1}, -${(font_size/2)+10}"  depth="4" text="${value}" width="${Round(width/4,0)*1}" justify="right" pivot="left" color="[white]" />
+      </rect>
+    </Vam_EI>
+  </append>
+</configs>

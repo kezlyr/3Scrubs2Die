@@ -1,0 +1,50 @@
+<config>
+  <append xpath="/recipes">
+<!-- ASYLUM TWISTED MEDICINE RECIPES -->
+<!-- Corrupted medical experiments requiring dark ingredients -->
+
+<recipe name="curebiotics" count="2" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="foodRottingFlesh" count="3"/>
+	<ingredient name="resourceBone" count="2"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="8"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="drugAntibiotics" count="1"/>
+</recipe>
+
+<recipe name="theswiftshot" count="2" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="drugSteroids" count="2"/>
+	<ingredient name="foodRottingFlesh" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="8"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="12"/>
+	<ingredient name="resourceBone" count="3"/>
+</recipe>
+
+<recipe name="bleednomore" count="2" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="foodRottingFlesh" count="8"/>
+	<ingredient name="drugPainkillers" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="15"/>
+	<ingredient name="resourceBone" count="4"/>
+</recipe>
+
+<recipe name="fatigueout" count="3" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
+	<ingredient name="foodCropBlueberries" count="15"/>
+	<ingredient name="resourceBone" count="2"/>
+	<ingredient name="drugVitamins" count="1"/>
+</recipe>
+
+<recipe name="medicalration" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="medicalFirstAidKit" count="3"/>
+	<ingredient name="drugSteroids" count="3"/>
+	<ingredient name="drugAntibiotics" count="2"/>
+	<ingredient name="drugPainkillers" count="3"/>
+	<ingredient name="medicalPlasterCast" count="2"/>
+	<ingredient name="foodRottingFlesh" count="15"/>
+	<ingredient name="resourceBone" count="8"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
+</recipe>
+
+</append>
+</config>

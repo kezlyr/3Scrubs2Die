@@ -1,0 +1,25 @@
+<config>
+	
+	
+
+	<append xpath="/styles/global">
+		<style_entry name="ss_style_scrollbar_background" value="0,0,0" />
+		<style_entry name="ss_style_scrollbar_background_hover" value="7,7,7" />
+		<style_entry name="ss_style_scrollbar_handler" value="224,224,224" />
+		<style_entry name="ss_style_scrollbar_handler_hover" value="255,255,255" />				
+		
+		<style_entry name="ss_style_slot_frame_locked" value="175,30,25,255" />
+		<style_entry name="ss_style_slot_frame_search" value="255,144,24,255" />
+		<style_entry name="ss_style_slot_disabled" value="64,64,64" />
+		
+		<style_entry name="ss_style_element_input_frame" value="255,255,255" />
+	</append>
+	
+	<append xpath="/styles/style[@name='itemStack']">
+		<style_entry name="lockedslot_color" value="[ss_style_slot_frame_locked]"/>
+		<style_entry name="search_color" value="[ss_style_slot_frame_search]"/>
+		<style_entry name="nomatch_iconcolor" value="[ss_style_slot_disabled]"/>
+	</append>
+
+	
+</config>

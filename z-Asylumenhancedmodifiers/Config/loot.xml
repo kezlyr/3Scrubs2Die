@@ -1,0 +1,68 @@
+<Config>
+	<!-- Create Lootgroup for Magazines -->
+	<insertBefore xpath="//lootgroup[1]">
+		<lootgroup name="egtskillmaggroup">
+				<item name="egtskillmagazine" loot_prob_template="veryLow"/>
+		</lootgroup>
+	</insertBefore>
+	
+	<!-- Adding Magazine to vanilla lootgroups -->
+	<append xpath="//lootgroup[@name='groupCrackabookCrate']">
+			<item name="egtskillmagazine" loot_prob_template="low" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupPurse01']">
+			<item name="egtskillmagazine" loot_prob_template="Low"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupMailbox02']">
+			<item name="egtskillmagazine" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupNightstand01']">
+			<item name="egtskillmagazine" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupCloset01']">
+			<item name="egtskillmagazine" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupCementMixerLoot']">
+			<item name="egtskillmagazine" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='skillMagazines']">
+			<item name="egtskillmagazine"/> 
+	</append>
+
+	<append xpath="//lootgroup[@name='groupHiddenStash01']">
+			<item name="egtskillmagazine" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupPoliceCar02']">
+			<item name="egtskillmagazine" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupBuriedTreasure']">
+			<item name="egtskillmagazine"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupSmallSafeLoot01']">
+			<item name="egtskillmagazine" count="1,2" loot_prob_template="medLow"/>
+	</append>
+
+
+	<!-- Adding custom lootgroup to Z Packs -->
+	<append xpath="//lootgroup[@name='groupZpackReg01']">
+			<item group="egtskillmaggroup" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupZpackStrong01']">
+			<item group="egtskillmaggroup" loot_prob_template="medHigh"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupZpackBoss01']">
+			<item group="egtskillmaggroup" loot_prob_template="high"/>
+	</append>
+
+</Config>

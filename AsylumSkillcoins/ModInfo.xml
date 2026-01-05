@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<ModInfo>
+		<Name value="SkillCoins" />
+		<DisplayName value="Skill coin System" />
+		<Version value="1.1.0.1" />
+		<Author value="AsylumMods/Duhwolf" />
+		<Description value="Skill coin system that allows players to find and craft skill points through loot and recipes." />
+		<Website value="https://discord.gg/P5EXchVybZ" />
+	</ModInfo>

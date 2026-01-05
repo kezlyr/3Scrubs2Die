@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="AsylumScreamerHorde"/>
+	<DisplayName value="Asylum Screamer Horde"/>
+	<Version value="1.0.0"/>
+	<Description value="Custom screamer zombie that spawns a wandering horde when damaged"/>
+	<Author value="AsylumMods"/>
+	<Website value=""/>
+</ModInfo>
+

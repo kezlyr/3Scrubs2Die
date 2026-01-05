@@ -1,0 +1,24 @@
+<configs>
+
+
+	<append xpath="/shapes">
+
+
+<!--
+
+		<shape name="MPL_pillar50Plate_offset">
+			<property name="Model" value="pillar50_plate" />
+			<property name="CustomIcon" value="shapepillar50Plate" />
+			<property name="ShapeCategories" value="Round" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" />
+			<property name="WaterFlow" value="permitted" />
+			<property name="ModelOffset" value="1,-.05,1" />
+		</shape>
+-->	
+
+	</append>
+
+</configs>

@@ -1,0 +1,31 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+SMALTPickaxe,Items,Weapons,,,"[FFB800][FF0000]Soul Ripper[-]"
+SMALTPickaxeDesc,Items,Weapons,,,"Forged from the bones of asylum patients who clawed at stone walls until their fingers bled, this cursed pickaxe thirsts for mineral veins like its creators thirsted for freedom.\n[FF0000]The screams of the tormented echo with each strike, and miners report hearing whispers of madness when wielding this unholy tool.[-]\n\n[FFFF00]WARNING: Prolonged use may cause auditory hallucinations[-]\n\n\n\nScales with the same skills as the vanilla pickaxe."
+
+SMALTAxe,Items,Weapons,,,"[FFB800][FF0000]Lobotomy Cleaver[-]"
+SMALTAxeDesc,Items,Weapons,,,"Once used by the asylum's head surgeon for his twisted 'treatments,' this blood-stained axe has developed an insatiable hunger for flesh and wood alike.\n[FF0000]The blade weeps crimson tears that never dry, and those who wield it report an overwhelming urge to 'operate' on the living.[-]\n\n[FFFF00]WARNING: May cause violent tendencies and surgical delusions[-]\n\n\n\nScales with the same skills as the vanilla axe."
+
+SMALTShovel,Items,Weapons,,,"[FFB800][FF0000]Gravedigger's Lament[-]"
+SMALTShovelDesc,Items,Weapons,,,"Stained with the soil of countless unmarked graves behind the asylum, this shovel has buried more secrets than any tool should.\n[FF0000]The handle is worn smooth by the desperate hands of those forced to dig their own graves, and it emanates a bone-chilling cold that seeps into the wielder's soul.[-]\n\n[FFFF00]WARNING: Causes nightmares of being buried alive[-]\n\n\n\nScales with the same skills as the vanilla shovel."
+
+SMALTKnife,Items,Weapons,,,"[FFB800][FF0000]Bloodletter's Edge[-]"
+SMALTKnifeDesc,Items,Weapons,,,"This surgical blade was used for the asylum's most horrific 'medical procedures.' It has tasted so much blood that it has developed a consciousness of its own.\n[FF0000]The knife whispers sweet promises of pain and guides the hand toward arteries and organs with supernatural precision.[-]\n\n[FFFF00]WARNING: Compels user to perform 'surgery' on living subjects[-]\n\n\n\nScales with the same skills as the vanilla knife."
+
+SMALTCrowbar,Items,Weapons,,,"[FFB800][FF0000]Restraint Breaker[-]"
+SMALTCrowbarDesc,Items,Weapons,,,"Forged from the twisted metal of asylum restraints and cell bars, this crowbar carries the desperate fury of every patient who tried to escape.\n[FF0000]It bends reality itself when prying open doors, as if the collective will of the imprisoned flows through its iron core.[-]\n\n[FFFF00]WARNING: May cause claustrophobic episodes and escape fantasies[-]\n\n\n\nScales with the same attributes as the vanilla pickaxe, except for the motherlode.\nGreat for breaking open chests."
+
+SMALTHammer,Items,Weapons,,,"[FFB800][FF0000]Skull Crusher[-]"
+SMALTHammerDesc,Items,Weapons,,,"The asylum's executioner's tool, used to 'repair' the minds of the insane through blunt force trauma. Each impact echoes with the screams of its victims.\n[FF0000]The hammer head is permanently stained with brain matter and bone fragments, and it pulses with a malevolent heartbeat when held.[-]\n\n[FFFF00]WARNING: Causes violent headaches and homicidal urges[-]\n\n\n\nScales with the same skills as the vanilla hammer."
+
+SMALTWrench,Items,Weapons,,,"[FFB800][FF0000]Tormentor's Grip[-]"
+SMALTWrenchDesc,Items,Weapons,,,"Used to maintain the asylum's torture devices and electroshock equipment, this wrench has absorbed decades of suffering and mechanical precision.\n[FF0000]It turns with the efficiency of a well-oiled machine of pain, and those who use it report hearing the mechanical whirring of old medical equipment.[-]\n\n[FFFF00]WARNING: May cause obsession with mechanical torture devices[-]\n\n\n\nScales with the same attributes as the vanilla wrench."
+
+
+
+resourceSMALegendaryRepairKit,Items,Item,,,"[FFB800][FF0000]Cursed Repair Kit[-]"
+resourceSMALegendaryRepairKitDesc,Items,Item,,,"This unholy repair kit contains the essence of tortured souls and fragments of bone. It repairs cursed tools by feeding them fresh anguish.\n[FF0000]Each use binds more suffering to the tool, making it stronger but more malevolent.[-]"
+
+asylumLegendaryTools,Progression,Progression,,,"[FFB800][FF0000]Asylum Legendary Tools[-]"
+asylumLegendaryToolsUnlock,Progression,Progression,,,"[FF0000]ASYLUM LEGENDARY TOOLS UNLOCKED[-]"
+asylumLegendaryToolsUnlockLong,Progression,Progression,,,"You have reached the pinnacle of madness and can now craft the cursed legendary tools of the asylum. These unholy implements require steel tools as a base, along with massive amounts of bone, rotten flesh, and suffering to forge.\n\n[FF0000]WARNING: Crafting these tools may have psychological consequences.[-]"
+

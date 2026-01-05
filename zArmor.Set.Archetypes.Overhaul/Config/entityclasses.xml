@@ -1,0 +1,7 @@
+<ASAO>
+<append xpath="/entity_classes/entity_class[@name='playerMale' or @name='playerFemale']">
+    <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffInfectionTierController"/>
+</append>
+<append xpath="/entity_classes">
+    </append>
+</ASAO> 

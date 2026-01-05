@@ -1,0 +1,47 @@
+<Duhwolf>
+	
+<append xpath="//lootgroup[@name='groupSmallSafeLoot']">
+			<item name="SkillCoinPart" count="1,2" prob="0.02"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupGunSafeSecure']">
+			<item name="SkillCoinPart" count="1,2" prob="0.02"/>
+	</append>
+	
+	<!-- Locked Iron Chest -->
+	<append xpath="//lootgroup[@name='groupReinforcedChestT3']">
+	<item name="SkillCoinPart" count="1" prob="0.02"/>
+	</append>
+	<!-- Locked Small Hardened Chest -->
+	<append xpath="//lootgroup[@name='groupHardenedChestT4']">
+	<item name="SkillCoinPart" count="1,2" prob="0.02"/>
+
+	</append>
+	<!-- Locked Large Hardened Chest -->
+	<append xpath="//lootgroup[@name='groupHardenedChestT5']">
+	<item name="SkillCoinPart" count="1,2" prob="0.02"/>
+	<item name="SkillCoinComplete" count="1" prob="0.0001"/>
+	</append>
+	<!--
+	<append xpath="//lootgroup[@name='groupZpackBoss']">
+	<item name="SkillCoinPart" count="1,3" prob="0.002"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupHiddenStash']">
+	<item name="SkillCoinPart" count="1,3" prob="0.02"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupBuriedWeaponChest']">
+	<item name="SkillCoinPart" count="1,3" prob="0.02"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupBuriedSuppliesT1']">
+	<item name="SkillCoinPart" count="1,3" prob="0.02"/>
+	</append>
+	-->
+	<append xpath="//lootgroup[@name='groupBuriedTreasure']">
+	<item name="SkillCoinPart" count="1,3" prob="0.02"/>
+	</append>
+
+
+
+
+</Duhwolf>

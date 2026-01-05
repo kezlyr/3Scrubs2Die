@@ -1,0 +1,68 @@
+<configs>
+    <append xpath="/buffs">
+        <!-- Buff to control horde spawn cooldown for Asylum Screamer -->
+        <buff name="buffAsylumScreamerHordeController" hidden="true">
+            <stack_type value="ignore"/>
+            <duration value="0"/>
+
+            <!-- Initialize cooldown cvar to 0 on spawn -->
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="asylumHordeCooldown" operation="set" value="0"/>
+            </effect_group>
+
+            <!-- Cooldown timer: resets asylumHordeCooldown to 0 after 10 seconds -->
+            <!-- This allows the screamer to spawn another horde after 10 seconds -->
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="asylumHordeCooldown" operation="set" value="0">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldownTimer" operation="GTE" value="10"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="asylumHordeCooldownTimer" operation="set" value="0">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldownTimer" operation="GTE" value="10"/>
+                </triggered_effect>
+            </effect_group>
+
+            <!-- Increment cooldown timer each update when on cooldown -->
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="asylumHordeCooldownTimer" operation="add" value="1">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldown" operation="Equals" value="1"/>
+                </triggered_effect>
+            </effect_group>
+        </buff>
+
+        <!-- NEW: 5 second delay before spawning horde - can be cancelled by killing screamer -->
+        <buff name="buffSWanderingAndScreamerHordeTrigger" hidden="true">
+            <stack_type value="ignore"/>
+            <duration value="5"/>
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffHordeTrigger"/>
+            </effect_group>
+            <effect_group>
+                <triggered_effect trigger="onOtherKilledSelf" action="RemoveBuff" buff="buffHordeTrigger"/>
+            </effect_group>
+        </buff>
+
+        <!-- NEW: Spawns 5 invisible spawner entities using SCore -->
+        <buff name="buffHordeTrigger" hidden="true" remove_on_death="true">
+            <stack_type value="ignore"/>
+            <duration value="30"/>
+            <effect_group name="Spawn Air Drop Zombies">
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="zombieferalalert"/>
+                <triggered_effect trigger="onSelfBuffStart" action="SpawnEntitySDX, SCore" target="self" SpawnGroup="ScreamerHordeSpawner" Cvar="ScoutAndWanderingHorde"/>
+                <triggered_effect trigger="onSelfBuffStart" action="SpawnEntitySDX, SCore" target="self" SpawnGroup="ScreamerHordeSpawner" Cvar="ScoutAndWanderingHorde"/>
+                <triggered_effect trigger="onSelfBuffStart" action="SpawnEntitySDX, SCore" target="self" SpawnGroup="ScreamerHordeSpawner" Cvar="ScoutAndWanderingHorde"/>
+                <triggered_effect trigger="onSelfBuffStart" action="SpawnEntitySDX, SCore" target="self" SpawnGroup="ScreamerHordeSpawner" Cvar="ScoutAndWanderingHorde"/>
+                <triggered_effect trigger="onSelfBuffStart" action="SpawnEntitySDX, SCore" target="self" SpawnGroup="ScreamerHordeSpawner" Cvar="ScoutAndWanderingHorde"/>
+            </effect_group>
+        </buff>
+
+        <!-- NEW: Applied to spawner entities - continuously calls horde spawn event -->
+        <buff name="buffHordeSpawn" hidden="true" remove_on_death="true">
+            <stack_type value="ignore"/>
+            <duration value="30"/>
+            <effect_group name="Horde Spawning">
+                <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="WanderingAndScreamingHorde" target="other"/>
+            </effect_group>
+        </buff>
+    </append>
+</configs>
+

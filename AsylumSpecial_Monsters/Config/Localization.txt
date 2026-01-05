@@ -1,0 +1,14 @@
+Key,english
+mutantRadiatedLizard,Toxic Splooger
+mutantWastelandSpider,Legs
+biomechanicalSpider,Cyber Arachnid
+animalZombieDragonFly,Bu'Tee Fly
+mutantCeratoferox,Dobie
+animalZombieGobblerWasteland,Gobbler
+turt,Iron Shell
+asylumNightDemon,Asylum Night Demon
+reaper,Reaper
+ingenalvus,Ingenalvus
+kingspawn,Kingspawn
+onyx,Onyx
+titan,Titan

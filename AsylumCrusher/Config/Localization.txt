@@ -1,0 +1,86 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+asylumCrusher,blocks,Workstation,,,Asylum Crusher
+asylumCrusherDesc,blocks,Workstation,,,"A brutal industrial press that pulverizes ammo and forged metals back into base components."
+workstationsT3-3,progression,Workstation,,,Asylum Crusher
+asylumRecycleKit9mmBall,items,Item,,,[73ccff]9mm Recycling Kit[-]
+asylumRecycleKit9mmBallDesc,items,Item,,,"Open to recover bullet tip, gunpowder, and casing from 9mm Ball."
+asylumRecycleKit762Ball,items,Item,,,[73ccff]7.62 Recycling Kit[-]
+asylumRecycleKit762BallDesc,items,Item,,,"Open to recover bullet tip, gunpowder, and casing from 7.62 Ball."
+asylumRecycleKit44Ball,items,Item,,,[73ccff].44 Recycling Kit[-]
+asylumRecycleKit44BallDesc,items,Item,,,"Open to recover bullet tip, gunpowder, and casing from .44 Ball."
+asylumRecycleKitShotgunShell,items,Item,,,[73ccff]Shotgun Shell Recycling Kit[-]
+asylumRecycleKitShotgunShellDesc,items,Item,,,"Open to recover buckshot, gunpowder, and paper from a shell."
+asylumRecycleKit9mmHP,items,Item,,,[73ccff]9mm HP Recycling Kit[-]
+asylumRecycleKit9mmHPDesc,items,Item,,,"Open to recover bullet tips and more powder from 9mm HP."
+asylumRecycleKit9mmAP,items,Item,,,[73ccff]9mm AP Recycling Kit[-]
+asylumRecycleKit9mmAPDesc,items,Item,,,"Open to recover bullet tips and extra powder from 9mm AP."
+asylumRecycleKit762HP,items,Item,,,[73ccff]7.62 HP Recycling Kit[-]
+asylumRecycleKit762HPDesc,items,Item,,,"Open to recover bullet tips and powder from 7.62 HP."
+asylumRecycleKit762AP,items,Item,,,[73ccff]7.62 AP Recycling Kit[-]
+asylumRecycleKit762APDesc,items,Item,,,"Open to recover bullet tips and extra powder from 7.62 AP."
+asylumRecycleKit44HP,items,Item,,,[73ccff].44 HP Recycling Kit[-]
+asylumRecycleKit44HPDesc,items,Item,,,"Open to recover bullet tips and powder from .44 HP."
+asylumRecycleKit44AP,items,Item,,,[73ccff].44 AP Recycling Kit[-]
+asylumRecycleKit44APDesc,items,Item,,,"Open to recover bullet tips and extra powder from .44 AP."
+asylumRecycleKitShotgunSlug,items,Item,,,[73ccff]Shotgun Slug Recycling Kit[-]
+asylumRecycleKitShotgunSlugDesc,items,Item,,,"Open to recover bullet tips, powder, and polymers from a slug."
+asylumRecycleKitShotgunBreachingSlug,items,Item,,,[73ccff]Shotgun Breaching Slug Recycling Kit[-]
+asylumRecycleKitShotgunBreachingSlugDesc,items,Item,,,"Open to recover forged steel, clay, powder, and polymers from a breaching slug."
+asylumRecycleKitBulk9mmBall,items,Item,,,[FFD700]Bulk 9mm Ball Recycling Kit[-]
+asylumRecycleKitBulk9mmBallDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 9mm Ball."
+asylumRecycleKitBulk762Ball,items,Item,,,[FFD700]Bulk 7.62 Ball Recycling Kit[-]
+asylumRecycleKitBulk762BallDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 7.62 Ball."
+asylumRecycleKitBulk44Ball,items,Item,,,[FFD700]Bulk .44 Ball Recycling Kit[-]
+asylumRecycleKitBulk44BallDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of .44 Ball."
+asylumRecycleKitBulkShotgunShell,items,Item,,,[FFD700]Bulk Shotgun Shell Recycling Kit[-]
+asylumRecycleKitBulkShotgunShellDesc,items,Item,,,"Open to recover buckshot, gunpowder, and paper from 100 Shotgun Shells."
+asylumRecycleKitBulk9mmHP,items,Item,,,[FFD700]Bulk 9mm HP Recycling Kit[-]
+asylumRecycleKitBulk9mmHPDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 9mm HP."
+asylumRecycleKitBulk9mmAP,items,Item,,,[FFD700]Bulk 9mm AP Recycling Kit[-]
+asylumRecycleKitBulk9mmAPDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 9mm AP."
+asylumRecycleKitBulk762HP,items,Item,,,[FFD700]Bulk 7.62 HP Recycling Kit[-]
+asylumRecycleKitBulk762HPDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 7.62 HP."
+asylumRecycleKitBulk762AP,items,Item,,,[FFD700]Bulk 7.62 AP Recycling Kit[-]
+asylumRecycleKitBulk762APDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of 7.62 AP."
+asylumRecycleKitBulk44HP,items,Item,,,[FFD700]Bulk .44 HP Recycling Kit[-]
+asylumRecycleKitBulk44HPDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of .44 HP."
+asylumRecycleKitBulk44AP,items,Item,,,[FFD700]Bulk .44 AP Recycling Kit[-]
+asylumRecycleKitBulk44APDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and casings from 100 rounds of .44 AP."
+asylumRecycleKitBulkShotgunSlug,items,Item,,,[FFD700]Bulk Shotgun Slug Recycling Kit[-]
+asylumRecycleKitBulkShotgunSlugDesc,items,Item,,,"Open to recover bullet tips, gunpowder, and polymers from 100 Shotgun Slugs."
+asylumRecycleKitBulkShotgunBreachingSlug,items,Item,,,[FFD700]Bulk Shotgun Breaching Slug Recycling Kit[-]
+asylumRecycleKitBulkShotgunBreachingSlugDesc,items,Item,,,"Open to recover forged steel, clay, gunpowder, and polymers from 100 Breaching Slugs."
+asylumRecycleKit9mmUranium,items,Item,,,[73ccff]9mm Uranium Recycling Kit[-]
+asylumRecycleKit9mmUraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from 9mm Uranium."
+asylumRecycleKit44Uranium,items,Item,,,[73ccff].44 Uranium Recycling Kit[-]
+asylumRecycleKit44UraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from .44 Uranium."
+asylumRecycleKit762Uranium,items,Item,,,[73ccff]7.62 Uranium Recycling Kit[-]
+asylumRecycleKit762UraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from 7.62 Uranium."
+asylumRecycleKitShotgunUranium,items,Item,,,[73ccff]Shotgun Uranium Recycling Kit[-]
+asylumRecycleKitShotgunUraniumDesc,items,Item,,,"Open to recover depleted uranium cores, buckshot, gunpowder, and paper from Uranium Shotgun Shells."
+asylumRecycleKit9mmIncendiary,items,Item,,,[73ccff]9mm Incendiary Recycling Kit[-]
+asylumRecycleKit9mmIncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from 9mm Incendiary."
+asylumRecycleKit44Incendiary,items,Item,,,[73ccff].44 Incendiary Recycling Kit[-]
+asylumRecycleKit44IncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from .44 Incendiary."
+asylumRecycleKit762Incendiary,items,Item,,,[73ccff]7.62 Incendiary Recycling Kit[-]
+asylumRecycleKit762IncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from 7.62 Incendiary."
+asylumRecycleKitShotgunIncendiary,items,Item,,,[73ccff]Shotgun Incendiary Recycling Kit[-]
+asylumRecycleKitShotgunIncendiaryDesc,items,Item,,,"Open to recover napalm gel, buckshot, gunpowder, and paper from Incendiary Shotgun Shells."
+asylumRecycleKitBulk9mmUranium,items,Item,,,[FFD700]Bulk 9mm Uranium Recycling Kit[-]
+asylumRecycleKitBulk9mmUraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from 100 rounds of 9mm Uranium."
+asylumRecycleKitBulk44Uranium,items,Item,,,[FFD700]Bulk .44 Uranium Recycling Kit[-]
+asylumRecycleKitBulk44UraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from 100 rounds of .44 Uranium."
+asylumRecycleKitBulk762Uranium,items,Item,,,[FFD700]Bulk 7.62 Uranium Recycling Kit[-]
+asylumRecycleKitBulk762UraniumDesc,items,Item,,,"Open to recover depleted uranium cores, bullet tips, gunpowder, and casings from 100 rounds of 7.62 Uranium."
+asylumRecycleKitBulkShotgunUranium,items,Item,,,[FFD700]Bulk Shotgun Uranium Recycling Kit[-]
+asylumRecycleKitBulkShotgunUraniumDesc,items,Item,,,"Open to recover depleted uranium cores, buckshot, gunpowder, and paper from 100 Uranium Shotgun Shells."
+asylumRecycleKitBulk9mmIncendiary,items,Item,,,[FFD700]Bulk 9mm Incendiary Recycling Kit[-]
+asylumRecycleKitBulk9mmIncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from 100 rounds of 9mm Incendiary."
+asylumRecycleKitBulk44Incendiary,items,Item,,,[FFD700]Bulk .44 Incendiary Recycling Kit[-]
+asylumRecycleKitBulk44IncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from 100 rounds of .44 Incendiary."
+asylumRecycleKitBulk762Incendiary,items,Item,,,[FFD700]Bulk 7.62 Incendiary Recycling Kit[-]
+asylumRecycleKitBulk762IncendiaryDesc,items,Item,,,"Open to recover napalm gel, bullet tips, gunpowder, and casings from 100 rounds of 7.62 Incendiary."
+asylumRecycleKitBulkShotgunIncendiary,items,Item,,,[FFD700]Bulk Shotgun Incendiary Recycling Kit[-]
+asylumRecycleKitBulkShotgunIncendiaryDesc,items,Item,,,"Open to recover napalm gel, buckshot, gunpowder, and paper from 100 Incendiary Shotgun Shells."
+
+

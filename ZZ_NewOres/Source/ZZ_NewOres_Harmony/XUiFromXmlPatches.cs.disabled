@@ -1,0 +1,88 @@
+using System;
+using System.Xml.Linq;
+using HarmonyLib;
+
+namespace ZZ_NewOres_Harmony;
+
+[HarmonyPatch]
+internal static class XUiFromXmlPatches
+{
+	private const string LogPrefix = "[ZZ_NewOres_Harmony]";
+
+	// The game appears to resolve controller types in a way that may not search mod assemblies.
+	// For our custom controller(s), intercept controller assignment and attach the instance manually.
+	[HarmonyPatch(typeof(XUiFromXml), "setController")]
+	[HarmonyPrefix]
+	private static bool XUiFromXml_setController_Prefix(XElement _element, XUiView _view, XUiController _controller)
+	{
+		try
+		{
+			if (_element == null || _view == null)
+				return true;
+
+			var controllerName = _element.Attribute("controller")?.Value;
+			if (string.IsNullOrWhiteSpace(controllerName))
+				return true;
+
+			// Only handle our custom forge right panel window.
+			if (!controllerName.Equals("ZZ_ForgeRightStackWindow", StringComparison.OrdinalIgnoreCase))
+				return true;
+
+			Log.Out($"{LogPrefix} Attempting to resolve controller '{controllerName}'...");
+
+			// Direct type reference (should work since we loaded it in InitMod).
+			var controllerType = typeof(XUiC_ZZ_ForgeRightStackWindow);
+			if (controllerType == null)
+			{
+				Log.Error($"{LogPrefix} Could not resolve controller type 'XUiC_ZZ_ForgeRightStackWindow'.");
+				return true;
+			}
+
+			Log.Out($"{LogPrefix} Resolved controller type: {controllerType.FullName}");
+
+			var instance = Activator.CreateInstance(controllerType) as XUiController;
+			if (instance == null)
+			{
+				Log.Error($"{LogPrefix} Failed to create controller instance 'XUiC_ZZ_ForgeRightStackWindow'.");
+				return true;
+			}
+
+			// Attach controller to view.
+			try
+			{
+				instance.Parent = _controller;
+				instance.ViewComponent = _view;
+				instance.WindowGroup = _controller?.WindowGroup;
+				instance.xui = _controller?.xui;
+			}
+			catch { }
+
+			try
+			{
+				_view.Controller = instance;
+			}
+			catch { }
+
+			try
+			{
+				_controller?.Children?.Add(instance);
+			}
+			catch { }
+
+			// Ensure controller initialization occurs even if the engine created a base controller first.
+			try
+			{
+				instance.Init();
+			}
+			catch { }
+
+			// Skip vanilla resolution for this controller.
+			return false;
+		}
+		catch (Exception ex)
+		{
+			Log.Error($"{LogPrefix} XUiFromXml.setController prefix failed: {ex}");
+			return true;
+		}
+	}
+}

@@ -1,0 +1,1079 @@
+<configs>
+<!--    Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+
+<set xpath="//recipe[starts-with(@name, 'vehicleTruck4x4')]/@craft_area">VMAutoWorkbench</set>
+<set xpath="//recipe[starts-with(@name, 'vehicleGyroCopter')]/@craft_area">VMAutoWorkbench</set>
+<set xpath="//recipe[starts-with(@name, 'vehicleMotorcycle')]/@craft_area">VMAutoWorkbench</set>
+<!-- Move some vanilla Vehicles to VMWorkbench for crafting, Minibike can be crafted on normal workbench -->
+
+<append xpath="/recipes">
+<!-- Craftables  -->
+<recipe name="vehicleVMInterceptorPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMMuscleRedPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMExplorerPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="85"/>
+</recipe>
+
+<recipe name="vehicleVMMuscle2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMStrikerPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="8"/>
+	<ingredient name="resourceForgedSteel" count="95"/>
+</recipe>
+
+<recipe name="vehicleVMSpikerPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMMalicePlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMCamaroPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMMonsterVanPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="vehicleVMNPCVanPlaceable" count="1"/>
+	<ingredient name="MonsterSuspensionAssembly" count="1"/>
+	<ingredient name="resourcePaint" count="100"/>
+    <ingredient name="vehicleVMWheels" count="8"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMMonsterPickupPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="VMPickupShell" count="1"/>
+	<ingredient name="MonsterSuspensionAssembly" count="1"/>
+	<ingredient name="carEngineAssembly" count="1"/>
+    <ingredient name="vehicleVMWheels" count="8"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMWarthogPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="85"/>
+</recipe>
+
+<recipe name="vehicleVMHunterPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMVenenoPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMRVPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMArmoredCobraPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMTurboPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMBuggyPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMFastbackPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMHotRodPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMFlatbedPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMPickupPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMQuadPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="resourceForgedSteel" count="40"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+</recipe>
+
+<recipe name="vehicleVMQuad2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="resourceForgedSteel" count="40"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+</recipe>
+
+<recipe name="vehicleVMCaterhamPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMBuggy2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMVan2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMCombi2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMCombiPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMDumperTruckPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="vehicleVMMilitaryTruckPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="10"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMMilitaryHumVeePlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="vehicleVMJunkerMustangPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMVanRedPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMEvoLancerPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMMotoGuppyPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleVMVespaPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleVMVespakartPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="vehicleWheels" count="3"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleVMBusSchoolPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMBusShuttlePlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMBusCityPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="65"/>
+</recipe>
+
+<recipe name="vehicleVMSedanCutlasPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMStationWagonPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMSmallPickUpPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMSkylineGTRPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+<recipe name="vehicleVMOldsMobilePlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMJeepCPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMTacticalJeepPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="40"/>
+</recipe>
+
+<recipe name="vehicleVMMilitaryTruck2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="60"/>
+</recipe>
+
+<recipe name="vehicleVMM3ATruckPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="40"/>
+</recipe>
+
+<recipe name="vehicleVMCrusaderPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMBigRigPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="10"/>
+	<ingredient name="resourceForgedSteel" count="80"/>
+</recipe>
+
+<recipe name="vehicleVMBigRig2Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>
+	<ingredient name="vehicleVMWheels" count="10"/>
+	<ingredient name="resourceForgedSteel" count="80"/>
+</recipe>
+
+<recipe name="vehicleVMAmbulanceDamagedPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="6"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMPoliceCarPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+<recipe name="vehicleVMTaxiRustedPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMRustySedanPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMSedanFairHPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+</recipe>
+
+<recipe name="vehicleVMOldSemiPlaceable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="resourceForgedSteel" count="80"/>
+	<ingredient name="carElectricalAssembly" count="1"/> 
+	<ingredient name="resourceMechanicalParts" count="20"/>   
+	<ingredient name="vehicleVMWheels" count="6"/>
+</recipe>
+
+<!--
+<recipe name="vehicleVMMustangMach1Placeable" count="1" craft_time="600" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carEngineAssembly" count="1"/>
+	<ingredient name="carBodyAssembly" count="1"/>
+	<ingredient name="carElectricalAssembly" count="1"/>    
+	<ingredient name="vehicleVMWheels" count="4"/>
+	<ingredient name="resourceForgedSteel" count="55"/>
+</recipe>
+
+ High Level Field Restoration Tools -->
+<recipe name="MilitaryHumVeeRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="M3AMilitaryRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="MilitaryTruckRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="MilitaryTruck2RestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="StrikerAPCRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="TacticalJeepRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="MadMaxInterceptorRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="HunterRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="CobraMustangRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="WarthogRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="GyroRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="TFP4x4RestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="SpikerRestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<recipe name="Mach1RestorationTool" count="1" craft_time="300" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+</recipe>
+
+<!-- Medium Level Field Restoration Tools  -->
+<recipe name="HotRodRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="FastbackRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="BigBuggyRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="MaliceRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="BoxTruckRedRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="EVOLancerRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="BigRig2RestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="MuscleTurboRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="SmallAPOtruckRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="FlatbedRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="OldSemiRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="RVRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="Van2RestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<recipe name="YellowSchoolBusRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT2Ratchet" count="1"/>
+</recipe>
+
+<!-- Lower Level Field Restoration Tools -->
+<recipe name="SedanRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="BeetleRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="ExplorerRestorationTool" count="1" craft_time="200" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="RedBMWRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="WhiteBMWRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="BrownJeepRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="CrusaderRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="CombiVan1RestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="Van1RestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="WSVanRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="MOpowerVanRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="TFPAmbulanceRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="TFPMotorcycleRestorationTool" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="Tire" count="2"/>
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="TFPBicycleRestorationTool" count="1" craft_time="40">
+	<ingredient name="vehicleBicycleHandlebars" count="1"/>
+	<ingredient name="vehicleWheels" count="1"/>
+</recipe>
+
+<recipe name="MotoGuppyRestorationTool" count="1" craft_time="60">
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="VespaRestorationTool" count="1" craft_time="60">
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="VespaKartRestorationTool" count="1" craft_time="60">
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="CutlassRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="PoliceRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="BrownQuadRestorationTool" count="1" craft_time="100" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="TaxiRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+<recipe name="RedVanRestorationTool" count="1" craft_time="100" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Footpump" count="1"/>
+	<ingredient name="BatteryChargerUnit" count="1"/>
+	<ingredient name="VMToolRatchetSet" count="1"/>
+	<ingredient name="HotwireKit" count="1"/>
+	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+</recipe>
+
+
+
+<!-- NEW ITEMS AND ASSIGNED WORKBENCH REQUIREMENTS-->
+<recipe name="VMAutoWorkbench" count="1" craft_time="180" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="workbench" count="1"/>
+	<ingredient name="VMToolCarLift" count="1"/>
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="25"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+</recipe>
+
+<recipe name="VMToolCarLift" count="1" craft_time="120" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="8"/>
+	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="VMToolCompressor" count="1"/>
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceOil" count="5"/>
+</recipe>
+
+<recipe name="VMToolCompressor" count="1" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="resourceMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="BatteryChargerUnit" count="1" craft_time="20" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="ElectricalWire" count="6"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+</recipe>
+
+<recipe name="Footpump" count="1" craft_time="20">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMetalPipe" count="2"/>	
+</recipe>
+
+<recipe name="HotwireKit" count="1" craft_time="20">
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="WireCutters" count="1"/>
+	<ingredient name="ElectricalWire" count="2"/>
+</recipe>
+
+<recipe name="VMToolRatchetSet" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="6"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="resourceRadiator" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceScrapBrass" count="400"/>
+</recipe>
+
+<recipe name="MonsterSuspensionAssembly" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="85"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+	<ingredient name="resourceElectricParts" count="20"/>
+	<ingredient name="resourceSpring" count="16"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe> 
+
+<recipe name="carEngineAssembly" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carCarburetor" count="1"/>
+	<ingredient name="carTransmission" count="1"/>
+	<ingredient name="carEngine" count="1"/>
+	<ingredient name="resourceRadiator" count="1"/>
+	<ingredient name="resourceOil" count="20"/>
+</recipe>
+
+<recipe name="carElectricalAssembly" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carAlternator" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="ElectricalWire" count="12"/>
+	<ingredient name="resourceHeadlight" count="2"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+</recipe>
+
+<recipe name="carBodyAssembly" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carChassis" count="1"/>
+	<ingredient name="carSeats" count="2"/>
+	<ingredient name="carBodyKit" count="1"/>
+</recipe>
+
+<recipe name="carBodyKit" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="carDoors" count="4"/>
+	<ingredient name="carHood" count="1"/>
+	<ingredient name="carTrunk" count="1"/>
+	<ingredient name="carFender" count="1"/>
+	<ingredient name="carBumperFront" count="1"/>
+</recipe>
+
+<recipe name="carCarburetor" count="1" craft_time="15" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarCarburetor" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+</recipe>
+
+<recipe name="carSeats" count="1" craft_time="15" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarSeats" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+	<ingredient name="resourceCloth" count="5"/>
+</recipe>
+
+<recipe name="carAlternator" count="1" craft_time="15" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarAlternator" count="2"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="carBattery" count="1" craft_time="15" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarBattery" count="2"/>
+	<ingredient name="resourceAcid" count="2"/>
+</recipe>
+
+<recipe name="carTransmission" count="1" craft_time="15" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarTransmission" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceOil" count="2"/>
+</recipe>
+
+<recipe name="carChassis" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarChassis" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceForgedIron" count="40"/>
+	<ingredient name="resourceForgedSteel" count="12"/>
+</recipe>
+
+<recipe name="carDoors" count="2" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="6"/>
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="carHood" count="1" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="carTrunk" count="1" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="carFender" count="1" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="carBumperFront" count="1" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="carWheelrims" count="1" craft_time="20" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="8"/>
+	<ingredient name="resourceForgedSteel" count="2"/>
+</recipe>
+
+<recipe name="carEngine" count="1" craft_time="120" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarEngine" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="8"/>
+	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="resourceOil" count="5"/>
+</recipe>
+
+<recipe name="vehicleVMWheels" count="1" craft_time="25" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
+	<ingredient name="Tire" count="1"/>
+	<ingredient name="carWheelrims" count="1"/>
+</recipe>
+
+<!-- Added to be able to make wheels or Tires from 2 damage versions that are found in world-->
+<recipe name="vehicleVMWheels" count="1" craft_time="25" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="damagedWheel" count="2"/>
+</recipe>
+
+<recipe name="Tire" count="1" craft_time="25" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="damagedTire" count="2"/>
+</recipe>
+<!-- Added to be able to make vanilla engines from VM Damaged engines if needed for generators-->	
+<recipe name="smallEngine" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="damagedcarEngine" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="resourceOil" count="2"/>
+</recipe>
+
+</append>
+
+</configs>

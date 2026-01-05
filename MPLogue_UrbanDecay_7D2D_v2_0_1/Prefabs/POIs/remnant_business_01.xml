@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="AllowedTownships" value="city,town,rural,wilderness" />
+  <property name="Zoning" value="Industrial" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="TraderArea" value="False" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="SleeperVolumeSize" value="14, 10, 13#19, 14, 20#9, 3, 3" />
+  <property name="SleeperVolumeStart" value="34, 16, 12#19, 1, 17#20, 6, 47" />
+  <property name="SleeperVolumeGroupId" value="0,0,0" />
+  <property name="SleeperVolumeGroup" value="ZomBusinessman,1,2,ZomUtilityWorker,2,3,GroupGenericZombie,0,1" />
+  <property name="SleeperIsLootVolume" value="False,False,False" />
+  <property name="SleeperIsBossVolume" value="False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0" />
+  <property name="YOffset" value="-5" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="SleeperIsQuestExclude" value="False,False,False" />
+  <property name="Tags" value="industrial" />
+  <property name="POIMarkerSize" value="7, 13, 1#6, 13, 1#10, 13, 1" />
+  <property name="POIMarkerStart" value="7, 4, -1#27, 4, -1#48, 4, -1" />
+  <property name="POIMarkerGroup" value="driveway,driveway2,driveway3" />
+  <property name="POIMarkerTags" value="industrial#industrial#industrial" />
+  <property name="POIMarkerType" value="PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_driveway_industrial_01,part_driveway_industrial_03,part_driveway_industrial_04" />
+  <property name="POIMarkerPartRotations" value="2,2,2" />
+  <property name="POIMarkerPartSpawnChance" value="1,1,1" />
+  <property name="PrefabSize" value="60, 26, 60" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # " />
+  <property class="Stats">
+    <property name="TotalVertices" value="369887" />
+    <property name="TotalTriangles" value="173405" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="232394" />
+      <property name="Triangles" value="80459" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="124750" />
+      <property name="Triangles" value="73916" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="192" />
+      <property name="Triangles" value="96" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="2269" />
+      <property name="Triangles" value="1546" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="10282" />
+      <property name="Triangles" value="17388" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="TraderOnOff">
+      <property name="0" value="30, 10, 35" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="57, 14, 57" />
+    </property>
+    <property class="challenge_pallet">
+      <property name="0" value="34, 5, 18" />
+    </property>
+    <property class="challenge_vending">
+      <property name="0" value="37, 5, 10" />
+    </property>
+    <property class="challenge_officechairs">
+      <property name="0" value="37, 16, 14" />
+      <property name="1" value="33, 5, 15" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="35, 16, 22" />
+      <property name="1" value="37, 16, 22" />
+    </property>
+  </property>
+</prefab>

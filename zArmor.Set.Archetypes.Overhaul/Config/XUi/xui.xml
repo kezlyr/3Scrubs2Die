@@ -1,0 +1,27 @@
+<configs>
+    <append xpath="/xui/ruleset">
+
+        <!-- 
+            This defines the UI for your Homestead Fire.
+            It tells the game to open a window group named "workstation_campfireRancherHomestead"
+            when a block with Workstation="campfireRancherHomestead" is opened.
+
+            It is a direct copy of the vanilla "workstation_campfire" group,
+            so it will look and function exactly like the normal campfire UI.
+        -->
+        <window_group name="workstation_campfireRancherHomestead" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<!-- 
+                CORRECTED WINDOW: This now explicitly tells the crafting list
+                to use the recipes from the "campfire" crafting area, which will
+                make all the food and drink categories appear correctly.
+            -->
+            <window name="windowCraftingList" crafting_area="campfire"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+    </append>
+</configs>

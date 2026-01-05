@@ -1,0 +1,931 @@
+<config>
+<append xpath="/recipes">
+
+
+<recipe name="egt1backpack" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2backpack" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1backpack" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3backpack" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2backpack" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+<recipe name="egt1nerd" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2nerd" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1nerd" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3nerd" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2nerd" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egmodArmorPerception" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+<recipe name="egmodArmorStrength" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+<recipe name="egmodArmorFortitude" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+<recipe name="egmodArmorAgility" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+<recipe name="egmodArmorIntellect" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1lightweight" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2lightweight" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1lightweight" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3lightweight" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2lightweight" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1reward" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2reward" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1reward" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3reward" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2reward" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1lumber" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2lumber" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1lumber" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3lumber" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2lumber" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt1barter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2barter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1barter" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3barter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2barter" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1resist" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2resist" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1resist" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3resist" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2resist" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+<recipe name="egt1zombiedamage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2zombiedamage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1zombiedamage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3zombiedamage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2zombiedamage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1looter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2looter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1looter" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3looter" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2looter" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt1hp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2hp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1hp" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3hp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2hp" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt1stamina" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2stamina" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1stamina" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3stamina" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2stamina" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt1harvest" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2harvest" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1harvest" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3harvest" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2harvest" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+
+
+<recipe name="egt1damage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2damage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1damage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3damage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2damage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+
+<recipe name="egt1atkspeed" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2atkspeed" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1atkspeed" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3atkspeed" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2atkspeed" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1usage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2usage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1usage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3usage" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2usage" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt1xp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="11"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="infernalBlackStone" count="100"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt2xp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="egt1xp" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+</recipe>
+
+<recipe name="egt3xp" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="33"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="egt2xp" count="1"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2arrowreload" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3arrowreload" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2arrowreload" count="1"/>
+</recipe>
+
+
+
+<recipe name="egt2blessedmetal" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3blessedmetal" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2blessedmetal" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2grip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3grip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2grip" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2stock" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3stock" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2stock" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2magazineex" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3magazineex" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2magazineex" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2drummag" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3drummag" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2drummag" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2bipod" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3bipod" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2bipod" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2muzzlebrake" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3muzzlebrake" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2muzzlebrake" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2barrelex" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3barrelex" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2barrelex" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2silencer" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3silencer" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2silencer" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2crippleem" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3crippleem" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2crippleem" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2triggerauto" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3triggerauto" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2triggerauto" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2brace" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3brace" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2brace" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2ergonomicgrip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3ergonomicgrip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2ergonomicgrip" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2fortgrip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3fortgrip" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2fortgrip" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2oil" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3oil" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2oil" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2battery" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3battery" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2battery" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2rods" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3rods" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2rods" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2shred" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3shred" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2shred" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2heat" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3heat" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2heat" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2slayup" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3slayup" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2slayup" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2brasscatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3brasscatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2brasscatcher" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2bullettipcatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3bullettipcatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2bullettipcatcher" count="1"/>
+</recipe>
+
+
+
+
+<recipe name="egt2fuelcatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="25"/>
+	<ingredient name="infernalBlackStone" count="200"/>
+	<ingredient name="resourceSpring" count="15"/>
+</recipe>
+
+<recipe name="egt3fuelcatcher" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="55"/>
+	<ingredient name="infernalConcentratedStone" count="50"/>
+	<ingredient name="infernalBlackStone" count="400"/>
+	<ingredient name="resourceLegendaryParts" count="1"/>
+	<ingredient name="egt2fuelcatcher" count="1"/>
+</recipe>
+
+</append>
+</config>

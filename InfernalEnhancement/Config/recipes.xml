@@ -1,0 +1,456 @@
+<configs>
+	<!-- Infernal Enhancement System - Recipes -->
+
+	<!-- Black Stone Crafting (from Infernal materials) -->
+	<append xpath="/recipes">
+		<recipe name="infernalBlackStone" count="5" craft_area="chemistryStation" craft_time="60" tags="chemStationCrafting">
+			<ingredient name="resourceCoal" count="10"/>
+			<ingredient name="resourceOil" count="5"/>
+			<ingredient name="resourceAcid" count="3"/>
+		</recipe>
+	</append>
+	
+	<!-- Concentrated Stone Crafting -->
+	<append xpath="/recipes">
+		<recipe name="infernalConcentratedStone" count="1" craft_area="chemistryStation" craft_time="120" tags="chemStationCrafting">
+			<ingredient name="infernalBlackStone" count="10"/>
+			<ingredient name="resourceAcid" count="5"/>
+			<ingredient name="resourceOil" count="10"/>
+		</recipe>
+	</append>
+	
+	<!-- Cron Stone cannot be crafted - loot only -->
+
+	<!-- ========================================== -->
+	<!-- INFERNAL ARMOR CRAFTING RECIPES -->
+	<!-- All armor pieces are Q6 only, cost 500 Black Stones each -->
+	<!-- ========================================== -->
+
+	<!-- LIGHT ARMOR SETS -->
+
+	<!-- LUMBERJACK SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorLumberjackHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorLumberjackHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorLumberjackOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorLumberjackOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorLumberjackGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorLumberjackGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorLumberjackBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorLumberjackBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- PREACHER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorPreacherHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorPreacherHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorPreacherOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorPreacherOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorPreacherGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorPreacherGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorPreacherBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorPreacherBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- ROGUE SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorRogueHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRogueHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRogueOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRogueOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRogueGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRogueGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRogueBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRogueBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- ATHLETIC SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorAthleticHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAthleticHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAthleticOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAthleticOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAthleticGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAthleticGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAthleticBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAthleticBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- ENFORCER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorEnforcerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorEnforcerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorEnforcerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorEnforcerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorEnforcerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorEnforcerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorEnforcerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorEnforcerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- FARMER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorFarmerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorFarmerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorFarmerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorFarmerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorFarmerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorFarmerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorFarmerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorFarmerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- MEDIUM ARMOR SETS -->
+
+	<!-- BIKER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorBikerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorBikerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorBikerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorBikerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorBikerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorBikerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorBikerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorBikerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- SCAVENGER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorScavengerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorScavengerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorScavengerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorScavengerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorScavengerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorScavengerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorScavengerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorScavengerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- RANGER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorRangerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRangerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRangerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRangerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRangerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRangerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRangerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRangerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- HEAVY ARMOR SETS -->
+
+	<!-- COMMANDO SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorCommandoHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorCommandoHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorCommandoOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorCommandoOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorCommandoGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorCommandoGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorCommandoBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorCommandoBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- ASSASSIN SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorAssassinHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAssassinHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAssassinOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAssassinOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAssassinGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAssassinGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorAssassinBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorAssassinBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- MINER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorMinerHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorMinerHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorMinerOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorMinerOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorMinerGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorMinerGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorMinerBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorMinerBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- NOMAD SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorNomadHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNomadHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNomadOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNomadOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNomadGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNomadGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNomadBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNomadBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- NERD SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorNerdHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNerdHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNerdOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNerdOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNerdGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNerdGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorNerdBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorNerdBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<!-- RAIDER SET -->
+	<append xpath="/recipes">
+		<recipe name="eaarmorRaiderHelmet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRaiderHelmet"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRaiderOutfit" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRaiderOutfit"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRaiderGloves" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRaiderGloves"/>
+			</effect_group>
+		</recipe>
+		<recipe name="eaarmorRaiderBoots" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="infernalBlackStone" count="500"/>
+			<effect_group tiered="false">
+				<passive_effect name="CraftingTier" operation="base_set" value="6" tags="eaarmorRaiderBoots"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+</configs>
+

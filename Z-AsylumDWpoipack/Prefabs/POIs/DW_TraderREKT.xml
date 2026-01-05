@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="Zoning" value="downtown, commercial, residential, rural, wilderness" />
+  <property name="RotationToFaceNorth" value="3" />
+  <property name="YOffset" value="-1" />
+  <property name="AllowedTownships" value="city,town,citybig,wasteland_city,countrytown,bforest_town,forest_countrytown,bforest_countrytown,wilderness" />
+  <property name="TraderArea" value="True" />
+  <property name="TraderAreaProtect" value="0,0,0" />
+  <property name="TraderAreaTeleportSize" value="37, 21, 37" />
+  <property name="TraderAreaTeleportCenter" value="12, 0, 0" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="EditorGroups" value="downtown, commercial, residential, rural, wilderness" />
+  <property name="DifficultyTier" value="0" />
+  <property name="QuestTags" value="trader, traderRekt" />
+  <property name="ExcludePOICulling" value="True" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="Tags" value="wilderness, commercial, residential, rural, downtown" />
+  <property name="ThemeTags" value="traderRekt" />
+  <property name="ThemeRepeatDistance" value="1000" />
+  <property name="PrefabSize" value="60, 21, 60" />
+  <property name="TeleportVolumeSize" value="58, 15, 58#5, 7, 5" />
+  <property name="TeleportVolumeStart" value="1, 1, 1#37, 16, 30" />
+  <property name="POIMarkerSize" value="3, 13, 7" />
+  <property name="POIMarkerStart" value="-3, 0, 3" />
+  <property name="POIMarkerGroup" value="driveway" />
+  <property name="POIMarkerTags" value="rural" />
+  <property name="POIMarkerType" value="PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_driveway_rural_08" />
+  <property name="POIMarkerPartRotations" value="3" />
+  <property name="POIMarkerPartSpawnChance" value="1" />
+  <property name="DuplicateRepeatDistance" value="500" />
+  <property class="Stats">
+    <property name="LightsVolume" value="10120.08" />
+    <property name="TotalVertices" value="685146" />
+    <property name="TotalTriangles" value="270367" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="607331" />
+      <property name="Triangles" value="214539" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="68723" />
+      <property name="Triangles" value="40828" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="200" />
+      <property name="Triangles" value="100" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="8892" />
+      <property name="Triangles" value="14900" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="POILight">
+      <property name="0" value="47, 5, 45" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="42, 3, 46" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="46, 1, 37" />
+      <property name="1" value="46, 1, 45" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="40, 1, 24" />
+    </property>
+    <property class="challenge_mech_parts">
+      <property name="0" value="47, 1, 44" />
+    </property>
+    <property class="challenge_pallet">
+      <property name="0" value="44, 2, 46" />
+      <property name="1" value="44, 3, 46" />
+      <property name="2" value="38, 2, 47" />
+      <property name="3" value="40, 2, 47" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="34, 2, 35" />
+      <property name="1" value="42, 2, 35" />
+      <property name="2" value="30, 2, 40" />
+      <property name="3" value="42, 8, 43" />
+      <property name="4" value="39, 2, 45" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="33, 2, 36" />
+      <property name="1" value="31, 2, 37" />
+      <property name="2" value="43, 7, 42" />
+    </property>
+    <property class="Trader">
+      <property name="0" value="37, 2, 39" />
+    </property>
+  </property>
+</prefab>

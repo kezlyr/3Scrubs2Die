@@ -1,0 +1,23 @@
+<!--
+<Nikko's Mod>
+	<append xpath="/item_modifiers">
+	</append>
+</Nikko's Mod> 
+-->
+<ASAO>
+	<append xpath="/item_modifiers">
+	<item_modifier name="modCrossbowTripleshot" installable_tags="magazine,crossbow" modifier_tags="magazine" blocked_tags="noMods,gun" type="attachment">
+            <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+            <property name="CustomIcon" value="modGunMagazineExtender"/>
+            <property name="CustomIconTint" value="0,206,209"/>
+            <property name="UnlockedBy" value="modCrossbowTripleshotSchematic"/>
+            <property name="TraderStageTemplate" value="modsTier1"/>
+            <effect_group tiered="false">
+                <passive_effect name="MagazineSize" operation="base_add" value="2"/>
+                <passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>	
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2"/>
+
+            </effect_group>
+        </item_modifier>
+	</append>
+</ASAO>

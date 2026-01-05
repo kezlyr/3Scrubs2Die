@@ -1,0 +1,68 @@
+<configs>
+    <append xpath="/entity_classes">
+        <!-- Custom Screamer that spawns a horde when damaged -->
+        <entity_class name="asylumScreamerHorde" extends="zombieScreamerFeral">
+            <property name="UserSpawnType" value="Menu"/>
+            <property name="Tags" value="entity,zombie,walker,asylum"/>
+            <property name="Mesh" value="#@modfolder:Resources/Asylumscreamer.unity3d?asylumbanshee"/>
+            <property name="PhysicsBody" value="asylumZombieBody"/>
+            <property name="AvatarController" value="AvatarZombieController"/>
+            <property name="RootMotion" value="true"/>
+            <property name="HasRagdoll" value="true"/>
+            <property name="HasDeathAnim" value="true"/>
+
+            <!-- Custom Banshee Sounds -->
+            <property name="SoundRandom" value="zombiefemalescoutroam"/>
+            <property name="SoundAlert" value="zombiefemalescoutalert"/>
+            <property name="SoundAttack" value="zombiefemalescoutattack"/>
+            <property name="SoundHurt" value="zombiefemalescoutpain"/>
+            <property name="SoundDeath" value="zombiefemalescoutdeath"/>
+            <property name="SoundSense" value="zombiefemalescoutsense"/>
+
+            <!-- Buff applied on spawn for horde cooldown tracking -->
+            <property name="Buffs" value="buffAsylumScreamerHordeController"/>
+
+            <effect_group name="Base Effects">
+                <passive_effect name="HealthMax" operation="base_set" value="1000"/>
+
+                <!-- NEW: Triggers the 5-second delay buff when damaged (if not on cooldown) -->
+                <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" buff="buffSWanderingAndScreamerHordeTrigger" target="self">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldown" operation="Equals" value="0"/>
+                </triggered_effect>
+
+                <!-- Set cooldown cvar when horde is triggered (prevents spam) -->
+                <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="asylumHordeCooldown" operation="set" value="1">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldown" operation="Equals" value="0"/>
+                </triggered_effect>
+
+                <!-- Play scream sound when damaged and triggering horde -->
+                <triggered_effect trigger="onOtherDamagedSelf" action="PlaySound" sound="zombiefemalescoutsense" target="self">
+                    <requirement name="CVarCompare" cvar="asylumHordeCooldown" operation="Equals" value="0"/>
+                </triggered_effect>
+            </effect_group>
+        </entity_class>
+
+        <!-- NEW: Invisible spawner entity that continuously spawns zombies -->
+        <entity_class name="WanderingAndScreamerHordeSpawner" extends="zombieScreamer">
+            <property name="UserSpawnType" value="Menu"/>
+            <property name="Tags" value="entity,zombie,walker,allbiome"/>
+            <property name="Mesh" value="@:Entities/Zombies/Screamer/ZScreamerFeral.prefab"/>
+
+            <!-- Gameplay zombieScreamerFeral -->
+            <property name="DismemberMultiplierHead" value=".7"/>
+            <property name="DismemberMultiplierArms" value=".7"/>
+            <property name="DismemberMultiplierLegs" value=".7"/>
+            <property name="PainResistPerHit" value=".7"/>
+            <property name="MoveSpeedAggro" value=".5, 1.35"/>
+            <property name="HandItem" value="meleeHandZombieFeral"/>
+            <property name="ExperienceGain" value="750"/>
+            <property name="LootDropProb" value=".0"/>
+            <property name="Buffs" value="buffHordeSpawn"/>
+
+            <effect_group name="Base Effects">
+                <passive_effect name="HealthMax" operation="base_set" value="^healthScreamerFeral"/>
+            </effect_group>
+        </entity_class>
+    </append>
+</configs>
+

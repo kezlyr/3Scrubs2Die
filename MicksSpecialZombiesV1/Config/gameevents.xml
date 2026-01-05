@@ -1,0 +1,493 @@
+<Config>
+
+	<append xpath="/gameevents">
+
+<action_sequence name="Siren_Cursed_Summon"> <!-- Siren Marked -->
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+			
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieDemolition,zombieScreamer" param1="zombiename" />
+		<property name="spawn_count" value="6" param1="spawncount" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="60" />
+		<property name="phase" value="1" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="animalZombieDog" param1="zombiename" />
+		<property name="spawn_count" value="4" param1="spawncount" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+	</action>
+	
+	</action_sequence>
+	
+<action_sequence name="Siren_Cursed_Summon_Stage_Two"> <!-- Siren Marked -->
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+				
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieSpiderRadiated" param1="zombiename" />
+			<property name="spawn_count" value="2" param1="spawncount" />
+			<property name="min_distance" value="55" />
+			<property name="max_distance" value="60" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieSpiderFeral,zombieSpider" param1="zombiename" />
+			<property name="spawn_count" value="12" param1="spawncount" />
+			<property name="min_distance" value="60" />
+			<property name="max_distance" value="65" />
+		</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[b3471d]YOU GET AN AWFUL FEELING YOU'RE BEING WATCHED!" />
+			<property name="phase" value="1" />
+		</action>
+	
+	</action_sequence>
+	
+	<action_sequence name="Siren_Cursed_Summon_Stage_Three"> 
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+				
+		<action class="SpawnEntity">
+			<property name="entity_names" value="Ghast" param1="zombiename" />
+			<property name="spawn_count" value="2" param1="spawncount" />
+			<property name="min_distance" value="55" />
+			<property name="max_distance" value="60" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieSoldier,zombieSoldierFeral" param1="zombiename" />
+			<property name="spawn_count" value="6" param1="spawncount" />
+			<property name="min_distance" value="65" />
+			<property name="max_distance" value="70" />
+		</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[b3471d]THE SMELL OF DEATH AND DECAY HITS YOUR NOSE!" />
+			<property name="phase" value="1" />
+		</action>
+	
+	</action_sequence>
+	
+	<action_sequence name="Siren_Cursed_Summon_Stage_Four"> 
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+				
+		<action class="SpawnEntity">
+			<property name="entity_names" value="Leshii" param1="zombiename" />
+			<property name="spawn_count" value="2" param1="spawncount" />
+			<property name="min_distance" value="55" />
+			<property name="max_distance" value="60" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieVulture,animalZombieVultureRadiated" param1="zombiename" />
+			<property name="spawn_count" value="10" param1="spawncount" />
+			<property name="min_distance" value="55" />
+			<property name="max_distance" value="65" />
+		</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[b32e1d]THE HAIRS ON THE BACK OF YOUR NECK STAND UP!" />
+			<property name="phase" value="1" />
+		</action>
+	
+	</action_sequence>
+	
+<action_sequence name="Siren_Cursed_Summon_Stage_Five"> 
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+				
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombiePrototypeDemolition" param1="zombiename" />
+			<property name="spawn_count" value="2" param1="spawncount" />
+			<property name="min_distance" value="45" />
+			<property name="max_distance" value="55" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieDemolition" param1="zombiename" />
+			<property name="spawn_count" value="10" param1="spawncount" />
+			<property name="min_distance" value="45" />
+			<property name="max_distance" value="50" />
+		</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[f50505]DEATH HAS ARRIVED!" />
+			<property name="phase" value="1" />
+		</action>
+	
+	</action_sequence>
+
+<action_sequence name="Siren_Death_Summon2"> <!-- RadiatedSiren -->
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+			
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieDemolition" param1="zombiename" />
+		<property name="spawn_count" value="3" param1="spawncount" />
+		<property name="min_distance" value="35" />
+		<property name="max_distance" value="40" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieMutated" param1="zombiename" />
+		<property name="spawn_count" value="7" param1="spawncount" />
+		<property name="min_distance" value="35" />
+		<property name="max_distance" value="40" />
+	</action>
+	
+	</action_sequence>
+
+<!-- Ghast Food Spoilage - Main event that randomly picks 1-4 items -->
+<action_sequence name="action_spoil_ghast">
+		<property name="category" value="twitch_actions" />
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+
+		<!-- 25% chance to spoil 1 item -->
+		<decision class="If">
+			<property name="phase" value="1" />
+			<property name="phase_on_complete" value="99" />
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="25"/>
+			</requirement>
+			<action class="CallGameEvent">
+				<property name="game_events" value="action_spoil_ghast_1" />
+			</action>
+		</decision>
+
+		<!-- 25% chance to spoil 2 items -->
+		<decision class="If">
+			<property name="phase" value="1" />
+			<property name="phase_on_complete" value="99" />
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="GT"/>
+				<property name="value" value="25"/>
+			</requirement>
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="50"/>
+			</requirement>
+			<action class="CallGameEvent">
+				<property name="game_events" value="action_spoil_ghast_2" />
+			</action>
+		</decision>
+
+		<!-- 25% chance to spoil 3 items -->
+		<decision class="If">
+			<property name="phase" value="1" />
+			<property name="phase_on_complete" value="99" />
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="GT"/>
+				<property name="value" value="50"/>
+			</requirement>
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="75"/>
+			</requirement>
+			<action class="CallGameEvent">
+				<property name="game_events" value="action_spoil_ghast_3" />
+			</action>
+		</decision>
+
+		<!-- 25% chance to spoil 4 items -->
+		<decision class="If">
+			<property name="phase" value="1" />
+			<property name="phase_on_complete" value="99" />
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="GT"/>
+				<property name="value" value="75"/>
+			</requirement>
+			<action class="CallGameEvent">
+				<property name="game_events" value="action_spoil_ghast_4" />
+			</action>
+		</decision>
+</action_sequence>
+
+<!-- Ghast spoils 1 food item -->
+<action_sequence name="action_spoil_ghast_1">
+		<property name="category" value="twitch_actions" />
+		<property name="action_type" value="Game" />
+
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_spoil" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="BeltTooltip">
+			<property name="text" value="[FF0000]SOME OF YOUR FOOD HAS DECAYED!" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="ReplaceItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="replaced_by_item" value="foodRottingFlesh" />
+			<property name="items_tags" value="food" />
+			<property name="count" value="1" />
+			<property name="count_type" value="Items" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="twitch_spoil" />
+		</action>
+</action_sequence>
+
+<!-- Ghast spoils 2 food items -->
+<action_sequence name="action_spoil_ghast_2">
+		<property name="category" value="twitch_actions" />
+		<property name="action_type" value="Game" />
+
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_spoil" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="BeltTooltip">
+			<property name="text" value="[FF0000]SOME OF YOUR FOOD HAS DECAYED!" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="ReplaceItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="replaced_by_item" value="foodRottingFlesh" />
+			<property name="items_tags" value="food" />
+			<property name="count" value="2" />
+			<property name="count_type" value="Items" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="twitch_spoil" />
+		</action>
+</action_sequence>
+
+<!-- Ghast spoils 3 food items -->
+<action_sequence name="action_spoil_ghast_3">
+		<property name="category" value="twitch_actions" />
+		<property name="action_type" value="Game" />
+
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_spoil" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="BeltTooltip">
+			<property name="text" value="[FF0000]SOME OF YOUR FOOD HAS DECAYED!" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="ReplaceItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="replaced_by_item" value="foodRottingFlesh" />
+			<property name="items_tags" value="food" />
+			<property name="count" value="3" />
+			<property name="count_type" value="Items" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="twitch_spoil" />
+		</action>
+</action_sequence>
+
+<!-- Ghast spoils 4 food items -->
+<action_sequence name="action_spoil_ghast_4">
+		<property name="category" value="twitch_actions" />
+		<property name="action_type" value="Game" />
+
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_spoil" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="BeltTooltip">
+			<property name="text" value="[FF0000]SOME OF YOUR FOOD HAS DECAYED!" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="ReplaceItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="replaced_by_item" value="foodRottingFlesh" />
+			<property name="items_tags" value="food" />
+			<property name="count" value="4" />
+			<property name="count_type" value="Items" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="twitch_spoil" />
+		</action>
+</action_sequence>
+
+<action_sequence name="Leshii_Bird_Swarm"> <!-- Leshii -->
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+			
+	<action class="SpawnEntity">
+		<property name="entity_names" value="animalZombieVulture" param1="zombiename" />
+		<property name="spawn_count" value="10" param1="spawncount" />
+		<property name="min_distance" value="20" />
+		<property name="max_distance" value="25" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="animalZombieVultureRadiated" param1="zombiename" />
+		<property name="spawn_count" value="4" param1="spawncount" />
+		<property name="min_distance" value="30" />
+		<property name="max_distance" value="35" />
+	</action>
+	
+</action_sequence>
+
+<action_sequence name="Leshii_Bird_Swarm2"> <!-- Radiated Leshii -->
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+			
+	<action class="SpawnEntity">
+		<property name="entity_names" value="animalZombieVulture" param1="zombiename" />
+		<property name="spawn_count" value="8" param1="spawncount" />
+		<property name="min_distance" value="2" />
+		<property name="max_distance" value="5" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="animalZombieVultureRadiated" param1="zombiename" />
+		<property name="spawn_count" value="3" param1="spawncount" />
+		<property name="min_distance" value="10" />
+		<property name="max_distance" value="15" />
+	</action>
+	
+</action_sequence>
+
+
+<action_sequence name="action_deafen_player"> <!-- Prototype Demolition Deafen -->
+		<property name="category" value="twitch_actions" /><action class="PlaySound">
+			<property name="sound" value="hulkalert" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="hulkalert" />
+			<property name="inside_head" value="true" />
+			</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[ff0000]YOU HAVE BEEN DEAFENED FOR A TIME!" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="Deafened" />
+			</action>
+		
+</action_sequence>
+
+<action_sequence name="action_Flood_Burrow"> <!-- Flood -->
+		<property name="category" value="twitch_actions" />
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" /><action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="entityhitsground" />
+			<property name="inside_head" value="true" /> <!-- avoids hearing it from miles away by other players by accident -->
+			</action>
+		
+		<action class="BeltTooltip">
+			<property name="text" value="[FF0000]YOU FEEL SOMETHING BURROW INTO YOUR SKIN!" /> <!-- Confirmation the debuff triggered -->
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="Hosting" />
+			</action>
+		
+</action_sequence>
+
+<action_sequence name="Flood_Death_Summon"> <!-- Flood Vessel -->
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+			
+	<action class="SpawnEntity">
+		<property name="entity_names" value="FloodSmallMinion" param1="zombiename" />
+		<property name="spawn_count" value="15" param1="spawncount" />
+		<property name="min_distance" value="5" />
+		<property name="max_distance" value="8" />
+	</action>
+	
+</action_sequence>
+	
+<action_sequence name="custom_buff_rez">
+	<property name="allow_while_dead" value="true"/>
+
+	<action class="RespawnEntity"/>
+	<action class="AddBuff" buff_name="buffRecentlyResurrected"/>
+	<action class="RageZombies" time="60" speed_percent="1.5"/>
+</action_sequence>
+
+	<action_sequence name="TargetPlayer">
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+	
+	<action class="AddQuest">
+		<property name="phase" value="1" />
+		<property name="quest" value="Quest_Wave6" />
+	</action>
+	
+</action_sequence>
+
+	
+	</append>
+	
+</Config>

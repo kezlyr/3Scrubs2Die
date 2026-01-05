@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sounds>
+	<append xpath="/Sounds">
+		<!--<SoundDataNode name="lootbanditspawn">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?3easypayments"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?allthecookies"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?cupcake"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?fingerpizza"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?givemeyourloot"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?Heyoo"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?lookintomyeyes"/>
+			<AudioClip ClipName="#@modfolder:Resources/lootbandit.unity3d?pepper"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="3"/>
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+-->
+<SoundDataNode name="AsylumSpawn1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Spawn1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumSpawn2"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Spawn2.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumSpawn3"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Spawn3.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="AsylumAmbient1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient2"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient2.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient3"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient3.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient4"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient4.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient5"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient5.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient6"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient6.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient7"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient7.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient8"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient8.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient9"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient9.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumAmbient10"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Ambient10.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="AsylumJumpScare1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare2"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare2.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare3"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare3.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare4"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare4.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare5"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare5.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare6"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare6.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumJumpScare7"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?JumpScare7.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="Asylumlaugh1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?laugh1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="AsylumJumpHaunt1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Haunt1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="AsylumTorture1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Torture1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<SoundDataNode name="AsylumTune1"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Tune1.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+<SoundDataNode name="AsylumTune2"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/AsylumPOIAudio.unity3d?Tune2.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+<SoundDataNode name="Asylumaccessgranted"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/DW_assets.unity3d?accessgranted.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+<SoundDataNode name="Asylumrecordplayer"> 
+<AudioSource name="@:Sounds/Prefabs/AudioSource_SleeperSpawns.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/DW_assets.unity3d?settheworldonfire.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/>
+ <CrouchNoiseScale value="0.4002"/>
+ <NoiseScale value="1"/>
+ <MaxVoices value="2"/> 
+<MaxRepeatRate value="0.01"/> 
+<runningvolumescale value="2"/> 
+</SoundDataNode>
+
+	</append>
+</Sounds>

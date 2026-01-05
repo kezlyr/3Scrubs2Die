@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<Name value="ShockShaderPatch_Emu46" />
+	<DisplayName value="ShockShaderPatch by Emu46" />
+	<Description value="Harmony patch to use with my Game Character shader to enable the electrocution fx on custom zombies" />
+	<Version value="1.0.0" />
+	<Author value="Emu46" />
+	<Website value="" />
+	<SkipWithAntiCheat value="false" />
+</xml>

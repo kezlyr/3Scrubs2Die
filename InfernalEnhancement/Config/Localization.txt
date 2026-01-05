@@ -1,0 +1,24 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latindanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+infernalBlackStone,items,Item,,,"Madness Shard",,,,,,,,,,,,,,,
+infernalBlackStoneDesc,items,Item,,,"A crystalline fragment of concentrated madness, harvested from the depths of the asylum. Used to craft and enhance Infernal Armor pieces. The shard whispers dark secrets to those who hold it, pulsing with unstable psychic energy.",,,,,,,,,,,,,,,
+
+infernalConcentratedStone,items,Item,,,"Madness Core",,,,,,,,,,,,,,,
+infernalConcentratedStoneDesc,items,Item,,,"A highly concentrated core of pure insanity, radiating intense psychic energy. More effective for high-level enhancements. The core contains the distilled essence of countless tortured minds, capable of pushing armor beyond mortal limits.",,,,,,,,,,,,,,,
+
+infernalCronStone,items,Item,,,"Anchor Stone",,,,,,,,,,,,,,,
+infernalCronStoneDesc,items,Item,,,"A rare stabilizing stone that anchors your enhancement progress, preventing regression on failure. Forged from the bedrock of reality itself, it holds your armor's power steady even when the enhancement ritual fails. Use wisely - these stones are extremely rare.",,,,,,,,,,,,,,,
+
+infernalTormentMinor,items,Item,,,"Minor Torment Essence",,,,,,,,,,,,,,,
+infernalTormentMinorDesc,items,Item,,,"A crystallized fragment of accumulated suffering and failure. Consuming this essence grants +5 failstacks, increasing your enhancement success rate. The whispers of past failures echo within, offering their bitter wisdom to aid your next attempt. [FF0000]WARNING: Only use ONE at a time! Using more will result in loss due to cooldown.[-]",,,,,,,,,,,,,,,
+
+infernalTormentMajor,items,Item,,,"Major Torment Essence",,,,,,,,,,,,,,,
+infernalTormentMajorDesc,items,Item,,,"A concentrated core of anguish and repeated failures. Consuming this potent essence grants +10 failstacks, significantly boosting your enhancement success rate. The screams of countless failed attempts resonate within, their collective despair fueling your determination. [FF0000]WARNING: Only use ONE at a time! Using more will result in loss due to cooldown.[-]",,,,,,,,,,,,,,,
+
+infernalTormentSuperior,items,Item,,,"Superior Torment Essence",,,,,,,,,,,,,,,
+infernalTormentSuperiorDesc,items,Item,,,"The ultimate crystallization of suffering - pure, distilled agony from innumerable failures. Consuming this rare essence grants +15 failstacks, dramatically increasing your enhancement success rate. The weight of accumulated torment is almost unbearable, but its power is undeniable. [FF0000]WARNING: Only use ONE at a time! Using more will result in loss due to cooldown.[-]",,,,,,,,,,,,,,,
+
+buffInfernalTormentCooldownName,buffs,Buff,,,"Torment Cooldown",,,,,,,,,,,,,,,
+buffInfernalTormentCooldownDesc,buffs,Buff,,,"Cannot consume another Torment Essence until this effect expires.",,,,,,,,,,,,,,,
+
+

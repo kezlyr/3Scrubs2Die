@@ -1,0 +1,61 @@
+<configs>
+	<!-- Infernal Enhancement System - Buffs for Visual/Audio Feedback -->
+	
+	<!-- Enhancement Success Buff - Visual/audio feedback on successful enhancement -->
+	<append xpath="/buffs">
+		<buff name="buffEnhancementSuccess">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="forge_item_complete"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Enhancement Successful!" sound=""/>
+			</effect_group>
+		</buff>
+	</append>
+	
+	<!-- Enhancement Failure Buff - Visual/audio feedback on failed enhancement -->
+	<append xpath="/buffs">
+		<buff name="buffEnhancementFailure">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="item_break"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Enhancement Failed!" sound=""/>
+			</effect_group>
+		</buff>
+	</append>
+	
+	<!-- Enhancement Regression Buff - Visual/audio feedback when item regresses -->
+	<append xpath="/buffs">
+		<buff name="buffEnhancementRegression">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="item_break"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Enhancement Regressed!" sound=""/>
+			</effect_group>
+		</buff>
+	</append>
+	
+	<!-- Failstack Display Buff - Shows current failstack count -->
+	<append xpath="/buffs">
+		<buff name="buffFailstackDisplay">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<effect_group>
+				<!-- This buff is used to display failstack count in UI -->
+				<!-- The actual count is stored in $InfernalFailstacks CVar -->
+			</effect_group>
+		</buff>
+	</append>
+
+	<!-- Torment Essence Cooldown Buff - Prevents using another Torment Essence for 60 seconds -->
+	<append xpath="/buffs">
+		<buff name="buffInfernalTormentCooldown" name_key="buffInfernalTormentCooldownName" description_key="buffInfernalTormentCooldownDesc" icon="ui_game_symbol_clock" icon_color="180,0,0" icon_blink="false" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+		</buff>
+	</append>
+
+</configs>
+

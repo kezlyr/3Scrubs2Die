@@ -1,0 +1,26 @@
+<configs>
+  
+  <append xpath="styles/global">
+    <style_entry name="V_SKill_Exp_Gauge_Color1" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color2" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color3" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color4" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color5" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color6" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color7" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color8" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color9" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color10" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color11" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color12" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color13" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color14" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color15" value="86,173,86"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color16" value="0,135,0"/>
+    <style_entry name="V_SKill_Exp_Gauge_Color17" value="86,173,86"/>
+    <!-- Bar one 86,173,86 Bar two 0,135,0 -->
+    <style_entry name="Vam_FS" value="30"/>
+    <style_entry name="Vam_RH" value="45"/>
+  </append>
+
+</configs>

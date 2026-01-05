@@ -1,0 +1,354 @@
+<configs>
+
+
+<!--  Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1
+
+Clear wheel bounce sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/AudioClip/@ClipName">@:Sounds/Misc/silencefiller.wav</set>
+<!--Clear wheel slide sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_slide']/AudioClip/@ClipName">@:Sounds/Misc/silencefiller.wav</set>
+<!--Clear janky Turbo weird noises -->
+<set xpath="/Sounds/SoundDataNode[@name='vehicle_turbo']/AudioClip/@ClipName">@:Sounds/Misc/silencefiller.wav</set>
+
+<!--Horn Sounds-->
+<append xpath="/Sounds">
+<SoundDataNode name="BellBike"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?BellBike"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornBattle"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornBattle"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornCarLong"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="1" heat_map_time="90"/> 
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornCarLong"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornDixie"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornDixie"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornHonk"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornHonk"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornHuge"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornHuge"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="HornShort"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornShort"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="SirenFire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?SirenFire"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="SirenPolice"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?SirenPolice"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="StupidSound"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?StupidSound"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="AirHorn"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?HornAir"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="TornadoSiren"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?Siren-Tornado"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="FogHorn"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?Horn-Fog"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+<!--Newer Horn Sounds-->
+<SoundDataNode name="TruckLoudHornLong"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?TruckLoudHornLong"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+<SoundDataNode name="HornTruckHigh"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?HornTruckHigh"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+<SoundDataNode name="TruckLongHorns"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?TruckLongHorns"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+<SoundDataNode name="CarBlasts"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?CarBlasts"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+<SoundDataNode name="cucaracha"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?cucaracha"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+
+<!--Engine Sounds-->
+<SoundDataNode name="MuscleStart"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="90" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?MuscleCarStart1"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+<SoundDataNode name="MuscleStop"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="90" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?MuscleCarStop1"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode> 
+<SoundDataNode name="MuscleGo"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="90" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?MuscleCarAccelerate1" />
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode> 
+<SoundDataNode name="MuscleSlow"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="90" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?MuscleCarDeccelerate1" />
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>   
+<SoundDataNode name="MuscleIdle"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="90" time="3" heat_map_strength="1" heat_map_time="90"/> 
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?MuscleCarIdle1" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode> 
+<SoundDataNode name="MuscleTop"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" range="30" volume="100" time="3" heat_map_strength="1" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sound-EngineTopSpeed" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode> 
+
+<!-- New Engine Sounds Permission from DUST2DEATH to use UVM sounds -->
+<SoundDataNode name="muscle_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_shutoff"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_shutoff" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="10" heat_map_time="60" />  <!--Attracting Zombies 0.05-->
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_accel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="20" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_accel2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="30" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_accel3" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_decel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_decel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_decel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_decel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/> <!--Attracting Zombies 0.05-->
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="muscle_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?muscle_max_speed_lp" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<!-- SEDAN -->			
+<SoundDataNode name="sedan_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="sedan_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" /> <!--Attracting Zombies 0.05-->
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_accel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="sedan_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_accel2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="sedan_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_accel3" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="sedan_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/> <!--Attracting Zombies 0.05-->
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="sedan_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?sedan_max_speed_lp" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<!-- 4x4-->			
+<SoundDataNode name="4x4_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="4x4_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" /> <!--Attracting Zombies 0.05-->
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_accel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="4x4_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_accel2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="4x4_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_accel3" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="4x4_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/> <!--Attracting Zombies 0.05-->
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="4x4_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?4x4_max_speed_lp" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<!-- SUPER -->			
+<SoundDataNode name="super_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="super_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_accel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="super_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_accel2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="super_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_accel3" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="super_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/>
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="super_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?super_max_speed_lp" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<!-- TRUCK-->			
+<SoundDataNode name="truck_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" heat_map_strength="1" heat_map_time="60"/> 
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="truck_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_accel1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="truck_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_accel2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="truck_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_accel3" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="truck_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/>
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="truck_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?truck_max_speed_lp" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+
+<!-- Alternate Startups-->
+<SoundDataNode name="Semi_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" heat_map_strength="1" heat_map_time="60"/> 
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?Semi_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="Carnew_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" heat_map_strength="1" heat_map_time="60"/> 
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?car_door_slam_start" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="Big_engine_Revup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" heat_map_strength="1" heat_map_time="60"/> 
+<AudioClip ClipName="#@modfolder:Resources/OddSounds.unity3d?Big_engine_Revup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+
+
+<!-- BUGGY-->			
+<SoundDataNode name="buggy_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?buggy_startup" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="buggy_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/VMSounds.unity3d?buggy_idle_lp" Loop="true" heat_map_strength="100" heat_map_time="60"/>
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<!-- Monster Trucks -->
+<SoundDataNode name="monster_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTStartup2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="monster_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTEngineSound2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="monster_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTEngineHigh1" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="monster_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="1" heat_map_time="60" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTHighSpeed2" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="2" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="monster_idle_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTIdleSound" Loop="true" heat_map_strength="100" heat_map_time="60"/>
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+<SoundDataNode name="monster_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab" />
+<AudioClip ClipName="#@modfolder:Resources/MTSounds.unity3d?MTHighSpeed2" Loop="true" />
+<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+
+<!-- Heavy Duty Trucks Striker -->			
+<SoundDataNode name="BRDM2truck4_startup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2startup"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck4_idle"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2idle" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck4_accel1"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2low_off" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck4_accel2"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2med_off" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck4_accel3"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2high_off" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck4_max_speed_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+<AudioClip ClipName="#@modfolder:Resources/StrikerSounds.unity3d?BRDM2high_on" Loop="true"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="BRDM2truck_horn"> <AudioSource name="@:Sounds/Prefabs/AudioSource_SmallHorn.prefab"/>
+<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+<AudioClip ClipName="#@modfolder:Resources/horns2.unity3d?BRDM2truck_horn"/>
+<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+</append>
+</configs>

@@ -1,0 +1,96 @@
+﻿<config>
+    <append xpath="/buffs">
+        <buff name="triggerQuantumElevator" hidden="true">
+            <duration value=".1" />
+            <update_rate value=".1" />
+            <stack_type value="ignore" />
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="inQuantumElevator" />
+            </effect_group>
+        </buff>
+        <buff name="inQuantumElevator" name_key="inQuantumElevatorName" description_key="inQuantumElevatorDesc" icon="ui_game_symbol_map_city" icon_color="0,127,255">
+            <duration value="0" />
+            <update_rate value=".1" />
+            <stack_type value="replace" />
+            <display_value value="quantumElevatorTargetElevation" />
+            <display_value_key value="{0:0}" />
+
+            <effect_group name="handle_sounds">
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="solarpanel_idle" play_in_head="true" />
+                <triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="solarpanel_idle" play_in_head="true" />
+                <triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="solarpanel_idle" play_in_head="true" />
+            </effect_group>
+
+            <effect_group name="reduce jump strength">
+                <requirements>
+                    <requirement name="EntityTagCompare" tags="player" />
+                </requirements>
+                <passive_effect name="JumpStrength" operation="base_set" value="0.125" />
+                <passive_effect name="PerkLevel" operation="base_set" value="0" tags="perkParkour" />
+            </effect_group>
+
+            <effect_group name="timer">
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$quantumElevatorTimer" operation="set" value="2" />
+                <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$quantumElevatorTimer" operation="set" value="2" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$quantumElevatorTimer" operation="subtract" value="1" />
+                <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="inQuantumElevator">
+                    <requirement name="CVarCompare" cvar="$quantumElevatorTimer" operation="LTE" value="0" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$quantumElevatorTimer" operation="set" value="0" />
+            </effect_group>
+        </buff>
+
+        <buff name="quantumElevatorCooldown" hidden="true">
+            <duration value="0.2" />
+            <stack_type value="replace" />
+        </buff>
+
+        <buff name="quantumElevatorTopFloor" icon="ui_game_symbol_x" icon_color="255,0,127">
+            <duration value="0.5" />
+            <stack_type value="ignore" />
+            <display_value value="xxx" />
+            <display_value_key value="Top Floor" />
+        </buff>
+        <buff name="quantumElevatorBottomFloor" icon="ui_game_symbol_x" icon_color="255,0,127">
+            <duration value="0.5" />
+            <stack_type value="ignore" />
+            <display_value value="xxx" />
+            <display_value_key value="Bottom Floor" />
+        </buff>
+
+        <buff name="notifyQuantumElevatorLocked" hidden="true">
+            <duration value="5.5" />
+            <stack_type value="ignore" />
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="notifyQuantumElevatorLockedTooltip" sound="locked" />
+            </effect_group>
+        </buff>
+        <buff name="notifyQuantumElevatorLockedWithPassword" hidden="true">
+            <duration value="5.5" />
+            <stack_type value="ignore" />
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="notifyQuantumElevatorLockedWithPasswordTooltip" sound="locked" />
+            </effect_group>
+        </buff>
+
+        <buff name="triggerQuantumJump" hidden="true">
+            <duration value="2" />
+            <stack_type value="replace" />
+            <update_rate value=".1" />
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="solarpanel_on" play_in_head="false" />
+                <triggered_effect trigger="onSelfBuffStack" action="PlaySound" sound="solarpanel_on" play_in_head="false" />
+
+                <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" local_offset="0,-1.25,0" transform_path="body_mesh" />
+                <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+                <triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+                <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+                <triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+
+                <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="triggerQuantumJump">
+                    <requirement name="!HasBuff" buff="inQuantumElevator" />
+                </triggered_effect>
+            </effect_group>
+        </buff>
+    </append>
+</config>

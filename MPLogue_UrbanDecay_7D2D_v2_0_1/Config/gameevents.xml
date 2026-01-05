@@ -1,0 +1,187 @@
+<gameevents>
+
+<append xpath="/gameevents">
+
+
+<!-- 
+	<action_sequence name="mpl_DumpsterSpawnRats">
+		<property name="action_type" value="Game"/>
+		<property name="allow_while_dead" value="false"/>
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100"/>
+			<property name="operation" value="LTE"/>
+			<property name="value" value="100"/>
+		</requirement>
+		<action class="SpawnEntity">
+			<property name="entity_names" value="mpl_animalRat"/>
+			<property name="spawn_count" value="1"/>
+			<property name="air_spawn" value="false"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="min_distance" value="2"/>
+			<property name="max_distance" value="3"/>
+		</action>
+	</action_sequence>
+ -->	
+
+	<action_sequence name="mpl_DumpsterSpawnRoaches">
+		<property name="allow_while_dead" value="false"/>
+		<action class="BlockReplaceAttack">
+			<property name="target_position" value="0, 0, 0" />
+			<property name="offset_type" value="Relative" />
+			<property name="min_offset" value="0,0,0" />
+			<property name="max_offset" value="1,2,1" />
+			<property name="spacing" value="1" />
+			<property name="random_chance" value="1" />
+			<property name="exclude_position" value="true" />
+			<property name="block_to" value="MPL_RoachUnevenSingle" />
+			<property name="empty_only" value="true" />
+		</action>
+
+	</action_sequence>
+
+<!-- 
+
+	<action_sequence name="mpl_DumpsterSpawnBats">
+		<property name="action_type" value="Game"/>
+		<property name="allow_while_dead" value="false"/>
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100"/>
+			<property name="operation" value="LTE"/>
+			<property name="value" value="100"/>
+		</requirement>
+		<action class="SpawnEntity">
+			<property name="entity_names" value="mpl_animalZombieBat"/>
+			<property name="spawn_count" value="1"/>
+			<property name="air_spawn" value="false"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="min_distance" value="2"/>
+			<property name="max_distance" value="3"/>
+		</action>
+	</action_sequence>
+	 -->
+
+
+
+
+	<action_sequence name="action_shock_everyone">
+		<property name="allow_user_trigger" value="false" />
+		<property name="category" value="twitch_actions" />
+
+
+
+		<requirement class="NearbyEntities" >
+			<property name="max_distance" value="10" />
+		</requirement>
+
+		<action class="AddEntitiesToGroup">
+			<property name="phase" value="1" />
+			<property name="group_name" value="targets" />
+			<property name="max_distance" value="10" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_shock_near" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="1" />
+			<property name="target_group" value="targets" />
+			<property name="buff_name" value="buffShocked" />
+		</action>		
+			
+
+
+		<action class="PlaySound">
+			<property name="sound" value="" param1="twitchsound" />
+			<property name="phase" value="1" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_shock_near" param1="buffsound" />
+			<property name="inside_head" value="true" />
+			<property name="delay" value="0" param1="buffsounddelay" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="1" />
+			<property name="buff_name" value="buffShocked_Low" param1="addbuff" />
+		</action>
+
+		
+		<action class="Delay">
+			<property name="time" value="3" />
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="3" />
+		</action>
+		
+
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffInjuryKnockdown02" param1="addbuff" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="target_group" value="targets" />
+			<property name="buff_name" value="buffInjuryUnconscious" param1="addbuff" />
+		</action>
+
+	</action_sequence>
+
+
+
+
+
+
+
+	<action_sequence name="action_shock_player">
+		<property name="allow_user_trigger" value="false" />
+		<property name="category" value="twitch_actions" />
+
+		<action class="PlaySound">
+			<property name="sound" value="" param1="twitchsound" />
+			<property name="phase" value="1" />
+			<property name="inside_head" value="true" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_shock_near" param1="buffsound" />
+			<property name="inside_head" value="true" />
+			<property name="delay" value="0" param1="buffsounddelay" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="1" />
+			<property name="buff_name" value="buffShocked_Low" param1="addbuff" />
+		</action>
+	
+		<action class="Delay">
+			<property name="time" value="3" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffInjuryUnconscious" param1="addbuff" />
+		</action>
+
+	</action_sequence>
+
+
+
+</append>
+
+
+</gameevents>
+

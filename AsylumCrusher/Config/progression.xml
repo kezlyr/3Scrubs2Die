@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!-- Asylum Crusher - Tier 3 Progression -->
+	<!-- Works with AsylumCore's modified workstation progression structure -->
+	<!-- Added at level 35 - between Advanced Workbench (30) and Ammo Press (35) -->
+
+	<!-- Add Asylum Crusher to workstations progression -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
+		<display_entry icon="asylumCrusher" name_key="workstationsT3-3" has_quality="false" unlock_level="35">
+			<unlock_entry item="asylumCrusher" unlock_tier="1"/>
+		</display_entry>
+	</append>
+
+	<!-- Add recipe unlock for Asylum Crusher workstation -->
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="asylumCrusher"/>
+	</append>
+
+	<!-- Add recipe unlock for crusher recipes (recycling functionality) -->
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="crusher"/>
+	</append>
+
+</configs>
+

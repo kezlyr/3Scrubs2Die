@@ -1,0 +1,17 @@
+<mjedit>		
+<!--   Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+ <append xpath="/ui_display_info/crafting_category_display">
+ 
+
+		<crafting_category_list display_type="VMAutoWorkbench">
+			<crafting_category name="Resources" icon="ui_game_symbol_assemble" display_name="Parts" />
+			<crafting_category name="Science" icon="ui_game_symbol_4x4" display_name="lblCategoryVehicles" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_wrench" display_name="Repair Tools" />
+		</crafting_category_list>
+
+
+ </append>		
+
+
+
+</mjedit>

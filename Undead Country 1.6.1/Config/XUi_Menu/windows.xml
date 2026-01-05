@@ -1,0 +1,21 @@
+﻿<config>
+
+<remove xpath="/windows/window[@name='menuBackground']"></remove> 
+
+<set xpath="/windows/window[@name='loadingScreen']/texture/@original_aspect_ratio">false</set> 
+
+<!--<set xpath="/windows/window[@name='loadingScreen']/rect[@name='tips_enabled']/@visible">false</set> -->
+
+<set xpath="/windows/window[@name='newsScreen']/texture/@texture">@modfolder:/BG/LoadingScreenDB0.jpg</set> 
+
+
+<append xpath="/windows">
+
+<window name="menuBackground" anchor="CenterCenter" pos="0,0" width="1050" height="780" depth="-3">
+	<texture depth="1" color="[white]" texture="@modfolder:/BG/UCMenu161.jpg" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+</window>
+
+
+</append>
+
+</config>

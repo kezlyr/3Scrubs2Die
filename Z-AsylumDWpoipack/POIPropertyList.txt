@@ -1,0 +1,40 @@
+// POI Property List for Teragon
+// Generated on 28/09/2025 14:21:41
+// Generated with Teragon POI Property List Generator v1.2.2 by Riamus
+// 
+// \Prefabs\POIs
+// 
+AsylumLab;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+AsylumVulcanicArena;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Abandoned_Base_01_wilderness;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_BreachedTrader_hugh;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_BreachedTrader_Jen;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_BreachedTrader_Joel;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_BreachedTrader_Rekt;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_BunkerMultiTrader;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Bunker_Multi_Trader;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_DocksTrader;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Domestikator;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Embarcadero;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_MasterBaitAndTackle;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Modern_Art_House;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_ParadiseHotel;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Rural_Horde_Base_Medium;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_ServiceGas;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_SmallPipeBase;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Small_Horde_base01;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Subterranean;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TheAfterLife;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TRADE-BUNKER;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TraderBOB;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TraderHugh;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TraderJEN;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TraderJOEL;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TraderREKT;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+dw_TRADER_Bob;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_Trader_hugh;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+dw_Trader_Joel;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_TRADER_Rekt;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+DW_WolfLegalServices;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+Ground Zero Mart;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel
+Rolling_Hills_Asylum;poi_distance:49;biome:burnt,desert,forest,snow,wasteland;region:default;road:gravel

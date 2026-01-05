@@ -1,0 +1,21 @@
+<configs>
+
+  <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.75,0.75</set>
+
+<!-- 
+
+  <set xpath="/worldglobal/environment/property[@name='fogWater']/@value">0.47, .2</set>
+  
+
+
+  <set xpath="/worldglobal/environment/property[@name='fogWaterColor']/@value">.38, .42, .38</set>
+    --> 
+
+  
+  
+  
+</configs>
+
+
+
+		

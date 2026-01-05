@@ -1,0 +1,309 @@
+<buffs>
+	<append xpath="/buffs">
+		<buff name="DW_SlowDown" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Slowpoke"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".25"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".3"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="base_set" value="0.25"/>
+				<!--<passive_effect name="VehicleVelocityMaxTurboPer" operation="base_set" value="0.25"/>-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_ShockedLight" description_key="buffShockedDesc" tooltip_key="buffShockedTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockedName" icon_color="255,0,0">
+			<damage_type value="electrical"/>
+			<stack_type value="duration"/>
+			<duration value="2"/>
+			<update_rate value="1"/>
+			<display_value value="$buffShockedDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffShocked"/>
+				<triggered_effect trigger="onSelfBuffStart" action="GetBuffDuration" reference="$shockDurationMax"/>
+				<triggered_effect trigger="onSelfBuffStart" action="GetBuffDuration" reference="$buffShockedDisplay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffShockedDisplay" operation="set" value="4">
+					<requirement name="CVarCompare" cvar="$buffShockedDisplay" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="GetBuffDuration" reference="$buffShockedDisplay"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffShockedDisplay" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffShockedDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ETrapHit" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="4"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,4"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,4"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,4"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,4"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="5"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,5"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,5"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,5"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,5"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="6"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,6"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,6"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,6"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,6"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="7"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,7"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,7"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,7"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,7"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="8"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,8"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,8"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,8"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,8"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$shockDurationMax" operation="GTE" value="9"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".9,.05" duration="0,9"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".9,.05" duration="0,9"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value=".9,.05" duration="0,9"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".9,.05" duration="0,9"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_BuffFullHeal" icon="ui_game_symbol_add" hidden="true">
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveAllNegativeBuffs"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionHealthMaxBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/>
+				<!-- in seconds -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/>
+				<!-- in seconds -->
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_drone_heal_player" local_offset="0,-.5,.5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_drone_heal_player"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_SlowDown2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Slowpoke"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".25"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".3"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="base_set" value="0.25"/>
+				<!--<passive_effect name="VehicleVelocityMaxTurboPer" operation="base_set" value="0.25"/>-->
+			</effect_group>
+		</buff>
+		<!-- Visual Effects only - no damage buffs  -->
+		<buff name="DW_DrunkAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Dark"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Drunk" intensity="1" fade=".5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Drunk" intensity="0" fade=".5"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_DarkAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Dark"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Dark" intensity="1" fade=".5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".5"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_BlurAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Blurry"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity="1" fade="0.5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_HotAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Hot"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_HotAir2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Hot"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot2"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_ColdAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Chilly"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Cold"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_ColdAir2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Chilly"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Cold2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold2"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_DistortedAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Wavey"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Distortion"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_DistortedAirMild" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Wavey"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".2" fade="1" effect_name="Distortion"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_GreyAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Greyish"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_RadiationAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Radiation"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity="1" fade="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_InfectedAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+			<display_value_key value="Infected"/>
+			<display_value value="xxx"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Infected"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Infected"/>
+			</effect_group>
+		</buff>
+		<!-- *************************************************************************
+            GAMEEVENT BUFFS
+	************************************************************************** -->
+		<buff name="buffBloodMoon" description="Starts a Blood Moon" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_set_hordenight"/>
+			</effect_group>
+		</buff>
+		<buff name="buffNightTime" description="Turns the time to night" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_time_night"/>
+			</effect_group>
+		</buff>
+		<buff name="buffGrow" description="Things Grow" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_grow"/>
+			</effect_group>
+		</buff>
+		<buff name="buffHordeChickens" description="Spawns Murder Chickens" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="horde_chickens"/>
+			</effect_group>
+		</buff>
+		<buff name="buffThunder" description="Sets of thunder" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_weather_thunderstorm"/>
+			</effect_group>
+		</buff>
+		<buff name="buffSinkHole" description="Creates a Sinkhole" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_sink_hole"/>
+			</effect_group>
+		</buff>
+		<buff name="buffMineField" description="Spawns a Minefield" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_land_mines"/>
+			</effect_group>
+		</buff>
+		<buff name="DW_RadiationVisual">
+			<display_value_key value="Green"/>
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity="1" fade=".5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade=".5"/>
+			</effect_group>
+		</buff>
+	</append>
+</buffs>

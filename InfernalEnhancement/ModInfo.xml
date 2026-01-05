@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="InfernalEnhancement"/>
+	<DisplayName value="Infernal Enhancement System"/>
+	<Version value="1.0.0"/>
+	<Description value="Black Desert Online-style enhancement system for Infernal Armors. Features failstack mechanics, enhancement regression, and dynamic success rates."/>
+	<Author value="AsylumMods/DuhWolf"/>
+	<Website value=""/>
+</ModInfo>
+

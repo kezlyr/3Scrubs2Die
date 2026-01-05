@@ -1,0 +1,50 @@
+Key,File,Type,english
+
+resourceDepletedUraniumCore,,,Depleted Uranium Core
+resourceDepletedUraniumCoreDesc,,,"[66FF66]Processed uranium core[FFFFFF] refined from [66FF66]enriched uranium[FFFFFF] for ammunition manufacturing. These [FF6B6B]radioactive cores[FFFFFF] are the [8B0000]heart of uranium bullets[FFFFFF], providing [FF4500]devastating penetration[FFFFFF] against [FF6B6B]armored targets[FFFFFF]. [FFFF00]Extremely dangerous[FFFFFF] to handle and [FFA500]expensive to produce[FFFFFF], each core represents [66FF66]concentrated radioactive power[FFFFFF]."
+
+resourceNapalmGel,,,Napalm Gel
+resourceNapalmGelDesc,,,"[FF6600]Thick, sticky incendiary gel[FFFFFF] created by combining [FFA500]oil with polymer thickening agents[FFFFFF] at a [00FFFF]chemistry station[FFFFFF]. This [FF4500]highly combustible compound[FFFFFF] is the [8B0000]core component of incendiary ammunition[FFFFFF], designed to [FF0000]adhere to targets and burn intensely[FFFFFF]. The [FF6600]gel consistency[FFFFFF] ensures [FF4500]sustained burning[FFFFFF] while the [FFFF00]chemical composition[FFFFFF] makes it [FF0000]extremely dangerous[FFFFFF] to handle. Used in [FFA500]military incendiary weapons[FFFFFF] for [8B0000]maximum fire damage[FFFFFF]."
+
+
+
+ammoUraniumBullet9mm,,,Uranium 9mm Bullet
+ammoUraniumBullet9mmDesc,,,"[66FF66]Radioactive 9mm ammunition[FFFFFF] crafted with [66FF66]enriched uranium cores[FFFFFF]. These bullets deliver [FF4500]devastating damage[FFFFFF] and [FF6B6B]extreme armor penetration (-85%)[FFFFFF] against [8B0000]living targets[FFFFFF]. [66FF66]Inflicts radiation poisoning[FFFFFF] that deals [FF4500]damage over time[FFFFFF], [FFA500]slows movement[FFFFFF], and [FF6B6B]stacks with each hit[FFFFFF]. The [66FF66]uranium payload[FFFFFF] can [FF4500]penetrate 3 enemies[FFFFFF] in a single shot. [FF0000]Ineffective against structures[FFFFFF]."
+
+ammoUraniumBullet44Mag,,,Uranium .44 Magnum Bullet
+ammoUraniumBullet44MagDesc,,,"[66FF66]High-caliber uranium ammunition[FFFFFF] designed for [8B0000]maximum stopping power[FFFFFF] against [FF6B6B]armored enemies (-85% armor)[FFFFFF]. The [66FF66]enriched uranium core[FFFFFF] delivers [FF4500]catastrophic damage[FFFFFF] and [66FF66]inflicts radiation poisoning[FFFFFF] causing [FF4500]damage over time[FFFFFF] and [FFA500]reduced mobility[FFFFFF]. Each hit [FF6B6B]extends the radiation duration[FFFFFF]. Can [FF4500]penetrate 3 enemies[FFFFFF]. [FF0000]Poor against structures[FFFFFF]."
+
+ammoUraniumBullet762mm,,,Uranium 7.62mm Bullet
+ammoUraniumBullet762mmDesc,,,"[66FF66]Military-grade uranium ammunition[FFFFFF] engineered for [8B0000]long-range devastation[FFFFFF] against [FF6B6B]heavily armored enemies (-85%)[FFFFFF]. The [66FF66]depleted uranium core[FFFFFF] provides [FF4500]unmatched penetration[FFFFFF] and [66FF66]inflicts stacking radiation poisoning[FFFFFF] that deals [FF4500]continuous damage[FFFFFF] while [FFA500]slowing targets[FFFFFF]. Can [FF4500]pierce 3 enemies[FFFFFF] per shot. [FF0000]Ineffective against buildings[FFFFFF]."
+
+ammoUraniumShotgunShell,,,Uranium Shotgun Shell
+ammoUraniumShotgunShellDesc,,,"[66FF66]Radioactive buckshot ammunition[FFFFFF] loaded with [66FF66]uranium pellets[FFFFFF] for [8B0000]close-quarters annihilation[FFFFFF]. Each shell contains [FF4500]10 uranium projectiles[FFFFFF] with [FF6B6B]85% armor penetration[FFFFFF] and [FF4500]extended range[FFFFFF]. Every pellet [66FF66]inflicts radiation poisoning[FFFFFF] causing [FF4500]stacking damage over time[FFFFFF] and [FFA500]movement penalties[FFFFFF]. [FF0000]Weak against structures[FFFFFF]."
+
+
+ammoIncendiaryBullet9mm,,,Incendiary 9mm Bullet
+ammoIncendiaryBullet9mmDesc,,,"[FF6600]Incendiary 9mm ammunition[FFFFFF] loaded with [FF4500]napalm gel[FFFFFF] that [FF0000]ignites targets on impact[FFFFFF]. These bullets deliver [FFA500]moderate damage[FFFFFF] while [FF6600]setting enemies ablaze[FFFFFF], causing [FF4500]burning damage over time[FFFFFF]. The [FF6600]incendiary payload[FFFFFF] is [00FFFF]ineffective underwater[FFFFFF] but [FF0000]devastating against flammable targets[FFFFFF]. Crafted at the [FFA500]ammo press[FFFFFF] for [8B0000]crowd control[FFFFFF] and [FF6600]area denial[FFFFFF]."
+
+ammoIncendiaryBullet44Mag,,,Incendiary .44 Magnum Bullet
+ammoIncendiaryBullet44MagDesc,,,"[FF6600]High-caliber incendiary ammunition[FFFFFF] that combines [FF4500]stopping power[FFFFFF] with [FF0000]intense burning effects[FFFFFF]. Each round contains [FF6600]napalm gel[FFFFFF] that [FF4500]ignites on impact[FFFFFF], causing [FF0000]sustained fire damage[FFFFFF] to targets. The [FFA500]larger caliber[FFFFFF] ensures [FF6600]longer burn duration[FFFFFF] and [FF4500]greater initial damage[FFFFFF]. Requires an [FFA500]ammo press[FFFFFF] to manufacture. [00FFFF]Cannot ignite underwater targets[FFFFFF]."
+
+ammoIncendiaryBullet762mm,,,Incendiary 7.62mm Bullet
+ammoIncendiaryBullet762mmDesc,,,"[FF6600]Military-grade incendiary ammunition[FFFFFF] engineered for [8B0000]long-range fire support[FFFFFF]. These rounds deliver [FFA500]solid damage[FFFFFF] while [FF0000]setting targets ablaze[FFFFFF] with [FF6600]napalm gel payload[FFFFFF]. The [FF4500]sustained burning effect[FFFFFF] makes them ideal for [8B0000]suppressing enemies[FFFFFF] and [FF6600]denying areas[FFFFFF]. Manufactured at the [FFA500]ammo press[FFFFFF]. [00FFFF]Fire effects are neutralized underwater[FFFFFF]."
+
+ammoIncendiaryShotgunShell,,,Incendiary Shotgun Shell
+ammoIncendiaryShotgunShellDesc,,,"[FF6600]Incendiary buckshot ammunition[FFFFFF] loaded with [FF4500]napalm-coated pellets[FFFFFF] that [FF0000]spread fire across multiple targets[FFFFFF]. Each shell contains [FF6600]multiple incendiary projectiles[FFFFFF] that [FF4500]ignite enemies on contact[FFFFFF], creating a [FF0000]wall of flames[FFFFFF] in close quarters. The [FFA500]extended burn duration[FFFFFF] makes these shells [8B0000]devastating for crowd control[FFFFFF]. Crafted at the [FFA500]ammo press[FFFFFF], though [00FFFF]water negates the fire effect[FFFFFF]."
+
+
+ammoBundleUraniumBullet9mm,,,Uranium 9mm Bundle
+ammoBundleUraniumBullet44Mag,,,Uranium .44 Magnum Bundle
+ammoBundleUraniumBullet762mm,,,Uranium 7.62mm Bundle
+ammoBundleUraniumShotgunShell,,,Uranium Shotgun Shell Bundle
+
+ammoBundleIncendiaryBullet9mm,,,Incendiary 9mm Bundle
+ammoBundleIncendiaryBullet44Mag,,,Incendiary .44 Magnum Bundle
+ammoBundleIncendiaryBullet762mm,,,Incendiary 7.62mm Bundle
+ammoBundleIncendiaryShotgunShell,,,Incendiary Shotgun Shell Bundle
+
+
+buffUraniumRadiationName,,,Uranium Radiation Poisoning
+buffUraniumRadiationDesc,,,"[66FF66]Radioactive contamination[FFFFFF] from [66FF66]uranium ammunition[FFFFFF] is [FF0000]destroying your cells[FFFFFF]. Your body is [FF6B6B]weakening[FFFFFF] as [66FF66]radiation sickness[FFFFFF] takes hold, causing [FF4500]continuous damage[FFFFFF] and [FFA500]reduced mobility[FFFFFF]. Each additional hit [FF0000]extends the poisoning duration[FFFFFF]."
+buffUraniumRadiationTooltip,,,"[66FF66]Radiation Poisoning[FFFFFF]: Taking [FF4500]12 damage per second[FFFFFF]. Movement [FFA500]slowed by 15%[FFFFFF]. Stamina recovery [FF6B6B]reduced by 25%[FFFFFF]."

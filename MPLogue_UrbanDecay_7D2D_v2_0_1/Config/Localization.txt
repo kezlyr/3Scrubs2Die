@@ -1,0 +1,15 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+MPL_goreBlockHumanCorpse3_SUV_2x,blocks,Block,,,Corpse,,,,,,,,,,,,,
+MPL_goreBlockHumanCorpse3_SUV_3x,blocks,Block,,,Corpse,,,,,,,,,,,,,
+MPL_goreBlockHumanCorpse3_SUV_2x_Sunroof,blocks,Block,,,Corpse,,,,,,,,,,,,,
+MPL_cntStoveOldVer1Closed_Offset,blocks,Block,,,Stove,,,,,,,,,,,,,
+mpl_ud_RoadMsg_01_Trailer,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_02_Trailer,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_03_Trailer,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_04_Trailer,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_01,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_02,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsg_03,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsgRekt_01,blocks,Block,,,LED Sign,,,,,,,,,,,,,
+mpl_ud_RoadMsgRekt_02,blocks,Block,,,LED Sign,,,,,,,,,,,,,

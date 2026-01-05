@@ -1,0 +1,117 @@
+Key,Source,Context,Changes,English
+
+resourceIron,,, ,Iron Ore
+
+zzTerrOreCobalt,,, ,Cobalt Ore
+terrOreStoneCobaltRandomDesc,,, ,Cobalt Ore Vein,"Cobalt-bearing stone found in ore veins."
+zzOreCobaltBoulder,,, ,Cobalt Boulder
+terrOreCobalt,,, ,Cobalt Ore
+oreCobaltBoulder,,, ,Cobalt Boulder
+resourceCobalt,,, ,Cobalt Ore
+resourceScrapCobalt,,, ,Scrap Cobalt
+resourceForgedCobalt,,, ,Bar of Forged Cobalt
+
+zzQuartzOreDesc,,, ,A quartz deposit.
+terrOreQuartz,,, ,Quartz Ore
+oreQuartzBoulder,,, ,Quartz Boulder
+terrOreStoneQuartzRandomDesc,,, ,Quartz Ore Vein,"Quartz-bearing stone found in ore veins."
+resourceQuartz,,, ,Quartz Ore
+resourceScrapQuartz,,, ,Scrap Quartz
+resourceForgedQuartz,,, ,Bar of Forged Quartz
+
+zzAluminiumOreDesc,,, ,An aluminium deposit.
+terrOreAluminium,,, ,Aluminium Ore
+oreAluminiumBoulder,,, ,Aluminium Boulder
+terrOreStoneAluminiumRandomDesc,,, ,Aluminium Ore Vein,"Bauxite-bearing stone found in ore veins."
+resourceAluminium,,, ,Aluminium Ore
+resourceScrapAluminium,,, ,Scrap Aluminium
+resourceForgedAluminium,,, ,Bar of Forged Aluminium
+
+zzCopperOreDesc,,, ,A copper deposit.
+terrOreCopper,,, ,Copper Ore
+oreCopperBoulder,,, ,Copper Boulder
+terrOreStoneCopperRandomDesc,,, ,Copper Ore Vein,"Copper-bearing stone found in ore veins."
+resourceCopper,,, ,Copper Ore
+resourceScrapCopper,,, ,Scrap Copper
+resourceForgedCopper,,, ,Bar of Forged Copper
+
+zzZincOreDesc,,, ,A zinc deposit.
+terrOreZinc,,, ,Zinc Ore
+oreZincBoulder,,, ,Zinc Boulder
+terrOreStoneZincRandomDesc,,, ,Zinc Ore Vein,"Zinc-bearing stone found in ore veins."
+resourceZinc,,, ,Zinc Ore
+resourceScrapZinc,,, ,Scrap Zinc
+resourceForgedZinc,,, ,Bar of Forged Zinc
+
+zzTitaniumOreDesc,,, ,A titanium deposit.
+terrOreTitanium,,, ,Titanium Ore
+oreTitaniumBoulder,,, ,Titanium Boulder
+terrOreStoneTitaniumRandomDesc,,, ,Titanium Ore Vein,"Titanium-bearing stone found in ore veins."
+resourceTitanium,,, ,Titanium Ore
+resourceScrapTitanium,,, ,Scrap Titanium
+resourceForgedTitanium,,, ,Bar of Forged Titanium
+
+zzLithiumOreDesc,,, ,A lithium deposit.
+terrOreLithium,,, ,Lithium Ore
+oreLithiumBoulder,,, ,Lithium Boulder
+terrOreStoneLithiumRandomDesc,,, ,Lithium Ore Vein,"Lithium-bearing stone found in ore veins."
+resourceLithium,,, ,Lithium Ore
+resourceScrapLithium,,, ,Scrap Lithium
+resourceForgedLithium,,, ,Bar of Forged Lithium
+
+zzChromiumOreDesc,,, ,A chromium (chromite) deposit.
+terrOreChromium,,, ,Chromium Ore
+oreChromiumBoulder,,, ,Chromium Boulder
+terrOreStoneChromiumRandomDesc,,, ,Chromium Ore Vein,"Chromium-bearing stone found in ore veins."
+resourceChromium,,, ,Chromium Ore
+resourceScrapChromium,,, ,Scrap Chromium
+resourceForgedChromium,,, ,Bar of Forged Chromium
+
+zzNickelOreDesc,,, ,A nickel deposit.
+terrOreNickel,,, ,Nickel Ore
+oreNickelBoulder,,, ,Nickel Boulder
+terrOreStoneNickelRandomDesc,,, ,Nickel Ore Vein,"Nickel-bearing stone found in ore veins."
+resourceNickel,,, ,Nickel Ore
+resourceScrapNickel,,, ,Scrap Nickel
+resourceForgedNickel,,, ,Bar of Forged Nickel
+
+zzUraniumOreDesc,,, ,A uranium deposit.
+terrOreUranium,,, ,Uranium Ore
+oreUraniumBoulder,,, ,Uranium Boulder
+terrOreStoneUraniumRandomDesc,,, ,Uranium Ore Vein,"Uranium-bearing stone found in ore veins."
+resourceUranium,,, ,Uranium Ore
+resourceScrapUranium,,, ,Scrap Uranium
+resourceForgedUranium,,, ,Bar of Forged Uranium
+
+zzPlatinumOreDesc,,, ,A platinum deposit.
+terrOrePlatinum,,, ,Platinum Ore
+orePlatinumBoulder,,, ,Platinum Boulder
+terrOreStonePlatinumRandomDesc,,, ,Platinum Ore Vein,"Platinum-bearing stone found in ore veins."
+resourcePlatinum,,, ,Platinum Ore
+resourceScrapPlatinum,,, ,Scrap Platinum
+resourceForgedPlatinum,,, ,Bar of Forged Platinum
+
+zzGoldOreDesc,,, ,A gold deposit.
+terrOreGold,,, ,Gold Ore
+oreGoldBoulder,,, ,Gold Boulder
+terrOreStoneGoldRandomDesc,,, ,Gold Ore Vein,"Gold-bearing stone found in ore veins."
+resourceGold,,, ,Gold Ore
+resourceScrapGold,,, ,Scrap Gold
+resourceForgedGold,,, ,Bar of Forged Gold
+
+zzCobaltShapes,,, ,Cobalt Block
+cobaltShapesDesc,,, ,A block made of forged cobalt. Stronger than steel.
+zzChromiumShapes,,, ,Chromium Block
+chromiumShapesDesc,,, ,A block made of forged chromium. Extremely strong.
+zzUraniumShapes,,, ,Uranium Block
+uraniumShapesDesc,,, ,A block made of forged uranium. Radiating strength.
+zzPlatinumShapes,,, ,Platinum Block
+platinumShapesDesc,,, ,A block made of forged platinum. Incredibly durable.
+zzLithiumShapes,,, ,Lithium Block
+lithiumShapesDesc,,, ,A block made of forged lithium. High tech defense.
+zzTitaniumShapes,,, ,Titanium Block
+titaniumShapesDesc,,, ,A block made of forged titanium. The ultimate defense.
+
+forgeDesc,,, ,Forge
+superiorForge,,, ,Superior Forge
+advancedForge2,,, ,Advanced Forge

@@ -1,0 +1,339 @@
+<configs>
+
+<!-- DW Special Monsters - Animal Groups Only with Pine Forest Restrictions -->
+<!-- Generated automatically for ANIMAL entitygroups only (no zombies/biomes/hordes/special) -->
+<!--
+    NEW SPAWNING RULES:
+    - ONLY ANIMAL GROUPS: All 9 monsters can spawn at any GS (except pine forest)
+    - PINE FOREST: Only turt and dragonfly can spawn at any GS
+    - PINE FOREST: Other 7 monsters only spawn after GS 150
+    - NO ZOMBIE/BIOME/HORDE GROUPS: Excludes all zombie, biome, feral, sleeper, defense, scout, wandering hordes
+    - REMOVED: cerberus, griffon, kurolisk, chimera (4 monsters removed)
+
+    PROBABILITY SCALING BY GAMESTAGE (20-30% HIGHER THAN VANILLA ZOMBIES):
+    GS 0/No GS: 0.4 | GS 1-50: 0.4 | GS 50-100: 0.5 | GS 100-200: 0.6
+    GS 200-500: 0.8 | GS 500-1000: 1.0 | GS 1000+: 1.2-1.5
+
+    ALL 9 DW MONSTERS (REDUCED FROM 13):
+    mutantRadiatedLizard - Radiated Lizard Mutant
+    mutantWastelandSpider - Wasteland Spider Mutant
+    biomechanicalSpider - Biomechanical Spider
+    animalZombieDragonFly - Zombie Dragon Fly (Pine Forest Allowed)
+    mutantCeratoferox - Ceratoferox Mutant
+    animalZombieGobblerWasteland - Wasteland Zombie Gobbler
+    turt - Iron Shell (Pine Forest Allowed)
+    asylumNightDemon - Asylum Night Demon
+    asylumNightDemon2v - Asylum Night Demon 2V
+
+    REMOVED: cerberus, griffon, kurolisk, chimera (4 monsters removed)
+-->
+
+<!-- ANIMALS GROUPS -->
+
+	<!-- WildGameForest (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForest']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- WildGameForestNight (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsForest (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsBurntForestAny - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+
+
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsBurntForestNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsDesert - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsDesertNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsSnow - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsSnowNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnowNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsWasteland - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsWastelandNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- WildGameStagNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameStagNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBear - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBear']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBearSmall - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBearSmall']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBoar - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBoar']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBossGrace - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBossGrace']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalChicken - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalChicken']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalCoyote - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalCoyote']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalDireWolf - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalDireWolf']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalDoe - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalDoe']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalMountainLion - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalMountainLion']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalRabbit - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalRabbit']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalSnake - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalSnake']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalStag - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalStag']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalWolf - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalWolf']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+</configs>

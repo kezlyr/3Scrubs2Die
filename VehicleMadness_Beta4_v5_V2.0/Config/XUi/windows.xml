@@ -1,0 +1,6 @@
+<configs>
+<!--   Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+	<set xpath="//window[@name='windowVehicleStorage']/grid[@name='queue']/@rows">14</set>
+	<set xpath="//window[@name='windowVehicleStorage']/grid[@name='queue']/@cols">10</set>
+</configs>
+

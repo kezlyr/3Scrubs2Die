@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/xui/ruleset">
+  	<window_group name="ext_status" >
+  		<window name="windowExtStatus"/>
+  	</window_group>
+	</append>
+</configs>

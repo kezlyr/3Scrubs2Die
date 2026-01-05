@@ -1,0 +1,55 @@
+<configs>
+	<append xpath="/recipes"> 
+		<recipe name="LxSChest" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest2" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest3" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest4" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest5" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest6" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest7" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSChest8" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		<recipe name="LxSBox" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>		
+		<recipe name="LxSStinkyBox" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>		
+		<recipe name="LxSSciFiBox" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>		
+		<recipe name="LxSSciFiBox2" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>			
+		<recipe name="LxSSciFiBox3" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>			
+		<recipe name="LxSSciFiBox4" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>			
+		<recipe name="LxSSciFiBox5" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>			
+		<recipe name="LxSSciFiBox6" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>		
+		<recipe name="LxSBoxFloat" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>	
+	</append>
+</configs>

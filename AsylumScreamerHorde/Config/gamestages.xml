@@ -1,0 +1,11 @@
+<configs>
+    <append xpath="/gamestages">
+        <!-- Spawner used by SpawnEntitySDX to spawn the WanderingAndScreamerHordeSpawner entity -->
+        <spawner name="ScreamerHordeSpawner">
+            <gamestage stage="1">
+                <spawn group="WanderingAndScreamerHordeSpawnerGroup" num="1" maxAlive="5" duration="1"/>
+            </gamestage>
+        </spawner>
+    </append>
+</configs>
+

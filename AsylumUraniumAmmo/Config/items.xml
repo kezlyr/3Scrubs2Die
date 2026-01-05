@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+<!-- *** URANIUM AMMUNITION *** -->
+
+<!-- 9mm Uranium Bullet -->
+<append xpath="/items">
+<item name="ammoUraniumBullet9mm">
+	<property name="Tags" value="ammo,ammo9mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoUraniumBullet9mmDesc"/>
+	<property name="CustomIcon" value="ammo9mmBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="150"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoUraniumBullet9mm" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="85" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="4" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.85" tags="perkGunslinger"/>
+		<display_value name="dTargetArmor" value="-.85"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="3" tags="perkGunslinger"/>
+		<display_value name="dTargetPenetration" value="3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<!-- Uranium radiation poisoning on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffUraniumRadiation"/>
+	</effect_group>
+</item>
+</append>
+
+<!-- .44 Magnum Uranium Bullet -->
+<append xpath="/items">
+<item name="ammoUraniumBullet44Mag">
+	<property name="Tags" value="ammo,ammo44Mag"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoUraniumBullet44MagDesc"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="150"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoUraniumBullet44Mag" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="168" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.85" tags="perkGunslinger"/>
+		<display_value name="dTargetArmor" value="-.85"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="3" tags="perkGunslinger"/>
+		<display_value name="dTargetPenetration" value="3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<!-- Uranium radiation poisoning on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffUraniumRadiation"/>
+	</effect_group>
+</item>
+</append>
+
+<!-- 7.62mm Uranium Bullet -->
+<append xpath="/items">
+<item name="ammoUraniumBullet762mm">
+	<property name="Tags" value="ammo,ammo762mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoUraniumBullet762mmDesc"/>
+	<property name="CustomIcon" value="ammo762mmBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="70"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoUraniumBullet762mm" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="125" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.85" tags="perkDeadEye,perkMachineGunner"/>
+		<display_value name="dTargetArmor" value="-.85"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="3" tags="perkDeadEye,perkMachineGunner"/>
+		<display_value name="dTargetPenetration" value="3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<!-- Uranium radiation poisoning on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffUraniumRadiation"/>
+	</effect_group>
+</item>
+</append>
+
+<!-- Uranium Shotgun Shell -->
+<append xpath="/items">
+<item name="ammoUraniumShotgunShell">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="DescriptionKey" value="ammoUraniumShotgunShellDesc"/>
+	<property name="CustomIcon" value="ammoShotgunShell"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="shotgunshells_grab"/>
+	<property name="SoundPlace" value="shotgunshells_place"/>
+	<effect_group name="ammoUraniumShotgunShell" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="26" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkBoomstick"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="14" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="8" tags="perkBoomstick"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="3" tags="perkBoomstick"/>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="85" tags="perkBoomstick"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.85" tags="perkBoomstick"/>
+		<display_value name="dTargetArmor" value="-.85"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<!-- Uranium radiation poisoning on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffUraniumRadiation"/>
+	</effect_group>
+</item>
+</append>
+
+<!-- *** DEPLETED URANIUM CORE *** -->
+<append xpath="/items">
+<item name="resourceDepletedUraniumCore">
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="resourceDepletedUraniumCoreDesc"/>
+	<property name="CustomIcon" value="resourceDepletedUraniumCore"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources,CFMaterials"/>
+	<property name="SoundPickup" value="metal_grab"/>
+	<property name="SoundPlace" value="metal_place"/>
+</item>
+</append>
+
+<!-- *** NAPALM GEL *** -->
+<append xpath="/items">
+<item name="resourceNapalmGel">
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="resourceNapalmGelDesc"/>
+	<property name="CustomIcon" value="napalmgel"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="75"/>
+	<property name="Group" value="Resources,CFMaterials"/>
+	<property name="SoundPickup" value="metal_grab"/>
+	<property name="SoundPlace" value="metal_place"/>
+</item>
+</append>
+
+
+
+<!-- *** INCENDIARY AMMUNITION *** -->
+
+<!-- 9mm Incendiary Bullet -->
+<append xpath="/items">
+<item name="ammoIncendiaryBullet9mm">
+	<property name="Tags" value="ammo,ammo9mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoIncendiaryBullet9mmDesc"/>
+	<property name="CustomIcon" value="ammo9mmBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="150"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoIncendiaryBullet9mm" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
+		<!-- Fire effect on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement">
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+</append>
+
+<!-- .44 Magnum Incendiary Bullet -->
+<append xpath="/items">
+<item name="ammoIncendiaryBullet44Mag">
+	<property name="Tags" value="ammo,ammo44Mag"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoIncendiaryBullet44MagDesc"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="150"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoIncendiaryBullet44Mag" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="90" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkGunslinger"/>
+		<!-- Fire effect on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="12"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement">
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+</append>
+
+<!-- 7.62mm Incendiary Bullet -->
+<append xpath="/items">
+<item name="ammoIncendiaryBullet762mm">
+	<property name="Tags" value="ammo,ammo762mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="DescriptionKey" value="ammoIncendiaryBullet762mmDesc"/>
+	<property name="CustomIcon" value="ammo762mmBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="bullets_grab"/>
+	<property name="SoundPlace" value="bullets_place"/>
+	<effect_group name="ammoIncendiaryBullet762mm" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkDeadEye,perkMachineGunner"/>
+		<!-- Fire effect on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="12"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement">
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+</append>
+
+<!-- Incendiary Shotgun Shell -->
+<append xpath="/items">
+<item name="ammoIncendiaryShotgunShell">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="DescriptionKey" value="ammoIncendiaryShotgunShellDesc"/>
+	<property name="CustomIcon" value="ammoShotgunShell"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="70"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="SoundPickup" value="shotgunshells_grab"/>
+	<property name="SoundPlace" value="shotgunshells_place"/>
+	<effect_group name="ammoIncendiaryShotgunShell" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="14" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1.5" tags="perkBoomstick"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="12" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="6" tags="perkBoomstick"/>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="50" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<!-- Fire effect on hit -->
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="14"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement">
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+</append>
+
+
+<!-- *** WEAPON COMPATIBILITY UPDATES *** -->
+<!-- Using JewelCrafting2's elegant conditional XPath approach -->
+
+<!-- *** URANIUM AMMO BUNDLES *** -->
+
+<!-- 9mm Uranium Bundle -->
+<append xpath="/items">
+<item name="ammoBundleUraniumBullet9mm">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoUraniumBullet9mm"/>
+	</property>
+</item>
+</append>
+
+<!-- .44 Magnum Uranium Bundle -->
+<append xpath="/items">
+<item name="ammoBundleUraniumBullet44Mag">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="6000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoUraniumBullet44Mag"/>
+	</property>
+</item>
+</append>
+
+<!-- 7.62mm Uranium Bundle -->
+<append xpath="/items">
+<item name="ammoBundleUraniumBullet762mm">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo762mmBulletBall"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="7000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoUraniumBullet762mm"/>
+	</property>
+</item>
+</append>
+
+<!-- Uranium Shotgun Shell Bundle -->
+<append xpath="/items">
+<item name="ammoBundleUraniumShotgunShell">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoShotgunShell"/>
+	<property name="CustomIconTint" value="66FF66"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="8000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoUraniumShotgunShell"/>
+	</property>
+</item>
+</append>
+
+<!-- *** INCENDIARY AMMO BUNDLES *** -->
+
+<!-- 9mm Incendiary Bundle -->
+<append xpath="/items">
+<item name="ammoBundleIncendiaryBullet9mm">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="4000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoIncendiaryBullet9mm"/>
+	</property>
+</item>
+</append>
+
+<!-- .44 Magnum Incendiary Bundle -->
+<append xpath="/items">
+<item name="ammoBundleIncendiaryBullet44Mag">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoIncendiaryBullet44Mag"/>
+	</property>
+</item>
+</append>
+
+<!-- 7.62mm Incendiary Bundle -->
+<append xpath="/items">
+<item name="ammoBundleIncendiaryBullet762mm">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo762mmBulletBall"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="6000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoIncendiaryBullet762mm"/>
+	</property>
+</item>
+</append>
+
+<!-- Incendiary Shotgun Shell Bundle -->
+<append xpath="/items">
+<item name="ammoBundleIncendiaryShotgunShell">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoShotgunShell"/>
+	<property name="CustomIconTint" value="FF6600"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="7000"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property class="Action0">
+		<property name="Create_item" value="ammoIncendiaryShotgunShell"/>
+	</property>
+</item>
+</append>
+
+<!-- Add Uranium and Incendiary Bullets to all weapons that use standard ammunition -->
+<append xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and @value='ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP']/@value">,ammoUraniumBullet9mm,ammoIncendiaryBullet9mm</append>
+<append xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and @value='ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP']/@value">,ammoUraniumBullet44Mag,ammoIncendiaryBullet44Mag</append>
+<append xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and @value='ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP']/@value">,ammoUraniumBullet762mm,ammoIncendiaryBullet762mm</append>
+<append xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and @value='ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug']/@value">,ammoUraniumShotgunShell,ammoIncendiaryShotgunShell</append>
+
+</configs>

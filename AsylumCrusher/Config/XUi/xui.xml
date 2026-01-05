@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/xui/ruleset">
+    <window_group name="workstation_asylumCrusher" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowOutput"/>
+      <window name="windowNonPagingHeader"/>
+    </window_group>
+  </append>
+</configs>
+

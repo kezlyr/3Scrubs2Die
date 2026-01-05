@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- Extend quality colors beyond vanilla QL6 -->
+	<append xpath="/qualityinfo">
+		<!-- Distinct colors for high-end qualities (QL7–QL10) -->
+		<quality key="7" color="6F2DBD"/>
+		<quality key="8" color="C92CFF"/>
+		<quality key="9" color="FF6B00"/>
+		<quality key="10" color="FFD700"/>
+	</append>
+</configs>

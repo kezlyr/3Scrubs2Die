@@ -1,0 +1,557 @@
+<configs>
+<!--  Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+
+<append xpath="/entity_classes">
+
+<entity_class name="vehicleVMFastback">
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Tags" value="vehicle,Fastback,usesGas"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?VMFastback2AC.prefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="Fastback_UI"/>
+	<property name="NavObject" value="4x4" />
+</entity_class>
+
+<entity_class name="vehicleVMMilitaryTruck" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MilitaryTruck,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMMilitaryTruck.prefab"/>
+		<property name="LootListAlive" value="VMMilitaryTrucks"/>
+		<property name="MapIcon" value="guppyVehicleMilitaryTruck_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBoxTruck" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Boxtruck,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMBoxTruck.prefab"/>
+		<property name="LootListAlive" value="VMTrucks"/>
+		<property name="MapIcon" value="guppyVehicleBoxTruck_UI_1"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBigRig" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,BigRig,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMBigRig.prefab"/>
+		<property name="LootListAlive" value="VMTrucks"/>
+		<property name="MapIcon" value="guppyVehicleCarBigRig_UI_1"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBigRig2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,BigRig2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMBigRig2.prefab"/>
+		<property name="LootListAlive" value="VMTrucks"/>
+		<property name="MapIcon" value="guppyVehicleCarBigRig2_UI_1"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMilitaryHumVee" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MilitaryHumVee,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMMilitaryCar.prefab"/>
+		<property name="MapIcon" value="guppyVehicleMilitaryCar_UI_1"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMPickup" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Pickup,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms5.unity3d?VMPickupAC.prefab"/>
+		<property name="MapIcon" value="Pickup_UI"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBuggy" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Buggy,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?VMBuggy.prefab"/>
+		<property name="MapIcon" value="Buggy_UI"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMHotRod" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,HotRod,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMHotRod.prefab"/>
+		<property name="MapIcon" value="HotRod_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMustangMach1" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Mach1,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms5.unity3d?VMMach1Mustang.prefab"/>
+		<!--<property name="MapIcon" value="ui_game_symbol_4x4"/>  -->
+		<property name="MapIcon" value="VMMach1UI"/>
+		<property name="NavObject" value="VMMach1" />
+</entity_class>
+
+<entity_class name="vehicleVMQuad" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Quad,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?guppyVehicleQuad.prefab"/>
+		<property name="LootListAlive" value="vehicleMotorcycle"/>
+		<property name="Explosion.ParticleIndex" value="6"/>
+		<property name="Explosion.RadiusBlocks" value="5"/>
+		<property name="Explosion.RadiusEntities" value="5"/>
+		<property name="Explosion.BlockDamage" value="10"/>
+		<property name="Explosion.EntityDamage" value="50"/>
+		<property name="MapIcon" value="Quad_UI"/>
+		<property name="NavObject" value="motorcycle" />
+</entity_class>
+
+<entity_class name="vehicleVMSedan" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,SedanC,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMSedan.prefab"/>
+		<property name="MapIcon" value="Sedan_UI"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMRustySedan" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,SedanRusted,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMWhiteSedanRusted.prefab"/>
+		<property name="MapIcon" value="WhiteSedanRusted_UI"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMTaxiRusted" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Taxi,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMTaxiRusted.prefab"/>
+		<property name="MapIcon" value="TaxiRusted_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBMWred" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,BMWred,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMBMWredAC.prefab"/>
+		<property name="MapIcon" value="BMWred"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBMWwhite" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,BMWwhite,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMBMWwhiteAC.prefab"/>
+		<property name="MapIcon" value="BMWwhite_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMNPCVan" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,NPCVan,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMVan.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="Van_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMAmbulanceDamaged" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Amb1,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?EMSAmbulanceDamaged.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="EMSAmbulance_UI"/>
+		 <!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMPoliceCar" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,PoliceCar,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?EMSPoliceCar.prefab"/>
+		<property name="MapIcon" value="EMSPoliceCar_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMArmoredCobra" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,ArmouredCobra,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMArmoredCobra.prefab"/>
+		<property name="MapIcon" value="ArmoredCobra_UI"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMHunter" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Hunter,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMHunterAPO.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMVan2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Van2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?VMRagsnTigerVan.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMCrusader" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Crusader,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMCrusader.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMInterceptor" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Interceptor,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMInterceptor.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMalice" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Malice,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMmarauder.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMSpiker" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Spiker,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMSpikeCar.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMTurbo" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Turbo,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMTurboMuscle.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMotoGuppy" extends="vehicleMinibike">
+		<property name="Tags" value="vehicle,MotoGuppy,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?VMminibike.prefab"/>
+		<property name="LootListAlive" value="vehicleMinibike"/>
+		<property name="MapIcon" value="ui_game_symbol_minibike"/>
+		<property name="NavObject" value="minibike" />
+</entity_class>
+
+<entity_class name="vehicleVMVespa" extends="vehicleMinibike">
+		<property name="Tags" value="vehicle,Vespa,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?VMvespa1.prefab"/>
+		<property name="LootListAlive" value="vehicleMinibike"/>
+		<property name="MapIcon" value="ui_game_symbol_minibike"/>
+		<property name="NavObject" value="minibike" />
+</entity_class>
+
+<entity_class name="vehicleVMRV" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,RV,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?VehicleMadnessRV.prefab"/>
+		<property name="LootListAlive" value="VMRV"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMApoTruck" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,ApoTruck,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?ApoTruck.prefab"/>
+		<property name="LootListAlive" value="vehicleMotorcycle"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMFlatbed" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Flatbed,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMFlatbedAC.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMM3ATruck" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MM3Atruck,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?M3ATruck.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMonsterPickup" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MonsterPickup,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?MonsterPickup.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMonsterVan" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MonsterVan,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?MonsterVan.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<!-- <entity_class name="vehicleVMCharger" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Charger,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?Charger2.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<property name="NavObject" value="4x4" />
+</entity_class> -->
+
+<entity_class name="vehicleVMWarthog" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Warthog,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?Warthog.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMilitaryTruck2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Military2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?MilitaryTruck2.prefab"/>
+		<property name="LootListAlive" value="VMMilitaryTrucks"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMTacticalJeep" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,TacticalJeep,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMJeepTA.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMVeneno" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Veneno,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?Veneno.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMJeepC" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,JeepC,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMJeep.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMOldsMobile" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,OldsMobile,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMOldsMobile.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBuggy2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Buggy2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?VMBuggy22.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMStriker" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Striker,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMStriker2.prefab"/>
+		<property name="LootListAlive" value="VMMilitaryTrucks"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMQuad2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Quad2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms1.unity3d?VMQuad2.prefab"/>
+		<property name="LootListAlive" value="vehicleMotorcycle"/>
+		<property name="MapIcon" value="Quad_UI"/>
+		<property name="NavObject" value="motorcycle" />
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBeetle" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Beetle,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VMBeetleOld.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMCombi" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Combi,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?VMCombi.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMOldSemi" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,SemiTruck,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms5.unity3d?VMoldsemi.prefab"/>
+		<property name="LootListAlive" value="VMTrucks"/>
+		<property name="MapIcon" value="vmoldsemiui"/>
+		<property name="NavObject" value="VMOldSemi" />
+</entity_class>
+
+<entity_class name="vehicleVMCombi2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Combi2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?Combi1963.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<!--New New Additions-->
+<entity_class name="vehicleVMTruckAmbulance" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,PjAmbulance,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckAmbulance.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMTruckMoPower" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Mopower,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckMoPower.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMTruckWorkingStiffs" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,WorkingStiffs,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckWorkingStiff.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMuscle2" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Muscle2,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms3.unity3d?VMMuscle2.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBusSchool" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,schoolbus,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMBuses.unity3d?VMSchoolBus.prefab"/>
+		<!-- <property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMSchoolBus.prefab"/> -->
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBusShuttle" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,shuttlebus,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMBuses.unity3d?VMShuttleBus.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMBusCity" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,citybus,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMBuses.unity3d?VMCityBus1.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMMuscleRed" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,MuscleRed,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?VMRedSport.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMJunkerMustang" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Junker,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?VMMustangJunker.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMCamaro" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Camaro,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms5.unity3d?VMCamaroSS1967.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMSedanCutlas" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Cutlas,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?SedanCutlas.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMSedanFairH" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Haven,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?SedanFairHaven.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMStationWagon" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Swagon,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?StationWagon.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMSmallPickUp" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,pickupS,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms2.unity3d?VMPickUpSmall.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMSkylineGTR" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Skyline,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?VMSkyline.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMExplorer" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Explorer,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?VMExploreJeep.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMCaterham" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Caterham,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?SportOpen2.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMDumperTruck" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Dumper,heavyvehicles,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMDumperTruck.prefab"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<property name="LootListAlive" value="VMTrucks"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMVanRed" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,Van5Red,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCars.unity3d?VehicleVM_Van5.prefab"/>
+		<property name="LootListAlive" value="VMVan"/>
+		<property name="MapIcon" value="ui_game_symbol_4x4"/>
+		<!-- <property name="NavObject" value="4x4" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMEvoLancer" extends="vehicleVMFastback">
+		<property name="Tags" value="vehicle,EVOL,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/VMCustoms4.unity3d?VMEVOLancer.prefab"/>
+		<property name="MapIcon" value="Evo_UI"/>
+		 <!-- <property name="NavObject" value="Evo_UI" /> -->
+</entity_class>
+
+<entity_class name="vehicleVMVespakart" extends="vehicleMinibike">
+		<property name="Tags" value="vehicle,VespaK,usesGas"/>
+		<property name="Prefab" value="#@modfolder:Resources/vmcars2.unity3d?vmvespakart"/>
+		<property name="LootListAlive" value="vehicleMinibike"/>
+		<property name="MapIcon" value="ui_game_symbol_minibike"/>
+		<property name="MapIcon" value="vmvespakartui"/>
+		<property name="NavObject" value="VMVespakart" />
+</entity_class>
+</append>
+
+<!-- Add tags to vanilla vehicles for buffs xml Not working in A21 as TFP disabled buffs on vehicles -->
+<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
+<append xpath="/entity_classes/entity_class[@name='vehicleTruck4x4']/property[@name='Tags']/@value">,jeep</append>
+<append xpath="/entity_classes/entity_class[@name='vehicleMinibike']/property[@name='Tags']/@value">,minibike</append>
+<append xpath="/entity_classes/entity_class[@name='vehicleGyrocopter']/property[@name='Tags']/@value">,gyro</append>
+<append xpath="/entity_classes/entity_class[@name='vehicleBicycle']/property[@name='Tags']/@value">,bicycle</append>
+
+<append xpath="/entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame')]/@value">,TFPBicycleRestorationTool</append>
+
+</configs>

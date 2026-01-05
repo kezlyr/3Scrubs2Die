@@ -1,0 +1,4 @@
+<CATUI>
+	<!-- You can only input numbers between 10 - 20. Restart the game after making changes. -->
+	<set xpath="//rect[@controller='Toolbelt']/grid[@name='inventory']/@cols | //rect[@controller='Toolbelt']/grid[@name='inventory2']/@cols">12</set>
+</CATUI>

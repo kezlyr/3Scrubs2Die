@@ -1,0 +1,162 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+# Asylum Legendary Weapons - Forged in the depths of madness
+# "Where sanity ends, legendary power begins"
+
+SMAAutumnsCall,Items,Weapons,,,"[FFD700]Asylum Crimson Eclipse[fdee00]"
+SMAAutumnsCallDesc,Items,Weapons,,,"[FF0000]Forged in the asylum's blood-soaked chambers[FFFFFF], this [8B0000]cursed blade[FFFFFF] was crafted by a [990000]deranged sorcerer[FFFFFF] whose final spell etched [FF4500]runes of immense power[FFFFFF] into the metal.\n[FF0000]The crimson glow heralds the fall of those who dare cross its path[FFFFFF], [8B0000]eclipsing their fate[FFFFFF] in the [990000]shadows of madness[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+asylumgrimscythe,Items,Weapons,,,"[FFD700]Asylum Grim Scythe[fdee00]"
+asylumgrimscytheDesc,Items,Weapons,,,"[8B0000]Born from the darkest depths of the asylum's torture chambers[FFFFFF], this [FF0000]massive two-handed scythe[FFFFFF] was forged by [990000]demented souls[FFFFFF] who sought to harvest more than just crops.\n[FF4500]Its curved blade whispers of death[FFFFFF] as it [8B0000]reaps through flesh and bone[FFFFFF] with [FF0000]devastating sweeps[FFFFFF], leaving only [990000]madness and despair[FFFFFF] in its wake.\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMABrasswindBlade,Items,Weapons,,,"[FFD700]Asylum Brasswind Tormentor[fdee00]"
+SMABrasswindBladeDesc,Items,Weapons,,,"[B8860B]Once wielded by the asylum's head warden[FFFFFF], this [FF4500]electrified blade[FFFFFF] was used to [8B0000]discipline unruly patients[FFFFFF] with [1E90FF]lightning-fast strikes[FFFFFF].\n[FF0000]Now it commands the wind with each swing[FFFFFF], [8B0000]guiding its wielder[FFFFFF] through the [990000]storm of eternal torment[FFFFFF].\n\n[FFFF00]Scales with Electrocutioner[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMASerpentsEdge,Items,Weapons,,,"[FFD700]Asylum Serpent's Venom[fdee00]"
+SMASerpentsEdgeDesc,Items,Weapons,,,"[8B0000]Forged from the spine of a patient[FFFFFF] who [FF0000]died from experimental venom injections[FFFFFF], this [990000]sinister blade[FFFFFF] glows with [FF4500]toxic essence[FFFFFF].\n[FF0000]Its edge strikes with the silent precision of death[FFFFFF], leaving [8B0000]no trace but the glow[FFFFFF] of its [990000]fatal mark[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAMjölnirsEcho,Items,Weapons,,,"[FFD700]Asylum Thunder Crusher[fdee00]"
+SMAMjölnirsEchoDesc,Items,Weapons,,,"[B8860B]Adorned with gold carvings[FFFFFF] stolen from the asylum's [FF4500]crematorium[FFFFFF], this [8B0000]thunderous weapon[FFFFFF] echoes the [990000]screams of forgotten patients[FFFFFF].\n[FF0000]When wielded, it strikes with the force of electroshock therapy[FFFFFF], sending [8B0000]shockwaves[FFFFFF] that resound like [990000]ancient torment[FFFFFF].\n\n[FFFF00]Scales with Skull Crusher[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAAbyssalReach,Items,Weapons,,,"[FFD700]Asylum Abyssal Piercer[fdee00]"
+SMAAbyssalReachDesc,Items,Weapons,,,"[8B0000]Embedded with a pink crystal[FFFFFF] from the asylum's [FF4500]experimental lab[FFFFFF], this [990000]cursed spear[FFFFFF] appears [B8860B]petrified by dark magic[FFFFFF].\n[FF0000]The spear's eerie glow channels the dark energy of the abyss[FFFFFF], [8B0000]piercing through shadows[FFFFFF] with [990000]chilling precision[FFFFFF].\n\n[FFFF00]Scales with Javelin Master[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAWhisperingDeath,Items,Weapons,,,"[FFD700]Asylum Runescar Blade[fdee00]"
+SMAWhisperingDeathDesc,Items,Weapons,,,"[DCDCDC]Gleaming with a polished silver surface[FFFFFF], this [8B0000]surgical blade[FFFFFF] bears [FF0000]intricate engravings[FFFFFF] etched by [990000]deranged patients[FFFFFF] during their [FF4500]final moments[FFFFFF].\n[FF0000]The knife's precise edge uncovers hidden paths to death[FFFFFF], [8B0000]revealing secrets[FFFFFF] buried in [990000]asylum shadows[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMARadiance,Items,Weapons,,,"[FFD700]Asylum Divine Punisher[fdee00]"
+SMARadianceDesc,Items,Weapons,,,"[B8860B]A formidable club carried by asylum chaplains[FFFFFF], its [8B4513]solid form[FFFFFF] is etched with [FF0000]symbols of twisted faith[FFFFFF] and [990000]divine punishment[FFFFFF].\n[FF0000]Though it lacks mystical glow, its strikes are infused with righteous fury[FFFFFF], bringing [8B0000]clarity through pain[FFFFFF] and [990000]justice through suffering[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAGrimVortex,Items,Weapons,,,"[FFD700]Asylum Grim Harvester[fdee00]"
+SMAGrimVortexDesc,Items,Weapons,,,"[8B0000]A fearsome scythe[FFFFFF] used in the asylum's [FF4500]body disposal operations[FFFFFF], its [990000]curved blade[FFFFFF] seems to [FF0000]pull shadows into its wake[FFFFFF].\n[FF0000]Each swing creates a swirling maelstrom of darkness[FFFFFF], [8B0000]drawing in and dispelling[FFFFFF] the [990000]spirits of the tormented[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMACrimsonWrath,Items,Weapons,,,"[FFD700]Asylum Crimson Fury[fdee00]"
+SMACrimsonWrathDesc,Items,Weapons,,,"[8B0000]A dark red sword[FFFFFF] forged in the asylum's [FF4500]furnace of rage[FFFFFF], its blade [FF0000]marked with the deep stains[FFFFFF] of [990000]countless patient executions[FFFFFF].\n[FF0000]With each swing, its menacing edge delivers swift vengeance[FFFFFF], leaving only [8B0000]echoes of wrathful fury[FFFFFF] and [990000]screams of the damned[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAStoneboundHammer,Items,Weapons,,,"[FFD700]Asylum Stone Crusher[fdee00]"
+SMAStoneboundHammerDesc,Items,Weapons,,,"[8B4513]A sturdy weapon forged from asylum foundation stones[FFFFFF], its [B8860B]weight and durability[FFFFFF] are matched only by the [FF0000]suffering it has witnessed[FFFFFF].\n[FF0000]Every blow resonates with the power of the earth[FFFFFF], [8B0000]breaking barriers[FFFFFF] and [990000]fortifying the wielder's resolve[FFFFFF] through [FF4500]righteous brutality[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAClockworkReaver,Items,Weapons,,,"[FFD700]Asylum Clockwork Tormentor[fdee00]"
+SMAClockworkReaverDesc,Items,Weapons,,,"[8B4513]A versatile sword-baton[FFFFFF] with [B8860B]intricate mechanized gears[FFFFFF] salvaged from the asylum's [FF4500]electroshock equipment[FFFFFF] that [FF0000]hum with malevolent energy[FFFFFF].\n[FF0000]Each swing combines precision engineering with devastating impact[FFFFFF], its [8B0000]clockwork design[FFFFFF] ensuring [990000]elegant efficiency[FFFFFF] in [FF4500]systematic torture[FFFFFF].\n\n[FFFF00]Scales with Electrocutioner[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAReapersMaul,Items,Weapons,,,"[FFD700]Asylum Reaper's Judgment[fdee00]"
+SMAReapersMaulDesc,Items,Weapons,,,"[8B0000]A fearsome two-handed warhammer[FFFFFF] adorned with [FF0000]menacing skulls[FFFFFF] from the asylum's [990000]most violent patients[FFFFFF] mounted on each side.\n[FF0000]When swung, it delivers crushing blows imbued with the dread[FFFFFF] of [8B0000]those who have fallen[FFFFFF], each impact [990000]echoing the grim reaper's call[FFFFFF] through the [FF4500]halls of madness[FFFFFF].\n\n[FFFF00]Scales with Skull Crusher[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMADrakesFang,Items,Weapons,,,"[FFD700]Asylum Glyphbound Ripper[fdee00]"
+SMADrakesFangDesc,Items,Weapons,,,"[B8860B]Features intricate engravings[FFFFFF] that tell the tale of [FF0000]ancient asylum experiments[FFFFFF] and [990000]forgotten lobotomies[FFFFFF] carved by [8B0000]deranged surgeons[FFFFFF].\n[FF0000]Each cut is guided by the runes etched into its blade[FFFFFF], [8B0000]unlocking hidden powers[FFFFFF] and [990000]revealing secrets[FFFFFF] long buried in [FF4500]asylum shadows[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAIronwyrm,Items,Weapons,,,"[FFD700]Asylum Ironwyrm Spear[fdee00]"
+SMAIronwyrmDesc,Items,Weapons,,,"[B8860B]Forged from patient bones[FFFFFF] and adorned with [FFD700]golden wings[FFFFFF] from the asylum's [FF4500]crematorium decorations[FFFFFF], this [8B0000]unholy weapon[FFFFFF] channels [990000]twisted divine might[FFFFFF].\n[FF0000]It channels corrupted holy power to vanquish enemies[FFFFFF] but [8B0000]tests its wielder's sanity[FFFFFF], as only the [990000]truly mad[FFFFFF] can resist its [FF4500]dark whispers[FFFFFF].\n\n[FFFF00]Scales with Javelin Master[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMALWDragonFist,Items,Weapons,,,"[FFD700]Asylum Drakefang Crushers[fdee00]"
+SMALWDragonFistDesc,Items,Weapons,,,"[FF0000]Forged from the fangs of patients[FFFFFF] who [8B0000]died in the asylum's dragon experiments[FFFFFF], these [990000]cursed gauntlets[FFFFFF] imbue their wearer with [FF4500]bestial rage[FFFFFF] and [B8860B]unmatched strength[FFFFFF].\n[FF0000]The asylum's most brutal enforcers wore these to crush rebellion[FFFFFF].\n\n[FFFF00]Scales with Brawler[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMABeonKnife,Items,Weapons,,,"[FFD700]Asylum Beon Soulcutter[fdee00]"
+SMABeonKnifeDesc,Items,Weapons,,,"[4169E1]Forged from a rare blue crystal[FFFFFF] found in the asylum's [FF4500]experimental chambers[FFFFFF], this blade is said to [8B0000]hold the soul of a fallen patient[FFFFFF].\n[FF0000]Its ethereal glow not only cuts through flesh[FFFFFF] but also [990000]severs the threads of sanity[FFFFFF], making it a weapon [8B0000]feared by both living and dead[FFFFFF] in the [FF4500]halls of madness[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMASpearNew,Items,Weapons,,,"[FFD700]Asylum Valkyria's Torment[fdee00]"
+SMASpearNewDesc,Items,Weapons,,,"[FF69B4]This legendary weapon glows with radiant pink light[FFFFFF] from the asylum's [FF4500]experimental radiation chambers[FFFFFF], symbolizing the [8B0000]end of hope[FFFFFF] and the [990000]power of eternal suffering[FFFFFF].\n[FF0000]The first light after the asylum's greatest massacre[FFFFFF].\n\n[FFFF00]Scales with Javelin Master[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAThunderBreaker,Items,Weapons,,,"[FFD700]Asylum Thunder Executioner[fdee00]"
+SMAThunderBreakerDesc,Items,Weapons,,,"[FF4500]Forged in the heart of the asylum's electrical storm chamber[FFFFFF], this [8B0000]war hammer[FFFFFF] channels the [1E90FF]fury of electroshock therapy[FFFFFF] with every strike.\n[FF0000]A single blow can shatter minds and summon tempests[FFFFFF], leaving only [990000]thunderous echoes[FFFFFF] and [8B0000]the screams of the electrocuted[FFFFFF].\n\n[FFFF00]Scales with Skull Crusher[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMATwoHandedKatana,Items,Weapons,,,"[FFD700]Asylum Scarlet Requiem[fdee00]"
+SMATwoHandedKatanaDesc,Items,Weapons,,,"[FF0000]This fabled blade sings a haunting song of vengeance[FFFFFF] with every strike, its [8B0000]red light marking[FFFFFF] the [990000]final moments[FFFFFF] of those who fall before it.\n[FF0000]Forged from the blood and bones of the asylum's most violent patients[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMASpineEdge,Items,Weapons,,,"[FFD700]Asylum Spine Severer[fdee00]"
+SMASpineEdgeDesc,Items,Weapons,,,"[B8860B]A knife forged from the bones[FFFFFF] of patients who [FF0000]died during spinal experiments[FFFFFF], said to [8B0000]paralyze its victims[FFFFFF] with a single cut.\n[FF0000]Infused with dark asylum magic, the blade whispers[FFFFFF] the [990000]last moments of those it has slain[FFFFFF], sending [8B0000]shivers down the spines[FFFFFF] of all who hear its [FF4500]deadly song[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAMace,Items,Weapons,,,"[FFD700]Asylum Amethyst Warden[fdee00]"
+SMAMaceDesc,Items,Weapons,,,"[8A2BE2]This powerful weapon protects its wielder[FFFFFF] with a [FF0000]mystical aura of madness[FFFFFF], while each strike channels [B8860B]ancient asylum power[FFFFFF] through its [8B0000]enchanted crystal[FFFFFF].\n[FF0000]Used to shatter both armor and sanity[FFFFFF] in the [990000]depths of the facility[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMAKopesh,Items,Weapons,,,"[FFD700]Asylum Sunfire Tormentor[fdee00]"
+SMAKopeshDesc,Items,Weapons,,,"[FF4500]This radiant weapon carries the heat[FFFFFF] of the asylum's [FF0000]crematorium furnaces[FFFFFF], [8B0000]scorching enemies[FFFFFF] with every arc and leaving [990000]trails of molten agony[FFFFFF] in its wake.\n[FF0000]Forged in the fires that consumed countless patient remains[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+SMACarapaceClub,Items,Weapons,,,"[FFD700]Asylum Exoskeletal Crusher[fdee00]"
+SMACarapaceClubDesc,Items,Weapons,,,"[8B4513]This brutal weapon is crafted[FFFFFF] from the [FF0000]indestructible restraints[FFFFFF] of the asylum's [990000]most dangerous patients[FFFFFF], its [B8860B]hardened surface[FFFFFF] capable of [8B0000]crushing stone and bone[FFFFFF] alike.\n[FF0000]Forged with the force of nature's wrath and human suffering[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWHornyBat,Items,Weapons,,,"[FFD700]Asylum Heretic Bonker[fdee00]"
+LWHornyBatDesc,Items,Weapons,,,"[FF0000]Bonk the Heretics in the asylum's twisted halls![FFFFFF] This [8B0000]electrified club[FFFFFF] was used by [990000]zealous wardens[FFFFFF] to [FF4500]discipline blasphemous patients[FFFFFF].\n[FF0000]Each strike delivers righteous punishment with electrical fury[FFFFFF].\n\n[FFFF00]Scales with Electrocutioner[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWWakizashi,Items,Weapons,,,"[FFD700]Asylum Fallen Blossom[fdee00]"
+LWWakizashiDesc,Items,Weapons,,,"[FF69B4]Forged from the steel of a shattered katana[FFFFFF] found in the asylum's [FF0000]Japanese patient wing[FFFFFF], its blade [8B0000]engraved with a sakura tree[FFFFFF] to honor a [990000]warrior's final battle[FFFFFF] under [FF4500]blood-stained cherry blossoms[FFFFFF].\n[FF0000]Each cut carries the weight of fallen petals and lost souls[FFFFFF], striking with [8B0000]beauty and sorrow[FFFFFF] from the [990000]asylum's darkest memories[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWFantasySword2,Items,Weapons,,,"[FFD700]Asylum Nightfall Blade[fdee00]"
+LWFantasySword2Desc,Items,Weapons,,,"[2F4F4F]A blade forged from the darkest iron[FFFFFF] found in the asylum's [FF0000]underground forges[FFFFFF], it [8B0000]absorbs the last light of day[FFFFFF] with each sunset, growing [990000]sharper as night descends[FFFFFF].\n[FF0000]In the hands of its master, the sword can slice through shadows[FFFFFF], making its wielder [8B0000]nearly invisible[FFFFFF] under the [990000]cover of asylum darkness[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWOneHanded,Items,Weapons,,,"[FFD700]Asylum Copperstrike[fdee00]"
+LWOneHandedDesc,Items,Weapons,,,"[CD7F32]Forged from ancient, mysterious bronze[FFFFFF] found in the asylum's [FF4500]electrical systems[FFFFFF], it [B8860B]gleams with otherworldly light[FFFFFF] that [FF0000]pulses with each swing[FFFFFF].\n[FF0000]Its edge can cut through both steel and shadow[FFFFFF], and its [CD7F32]bronze hue shifts[FFFFFF] with the [8B0000]changing tides of fate[FFFFFF], reflecting the [990000]destiny of madness[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWIceSword,Items,Weapons,,,"[FFD700]Asylum Crystalbane[fdee00]"
+LWIceSwordDesc,Items,Weapons,,,"[87CEEB]Forged from the heart of a frozen glacier[FFFFFF] in the asylum's [FF4500]cryogenic chambers[FFFFFF], it [4169E1]gleams with cold, crystalline light[FFFFFF] that [FF0000]never fades[FFFFFF].\n[FF0000]It can shatter even the strongest defenses[FFFFFF] and its blade [87CEEB]channels the raw power of winter[FFFFFF], [8B0000]freezing anything it touches[FFFFFF] with [990000]unforgiving asylum chill[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWFantasySword,Items,Weapons,,,"[FFD700]Asylum Blazing Dawn[fdee00]"
+LWFantasySwordDesc,Items,Weapons,,,"[FF4500]With its blade etched in fiery orange runes[FFFFFF] from the asylum's [FF0000]crematorium walls[FFFFFF], it [FFD700]harnesses the first light[FFFFFF] of every [8B0000]burning dawn[FFFFFF].\n[FF0000]Its power cuts through darkness and shadow[FFFFFF], [FF4500]burning with unquenchable fire[FFFFFF] that [8B0000]pierces both armor and spirit[FFFFFF] with the [990000]fury of the asylum's furnaces[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWMoltenGreatSword,Items,Weapons,,,"[FFD700]Asylum Molten Greatsword[fdee00]"
+LWMoltenGreatSwordDesc,Items,Weapons,,,"[FF4500]Forged in the heart of the asylum's active furnace[FFFFFF], it [FF0000]radiates with intense heat[FFFFFF] of [8B0000]molten lava flowing through its blade[FFFFFF].\n[FF0000]Ancient tales speak of its ability to sear through defenses[FFFFFF] and [FF4500]blaze with the fury of the earth[FFFFFF], [8B0000]scorching everything[FFFFFF] in its path with [990000]asylum fire[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWDragonKnife,Items,Weapons,,,"[FFD700]Asylum Vermis Blade[fdee00]"
+LWDragonKnifeDesc,Items,Weapons,,,"[FF4500]Etched with the image of a fearsome dragon[FFFFFF] coiled around its edge, forged from a [8B0000]meteorite that fell[FFFFFF] into the asylum's [FF0000]courtyard in a blaze of fire[FFFFFF].\n[FF0000]The dragon's engraving imbues the knife with fiery breath[FFFFFF], allowing it to [8B0000]cut through any material[FFFFFF] and [990000]strike fear[FFFFFF] into the hearts of [FF4500]asylum survivors[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWNewScythe,Items,Weapons,,,"[FFD700]Asylum Gravebane[fdee00]"
+LWNewScytheDesc,Items,Weapons,,,"[8B0000]A scythe adorned with a fearsome skull[FFFFFF] at its base, crafted from the [FF0000]bones of ancient asylum patients[FFFFFF] and [990000]infused with dark necromantic energies[FFFFFF].\n[FF0000]It can cut through both the living and the dead[FFFFFF], its blade [8B0000]draining the life force[FFFFFF] of those it touches and ensuring [990000]even the most defiant souls[FFFFFF] cannot escape their [FF4500]asylum fate[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+HolyScythe,Items,Weapons,,,"[FFD700]Asylum Celestial Reaper[fdee00]"
+HolyScytheDesc,Items,Weapons,,,"[FFD700]A scythe imbued with the essence of heaven[FFFFFF] from the asylum's [FF0000]corrupted chapel[FFFFFF], it [FFFF00]shimmers with radiant light[FFFFFF] that [8B0000]cuts through darkness[FFFFFF].\n[FF0000]This unholy weapon guides the souls of the departed[FFFFFF] with [990000]twisted divine grace[FFFFFF], ensuring their passage to the [FF4500]asylum's eternal torment[FFFFFF] is both [8B0000]swift and agonizing[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWFangtian,Items,Weapons,,,"[FFD700]Asylum Celestial Stinger[fdee00]"
+LWFangtianDesc,Items,Weapons,,,"[B8860B]Forged from meteoric iron[FFFFFF] that crashed into the asylum's [FF4500]observatory[FFFFFF] and [FFD700]imbued with stardust[FFFFFF], it [FFFF00]gleams with celestial light[FFFFFF] that [FF0000]pierces the heavens[FFFFFF].\n[FF0000]Its strikes channel the power of the stars[FFFFFF], allowing its wielder to [8B0000]summon shooting stars[FFFFFF] and [990000]meteoric energy[FFFFFF] to [FF4500]devastate enemies[FFFFFF] in the [8B0000]asylum's cosmic experiments[FFFFFF].\n\n[FFFF00]Scales with Javelin Master[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWShamanGlaive,Items,Weapons,,,"[FFD700]Asylum Shaman Glaive[fdee00]"
+LWShamanGlaiveDesc,Items,Weapons,,,"[8B4513]Carved from sacred wood[FFFFFF] found in the asylum's [FF0000]forbidden forest[FFFFFF] and [B8860B]adorned with ancient runes[FFFFFF] etched by [990000]deranged shamans[FFFFFF], it [FF4500]channels primal forces[FFFFFF].\n[FF0000]This glaive can summon storms and command spirits[FFFFFF], [8B0000]harnessing the raw power of earth[FFFFFF] and making its wielder a [990000]formidable conduit[FFFFFF] between the [FF4500]physical and spiritual realms[FFFFFF] of [8B0000]asylum madness[FFFFFF].\n\n[FFFF00]Scales with Javelin Master[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWNokia,Items,Weapons,,,"[FFD700]Asylum Nokia Destroyer[fdee00]"
+LWNokiaDesc,Items,Weapons,,,"[FF0000]The most destructive weapon ever made in the asylum![FFFFFF] This [8B0000]indestructible communication device[FFFFFF] was [990000]weaponized by desperate patients[FFFFFF] during the [FF4500]great asylum uprising[FFFFFF].\n[FF0000]Mounted on a reinforced stick, it delivers devastating blows[FFFFFF] that can [8B0000]shatter reality itself[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWShamanMace,Items,Weapons,,,"[FFD700]Asylum Shaman Mace[fdee00]"
+LWShamanMaceDesc,Items,Weapons,,,"[8B4513]Crafted from enchanted stone[FFFFFF] found in the asylum's [FF0000]ritual chambers[FFFFFF] and [228B22]bound with ancient vines[FFFFFF] that [990000]pulse with raw energy[FFFFFF] of the [FF4500]natural world[FFFFFF].\n[FF0000]Each swing channels the spirits of the earth[FFFFFF], [8B0000]unleashing tremors[FFFFFF] that can [990000]shatter the ground[FFFFFF] and [FF4500]summon the fury[FFFFFF] of the [8B0000]asylum's elemental forces[FFFFFF].\n\n[FFFF00]Scales with Pummel Pete[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWVolendrung,Items,Weapons,,,"[FFD700]Asylum Volendrung[fdee00]"
+LWVolendrungDesc,Items,Weapons,,,"[8B0000]A colossal warhammer forged[FFFFFF] in the heart of the asylum's [FF4500]dying star reactor[FFFFFF], it [990000]radiates with dark otherworldly power[FFFFFF].\n[FF0000]Legends speak of its ability to crush mountains[FFFFFF] and [8B0000]break the very fabric of reality[FFFFFF], wielding a force so [990000]immense[FFFFFF] that it [FF4500]reshaped the asylum[FFFFFF] in its [8B0000]wake of destruction[FFFFFF].\n\n[FFFF00]Scales with Skull Crusher[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWDragonSkullAxe,Items,Weapons,,,"[FFD700]Asylum Dragonskull Axe[fdee00]"
+LWDragonSkullAxeDesc,Items,Weapons,,,"[B8860B]Forged from the bones of an ancient drake[FFFFFF] that [FF0000]died in the asylum's dragon experiments[FFFFFF], it carries the [8B0000]fury of the beast[FFFFFF] it was carved from.\n[FF0000]Wielded by those with courage to tame its fiery spirit[FFFFFF], the axe [FF4500]glows faintly with embers[FFFFFF] that [990000]flare brighter with every kill[FFFFFF] in the [8B0000]asylum's chambers[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts & Miner69er[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWFantasyAxe,Items,Weapons,,,"[FFD700]Asylum Emberbane Waraxe[fdee00]"
+LWFantasyAxeDesc,Items,Weapons,,,"[2F4F4F]Forged in the molten heart[FFFFFF] of the asylum's [FF0000]cursed volcano reactor[FFFFFF], designed to [87CEEB]extinguish even the fiercest flames[FFFFFF] during [990000]countless battles[FFFFFF] against [FF4500]fire-wielding patients[FFFFFF].\n[FF0000]Its blackened blade hums with chilling power[FFFFFF], [8B0000]snuffing out heat and light[FFFFFF] with each [990000]devastating swing[FFFFFF] through the [FF4500]asylum's burning halls[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts & Miner69er[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWFireAxe,Items,Weapons,,,"[FFD700]Asylum Molten Waraxe[fdee00]"
+LWFireAxeDesc,Items,Weapons,,,"[FF4500]Forged in the core of the asylum's erupting furnace[FFFFFF], its blade [FF0000]eternally flows with fiery magma[FFFFFF] that [8B0000]sears through armor and bone[FFFFFF] alike.\n[FF0000]The axe hungers for battle, growing hotter with every strike[FFFFFF], until it [FF4500]ignites the battlefield[FFFFFF] in a [990000]blaze of unstoppable fury[FFFFFF] from the [8B0000]asylum's infernal depths[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts & Miner69er[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWMaelstromAxe,Items,Weapons,,,"[FFD700]Asylum Maelstrom Waraxe[fdee00]"
+LWMaelstromAxeDesc,Items,Weapons,,,"[4682B4]Born from the heart of a raging tempest[FFFFFF] in the asylum's [FF4500]weather control chamber[FFFFFF], its blade [1E90FF]crackles with the fury[FFFFFF] of [8B0000]trapped storms[FFFFFF].\n[FF0000]Wielders command the winds and thunder[FFFFFF], each swing [87CEEB]unleashing a torrent[FFFFFF] of [990000]destructive force[FFFFFF] that [FF4500]engulfs enemies[FFFFFF] like a [8B0000]relentless cyclone[FFFFFF] of [990000]asylum madness[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts & Miner69er[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWSylphAxe,Items,Weapons,,,"[FFD700]Asylum Sylph Waraxe[fdee00]"
+LWSylphAxeDesc,Items,Weapons,,,"[32CD32]Adorned with glowing emeralds[FFFFFF] from the asylum's [FF0000]experimental gardens[FFFFFF], blessed by [228B22]wind spirits[FFFFFF] that [990000]haunt the facility[FFFFFF], allowing its wielder [87CEEB]unparalleled speed and grace[FFFFFF].\n[FF0000]Each swing leaves a shimmering trail of green light[FFFFFF], as if the [228B22]very air bends[FFFFFF] to the axe's will, [8B0000]slicing through enemies[FFFFFF] with the [990000]whisper of a breeze[FFFFFF] through [FF4500]asylum corridors[FFFFFF].\n\n[FFFF00]Scales with Deep Cuts & Miner69er[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWDragonBow,Items,Weapons,,,"[FFD700]Asylum Ryujin's Embrace[fdee00]"
+LWDragonBowDesc,Items,Weapons,,,"[FF4500]Features a fearsome dragonhead[FFFFFF] perched at its top, salvaged from the asylum's [FF0000]dragon experimentation wing[FFFFFF], said to channel the [8B0000]ancient power[FFFFFF] of the [990000]dragon god Ryujin[FFFFFF].\n[FF0000]When drawn, the bow unleashes arrows imbued[FFFFFF] with the [FF4500]essence of storm and flame[FFFFFF], each shot carrying the [8B0000]wrath and majesty[FFFFFF] of the [990000]dragon's fiery breath[FFFFFF] through [FF4500]asylum halls[FFFFFF].\n\n[FFFF00]Scales with Archery[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWEpicBow,Items,Weapons,,,"[FFD700]Asylum Nightbloom Bow[fdee00]"
+LWEpicBowDesc,Items,Weapons,,,"[8A2BE2]Adorned with shimmering purple runes[FFFFFF] from the asylum's [FF0000]occult research wing[FFFFFF], it draws power from the [4B0082]essence of moonlit nights[FFFFFF] and [990000]hidden enchantments[FFFFFF].\n[FF0000]When drawn, it emits a soft ethereal glow[FFFFFF], its arrows [8A2BE2]streaking through darkness[FFFFFF] like [990000]ghostly trails[FFFFFF], guided by the [FF4500]subtle magic[FFFFFF] of the [8B0000]asylum's night terrors[FFFFFF].\n\n[FFFF00]Scales with Archery[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+LWRustBow,Items,Weapons,,,"[FFD700]Asylum Voidshot Longbow[fdee00]"
+LWRustBowDesc,Items,Weapons,,,"[2F4F4F]Crafted with darkened mysterious wood[FFFFFF] from the asylum's [FF0000]forbidden forest[FFFFFF] and [8B0000]adorned with shifting obsidian runes[FFFFFF], it [990000]channels the essence of the void[FFFFFF].\n[FF0000]Each arrow it fires vanishes into swirling shadow[FFFFFF] before [8B0000]reappearing with devastating impact[FFFFFF], leaving a [990000]trail of dark energy[FFFFFF] in its wake through the [FF4500]asylum's shadow realm[FFFFFF].\n\n[FFFF00]Scales with Archery[-]\n\n[FF0000]Uses asylum legendary repair kits to repair[-]"
+
+resourceSMALegendaryRepairKit,Items,Item,,,"[FFD700]Asylum Legendary Repair Kit[fdee00]"
+resourceSMALegendaryRepairKitDesc,Items,Item,,,"[FF0000]This unholy repair kit contains the essence[FFFFFF] of [8B0000]tortured souls[FFFFFF] and [B8860B]fragments of bone[FFFFFF] from the asylum's [990000]most violent patients[FFFFFF].\n[FF0000]Used to repair various legendary weapons and tools[FFFFFF] by [8B0000]feeding them fresh anguish[FFFFFF] and [990000]binding more suffering[FFFFFF] to make them [FF4500]stronger but more malevolent[FFFFFF]."
+
+
+
+# Picture Frames - Asylum Staff Memorial
+decoLWMallfaka,Blocks,Block,,,"[FFD700]Asylum Staff Memorial - Mallfaka[fdee00]"
+decoLWMallfakaDesc,Blocks,Block,,,"[FF0000]Memorial to Dr. Mallfaka[FFFFFF]: [8B0000]'Look at my big, glowing sword!'[FFFFFF] - [990000]Last words before the patient uprising[FFFFFF]"
+
+decoLWSteen,Blocks,Block,,,"[FFD700]Asylum Staff Memorial - Steeniemo[fdee00]"
+decoLWSteenDesc,Blocks,Block,,,"[FF0000]Memorial to Warden Steeniemo[FFFFFF]: [8B0000]'And I'm freeeee...free falling!'[FFFFFF] - [990000]Final transmission from the asylum tower[FFFFFF]"
+
+decoLWWorm,Blocks,Block,,,"[FFD700]Asylum Staff Memorial - Worm Guy[fdee00]"
+decoLWWormDesc,Blocks,Block,,,"[FF0000]Memorial to Groundskeeper Worm[FFFFFF]: [8B0000]'But hey, he got a shovel at least...which he didn't find himself.'[FFFFFF] - [990000]Ironic last entry in his work log[FFFFFF]"
+
+decoLWWorm2,Blocks,Block,,,"[FFD700]Asylum Staff Memorial - Worm Guy 2[fdee00]"
+decoLWWorm2Desc,Blocks,Block,,,"[FF0000]Second Memorial to Groundskeeper Worm[FFFFFF]: [8B0000]'Unlucky.'[FFFFFF] - [990000]Found carved into his cell wall[FFFFFF]"

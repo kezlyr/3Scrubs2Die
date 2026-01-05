@@ -1,0 +1,173 @@
+Key,File,Type,english
+
+# Infernal Armor Codex removed - armors are now loot-only
+eaarmorLumberjackHelmet,,,"[8B0000]💀 Infernal Lumberjack Helmet[-]"
+eaarmorLumberjackOutfit,,,"[8B0000]💀 Infernal Lumberjack Outfit[-]"
+eaarmorLumberjackGloves,,,"[8B0000]💀 Infernal Lumberjack Gloves[-]"
+eaarmorLumberjackBoots,,,"[8B0000]💀 Infernal Lumberjack Boots[-]"
+eaarmorPreacherHelmet,,,"[8B0000]💀 Infernal Preacher Helmet[-]"
+eaarmorPreacherOutfit,,,"[8B0000]💀 Infernal Preacher Outfit[-]"
+eaarmorPreacherGloves,,,"[8B0000]💀 Infernal Preacher Gloves[-]"
+eaarmorPreacherBoots,,,"[8B0000]💀 Infernal Preacher Boots[-]"
+eaarmorRogueHelmet,,,"[8B0000]💀 Infernal Rogue Helmet[-]"
+eaarmorRogueOutfit,,,"[8B0000]💀 Infernal Rogue Outfit[-]"
+eaarmorRogueGloves,,,"[8B0000]💀 Infernal Rogue Gloves[-]"
+eaarmorRogueBoots,,,"[8B0000]💀 Infernal Rogue Boots[-]"
+eaarmorAthleticHelmet,,,"[8B0000]💀 Infernal Athletic Helmet[-]"
+eaarmorAthleticOutfit,,,"[8B0000]💀 Infernal Athletic Outfit[-]"
+eaarmorAthleticGloves,,,"[8B0000]💀 Infernal Athletic Gloves[-]"
+eaarmorAthleticBoots,,,"[8B0000]💀 Infernal Athletic Boots[-]"
+eaarmorEnforcerHelmet,,,"[8B0000]💀 Infernal Enforcer Helmet[-]"
+eaarmorEnforcerOutfit,,,"[8B0000]💀 Infernal Enforcer Outfit[-]"
+eaarmorEnforcerGloves,,,"[8B0000]💀 Infernal Enforcer Gloves[-]"
+eaarmorEnforcerBoots,,,"[8B0000]💀 Infernal Enforcer Boots[-]"
+eaarmorFarmerHelmet,,,"[DC143C]🔥 Infernal Farmer Helmet[-]"
+eaarmorFarmerOutfit,,,"[DC143C]🔥 Infernal Farmer Outfit[-]"
+eaarmorFarmerGloves,,,"[DC143C]🔥 Infernal Farmer Gloves[-]"
+eaarmorFarmerBoots,,,"[DC143C]🔥 Infernal Farmer Boots[-]"
+eaarmorBikerHelmet,,,"[DC143C]🔥 Infernal Biker Helmet[-]"
+eaarmorBikerOutfit,,,"[DC143C]🔥 Infernal Biker Outfit[-]"
+eaarmorBikerGloves,,,"[DC143C]🔥 Infernal Biker Gloves[-]"
+eaarmorBikerBoots,,,"[DC143C]🔥 Infernal Biker Boots[-]"
+eaarmorScavengerHelmet,,,"[DC143C]🔥 Infernal Scavenger Helmet[-]"
+eaarmorScavengerOutfit,,,"[DC143C]🔥 Infernal Scavenger Outfit[-]"
+eaarmorScavengerGloves,,,"[DC143C]🔥 Infernal Scavenger Gloves[-]"
+eaarmorScavengerBoots,,,"[DC143C]🔥 Infernal Scavenger Boots[-]"
+eaarmorRangerHelmet,,,"[DC143C]🔥 Infernal Ranger Helmet[-]"
+eaarmorRangerOutfit,,,"[DC143C]🔥 Infernal Ranger Outfit[-]"
+eaarmorRangerGloves,,,"[DC143C]🔥 Infernal Ranger Gloves[-]"
+eaarmorRangerBoots,,,"[DC143C]🔥 Infernal Ranger Boots[-]"
+eaarmorCommandoHelmet,,,"[DC143C]🔥 Infernal Commando Helmet[-]"
+eaarmorCommandoOutfit,,,"[DC143C]🔥 Infernal Commando Outfit[-]"
+eaarmorCommandoGloves,,,"[DC143C]🔥 Infernal Commando Gloves[-]"
+eaarmorCommandoBoots,,,"[DC143C]🔥 Infernal Commando Boots[-]"
+eaarmorAssassinHelmet,,,"[DC143C]🔥 Infernal Assassin Helmet[-]"
+eaarmorAssassinOutfit,,,"[DC143C]🔥 Infernal Assassin Outfit[-]"
+eaarmorAssassinGloves,,,"[DC143C]🔥 Infernal Assassin Gloves[-]"
+eaarmorAssassinBoots,,,"[DC143C]🔥 Infernal Assassin Boots[-]"
+eaarmorMinerHelmet,,,"[FF0000]💀 Infernal Miner Helmet[-]"
+eaarmorMinerOutfit,,,"[FF0000]💀 Infernal Miner Outfit[-]"
+eaarmorMinerGloves,,,"[FF0000]💀 Infernal Miner Gloves[-]"
+eaarmorMinerBoots,,,"[FF0000]💀 Infernal Miner Boots[-]"
+eaarmorNomadHelmet,,,"[FF0000]💀 Infernal Nomad Helmet[-]"
+eaarmorNomadOutfit,,,"[FF0000]💀 Infernal Nomad Outfit[-]"
+eaarmorNomadGloves,,,"[FF0000]💀 Infernal Nomad Gloves[-]"
+eaarmorNomadBoots,,,"[FF0000]💀 Infernal Nomad Boots[-]"
+eaarmorNerdHelmet,,,"[FF0000]💀 Infernal Nerd Helmet[-]"
+eaarmorNerdOutfit,,,"[FF0000]💀 Infernal Nerd Outfit[-]"
+eaarmorNerdGloves,,,"[FF0000]💀 Infernal Nerd Gloves[-]"
+eaarmorNerdBoots,,,"[FF0000]💀 Infernal Nerd Boots[-]"
+eaarmorRaiderHelmet,,,"[FF0000]💀 Infernal Raider Helmet[-]"
+eaarmorRaiderOutfit,,,"[FF0000]💀 Infernal Raider Outfit[-]"
+eaarmorRaiderGloves,,,"[FF0000]💀 Infernal Raider Gloves[-]"
+eaarmorRaiderBoots,,,"[FF0000]💀 Infernal Raider Boots[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Light Armors (Lumberjack Set)
+eaarmorLumberjackHelmetDesc,,,"[8B0000]Hell-forged headgear worn by demonic lumberjacks who harvested souls instead of trees. The cursed metal provides enhanced protection while whispering dark secrets of the forest's tormented spirits.[-]"
+eaarmorLumberjackOutfitDesc,,,"[8B0000]Infernal garb soaked in the blood of a thousand fallen trees and their vengeful spirits. This cursed outfit grants the wearer demonic strength for harvesting while protecting against nature's wrath.[-]"
+eaarmorLumberjackGlovesDesc,,,"[8B0000]Demonic gloves that once gripped axes used to fell both trees and men. The hellish leather provides superior grip and protection while channeling the fury of the damned forest.[-]"
+eaarmorLumberjackBootsDesc,,,"[8B0000]Infernal boots that have walked through burning forests and rivers of sap-blood. These cursed treads provide stability on any terrain while echoing with the screams of fallen timber.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Light Armors (Preacher Set)
+eaarmorPreacherHelmetDesc,,,"[8B0000]Corrupted holy headpiece worn by fallen clergy who preached damnation instead of salvation. The twisted metal offers protection while broadcasting unholy sermons to the damned.[-]"
+eaarmorPreacherOutfitDesc,,,"[8B0000]Desecrated robes of a mad preacher who found truth in hellfire and madness. This infernal garment provides divine protection while spreading the gospel of eternal torment.[-]"
+eaarmorPreacherGlovesDesc,,,"[8B0000]Cursed gloves that once blessed the innocent but now corrupt all they touch. The unholy fabric provides protection while channeling dark miracles and forbidden prayers.[-]"
+eaarmorPreacherBootsDesc,,,"[8B0000]Infernal footwear that has walked the path between heaven and hell, choosing damnation. These cursed boots provide stability while leaving burning footprints of divine wrath.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Light Armors (Rogue Set)
+eaarmorRogueHelmetDesc,,,"[8B0000]Shadow-wreathed headgear worn by thieves who stole souls from the afterlife itself. The dark metal provides stealth protection while whispering secrets of the damned.[-]"
+eaarmorRogueOutfitDesc,,,"[8B0000]Infernal garb worn by rogues who pickpocketed death and lived to tell the tale. This cursed outfit enhances stealth abilities while protecting against the shadows' revenge.[-]"
+eaarmorRogueGlovesDesc,,,"[8B0000]Demonic gloves that have picked locks to hell's gates and stolen from the devil himself. The hellish leather provides dexterity while cursing all they touch.[-]"
+eaarmorRogueBootsDesc,,,"[8B0000]Silent boots that have walked through the shadows of the underworld without making a sound. These infernal treads provide stealth while leaving no trace of their passage.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Light Armors (Athletic Set)
+eaarmorAthleticHelmetDesc,,,"[8B0000]Cursed headgear worn by athletes who competed in hellish games where losing meant eternal damnation. The infernal metal provides protection while enhancing physical prowess.[-]"
+eaarmorAthleticOutfitDesc,,,"[8B0000]Demonic sportswear designed for competitions in the fires of hell itself. This cursed outfit enhances athletic performance while protecting against the flames of defeat.[-]"
+eaarmorAthleticGlovesDesc,,,"[8B0000]Infernal gloves that have gripped weapons in the arena of the damned. The hellish material provides superior grip while channeling competitive fury.[-]"
+eaarmorAthleticBootsDesc,,,"[8B0000]Hell-forged footwear that has run marathons through burning brimstone and lakes of fire. These cursed boots provide speed while leaving trails of infernal energy.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Light Armors (Enforcer Set)
+eaarmorEnforcerHelmetDesc,,,"[8B0000]Authoritative headgear worn by demonic enforcers who maintained order in hell's chaos. The cursed metal provides protection while commanding respect through fear.[-]"
+eaarmorEnforcerOutfitDesc,,,"[8B0000]Infernal uniform worn by those who enforced the devil's law with iron fist and burning heart. This cursed garment provides authority while protecting against rebellion.[-]"
+eaarmorEnforcerGlovesDesc,,,"[8B0000]Disciplinary gloves that have delivered justice through hellish punishment and demonic retribution. The infernal leather provides control while channeling authoritative power.[-]"
+eaarmorEnforcerBootsDesc,,,"[8B0000]Commanding boots that have marched through hell's armies and stepped on the necks of the rebellious. These cursed treads provide stability while echoing with authority.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Farmer Set)
+eaarmorFarmerHelmetDesc,,,"[DC143C]Cursed headgear worn by demonic farmers who cultivated crops of suffering and harvested souls. The infernal metal provides protection while enhancing agricultural prowess through dark magic.[-]"
+eaarmorFarmerOutfitDesc,,,"[DC143C]Hell-forged garments worn by those who tended fields of fire and grew plants that fed on blood. This cursed outfit enhances farming abilities while protecting against nature's vengeance.[-]"
+eaarmorFarmerGlovesDesc,,,"[DC143C]Demonic gloves that have planted seeds of destruction and reaped harvests of despair. The infernal leather provides enhanced grip while channeling agricultural fury.[-]"
+eaarmorFarmerBootsDesc,,,"[DC143C]Infernal boots that have walked through fields of burning crops and rivers of liquid fertilizer. These cursed treads provide stability while leaving fertile ground in their wake.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Biker Set)
+eaarmorBikerHelmetDesc,,,"[DC143C]Hell-forged headgear worn by demonic riders who raced through the highways of damnation. The cursed metal provides protection while enhancing speed through infernal power.[-]"
+eaarmorBikerOutfitDesc,,,"[DC143C]Infernal leather worn by bikers who rode motorcycles fueled by souls and burning rubber. This cursed jacket provides protection while channeling the spirit of the open road to hell.[-]"
+eaarmorBikerGlovesDesc,,,"[DC143C]Demonic gloves that have gripped handlebars on rides through fire and brimstone. The hellish leather provides superior control while channeling road rage and infernal speed.[-]"
+eaarmorBikerBootsDesc,,,"[DC143C]Hell-forged boots that have kicked engines to life and stepped on the gas pedal to damnation. These cursed treads provide stability while echoing with engine roars.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Scavenger Set)
+eaarmorScavengerHelmetDesc,,,"[DC143C]Cursed headgear worn by demonic scavengers who picked through the ruins of civilization. The infernal metal provides protection while enhancing the ability to find valuable salvage.[-]"
+eaarmorScavengerOutfitDesc,,,"[DC143C]Infernal garments worn by those who scavenged through hell's wastelands for treasures and souls. This cursed outfit enhances looting abilities while protecting against environmental hazards.[-]"
+eaarmorScavengerGlovesDesc,,,"[DC143C]Demonic gloves that have sifted through ashes of the damned and picked through bones of the fallen. The hellish material provides dexterity while channeling scavenging instincts.[-]"
+eaarmorScavengerBootsDesc,,,"[DC143C]Hell-forged boots that have walked through junkyards of souls and graveyards of hope. These cursed treads provide stability while leaving trails of valuable debris.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Ranger Set)
+eaarmorRangerHelmetDesc,,,"[DC143C]Infernal headgear worn by demonic rangers who patrolled the borders between life and death. The cursed metal provides protection while enhancing wilderness survival through dark knowledge.[-]"
+eaarmorRangerOutfitDesc,,,"[DC143C]Hell-forged garments worn by those who tracked souls through the wilderness of damnation. This cursed outfit enhances tracking abilities while protecting against nature's wrath.[-]"
+eaarmorRangerGlovesDesc,,,"[DC143C]Demonic gloves that have drawn bowstrings taut with the tension of hell itself. The infernal leather provides archery precision while channeling the fury of the hunt.[-]"
+eaarmorRangerBootsDesc,,,"[DC143C]Cursed boots that have tracked prey through forests of fire and mountains of bone. These infernal treads provide silent movement while leaving burning tracks.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Commando Set)
+eaarmorCommandoHelmetDesc,,,"[DC143C]Hell-forged headgear worn by demonic commandos who led assaults on heaven's gates. The cursed metal provides tactical protection while enhancing combat leadership through infernal authority.[-]"
+eaarmorCommandoOutfitDesc,,,"[DC143C]Infernal combat gear worn by elite soldiers who fought in hell's most brutal campaigns. This cursed outfit enhances combat effectiveness while protecting against enemy fire and divine retribution.[-]"
+eaarmorCommandoGlovesDesc,,,"[DC143C]Demonic gloves that have wielded weapons in the bloodiest battles of the underworld. The hellish material provides weapon control while channeling tactical fury and combat precision.[-]"
+eaarmorCommandoBootsDesc,,,"[DC143C]Hell-forged boots that have marched through battlefields soaked in blood and fire. These cursed treads provide combat stability while echoing with the sounds of war.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Medium Armors (Assassin Set)
+eaarmorAssassinHelmetDesc,,,"[DC143C]Cursed headgear worn by demonic assassins who eliminated targets in both life and afterlife. The infernal metal provides stealth protection while enhancing killing precision through dark arts.[-]"
+eaarmorAssassinOutfitDesc,,,"[DC143C]Infernal garments worn by those who dealt death from the shadows of hell itself. This cursed outfit enhances stealth and lethality while protecting against detection and retaliation.[-]"
+eaarmorAssassinGlovesDesc,,,"[DC143C]Demonic gloves that have delivered silent death with blades dipped in hellfire. The hellish leather provides deadly precision while channeling the art of assassination.[-]"
+eaarmorAssassinBootsDesc,,,"[DC143C]Hell-forged boots that have walked silently through the corridors of death and shadows. These cursed treads provide silent movement while leaving no trace of their deadly passage.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Heavy Armors (Miner Set)
+eaarmorMinerHelmetDesc,,,"[FF0000]Hell-forged headgear worn by demonic miners who excavated the deepest pits of damnation. The cursed metal provides maximum protection while enhancing mining efficiency through infernal strength and dark knowledge.[-]"
+eaarmorMinerOutfitDesc,,,"[FF0000]Infernal work gear worn by those who dug tunnels through the earth's core to reach hell itself. This cursed outfit enhances mining abilities while providing ultimate protection against cave-ins and hellfire.[-]"
+eaarmorMinerGlovesDesc,,,"[FF0000]Demonic gloves that have gripped pickaxes used to mine souls from solid rock. The hellish material provides superior tool control while channeling the fury of the earth's depths.[-]"
+eaarmorMinerBootsDesc,,,"[FF0000]Hell-forged boots that have stood firm in mineshafts that descended into the very bowels of hell. These cursed treads provide ultimate stability while echoing with the sounds of striking stone.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Heavy Armors (Nomad Set)
+eaarmorNomadHelmetDesc,,,"[FF0000]Cursed headgear worn by demonic nomads who wandered the wastelands between worlds. The infernal metal provides maximum protection while enhancing survival instincts through dark wanderlust.[-]"
+eaarmorNomadOutfitDesc,,,"[FF0000]Hell-forged garments worn by eternal wanderers who roamed through deserts of ash and mountains of bone. This cursed outfit enhances endurance while providing ultimate protection against environmental hazards.[-]"
+eaarmorNomadGlovesDesc,,,"[FF0000]Demonic gloves that have gripped walking sticks on journeys through the most hostile realms of existence. The hellish leather provides endurance while channeling nomadic resilience.[-]"
+eaarmorNomadBootsDesc,,,"[FF0000]Infernal boots that have walked endless miles through burning sands and frozen wastelands of damnation. These cursed treads provide ultimate endurance while never wearing down.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Heavy Armors (Nerd Set)
+eaarmorNerdHelmetDesc,,,"[FF0000]Hell-forged headgear worn by demonic scholars who studied forbidden knowledge in hell's libraries. The cursed metal provides maximum protection while enhancing intellectual abilities through infernal wisdom and dark academia.[-]"
+eaarmorNerdOutfitDesc,,,"[FF0000]Infernal academic robes worn by those who researched the darkest secrets of existence itself. This cursed outfit enhances crafting and intellectual pursuits while providing ultimate protection against knowledge's dangerous consequences.[-]"
+eaarmorNerdGlovesDesc,,,"[FF0000]Demonic gloves that have written equations in blood and turned pages of books bound in human skin. The hellish material provides precision while channeling scholarly fury and academic obsession.[-]"
+eaarmorNerdBootsDesc,,,"[FF0000]Hell-forged boots that have walked through libraries where books scream and knowledge burns. These cursed treads provide stability while echoing with the whispers of forbidden learning.[-]"
+
+# INFERNAL ARMOR DESCRIPTIONS - Heavy Armors (Raider Set)
+eaarmorRaiderHelmetDesc,,,"[FF0000]Cursed headgear worn by demonic raiders who pillaged both the living and the dead. The infernal metal provides maximum protection while enhancing aggressive combat prowess through hellish brutality.[-]"
+eaarmorRaiderOutfitDesc,,,"[FF0000]Hell-forged armor worn by those who raided settlements across multiple planes of existence. This cursed outfit enhances combat aggression while providing ultimate protection against retaliation and divine justice.[-]"
+eaarmorRaiderGlovesDesc,,,"[FF0000]Demonic gloves that have gripped weapons used to plunder treasures from gods and mortals alike. The hellish material provides weapon mastery while channeling raiding fury and pillaging instincts.[-]"
+eaarmorRaiderBootsDesc,,,"[FF0000]Infernal boots that have kicked down the doors of heaven and hell in search of plunder. These cursed treads provide ultimate stability while echoing with the sounds of conquest and destruction.[-]"
+
+# ========================================
+# ARMOR SET BONUSES - Buff Descriptions
+# ========================================
+
+buffLumberjackSetBonusBWDesc,,,"With the proper gear, a Lumberjack can go all day.\n\nDouble wood harvest and use {cvar(.armorLumberjackFSBDisplay01:0)}% less stamina when using axes.\n\nTier 6 full armor bonus: gain 100% block damage with axes, 60% bonus damage/reload speed and 600% magazine size with hunting rifles. When you are in the snow biome: gain 70 trader/loog stage, have no encumbrance, move 10% faster and regenerate stamina 30% faster. Deal 500% more damage and gain 500% extra dismember chance with chainsaws"
+buffPreacherSetBonusBWDesc,,,"A Saint's comfort and security.\n\nReduces the chance of critical injuries by {cvar(.armorPreacherFSBDisplay01:0)}% and infection chances by {cvar(.armorPreacherFSBDisplay02:0)}%.\n\nTier 6 full armor bonus: when below 40% health, gain a 25% chance of restoring full health, getting damaged by an enemy also has a 60% chance of setting them on fire. When in the burnt biome: regenerate stamina 10% faster, have no encumbrance and move 10% faster. Attacking a radiated zombie removes their health regeneration buff. Deal 600% more melee damage when bleeding.\n\nMy blood is your blood now, motherfucker!"
+buffRogueSetBonusBWDesc,,,"Rogues have a natural instinct for locating loot that others might overlook.\n\nFind {cvar(.armorRogueFSBDisplay:0)}% more cash and dukes in loot.\n\nTier 6 full armor bonus: Find 100% more lockpicks in loot, find 1000% more rare gems in loot. Deal 500% more damage to doors and safes. Deal 60% more damage and gain 30% faster attack speed with knives. Gain 30% movement speed, 100% crouch speed and 25% stamina regeneration at night. Gain 50% crouch speed during the day. Gain 30% better bartering. Gain 60% damage and reload speed with mag fed 9mm pistols."
+buffAthleticSetBonusBWDesc,,,"The ergonomic fit of an Athlete's gear helps them maintain peak performance without spending extra energy.\n\nUse {cvar(.armorAthleticFSBDisplay:0)}% less food and water.\n\nTier 6 full armor bonus: Lose 25% less stamina when running and jumping. Regenerate stamina 25% faster when running and jumping. Move 20% faster. Gain a 1m jump height bonus. When in the Pine Forest biome: Have no encumbrance and gain 40 trader/loot stage. Gain 30% faster attack speed and 60% more damage with clubs."
+buffEnforcerSetBonusBWDesc,,,"Feeling lucky in a well tailored suit gives the Enforcer a slight edge in a gun fight.\n\n.44 ammo does {cvar(.armorEnforcerFSBDisplay01:0)}% more damage. 9mm weapons, .44 Magnum and Desert Vulture reload {cvar(.armorEnforcerFSBDisplay01:0)}% faster.\n\nTier 6 full armor bonus: 2% spread in ADS mode, recover spread 90% faster and have 25% recoil control with pistols and smgs. Weapons equipped with a suppressor will grant 60% extra exp gain on kill and deal 120% bonus sneak damage."
+buffFarmerSetBonusBWDesc,,,"Knowing where it comes from, Farmers recover faster from food.\n\nGain {cvar(.armorFarmerFSBDisplay:0)}% more health and stamina from food.\n\nTier 6 full armor bonus: Gain 60% faster rate of fire and 60% damage with pump action shotguns. Deal 60% more damage to animals and zombie animals. Deal 60% more damage and attack 30% faster with Spears. Gain 60% extra attack speed with knives for an easier crop harvesting. Harvest 60% + 10 raw bonus total crops. Vehicles take 66% less damage and deal 300% more damage to entities and blocks, as well as using 60% less fuel as well as gaining 15% more torque and speed."
+buffScavengerSetBonusBWDesc,,,"Scavengers have a keen eye at uncovering valuable treasures that might elude others.\n\nFind {cvar(.armorScavengerFSBDisplay:0)}% better quality loot.\n\nTier 6 full armor bonus: Find 100% more ammo in loot. Gain 15% bonus chance of a loot bag dropping when killing a zombie. Deal 60% more damage with sniper rifles. Gain 2% spread while ADS, 60% reload speed, 25% recoil control and 90% faster spread recovery with sniper rifles. Gain 30% more exp when killing an enemy with a sniper rifle."
+buffBikerSetBonusBWDesc,,,"Biker's full road gear is not only intimidating, but provides additional physical protection.\n\nArmor rating is increased by {cvar(.armorBikerFSBDisplay01:0)}.\nMinibikes and motorcycles use {cvar(.armorBikerFSBDisplay02:0)}% less fuel.\n\nTier 6 full armor bonus: Reload double barrel shotguns 80% faster. Double barrel shotguns deal 60% more damage. Deal 60% extra explosive damage. Deal 60% more damage and gain 30% faster attack speed with knuckle weapons. Vehicles take 99% less damage, and deal 600% more damage to entities and blocks as well as gaining 30% more torque and speed."
+buffRangerSetBonusBWDesc,,,"The Ranger's rapid reload is a result of intensive training, honed muscle memory, and tactical finesse.\n\nReload {cvar(.armorRangerFSBDisplay:0)}% faster with Revolvers and Lever-Action Rifles.\n\nTier 6 full armor bonus: Gain 40% extra magainze size with revolvers and lever action rifles. 60% increased rate of fire and 10% recoil control with revolvers, Desert Vultures and lever action rifles. 90% faster spread recovery with revolvers and lever action rifles. When in the desert biome: Have no encumbrance, move 10% faster and regenerate stamina 10% faster."
+buffCommandoSetBonusBWDesc,,,"A Commando's specialized training, physical resilience, and swift recovery ensure they never stay down for long.\n\nRecovery items work {cvar(.armorCommandoFSBDisplay:0)}% faster.\n\nTier 6 full armor bonus: Reload LMGs, assault rifles, autoshotguns and 9mm weapons 60% faster, gain 60% more rate of fire and 25% recoil control with LMGs, assault rifles, autoshotguns and 9mm weapons. 90% faster spread recovery with LMGs, assault rifles, autoshotguns and 9mm weapons. When inside a building, gain 25% stamina regeneration, 20% run speed, 30% walk speed and 10% reload speed."
+buffAssassinSetBonusBWDesc,,,"With unmatched agility, the Assassin slips away into the shadows.\n\nBecome hidden {cvar(.armorAssassinFSBDisplay:0)}% faster.\n\nTier 6 full armor bonus: Make 0% noise when running and jumping. Make no noise when running or walking on trash piles. Gain a 2m jump height bonus. Bows will now deal 60 extra raw headshot damage and have 60% chance to knock down a zombie with a headshot. Crossbows can now load 6 arrows and fire them in quick succession with all archery weapons. The arrows you shoot will fly much faster, gaining 25 speed. Reload arrows 60% faster, draw arrows 60% faster, gain 60% faster spread recovery, gain 60% better hip and ADS accuracy."
+buffMinerSetBonusBWDesc,,,"Miners possess the expertise to extract resources efficiently while preserving their tools from excessive wear and tear.\n\nReduces degradation of mining tools by {cvar(.armorMinerFSBDisplay:0)}%\n\nTier 6 full armor bonus: Take 40% less damage from falling debirs. Gain 100% extra block damage with mining tools. Earn 100% more exp when mining minerals. Deal 60% more damage and attack 30% faster with sledgehammers. Deal 500% more damage and gain 500% extra dismember chance with augers. Deal 600% more explosive damage to blocks and lose 30/15% less stamina when using mining tools/sledgehammers respectively."
+buffNomadSetBonusBWDesc,,,"Trekking through the wasteland, a Nomad's armor serves as their oasis.\n\nUse {cvar(.armorNomadFSBDisplay:0)}% less food and water when recovering stamina.\n\nTier 6 full armor bonus: Gain 200% resistance from radioactive and toxic damage. When in the Wasteland biome: regenerate stamina 60% faster, move 20% faster and have no encumbrance. Gain +80 trader/loot stage. Gain 35% faster attack speed and damage with melee weapons, gain 35% more damage and reload speed with bows and firearms"
+buffNerdSetBonusBWDesc,,,"Understanding the mechanics of tools and weapons allows the Nerd to operate them properly so they last longer.\n\nTools and Weapons degrade {cvar(.armorNerdFSBDisplay:0)}% slower.\n\nTier 6 full armor bonus: Enemies that hit you will be electrocuted for 1 second. Earn 30% more exp and craft everything 30% faster. Ranged junk turrets gain 60% bonus damage, 25 mag size and 100% extra rate of fire. Melee junk turrets gain 60% damage and 60% extra rate of fire. Gain 12m active range for junk turrets"
+buffRaiderSetBonusBWDesc,,,"Raiders wear protective armor giving them a natural resistance to damage, reducing the effectiveness of attacks against them.\n\nReduces the chance of critical injuries by {cvar(.armorRaiderFSBDisplay:0)}%\n\nTier 6 full armor bonus: Slowly regenerate health when below 60% HP. Have 30% less chances of getting a broken limb. Gain 6 health points when killing an enemy with a melee weapon. Gain 60% attack speed with any melee weapon. All these effects are DOUBLED when under 30% HP."

@@ -1,0 +1,89 @@
+================================================================================
+QUICK REFERENCE: RESISTANCE VALUES WITH EXPONENTIAL DECAY
+================================================================================
+
+FORMULA: effectiveResist = (rawResist / (rawResist + 100)) * 100
+
+================================================================================
+COMMON RESISTANCE VALUES
+================================================================================
+
+Raw     Effective   Damage      Damage      Example
+Resist  Resist      Reduction   Taken
+------  ----------  ----------  ----------  ---------------------------------
+0       0%          0%          100%        No armor
+10      9.1%        9.1%        90.9%       Early game armor
+25      20.0%       20.0%       80.0%       T2-T3 armor
+50      33.3%       33.3%       66.7%       T4-T5 armor baseline
+75      42.9%       42.9%       57.1%       Good T5 armor
+100     50.0%       50.0%       50.0%       Half damage (baseline)
+125     55.5%       55.5%       44.5%       Light Armor +10 (full build)
+150     60.0%       60.0%       40.0%       Medium Armor (partial build)
+158     61.2%       61.2%       38.8%       Medium Armor +10 (full build)
+175     63.6%       63.6%       36.4%       Heavy Armor (partial build)
+182     64.6%       64.6%       35.4%       Heavy Armor +10 (full build)
+200     66.7%       66.7%       33.3%       Extreme stacking
+300     75.0%       75.0%       25.0%       Very extreme stacking
+400     80.0%       80.0%       20.0%       Theoretical max (practical)
+500     83.3%       83.3%       16.7%       Theoretical max (extreme)
+
+================================================================================
+INFERNAL ARMOR +10 EXPECTED VALUES
+================================================================================
+
+LIGHT ARMOR +10 (Full Build):
+Raw Resistance: 124.9
+Effective Resistance: 55.5%
+Damage Taken: 44.5%
+Survivability: 2.2x longer than unarmored
+Feel: Agile survivor, moderate protection
+
+MEDIUM ARMOR +10 (Full Build):
+Raw Resistance: 157.7
+Effective Resistance: 61.2%
+Damage Taken: 38.8%
+Survivability: 2.6x longer than unarmored
+Feel: Durable bruiser, good protection
+
+HEAVY ARMOR +10 (Full Build):
+Raw Resistance: 182.3
+Effective Resistance: 64.6%
+Damage Taken: 35.4%
+Survivability: 2.8x longer than unarmored
+Feel: Tank, high protection
+
+================================================================================
+TESTING CHECKLIST
+================================================================================
+
+□ Light Armor +10: Taking ~44-45% damage?
+□ Medium Armor +10: Taking ~38-39% damage?
+□ Heavy Armor +10: Taking ~35-36% damage?
+□ No immortality (always taking some damage)?
+□ Clear difference between Light/Medium/Heavy?
+□ Debuffs still working (negative resistance)?
+□ No console errors?
+
+================================================================================
+DAMAGE EXAMPLES (100 damage hit)
+================================================================================
+
+Armor Type          Raw Resist  Effective   Damage Taken
+------------------  ----------  ----------  ------------
+No Armor            0           0%          100 damage
+Light +10           124.9       55.5%       45 damage
+Medium +10          157.7       61.2%       39 damage
+Heavy +10           182.3       64.6%       35 damage
+
+================================================================================
+K_VALUE TUNING REFERENCE
+================================================================================
+
+Current K_VALUE: 100
+
+If Heavy Armor +10 feels:
+- TOO SQUISHY: Lower K to 75 (29% damage taken)
+- JUST RIGHT: Keep K at 100 (35% damage taken)
+- TOO TANKY: Raise K to 125 (41% damage taken)
+
+================================================================================

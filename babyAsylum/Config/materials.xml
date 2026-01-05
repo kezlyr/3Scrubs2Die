@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AsylumOverhaul>
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	<!-- /////////////////           Asylum Titanium Materials       ///////////////// -->
+	<!-- /////////////////////////////////////////////////////////////////////////////// -->
+	
+	<append xpath="/materials">
+		<!-- Titanium Block Material -->
+		<material id="MtitaniumT">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1.5"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="500"/>
+			<property name="Mass" type="int" value="15"/>
+			<property name="explosionresistance" value="2.25"/>
+			<property name="MaxDamage" value="65000"/>
+			<property name="Experience" value="10"/>
+		</material>
+		
+		<!-- Forged Titanium Resource Material -->
+		<material id="MresourceForgedTitanium">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Experience" value="30"/>
+		</material>
+		
+		<!-- Titanium Shapes Material -->
+		<material id="MtitaniumT_shapes">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1.5"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="500"/>
+			<property name="Mass" type="int" value="15"/>
+			<property name="explosionresistance" value="2.25"/>
+			<property name="MaxDamage" value="40000"/>
+			<property name="Experience" value="10"/>
+		</material>
+	</append>
+	
+	<append xpath="/materials">
+<material id="MresourceIronOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="iron"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceLeadOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="lead"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  QUARTZ  -->
+<material id="quartz">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="quartz"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="Mquartz">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="stone"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="180"/>
+<property name="Mass" type="int" value="15"/>
+<property name="MaxDamage" value="2500"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceQuartz">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="quartz"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceQuartzOre">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="quartz"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedQuartz">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="quartz"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="Mquartz_shapes">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="quartz"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="180"/>
+<property name="Mass" type="int" value="15"/>
+<property name="MaxDamage" value="2500"/>
+<property name="Experience" value="2"/>
+</material>
+<!--  BAUXITE - ALUMINUM  -->
+<material id="aluminium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="aluminium"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceAluminium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="aluminium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedAluminium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="aluminium"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceBauxiteOre">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="aluminium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  COBALT ORE  -->
+<material id="cobalt">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="cobalt"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceCobalt">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="cobalt"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedCobalt">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="cobalt"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceCobaltOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="cobalt"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  COPPER ORE  -->
+<material id="copper">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="copper"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceCopper">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="copper"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedCopper">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="copper"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceCopperOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="copper"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  ZINC ORE  -->
+<material id="zinc">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="zinc"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceZinc">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="zinc"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedZinc">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="zinc"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceZincOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="zinc"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  CHROMIUM ORE  -->
+<material id="chromium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="chromium"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceChromium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="chromium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedChromium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="chromium"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceChromiumOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="chromium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  LITHIUM ORE  -->
+<material id="lithium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="lithium"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceLithium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="lithium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedLithium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="lithium"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceLithiumOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="lithium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<!--  TITANIUM ORE  -->
+<material id="titanium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="titanium"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="metal"/>
+<property name="stability_glue" value="300"/>
+<property name="Mass" type="int" value="20"/>
+<property name="MaxDamage" value="300"/>
+<property name="Experience" value="2"/>
+</material>
+<material id="MresourceTitanium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="titanium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MresourceForgedTitanium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="titanium"/>
+<property name="Experience" value="10"/>
+</material>
+<material id="MresourceTitaniumOre">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="titanium"/>
+<property name="Experience" value="1.6"/>
+</material>
+<material id="MmeleeToolAllTitanium">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="forge_category" value="meleeToolAllTitaniumParts"/>
+<property name="Experience" value="6"/>
+</material>
+</append>
+
+<!--  REMOVE XP FROM ORE HARVESTING  -->
+<!-- Asylum Ore Materials -->
+<set xpath="//material[@id='MresourceIronOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceLeadOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceQuartzOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceBauxiteOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceCobaltOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceCopperOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceZincOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceChromiumOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceLithiumOre']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceTitaniumOre']/property[@name='Experience']/@value">0</set>
+<!-- Vanilla Ore Materials -->
+<set xpath="//material[@id='MresourceCoal']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceOilShale']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceRockSmall']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceScrapIron']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceScrapLeadSmall']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceScrapLeadMedium']/property[@name='Experience']/@value">0</set>
+<set xpath="//material[@id='MresourceScrapLeadLarge']/property[@name='Experience']/@value">0</set>
+
+</AsylumOverhaul>

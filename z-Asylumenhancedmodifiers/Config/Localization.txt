@@ -1,0 +1,294 @@
+Key,english
+
+egt1backpack, "[1e9d16](T1 A)[-] Patient's Burden"
+egt2backpack, "[bc52e7](T2 A)[-] Orderly's Cache"
+egt3backpack, "[fb4f21](T3 A)[-] Warden's Vault"
+
+egt1nerd, "[1e9d16](T1 A)[-] Fractured Mind"
+egt2nerd, "[bc52e7](T2 A)[-] Shattered Psyche"
+egt3nerd, "[fb4f21](T3 A)[-] Broken Genius"
+
+egmodArmorPerception, "[fb4f21](T3 A)[-] Third Eye Implant"
+egmodArmorStrength, "[fb4f21](T3 A)[-] Berserker's Rage"
+egmodArmorFortitude, "[fb4f21](T3 A)[-] Undying Will"
+egmodArmorAgility, "[fb4f21](T3 A)[-] Shadow Step"
+egmodArmorIntellect, "[fb4f21](T3 A)[-] Madman's Brilliance"
+
+egt1lightweight, "[1e9d16](T1 A)[-] Phantom Stride"
+egt2lightweight, "[bc52e7](T2 A)[-] Wraith's Grace"
+egt3lightweight, "[fb4f21](T3 A)[-] Specter's Flight"
+
+egt1reward, "[bc52e7](T2 A)[-] Twisted Bargain"
+egt2reward, "[fb4f21](T3 A)[-] Devil's Deal"
+egt3reward, "[ff0000](T4 A)[-] Infernal Compact"
+
+
+egt1lumber, "[1e9d16](T1 A)[-] Grave Digger"
+egt2lumber, "[bc52e7](T2 A)[-] Corpse Harvester"
+egt3lumber, "[fb4f21](T3 A)[-] Soul Reaper"
+
+egt1barter, "[1e9d16](T1 A)[-] Silver Tongue"
+egt2barter, "[bc52e7](T2 A)[-] Dark Persuasion"
+egt3barter, "[fb4f21](T3 A)[-] Demon's Whisper"
+
+egt1resist, "[1e9d16](T1 A)[-] Padded Cell Lining"
+egt2resist, "[bc52e7](T2 A)[-] Straitjacket Weave"
+egt3resist, "[fb4f21](T3 A)[-] Warden's Plate"
+
+egt1zombiedamage, "[1e9d16](T1 A)[-] Exorcist's Touch"
+egt2zombiedamage, "[bc52e7](T2 A)[-] Zealot's Wrath"
+egt3zombiedamage, "[fb4f21](T3 A)[-] Inquisitor's Fury"
+
+egt1looter, "[1e9d16](T1 A)[-] Pickpocket's Twitch"
+egt2looter, "[bc52e7](T2 A)[-] Kleptomaniac's Reflex"
+egt3looter, "[fb4f21](T3 A)[-] Master Thief's Instinct"
+
+egt1hp, "[1e9d16](T1 A)[-] Twisted Vitality"
+egt2hp, "[bc52e7](T2 A)[-] Unholy Constitution"
+egt3hp, "[fb4f21](T3 A)[-] Abomination's Vigor"
+
+egt1stamina, "[1e9d16](T1 A)[-] Manic Energy"
+egt2stamina, "[bc52e7](T2 A)[-] Psychotic Drive"
+egt3stamina, "[fb4f21](T3 A)[-] Asylum Endurance"
+
+egt1harvest, "[1e9d16](T1 A)[-] Withered Touch"
+egt2harvest, "[bc52e7](T2 A)[-] Blighted Harvest"
+egt3harvest, "[fb4f21](T3 A)[-] Plague Farmer"
+
+egt1damage, "[1e9d16](T1 A)[-] Malice Injection"
+egt2damage, "[bc52e7](T2 A)[-] Hatred Amplifier"
+egt3damage, "[fb4f21](T3 A)[-] Wrath Conduit"
+
+egt1atkspeed, "[1e9d16](T1 A)[-] Tremor Inducer"
+egt2atkspeed, "[bc52e7](T2 A)[-] Frenzy Catalyst"
+egt3atkspeed, "[fb4f21](T3 A)[-] Hysteria Engine"
+
+egt1usage, "[1e9d16](T1 A)[-] Hollow Stomach"
+egt2usage, "[bc52e7](T2 A)[-] Fasting Spirit"
+egt3usage, "[fb4f21](T3 A)[-] Starvation Immunity"
+
+egt1xp, "[1e9d16](T1 A)[-] Tortured Wisdom"
+egt2xp, "[bc52e7](T2 A)[-] Nightmare Lessons"
+egt3xp, "[fb4f21](T3 A)[-] Asylum Enlightenment"
+
+
+
+egt1backpackdesc, "[1e9d16](Tier 1 - Basic)[-] A repurposed asylum storage bag. Increase your Inventory Slots by 16."
+egt2backpackdesc, "[bc52e7](Tier 2 - Improved)[-] Stolen from the orderly's quarters. Increase your Inventory Slots by 20."
+egt3backpackdesc, "[fb4f21](Tier 3 - Advanced)[-] The Warden's personal secure container. Increase your Inventory Slots by 32."
+
+egt1nerddesc, "[1e9d16](Tier 1 - Basic)[-] Your fractured mind absorbs knowledge erratically. 33% Chance to get double Magazine Points. \n \n \n[ff0000]Warning[-]: Not stackable and not working with the Intellect Mastery/Nerd Outfit."
+egt2nerddesc, "[bc52e7](Tier 2 - Improved)[-] Your shattered psyche processes information in twisted ways. 66% Chance to get double Magazine Points. \n \n \n[ff0000]Warning[-]: Not stackable and not working with the Intellect Mastery/Nerd Outfit."
+egt3nerddesc, "[fb4f21](Tier 3 - Advanced)[-] Complete mental breakdown grants perfect clarity. 100% Chance to get double Magazine Points. \n \n \n[ff0000]Warning[-]: Not stackable and not working with the Intellect Mastery/Nerd Outfit."
+
+egmodArmorPerceptiondesc, "[fb4f21](Tier 3 - Advanced)[-] An experimental implant that opens your third eye. +2 Perception."
+egmodArmorStrengthdesc, "[fb4f21](Tier 3 - Advanced)[-] Channel the rage of the asylum's most violent patients. +2 Strength."
+egmodArmorFortitudedesc, "[fb4f21](Tier 3 - Advanced)[-] Survive what would kill others through sheer willpower. +2 Fortitude."
+egmodArmorAgilitydesc, "[fb4f21](Tier 3 - Advanced)[-] Move through shadows like the escaped patients of legend. +2 Agility."
+egmodArmorIntellectdesc, "[fb4f21](Tier 3 - Advanced)[-] The line between genius and madness is razor thin. +2 Intellect."
+
+egt1lightweightdesc, "[1e9d16](Tier 1 - Basic)[-] Ghostly modifications let you move like a phantom. Increase Movementspeed by 5%."
+egt2lightweightdesc, "[bc52e7](Tier 2 - Improved)[-] Wraith-touched enhancements for silent pursuit. Increase Movementspeed by 10%."
+egt3lightweightdesc, "[fb4f21](Tier 3 - Advanced)[-] Become as swift as a specter fleeing the asylum. Increase Movementspeed by 15%."
+
+egt1rewarddesc, "[bc52e7](Tier 2 - Improved)[-] Strike a twisted bargain for better rewards. Grants +1 additional Quest-Reward."
+egt2rewarddesc, "[fb4f21](Tier 3 - Advanced)[-] A deal with darker forces. Grants +2 additional Quest-Reward."
+egt3rewarddesc, "[ff0000](Tier 4 - Legendary)[-] Sign the infernal compact and claim your unholy rewards. Grants +3 additional Quest-Reward."
+
+
+egt1lumberdesc, "[1e9d16](Tier 1 - Basic)[-] Grave digger's techniques for efficient gathering. Increase Harvestcount by 10%."
+egt2lumberdesc, "[bc52e7](Tier 2 - Improved)[-] Harvest the dead with practiced efficiency. Increase Harvestcount by 20%."
+egt3lumberdesc, "[fb4f21](Tier 3 - Advanced)[-] Reap souls and resources with supernatural efficiency. Increase Harvestcount by 30%."
+
+egt1barterdesc, "[1e9d16](Tier 1 - Basic)[-] A silver tongue honed in the asylum's black markets. Reduce Traderprices by 3%."
+egt2barterdesc, "[bc52e7](Tier 2 - Improved)[-] Dark persuasion techniques learned from the inmates. Reduce Traderprices by 6%."
+egt3barterdesc, "[fb4f21](Tier 3 - Advanced)[-] Whisper like a demon to bend traders to your will. Reduce Traderprices by 10%."
+
+egt1resistdesc, "[1e9d16](Tier 1 - Basic)[-] Padding salvaged from padded cells. Increase damage resist against Zombies by 3%."
+egt2resistdesc, "[bc52e7](Tier 2 - Improved)[-] Woven from restraint materials that held the violent. Increase damage resist against Zombies by 6%."
+egt3resistdesc, "[fb4f21](Tier 3 - Advanced)[-] The Warden's personal protection against the inmates. Increase damage resist against Zombies by 10%."
+
+egt1zombiedamagedesc, "[1e9d16](Tier 1 - Basic)[-] Blessed by former asylum chaplains. Increase damage against Zombies by 5%."
+egt2zombiedamagedesc, "[bc52e7](Tier 2 - Improved)[-] Zealous fury against the undead. Increase damage against Zombies by 10%."
+egt3zombiedamagedesc, "[fb4f21](Tier 3 - Advanced)[-] Inquisitorial wrath made manifest. Increase damage against Zombies by 15%."
+
+egt1looterdesc, "[1e9d16](Tier 1 - Basic)[-] Twitchy fingers from years of stealing. Increase Loot-Speed by 10%."
+egt2looterdesc, "[bc52e7](Tier 2 - Improved)[-] Compulsive looting becomes an advantage. Increase Loot-Speed by 20%."
+egt3looterdesc, "[fb4f21](Tier 3 - Advanced)[-] Master thief instincts honed in the asylum. Increase Loot-Speed by 30%."
+
+egt1hpdesc, "[1e9d16](Tier 1 - Basic)[-] Twisted experimental treatments increase vitality. Increase max HP by 5 Points."
+egt2hpdesc, "[bc52e7](Tier 2 - Improved)[-] Unholy constitution from dark experiments. Increase max HP by 10 Points."
+egt3hpdesc, "[fb4f21](Tier 3 - Advanced)[-] Abominable vigor coursing through your veins. Increase max HP by 20 Points."
+
+egt1staminadesc, "[1e9d16](Tier 1 - Basic)[-] Manic energy pulses through you. Increase max Stamina by 10 Points."
+egt2staminadesc, "[bc52e7](Tier 2 - Improved)[-] Psychotic determination keeps you moving. Increase max Stamina by 20 Points."
+egt3staminadesc, "[fb4f21](Tier 3 - Advanced)[-] The asylum's experimental treatments grant tireless endurance. Increase max Stamina by 30 Points."
+
+egt1harvestdesc, "[1e9d16](Tier 1 - Basic)[-] Your withered touch coaxes more from the earth. Grant 1 additional Crop."
+egt2harvestdesc, "[bc52e7](Tier 2 - Improved)[-] Blighted hands yield bountiful harvests. Grant 2 additional Crops."
+egt3harvestdesc, "[fb4f21](Tier 3 - Advanced)[-] Plague farmer techniques from the asylum gardens. Grant 3 additional Crops."
+
+egt1damagedesc, "[1e9d16](Tier 1 - Basic)[-] Pure malice injected into your attacks. Increase Entity Damage by 5%."
+egt2damagedesc, "[bc52e7](Tier 2 - Improved)[-] Amplified hatred fuels your strikes. Increase Entity Damage by 10%."
+egt3damagedesc, "[fb4f21](Tier 3 - Advanced)[-] Channel pure wrath through every blow. Increase Entity Damage by 15%."
+
+egt1atkspeeddesc, "[1e9d16](Tier 1 - Basic)[-] Tremors become a weapon. Increase Attackspeed with all Weapons and Tools by 5%."
+egt2atkspeeddesc, "[bc52e7](Tier 2 - Improved)[-] Frenzy takes hold of your limbs. Increase Attackspeed with all Weapons and Tools by 10%."
+egt3atkspeeddesc, "[fb4f21](Tier 3 - Advanced)[-] Hysterical speed that defies sanity. Increase Attackspeed with all Weapons and Tools by 15%."
+
+egt1usagedesc, "[1e9d16](Tier 1 - Basic)[-] A hollow stomach needs less sustenance. Reduce Food and Water Consume by 10%."
+egt2usagedesc, "[bc52e7](Tier 2 - Improved)[-] Fasting spirit learned from starved patients. Reduce Food and Water Consume by 20%."
+egt3usagedesc, "[fb4f21](Tier 3 - Advanced)[-] Near immunity to starvation through asylum conditioning. Reduce Food and Water Consume by 30%."
+
+egt1xpdesc, "[1e9d16](Tier 1 - Basic)[-] Wisdom gained through torture and suffering. Gain 20% more Experience from all sources."
+egt2xpdesc, "[bc52e7](Tier 2 - Improved)[-] Nightmarish lessons burned into your mind. Gain 35% more Experience from all sources."
+egt3xpdesc, "[fb4f21](Tier 3 - Advanced)[-] Complete asylum enlightenment through pain. Gain 50% more Experience from all sources."
+
+egtmodifier, "Asylum Enhancement"
+craftingvmodsCraftingName, "Asylum Enhancement"
+egtskillmagazine, "Asylum Enhancement Schematic"
+egtmagazinedesc, "Recovered from the asylum's secret research wing. Contains twisted modification techniques developed through dark experimentation. \n \nImproves Asylum Enhancement crafting skill."
+
+egt2arrowreload, "[bc52e7](T2 W)[-] Twitching Nock"
+egt3arrowreload, "[fb4f21](T3 W)[-] Hysteric Loader"
+
+egt2ArrowRDesc, "[bc52e7](Tier 2 - Improved)[-] Manic twitching accelerates arrow loading. Gain 40% more Reloadspeed for Crossbow and Bow."
+egt3ArrowRDesc, "[fb4f21](Tier 3 - Advanced)[-] Hysterical speed for near-instant reloading. Gain 80% more Reloadspeed for Crossbow and Bow."
+
+egt2blessedmetal, "[bc52e7](T2 W)[-] Exorcist's Edge"
+egt3blessedmetal, "[fb4f21](T3 W)[-] Inquisitor's Bane"
+
+egt2BlessDesc, "[bc52e7](Tier 2 - Improved)[-] Blessed by asylum chaplains for fighting evil. Increase damage against zombies by 45% and against bosses by 75%."
+egt3BlessDesc, "[fb4f21](Tier 3 - Advanced)[-] Holy wrath incarnate against abominations. Increase damage against zombies by 90% and against bosses by 150%."
+
+egt2grip, "[bc52e7](T2 W)[-] Madman's Clutch"
+egt3grip, "[fb4f21](T3 W)[-] Psycho's Death Grip"
+
+egt2ForegripDesc, "[bc52e7](Tier 2 - Improved)[-] Obsessive grip modifications for superior control. Much better weapon handling than standard grip."
+egt3ForegripDesc, "[fb4f21](Tier 3 - Advanced)[-] White-knuckle grip of the truly deranged. Even better weapon handling than T2 grip."
+
+egt2stock, "[bc52e7](T2 W)[-] Nervous Brace"
+egt3stock, "[fb4f21](T3 W)[-] Paranoid's Stabilizer"
+
+egt2RetractingDesc, "[bc52e7](Tier 2 - Improved)[-] Twitchy modifications for quick shooting. Better hip accuracy than standard stock."
+egt3RetractingDesc, "[fb4f21](Tier 3 - Advanced)[-] Paranoid precision for snap shots. Even better hip accuracy than T2 stock."
+
+egt2magazineex, "[bc52e7](T2 W)[-] Hoarded Rounds"
+egt3magazineex, "[fb4f21](T3 W)[-] Asylum Stockpile"
+
+egt2magazineexMagazineExtenderDesc, "[bc52e7](Tier 2 - Improved)[-] Compulsive hoarding extended to ammunition. Grants +60% Magazine Size."
+egt3magazineexMagazineExtenderDesc, "[fb4f21](Tier 3 - Advanced)[-] The asylum's emergency stockpile design. Grants +100% Magazine Size."
+
+egt2drummag, "[bc52e7](T2 W)[-] Maniac's Drum"
+egt3drummag, "[fb4f21](T3 W)[-] Berserker's Canister"
+
+egt2DrumDesc, "[bc52e7](Tier 2 - Improved)[-] Hold ammunition like a maniac holds grudges. Grants +150% Magazine Size but decreases reloadspeed by 25%."
+egt3DrumDesc, "[fb4f21](Tier 3 - Advanced)[-] Berserker capacity for sustained carnage. Grants +200% Magazine Size but decreases reloadspeed by 25%."
+
+egt2bipod, "[bc52e7](T2 W)[-] Patient's Rest"
+egt3bipod, "[fb4f21](T3 W)[-] Catatonic Stance"
+
+egt2BipodDesc, "[bc52e7](Tier 2 - Improved)[-] Deadly stillness learned in isolation. Grants higher accuracy than standard bipod."
+egt3BipodDesc, "[fb4f21](Tier 3 - Advanced)[-] Catatonic stability for perfect shots. Grants higher accuracy than T2 bipod."
+
+egt2muzzlebrake, "[bc52e7](T2 W)[-] Screamer's Silencer"
+egt3muzzlebrake, "[fb4f21](T3 W)[-] Warden's Dampener"
+
+egt2MuzzleDesc, "[bc52e7](Tier 2 - Improved)[-] Redirects force like muffled screams. Better recoil control than standard Muzzle Brake."
+egt3MuzzleDesc, "[fb4f21](Tier 3 - Advanced)[-] Warden-grade recoil suppression. Better recoil control than T2 Muzzle Brake."
+
+egt2barrelex, "[bc52e7](T2 W)[-] Long Arm of Madness"
+egt3barrelex, "[fb4f21](T3 W)[-] Executioner's Reach"
+
+egt2BarrelExtenderDesc, "[bc52e7](Tier 2 - Improved)[-] Extended reach for distant judgment. Grants +20% Damage and +80% Range."
+egt3BarrelExtenderDesc, "[fb4f21](Tier 3 - Advanced)[-] The executioner's extended barrel for distant death. Grants +40% Damage and +110% Range."
+
+egt2silencer, "[bc52e7](T2 W)[-] Whispered Death"
+egt3silencer, "[fb4f21](T3 W)[-] Silent Asylum"
+
+egt2SilencerDesc, "[bc52e7](Tier 2 - Improved)[-] Kill quietly like the night orderlies. Silencer which gives +10% Damage instead of reducing it."
+egt3SilencerDesc, "[fb4f21](Tier 3 - Advanced)[-] The asylum's most secret silencing technology. Silencer which gives +20% Damage instead of reducing it."
+
+egt2crippleem, "[bc52e7](T2 W)[-] Tendon Shredder"
+egt3crippleem, "[fb4f21](T3 W)[-] Hobbler's Curse"
+
+egt2CrippleDesc, "[bc52e7](Tier 2 - Improved)[-] Crippling shots learned from asylum enforcers. 20% Chance on hit to slow the target."
+egt3CrippleDesc, "[fb4f21](Tier 3 - Advanced)[-] A curse that hobbles the undead. 50% Chance on hit to slow the target."
+
+egt2triggerauto, "[bc52e7](T2 W)[-] Nervous Twitch"
+egt3triggerauto, "[fb4f21](T3 W)[-] Manic Episode"
+
+egt2TriggerDesc, "[bc52e7](Tier 2 - Improved)[-] Nervous twitching becomes rapid fire. Set firegroup to automatic and increase fire rate by 30%."
+egt3TriggerDesc, "[fb4f21](Tier 3 - Advanced)[-] Full manic episode for maximum fire rate. Set firegroup to automatic and increase fire rate by 60%."
+
+egt2brace, "[bc52e7](T2 W)[-] Restraint Reinforcement"
+egt3brace, "[fb4f21](T3 W)[-] Unbreakable Binding"
+
+egt2StructuralBraceDesc, "[bc52e7](Tier 2 - Improved)[-] Reinforced with asylum restraint materials. Reduce Durability Usage by 30%."
+egt3StructuralBraceDesc, "[fb4f21](Tier 3 - Advanced)[-] Bound with materials that held the violent. Reduce Durability Usage by 60%."
+
+egt2ergonomicgrip, "[bc52e7](T2 W)[-] Deadman's Hold"
+egt3ergonomicgrip, "[fb4f21](T3 W)[-] Rigor Mortis Grip"
+
+egt2ErgonomicGripDesc, "[bc52e7](Tier 2 - Improved)[-] Grip like a corpse that won't let go. Reduce Stamina Consume by 15% and improve Archery Accuracy by 15%."
+egt3ErgonomicGripDesc, "[fb4f21](Tier 3 - Advanced)[-] Death's own grip on your weapon. Reduce Stamina Consume by 30% and improve Archery Accuracy by 30%."
+
+egt2fortgrip, "[bc52e7](T2 W)[-] Survival Instinct"
+egt3fortgrip, "[fb4f21](T3 W)[-] Undying Grasp"
+
+egt2FortGripDesc, "[bc52e7](Tier 2 - Improved)[-] Desperation triggers healing. Grants better HP Regen when below 50% HP."
+egt3FortGripDesc, "[fb4f21](Tier 3 - Advanced)[-] Refuse to die like the asylum's failed experiments. Grants even better HP Regen when below 50% HP."
+
+egt2oil, "[bc52e7](T2 W)[-] Pyromaniac's Coating"
+egt3oil, "[fb4f21](T3 W)[-] Hellfire Extract"
+
+egt2FOilDesc, "[bc52e7](Tier 2 - Improved)[-] Fire-starting obsession made useful. 30% Chance to set the target on fire."
+egt3FOilDesc, "[fb4f21](Tier 3 - Advanced)[-] Extracted from the depths of the asylum crematorium. 60% Chance to set the target on fire."
+
+egt2battery, "[bc52e7](T2 W)[-] Shock Therapy Cell"
+egt3battery, "[fb4f21](T3 W)[-] Electroshock Core"
+
+egt2ShockDesc, "[bc52e7](Tier 2 - Improved)[-] Repurposed electroshock therapy equipment. 30% Chance to shock the target."
+egt3ShockDesc, "[fb4f21](Tier 3 - Advanced)[-] The asylum's most powerful electroshock core. 60% Chance to shock the target."
+
+egt2rods, "[bc52e7](T2 W)[-] Twitching Mechanism"
+egt3rods, "[fb4f21](T3 W)[-] Seizure Springs"
+
+egt2RodSpringDesc, "[bc52e7](Tier 2 - Improved)[-] Twitching mechanisms for faster cycling. Increase Firerate by 15% and Armor Penetration by 10%."
+egt3RodSpringDesc, "[fb4f21](Tier 3 - Advanced)[-] Springs wound tight as a seizure. Increase Firerate by 20% and Armor Penetration by 15%."
+
+egt2shred, "[bc52e7](T2 W)[-] Flayed Flesh Rounds"
+egt3shred, "[fb4f21](T3 W)[-] Bone Splitter"
+
+egt2ArmorShreddDesc, "[bc52e7](Tier 2 - Improved)[-] Rounds designed to tear through protection. On hit, reduce enemy armor by 15%."
+egt3ArmorShreddDesc, "[fb4f21](Tier 3 - Advanced)[-] Splits bone and armor alike. On hit, reduce enemy armor by 20%."
+
+egt2heat, "[bc52e7](T2 W)[-] Fever Pitch"
+egt3heat, "[fb4f21](T3 W)[-] Burning Obsession"
+
+egt2FTHDesc, "[bc52e7](Tier 2 - Improved)[-] Rising fever intensifies your attacks. +10% Armor Penetration. After 3 Hits in a short time, the 4th Hit deals +100% Damage."
+egt3FTHDesc, "[fb4f21](Tier 3 - Advanced)[-] Burning obsession reaches critical heat. +15% Armor Penetration. After 3 Hits in a short time, the 4th Hit deals +100% Damage."
+
+egt2slayup, "[bc52e7](T2 W)[-] Killing Frenzy"
+egt3slayup, "[fb4f21](T3 W)[-] Murder Spree"
+
+egt2SlayUpDesc, "[bc52e7](Tier 2 - Improved)[-] Violence begets more violence. 5% Chance on melee attack to gain a 60% Attackspeed Buff."
+egt3SlayUpDesc, "[fb4f21](Tier 3 - Advanced)[-] Unstoppable murder spree begins. 10% Chance on melee attack to gain a 60% Attackspeed Buff."
+
+egt2brasscatcher, "[bc52e7](T2 W)[-] Hoarder's Net"
+egt3brasscatcher, "[fb4f21](T3 W)[-] Scavenger's Obsession"
+
+egt2CatcherCaseDesc, "[bc52e7](Tier 2 - Improved)[-] Compulsive hoarding catches spent brass. 30% Chance on Hit to recover a Brass Casing."
+egt3CatcherCaseDesc, "[fb4f21](Tier 3 - Advanced)[-] Obsessive collection of every casing. 60% Chance on Hit to recover a Brass Casing."
+
+egt2bullettipcatcher, "[bc52e7](T2 W)[-] Lead Reclaimer"
+egt3bullettipcatcher, "[fb4f21](T3 W)[-] Bullet Harvester"
+
+egt2CatcherBulletDesc, "[bc52e7](Tier 2 - Improved)[-] Reclaim the lead from your kills. 30% Chance on Hit to recover a Bullet Tip."
+egt3CatcherBulletDesc, "[fb4f21](Tier 3 - Advanced)[-] Harvest bullets from the carnage. 60% Chance on Hit to recover a Bullet Tip."
+
+egt2fuelcatcher, "[bc52e7](T2 W)[-] Fuel Miser"
+egt3fuelcatcher, "[fb4f21](T3 W)[-] Conservation Mania"
+
+egt2CatcherFuelDesc, "[bc52e7](Tier 2 - Improved)[-] Miserly fuel conservation from asylum generators. 30% Chance on Use to recover a Gas Can."
+egt3CatcherFuelDesc, "[fb4f21](Tier 3 - Advanced)[-] Maniacal fuel obsession. 60% Chance on Use to recover a Gas Can."

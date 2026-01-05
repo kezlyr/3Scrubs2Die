@@ -1,0 +1,379 @@
+<configs>
+	<append xpath="/blocks">
+				
+		<block name="LxSChest">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSChest2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest2"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest2.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSChest3">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest3"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest3.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSChest4">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest4"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest4.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSChest5">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest5"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest5.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSChest6">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest6"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest6.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		
+		<block name="LxSChest7">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest7"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest7.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		
+		<block name="LxSChest8">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSChest8"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSChest8.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		
+		<block name="LxSBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSBox"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBox.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSStinkyBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSStinkyBox"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxStinky.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="LxSSciFiBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiGreen"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSSciFiBox2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiBlue"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi2.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSSciFiBox3">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiRed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi3.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSSciFiBox4">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiGreen2"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi4.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSSciFiBox5">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiRed2"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi5.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSSciFiBox6">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSSciFiBlue2"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxSciFi6.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="LxSBoxFloat">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="LxSBoxFloat"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LxSWritableStorage.unity3d?LxSBoxFloat.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="LxSChest" />
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="2000"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+		</block>
+			
+	</append>
+</configs>

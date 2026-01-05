@@ -1,0 +1,3 @@
+﻿perkNamesCount=54
+attrNamesCount=5
+perkSample=perkAdvancedEngineering,perkAgilityMastery,perkAnimalTracker,perkArchery,perkBetterBarter

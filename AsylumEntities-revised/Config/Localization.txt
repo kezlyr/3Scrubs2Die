@@ -1,0 +1,1806 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+# AsylumEntities-revised Localization
+# Bear family entities with asylum horror theme
+
+# Normal Bear - No MatColor (Muted Orange)
+asylumBear,entities,Zombie,,,"[CC7744]Asylum Mutant Bear[-]"
+
+# Feral Bear - No MatColor (Darker Orange)
+asylumFeralBear,entities,Zombie,,,"[BB6633]Feral Asylum Mutant Bear[-]"
+
+# Radiated Bear - Green MatColor (Sickly Green)
+asylumBearRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Mutant Bear[-]"
+
+# Infernal Bear - Orange-red MatColor (Dark Red-Orange)
+asylumBearInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Mutant Bear[-]"
+
+# Charged Bear - Blue MatColor (Steel Blue)
+asylumBearCharged,entities,Zombie,,,"[4477AA]Charged Asylum Mutant Bear[-]"
+
+# Cursed Bear - Purple MatColor (Dark Purple)
+asylumBearCursed,entities,Zombie,,,"[774499]Cursed Asylum Mutant Bear[-]"
+
+# Alpha Bear - Red MatColor (Blood Red)
+asylumBearAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Mutant Bear[-]"
+
+# Normal Biomutant - No MatColor (Muted Orange)
+asylumBiomutant,entities,Zombie,,,"[CC7744]Asylum Bio-Mutant[-]"
+
+# Feral Biomutant - No MatColor (Darker Orange)
+asylumFeralBiomutant,entities,Zombie,,,"[BB6633]Feral Asylum Bio-Mutant[-]"
+
+# Radiated Biomutant - Green MatColor (Sickly Green)
+asylumBiomutantRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Bio-Mutant[-]"
+
+# Infernal Biomutant - Orange-red MatColor (Dark Red-Orange)
+asylumBiomutantInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Bio-Mutant[-]"
+
+# Charged Biomutant - Blue MatColor (Steel Blue)
+asylumBiomutantCharged,entities,Zombie,,,"[4477AA]Charged Asylum Bio-Mutant[-]"
+
+# Cursed Biomutant - Purple MatColor (Dark Purple)
+asylumBiomutantCursed,entities,Zombie,,,"[774499]Cursed Asylum Bio-Mutant[-]"
+
+# Alpha Biomutant - Red MatColor (Blood Red)
+asylumBiomutantAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Bio-Mutant[-]"
+
+# Normal Butcherbilly - No MatColor (Muted Orange)
+asylumButcherbilly,entities,Zombie,,,"[CC7744]Asylum Butcher Billy[-]"
+
+# Feral Butcherbilly - Dried Blood MatColor (Brownish Red)
+asylumFeralButcherbilly,entities,Zombie,,,"[BB6633]Feral Asylum Butcher Billy[-]"
+
+# Radiated Butcherbilly - Green MatColor (Sickly Green)
+asylumButcherbillyRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Butcher Billy[-]"
+
+# Infernal Butcherbilly - Orange-red MatColor (Dark Red-Orange)
+asylumButcherbillyInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Butcher Billy[-]"
+
+# Charged Butcherbilly - Blue MatColor (Steel Blue)
+asylumButcherbillyCharged,entities,Zombie,,,"[4477AA]Charged Asylum Butcher Billy[-]"
+
+# Cursed Butcherbilly - Purple MatColor (Dark Purple)
+asylumButcherbillyCursed,entities,Zombie,,,"[774499]Cursed Asylum Butcher Billy[-]"
+
+# Alpha Butcherbilly - Red MatColor (Blood Red)
+asylumButcherbillyAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Butcher Billy[-]"
+
+# Normal Cat - No MatColor (Muted Orange)
+asylumCat,entities,Zombie,,,"[CC7744]Asylum Cat[-]"
+
+# Feral Cat - Dried Blood MatColor (Brownish Red)
+asylumFeralCat,entities,Zombie,,,"[BB6633]Feral Asylum Feral Cat[-]"
+
+# Radiated Cat - Green MatColor (Sickly Green)
+asylumCatRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Feral Cat[-]"
+
+# Infernal Cat - Orange-red MatColor (Dark Red-Orange)
+asylumCatInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Feral Cat[-]"
+
+# Charged Cat - Blue MatColor (Steel Blue)
+asylumCatCharged,entities,Zombie,,,"[4477AA]Charged Asylum Feral Cat[-]"
+
+# Cursed Cat - Purple MatColor (Dark Purple)
+asylumCatCursed,entities,Zombie,,,"[774499]Cursed Asylum Feral Cat[-]"
+
+# Alpha Cat - Red MatColor (Blood Red)
+asylumCatAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Feral Cat[-]"
+
+# Normal Crazydoc - No MatColor (Muted Orange)
+asylumCrazydoc,entities,Zombie,,,"[CC7744]Asylum Crazy Doctor[-]"
+
+# Feral Crazydoc - Dried Blood MatColor (Brownish Red)
+asylumFeralCrazydoc,entities,Zombie,,,"[BB6633]Feral Asylum Crazy Doctor[-]"
+
+# Radiated Crazydoc - Green MatColor (Sickly Green)
+asylumCrazydocRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Crazy Doctor[-]"
+
+# Infernal Crazydoc - Orange-red MatColor (Dark Red-Orange)
+asylumCrazydocInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Crazy Doctor[-]"
+
+# Charged Crazydoc - Blue MatColor (Steel Blue)
+asylumCrazydocCharged,entities,Zombie,,,"[4477AA]Charged Asylum Crazy Doctor[-]"
+
+# Cursed Crazydoc - Purple MatColor (Dark Purple)
+asylumCrazydocCursed,entities,Zombie,,,"[774499]Cursed Asylum Crazy Doctor[-]"
+
+# Alpha Crazydoc - Red MatColor (Blood Red)
+asylumCrazydocAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Crazy Doctor[-]"
+
+# Normal Crueldoll - No MatColor (Muted Orange)
+asylumCrueldoll,entities,Zombie,,,"[CC7744]Asylum Cruel Doll[-]"
+
+# Feral Crueldoll - Dried Blood MatColor (Brownish Red)
+asylumFeralCrueldoll,entities,Zombie,,,"[BB6633]Feral Asylum Cruel Doll[-]"
+
+# Radiated Crueldoll - Green MatColor (Sickly Green)
+asylumCrueldollRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Cruel Doll[-]"
+
+# Infernal Crueldoll - Orange-red MatColor (Dark Red-Orange)
+asylumCrueldollInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Cruel Doll[-]"
+
+# Charged Crueldoll - Blue MatColor (Steel Blue)
+asylumCrueldollCharged,entities,Zombie,,,"[4477AA]Charged Asylum Cruel Doll[-]"
+
+# Cursed Crueldoll - Purple MatColor (Dark Purple)
+asylumCrueldollCursed,entities,Zombie,,,"[774499]Cursed Asylum Cruel Doll[-]"
+
+# Alpha Crueldoll - Red MatColor (Blood Red)
+asylumCrueldollAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Cruel Doll[-]"
+
+# Normal Demon1 - No MatColor (Muted Orange)
+asylumDemon1,entities,Zombie,,,"[CC7744]Asylum Demon[-]"
+
+# Feral Demon1 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon1,entities,Zombie,,,"[BB6633]Feral Asylum Demon[-]"
+
+# Radiated Demon1 - Green MatColor (Sickly Green)
+asylumDemon1Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon[-]"
+
+# Infernal Demon1 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon1Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon[-]"
+
+# Charged Demon1 - Blue MatColor (Steel Blue)
+asylumDemon1Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon[-]"
+
+# Cursed Demon1 - Purple MatColor (Dark Purple)
+asylumDemon1Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon[-]"
+
+# Alpha Demon1 - Red MatColor (Blood Red)
+asylumDemon1Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon[-]"
+
+# Normal Demon2 - No MatColor (Muted Orange)
+asylumDemon2,entities,Zombie,,,"[CC7744]Asylum Demon Lord[-]"
+
+# Feral Demon2 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon2,entities,Zombie,,,"[BB6633]Feral Asylum Demon Lord[-]"
+
+# Radiated Demon2 - Green MatColor (Sickly Green)
+asylumDemon2Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Lord[-]"
+
+# Infernal Demon2 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon2Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Lord[-]"
+
+# Charged Demon2 - Blue MatColor (Steel Blue)
+asylumDemon2Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Lord[-]"
+
+# Cursed Demon2 - Purple MatColor (Dark Purple)
+asylumDemon2Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Lord[-]"
+
+# Alpha Demon2 - Red MatColor (Blood Red)
+asylumDemon2Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Lord[-]"
+
+# Normal Demon3 - No MatColor (Muted Orange)
+asylumDemon3,entities,Zombie,,,"[CC7744]Asylum Demon Knight[-]"
+
+# Feral Demon3 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon3,entities,Zombie,,,"[BB6633]Feral Asylum Demon Knight[-]"
+
+# Radiated Demon3 - Green MatColor (Sickly Green)
+asylumDemon3Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Knight[-]"
+
+# Infernal Demon3 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon3Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Knight[-]"
+
+# Charged Demon3 - Blue MatColor (Steel Blue)
+asylumDemon3Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Knight[-]"
+
+# Cursed Demon3 - Purple MatColor (Dark Purple)
+asylumDemon3Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Knight[-]"
+
+# Alpha Demon3 - Red MatColor (Blood Red)
+asylumDemon3Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Knight[-]"
+
+# Normal Demon4 - No MatColor (Muted Orange)
+asylumDemon4,entities,Zombie,,,"[CC7744]Asylum Demon Warlord[-]"
+
+# Feral Demon4 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon4,entities,Zombie,,,"[BB6633]Feral Asylum Demon Warlord[-]"
+
+# Radiated Demon4 - Green MatColor (Sickly Green)
+asylumDemon4Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Warlord[-]"
+
+# Infernal Demon4 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon4Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Warlord[-]"
+
+# Charged Demon4 - Blue MatColor (Steel Blue)
+asylumDemon4Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Warlord[-]"
+
+# Cursed Demon4 - Purple MatColor (Dark Purple)
+asylumDemon4Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Warlord[-]"
+
+# Alpha Demon4 - Red MatColor (Blood Red)
+asylumDemon4Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Warlord[-]"
+
+# Normal Demon5 - No MatColor (Muted Orange)
+asylumDemon5,entities,Zombie,,,"[CC7744]Asylum Demon Prince[-]"
+
+# Feral Demon5 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon5,entities,Zombie,,,"[BB6633]Feral Asylum Demon Prince[-]"
+
+# Radiated Demon5 - Green MatColor (Sickly Green)
+asylumDemon5Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Prince[-]"
+
+# Infernal Demon5 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon5Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Prince[-]"
+
+# Charged Demon5 - Blue MatColor (Steel Blue)
+asylumDemon5Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Prince[-]"
+
+# Cursed Demon5 - Purple MatColor (Dark Purple)
+asylumDemon5Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Prince[-]"
+
+# Alpha Demon5 - Red MatColor (Blood Red)
+asylumDemon5Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Prince[-]"
+
+# Normal Demon6 - No MatColor (Muted Orange)
+asylumDemon6,entities,Zombie,,,"[CC7744]Asylum Demon King[-]"
+
+# Feral Demon6 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon6,entities,Zombie,,,"[BB6633]Feral Asylum Demon King[-]"
+
+# Radiated Demon6 - Green MatColor (Sickly Green)
+asylumDemon6Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon King[-]"
+
+# Infernal Demon6 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon6Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon King[-]"
+
+# Charged Demon6 - Blue MatColor (Steel Blue)
+asylumDemon6Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon King[-]"
+
+# Cursed Demon6 - Purple MatColor (Dark Purple)
+asylumDemon6Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon King[-]"
+
+# Alpha Demon6 - Red MatColor (Blood Red)
+asylumDemon6Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon King[-]"
+
+# Normal Demon7 - No MatColor (Muted Orange)
+asylumDemon7,entities,Zombie,,,"[CC7744]Asylum Demon Emperor[-]"
+
+# Feral Demon7 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon7,entities,Zombie,,,"[BB6633]Feral Asylum Demon Emperor[-]"
+
+# Radiated Demon7 - Green MatColor (Sickly Green)
+asylumDemon7Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Emperor[-]"
+
+# Infernal Demon7 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon7Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Emperor[-]"
+
+# Charged Demon7 - Blue MatColor (Steel Blue)
+asylumDemon7Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Emperor[-]"
+
+# Cursed Demon7 - Purple MatColor (Dark Purple)
+asylumDemon7Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Emperor[-]"
+
+# Alpha Demon7 - Red MatColor (Blood Red)
+asylumDemon7Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Emperor[-]"
+
+# Normal Demon8 - No MatColor (Muted Orange)
+asylumDemon8,entities,Zombie,,,"[CC7744]Asylum Demon Overlord[-]"
+
+# Feral Demon8 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon8,entities,Zombie,,,"[BB6633]Feral Asylum Demon Overlord[-]"
+
+# Radiated Demon8 - Green MatColor (Sickly Green)
+asylumDemon8Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Overlord[-]"
+
+# Infernal Demon8 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon8Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Overlord[-]"
+
+# Charged Demon8 - Blue MatColor (Steel Blue)
+asylumDemon8Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Overlord[-]"
+
+# Cursed Demon8 - Purple MatColor (Dark Purple)
+asylumDemon8Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Overlord[-]"
+
+# Alpha Demon8 - Red MatColor (Blood Red)
+asylumDemon8Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Overlord[-]"
+
+# Normal Demon9 - No MatColor (Muted Orange)
+asylumDemon9,entities,Zombie,,,"[CC7744]Asylum Demon God[-]"
+
+# Feral Demon9 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon9,entities,Zombie,,,"[BB6633]Feral Asylum Demon God[-]"
+
+# Radiated Demon9 - Green MatColor (Sickly Green)
+asylumDemon9Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon God[-]"
+
+# Infernal Demon9 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon9Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon God[-]"
+
+# Charged Demon9 - Blue MatColor (Steel Blue)
+asylumDemon9Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon God[-]"
+
+# Cursed Demon9 - Purple MatColor (Dark Purple)
+asylumDemon9Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon God[-]"
+
+# Alpha Demon9 - Red MatColor (Blood Red)
+asylumDemon9Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon God[-]"
+
+# Normal Demon10 - No MatColor (Muted Orange)
+asylumDemon10,entities,Zombie,,,"[CC7744]Asylum Demon Supreme[-]"
+
+# Feral Demon10 - Dried Blood MatColor (Brownish Red)
+asylumFeralDemon10,entities,Zombie,,,"[BB6633]Feral Asylum Demon Supreme[-]"
+
+# Radiated Demon10 - Green MatColor (Sickly Green)
+asylumDemon10Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Supreme[-]"
+
+# Infernal Demon10 - Orange-red MatColor (Dark Red-Orange)
+asylumDemon10Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Supreme[-]"
+
+# Charged Demon10 - Blue MatColor (Steel Blue)
+asylumDemon10Charged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Supreme[-]"
+
+# Cursed Demon10 - Purple MatColor (Dark Purple)
+asylumDemon10Cursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Supreme[-]"
+
+# Alpha Demon10 - Red MatColor (Blood Red)
+asylumDemon10Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Supreme[-]"
+
+# Normal Demondoll - No MatColor (Muted Orange)
+asylumDemondoll,entities,Zombie,,,"[CC7744]Asylum Demon Doll[-]"
+
+# Feral Demondoll - Dried Blood MatColor (Brownish Red)
+asylumFeralDemondoll,entities,Zombie,,,"[BB6633]Feral Asylum Demon Doll[-]"
+
+# Radiated Demondoll - Green MatColor (Sickly Green)
+asylumDemondollRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Demon Doll[-]"
+
+# Infernal Demondoll - Orange-red MatColor (Dark Red-Orange)
+asylumDemondollInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Demon Doll[-]"
+
+# Charged Demondoll - Blue MatColor (Steel Blue)
+asylumDemondollCharged,entities,Zombie,,,"[4477AA]Charged Asylum Demon Doll[-]"
+
+# Cursed Demondoll - Purple MatColor (Dark Purple)
+asylumDemondollCursed,entities,Zombie,,,"[774499]Cursed Asylum Demon Doll[-]"
+
+# Alpha Demondoll - Red MatColor (Blood Red)
+asylumDemondollAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Demon Doll[-]"
+
+# Normal Elephant - No MatColor (Muted Orange)
+asylumElephant,entities,Zombie,,,"[CC7744]Asylum Mutant Elephant[-]"
+
+# Feral Elephant - Dried Blood MatColor (Brownish Red)
+asylumFeralElephant,entities,Zombie,,,"[BB6633]Feral Asylum Mutant Elephant[-]"
+
+# Radiated Elephant - Green MatColor (Sickly Green)
+asylumElephantRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Mutant Elephant[-]"
+
+# Infernal Elephant - Orange-red MatColor (Dark Red-Orange)
+asylumElephantInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Mutant Elephant[-]"
+
+# Charged Elephant - Blue MatColor (Steel Blue)
+asylumElephantCharged,entities,Zombie,,,"[4477AA]Charged Asylum Mutant Elephant[-]"
+
+# Cursed Elephant - Purple MatColor (Dark Purple)
+asylumElephantCursed,entities,Zombie,,,"[774499]Cursed Asylum Mutant Elephant[-]"
+
+# Alpha Elephant - Red MatColor (Blood Red)
+asylumElephantAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Mutant Elephant[-]"
+
+# Normal Evildoll - No MatColor (Muted Orange)
+asylumEvildoll,entities,Zombie,,,"[CC7744]Asylum Evil Doll[-]"
+
+# Feral Evildoll - Dried Blood MatColor (Brownish Red)
+asylumFeralEvildoll,entities,Zombie,,,"[BB6633]Feral Asylum Evil Doll[-]"
+
+# Radiated Evildoll - Green MatColor (Sickly Green)
+asylumEvildollRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Evil Doll[-]"
+
+# Infernal Evildoll - Orange-red MatColor (Dark Red-Orange)
+asylumEvildollInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Evil Doll[-]"
+
+# Charged Evildoll - Blue MatColor (Steel Blue)
+asylumEvildollCharged,entities,Zombie,,,"[4477AA]Charged Asylum Evil Doll[-]"
+
+# Cursed Evildoll - Purple MatColor (Dark Purple)
+asylumEvildollCursed,entities,Zombie,,,"[774499]Cursed Asylum Evil Doll[-]"
+
+# Alpha Evildoll - Red MatColor (Blood Red)
+asylumEvildollAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Evil Doll[-]"
+
+# Normal Freak1 - No MatColor (Muted Orange)
+asylumFreak1,entities,Zombie,,,"[CC7744]Asylum Freak[-]"
+
+# Feral Freak1 - Dried Blood MatColor (Brownish Red)
+asylumFeralFreak1,entities,Zombie,,,"[BB6633]Feral Asylum Freak[-]"
+
+# Radiated Freak1 - Green MatColor (Sickly Green)
+asylumFreak1Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freak[-]"
+
+# Infernal Freak1 - Orange-red MatColor (Dark Red-Orange)
+asylumFreak1Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freak[-]"
+
+# Charged Freak1 - Blue MatColor (Steel Blue)
+asylumFreak1Charged,entities,Zombie,,,"[4477AA]Charged Asylum Freak[-]"
+
+# Cursed Freak1 - Purple MatColor (Dark Purple)
+asylumFreak1Cursed,entities,Zombie,,,"[774499]Cursed Asylum Freak[-]"
+
+# Alpha Freak1 - Red MatColor (Blood Red)
+asylumFreak1Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freak[-]"
+
+# Normal Freak2 - No MatColor (Muted Orange)
+asylumFreak2,entities,Zombie,,,"[CC7744]Asylum Freak Mutant[-]"
+
+# Feral Freak2 - Dried Blood MatColor (Brownish Red)
+asylumFeralFreak2,entities,Zombie,,,"[BB6633]Feral Asylum Freak Mutant[-]"
+
+# Radiated Freak2 - Green MatColor (Sickly Green)
+asylumFreak2Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freak Mutant[-]"
+
+# Infernal Freak2 - Orange-red MatColor (Dark Red-Orange)
+asylumFreak2Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freak Mutant[-]"
+
+# Charged Freak2 - Blue MatColor (Steel Blue)
+asylumFreak2Charged,entities,Zombie,,,"[4477AA]Charged Asylum Freak Mutant[-]"
+
+# Cursed Freak2 - Purple MatColor (Dark Purple)
+asylumFreak2Cursed,entities,Zombie,,,"[774499]Cursed Asylum Freak Mutant[-]"
+
+# Alpha Freak2 - Red MatColor (Blood Red)
+asylumFreak2Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freak Mutant[-]"
+
+# Normal Freak3 - No MatColor (Muted Orange)
+asylumFreak3,entities,Zombie,,,"[CC7744]Asylum Freak Abomination[-]"
+
+# Feral Freak3 - Dried Blood MatColor (Brownish Red)
+asylumFeralFreak3,entities,Zombie,,,"[BB6633]Feral Asylum Freak Abomination[-]"
+
+# Radiated Freak3 - Green MatColor (Sickly Green)
+asylumFreak3Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freak Abomination[-]"
+
+# Infernal Freak3 - Orange-red MatColor (Dark Red-Orange)
+asylumFreak3Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freak Abomination[-]"
+
+# Charged Freak3 - Blue MatColor (Steel Blue)
+asylumFreak3Charged,entities,Zombie,,,"[4477AA]Charged Asylum Freak Abomination[-]"
+
+# Cursed Freak3 - Purple MatColor (Dark Purple)
+asylumFreak3Cursed,entities,Zombie,,,"[774499]Cursed Asylum Freak Abomination[-]"
+
+# Alpha Freak3 - Red MatColor (Blood Red)
+asylumFreak3Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freak Abomination[-]"
+
+# Normal Freak4 - No MatColor (Muted Orange)
+asylumFreak4,entities,Zombie,,,"[CC7744]Asylum Freak Nightmare[-]"
+
+# Feral Freak4 - Dried Blood MatColor (Brownish Red)
+asylumFeralFreak4,entities,Zombie,,,"[BB6633]Feral Asylum Freak Nightmare[-]"
+
+# Radiated Freak4 - Green MatColor (Sickly Green)
+asylumFreak4Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freak Nightmare[-]"
+
+# Infernal Freak4 - Orange-red MatColor (Dark Red-Orange)
+asylumFreak4Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freak Nightmare[-]"
+
+# Charged Freak4 - Blue MatColor (Steel Blue)
+asylumFreak4Charged,entities,Zombie,,,"[4477AA]Charged Asylum Freak Nightmare[-]"
+
+# Cursed Freak4 - Purple MatColor (Dark Purple)
+asylumFreak4Cursed,entities,Zombie,,,"[774499]Cursed Asylum Freak Nightmare[-]"
+
+# Alpha Freak4 - Red MatColor (Blood Red)
+asylumFreak4Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freak Nightmare[-]"
+
+# Normal Freak5 - No MatColor (Muted Orange)
+asylumFreak5,entities,Zombie,,,"[CC7744]Asylum Freak Terror[-]"
+
+# Feral Freak5 - Dried Blood MatColor (Brownish Red)
+asylumFeralFreak5,entities,Zombie,,,"[BB6633]Feral Asylum Freak Terror[-]"
+
+# Radiated Freak5 - Green MatColor (Sickly Green)
+asylumFreak5Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freak Terror[-]"
+
+# Infernal Freak5 - Orange-red MatColor (Dark Red-Orange)
+asylumFreak5Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freak Terror[-]"
+
+# Charged Freak5 - Blue MatColor (Steel Blue)
+asylumFreak5Charged,entities,Zombie,,,"[4477AA]Charged Asylum Freak Terror[-]"
+
+# Cursed Freak5 - Purple MatColor (Dark Purple)
+asylumFreak5Cursed,entities,Zombie,,,"[774499]Cursed Asylum Freak Terror[-]"
+
+# Alpha Freak5 - Red MatColor (Blood Red)
+asylumFreak5Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freak Terror[-]"
+
+# Normal Freddy - No MatColor (Muted Orange)
+asylumFreddy,entities,Zombie,,,"[CC7744]Asylum Freddy Krueger[-]"
+
+# Feral Freddy - Yellow MatColor (Darker Orange)
+asylumFeralFreddy,entities,Zombie,,,"[BB6633]Feral Asylum Freddy Krueger[-]"
+
+# Radiated Freddy - Green MatColor (Sickly Green)
+asylumFreddyRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Freddy Krueger[-]"
+
+# Infernal Freddy - Orange-red MatColor (Dark Red-Orange)
+asylumFreddyInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Freddy Krueger[-]"
+
+# Charged Freddy - Blue MatColor (Steel Blue)
+asylumFreddyCharged,entities,Zombie,,,"[4477AA]Charged Asylum Freddy Krueger[-]"
+
+# Cursed Freddy - Purple MatColor (Dark Purple)
+asylumFreddyCursed,entities,Zombie,,,"[774499]Cursed Asylum Freddy Krueger[-]"
+
+# Alpha Freddy - Red MatColor (Blood Red)
+asylumFreddyAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Freddy Krueger[-]"
+
+# Normal Art The Clown - No MatColor (Muted Orange)
+asylumArtTheClown,entities,Zombie,,,"[CC7744]Asylum Art The Clown[-]"
+
+# Feral Art The Clown - Yellow MatColor (Darker Orange)
+asylumFeralArtTheClown,entities,Zombie,,,"[BB6633]Feral Asylum Art The Clown[-]"
+
+# Radiated Art The Clown - Green MatColor (Sickly Green)
+asylumArtTheClownRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Art The Clown[-]"
+
+# Infernal Art The Clown - Orange-red MatColor (Dark Red-Orange)
+asylumArtTheClownInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Art The Clown[-]"
+
+# Charged Art The Clown - Blue MatColor (Steel Blue)
+asylumArtTheClownCharged,entities,Zombie,,,"[4477AA]Charged Asylum Art The Clown[-]"
+
+# Cursed Art The Clown - Purple MatColor (Dark Purple)
+asylumArtTheClownCursed,entities,Zombie,,,"[774499]Cursed Asylum Art The Clown[-]"
+
+# Alpha Art The Clown - Red MatColor (Blood Red)
+asylumArtTheClownAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Art The Clown[-]"
+
+# ========================================
+# NUN ENTITY SERIES
+# ========================================
+
+# Normal Nun - No MatColor (Muted Orange)
+asylumNun,entities,Zombie,,,"[CC7744]Asylum Nun[-]"
+
+# Feral Nun - Yellow MatColor (Darker Orange)
+asylumFeralNun,entities,Zombie,,,"[BB6633]Feral Asylum Nun[-]"
+
+# Radiated Nun - Green MatColor (Sickly Green)
+asylumNunRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Nun[-]"
+
+# Infernal Nun - Orange-red MatColor (Dark Red-Orange)
+asylumNunInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Nun[-]"
+
+# Charged Nun - Blue MatColor (Steel Blue)
+asylumNunCharged,entities,Zombie,,,"[4477AA]Charged Asylum Nun[-]"
+
+# Cursed Nun - Purple MatColor (Dark Purple)
+asylumNunCursed,entities,Zombie,,,"[774499]Cursed Asylum Nun[-]"
+
+# Alpha Nun - Red MatColor (Blood Red)
+asylumNunAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Nun[-]"
+
+# Normal Gremlin - No MatColor (Muted Orange)
+asylumGremlin,entities,Zombie,,,"[CC7744]Asylum Gremlin[-]"
+
+# Feral Gremlin - Yellow MatColor (Darker Orange)
+asylumFeralGremlin,entities,Zombie,,,"[BB6633]Feral Asylum Gremlin[-]"
+
+# Radiated Gremlin - Green MatColor (Sickly Green)
+asylumGremlinRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Gremlin[-]"
+
+# Infernal Gremlin - Orange-red MatColor (Dark Red-Orange)
+asylumGremlinInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Gremlin[-]"
+
+# Charged Gremlin - Blue MatColor (Steel Blue)
+asylumGremlinCharged,entities,Zombie,,,"[4477AA]Charged Asylum Gremlin[-]"
+
+# Cursed Gremlin - Purple MatColor (Dark Purple)
+asylumGremlinCursed,entities,Zombie,,,"[774499]Cursed Asylum Gremlin[-]"
+
+# Alpha Gremlin - Red MatColor (Blood Red)
+asylumGremlinAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Gremlin[-]"
+
+# ========================================
+# JASON VOORHEES ENTITY SERIES
+# ========================================
+
+# Normal Jason Voorhees - No MatColor (Muted Orange)
+asylumJason4,entities,Zombie,,,"[CC7744]Asylum Jason Voorhees[-]"
+
+# Feral Jason Voorhees - Yellow MatColor (Darker Orange)
+asylumFeralJason4,entities,Zombie,,,"[BB6633]Feral Asylum Jason Voorhees[-]"
+
+# Radiated Jason Voorhees - Green MatColor (Sickly Green)
+asylumJason4Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Jason Voorhees[-]"
+
+# Infernal Jason Voorhees - Orange-red MatColor (Dark Red-Orange)
+asylumJason4Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Jason Voorhees[-]"
+
+# Charged Jason Voorhees - Blue MatColor (Steel Blue)
+asylumJason4Charged,entities,Zombie,,,"[4477AA]Charged Asylum Jason Voorhees[-]"
+
+# Cursed Jason Voorhees - Purple MatColor (Dark Purple)
+asylumJason4Cursed,entities,Zombie,,,"[774499]Cursed Asylum Jason Voorhees[-]"
+
+# Alpha Jason Voorhees - Red MatColor (Blood Red)
+asylumJason4Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Jason Voorhees[-]"
+
+# ========================================
+# CHUCKY ENTITY SERIES
+# ========================================
+
+# Normal Chucky - No MatColor (Muted Orange)
+asylumChucky,entities,Zombie,,,"[CC7744]Asylum Chucky[-]"
+
+# Feral Chucky - Yellow MatColor (Darker Orange)
+asylumFeralChucky,entities,Zombie,,,"[BB6633]Feral Asylum Chucky[-]"
+
+# Radiated Chucky - Green MatColor (Sickly Green)
+asylumChuckyRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Chucky[-]"
+
+# Infernal Chucky - Orange-red MatColor (Dark Red-Orange)
+asylumChuckyInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Chucky[-]"
+
+# Charged Chucky - Blue MatColor (Steel Blue)
+asylumChuckyCharged,entities,Zombie,,,"[4477AA]Charged Asylum Chucky[-]"
+
+# Cursed Chucky - Purple MatColor (Dark Purple)
+asylumChuckyCursed,entities,Zombie,,,"[774499]Cursed Asylum Chucky[-]"
+
+# Alpha Chucky - Red MatColor (Blood Red)
+asylumChuckyAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Chucky[-]"
+
+# ========================================
+# ANNABELLE ENTITY SERIES
+# ========================================
+
+# Normal Annabelle - No MatColor (Muted Orange)
+asylumAnnabelle,entities,Zombie,,,"[CC7744]Asylum Annabelle[-]"
+
+# Feral Annabelle - Yellow MatColor (Darker Orange)
+asylumFeralAnnabelle,entities,Zombie,,,"[BB6633]Feral Asylum Annabelle[-]"
+
+# Radiated Annabelle - Green MatColor (Sickly Green)
+asylumAnnabelleRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Annabelle[-]"
+
+# Infernal Annabelle - Orange-red MatColor (Dark Red-Orange)
+asylumAnnabelleInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Annabelle[-]"
+
+# Charged Annabelle - Blue MatColor (Steel Blue)
+asylumAnnabelleCharged,entities,Zombie,,,"[4477AA]Charged Asylum Annabelle[-]"
+
+# Cursed Annabelle - Purple MatColor (Dark Purple)
+asylumAnnabelleCursed,entities,Zombie,,,"[774499]Cursed Asylum Annabelle[-]"
+
+# Alpha Annabelle - Red MatColor (Blood Red)
+asylumAnnabelleAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Annabelle[-]"
+
+# ========================================
+# MICHAEL MYERS ENTITY SERIES
+# ========================================
+
+# Normal Michael Myers - No MatColor (Muted Orange)
+asylumMyers,entities,Zombie,,,"[CC7744]Asylum Michael Myers[-]"
+
+# Feral Michael Myers - Yellow MatColor (Darker Orange)
+asylumFeralMyers,entities,Zombie,,,"[BB6633]Feral Asylum Michael Myers[-]"
+
+# Radiated Michael Myers - Green MatColor (Sickly Green)
+asylumMyersRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Michael Myers[-]"
+
+# Infernal Michael Myers - Orange-red MatColor (Dark Red-Orange)
+asylumMyersInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Michael Myers[-]"
+
+# Charged Michael Myers - Blue MatColor (Steel Blue)
+asylumMyersCharged,entities,Zombie,,,"[4477AA]Charged Asylum Michael Myers[-]"
+
+# Cursed Michael Myers - Purple MatColor (Dark Purple)
+asylumMyersCursed,entities,Zombie,,,"[774499]Cursed Asylum Michael Myers[-]"
+
+# Alpha Michael Myers - Red MatColor (Blood Red)
+asylumMyersAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Michael Myers[-]"
+
+
+# Normal Insect1 - No MatColor (Muted Orange)
+asylumInsect1,entities,Zombie,,,"[CC7744]Asylum Insect Drone[-]"
+
+# Feral Insect1 - Dried Blood MatColor (Brownish Red)
+asylumFeralInsect1,entities,Zombie,,,"[BB6633]Feral Asylum Insect Drone[-]"
+
+# Radiated Insect1 - Green MatColor (Sickly Green)
+asylumInsect1Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Insect Drone[-]"
+
+# Infernal Insect1 - Orange-red MatColor (Dark Red-Orange)
+asylumInsect1Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Insect Drone[-]"
+
+# Charged Insect1 - Blue MatColor (Steel Blue)
+asylumInsect1Charged,entities,Zombie,,,"[4477AA]Charged Asylum Insect Drone[-]"
+
+# Cursed Insect1 - Purple MatColor (Dark Purple)
+asylumInsect1Cursed,entities,Zombie,,,"[774499]Cursed Asylum Insect Drone[-]"
+
+# Alpha Insect1 - Red MatColor (Blood Red)
+asylumInsect1Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Insect Drone[-]"
+
+# Normal Insect2 - No MatColor (Muted Orange)
+asylumInsect2,entities,Zombie,,,"[CC7744]Asylum Insect Warrior[-]"
+
+# Feral Insect2 - Dried Blood MatColor (Brownish Red)
+asylumFeralInsect2,entities,Zombie,,,"[BB6633]Feral Asylum Insect Warrior[-]"
+
+# Radiated Insect2 - Green MatColor (Sickly Green)
+asylumInsect2Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Insect Warrior[-]"
+
+# Infernal Insect2 - Orange-red MatColor (Dark Red-Orange)
+asylumInsect2Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Insect Warrior[-]"
+
+# Charged Insect2 - Blue MatColor (Steel Blue)
+asylumInsect2Charged,entities,Zombie,,,"[4477AA]Charged Asylum Insect Warrior[-]"
+
+# Cursed Insect2 - Purple MatColor (Dark Purple)
+asylumInsect2Cursed,entities,Zombie,,,"[774499]Cursed Asylum Insect Warrior[-]"
+
+# Alpha Insect2 - Red MatColor (Blood Red)
+asylumInsect2Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Insect Warrior[-]"
+
+# Normal Insect3 - No MatColor (Muted Orange)
+asylumInsect3,entities,Zombie,,,"[CC7744]Asylum Insect Hunter[-]"
+
+# Feral Insect3 - Dried Blood MatColor (Brownish Red)
+asylumFeralInsect3,entities,Zombie,,,"[BB6633]Feral Asylum Insect Hunter[-]"
+
+# Radiated Insect3 - Green MatColor (Sickly Green)
+asylumInsect3Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Insect Hunter[-]"
+
+# Infernal Insect3 - Orange-red MatColor (Dark Red-Orange)
+asylumInsect3Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Insect Hunter[-]"
+
+# Charged Insect3 - Blue MatColor (Steel Blue)
+asylumInsect3Charged,entities,Zombie,,,"[4477AA]Charged Asylum Insect Hunter[-]"
+
+# Cursed Insect3 - Purple MatColor (Dark Purple)
+asylumInsect3Cursed,entities,Zombie,,,"[774499]Cursed Asylum Insect Hunter[-]"
+
+# Alpha Insect3 - Red MatColor (Blood Red)
+asylumInsect3Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Insect Hunter[-]"
+
+# Normal Insect4 - No MatColor (Muted Orange)
+asylumInsect4,entities,Zombie,,,"[CC7744]Asylum Insect Predator[-]"
+
+# Feral Insect4 - Dried Blood MatColor (Brownish Red)
+asylumFeralInsect4,entities,Zombie,,,"[BB6633]Feral Asylum Insect Predator[-]"
+
+# Radiated Insect4 - Green MatColor (Sickly Green)
+asylumInsect4Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Insect Predator[-]"
+
+# Infernal Insect4 - Orange-red MatColor (Dark Red-Orange)
+asylumInsect4Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Insect Predator[-]"
+
+# Charged Insect4 - Blue MatColor (Steel Blue)
+asylumInsect4Charged,entities,Zombie,,,"[4477AA]Charged Asylum Insect Predator[-]"
+
+# Cursed Insect4 - Purple MatColor (Dark Purple)
+asylumInsect4Cursed,entities,Zombie,,,"[774499]Cursed Asylum Insect Predator[-]"
+
+# Alpha Insect4 - Red MatColor (Blood Red)
+asylumInsect4Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Insect Predator[-]"
+
+# Normal Insect5 - No MatColor (Muted Orange)
+asylumInsect5,entities,Zombie,,,"[CC7744]Asylum Insect Queen[-]"
+
+# Feral Insect5 - Dried Blood MatColor (Brownish Red)
+asylumFeralInsect5,entities,Zombie,,,"[BB6633]Feral Asylum Insect Queen[-]"
+
+# Radiated Insect5 - Green MatColor (Sickly Green)
+asylumInsect5Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Insect Queen[-]"
+
+# Infernal Insect5 - Orange-red MatColor (Dark Red-Orange)
+asylumInsect5Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Insect Queen[-]"
+
+# Charged Insect5 - Blue MatColor (Steel Blue)
+asylumInsect5Charged,entities,Zombie,,,"[4477AA]Charged Asylum Insect Queen[-]"
+
+# Cursed Insect5 - Purple MatColor (Dark Purple)
+asylumInsect5Cursed,entities,Zombie,,,"[774499]Cursed Asylum Insect Queen[-]"
+
+# Alpha Insect5 - Red MatColor (Blood Red)
+asylumInsect5Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Insect Queen[-]"
+
+# Normal Killerclown - No MatColor (Muted Orange)
+asylumKillerclown,entities,Zombie,,,"[CC7744]Asylum Killer Clown[-]"
+
+# Feral Killerclown - Dried Blood MatColor (Brownish Red)
+asylumFeralKillerclown,entities,Zombie,,,"[BB6633]Feral Asylum Killer Clown[-]"
+
+# Radiated Killerclown - Green MatColor (Sickly Green)
+asylumKillerclownRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Killer Clown[-]"
+
+# Infernal Killerclown - Orange-red MatColor (Dark Red-Orange)
+asylumKillerclownInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Killer Clown[-]"
+
+# Charged Killerclown - Blue MatColor (Steel Blue)
+asylumKillerclownCharged,entities,Zombie,,,"[4477AA]Charged Asylum Killer Clown[-]"
+
+# Cursed Killerclown - Purple MatColor (Dark Purple)
+asylumKillerclownCursed,entities,Zombie,,,"[774499]Cursed Asylum Killer Clown[-]"
+
+# Alpha Killerclown - Red MatColor (Blood Red)
+asylumKillerclownAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Killer Clown[-]"
+
+# Normal Mutant1 - No MatColor (Muted Orange)
+asylumMutant1,entities,Zombie,,,"[CC7744]Asylum Mutant Specimen[-]"
+
+# Feral Mutant1 - Dried Blood MatColor (Brownish Red)
+asylumFeralMutant1,entities,Zombie,,,"[BB6633]Feral Asylum Mutant Specimen[-]"
+
+# Radiated Mutant1 - Green MatColor (Sickly Green)
+asylumMutant1Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Mutant Specimen[-]"
+
+# Infernal Mutant1 - Orange-red MatColor (Dark Red-Orange)
+asylumMutant1Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Mutant Specimen[-]"
+
+# Charged Mutant1 - Blue MatColor (Steel Blue)
+asylumMutant1Charged,entities,Zombie,,,"[4477AA]Charged Asylum Mutant Specimen[-]"
+
+# Cursed Mutant1 - Purple MatColor (Dark Purple)
+asylumMutant1Cursed,entities,Zombie,,,"[774499]Cursed Asylum Mutant Specimen[-]"
+
+# Alpha Mutant1 - Red MatColor (Blood Red)
+asylumMutant1Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Mutant Specimen[-]"
+
+# Normal Mutant2 - No MatColor (Muted Orange)
+asylumMutant2,entities,Zombie,,,"[CC7744]Asylum Mutant Aberration[-]"
+
+# Feral Mutant2 - Dried Blood MatColor (Brownish Red)
+asylumFeralMutant2,entities,Zombie,,,"[BB6633]Feral Asylum Mutant Aberration[-]"
+
+# Radiated Mutant2 - Green MatColor (Sickly Green)
+asylumMutant2Radiated,entities,Zombie,,,"[66AA44]Radiated Asylum Mutant Aberration[-]"
+
+# Infernal Mutant2 - Orange-red MatColor (Dark Red-Orange)
+asylumMutant2Infernal,entities,Zombie,,,"[AA4422]Infernal Asylum Mutant Aberration[-]"
+
+# Charged Mutant2 - Blue MatColor (Steel Blue)
+asylumMutant2Charged,entities,Zombie,,,"[4477AA]Charged Asylum Mutant Aberration[-]"
+
+# Cursed Mutant2 - Purple MatColor (Dark Purple)
+asylumMutant2Cursed,entities,Zombie,,,"[774499]Cursed Asylum Mutant Aberration[-]"
+
+# Alpha Mutant2 - Red MatColor (Blood Red)
+asylumMutant2Alpha,entities,Zombie,,,"[AA3333]Alpha Asylum Mutant Aberration[-]"
+
+# Normal Orc - No MatColor (Muted Orange)
+asylumOrc,entities,Zombie,,,"[CC7744]Asylum Orc Warrior[-]"
+
+# Feral Orc - Dried Blood MatColor (Brownish Red)
+asylumFeralOrc,entities,Zombie,,,"[BB6633]Feral Asylum Orc Warrior[-]"
+
+# Radiated Orc - Green MatColor (Sickly Green)
+asylumOrcRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Orc Warrior[-]"
+
+# Infernal Orc - Orange-red MatColor (Dark Red-Orange)
+asylumOrcInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Orc Warrior[-]"
+
+# Charged Orc - Blue MatColor (Steel Blue)
+asylumOrcCharged,entities,Zombie,,,"[4477AA]Charged Asylum Orc Warrior[-]"
+
+# Cursed Orc - Purple MatColor (Dark Purple)
+asylumOrcCursed,entities,Zombie,,,"[774499]Cursed Asylum Orc Warrior[-]"
+
+# Alpha Orc - Red MatColor (Blood Red)
+asylumOrcAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Orc Warrior[-]"
+
+# Normal Ravingpuppet - No MatColor (Muted Orange)
+asylumRavingpuppet,entities,Zombie,,,"[CC7744]Asylum Raving Puppet[-]"
+
+# Feral Ravingpuppet - Dried Blood MatColor (Brownish Red)
+asylumFeralRavingpuppet,entities,Zombie,,,"[BB6633]Feral Asylum Raving Puppet[-]"
+
+# Radiated Ravingpuppet - Green MatColor (Sickly Green)
+asylumRavingpuppetRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Raving Puppet[-]"
+
+# Infernal Ravingpuppet - Orange-red MatColor (Dark Red-Orange)
+asylumRavingpuppetInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Raving Puppet[-]"
+
+# Charged Ravingpuppet - Blue MatColor (Steel Blue)
+asylumRavingpuppetCharged,entities,Zombie,,,"[4477AA]Charged Asylum Raving Puppet[-]"
+
+# Cursed Ravingpuppet - Purple MatColor (Dark Purple)
+asylumRavingpuppetCursed,entities,Zombie,,,"[774499]Cursed Asylum Raving Puppet[-]"
+
+# Alpha Ravingpuppet - Red MatColor (Blood Red)
+asylumRavingpuppetAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Raving Puppet[-]"
+
+# Normal Skele - No MatColor (Muted Orange)
+asylumSkele,entities,Zombie,,,"[CC7744]Asylum Skeleton[-]"
+
+# Feral Skele - Dried Blood MatColor (Brownish Red)
+asylumFeralSkele,entities,Zombie,,,"[BB6633]Feral Asylum Skeleton[-]"
+
+# Radiated Skele - Green MatColor (Sickly Green)
+asylumSkeleRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Skeleton[-]"
+
+# Infernal Skele - Orange-red MatColor (Dark Red-Orange)
+asylumSkeleInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Skeleton[-]"
+
+# Charged Skele - Blue MatColor (Steel Blue)
+asylumSkeleCharged,entities,Zombie,,,"[4477AA]Charged Asylum Skeleton[-]"
+
+# Cursed Skele - Purple MatColor (Dark Purple)
+asylumSkeleCursed,entities,Zombie,,,"[774499]Cursed Asylum Skeleton[-]"
+
+# Alpha Skele - Red MatColor (Blood Red)
+asylumSkeleAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Skeleton[-]"
+
+# Normal Zombie1 - No MatColor (Muted Orange)
+asylumZombie1,entities,Zombie,,,"[CC7744]Marcus[-]"
+
+# Feral Zombie1 - Dried Blood MatColor (Brownish Red)
+asylumFeralZombie1,entities,Zombie,,,"[BB6633]Feral Marcus[-]"
+
+# Radiated Zombie1 - Green MatColor (Sickly Green)
+asylumZombie1Radiated,entities,Zombie,,,"[66AA44]Radiated Marcus[-]"
+
+# Infernal Zombie1 - Orange-red MatColor (Dark Red-Orange)
+asylumZombie1Infernal,entities,Zombie,,,"[AA4422]Infernal Marcus[-]"
+
+# Charged Zombie1 - Blue MatColor (Steel Blue)
+asylumZombie1Charged,entities,Zombie,,,"[4477AA]Charged Marcus[-]"
+
+# Cursed Zombie1 - Purple MatColor (Dark Purple)
+asylumZombie1Cursed,entities,Zombie,,,"[774499]Cursed Marcus[-]"
+
+# Alpha Zombie1 - Red MatColor (Blood Red)
+asylumZombie1Alpha,entities,Zombie,,,"[AA3333]Alpha Marcus[-]"
+
+# Normal Zombie2 - No MatColor (Muted Orange)
+asylumZombie2,entities,Zombie,,,"[CC7744]Cletus[-]"
+
+# Feral Zombie2 - Dried Blood MatColor (Brownish Red)
+asylumFeralZombie2,entities,Zombie,,,"[BB6633]Feral Cletus[-]"
+
+# Radiated Zombie2 - Green MatColor (Sickly Green)
+asylumZombie2Radiated,entities,Zombie,,,"[66AA44]Radiated Cletus[-]"
+
+# Infernal Zombie2 - Orange-red MatColor (Dark Red-Orange)
+asylumZombie2Infernal,entities,Zombie,,,"[AA4422]Infernal Cletus[-]"
+
+# Charged Zombie2 - Blue MatColor (Steel Blue)
+asylumZombie2Charged,entities,Zombie,,,"[4477AA]Charged Cletus[-]"
+
+# Cursed Zombie2 - Purple MatColor (Dark Purple)
+asylumZombie2Cursed,entities,Zombie,,,"[774499]Cursed Cletus[-]"
+
+# Alpha Zombie2 - Red MatColor (Blood Red)
+asylumZombie2Alpha,entities,Zombie,,,"[AA3333]Alpha Cletus[-]"
+
+# Normal Zombie3 - No MatColor (Muted Orange)
+asylumZombie3,entities,Zombie,,,"[CC7744]David[-]"
+
+# Feral Zombie3 - Dried Blood MatColor (Brownish Red)
+asylumFeralZombie3,entities,Zombie,,,"[BB6633]Feral David[-]"
+
+# Radiated Zombie3 - Green MatColor (Sickly Green)
+asylumZombie3Radiated,entities,Zombie,,,"[66AA44]Radiated David[-]"
+
+# Infernal Zombie3 - Orange-red MatColor (Dark Red-Orange)
+asylumZombie3Infernal,entities,Zombie,,,"[AA4422]Infernal David[-]"
+
+# Charged Zombie3 - Blue MatColor (Steel Blue)
+asylumZombie3Charged,entities,Zombie,,,"[4477AA]Charged David[-]"
+
+# Cursed Zombie3 - Purple MatColor (Dark Purple)
+asylumZombie3Cursed,entities,Zombie,,,"[774499]Cursed David[-]"
+
+# Alpha Zombie3 - Red MatColor (Blood Red)
+asylumZombie3Alpha,entities,Zombie,,,"[AA3333]Alpha David[-]"
+
+# Normal Zombie4 - No MatColor (Muted Orange)
+asylumZombie4,entities,Zombie,,,"[CC7744]Officer Blake[-]"
+
+# Feral Zombie4 - Dried Blood MatColor (Brownish Red)
+asylumFeralZombie4,entities,Zombie,,,"[BB6633]Feral Officer Blake[-]"
+
+# Radiated Zombie4 - Green MatColor (Sickly Green)
+asylumZombie4Radiated,entities,Zombie,,,"[66AA44]Radiated Officer Blake[-]"
+
+# Infernal Zombie4 - Orange-red MatColor (Dark Red-Orange)
+asylumZombie4Infernal,entities,Zombie,,,"[AA4422]Infernal Officer Blake[-]"
+
+# Charged Zombie4 - Blue MatColor (Steel Blue)
+asylumZombie4Charged,entities,Zombie,,,"[4477AA]Charged Officer Blake[-]"
+
+# Cursed Zombie4 - Purple MatColor (Dark Purple)
+asylumZombie4Cursed,entities,Zombie,,,"[774499]Cursed Officer Blake[-]"
+
+# Alpha Zombie4 - Red MatColor (Blood Red)
+asylumZombie4Alpha,entities,Zombie,,,"[AA3333]Alpha Officer Blake[-]"
+
+# Normal Turtle - No MatColor (Muted Orange)
+asylumTurtle,entities,Zombie,,,"[CC7744]Asylum Turtle Beast[-]"
+
+# Feral Turtle - Dried Blood MatColor (Brownish Red)
+asylumFeralTurtle,entities,Zombie,,,"[BB6633]Feral Asylum Turtle Beast[-]"
+
+# Radiated Turtle - Green MatColor (Sickly Green)
+asylumTurtleRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Turtle Beast[-]"
+
+# Infernal Turtle - Orange-red MatColor (Dark Red-Orange)
+asylumTurtleInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Turtle Beast[-]"
+
+# Charged Turtle - Blue MatColor (Steel Blue)
+asylumTurtleCharged,entities,Zombie,,,"[4477AA]Charged Asylum Turtle Beast[-]"
+
+# Cursed Turtle - Purple MatColor (Dark Purple)
+asylumTurtleCursed,entities,Zombie,,,"[774499]Cursed Asylum Turtle Beast[-]"
+
+# Alpha Turtle - Red MatColor (Blood Red)
+asylumTurtleAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Turtle Beast[-]"
+
+# Normal Lumberjack - No MatColor (Muted Orange)
+asylumLumberjack,entities,Zombie,,,"[CC7744]Asylum Lumberjack[-]"
+
+# Feral Lumberjack - Dried Blood MatColor (Brownish Red)
+asylumFeralLumberjack,entities,Zombie,,,"[BB6633]Feral Asylum Lumberjack[-]"
+
+# Radiated Lumberjack - Green MatColor (Sickly Green)
+asylumLumberjackRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Lumberjack[-]"
+
+# Infernal Lumberjack - Orange-red MatColor (Dark Red-Orange)
+asylumLumberjackInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Lumberjack[-]"
+
+# Charged Lumberjack - Blue MatColor (Steel Blue)
+asylumLumberjackCharged,entities,Zombie,,,"[4477AA]Charged Asylum Lumberjack[-]"
+
+# Cursed Lumberjack - Purple MatColor (Dark Purple)
+asylumLumberjackCursed,entities,Zombie,,,"[774499]Cursed Asylum Lumberjack[-]"
+
+# Alpha Lumberjack - Red MatColor (Blood Red)
+asylumLumberjackAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Lumberjack[-]"
+
+# ========================================
+# SLEDGEGUY ENTITY SERIES
+# ========================================
+
+# Normal Sledgeguy - No MatColor (Muted Orange)
+asylumSledgeguy,entities,Zombie,,,"[CC7744]Asylum Sledgehammer Brute[-]"
+
+# Feral Sledgeguy - Dried Blood MatColor (Brownish Red)
+asylumFeralSledgeguy,entities,Zombie,,,"[BB6633]Feral Asylum Sledgehammer Brute[-]"
+
+# Radiated Sledgeguy - Radiated MatColor (Sickly Green)
+asylumSledgeguyRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Sledgehammer Brute[-]"
+
+# Infernal Sledgeguy - Infernal MatColor (Dark Red)
+asylumSledgeguyInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Sledgehammer Brute[-]"
+
+# Charged Sledgeguy - Charged MatColor (Electric Blue)
+asylumSledgeguyCharged,entities,Zombie,,,"[4488CC]Charged Asylum Sledgehammer Brute[-]"
+
+# Cursed Sledgeguy - Cursed MatColor (Dark Purple)
+asylumSledgeguyCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Sledgehammer Brute[-]"
+
+# Alpha Sledgeguy - Alpha MatColor (Bright Gold)
+asylumSledgeguyAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Sledgehammer Brute[-]"
+
+# ========================================
+# HAZMATGUY ENTITY SERIES
+# ========================================
+
+# Normal Hazmatguy - No MatColor (Muted Orange)
+asylumHazmatguy,entities,Zombie,,,"[CC7744]Asylum Hazmat Specialist[-]"
+
+# Feral Hazmatguy - Dried Blood MatColor (Brownish Red)
+asylumFeralHazmatguy,entities,Zombie,,,"[BB6633]Feral Asylum Hazmat Specialist[-]"
+
+# Radiated Hazmatguy - Radiated MatColor (Sickly Green)
+asylumHazmatguyRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Hazmat Specialist[-]"
+
+# Infernal Hazmatguy - Infernal MatColor (Dark Red)
+asylumHazmatguyInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Hazmat Specialist[-]"
+
+# Charged Hazmatguy - Charged MatColor (Electric Blue)
+asylumHazmatguyCharged,entities,Zombie,,,"[4488CC]Charged Asylum Hazmat Specialist[-]"
+
+# Cursed Hazmatguy - Cursed MatColor (Dark Purple)
+asylumHazmatguyCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Hazmat Specialist[-]"
+
+# Alpha Hazmatguy - Alpha MatColor (Bright Gold)
+asylumHazmatguyAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Hazmat Specialist[-]"
+
+# ========================================
+# KILLERCLOWN ENTITY SERIES
+# ========================================
+
+# Normal Killerclown - No MatColor (Muted Orange)
+asylumKillerclown,entities,Zombie,,,"[CC7744]Asylum Killer Clown[-]"
+
+# Feral Killerclown - Dried Blood MatColor (Brownish Red)
+asylumFeralKillerclown,entities,Zombie,,,"[BB6633]Feral Asylum Killer Clown[-]"
+
+# Radiated Killerclown - Radiated MatColor (Sickly Green)
+asylumKillerclownRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Killer Clown[-]"
+
+# Infernal Killerclown - Infernal MatColor (Dark Red)
+asylumKillerclownInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Killer Clown[-]"
+
+# Charged Killerclown - Charged MatColor (Electric Blue)
+asylumKillerclownCharged,entities,Zombie,,,"[4488CC]Charged Asylum Killer Clown[-]"
+
+# Cursed Killerclown - Cursed MatColor (Dark Purple)
+asylumKillerclownCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Killer Clown[-]"
+
+# Alpha Killerclown - Alpha MatColor (Bright Gold)
+asylumKillerclownAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Killer Clown[-]"
+
+# ========================================
+# BUSINESSMAN ENTITY SERIES
+# ========================================
+
+# Normal Businessman - No MatColor (Muted Orange)
+asylumBusinessman,entities,Zombie,,,"[CC7744]Asylum Corporate Executive[-]"
+
+# Feral Businessman - Dried Blood MatColor (Brownish Red)
+asylumFeralBusinessman,entities,Zombie,,,"[BB6633]Feral Asylum Corporate Executive[-]"
+
+# Radiated Businessman - Radiated MatColor (Sickly Green)
+asylumBusinessmanRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Corporate Executive[-]"
+
+# Infernal Businessman - Infernal MatColor (Dark Red)
+asylumBusinessmanInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Corporate Executive[-]"
+
+# Charged Businessman - Charged MatColor (Electric Blue)
+asylumBusinessmanCharged,entities,Zombie,,,"[4488CC]Charged Asylum Corporate Executive[-]"
+
+# Cursed Businessman - Cursed MatColor (Dark Purple)
+asylumBusinessmanCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Corporate Executive[-]"
+
+# Alpha Businessman - Alpha MatColor (Bright Gold)
+asylumBusinessmanAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Corporate Executive[-]"
+
+# ========================================
+# BEHEMOTH ENTITY SERIES
+# ========================================
+
+# Normal Behemoth - No MatColor (Muted Orange)
+asylumBehemoth,entities,Zombie,,,"[CC7744]Asylum Behemoth[-]"
+
+# Feral Behemoth - Dried Blood MatColor (Brownish Red)
+asylumFeralBehemoth,entities,Zombie,,,"[BB6633]Feral Asylum Behemoth[-]"
+
+# Radiated Behemoth - Radiated MatColor (Sickly Green)
+asylumBehemothRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Behemoth[-]"
+
+# Infernal Behemoth - Infernal MatColor (Dark Red)
+asylumBehemothInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Behemoth[-]"
+
+# Charged Behemoth - Charged MatColor (Electric Blue)
+asylumBehemothCharged,entities,Zombie,,,"[4488CC]Charged Asylum Behemoth[-]"
+
+# Cursed Behemoth - Cursed MatColor (Dark Purple)
+asylumBehemothCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Behemoth[-]"
+
+# Alpha Behemoth - Alpha MatColor (Bright Gold)
+asylumBehemothAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Behemoth[-]"
+
+# ========================================
+# LOLLY ENTITY SERIES
+# ========================================
+
+# Normal Lolly - No MatColor (Muted Orange)
+asylumLolly,entities,Zombie,,,"[CC7744]Asylum Lollybob[-]"
+
+# Feral Lolly - Dried Blood MatColor (Brownish Red)
+asylumFeralLolly,entities,Zombie,,,"[BB6633]Feral Asylum Lollybob[-]"
+
+# Radiated Lolly - Radiated MatColor (Sickly Green)
+asylumLollyRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Lollybob[-]"
+
+# Infernal Lolly - Infernal MatColor (Dark Red)
+asylumLollyInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Lollybob[-]"
+
+# Charged Lolly - Charged MatColor (Electric Blue)
+asylumLollyCharged,entities,Zombie,,,"[4488CC]Charged Asylum Lollybob[-]"
+
+# Cursed Lolly - Cursed MatColor (Dark Purple)
+asylumLollyCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Lollybob[-]"
+
+# Alpha Lolly - Alpha MatColor (Bright Gold)
+asylumLollyAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Lollybob[-]"
+
+# ========================================
+# PSYCHIATRIST ENTITY SERIES
+# ========================================
+
+# Normal Psychiatrist - No MatColor (Muted Orange)
+asylumPsychiatrist,entities,Zombie,,,"[CC7744]Asylum Psychiatrist[-]"
+
+# Feral Psychiatrist - Dried Blood MatColor (Brownish Red)
+asylumFeralPsychiatrist,entities,Zombie,,,"[BB6633]Feral Asylum Psychiatrist[-]"
+
+# Radiated Psychiatrist - Radiated MatColor (Sickly Green)
+asylumPsychiatristRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Psychiatrist[-]"
+
+# Infernal Psychiatrist - Infernal MatColor (Dark Red)
+asylumPsychiatristInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Psychiatrist[-]"
+
+# Charged Psychiatrist - Charged MatColor (Electric Blue)
+asylumPsychiatristCharged,entities,Zombie,,,"[4488CC]Charged Asylum Psychiatrist[-]"
+
+# Cursed Psychiatrist - Cursed MatColor (Dark Purple)
+asylumPsychiatristCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Psychiatrist[-]"
+
+# Alpha Psychiatrist - Alpha MatColor (Bright Gold)
+asylumPsychiatristAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Psychiatrist[-]"
+
+# ========================================
+# JESTER ENTITY SERIES
+# ========================================
+
+# Normal Jester - No MatColor (Muted Orange)
+asylumJester,entities,Zombie,,,"[CC7744]Asylum Jester[-]"
+
+# Feral Jester - Dried Blood MatColor (Brownish Red)
+asylumFeralJester,entities,Zombie,,,"[BB6633]Feral Asylum Jester[-]"
+
+# Radiated Jester - Radiated MatColor (Sickly Green)
+asylumJesterRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Jester[-]"
+
+# Infernal Jester - Infernal MatColor (Dark Red)
+asylumJesterInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Jester[-]"
+
+# Charged Jester - Charged MatColor (Electric Blue)
+asylumJesterCharged,entities,Zombie,,,"[4488CC]Charged Asylum Jester[-]"
+
+# Cursed Jester - Cursed MatColor (Dark Purple)
+asylumJesterCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Jester[-]"
+
+# Alpha Jester - Alpha MatColor (Bright Gold)
+asylumJesterAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Jester[-]"
+
+# ========================================
+# MANIAC ENTITY SERIES
+# ========================================
+
+# Normal Maniac - No MatColor (Muted Orange)
+asylumManiac,entities,Zombie,,,"[CC7744]Asylum Maniac[-]"
+
+# Feral Maniac - Dried Blood MatColor (Brownish Red)
+asylumFeralManiac,entities,Zombie,,,"[BB6633]Feral Asylum Maniac[-]"
+
+# Radiated Maniac - Radiated MatColor (Sickly Green)
+asylumManiacRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Maniac[-]"
+
+# Infernal Maniac - Infernal MatColor (Dark Red)
+asylumManiacInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Maniac[-]"
+
+# Charged Maniac - Charged MatColor (Electric Blue)
+asylumManiacCharged,entities,Zombie,,,"[4488CC]Charged Asylum Maniac[-]"
+
+# Cursed Maniac - Cursed MatColor (Dark Purple)
+asylumManiacCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Maniac[-]"
+
+# Alpha Maniac - Alpha MatColor (Bright Gold)
+asylumManiacAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Maniac[-]"
+
+# ========================================
+# MANIAC GIRL ENTITY SERIES
+# ========================================
+
+# Normal Maniac Girl - No MatColor (Muted Orange)
+asylumManiacGirl,entities,Zombie,,,"[CC7744]Asylum Maniac Girl[-]"
+
+# Feral Maniac Girl - Yellow MatColor (Darker Orange)
+asylumFeralManiacGirl,entities,Zombie,,,"[BB6633]Feral Asylum Maniac Girl[-]"
+
+# Radiated Maniac Girl - Green MatColor (Sickly Green)
+asylumManiacGirlRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Maniac Girl[-]"
+
+# Infernal Maniac Girl - Orange-red MatColor (Dark Red-Orange)
+asylumManiacGirlInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Maniac Girl[-]"
+
+# Charged Maniac Girl - Blue MatColor (Steel Blue)
+asylumManiacGirlCharged,entities,Zombie,,,"[4477AA]Charged Asylum Maniac Girl[-]"
+
+# Cursed Maniac Girl - Purple MatColor (Dark Purple)
+asylumManiacGirlCursed,entities,Zombie,,,"[774499]Cursed Asylum Maniac Girl[-]"
+
+# Alpha Maniac Girl - Red MatColor (Blood Red)
+asylumManiacGirlAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Maniac Girl[-]"
+
+# ========================================
+# LIL PALE GIRL ENTITY SERIES
+# ========================================
+
+# Normal Lil Pale Girl - No MatColor (Muted Orange)
+asylumLilPaleGirl,entities,Zombie,,,"[CC7744]Asylum Lil Pale Girl[-]"
+
+# Feral Lil Pale Girl - Yellow MatColor (Darker Orange)
+asylumFeralLilPaleGirl,entities,Zombie,,,"[BB6633]Feral Asylum Lil Pale Girl[-]"
+
+# Radiated Lil Pale Girl - Green MatColor (Sickly Green)
+asylumLilPaleGirlRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Lil Pale Girl[-]"
+
+# Infernal Lil Pale Girl - Orange-red MatColor (Dark Red-Orange)
+asylumLilPaleGirlInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Lil Pale Girl[-]"
+
+# Charged Lil Pale Girl - Blue MatColor (Steel Blue)
+asylumLilPaleGirlCharged,entities,Zombie,,,"[4477AA]Charged Asylum Lil Pale Girl[-]"
+
+# Cursed Lil Pale Girl - Purple MatColor (Dark Purple)
+asylumLilPaleGirlCursed,entities,Zombie,,,"[774499]Cursed Asylum Lil Pale Girl[-]"
+
+# Alpha Lil Pale Girl - Red MatColor (Blood Red)
+asylumLilPaleGirlAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Lil Pale Girl[-]"
+
+# ========================================
+# TWISTY THE CLOWN ENTITY SERIES
+# ========================================
+
+# Normal Twisty The Clown - No MatColor (Muted Orange)
+asylumTwistyTheClown,entities,Zombie,,,"[CC7744]Asylum Twisty The Clown[-]"
+
+# Feral Twisty The Clown - Yellow MatColor (Darker Orange)
+asylumFeralTwistyTheClown,entities,Zombie,,,"[BB6633]Feral Asylum Twisty The Clown[-]"
+
+# Radiated Twisty The Clown - Green MatColor (Sickly Green)
+asylumTwistyTheClownRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Twisty The Clown[-]"
+
+# Infernal Twisty The Clown - Orange-red MatColor (Dark Red-Orange)
+asylumTwistyTheClownInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Twisty The Clown[-]"
+
+# Charged Twisty The Clown - Blue MatColor (Steel Blue)
+asylumTwistyTheClownCharged,entities,Zombie,,,"[4477AA]Charged Asylum Twisty The Clown[-]"
+
+# Cursed Twisty The Clown - Purple MatColor (Dark Purple)
+asylumTwistyTheClownCursed,entities,Zombie,,,"[774499]Cursed Asylum Twisty The Clown[-]"
+
+# Alpha Twisty The Clown - Red MatColor (Blood Red)
+asylumTwistyTheClownAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Twisty The Clown[-]"
+
+# ========================================
+# REGAN ENTITY SERIES
+# ========================================
+
+# Normal Regan - No MatColor (Muted Orange)
+asylumRegan,entities,Zombie,,,"[CC7744]Asylum Regan[-]"
+
+# Feral Regan - Yellow MatColor (Darker Orange)
+asylumFeralRegan,entities,Zombie,,,"[BB6633]Feral Asylum Regan[-]"
+
+# Radiated Regan - Green MatColor (Sickly Green)
+asylumReganRadiated,entities,Zombie,,,"[66AA44]Radiated Asylum Regan[-]"
+
+# Infernal Regan - Orange-red MatColor (Dark Red-Orange)
+asylumReganInfernal,entities,Zombie,,,"[AA4422]Infernal Asylum Regan[-]"
+
+# Charged Regan - Blue MatColor (Steel Blue)
+asylumReganCharged,entities,Zombie,,,"[4477AA]Charged Asylum Regan[-]"
+
+# Cursed Regan - Purple MatColor (Dark Purple)
+asylumReganCursed,entities,Zombie,,,"[774499]Cursed Asylum Regan[-]"
+
+# Alpha Regan - Red MatColor (Blood Red)
+asylumReganAlpha,entities,Zombie,,,"[AA3333]Alpha Asylum Regan[-]"
+
+# ========================================
+# RATTLER ENTITY SERIES
+# ========================================
+
+# Normal Rattler - No MatColor (Muted Orange)
+asylumRattler,entities,Zombie,,,"[CC7744]Asylum Rattler[-]"
+
+# Feral Rattler - Dried Blood MatColor (Brownish Red)
+asylumFeralRattler,entities,Zombie,,,"[BB6633]Feral Asylum Rattler[-]"
+
+# Radiated Rattler - Radiated MatColor (Sickly Green)
+asylumRattlerRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Rattler[-]"
+
+# Infernal Rattler - Infernal MatColor (Dark Red)
+asylumRattlerInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Rattler[-]"
+
+# Charged Rattler - Charged MatColor (Electric Blue)
+asylumRattlerCharged,entities,Zombie,,,"[4488CC]Charged Asylum Rattler[-]"
+
+# Cursed Rattler - Cursed MatColor (Dark Purple)
+asylumRattlerCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Rattler[-]"
+
+# Alpha Rattler - Alpha MatColor (Bright Gold)
+asylumRattlerAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Rattler[-]"
+
+# ========================================
+# NURSE ENTITY SERIES
+# ========================================
+
+# Normal Nurse - No MatColor (Muted Orange)
+asylumNurse,entities,Zombie,,,"[CC7744]Asylum Nurse[-]"
+
+# Feral Nurse - Dried Blood MatColor (Brownish Red)
+asylumFeralNurse,entities,Zombie,,,"[BB6633]Feral Asylum Nurse[-]"
+
+# Radiated Nurse - Radiated MatColor (Sickly Green)
+asylumNurseRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Nurse[-]"
+
+# Infernal Nurse - Infernal MatColor (Dark Red)
+asylumNurseInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Nurse[-]"
+
+# Charged Nurse - Charged MatColor (Electric Blue)
+asylumNurseCharged,entities,Zombie,,,"[4488CC]Charged Asylum Nurse[-]"
+
+# Cursed Nurse - Cursed MatColor (Dark Purple)
+asylumNurseCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Nurse[-]"
+
+# Alpha Nurse - Alpha MatColor (Bright Gold)
+asylumNurseAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Nurse[-]"
+
+# ========================================
+# DOCTOR ENTITY SERIES
+# ========================================
+
+# Normal Doctor - No MatColor (Muted Orange)
+asylumDoctor,entities,Zombie,,,"[CC7744]Asylum Doctor[-]"
+
+# Feral Doctor - Dried Blood MatColor (Brownish Red)
+asylumFeralDoctor,entities,Zombie,,,"[BB6633]Feral Asylum Doctor[-]"
+
+# Radiated Doctor - Radiated MatColor (Sickly Green)
+asylumDoctorRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Doctor[-]"
+
+# Infernal Doctor - Infernal MatColor (Dark Red)
+asylumDoctorInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Doctor[-]"
+
+# Charged Doctor - Charged MatColor (Electric Blue)
+asylumDoctorCharged,entities,Zombie,,,"[4488CC]Charged Asylum Doctor[-]"
+
+# Cursed Doctor - Cursed MatColor (Dark Purple)
+asylumDoctorCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Doctor[-]"
+
+# Alpha Doctor - Alpha MatColor (Bright Gold)
+asylumDoctorAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Doctor[-]"
+
+# ========================================
+# THUG ENTITY SERIES
+# ========================================
+
+# Normal Thug - No MatColor (Muted Orange)
+asylumThug,entities,Zombie,,,"[CC7744]Asylum Thug[-]"
+
+# Feral Thug - Dried Blood MatColor (Brownish Red)
+asylumFeralThug,entities,Zombie,,,"[BB6633]Feral Asylum Thug[-]"
+
+# Radiated Thug - Radiated MatColor (Sickly Green)
+asylumThugRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Thug[-]"
+
+# Infernal Thug - Infernal MatColor (Dark Red)
+asylumThugInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Thug[-]"
+
+# Charged Thug - Charged MatColor (Electric Blue)
+asylumThugCharged,entities,Zombie,,,"[4488CC]Charged Asylum Thug[-]"
+
+# Cursed Thug - Cursed MatColor (Dark Purple)
+asylumThugCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Thug[-]"
+
+# Alpha Thug - Alpha MatColor (Bright Gold)
+asylumThugAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Thug[-]"
+
+# ========================================
+# COP ENTITY SERIES (SHERIFF)
+# ========================================
+
+# Normal Cop - No MatColor (Muted Orange)
+asylumCop,entities,Zombie,,,"[CC7744]Asylum Sheriff[-]"
+
+# Feral Cop - Dried Blood MatColor (Brownish Red)
+asylumFeralCop,entities,Zombie,,,"[BB6633]Feral Asylum Sheriff[-]"
+
+# Radiated Cop - Radiated MatColor (Sickly Green)
+asylumCopRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Sheriff[-]"
+
+# Infernal Cop - Infernal MatColor (Dark Red)
+asylumCopInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Sheriff[-]"
+
+# Charged Cop - Charged MatColor (Electric Blue)
+asylumCopCharged,entities,Zombie,,,"[4488CC]Charged Asylum Sheriff[-]"
+
+# Cursed Cop - Cursed MatColor (Dark Purple)
+asylumCopCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Sheriff[-]"
+
+# Alpha Cop - Alpha MatColor (Bright Gold)
+asylumCopAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Sheriff[-]"
+
+# ========================================
+# LITCH ENTITY SERIES
+# ========================================
+
+# Normal Litch - No MatColor (Muted Orange)
+asylumLitch,entities,Zombie,,,"[CC7744]Asylum Lich[-]"
+
+# Feral Litch - Dried Blood MatColor (Brownish Red)
+asylumFeralLitch,entities,Zombie,,,"[BB6633]Feral Asylum Lich[-]"
+
+# Radiated Litch - Radiated MatColor (Sickly Green)
+asylumLitchRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Lich[-]"
+
+# Infernal Litch - Infernal MatColor (Dark Red)
+asylumLitchInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Lich[-]"
+
+# Charged Litch - Charged MatColor (Electric Blue)
+asylumLitchCharged,entities,Zombie,,,"[4488CC]Charged Asylum Lich[-]"
+
+# Cursed Litch - Cursed MatColor (Dark Purple)
+asylumLitchCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Lich[-]"
+
+# Alpha Litch - Alpha MatColor (Bright Gold)
+asylumLitchAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Lich[-]"
+
+# ========================================
+# ZOMBIEX ENTITY SERIES
+# ========================================
+
+# Normal ZombieX - No MatColor (Muted Orange)
+asylumZombiex,entities,Zombie,,,"[CC7744]Asylum Zombie X[-]"
+
+# Feral ZombieX - Dried Blood MatColor (Brownish Red)
+asylumFeralZombiex,entities,Zombie,,,"[BB6633]Feral Asylum Zombie X[-]"
+
+# Radiated ZombieX - Radiated MatColor (Sickly Green)
+asylumZombiexRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Zombie X[-]"
+
+# Infernal ZombieX - Infernal MatColor (Dark Red)
+asylumZombiexInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Zombie X[-]"
+
+# Charged ZombieX - Charged MatColor (Electric Blue)
+asylumZombiexCharged,entities,Zombie,,,"[4488CC]Charged Asylum Zombie X[-]"
+
+# Cursed ZombieX - Cursed MatColor (Dark Purple)
+asylumZombiexCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Zombie X[-]"
+
+# Alpha ZombieX - Alpha MatColor (Bright Gold)
+asylumZombiexAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Zombie X[-]"
+
+# ========================================
+# STALKER ENTITY SERIES
+# ========================================
+
+# Normal Stalker - No MatColor (Muted Orange)
+asylumStalker,entities,Zombie,,,"[CC7744]Asylum Stalker[-]"
+
+# Feral Stalker - Dried Blood MatColor (Brownish Red)
+asylumFeralStalker,entities,Zombie,,,"[BB6633]Feral Asylum Stalker[-]"
+
+# Radiated Stalker - Radiated MatColor (Sickly Green)
+asylumStalkerRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Stalker[-]"
+
+# Infernal Stalker - Infernal MatColor (Dark Red)
+asylumStalkerInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Stalker[-]"
+
+# Charged Stalker - Charged MatColor (Electric Blue)
+asylumStalkerCharged,entities,Zombie,,,"[4488CC]Charged Asylum Stalker[-]"
+
+# Cursed Stalker - Cursed MatColor (Dark Purple)
+asylumStalkerCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Stalker[-]"
+
+# Alpha Stalker - Alpha MatColor (Bright Gold)
+asylumStalkerAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Stalker[-]"
+
+# ========================================
+# CLAWS ENTITY SERIES
+# ========================================
+
+# Normal Claws - No MatColor (Muted Orange)
+asylumClaws,entities,Zombie,,,"[CC7744]Asylum Claws[-]"
+
+# Feral Claws - Dried Blood MatColor (Brownish Red)
+asylumFeralClaws,entities,Zombie,,,"[BB6633]Feral Asylum Claws[-]"
+
+# Radiated Claws - Radiated MatColor (Sickly Green)
+asylumClawsRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Claws[-]"
+
+# Infernal Claws - Infernal MatColor (Dark Red)
+asylumClawsInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Claws[-]"
+
+# Charged Claws - Charged MatColor (Electric Blue)
+asylumClawsCharged,entities,Zombie,,,"[4488CC]Charged Asylum Claws[-]"
+
+# Cursed Claws - Cursed MatColor (Dark Purple)
+asylumClawsCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Claws[-]"
+
+# Alpha Claws - Alpha MatColor (Bright Gold)
+asylumClawsAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Claws[-]"
+
+# ========================================
+# ABOMINATION3000X ENTITY SERIES
+# ========================================
+
+# Normal Abomination3000X - No MatColor (Muted Orange)
+asylumAbomination3000x,entities,Zombie,,,"[CC7744]Asylum Abomination 3000X[-]"
+
+# Feral Abomination3000X - Dried Blood MatColor (Brownish Red)
+asylumFeralAbomination3000x,entities,Zombie,,,"[BB6633]Feral Asylum Abomination 3000X[-]"
+
+# Radiated Abomination3000X - Radiated MatColor (Sickly Green)
+asylumAbomination3000xRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Abomination 3000X[-]"
+
+# Infernal Abomination3000X - Infernal MatColor (Dark Red)
+asylumAbomination3000xInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Abomination 3000X[-]"
+
+# Charged Abomination3000X - Charged MatColor (Electric Blue)
+asylumAbomination3000xCharged,entities,Zombie,,,"[4488CC]Charged Asylum Abomination 3000X[-]"
+
+# Cursed Abomination3000X - Cursed MatColor (Dark Purple)
+asylumAbomination3000xCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Abomination 3000X[-]"
+
+# Alpha Abomination3000X - Alpha MatColor (Bright Gold)
+asylumAbomination3000xAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Abomination 3000X[-]"
+
+# ========================================
+# REAPERX ENTITY SERIES
+# ========================================
+
+# Normal ReaperX - No MatColor (Muted Orange)
+asylumReaperx,entities,Zombie,,,"[CC7744]Asylum Reaper X[-]"
+
+# Feral ReaperX - Dried Blood MatColor (Brownish Red)
+asylumFeralReaperx,entities,Zombie,,,"[BB6633]Feral Asylum Reaper X[-]"
+
+# Radiated ReaperX - Radiated MatColor (Sickly Green)
+asylumReaperxRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Reaper X[-]"
+
+# Infernal ReaperX - Infernal MatColor (Dark Red)
+asylumReaperxInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Reaper X[-]"
+
+# Charged ReaperX - Charged MatColor (Electric Blue)
+asylumReaperxCharged,entities,Zombie,,,"[4488CC]Charged Asylum Reaper X[-]"
+
+# Cursed ReaperX - Cursed MatColor (Dark Purple)
+asylumReaperxCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Reaper X[-]"
+
+# Alpha ReaperX - Alpha MatColor (Bright Gold)
+asylumReaperxAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Reaper X[-]"
+
+# ========================================
+# BANE ENTITY SERIES
+# ========================================
+
+# Normal Bane - No MatColor (Muted Orange)
+asylumBane,entities,Zombie,,,"[CC7744]Asylum Bane[-]"
+
+# Feral Bane - Dried Blood MatColor (Brownish Red)
+asylumFeralBane,entities,Zombie,,,"[BB6633]Feral Asylum Bane[-]"
+
+# Radiated Bane - Radiated MatColor (Sickly Green)
+asylumBaneRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Bane[-]"
+
+# Infernal Bane - Infernal MatColor (Dark Red)
+asylumBaneInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Bane[-]"
+
+# Charged Bane - Charged MatColor (Electric Blue)
+asylumBaneCharged,entities,Zombie,,,"[4488CC]Charged Asylum Bane[-]"
+
+# Cursed Bane - Cursed MatColor (Dark Purple)
+asylumBaneCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Bane[-]"
+
+# Alpha Bane - Alpha MatColor (Bright Gold)
+asylumBaneAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Bane[-]"
+
+# ========================================
+# SCYRIS ENTITY SERIES
+# ========================================
+
+# Normal Scyris - No MatColor (Muted Orange)
+asylumSuccubus,entities,Zombie,,,"[CC7744]Asylum Scyris[-]"
+
+# Feral Scyris - Dried Blood MatColor (Brownish Red)
+asylumFeralSuccubus,entities,Zombie,,,"[BB6633]Feral Asylum Scyris[-]"
+
+# Radiated Scyris - Radiated MatColor (Sickly Green)
+asylumSuccubusRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Scyris[-]"
+
+# Infernal Scyris - Infernal MatColor (Dark Red)
+asylumSuccubusInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Scyris[-]"
+
+# Charged Scyris - Charged MatColor (Electric Blue)
+asylumSuccubusCharged,entities,Zombie,,,"[4488CC]Charged Asylum Scyris[-]"
+
+# Cursed Scyris - Cursed MatColor (Dark Purple)
+asylumSuccubusCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Scyris[-]"
+
+# Alpha Scyris - Alpha MatColor (Bright Gold)
+asylumSuccubusAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Scyris[-]"
+
+# ========================================
+# SMILEY ENTITY SERIES
+# ========================================
+
+# Normal Smiley - No MatColor (Muted Orange)
+asylumSmiley,entities,Zombie,,,"[CC7744]Asylum Smiley[-]"
+
+# Feral Smiley - Dried Blood MatColor (Brownish Red)
+asylumFeralSmiley,entities,Zombie,,,"[BB6633]Feral Asylum Smiley[-]"
+
+# Radiated Smiley - Radiated MatColor (Sickly Green)
+asylumSmileyRadiated,entities,Zombie,,,"[88CC44]Radiated Asylum Smiley[-]"
+
+# Infernal Smiley - Infernal MatColor (Dark Red)
+asylumSmileyInfernal,entities,Zombie,,,"[CC4444]Infernal Asylum Smiley[-]"
+
+# Charged Smiley - Charged MatColor (Electric Blue)
+asylumSmileyCharged,entities,Zombie,,,"[4488CC]Charged Asylum Smiley[-]"
+
+# Cursed Smiley - Cursed MatColor (Dark Purple)
+asylumSmileyCursed,entities,Zombie,,,"[8844CC]Cursed Asylum Smiley[-]"
+
+# Alpha Smiley - Alpha MatColor (Bright Gold)
+asylumSmileyAlpha,entities,Zombie,,,"[FFD700]Alpha Asylum Smiley[-]"
+
+# ========================================
+# VANILLA CURSED/ALPHA ZOMBIE LOCALIZATION
+# ========================================
+# Added by: add_vanilla_cursed_alpha_to_asylum_revised.py
+
+# Vanilla Cursed Tier Zombies - Purple MatColor, GS 500+
+zombieArleneCursed,entities,Zombie,,,"[9966FF]Cursed Arlene[-]"
+zombieBikerCursed,entities,Zombie,,,"[9966FF]Cursed Biker[-]"
+zombieBoeCursed,entities,Zombie,,,"[9966FF]Cursed Boe[-]"
+zombieBowlerCursed,entities,Zombie,,,"[9966FF]Cursed Bowler[-]"
+zombieBurntCursed,entities,Zombie,,,"[9966FF]Cursed Burnt[-]"
+zombieBusinessManCursed,entities,Zombie,,,"[9966FF]Cursed Businessman[-]"
+zombieDarleneCursed,entities,Zombie,,,"[9966FF]Cursed Darlene[-]"
+zombieDemolitionCursed,entities,Zombie,,,"[9966FF]Cursed Demolition[-]"
+zombieFatCopCursed,entities,Zombie,,,"[9966FF]Cursed Fat Cop[-]"
+zombieFatHawaiianCursed,entities,Zombie,,,"[9966FF]Cursed Fat Hawaiian[-]"
+zombieFemaleFatCursed,entities,Zombie,,,"[9966FF]Cursed Fat Woman[-]"
+zombieFrostclawCursed,entities,Zombie,,,"[9966FF]Cursed Frostclaw[-]"
+zombieInmateCursed,entities,Zombie,,,"[9966FF]Cursed Inmate[-]"
+zombieJanitorCursed,entities,Zombie,,,"[9966FF]Cursed Janitor[-]"
+zombieJoeCursed,entities,Zombie,,,"[9966FF]Cursed Joe[-]"
+zombieLabCursed,entities,Zombie,,,"[9966FF]Cursed Lab Worker[-]"
+zombieLumberjackCursed,entities,Zombie,,,"[9966FF]Cursed Lumberjack[-]"
+zombieMaleHazmatCursed,entities,Zombie,,,"[9966FF]Cursed Hazmat Worker[-]"
+zombieMarleneCursed,entities,Zombie,,,"[9966FF]Cursed Marlene[-]"
+zombieMoeCursed,entities,Zombie,,,"[9966FF]Cursed Moe[-]"
+zombieMutatedCursed,entities,Zombie,,,"[9966FF]Cursed Mutated[-]"
+zombieNurseCursed,entities,Zombie,,,"[9966FF]Cursed Nurse[-]"
+zombiePartyGirlCursed,entities,Zombie,,,"[9966FF]Cursed Party Girl[-]"
+zombiePlagueSpitterCursed,entities,Zombie,,,"[9966FF]Cursed Plague Spitter[-]"
+zombieScreamerCursed,entities,Zombie,,,"[9966FF]Cursed Screamer[-]"
+zombieSkateboarderCursed,entities,Zombie,,,"[9966FF]Cursed Skateboarder[-]"
+zombieSoldierCursed,entities,Zombie,,,"[9966FF]Cursed Soldier[-]"
+zombieSpiderCursed,entities,Zombie,,,"[9966FF]Cursed Spider[-]"
+zombieSteveCrawlerCursed,entities,Zombie,,,"[9966FF]Cursed Steve Crawler[-]"
+zombieSteveCursed,entities,Zombie,,,"[9966FF]Cursed Steve[-]"
+zombieTomClarkCursed,entities,Zombie,,,"[9966FF]Cursed Tom Clark[-]"
+zombieUtilityWorkerCursed,entities,Zombie,,,"[9966FF]Cursed Utility Worker[-]"
+zombieWightFeralCursed,entities,Zombie,,,"[9966FF]Cursed Wight Feral[-]"
+zombieYoCursed,entities,Zombie,,,"[9966FF]Cursed Yo[-]"
+
+# Vanilla Alpha Tier Zombies - Red MatColor, GS 600+
+zombieArleneAlpha,entities,Zombie,,,"[FF3333]Alpha Arlene[-]"
+zombieBikerAlpha,entities,Zombie,,,"[FF3333]Alpha Biker[-]"
+zombieBoeAlpha,entities,Zombie,,,"[FF3333]Alpha Boe[-]"
+zombieBowlerAlpha,entities,Zombie,,,"[FF3333]Alpha Bowler[-]"
+zombieBurntAlpha,entities,Zombie,,,"[FF3333]Alpha Burnt[-]"
+zombieBusinessManAlpha,entities,Zombie,,,"[FF3333]Alpha Businessman[-]"
+zombieDarleneAlpha,entities,Zombie,,,"[FF3333]Alpha Darlene[-]"
+zombieDemolitionAlpha,entities,Zombie,,,"[FF3333]Alpha Demolition[-]"
+zombieFatCopAlpha,entities,Zombie,,,"[FF3333]Alpha Fat Cop[-]"
+zombieFatHawaiianAlpha,entities,Zombie,,,"[FF3333]Alpha Fat Hawaiian[-]"
+zombieFemaleFatAlpha,entities,Zombie,,,"[FF3333]Alpha Fat Woman[-]"
+zombieFrostclawAlpha,entities,Zombie,,,"[FF3333]Alpha Frostclaw[-]"
+zombieInmateAlpha,entities,Zombie,,,"[FF3333]Alpha Inmate[-]"
+zombieJanitorAlpha,entities,Zombie,,,"[FF3333]Alpha Janitor[-]"
+zombieJoeAlpha,entities,Zombie,,,"[FF3333]Alpha Joe[-]"
+zombieLabAlpha,entities,Zombie,,,"[FF3333]Alpha Lab Worker[-]"
+zombieLumberjackAlpha,entities,Zombie,,,"[FF3333]Alpha Lumberjack[-]"
+zombieMaleHazmatAlpha,entities,Zombie,,,"[FF3333]Alpha Hazmat Worker[-]"
+zombieMarleneAlpha,entities,Zombie,,,"[FF3333]Alpha Marlene[-]"
+zombieMoeAlpha,entities,Zombie,,,"[FF3333]Alpha Moe[-]"
+zombieMutatedAlpha,entities,Zombie,,,"[FF3333]Alpha Mutated[-]"
+zombieNurseAlpha,entities,Zombie,,,"[FF3333]Alpha Nurse[-]"
+zombiePartyGirlAlpha,entities,Zombie,,,"[FF3333]Alpha Party Girl[-]"
+zombiePlagueSpitterAlpha,entities,Zombie,,,"[FF3333]Alpha Plague Spitter[-]"
+zombieScreamerAlpha,entities,Zombie,,,"[FF3333]Alpha Screamer[-]"
+zombieSkateboarderAlpha,entities,Zombie,,,"[FF3333]Alpha Skateboarder[-]"
+zombieSoldierAlpha,entities,Zombie,,,"[FF3333]Alpha Soldier[-]"
+zombieSpiderAlpha,entities,Zombie,,,"[FF3333]Alpha Spider[-]"
+zombieSteveAlpha,entities,Zombie,,,"[FF3333]Alpha Steve[-]"
+zombieSteveCrawlerAlpha,entities,Zombie,,,"[FF3333]Alpha Steve Crawler[-]"
+zombieTomClarkAlpha,entities,Zombie,,,"[FF3333]Alpha Tom Clark[-]"
+zombieUtilityWorkerAlpha,entities,Zombie,,,"[FF3333]Alpha Utility Worker[-]"
+zombieWightFeralAlpha,entities,Zombie,,,"[FF3333]Alpha Wight Feral[-]"
+zombieYoAlpha,entities,Zombie,,,"[FF3333]Alpha Yo[-]"

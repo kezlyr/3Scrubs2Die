@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="150, 24, 150" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="137, 4, 134" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="120, 3, 81" />
+    </property>
+    <property class="quest_stone_boulder">
+      <property name="0" value="132, 3, 129" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="TotalVertices" value="267839" />
+    <property name="TotalTriangles" value="302795" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="191028" />
+      <property name="Triangles" value="193599" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="17905" />
+      <property name="Triangles" value="13364" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="58906" />
+      <property name="Triangles" value="95832" />
+    </property>
+  </property>
+</prefab>

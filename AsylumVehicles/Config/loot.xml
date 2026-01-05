@@ -1,0 +1,51 @@
+<AsylumOverhaul>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleDHLTruck" count="0" size="9,10" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGMadMax" count="0" size="9,6" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGBloodPhoenix" count="0" size="9,5" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGRustyMate" count="0" size="9,5" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGBuggy" count="0" size="9,4" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGForklift" count="0" size="9,4" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGAsylumClassic" count="0" size="9,5" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+
+
+	<append xpath="/lootcontainers" >
+		<lootcontainer name="vehicleSVGAsylumHotrod" count="0" size="9,5" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+	</append>
+
+
+
+
+
+
+
+</AsylumOverhaul>

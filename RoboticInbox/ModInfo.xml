@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="RoboticInbox" />
+	<DisplayName value="Robotic Inbox" />
+	<Description value="A special container that automatically sorts and distributes items to other nearby storage containers." />
+	<Author value="Duncanois" />
+	<Version value="2.0" />
+	<Website value="" />
+</ModInfo>

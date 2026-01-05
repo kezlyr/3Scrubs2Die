@@ -1,0 +1,107 @@
+<ScriptsMeleeArsenal-LegendaryWeapons>
+
+	<append xpath="/blocks">
+
+       <block name="decoLWMallfaka">
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LegendaryWeaponsMiscDeco.unity3d?LWDecoMallfaka.prefab"/>
+			<property name="CustomIcon" value="IconLWDecoBlank"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property class="RepairItems">
+			<property name="resourceCloth" value="50"/>
+			</property>
+			<drop event="Harvest" name="decoLWMallfaka" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="EconomicValue" value="56"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="DescriptionKey" value="decoLWMallfakaDesc"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name ="Class" value="PoweredLight"/>
+		</block>
+		
+       <block name="decoLWSteen">
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LegendaryWeaponsMiscDeco.unity3d?LWDecoSteenFreeFalling.prefab"/>
+			<property name="CustomIcon" value="IconLWDecoBlank"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property class="RepairItems">
+			<property name="resourceCloth" value="50"/>
+			</property>
+			<drop event="Harvest" name="decoLWSteen" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="EconomicValue" value="56"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="DescriptionKey" value="decoLWSteenDesc"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name ="Class" value="PoweredLight"/>
+		</block>
+		
+       <block name="decoLWWorm">
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LegendaryWeaponsMiscDeco.unity3d?LWDecoWorm.prefab"/>
+			<property name="CustomIcon" value="IconLWDecoBlank"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property class="RepairItems">
+			<property name="resourceCloth" value="50"/>
+			</property>
+			<drop event="Harvest" name="decoLWWorm" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="EconomicValue" value="56"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="DescriptionKey" value="decoLWWormDesc"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name ="Class" value="PoweredLight"/>
+		</block>
+		
+       <block name="decoLWWorm2">
+			<property name="MaxDamage" value="1000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/LegendaryWeaponsMiscDeco.unity3d?LWDecoWorm2.prefab"/>
+			<property name="CustomIcon" value="IconLWDecoBlank"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property class="RepairItems">
+			<property name="resourceCloth" value="50"/>
+			</property>
+			<drop event="Harvest" name="decoLWWorm2" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="EconomicValue" value="56"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="DescriptionKey" value="decoLWWorm2Desc"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name ="Class" value="PoweredLight"/>
+		</block>
+
+	</append>
+
+</ScriptsMeleeArsenal-LegendaryWeapons>

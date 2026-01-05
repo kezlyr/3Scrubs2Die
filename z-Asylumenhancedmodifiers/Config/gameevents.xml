@@ -1,0 +1,29 @@
+<Config>
+    <append xpath="/gameevents">
+    <action_sequence name="modBrassCatcherVi">
+        <action class="AddItems">
+        <property name="added_items" value="resourceBulletCasing" />
+        <property name="added_item_counts" value="1" />
+        </action>
+    </action_sequence>
+    </append>
+	
+    <append xpath="/gameevents">
+    <action_sequence name="modBulletTipCatcherVi">
+        <action class="AddItems">
+        <property name="added_items" value="resourceBulletTip" />
+        <property name="added_item_counts" value="1" />
+        </action>
+    </action_sequence>
+    </append>	
+	
+	<append xpath="/gameevents">
+    <action_sequence name="modFuelCatcherVi">
+        <action class="AddItems">
+        <property name="added_items" value="ammoGasCan" />
+        <property name="added_item_counts" value="1" />
+        </action>
+    </action_sequence>
+    </append>
+
+</Config>

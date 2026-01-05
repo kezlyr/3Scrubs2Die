@@ -1,0 +1,4 @@
+<configs>
+  <!-- A) Seviye başına skill point = 3 -->
+  <set xpath="/progression/level/@skill_points_per_level">3</set>
+</configs>

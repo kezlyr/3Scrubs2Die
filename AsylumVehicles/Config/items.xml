@@ -1,0 +1,335 @@
+<AsylumOverhaul>
+
+	<append xpath="/items">
+
+	<item name="vehicleSVGMadMaxPlaceable">
+			<property name="CustomIcon" value="IconSVGWarhound"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGMadMaxPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumMM"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="21000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGMadMax"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="8500"/>
+			</effect_group>
+		</item>
+
+	<item name="vehicleSVGBloodPhoenixPlaceable">
+			<property name="CustomIcon" value="IconSVGBloodPhoenix"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGBloodPhoenixPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumBP"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="20000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGBloodPhoenix"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+
+	<item name="vehicleSVGRustyMatePlaceable">
+			<property name="CustomIcon" value="IconSVGRustyMate"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGRustyMatePlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumRM"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="16000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGRustyMate"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="6500"/>
+			</effect_group>
+		</item>
+
+	<item name="vehicleSVGBuggyPlaceable">
+			<property name="CustomIcon" value="IconSVGDustDevil"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGBuggyPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumBuggy"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="TraderStageTemplate" value="vehicleTier2"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGBuggy"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="4500"/>
+			</effect_group>
+		</item>
+
+	<item name="vehicleSVGDHLTruckPlaceable">
+			<property name="CustomIcon" value="IconSVGDHLTruck"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGDHLTruckPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumTruck"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="27000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGDHLTruck"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+			</effect_group>
+		</item>
+
+	<item name="vehicleSVGForkliftPlaceable">
+			<property name="CustomIcon" value="IconSVGForklift"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGForkliftPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumFL"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="27000"/>
+			<property name="TraderStageTemplate" value="vehicleTier1"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGForklift"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSVGWarhoundChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGWarhoundAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGBloodPhoenixChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGBloodPhoenixAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGRustyMateChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGRustyMateAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGDustDevilChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGDustDevilAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGDHLTruckChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGDHLTruckAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGForkliftChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGForkliftAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+		<item name="vehicleSVGAsylumClassicPlaceable">
+			<property name="CustomIcon" value="IconSVGAsylumClassic"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGAsylumClassicPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumClassic"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="18000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGAsylumClassic"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSVGAsylumClassicChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGAsylumClassicAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+
+		<item name="vehicleSVGAsylumHotrodPlaceable">
+			<property name="CustomIcon" value="IconSVGAsylumHotrod"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/> <!-- Choose available mod types ,vplow,varmor,vstorage,vstorage-->
+			<property name="DescriptionKey" value="vehicleSVGAsylumHotrodPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AsylumVehicles.unity3d?AsylumHotrod"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="18000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleSVGAsylumHotrod"/>
+			</property>
+			<effect_group name="main" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSVGAsylumHotrodChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="IconSVGChassis"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleSVGAsylumHotrodAccessories">
+			<property name="Extends" value="vehicleBicycleHandlebars"/>
+			<property name="CustomIcon" value="IconSVGAccesoires"/>
+			<property name="Tags" value="vehiclesSkill"/>
+			<property name="EconomicValue" value="9000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+		</item>
+
+
+
+
+
+
+
+	</append>
+</AsylumOverhaul>
+
+

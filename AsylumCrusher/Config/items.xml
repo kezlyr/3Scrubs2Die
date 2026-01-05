@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/items">
+
+    <!-- Ammo Recycling Kits (open to receive components) -->
+    <item name="asylumRecycleKit9mmBall">
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKit9mmBallDesc"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Stacknumber" value="200"/>
+      <property name="Weight" value="0"/>
+      <property name="EconomicValue" value="100"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="SoundPickup" value="ammobox_grab"/>
+      <property name="SoundPlace" value="ammobox_place"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="10,10,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit762Ball">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="DescriptionKey" value="asylumRecycleKit762BallDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="10,30,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit44Ball">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="DescriptionKey" value="asylumRecycleKit44BallDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="10,20,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitShotgunShell">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="DescriptionKey" value="asylumRecycleKitShotgunShellDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="10,40,10"/>
+      </property>
+    </item>
+
+
+    <!-- HP/AP variants and Slugs -->
+    <item name="asylumRecycleKit9mmHP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletHP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit9mmHPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,10,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit9mmAP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletAP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit9mmAPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,20,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit762HP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletHP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit762HPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,30,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit762AP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletAP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit762APDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,50,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit44HP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletHP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit44HPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,20,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKit44AP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+      <property name="DescriptionKey" value="asylumRecycleKit44APDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,30,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitShotgunSlug">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunSlug"/>
+      <property name="DescriptionKey" value="asylumRecycleKitShotgunSlugDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="20,50,10"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitShotgunBreachingSlug">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunBreachingSlug"/>
+      <property name="DescriptionKey" value="asylumRecycleKitShotgunBreachingSlugDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceForgedSteel,resourceClayLump,resourceGunPowder,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="30,20,40,10"/>
+      </property>
+    </item>
+
+    <!-- Bulk Vanilla Ammo Recycle Kits (100 rounds) -->
+    <item name="asylumRecycleKitBulk9mmBall">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk9mmBallDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="100,100,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk762Ball">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk762BallDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="100,300,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk44Ball">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk44BallDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="100,200,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulkShotgunShell">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulkShotgunShellDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="100,400,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk9mmHP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletHP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk9mmHPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,100,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk9mmAP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletAP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk9mmAPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,200,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk762HP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletHP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk762HPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,300,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk762AP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletAP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk762APDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,500,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk44HP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletHP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk44HPDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,200,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulk44AP">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk44APDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="200,300,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulkShotgunSlug">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunSlug"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulkShotgunSlugDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="200,500,100"/>
+      </property>
+    </item>
+
+    <item name="asylumRecycleKitBulkShotgunBreachingSlug">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunBreachingSlug"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulkShotgunBreachingSlugDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceForgedSteel,resourceClayLump,resourceGunPowder,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="300,200,400,100"/>
+      </property>
+    </item>
+
+    <!-- Uranium Ammo Recycle Kits -->
+    <!-- 10 rounds = 5 crafts (2 bullets per craft) -->
+    <!-- 9mm Uranium: 1 core + 2 tips + 3 powder + 2 casings per 2 bullets -->
+    <item name="asylumRecycleKit9mmUranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="DescriptionKey" value="asylumRecycleKit9mmUraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="5,10,15,10"/>
+      </property>
+    </item>
+
+    <!-- .44 Uranium: 1 core + 3 tips + 4 powder + 2 casings per 2 bullets -->
+    <item name="asylumRecycleKit44Uranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="DescriptionKey" value="asylumRecycleKit44UraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="5,15,20,10"/>
+      </property>
+    </item>
+
+    <!-- 7.62 Uranium: 1 core + 3 tips + 5 powder + 2 casings per 2 bullets -->
+    <item name="asylumRecycleKit762Uranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="DescriptionKey" value="asylumRecycleKit762UraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="5,15,25,10"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Uranium: 1 core + 2 buckshot + 6 powder + 2 paper per 2 shells -->
+    <item name="asylumRecycleKitShotgunUranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="DescriptionKey" value="asylumRecycleKitShotgunUraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="5,10,30,10"/>
+      </property>
+    </item>
+
+    <!-- Incendiary Ammo Recycle Kits -->
+    <!-- 10 rounds = 2 crafts (5 bullets per craft) -->
+    <!-- 9mm Incendiary: 1 gel + 5 tips + 10 powder + 5 casings per 5 bullets -->
+    <item name="asylumRecycleKit9mmIncendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="DescriptionKey" value="asylumRecycleKit9mmIncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="2,10,20,10"/>
+      </property>
+    </item>
+
+    <!-- .44 Incendiary: 1 gel + 8 tips + 12 powder + 5 casings per 5 bullets -->
+    <item name="asylumRecycleKit44Incendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="DescriptionKey" value="asylumRecycleKit44IncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="2,16,24,10"/>
+      </property>
+    </item>
+
+    <!-- 7.62 Incendiary: 1 gel + 8 tips + 15 powder + 5 casings per 5 bullets -->
+    <item name="asylumRecycleKit762Incendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="DescriptionKey" value="asylumRecycleKit762IncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="2,16,30,10"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Incendiary: 1 gel + 5 buckshot + 18 powder + 5 paper per 5 shells -->
+    <item name="asylumRecycleKitShotgunIncendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="DescriptionKey" value="asylumRecycleKitShotgunIncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="2,10,36,10"/>
+      </property>
+    </item>
+
+    <!-- Bulk Uranium Ammo Recycle Kits (100 rounds) -->
+    <!-- 100 rounds = 50 crafts (2 bullets per craft) -->
+    <!-- 9mm Uranium Bulk: 50 cores + 100 tips + 150 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk9mmUranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk9mmUraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="50,100,150,100"/>
+      </property>
+    </item>
+
+    <!-- .44 Uranium Bulk: 50 cores + 150 tips + 200 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk44Uranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk44UraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="50,150,200,100"/>
+      </property>
+    </item>
+
+    <!-- 7.62 Uranium Bulk: 50 cores + 150 tips + 250 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk762Uranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk762UraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="50,150,250,100"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Uranium Bulk: 50 cores + 100 buckshot + 300 powder + 100 paper -->
+    <item name="asylumRecycleKitBulkShotgunUranium">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="CustomIconTint" value="66FF66"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulkShotgunUraniumDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceDepletedUraniumCore,resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="50,100,300,100"/>
+      </property>
+    </item>
+
+    <!-- Bulk Incendiary Ammo Recycle Kits (100 rounds) -->
+    <!-- 100 rounds = 20 crafts (5 bullets per craft) -->
+    <!-- 9mm Incendiary Bulk: 20 gel + 100 tips + 200 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk9mmIncendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk9mmIncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,100,200,100"/>
+      </property>
+    </item>
+
+    <!-- .44 Incendiary Bulk: 20 gel + 160 tips + 240 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk44Incendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk44IncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,160,240,100"/>
+      </property>
+    </item>
+
+    <!-- 7.62 Incendiary Bulk: 20 gel + 160 tips + 300 powder + 100 casings -->
+    <item name="asylumRecycleKitBulk762Incendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulk762IncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+        <property name="Create_item_count" value="20,160,300,100"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Incendiary Bulk: 20 gel + 100 buckshot + 360 powder + 100 paper -->
+    <item name="asylumRecycleKitBulkShotgunIncendiary">
+      <property name="Extends" value="asylumRecycleKit9mmBall"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="CustomIconTint" value="FF6600"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="asylumRecycleKitBulkShotgunIncendiaryDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceNapalmGel,resourceBuckshot,resourceGunPowder,resourcePaper"/>
+        <property name="Create_item_count" value="20,100,360,100"/>
+      </property>
+    </item>
+
+
+  </append>
+</configs>
+

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="150, 25, 150" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Zoning" value="none" />
+  <property name="POIMarkerSize" value="5, 5, 11#42, 0, 42#42, 0, 42#42, 0, 42#42, 0, 42#42, 0, 42#25, 0, 25#42, 0, 42#4, 1, 10#4, 2, 10#4, 2, 6#5, 5, 11" />
+  <property name="POIMarkerStart" value="19, 3, 67#80, 4, 0#84, 4, 52#24, 4, 56#28, 4, 108#80, 4, 108#125, 4, 0#28, 4, 0#66, 4, 57#80, 4, 80#4, 4, 100#19, 3, 67" />
+  <property name="POIMarkerGroup" value="container,2,3,4,5,6,7,8,greeble 1,greeble 2,greeble 3,container" />
+  <property name="POIMarkerTags" value="###########" />
+  <property name="POIMarkerType" value="PartSpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,PartSpawn,PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_countryresidential_back_lot8,,,,,,,,part_countryresidential_back_lot5,part_countryresidential_back_lot6,part_dumpster,part_countryresidential_back_lot7" />
+  <property name="POIMarkerPartRotations" value="2,1,2,0,3,1,0,3,2,2,0,2" />
+  <property name="POIMarkerPartSpawnChance" value="0.4,1,1,1,1,1,1,1,0.4,0.4,0.4,0.4" />
+  <property name="Tags" value="streettile, rwgonly" />
+  <property name="YOffset" value="-4" />
+  <property class="IndexedBlockOffsets">
+    <property class="challenge_sinks">
+      <property name="0" value="129, 5, 115" />
+    </property>
+    <property class="quest_wood_trees">
+      <property name="0" value="139, 5, 94" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="142, 4, 32" />
+    </property>
+    <property class="challenge_mech_parts">
+      <property name="0" value="129, 4, 116" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="140, 4, 117" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="80, 10, 102" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="147, 13, 50" />
+    </property>
+    <property class="challenge_gore">
+      <property name="0" value="128, 4, 29" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="128, 4, 113" />
+    </property>
+    <property class="quest_stone_boulder">
+      <property name="0" value="146, 4, 117" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="TotalVertices" value="360115" />
+    <property name="TotalTriangles" value="299610" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="251995" />
+      <property name="Triangles" value="174760" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="36196" />
+      <property name="Triangles" value="22426" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="12864" />
+      <property name="Triangles" value="6432" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="48" />
+      <property name="Triangles" value="24" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="59012" />
+      <property name="Triangles" value="95968" />
+    </property>
+  </property>
+</prefab>

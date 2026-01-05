@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="EditorGroups" value="UrbanDecay" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="YOffset" value="-4" />
+  <property name="RotationToFaceNorth" value="0" />
+  <property name="POIMarkerSize" value="60, 0, 60#60, 0, 60#60, 0, 60#42, 0, 42" />
+  <property name="POIMarkerStart" value="8, 4, 71#69, 4, 71#8, 4, 1#82, 4, 9" />
+  <property name="POIMarkerGroup" value="1,2,3,4" />
+  <property name="POIMarkerTags" value="###" />
+  <property name="POIMarkerType" value="POISpawn,POISpawn,POISpawn,POISpawn" />
+  <property name="POIMarkerPartToSpawn" value=",,," />
+  <property name="POIMarkerPartRotations" value="0,0,3,1" />
+  <property name="POIMarkerPartSpawnChance" value="1,1,1,1" />
+  <property name="Zoning" value="none" />
+  <property name="PrefabSize" value="150, 24, 150" />
+  <property name="Tags" value="streettile, rwgonly" />
+  <property class="Stats">
+    <property name="TotalVertices" value="275169" />
+    <property name="TotalTriangles" value="296060" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="184531" />
+      <property name="Triangles" value="180344" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="19714" />
+      <property name="Triangles" value="14040" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="12160" />
+      <property name="Triangles" value="6080" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="58764" />
+      <property name="Triangles" value="95596" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="145, 4, 142" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="132, 10, 52" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="127, 4, 49" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="142, 13, 81" />
+    </property>
+  </property>
+</prefab>

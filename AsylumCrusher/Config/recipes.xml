@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/recipes">
+
+    <!-- Craft the Crusher -->
+    <recipe name="asylumCrusher" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,asylumCrusher">
+      <ingredient name="resourceForgedTitanium" count="8"/>
+      <ingredient name="resourceMechanicalParts" count="15"/>
+      <ingredient name="resourceElectricParts" count="8"/>
+      <ingredient name="resourceDuctTape" count="5"/>
+    </recipe>
+
+    <!-- Ammo recycling: craft into a "kit" that yields parts when used -->
+    <!-- 9mm Ball -->
+    <recipe name="asylumRecycleKit9mmBall" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletBall" count="10"/>
+    </recipe>
+
+    <!-- 7.62 Ball -->
+    <recipe name="asylumRecycleKit762Ball" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletBall" count="10"/>
+    </recipe>
+
+    <!-- .44 Ball -->
+    <recipe name="asylumRecycleKit44Ball" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletBall" count="10"/>
+    </recipe>
+
+    <!-- Shotgun Shell -->
+    <recipe name="asylumRecycleKitShotgunShell" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunShell" count="10"/>
+    </recipe>
+
+    <!-- Forged ingot recycling: 1 forged -> 10 scrap (alternate recipes for existing items) -->
+    <recipe name="resourceScrapIron" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedIron" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapIron" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedSteel" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapCopper" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedCopper" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapZinc" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedZinc" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapAluminium" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedAluminium" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapCobalt" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedCobalt" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapTitanium" count="10" craft_area="crusher">
+      <ingredient name="resourceForgedTitanium" count="1"/>
+    </recipe>
+
+
+    <!-- 9mm HP/AP -->
+    <recipe name="asylumRecycleKit9mmHP" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletHP" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit9mmAP" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletAP" count="10"/>
+    </recipe>
+
+    <!-- 7.62 HP/AP -->
+    <recipe name="asylumRecycleKit762HP" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletHP" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit762AP" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletAP" count="10"/>
+    </recipe>
+
+    <!-- .44 HP/AP -->
+    <recipe name="asylumRecycleKit44HP" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletHP" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit44AP" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletAP" count="10"/>
+    </recipe>
+
+    <!-- Shotgun Slug / Breaching Slug -->
+    <recipe name="asylumRecycleKitShotgunSlug" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunSlug" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKitShotgunBreachingSlug" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunBreachingSlug" count="10"/>
+    </recipe>
+
+    <!-- Bulk Vanilla Ammo Recycling (100 rounds) -->
+    <recipe name="asylumRecycleKitBulk9mmBall" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletBall" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk762Ball" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletBall" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk44Ball" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletBall" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulkShotgunShell" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunShell" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk9mmHP" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletHP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk9mmAP" count="1" craft_area="crusher">
+      <ingredient name="ammo9mmBulletAP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk762HP" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletHP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk762AP" count="1" craft_area="crusher">
+      <ingredient name="ammo762mmBulletAP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk44HP" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletHP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk44AP" count="1" craft_area="crusher">
+      <ingredient name="ammo44MagnumBulletAP" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulkShotgunSlug" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunSlug" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulkShotgunBreachingSlug" count="1" craft_area="crusher">
+      <ingredient name="ammoShotgunBreachingSlug" count="100"/>
+    </recipe>
+
+    <!-- Uranium Ammo Recycling -->
+    <recipe name="asylumRecycleKit9mmUranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet9mm" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit44Uranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet44Mag" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit762Uranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet762mm" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKitShotgunUranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumShotgunShell" count="10"/>
+    </recipe>
+
+    <!-- Incendiary Ammo Recycling -->
+    <recipe name="asylumRecycleKit9mmIncendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet9mm" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit44Incendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet44Mag" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKit762Incendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet762mm" count="10"/>
+    </recipe>
+    <recipe name="asylumRecycleKitShotgunIncendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryShotgunShell" count="10"/>
+    </recipe>
+
+    <!-- Bulk Uranium Ammo Recycling (100 rounds) -->
+    <recipe name="asylumRecycleKitBulk9mmUranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet9mm" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk44Uranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet44Mag" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk762Uranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumBullet762mm" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulkShotgunUranium" count="1" craft_area="crusher">
+      <ingredient name="ammoUraniumShotgunShell" count="100"/>
+    </recipe>
+
+    <!-- Bulk Incendiary Ammo Recycling (100 rounds) -->
+    <recipe name="asylumRecycleKitBulk9mmIncendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet9mm" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk44Incendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet44Mag" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulk762Incendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryBullet762mm" count="100"/>
+    </recipe>
+    <recipe name="asylumRecycleKitBulkShotgunIncendiary" count="1" craft_area="crusher">
+      <ingredient name="ammoIncendiaryShotgunShell" count="100"/>
+    </recipe>
+
+
+  </append>
+</configs>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ZZ_NewOres" />
+	<DisplayName value="New Ores" />
+	<Description value="Adds new ore block variants." />
+	<Author value="Ceraphix" />
+	<Version value="0.1.0" />
+	<Website value="" />
+</xml>

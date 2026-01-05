@@ -1,0 +1,254 @@
+<AsylumOverhaul>
+
+	<append xpath="/recipes">
+
+		<recipe name="vehicleSVGMadMaxPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGWarhoundChassis" count="1"/>
+			<ingredient name="vehicleSVGWarhoundAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGBloodPhoenixPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGBloodPhoenixChassis" count="1"/>
+			<ingredient name="vehicleSVGBloodPhoenixAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGRustyMatePlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGRustyMateChassis" count="1"/>
+			<ingredient name="vehicleSVGRustyMateAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGBuggyPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGDustDevilChassis" count="1"/>
+			<ingredient name="vehicleSVGDustDevilAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGDHLTruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGDHLTruckChassis" count="1"/>
+			<ingredient name="vehicleSVGDHLTruckAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGForkliftPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGForkliftChassis" count="1"/>
+			<ingredient name="vehicleSVGForkliftAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGWarhoundAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="33"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGWarhoundChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceLeather" count="40"/>
+			<ingredient name="resourceElectricParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGBloodPhoenixAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="33"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGBloodPhoenixChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceLeather" count="40"/>
+			<ingredient name="resourceElectricParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGRustyMateAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="33"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGRustyMateChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceLeather" count="40"/>
+			<ingredient name="resourceElectricParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGDustDevilAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="33"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGDustDevilChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="120"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceLeather" count="40"/>
+			<ingredient name="resourceElectricParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGDHLTruckAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="33"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGDHLTruckChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="350"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceLeather" count="40"/>
+			<ingredient name="resourceElectricParts" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGForkliftAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="resourceHeadlight" count="2"/>
+			<ingredient name="resourceMetalPipe" count="25"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGForkliftChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceDuctTape" count="10"/>
+			<ingredient name="resourceLeather" count="20"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGAsylumClassicPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGAsylumClassicChassis" count="1"/>
+			<ingredient name="vehicleSVGAsylumClassicAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGAsylumClassicAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="30"/>
+			<ingredient name="resourceHeadlight" count="6"/>
+			<ingredient name="resourceMetalPipe" count="45"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="14"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGAsylumClassicChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="130"/>
+			<ingredient name="resourceMechanicalParts" count="35"/>
+			<ingredient name="resourceDuctTape" count="18"/>
+			<ingredient name="resourceLeather" count="35"/>
+			<ingredient name="resourceElectricParts" count="14"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+
+		<recipe name="vehicleSVGAsylumHotrodPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleSVGAsylumHotrodChassis" count="1"/>
+			<ingredient name="vehicleSVGAsylumHotrodAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleSVGAsylumHotrodAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="30"/>
+			<ingredient name="resourceHeadlight" count="6"/>
+			<ingredient name="resourceMetalPipe" count="45"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="14"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="vehicleSVGAsylumHotrodChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="130"/>
+			<ingredient name="resourceMechanicalParts" count="35"/>
+			<ingredient name="resourceDuctTape" count="18"/>
+			<ingredient name="resourceLeather" count="35"/>
+			<ingredient name="resourceElectricParts" count="14"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+
+
+
+
+
+
+	</append>
+
+</AsylumOverhaul>

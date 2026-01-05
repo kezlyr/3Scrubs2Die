@@ -1,0 +1,128 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootqualitytemplates">
+		<lootqualitytemplate name="SMAToolsQuality">
+			<qualitytemplate level="1,999999" default_quality="1">
+				<loot quality="1" prob="0.654"/>
+				<loot quality="2" prob="0.532"/>
+				<loot quality="3" prob="0.412"/>
+				<loot quality="4" prob="0.381"/>
+				<loot quality="5" prob="0.312"/>
+				<loot quality="6" prob="0.288"/>
+			</qualitytemplate>
+		</lootqualitytemplate>
+	</append>
+
+	<append xpath="/lootcontainers/lootprobtemplates">
+		<lootprobtemplate name="SMAToolsT1">
+			<loot level="1,999999" prob="0.001"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAToolsT2">
+			<loot level="1,999999" prob="0.005"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAToolsT3">
+			<loot level="1,999999" prob="0.04"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAToolsT4">
+			<loot level="1,999999" prob="0.08"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAToolsT5">
+			<loot level="1,999999" prob="0.15"/>
+		</lootprobtemplate>
+	</append>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+		<lootgroup name="groupSMATools" count="1" loot_quality_template="SMAToolsQuality">
+			<item name="SMALTAxe"/>
+			<item name="SMALTCrowbar"/>
+			<item name="SMALTHammer"/>
+			<item name="SMALTKnife"/>
+			<item name="SMALTPickaxe"/>
+			<item name="SMALTShovel"/>
+			<item name="SMALTWrench"/>
+		</lootgroup>
+	</insertBefore>
+	
+	<append xpath="//lootgroup[@name='groupSmallSafeLoot']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupGunSafeSecure']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT3" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupReinforcedChestT2']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>	
+
+	<append xpath="//lootgroup[@name='groupReinforcedChestT3']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT3" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupHardenedChestT4']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT5" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupHardenedChestT5']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT5" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupZpackBoss']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT5" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackStrong']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT3" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackReg']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupHiddenStash']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupBuriedWeaponChest']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupBuriedTreasure']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupInfestedT5']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT5" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupArmyTruck']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupPoliceCar']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupAirDrop']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupFireTruck']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupLargeWeaponBag']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT3" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupSmallWeaponBag']">
+		<item group="groupSMATools" loot_prob_template="SMAToolsT1" force_prob="true"/>
+	</append>
+	
+	
+	<append xpath="//lootgroup[@name='groupCarWeaponsTools']">
+		<item name="resourceSMALegendaryRepairKit" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupUtilityItems']">
+		<item name="resourceSMALegendaryRepairKit" loot_prob_template="SMAToolsT2" force_prob="true"/>
+	</append>
+	
+</configs>

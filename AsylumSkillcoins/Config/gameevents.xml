@@ -1,0 +1,22 @@
+<DW>
+	<append xpath="/gameevents">
+		<action_sequence name="action_give_1point">
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="1" />
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="wolfdireattack" />
+			</action>
+		</action_sequence>
+	</append>
+	<append xpath="/gameevents">
+		<action_sequence name="action_give_6points">
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="6" />
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="wolfdireattack" />
+			</action>
+		</action_sequence>
+	</append>
+</DW>

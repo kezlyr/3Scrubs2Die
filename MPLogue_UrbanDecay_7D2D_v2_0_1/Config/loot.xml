@@ -1,0 +1,32 @@
+<loot>
+
+	<append xpath="//lootcontainers">
+
+
+		<lootcontainer name="mpl_LootDumpsterRats" count="1" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" loot_quality_template="qualBaseTemplate" buff="mpl_DumpsterCallRats">
+			<item group="groupDumpster"/>
+		</lootcontainer>
+
+
+		<lootcontainer name="mpl_ud_lootPaintCans" count="1" size="1,1" sound_open="UseActions/open_drawer" sound_close="UseActions/close_chest" destroy_on_close="empty">
+			<item name="resourcePaint" prob="1" count="10,20"/>
+		</lootcontainer>
+
+	</append>
+
+
+
+<!-- 
+	<append xpath="//lootgroups">
+
+
+		<lootgroup name="mpl_ud_resourcePaint" count="all">
+			<item name="resourcePaint" count="10,20"/>
+		</lootgroup>
+		
+		
+	</append>
+ -->
+ 
+ 
+</loot>

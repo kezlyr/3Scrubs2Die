@@ -1,0 +1,85 @@
+
+<configs>
+
+	<set xpath="items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBotT3JunkDrone']/effect_group[@name='gunBotT3JunkDrone']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+
+	<!-- duel row mod slot test max 10 -->
+	<set xpath="items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='ModSlots']/@value">2,3,4,6,8,10</set>
+	<!-- end test weapon mod slot increase -->
+
+	<set xpath="items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunMGT0PipeMachineGun']/effect_group[@name='gunMGT0PipeMachineGun']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunRifleT0PipeRifle']/effect_group[@name='gunRifleT0PipeRifle']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunShotgunT0PipeShotgun']/effect_group[@name='gunShotgunT0PipeShotgun']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolRepairT1ClawHammer']/effect_group[@name='meleeToolRepairT1ClawHammer']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='meleeToolShovelT0StoneShovel']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='vehicleMotorcyclePlaceable']/effect_group[@name='vehicleMotorcyclePlaceable']/passive_effect[@name='ModSlots']/@value">5</set>
+	<set xpath="items/item[@name='vehicleBicyclePlaceable']/effect_group[@name='vehicleBicyclePlaceable']/passive_effect[@name='ModSlots']/@value">0</set>
+</configs>

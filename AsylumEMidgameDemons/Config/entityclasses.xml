@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+<append xpath="/entity_classes">
+<!--   ENDGAME ZOMBIE VARIANTS   -->
+<!--   High-tier zombies for experienced players with advanced physics   -->
+<!--   Belphegor - Sloth Demon Lord   -->
+<entity_class name="belphegor" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,belphegor"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance --> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Asmodeus - Lust Demon Prince   -->
+<entity_class name="asmodeus" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,asmodeus"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon2"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Mammon - Greed Demon Duke   -->
+<entity_class name="mammon" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,mammon"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon3"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Leviathan - Envy Demon Emperor   -->
+<entity_class name="leviathan" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,leviathan"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon4"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Beelzebub - Gluttony Demon Lord   -->
+<entity_class name="beelzebub" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,beelzebub"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon5"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Satan - Wrath Demon Emperor   -->
+<entity_class name="satan" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,satan"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon6"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Lucifer - Pride Demon King   -->
+<entity_class name="lucifer" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,lucifer"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon7"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Malphas - Destruction Demon Prince   -->
+<entity_class name="malphas" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,malphas"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?bigdemon8"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.1"/>
+<property name="MoveSpeedPanic" value="1.3"/>
+<property name="SwimSpeed" value="0.9"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance --> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.4"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="45000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Gluttoth - Gluttony Demon Behemoth   -->
+<entity_class name="gluttoth" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,gluttoth"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?fatdemon1"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.25"/>
+<property name="MoveSpeedAggro" value="0.6, 1.0"/>
+<property name="MoveSpeedPanic" value="1.2"/>
+<property name="SwimSpeed" value="0.8"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance --> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.4"/>
+<property name="DismemberMultiplierArms" value="0.5"/>
+<property name="DismemberMultiplierLegs" value="0.5"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1500"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.5"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="75000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.3"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.9"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Gorger - Devourer Demon Titan   -->
+<entity_class name="gorger" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,gorger"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?fatdemon2"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.25"/>
+<property name="MoveSpeedAggro" value="0.6, 1.0"/>
+<property name="MoveSpeedPanic" value="1.2"/>
+<property name="SwimSpeed" value="0.8"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance --> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.4"/>
+<property name="DismemberMultiplierArms" value="0.5"/>
+<property name="DismemberMultiplierLegs" value="0.5"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1500"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.5"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="75000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.3"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.9"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Valefor - Hunter Demon Stalker   -->
+<entity_class name="valefor" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,valefor"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?hunterdemon"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.3"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.4"/>
+<property name="MoveSpeedAggro" value="0.8, 1.4"/>
+<property name="MoveSpeedPanic" value="1.6"/>
+<property name="SwimSpeed" value="1.2"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.6"/>
+<property name="DismemberMultiplierArms" value="0.7"/>
+<property name="DismemberMultiplierLegs" value="0.7"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="800"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.35"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="54000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.2"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.7"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Asteroth - Minotaur Demon Colossus   -->
+<entity_class name="asteroth" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,asteroth"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?minotaurdemon"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.6"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.2"/>
+<property name="MoveSpeedAggro" value="0.5, 0.9"/>
+<property name="MoveSpeedPanic" value="1.1"/>
+<property name="SwimSpeed" value="0.7"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.3"/>
+<property name="DismemberMultiplierArms" value="0.4"/>
+<property name="DismemberMultiplierLegs" value="0.4"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="2000"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.6"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="90000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.4"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="1.0"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Baal - Necromancy Demon Overlord   -->
+<entity_class name="baal" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,baal"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?necrodemon"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.2"/>
+<property name="MoveSpeedPanic" value="1.4"/>
+<property name="SwimSpeed" value="1.0"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1200"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.45"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="60000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Paimon - Shadow Demon Marquis   -->
+<entity_class name="paimon" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,paimon"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?necrodemon2"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.2"/>
+<property name="MoveSpeedPanic" value="1.4"/>
+<property name="SwimSpeed" value="1.0"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1200"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.45"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="60000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Beleth - Death Demon King   -->
+<entity_class name="beleth" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,beleth"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?necrodemon3"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.2"/>
+<property name="MoveSpeedPanic" value="1.4"/>
+<property name="SwimSpeed" value="1.0"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1200"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.45"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="60000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Purson - Void Demon Duke   -->
+<entity_class name="purson" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,purson"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?necrodemon4"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.2"/>
+<property name="MoveSpeedPanic" value="1.4"/>
+<property name="SwimSpeed" value="1.0"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1200"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.45"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="60000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Azazel - Fallen Angel Demon   -->
+<entity_class name="azazel" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,azazel"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?necrodemon5"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.4"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.3"/>
+<property name="MoveSpeedAggro" value="0.7, 1.2"/>
+<property name="MoveSpeedPanic" value="1.4"/>
+<property name="SwimSpeed" value="1.0"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.5"/>
+<property name="DismemberMultiplierArms" value="0.6"/>
+<property name="DismemberMultiplierLegs" value="0.6"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="1200"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.45"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="60000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.25"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.8"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+<!--   Goliath - Stone Demon Fortress   -->
+<entity_class name="goliath" extends="zombieTemplateMale">
+<property name="Tags" value="entity,zombie,endgame,goliath"/>
+<property name="Mesh" value="#@modfolder:Resources/EndgameZombies.unity3d?stonedemon"/>
+<property name="PhysicsBody" value="endgameZombieBody"/>
+<property name="AvatarController" value="AvatarZombieController"/>
+<property name="RootMotion" value="true"/>
+<property name="HasRagdoll" value="true"/>
+<property name="HasDeathAnim" value="true"/>
+<property name="UserSpawnType" value="Menu"/>
+<property name="SizeScale" value="1.5"/>
+<property name="ExperienceGain" value="25000"/>
+<property name="MoveSpeed" value="0.15"/>
+<property name="MoveSpeedAggro" value="0.4, 0.8"/>
+<property name="MoveSpeedPanic" value="1.0"/>
+<property name="SwimSpeed" value="0.6"/>
+<property name="KnockdownProb" value="0"/> <!-- 0% knockdown chance -->
+<property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+<property name="StunResistance" value="1.0"/> <!-- 100% stun resistance -->
+<property name="DismemberMultiplierHead" value="0.2"/>
+<property name="DismemberMultiplierArms" value="0.3"/>
+<property name="DismemberMultiplierLegs" value="0.3"/>
+<property name="PainResistPerHit" value="-1"/> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+<property name="HandItem" value="meleeHandZombieInfernal"/>
+<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<property name="WalkType" value="2"/>
+<property name="Immunity" value="sickness;disease"/>
+<property name="DeadBodyHitPoints" value="2500"/>
+<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+<property name="LootDropProb" value="0.55"/>
+<property name="SoundRandom" value="asylumDemonRoam"/>
+<property name="SoundSense" value="asylumDemonSense"/>
+<property name="SoundAlert" value="asylumDemonAlert"/>
+<property name="SoundAttack" value="asylumDemonAttack"/>
+<property name="SoundHurt" value="asylumDemonPain"/>
+<property name="SoundDeath" value="asylumDemonDeath"/>
+<property name="SoundGiveUp" value="asylumDemonGiveup"/>
+<effect_group name="Base Effects">
+<passive_effect name="HealthMax" operation="base_set" value="84000"/>
+<passive_effect name="PhysicalDamageResist" operation="base_add" value="0.5"/>
+<passive_effect name="EntityDamage" operation="perc_add" value="0.6"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="buffInjuryKnockdown01"/>
+<passive_effect name="BuffResistance" operation="base_add" value="0.9" tags="buffShocked"/>
+</effect_group>
+</entity_class>
+
+</append>
+
+
+
+</configs>

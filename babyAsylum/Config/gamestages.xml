@@ -1,0 +1,4 @@
+<configs>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage/spawn/@num">9999</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage/spawn/@maxAlive">192</set>
+</configs>

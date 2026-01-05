@@ -1,0 +1,90 @@
+======================================================================
+     VEHICLE MADNESS - VEHICLE STORAGE CAPACITY LIST
+======================================================================
+
+Vehicle Name                        Storage Size    Total Slots
+----------------------------------------------------------------------
+VM MilitaryTruck                    14x10           140 slots
+VM MilitaryTruck2                   14x10           140 slots
+VM Striker                          14x10           140 slots
+VM BigRig                           12x10           120 slots
+VM BigRig2                          12x10           120 slots
+VM BoxTruck                         12x10           120 slots
+VM DumperTruck                      12x10           120 slots
+VM OldSemi                          12x10           120 slots
+VM RV                               12x10           120 slots
+VM AmbulanceDamaged                 10x10           100 slots
+VM BusCity                          10x10           100 slots
+VM BusSchool                        10x10           100 slots
+VM BusShuttle                       10x10           100 slots
+VM Combi                            10x10           100 slots
+VM Combi2                           10x10           100 slots
+VM NPCVan                           10x10           100 slots
+VM TruckAmbulance                   10x10           100 slots
+VM TruckMoPower                     10x10           100 slots
+VM TruckWorkingStiffs               10x10           100 slots
+VM Van2                             10x10           100 slots
+VM VanRed                           10x10           100 slots
+VM ArmoredCobra                     9x8             72 slots
+VM BMWred                           9x8             72 slots
+VM BMWwhite                         9x8             72 slots
+VM Beetle                           9x8             72 slots
+VM Buggy                            9x8             72 slots
+VM Buggy2                           9x8             72 slots
+VM Camaro                           9x8             72 slots
+VM Caterham                         9x8             72 slots
+VM Crusader                         9x8             72 slots
+VM EvoLancer                        9x8             72 slots
+VM Explorer                         9x8             72 slots
+VM Fastback                         9x8             72 slots
+VM Flatbed                          9x8             72 slots
+VM HotRod                           9x8             72 slots
+VM Hunter                           9x8             72 slots
+VM Interceptor                      9x8             72 slots
+VM JeepC                            9x8             72 slots
+VM JunkerMustang                    9x8             72 slots
+VM M3ATruck                         9x8             72 slots
+VM Malice                           9x8             72 slots
+VM MilitaryHumVee                   9x8             72 slots
+VM MonsterPickup                    9x8             72 slots
+VM MonsterVan                       9x8             72 slots
+VM Muscle2                          9x8             72 slots
+VM MuscleRed                        9x8             72 slots
+VM MustangMach1                     9x8             72 slots
+VM OldsMobile                       9x8             72 slots
+VM Pickup                           9x8             72 slots
+VM PoliceCar                        9x8             72 slots
+VM RustySedan                       9x8             72 slots
+VM Sedan                            9x8             72 slots
+VM SedanCutlas                      9x8             72 slots
+VM SedanFairH                       9x8             72 slots
+VM SkylineGTR                       9x8             72 slots
+VM SmallPickUp                      9x8             72 slots
+VM Spiker                           9x8             72 slots
+VM StationWagon                     9x8             72 slots
+VM TacticalJeep                     9x8             72 slots
+VM TaxiRusted                       9x8             72 slots
+VM Turbo                            9x8             72 slots
+VM Veneno                           9x8             72 slots
+VM Warthog                          9x8             72 slots
+VM ApoTruck                         8x6             48 slots
+VM Quad                             8x6             48 slots
+VM Quad2                            8x6             48 slots
+VM MotoGuppy                        6x6             36 slots
+VM Vespa                            6x6             36 slots
+VM Vespakart                        6x6             36 slots
+
+----------------------------------------------------------------------
+Total Vehicles: 69
+
+
+STORAGE CATEGORY SUMMARY:
+-----------------------------------
+VMMilitaryTrucks            3 vehicles (140 slots each)
+VMTrucks                    5 vehicles (120 slots each)
+VMRV                        1 vehicles (120 slots each)
+VMVan                      12 vehicles (100 slots each)
+vehicle4x4Truck            42 vehicles (72 slots each)
+vehicleMotorcycle           3 vehicles (48 slots each)
+vehicleMinibike             3 vehicles (36 slots each)
+

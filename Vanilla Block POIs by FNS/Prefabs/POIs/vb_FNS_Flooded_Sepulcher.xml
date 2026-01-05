@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="2" />
+  <property name="QuestTags" value="clear, fetch" />
+  <property name="Zoning" value="wilderness" />
+  <property name="AllowedTownships" value="wilderness" />
+  <property name="Tags" value="wilderness, cave, entrance" />
+  <property name="EditorGroups" value="wilderness" />
+  <property name="DuplicateRepeatDistance" value="3000" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="42, 30, 42" />
+  <property name="RotationToFaceNorth" value="3" />
+  <property name="SleeperVolumeSize" value="16, 2, 5#12, 3, 5#3, 3, 17#6, 6, 8#7, 11, 6#26, 4, 22#8, 6, 14" />
+  <property name="SleeperVolumeStart" value="21, 4, 4#8, 3, 5#8, 4, 18#35, 5, 30#18, 5, 18#7, 26, 10#11, 4, 11" />
+  <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0" />
+  <property name="SleeperVolumeGroup" value="animalMountainLion,1,1,animalDireWolf,1,1,zombiePlagueSpitter,1,1,zombieSpiderFeral,1,1,zombieSteveCrawlerFeral,3,3,zombiePlagueSpitter,2,2,zombiePartyGirlFeral,2,2" />
+  <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0,2,2,0,0" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # # # # # " />
+  <property name="YOffset" value="-13" />
+  <property name="TriggerVolumeSize" value="5, 3, 7" />
+  <property name="TriggerVolumeStart" value="6, 27, 17" />
+  <property name="TriggerVolumeTriggers" value="1" />
+  <property name="POIMarkerSize" value="1, 3, 3" />
+  <property name="POIMarkerStart" value="42, 3, 7" />
+  <property name="POIMarkerGroup" value="cave" />
+  <property name="POIMarkerTags" value="cavenode" />
+  <property name="POIMarkerType" value="None" />
+  <property name="POIMarkerPartToSpawn" value="" />
+  <property name="POIMarkerPartRotations" value="3" />
+  <property name="POIMarkerPartSpawnChance" value="1" />
+  <property class="Stats">
+    <property name="TotalVertices" value="272792" />
+    <property name="TotalTriangles" value="144697" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="147969" />
+      <property name="Triangles" value="51941" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="69477" />
+      <property name="Triangles" value="50324" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="42688" />
+      <property name="Triangles" value="21344" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="12658" />
+      <property name="Triangles" value="21088" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="Rally">
+      <property name="0" value="3, 13, 17" />
+    </property>
+    <property class="challenge_cars">
+      <property name="0" value="3, 13, 37" />
+    </property>
+    <property class="challenge_gore">
+      <property name="0" value="21, 4, 6" />
+      <property name="1" value="33, 4, 6" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="8, 13, 38" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="15, 10, 21" />
+    </property>
+    <property class="FetchContainer">
+      <property name="0" value="20, 18, 21" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="28, 13, 39" />
+    </property>
+    <property class="challenge_mech_parts">
+      <property name="0" value="24, 13, 36" />
+    </property>
+  </property>
+</prefab>

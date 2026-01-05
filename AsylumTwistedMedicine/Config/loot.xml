@@ -1,0 +1,21 @@
+<configs>
+<!-- ASYLUM TWISTED MEDICINE LOOT INTEGRATION -->
+<!-- Corrupted medical experiments found in the darkest corners -->
+
+<append xpath="//lootgroup[@name='survivalMedical']">
+            <item name="curebiotics" count="1,2" loot_prob_template="med"/>
+            <item name="theswiftshot" count="1,2" loot_prob_template="med"/>
+            <item name="bleednomore" count="1,2" loot_prob_template="med"/>
+            <item name="fatigueout" count="1,3" loot_prob_template="med"/>
+            <item name="medicalration" count="1" loot_prob_template="med"/>
+</append>
+
+<!-- Add asylum medicine to rare medical loot for thematic consistency -->
+<append xpath="//lootgroup[@name='groupMedicalRare']">
+            <item name="curebiotics" count="1,2" loot_prob_template="med"/>
+            <item name="theswiftshot" count="1" loot_prob_template="med"/>
+            <item name="bleednomore" count="1,2" loot_prob_template="med"/>
+            <item name="medicalration" count="1" loot_prob_template="rare"/>
+</append>
+
+</configs>

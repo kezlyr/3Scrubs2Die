@@ -1,0 +1,131 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    INFERNAL ARMOR PROGRESSION SYSTEM
+═══════════════════════════════════════════════════════════════════════════════
+
+OVERVIEW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The Infernal Armor system has been redesigned to use a single-tier crafting
+system with BDO-style enhancement progression.
+
+ACQUISITION SYSTEM:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• All Infernal Armor pieces are CRAFTING-ONLY (no longer found in loot)
+• Each armor piece costs 500 Black Stones to craft
+• All crafted armor is Quality 6 (Q6) - no quality tiers 1-5
+• Crafted at Workbench
+• 15 armor sets × 4 pieces = 60 total craftable armor pieces
+
+PROGRESSION SYSTEM:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Base armor: Q6 +0 enhancement (crafted)
+• Enhancement levels: +0 to +10 (11 total levels)
+• Enhancement is the ONLY progression system
+• Players collect different armor SETS for different playstyles
+• Each set provides unique passive bonuses
+
+ENHANCEMENT MECHANICS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Right-click any Infernal Armor piece → "Enhance Armor" option
+• Opens custom enhancement window showing:
+  - Current enhancement level
+  - Success rate
+  - Failstacks
+  - Required Black Stones
+
+• Enhancement costs:
+  +0 → +1: 10 Black Stones
+  +1 → +2: 15 Black Stones
+  +2 → +3: 20 Black Stones
+  +3 → +4: 25 Black Stones
+  +4 → +5: 30 Black Stones
+  +5 → +6: 40 Black Stones
+  +6 → +7: 5 Concentrated Black Stones
+  +7 → +8: 6 Concentrated Black Stones
+  +8 → +9: 7 Concentrated Black Stones
+  +9 → +10: 8 Concentrated Black Stones
+
+• Success rates (base):
+  +0 → +1: 100%
+  +1 → +2: 100%
+  +2 → +3: 100%
+  +3 → +4: 90%
+  +4 → +5: 80%
+  +5 → +6: 70%
+  +6 → +7: 50%
+  +7 → +8: 40%
+  +8 → +9: 30%
+  +9 → +10: 20%
+
+• Failstack system:
+  - Each failed enhancement attempt grants +1 failstack
+  - Each failstack increases success rate by 1%
+  - Failstacks reset to 0 on successful enhancement
+  - Failstacks are player-wide (not per-item)
+
+• Regression on failure:
+  - +0 to +5: No regression (stays at current level)
+  - +6 to +10: Regresses by 1 level on failure
+
+STAT BONUSES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Enhancement levels provide percentage bonuses to armor stats:
+  +0: 0% bonus
+  +1: 5% bonus
+  +2: 10% bonus
+  +3: 15% bonus
+  +4: 20% bonus
+  +5: 25% bonus
+  +6: 33% bonus
+  +7: 42% bonus
+  +8: 52% bonus
+  +9: 63% bonus
+  +10: 75% bonus
+
+Bonuses apply to:
+  - Armor Rating (PhysicalDamageResist)
+  - Durability (DegradationMax)
+
+BLACK STONE ACQUISITION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Black Stones can be crafted at Chemistry Station:
+  - 10 Coal + 5 Oil + 3 Acid = 5 Black Stones (60 seconds)
+
+ARMOR SETS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Light Armor (6 sets):
+  1. Lumberjack - Harvesting bonuses
+  2. Preacher - Health regeneration
+  3. Rogue - Stealth and lockpicking
+  4. Athletic - Stamina regeneration
+  5. Enforcer - Durability bonuses
+  6. Farmer - Farming bonuses
+
+Medium Armor (3 sets):
+  7. Biker - Vehicle handling
+  8. Scavenger - Salvage bonuses
+  9. Ranger - Ranged damage
+
+Heavy Armor (6 sets):
+  10. Commando - Reload speed
+  11. Assassin - Critical chance/damage
+  12. Miner - Mining bonuses
+  13. Nomad - Environmental resistance
+  14. Nerd - XP and crafting
+  15. Raider - Stun resistance and entity damage
+
+PROGRESSION PATH:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Gather Black Stones (craft from Coal/Oil/Acid)
+2. Craft Q6 armor pieces (500 Black Stones each)
+3. Enhance armor from +0 to +10 using Black Stones
+4. Collect multiple armor sets for different situations
+5. Enhance your favorite sets to +10
+
+TOTAL COST PER ARMOR PIECE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Base craft: 500 Black Stones
++0 to +10: 400 Black Stones (total enhancement cost)
+TOTAL: 900 Black Stones per fully enhanced armor piece
+
+Full set (4 pieces) to +10: 3,600 Black Stones
+

@@ -1,0 +1,9 @@
+<configs>
+
+
+<insertBefore xpath="/dialogs/dialog/statement[@id='start']/response_entry[@id='done']">
+	<response_entry id="resetquests"/>
+</insertBefore>
+
+
+</configs>

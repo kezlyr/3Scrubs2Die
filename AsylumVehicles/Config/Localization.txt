@@ -1,0 +1,89 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+
+vehicleSVGMadMax,vehicles,vehicle,new,"[FF4444]Asylum Warhound[-]",,,,,
+vehicleSVGMadMaxPlaceable,vehicles,item,EnChanged,"[FF4444]Asylum Warhound[-]",,,,,
+vehicleSVGMadMaxPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [FF4444]monstrous[-] armored beast that prowls the asylum grounds, its rusted steel frame reinforced with salvaged spikes and barbed wire. The [FF6666]growling engine[-] echoes through the corridors like the howl of a [FF4444]tortured soul[-], while its massive wheels crush everything in their path. This vehicle has witnessed countless [AA0000]horrors[-] within these walls.[-]",,,,,
+
+vehicleSVGBloodPhoenix,vehicles,vehicle,new,"[CC0000]Asylum Blood Phoenix[-]",,,,,
+vehicleSVGBloodPhoenixPlaceable,vehicles,item,EnChanged,"[CC0000]Asylum Blood Phoenix[-]",,,,,
+vehicleSVGBloodPhoenixPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [CC0000]nightmarish[-] chariot of destruction that rises from the ashes of the asylum's [AA0000]darkest experiments[-]. Its scarlet armor bears the scorch marks of countless [FF4444]torments[-], while wing-like exhausts unleash plumes of [FF6666]hellfire[-]. This vehicle is a symbol of [CC0000]rebirth through suffering[-], leaving only [AA0000]carnage[-] in its wake.[-]",,,,,
+
+vehicleSVGRustyMate,vehicles,vehicle,new,"[996633]Asylum Rust Wraith[-]",,,,,
+vehicleSVGRustyMatePlaceable,vehicles,item,EnChanged,"[996633]Asylum Rust Wraith[-]",,,,,
+vehicleSVGRustyMatePlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [996633]weathered[-] muscle car that once belonged to an asylum [FF4444]orderly[-] who never made it out. Its body is covered in rust stains that look suspiciously like [AA0000]dried blood[-], and bullet holes tell the story of its final, [FF4444]desperate[-] escape attempt. The V8 engine still [996633]screams with defiance[-], a testament to the [AA0000]madness[-] that consumed its last driver.[-]",,,,,
+
+vehicleSVGBuggy,vehicles,vehicle,new,"[FFAA44]Asylum Dust Phantom[-]",,,,,
+vehicleSVGBuggyPlaceable,vehicles,item,EnChanged,"[FFAA44]Asylum Dust Phantom[-]",,,,,
+vehicleSVGBuggyPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [FFAA44]skeletal[-] buggy that tears across the asylum's [996633]desolate grounds[-] like a [FF4444]restless spirit[-]. Its frame is coated in the [FFAA44]dust of forgotten patients[-], and it moves with an [FF6666]unnatural speed[-] that defies explanation. Some say you can hear the [AA0000]whispers[-] of the lost souls trapped within its engine as it [FFAA44]twists and turns[-] through the shadows.[-]",,,,,
+
+vehicleSVGDHLTruck,vehicles,vehicle,new,"[FFCC00]Asylum Cargo Nightmare[-]",,,,,
+vehicleSVGDHLTruckPlaceable,vehicles,item,EnChanged,"[FFCC00]Asylum Cargo Nightmare[-]",,,,,
+vehicleSVGDHLTruckPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [FFCC00]heavily modified[-] delivery truck that was used to transport [FF4444]unwilling patients[-] to the asylum's most [AA0000]horrific[-] wings. Its yellow paint has faded to a [996633]sickly hue[-], and the cargo hold has been repurposed to carry [FF4444]grim trophies[-] and [AA0000]unspeakable experiments[-]. The reinforced steel plates bear scratches from [FF6666]desperate claws[-] trying to escape from within.[-]",,,,,
+
+vehicleSVGForklift,vehicles,vehicle,new,"[888888]Asylum Corpse Hauler[-]",,,,,
+vehicleSVGForkliftPlaceable,vehicles,item,EnChanged,"[888888]Asylum Corpse Hauler[-]",,,,,
+vehicleSVGForkliftPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [888888]industrial forklift[-] that was once used in the asylum's [FF4444]morgue[-] to move [AA0000]bodies[-] and [996633]experimental equipment[-]. Its pronged forks are stained with [AA0000]dark substances[-] that never quite wash clean, and the hydraulic systems emit [FF6666]unnerving sounds[-] that echo through the empty halls. This machine has lifted more than just [888888]cargo[-] - it has moved the [AA0000]evidence[-] of countless [FF4444]atrocities[-].[-]",,,,,
+
+
+vehicleSVGWarhoundChassis,items,item,EnChanged,"[FF4444]Asylum Warhound Chassis[-]",,,,,
+vehicleSVGWarhoundChassisDesc,items,item,EnChanged,"[CCCCCC]The [FF4444]twisted[-] steel frame of a monstrous asylum vehicle, reinforced with [996633]rusted spikes[-] and bearing the [AA0000]scars[-] of countless horrors.[-]",,,,,
+
+vehicleSVGAsylumClassic,vehicles,vehicle,new,"[DDAA00]Asylum Classic Phantom[-]",,,,,
+vehicleSVGAsylumClassicPlaceable,vehicles,item,EnChanged,"[DDAA00]Asylum Classic Phantom[-]",,,,,
+vehicleSVGAsylumClassicPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [DDAA00]vintage[-] muscle car from the asylum's [FF4444]golden age[-] before the madness took hold. Its [996633]chrome bumpers[-] and [FFAA00]classic lines[-] hide the [AA0000]dark secrets[-] of its former owner, a [FF6666]head psychiatrist[-] who conducted [AA0000]unspeakable experiments[-]. The engine still [DDAA00]purrs with elegance[-], but the [FF4444]leather seats[-] bear stains that tell a [AA0000]horrifying story[-].[-]",,,,,
+
+vehicleSVGAsylumClassicChassis,items,item,EnChanged,"[DDAA00]Asylum Classic Phantom Chassis[-]",,,,,
+vehicleSVGAsylumClassicChassisDesc,items,item,EnChanged,"[CCCCCC]The [DDAA00]elegant[-] frame of a vintage asylum vehicle, polished steel hiding [AA0000]dark memories[-] of its [FF4444]distinguished[-] past.[-]",,,,,
+
+vehicleSVGAsylumClassicAccessories,items,item,EnChanged,"[DDAA00]Asylum Classic Phantom Accessories[-]",,,,,
+vehicleSVGAsylumClassicAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Refined components including [DDAA00]chrome trim[-], [FFAA00]vintage headlights[-], and [996633]leather appointments[-] from the asylum's more [FF4444]civilized[-] era.[-]",,,,,
+
+vehicleSVGBloodPhoenixChassis,items,item,EnChanged,"[CC0000]Asylum Blood Phoenix Chassis[-]",,,,,
+vehicleSVGBloodPhoenixChassisDesc,items,item,EnChanged,"[CCCCCC]A [CC0000]nightmarish[-] vehicle frame scorched by [FF6666]hellfire[-] and marked with the [AA0000]symbols[-] of the asylum's darkest experiments.[-]",,,,,
+
+vehicleSVGRustyMateChassis,items,item,EnChanged,"[996633]Asylum Rust Wraith Chassis[-]",,,,,
+vehicleSVGRustyMateChassisDesc,items,item,EnChanged,"[CCCCCC]The [996633]corroded[-] frame of a muscle car that witnessed the asylum's final [FF4444]desperate[-] hours, stained with [AA0000]suspicious rust[-] patterns.[-]",,,,,
+
+vehicleSVGDustDevilChassis,items,item,EnChanged,"[FFAA44]Asylum Dust Phantom Chassis[-]",,,,,
+vehicleSVGDustDevilChassisDesc,items,item,EnChanged,"[CCCCCC]A [FFAA44]skeletal[-] buggy frame coated in the [996633]dust of forgotten souls[-], lightweight yet haunted by [FF4444]restless spirits[-].[-]",,,,,
+
+vehicleSVGDHLTruckChassis,items,item,EnChanged,"[FFCC00]Asylum Cargo Nightmare Chassis[-]",,,,,
+vehicleSVGDHLTruckChassisDesc,items,item,EnChanged,"[CCCCCC]The [FFCC00]reinforced[-] frame of a delivery truck used to transport [FF4444]unwilling patients[-], bearing [AA0000]claw marks[-] from desperate escape attempts.[-]",,,,,
+
+vehicleSVGForkliftChassis,items,item,EnChanged,"[888888]Asylum Corpse Hauler Chassis[-]",,,,,
+vehicleSVGForkliftChassisDesc,items,item,EnChanged,"[CCCCCC]An [888888]industrial[-] forklift frame from the asylum's [FF4444]morgue[-], permanently stained with [AA0000]dark substances[-] that tell a grim story.[-]",,,,,
+
+
+vehicleSVGWarhoundAccessories,items,item,EnChanged,"[FF4444]Asylum Warhound Accessories[-]",,,,,
+vehicleSVGWarhoundAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Specialized components including [FF6666]spiked armor plating[-], [996633]reinforced bumpers[-], and [AA0000]intimidation spikes[-] designed for the asylum's most feared vehicle.[-]",,,,,
+
+vehicleSVGBloodPhoenixAccessories,items,item,EnChanged,"[CC0000]Asylum Blood Phoenix Accessories[-]",,,,,
+vehicleSVGBloodPhoenixAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Hellish components including [FF6666]flame exhausts[-], [CC0000]scorched armor panels[-], and [AA0000]heat-resistant seals[-] forged in the fires of torment.[-]",,,,,
+
+vehicleSVGRustyMateAccessories,items,item,EnChanged,"[996633]Asylum Rust Wraith Accessories[-]",,,,,
+vehicleSVGRustyMateAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Weathered components including [996633]corroded trim[-], [FF4444]bullet-hole patches[-], and [AA0000]blood-stained upholstery[-] from a vehicle's final desperate journey.[-]",,,,,
+
+vehicleSVGDustDevilAccessories,items,item,EnChanged,"[FFAA44]Asylum Dust Phantom Accessories[-]",,,,,
+vehicleSVGDustDevilAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Ethereal components including [FFAA44]spectral filters[-], [996633]soul-dust collectors[-], and [FF6666]whisper dampeners[-] to contain the restless spirits within.[-]",,,,,
+
+vehicleSVGDHLTruckAccessories,items,item,EnChanged,"[FFCC00]Asylum Cargo Nightmare Accessories[-]",,,,,
+vehicleSVGDHLTruckAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Reinforcement components including [FFCC00]steel plating[-], [AA0000]restraint anchors[-], and [FF4444]soundproofing materials[-] to contain whatever horrors lie within the cargo hold.[-]",,,,,
+
+vehicleSVGForkliftAccessories,items,item,EnChanged,"[888888]Asylum Corpse Hauler Accessories[-]",,,,,
+vehicleSVGForkliftAccessoriesDesc,items,item,EnChanged,"[CCCCCC]Morgue components including [888888]hydraulic lifts[-], [AA0000]body restraints[-], and [FF4444]preservation chambers[-] designed for the asylum's most grim tasks.[-]",,,,,
+
+
+vehicleSVGAsylumHotrod,vehicles,vehicle,new,"[FF6600]Asylum Hotrod[-]",,,,,
+vehicleSVGAsylumHotrodPlaceable,vehicles,item,EnChanged,"[FF6600]Asylum Hotrod[-]",,,,,
+vehicleSVGAsylumHotrodPlaceableDesc,vehicles,item,EnChanged,"[CCCCCC]A [FF6600]stripped-down[-] speed demon from the asylum's [AA0000]underground racing circuit[-]. This [FF4444]hellish machine[-] was built for the [AA0000]twisted games[-] played in the asylum's [FF6666]basement levels[-]. Its [FF8800]exposed engine[-] roars with [AA0000]demonic fury[-], while the [FF4444]roll cage[-] bears scorch marks from [AA0000]fiery crashes[-] that claimed many [FF6666]tortured souls[-].[-]",,,,,
+
+vehicleSVGAsylumHotrodChassis,items,item,EnChanged,"[FF6600]Asylum Hotrod Chassis[-]",,,,,
+vehicleSVGAsylumHotrodChassisDesc,items,item,EnChanged,"[CCCCCC]A [FF6600]stripped[-] and [FF4444]reinforced[-] frame built for [AA0000]speed and destruction[-], bearing the [FF8800]burn marks[-] of countless [AA0000]hellish races[-].[-]",,,,,
+
+vehicleSVGAsylumHotrodAccessories,items,item,EnChanged,"[FF6600]Asylum Hotrod Accessories[-]",,,,,
+vehicleSVGAsylumHotrodAccessoriesDesc,items,item,EnChanged,"[CCCCCC]High-performance components including [FF8800]nitrous systems[-], [FF6600]racing headers[-], and [AA0000]safety equipment[-] stained with the [FF4444]blood[-] of previous drivers.[-]",,,,,
+
+
+
+
+

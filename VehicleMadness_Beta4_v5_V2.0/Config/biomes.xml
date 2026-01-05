@@ -1,0 +1,79 @@
+<configs>
+<!--   Vehicle_Madness_Overhaul_Legacy_v6_May 2025 for Version 1.4 /V2.0 -->
+
+<append xpath="//poi[@name='City Asphalt']">
+		<blockontop blockname="carsRandomHelper" prob="0.0049" rotatemax="3"/> <!--Vanilla is 0.0015 -->
+		<blockontop blockname="decoCarTireSmallFlat" prob="0.00012" rotatemax="3" />
+		<blockontop blockname="damagedTireSmallFlat" prob="0.00038" rotatemax="3"/>
+		<blockontop blockname="damagedWheelSmallFlat" prob="0.00022" rotatemax="3"/>
+</append>
+
+<append xpath="//poi[@name='Road Gravel']">
+		<blockontop blockname="carsRandomHelper" prob="0.00131" rotatemax="3"/> <!--Vanilla is 0.0005 -->
+		<blockontop blockname="decoCarTireSmallFlat" prob="0.00001" rotatemax="3"/>
+		<blockontop blockname="damagedTireSmallFlat" prob="0.00033" rotatemax="3"/>
+		<blockontop blockname="damagedWheelSmallFlat" prob="0.00022" rotatemax="3"/>
+</append>
+
+<append xpath="//poi[@name='Country Road Asphalt']">
+		<blockontop blockname="carsRandomHelper" prob="0.00263" rotatemax="3"/> <!--Vanilla is  0.0015   -->
+		<blockontop blockname="decoCarTireSmallFlat"  prob="0.00001" rotatemax="3"/>
+		<blockontop blockname="damagedTireSmallFlat" prob="0.000038" rotatemax="3"/>
+		<blockontop blockname="damagedWheelSmallFlat" prob="0.000022" rotatemax="3"/>
+</append>
+
+
+<!-- Add specific VM repairable vehicles to biomes -->
+
+<append xpath="//biome[@name='wasteland']//decorations" >
+		<decoration type="block" blockname="HelicopterCrashed" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableGyro" prob=".000024" rotatemax="3"/>
+		<decoration type="block" blockname="DamagedVMPickup" prob=".000031" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableSpiker" prob=".000023" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableStrikerAPC" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableMilitaryTruck" prob=".000023" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableWarthog" prob=".000019" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableCobra" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableInterceptor" prob=".000023" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableHunter" prob=".000022" rotatemax="3"/>
+		<decoration type="block" blockname="FuelTankerDamaged" prob=".000013" rotatemax="3"/>
+</append>
+
+<append xpath="//biome[@name='desert']//decorations" >
+		<decoration type="block" blockname="HelicopterCrashed" prob=".000012" rotatemax="3"/>
+		<decoration type="block" blockname="DamagedVMPickup" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableBrownQuad" prob=".000041" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableExplorer" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableTacticalJeep" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableBigBuggy" prob=".000035" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableCrusader4x4" prob=".000031" rotatemax="3"/>
+		<decoration type="block" blockname="Repairable4x4Truck" prob=".000035" rotatemax="3"/>
+</append>
+ 
+
+<append xpath="//biome[@name='snow']//decorations" >
+		<decoration type="block" blockname="HelicopterCrashed" prob=".000018" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableGyro" prob=".000021" rotatemax="3"/> 
+		<decoration type="block" blockname="RepairableM3ATruck" prob=".000031" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableHunter" prob=".000025" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableSpiker" prob=".000024" rotatemax="3"/>
+</append>
+
+<append xpath="//biome[@name='pine_forest']//decorations" >
+		<decoration type="block" blockname="RepairableBicycle" prob=".00033" rotatemax="3"/> 
+		<decoration type="block" blockname="FuelTankerDamaged" prob=".000013" rotatemax="3"/>
+		<decoration type="block" blockname="DumperTruckDamaged" prob=".000013" rotatemax="3"/>
+</append>
+
+<append xpath="//biome[@name='burnt_forest']//decorations" >
+		<decoration type="block" blockname="HelicopterCrashed" prob=".000012" rotatemax="3"/>
+		<decoration type="block" blockname="DamagedVMPickup" prob=".000021" rotatemax="3"/> 
+		<decoration type="block" blockname="RepairableFlatBed" prob=".000022" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableHotRod" prob=".000023" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableMustangMach1" prob=".000022" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableFastback" prob=".000021" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableTurboMuscle" prob=".000024" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableMalice" prob=".000025" rotatemax="3"/>
+</append>
+
+</configs>

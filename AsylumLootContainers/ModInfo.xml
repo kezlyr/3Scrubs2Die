@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="SylumLootContainer"/>
+		<DisplayName value="Asylum Loot Containers"/>
+		<Description value="Changes Loot bags and player back pack to better containers"/>
+		<Author value="AsylumMod/Duhwolf"/>
+		<Version value="2.2.0.1"/>
+</xml>
+
+

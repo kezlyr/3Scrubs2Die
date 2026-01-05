@@ -1,0 +1,2172 @@
+<configs>
+
+<!-- DW Special Monsters - Animal Groups Only with Pine Forest Restrictions -->
+<!-- Generated automatically for ANIMAL entitygroups only (no zombies/biomes/hordes/special) -->
+<!--
+    NEW SPAWNING RULES:
+    - ONLY ANIMAL GROUPS: All 9 monsters can spawn at any GS (except pine forest)
+    - PINE FOREST: Only turt and dragonfly can spawn at any GS
+    - PINE FOREST: Other 7 monsters only spawn after GS 150
+    - NO ZOMBIE/BIOME/HORDE GROUPS: Excludes all zombie, biome, feral, sleeper, defense, scout, wandering hordes
+    - REMOVED: cerberus, griffon, kurolisk, chimera (4 monsters removed)
+
+    PROBABILITY SCALING BY GAMESTAGE (20-30% HIGHER THAN VANILLA ZOMBIES):
+    GS 0/No GS: 0.4 | GS 1-50: 0.4 | GS 50-100: 0.5 | GS 100-200: 0.6
+    GS 200-500: 0.8 | GS 500-1000: 1.0 | GS 1000+: 1.2-1.5
+
+    ALL 9 DW MONSTERS (REDUCED FROM 13):
+    mutantRadiatedLizard - Radiated Lizard Mutant
+    mutantWastelandSpider - Wasteland Spider Mutant
+    biomechanicalSpider - Biomechanical Spider
+    animalZombieDragonFly - Zombie Dragon Fly (Pine Forest Allowed)
+    mutantCeratoferox - Ceratoferox Mutant
+    animalZombieGobblerWasteland - Wasteland Zombie Gobbler
+    turt - Iron Shell (Pine Forest Allowed)
+    asylumNightDemon - Asylum Night Demon
+    asylumNightDemon2v - Asylum Night Demon 2V
+
+    REMOVED: cerberus, griffon, kurolisk, chimera (4 monsters removed)
+-->
+
+<!-- ANIMALS GROUPS -->
+
+	<!-- WildGameForest (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForest']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- WildGameForestNight (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsForest (PINE FOREST - RESTRICTED) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']/text()" delim="\n" op="add" >
+		turt, 0.40
+		animalZombieDragonFly, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsBurntForestAny - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+
+
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsBurntForestNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsDesert - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsDesertNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsSnow - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsSnowNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnowNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsWasteland - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsWastelandNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- WildGameStagNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameStagNight']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBear - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBear']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBearSmall - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBearSmall']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBoar - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBoar']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalBossGrace - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalBossGrace']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalChicken - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalChicken']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalCoyote - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalCoyote']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalDireWolf - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalDireWolf']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalDoe - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalDoe']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalMountainLion - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalMountainLion']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalRabbit - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalRabbit']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalSnake - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalSnake']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalStag - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalStag']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+	<!-- animalWolf - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='animalWolf']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.40
+		ingenalvus, 0.40
+		kingspawn, 0.40
+		onyx, 0.40
+		titan, 0.40
+		mutantWastelandSpider, 0.40
+		biomechanicalSpider, 0.40
+		animalZombieDragonFly, 0.40
+		mutantCeratoferox, 0.40
+		animalZombieGobblerWasteland, 0.40
+		turt, 0.40
+		asylumNightDemon, 0.40
+		asylumNightDemon2v, 0.40
+	</csv>
+
+
+<!-- ========================================================================== -->
+<!-- BLOOD MOON HORDE INTEGRATION - GS 100+ -->
+<!-- ========================================================================== -->
+<!-- Adds all 13 special monsters to blood moon hordes for GS 100+ -->
+<!-- Probability scales with gamestage: -->
+<!--   GS 100-199: 0.6 probability per monster -->
+<!--   GS 200-499: 0.8 probability per monster -->
+<!--   GS 500-999: 1.0 probability per monster -->
+<!--   GS 1000+:   1.2 probability per monster -->
+<!-- ========================================================================== -->
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.6) -->
+
+	<!-- badassHordeStageGS112 - GS 112 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS112']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassOnlyHordeStageGS112 - GS 112 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS112']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassHordeStageGS130 - GS 130 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS130']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassOnlyHordeStageGS130 - GS 130 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS130']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassHordeStageGS150 - GS 150 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS150']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassOnlyHordeStageGS150 - GS 150 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS150']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassHordeStageGS171 - GS 171 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS171']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassOnlyHordeStageGS171 - GS 171 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS171']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassHordeStageGS194 - GS 194 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS194']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+	<!-- badassOnlyHordeStageGS194 - GS 194 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS194']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.6
+		mutantWastelandSpider, 0.6
+		biomechanicalSpider, 0.6
+		animalZombieDragonFly, 0.6
+		mutantCeratoferox, 0.6
+		animalZombieGobblerWasteland, 0.6
+		turt, 0.6
+		asylumNightDemon, 0.6
+		asylumNightDemon2v, 0.6
+		ingenalvus, 0.6
+		kingspawn, 0.6
+		onyx, 0.6
+		titan, 0.6
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS217 - GS 217 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS217']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS217 - GS 217 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS217']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS242 - GS 242 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS242']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS242 - GS 242 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS242']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS268 - GS 268 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS268']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS268 - GS 268 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS268']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS296 - GS 296 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS296']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS296 - GS 296 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS296']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS325 - GS 325 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS325']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS325 - GS 325 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS325']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS355 - GS 355 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS355']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS355 - GS 355 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS355']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS386 - GS 386 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS386']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS386 - GS 386 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS386']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS419 - GS 419 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS419']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS419 - GS 419 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS419']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS452 - GS 452 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS452']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS452 - GS 452 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS452']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 0.8) -->
+
+	<!-- badassHordeStageGS488 - GS 488 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS488']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 100-199 (Probability: 0.8) -->
+
+	<!-- badassOnlyHordeStageGS488 - GS 488 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS488']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 0.8
+		mutantWastelandSpider, 0.8
+		biomechanicalSpider, 0.8
+		animalZombieDragonFly, 0.8
+		mutantCeratoferox, 0.8
+		animalZombieGobblerWasteland, 0.8
+		turt, 0.8
+		asylumNightDemon, 0.8
+		asylumNightDemon2v, 0.8
+		ingenalvus, 0.8
+		kingspawn, 0.8
+		onyx, 0.8
+		titan, 0.8
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS524 - GS 524 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS524']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS524 - GS 524 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS524']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS561 - GS 561 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS561']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS561 - GS 561 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS561']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS600 - GS 600 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS600']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS600 - GS 600 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS600']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS640 - GS 640 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS640']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS640 - GS 640 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS640']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS681 - GS 681 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS681']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS681 - GS 681 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS681']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS724 - GS 724 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS724']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS724 - GS 724 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS724']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS767 - GS 767 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS767']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS767 - GS 767 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS767']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS812 - GS 812 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS812']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS812 - GS 812 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS812']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS858 - GS 858 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS858']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS858 - GS 858 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS858']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS905 - GS 905 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS905']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS905 - GS 905 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS905']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.0) -->
+
+	<!-- badassHordeStageGS954 - GS 954 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS954']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 200-499 (Probability: 1.0) -->
+
+	<!-- badassOnlyHordeStageGS954 - GS 954 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS954']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.0
+		mutantWastelandSpider, 1.0
+		biomechanicalSpider, 1.0
+		animalZombieDragonFly, 1.0
+		mutantCeratoferox, 1.0
+		animalZombieGobblerWasteland, 1.0
+		turt, 1.0
+		asylumNightDemon, 1.0
+		asylumNightDemon2v, 1.0
+		ingenalvus, 1.0
+		kingspawn, 1.0
+		onyx, 1.0
+		titan, 1.0
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1003 - GS 1003 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1003']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1003 - GS 1003 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1003']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1054 - GS 1054 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1054']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1054 - GS 1054 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1054']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1106 - GS 1106 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1106']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1106 - GS 1106 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1106']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1159 - GS 1159 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1159']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1159 - GS 1159 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1159']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1213 - GS 1213 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1213']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1213 - GS 1213 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1213']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1269 - GS 1269 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1269']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1269 - GS 1269 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1269']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1326 - GS 1326 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1326']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1326 - GS 1326 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1326']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1383 - GS 1383 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1383']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1383 - GS 1383 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1383']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1442 - GS 1442 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1442']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1442 - GS 1442 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1442']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1503 - GS 1503 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1503']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1503 - GS 1503 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1503']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1564 - GS 1564 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1564']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1564 - GS 1564 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1564']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1626 - GS 1626 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1626']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1626 - GS 1626 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1626']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1690 - GS 1690 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1690']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1690 - GS 1690 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1690']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1755 - GS 1755 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1755']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1755 - GS 1755 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1755']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1821 - GS 1821 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1821']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1821 - GS 1821 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1821']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1888 - GS 1888 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1888']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1888 - GS 1888 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1888']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS1956 - GS 1956 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1956']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS1956 - GS 1956 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1956']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 1000+ (Probability: 1.2) -->
+
+	<!-- badassHordeStageGS2026 - GS 2026 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS2026']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+
+<!-- GAMESTAGE 500-999 (Probability: 1.2) -->
+
+	<!-- badassOnlyHordeStageGS2026 - GS 2026 -->
+	<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS2026']/text()" delim="\n" op="add" >
+		mutantRadiatedLizard, 1.2
+		mutantWastelandSpider, 1.2
+		biomechanicalSpider, 1.2
+		animalZombieDragonFly, 1.2
+		mutantCeratoferox, 1.2
+		animalZombieGobblerWasteland, 1.2
+		turt, 1.2
+		asylumNightDemon, 1.2
+		asylumNightDemon2v, 1.2
+		ingenalvus, 1.2
+		kingspawn, 1.2
+		onyx, 1.2
+		titan, 1.2
+	</csv>
+
+</configs>

@@ -1,0 +1,14 @@
+<configs>
+<!--  Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+
+<append xpath="/xui/ruleset[@name='default']" >
+		<window_group name="workstation_VMAutoWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+</append>
+
+</configs>

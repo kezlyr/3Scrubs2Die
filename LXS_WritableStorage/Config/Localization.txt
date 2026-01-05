@@ -1,0 +1,35 @@
+Key,english
+LxSChest,LxS Arcane Blue Writable Storage
+LxSChestDesc,Added by LxS_WritableStorage by LxSun.
+LxSChest2,LxS Arcane Violet Writable Storage
+LxSChest2Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest3,LxS Arcane Orange Writable Storage
+LxSChest3Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest4,LxS Arcane Yellow Writable Storage
+LxSChest4Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest5,LxS Arcane Red Writable Storage
+LxSChest5Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest6,LxS Arcane Pink Writable Storage
+LxSChest6Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest7,LxS Arcane Green Writable Storage
+LxSChest7Desc,Added by LxS_WritableStorage by LxSun.
+LxSChest8,LxS Arcane Purple Writable Storage
+LxSChest8Desc,Added by LxS_WritableStorage by LxSun.
+LxSBox,LxS Cardboard Writable Storage
+LxSBoxDesc,Added by LxS_WritableStorage by LxSun.
+LxSStinkyBox,LxS Stinky Cardboard Writable Storage
+LxSStinkyBoxDesc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox,LxS SciFi Writable Storage Green
+LxSSciFiBoxDesc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox2,LxS SciFi Writable Storage Blue
+LxSSciFiBox2Desc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox3,LxS SciFi Writable Storage Red
+LxSSciFiBox3Desc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox4,LxS SciFi Writable Storage Green Text
+LxSSciFiBox4Desc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox5,LxS SciFi Writable Storage Red Text
+LxSSciFiBox5Desc,Added by LxS_WritableStorage by LxSun.
+LxSSciFiBox6,LxS SciFi Writable Storage Blue Text
+LxSSciFiBox6Desc,Added by LxS_WritableStorage by LxSun.
+LxSBoxFloat,LxS SciFi Writable Storage Floating Text
+LxSBoxFloatDesc,Added by LxS_WritableStorage by LxSun.

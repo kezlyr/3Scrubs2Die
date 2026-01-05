@@ -1,0 +1,192 @@
+<configs>
+<append xpath="/items">
+    <item name="meleeHandAsylumCrocodile">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="50"/>
+        <property name="DamageBlock" value="60"/>
+        <property name="Range" value="3.2"/>
+        <property name="Block_range" value="3.8"/>
+      </property>
+
+      <effect_group name="meleeHandAsylumCrocodile" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0" tags=""/>
+        <passive_effect name="BuffProcChance" operation="base_set" value=".45" tags="buffInjuryBleedingTwo"/>
+        <passive_effect name="BuffProcChance" operation="base_set" value=".30" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInjuryStunned01"/>
+      </effect_group>
+	  <effect_group name="melee" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".10,.10,.10,.08,.20,.35,.15"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="18">
+			<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2400"/>
+	</effect_group>
+    </item>
+  </append>
+
+  <!-- *** ASYLUM ELEPHANT HAND ITEM *** -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumElephant">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="120"/>
+        <property name="Range" value="4.0"/>
+        <property name="Block_range" value="4.5"/>
+      </property>
+      <effect_group name="melee" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".15,.15,.15,.10,.20,.20,.05"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="12">
+          <requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2000"/>
+        <!-- Elephant Trample Effect -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="35"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- *** ASYLUM HIPPO HAND ITEM *** -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumHippo">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="65"/>
+        <property name="DamageBlock" value="90"/>
+        <property name="Range" value="3.8"/>
+        <property name="Block_range" value="4.2"/>
+      </property>
+      <effect_group name="melee" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".12,.12,.12,.15,.25,.20,.04"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="15">
+          <requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2200"/>
+        <!-- Hippo Charge Effect -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="30"/>
+        </triggered_effect>
+        <!-- Hippo Bite Crush -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffArmBroken">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="15"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- *** ASYLUM LION HAND ITEM *** -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumLion">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="85"/>
+        <property name="DamageBlock" value="130"/>
+        <property name="Range" value="4.2"/>
+        <property name="Block_range" value="4.8"/>
+      </property>
+      <effect_group name="melee" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".18,.18,.18,.12,.15,.15,.04"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="20">
+          <requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2500"/>
+        <!-- Lion Apex Bite -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryBleedingTwo">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="40"/>
+        </triggered_effect>
+        <!-- Lion Pounce -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="25"/>
+        </triggered_effect>
+        <!-- Lion Intimidation -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- *** ASYLUM LIONESS HAND ITEM *** -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumLioness">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="80"/>
+        <property name="DamageBlock" value="125"/>
+        <property name="Range" value="4.0"/>
+        <property name="Block_range" value="4.6"/>
+      </property>
+      <effect_group name="melee" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".20,.20,.20,.12,.12,.12,.04"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="18">
+          <requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2300"/>
+        <!-- Lioness Pack Hunter Bite -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryBleedingTwo">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="38"/>
+        </triggered_effect>
+        <!-- Lioness Agile Pounce -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="28"/>
+        </triggered_effect>
+        <!-- Lioness Stealth Strike -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="22"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- *** ASYLUM RHINO HAND ITEM *** -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumRhino">
+      <property name="Extends" value="meleeHandAnimalZombieBear"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="95"/>
+        <property name="DamageBlock" value="150"/>
+        <property name="Range" value="4.5"/>
+        <property name="Block_range" value="5.0"/>
+      </property>
+      <effect_group name="melee" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo" weights=".25,.25,.25,.10,.05,.05,.05"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="25">
+          <requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="3000"/>
+        <!-- Rhino Devastating Charge -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="35"/>
+        </triggered_effect>
+        <!-- Rhino Horn Gore -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryBleedingTwo">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="40"/>
+        </triggered_effect>
+        <!-- Rhino Stunning Impact -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="25"/>
+        </triggered_effect>
+        <!-- Rhino Bone Crushing -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffLegBroken">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+
+
+
+
+
+
+</configs>

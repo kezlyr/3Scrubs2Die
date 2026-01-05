@@ -1,0 +1,64 @@
+<Config>
+	<append xpath="/buffs">
+		<!-- Brass Catcher mod -->
+		<buff name="buffReclaimBrassVi" icon="ui_game_symbol_twitch_leech">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<display_value value="duration"/>
+			<effect_group>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.6"/>
+			</effect_group>        
+		</buff>
+	</append>
+	
+	
+	<append xpath="/buffs">
+		<!-- Slay Up! -->
+		<buff name="buffSlayUpVi" icon="ui_game_symbol_twitch_stay_still">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<display_value value="duration"/>
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.6"/>
+			</effect_group>        
+		</buff>
+	</append>
+	
+
+	<append xpath="/buffs">
+		<!-- Brass Catcher! -->
+		<buff name="buffBrassCatcherVi" hidden="true" remove_on_death="true" icon="ui_game_symbol_twitch_stay_still">
+			<stack_type value="replace"/>
+			<duration value="0.01"/>
+			<display_value value="duration"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="modBrassCatcherVi" allow_client_call="true"/>
+			</effect_group>
+		</buff>
+	</append>
+	
+	<append xpath="/buffs">
+		<!-- Brass Catcher! -->
+		<buff name="buffBulletTipCatcherVi" hidden="true" remove_on_death="true" icon="ui_game_symbol_twitch_stay_still">
+			<stack_type value="replace"/>
+			<duration value="0.01"/>
+			<display_value value="duration"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="modBulletTipCatcherVi" allow_client_call="true"/>
+			</effect_group>
+		</buff>
+	</append>	
+	
+	<append xpath="/buffs">
+		<!-- Brass Catcher! -->
+		<buff name="buffFuelCatcherVi" hidden="true" remove_on_death="true" icon="ui_game_symbol_twitch_stay_still">
+			<stack_type value="replace"/>
+			<duration value="0.01"/>
+			<display_value value="duration"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="modFuelCatcherVi" allow_client_call="true"/>
+			</effect_group>
+		</buff>
+	</append>
+
+</Config>

@@ -1,0 +1,45 @@
+<configs>
+
+<!-- Asylum Special Animals - Desert Biome Spawning Only -->
+<!-- 
+    SPAWNING RULES:
+    - DESERT BIOMES ONLY: All 7 animals spawn in desert biomes (day and night)
+    - PROBABILITY: 0.40 (matching DW_Special_Monsters configuration)
+    - NO OTHER BIOMES: Restricted to desert only for thematic consistency
+    
+    ALL 7 ASYLUM SPECIAL ANIMALS:
+    asylumCrocodile - Asylum Crocodile
+    Asylumanimalelephant - Asylum Elephant
+    Asylumanimalhippo - Asylum Hippo
+    Asylumanimallion - Asylum Lion
+    Asylumanimallioness - Asylum Lioness
+    Asylumrhino - Asylum Rhino
+    Asylumzebra - Asylum Zebra
+-->
+
+<!-- DESERT BIOME GROUPS -->
+
+	<!-- EnemyAnimalsDesert - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
+		asylumCrocodile, 0.40
+		Asylumanimalelephant, 0.40
+		Asylumanimalhippo, 0.40
+		Asylumanimallion, 0.40
+		Asylumanimallioness, 0.40
+		Asylumrhino, 0.40
+		Asylumzebra, 0.40
+	</csv>
+
+	<!-- EnemyAnimalsDesertNight - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add" >
+		asylumCrocodile, 0.40
+		Asylumanimalelephant, 0.40
+		Asylumanimalhippo, 0.40
+		Asylumanimallion, 0.40
+		Asylumanimallioness, 0.40
+		Asylumrhino, 0.40
+		Asylumzebra, 0.40
+	</csv>
+
+</configs>
+

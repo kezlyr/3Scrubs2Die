@@ -1,0 +1,6329 @@
+<configs>
+
+<!-- Midgame Demons - Biome + Horde Night Spawning (Forest GS >= 250) -->
+<!-- Generated from entitygroups_analysis.json -->
+<!--
+    RULES:
+    - Any biome may spawn Midgame Demons
+    - Pine forest ONLY spawns them at GS 250+ (no additions to general/no-GS forest groups)
+    - Horde nights: add to all feralHorde groups with GS 250+
+    - Entities included: 18 from Mods/MidgameDemons/Config/entityclasses.xml
+    - Probabilities kept modest for midgame challenge
+-->
+
+	<!-- ZombiesDesert (DESERT BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesert']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesDesertNight (DESERT BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+
+	<!-- feralHordeStageGS255 (HORDE NIGHT (GS 250+)) - GS 255 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS255']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS263 (HORDE NIGHT (GS 250+)) - GS 263 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS263']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS271 (HORDE NIGHT (GS 250+)) - GS 271 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS271']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS279 (HORDE NIGHT (GS 250+)) - GS 279 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS279']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS287 (HORDE NIGHT (GS 250+)) - GS 287 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS287']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS295 (HORDE NIGHT (GS 250+)) - GS 295 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS295']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS304 (HORDE NIGHT (GS 250+)) - GS 304 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS304']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS312 (HORDE NIGHT (GS 250+)) - GS 312 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS312']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS320 (HORDE NIGHT (GS 250+)) - GS 320 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS320']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS329 (HORDE NIGHT (GS 250+)) - GS 329 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS329']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS337 (HORDE NIGHT (GS 250+)) - GS 337 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS337']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS346 (HORDE NIGHT (GS 250+)) - GS 346 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS346']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS354 (HORDE NIGHT (GS 250+)) - GS 354 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS354']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS363 (HORDE NIGHT (GS 250+)) - GS 363 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS363']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS372 (HORDE NIGHT (GS 250+)) - GS 372 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS372']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS381 (HORDE NIGHT (GS 250+)) - GS 381 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS381']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS389 (HORDE NIGHT (GS 250+)) - GS 389 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS389']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS398 (HORDE NIGHT (GS 250+)) - GS 398 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS398']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS407 (HORDE NIGHT (GS 250+)) - GS 407 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS407']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS417 (HORDE NIGHT (GS 250+)) - GS 417 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS417']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS426 (HORDE NIGHT (GS 250+)) - GS 426 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS426']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS435 (HORDE NIGHT (GS 250+)) - GS 435 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS435']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS444 (HORDE NIGHT (GS 250+)) - GS 444 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS444']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS453 (HORDE NIGHT (GS 250+)) - GS 453 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS453']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS463 (HORDE NIGHT (GS 250+)) - GS 463 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS463']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS472 (HORDE NIGHT (GS 250+)) - GS 472 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS472']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS482 (HORDE NIGHT (GS 250+)) - GS 482 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS482']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS491 (HORDE NIGHT (GS 250+)) - GS 491 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS491']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- feralHordeStageGS501 (HORDE NIGHT (GS 250+)) - GS 501 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS501']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS510 (HORDE NIGHT (GS 250+)) - GS 510 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS510']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS520 (HORDE NIGHT (GS 250+)) - GS 520 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS520']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS530 (HORDE NIGHT (GS 250+)) - GS 530 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS530']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS540 (HORDE NIGHT (GS 250+)) - GS 540 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS540']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS550 (HORDE NIGHT (GS 250+)) - GS 550 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS550']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS560 (HORDE NIGHT (GS 250+)) - GS 560 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS560']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS570 (HORDE NIGHT (GS 250+)) - GS 570 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS570']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS580 (HORDE NIGHT (GS 250+)) - GS 580 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS580']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS590 (HORDE NIGHT (GS 250+)) - GS 590 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS590']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS600 (HORDE NIGHT (GS 250+)) - GS 600 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS600']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS610 (HORDE NIGHT (GS 250+)) - GS 610 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS610']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS620 (HORDE NIGHT (GS 250+)) - GS 620 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS620']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS631 (HORDE NIGHT (GS 250+)) - GS 631 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS631']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS641 (HORDE NIGHT (GS 250+)) - GS 641 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS641']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS651 (HORDE NIGHT (GS 250+)) - GS 651 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS651']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS662 (HORDE NIGHT (GS 250+)) - GS 662 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS662']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS672 (HORDE NIGHT (GS 250+)) - GS 672 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS672']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS683 (HORDE NIGHT (GS 250+)) - GS 683 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS683']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS693 (HORDE NIGHT (GS 250+)) - GS 693 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS693']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS704 (HORDE NIGHT (GS 250+)) - GS 704 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS704']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS715 (HORDE NIGHT (GS 250+)) - GS 715 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS715']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS726 (HORDE NIGHT (GS 250+)) - GS 726 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS726']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS736 (HORDE NIGHT (GS 250+)) - GS 736 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS736']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS747 (HORDE NIGHT (GS 250+)) - GS 747 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS747']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS758 (HORDE NIGHT (GS 250+)) - GS 758 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS758']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS769 (HORDE NIGHT (GS 250+)) - GS 769 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS769']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS780 (HORDE NIGHT (GS 250+)) - GS 780 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS780']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS791 (HORDE NIGHT (GS 250+)) - GS 791 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS791']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS802 (HORDE NIGHT (GS 250+)) - GS 802 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS802']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS813 (HORDE NIGHT (GS 250+)) - GS 813 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS813']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS824 (HORDE NIGHT (GS 250+)) - GS 824 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS824']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS836 (HORDE NIGHT (GS 250+)) - GS 836 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS836']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS847 (HORDE NIGHT (GS 250+)) - GS 847 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS847']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS858 (HORDE NIGHT (GS 250+)) - GS 858 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS858']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS870 (HORDE NIGHT (GS 250+)) - GS 870 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS870']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS881 (HORDE NIGHT (GS 250+)) - GS 881 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS881']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS893 (HORDE NIGHT (GS 250+)) - GS 893 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS893']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS904 (HORDE NIGHT (GS 250+)) - GS 904 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS904']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS916 (HORDE NIGHT (GS 250+)) - GS 916 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS916']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS927 (HORDE NIGHT (GS 250+)) - GS 927 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS927']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS939 (HORDE NIGHT (GS 250+)) - GS 939 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS939']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS951 (HORDE NIGHT (GS 250+)) - GS 951 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS951']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS962 (HORDE NIGHT (GS 250+)) - GS 962 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS962']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS974 (HORDE NIGHT (GS 250+)) - GS 974 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS974']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS986 (HORDE NIGHT (GS 250+)) - GS 986 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS986']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS998 (HORDE NIGHT (GS 250+)) - GS 998 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS998']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1010 (HORDE NIGHT (GS 250+)) - GS 1010 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1010']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1022 (HORDE NIGHT (GS 250+)) - GS 1022 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1022']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1034 (HORDE NIGHT (GS 250+)) - GS 1034 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1034']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1046 (HORDE NIGHT (GS 250+)) - GS 1046 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1046']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1058 (HORDE NIGHT (GS 250+)) - GS 1058 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1058']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1070 (HORDE NIGHT (GS 250+)) - GS 1070 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1070']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1082 (HORDE NIGHT (GS 250+)) - GS 1082 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1082']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1094 (HORDE NIGHT (GS 250+)) - GS 1094 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1094']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1106 (HORDE NIGHT (GS 250+)) - GS 1106 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1106']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1119 (HORDE NIGHT (GS 250+)) - GS 1119 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1119']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1131 (HORDE NIGHT (GS 250+)) - GS 1131 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1131']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1143 (HORDE NIGHT (GS 250+)) - GS 1143 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1143']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1156 (HORDE NIGHT (GS 250+)) - GS 1156 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1156']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1168 (HORDE NIGHT (GS 250+)) - GS 1168 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1168']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1181 (HORDE NIGHT (GS 250+)) - GS 1181 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1181']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1193 (HORDE NIGHT (GS 250+)) - GS 1193 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1193']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1206 (HORDE NIGHT (GS 250+)) - GS 1206 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1206']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1218 (HORDE NIGHT (GS 250+)) - GS 1218 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1218']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1231 (HORDE NIGHT (GS 250+)) - GS 1231 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1231']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1244 (HORDE NIGHT (GS 250+)) - GS 1244 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1244']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1256 (HORDE NIGHT (GS 250+)) - GS 1256 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1256']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1269 (HORDE NIGHT (GS 250+)) - GS 1269 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1269']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1282 (HORDE NIGHT (GS 250+)) - GS 1282 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1282']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1295 (HORDE NIGHT (GS 250+)) - GS 1295 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1295']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1308 (HORDE NIGHT (GS 250+)) - GS 1308 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1308']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1321 (HORDE NIGHT (GS 250+)) - GS 1321 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1321']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1334 (HORDE NIGHT (GS 250+)) - GS 1334 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1334']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1347 (HORDE NIGHT (GS 250+)) - GS 1347 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1347']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1360 (HORDE NIGHT (GS 250+)) - GS 1360 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1360']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1373 (HORDE NIGHT (GS 250+)) - GS 1373 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1373']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1386 (HORDE NIGHT (GS 250+)) - GS 1386 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1386']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1399 (HORDE NIGHT (GS 250+)) - GS 1399 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1399']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1412 (HORDE NIGHT (GS 250+)) - GS 1412 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1412']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1425 (HORDE NIGHT (GS 250+)) - GS 1425 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1425']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1439 (HORDE NIGHT (GS 250+)) - GS 1439 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1439']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1452 (HORDE NIGHT (GS 250+)) - GS 1452 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1452']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1465 (HORDE NIGHT (GS 250+)) - GS 1465 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1465']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1479 (HORDE NIGHT (GS 250+)) - GS 1479 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1479']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1492 (HORDE NIGHT (GS 250+)) - GS 1492 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1492']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1506 (HORDE NIGHT (GS 250+)) - GS 1506 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1506']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1519 (HORDE NIGHT (GS 250+)) - GS 1519 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1519']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1533 (HORDE NIGHT (GS 250+)) - GS 1533 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1533']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1546 (HORDE NIGHT (GS 250+)) - GS 1546 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1546']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1560 (HORDE NIGHT (GS 250+)) - GS 1560 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1560']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1573 (HORDE NIGHT (GS 250+)) - GS 1573 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1573']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1587 (HORDE NIGHT (GS 250+)) - GS 1587 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1587']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1601 (HORDE NIGHT (GS 250+)) - GS 1601 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1601']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1614 (HORDE NIGHT (GS 250+)) - GS 1614 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1614']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1628 (HORDE NIGHT (GS 250+)) - GS 1628 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1628']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1642 (HORDE NIGHT (GS 250+)) - GS 1642 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1642']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1656 (HORDE NIGHT (GS 250+)) - GS 1656 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1656']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1670 (HORDE NIGHT (GS 250+)) - GS 1670 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1670']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1684 (HORDE NIGHT (GS 250+)) - GS 1684 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1684']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1698 (HORDE NIGHT (GS 250+)) - GS 1698 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1698']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1712 (HORDE NIGHT (GS 250+)) - GS 1712 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1712']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1726 (HORDE NIGHT (GS 250+)) - GS 1726 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1726']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1740 (HORDE NIGHT (GS 250+)) - GS 1740 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1740']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1754 (HORDE NIGHT (GS 250+)) - GS 1754 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1754']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1768 (HORDE NIGHT (GS 250+)) - GS 1768 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1768']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1782 (HORDE NIGHT (GS 250+)) - GS 1782 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1782']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1796 (HORDE NIGHT (GS 250+)) - GS 1796 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1796']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1811 (HORDE NIGHT (GS 250+)) - GS 1811 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1811']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1825 (HORDE NIGHT (GS 250+)) - GS 1825 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1825']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1839 (HORDE NIGHT (GS 250+)) - GS 1839 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1839']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1853 (HORDE NIGHT (GS 250+)) - GS 1853 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1853']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1868 (HORDE NIGHT (GS 250+)) - GS 1868 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1868']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1882 (HORDE NIGHT (GS 250+)) - GS 1882 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1882']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1897 (HORDE NIGHT (GS 250+)) - GS 1897 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1897']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1911 (HORDE NIGHT (GS 250+)) - GS 1911 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1911']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1926 (HORDE NIGHT (GS 250+)) - GS 1926 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1926']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1940 (HORDE NIGHT (GS 250+)) - GS 1940 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1940']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1955 (HORDE NIGHT (GS 250+)) - GS 1955 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1955']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1969 (HORDE NIGHT (GS 250+)) - GS 1969 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1969']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1984 (HORDE NIGHT (GS 250+)) - GS 1984 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1984']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS1999 (HORDE NIGHT (GS 250+)) - GS 1999 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1999']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2013 (HORDE NIGHT (GS 250+)) - GS 2013 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2013']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2028 (HORDE NIGHT (GS 250+)) - GS 2028 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2028']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2043 (HORDE NIGHT (GS 250+)) - GS 2043 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2043']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2058 (HORDE NIGHT (GS 250+)) - GS 2058 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2058']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2073 (HORDE NIGHT (GS 250+)) - GS 2073 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2073']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2087 (HORDE NIGHT (GS 250+)) - GS 2087 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2087']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2102 (HORDE NIGHT (GS 250+)) - GS 2102 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2102']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2117 (HORDE NIGHT (GS 250+)) - GS 2117 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2117']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2132 (HORDE NIGHT (GS 250+)) - GS 2132 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2132']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2147 (HORDE NIGHT (GS 250+)) - GS 2147 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2147']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2162 (HORDE NIGHT (GS 250+)) - GS 2162 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2162']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2177 (HORDE NIGHT (GS 250+)) - GS 2177 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2177']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2192 (HORDE NIGHT (GS 250+)) - GS 2192 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2192']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2207 (HORDE NIGHT (GS 250+)) - GS 2207 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2207']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2223 (HORDE NIGHT (GS 250+)) - GS 2223 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2223']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2238 (HORDE NIGHT (GS 250+)) - GS 2238 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2238']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2253 (HORDE NIGHT (GS 250+)) - GS 2253 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2253']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2268 (HORDE NIGHT (GS 250+)) - GS 2268 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2268']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2284 (HORDE NIGHT (GS 250+)) - GS 2284 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2284']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2299 (HORDE NIGHT (GS 250+)) - GS 2299 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2299']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2314 (HORDE NIGHT (GS 250+)) - GS 2314 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2314']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2330 (HORDE NIGHT (GS 250+)) - GS 2330 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2330']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2345 (HORDE NIGHT (GS 250+)) - GS 2345 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2345']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2360 (HORDE NIGHT (GS 250+)) - GS 2360 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2360']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2376 (HORDE NIGHT (GS 250+)) - GS 2376 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2376']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2391 (HORDE NIGHT (GS 250+)) - GS 2391 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2391']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2407 (HORDE NIGHT (GS 250+)) - GS 2407 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2407']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2423 (HORDE NIGHT (GS 250+)) - GS 2423 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2423']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2438 (HORDE NIGHT (GS 250+)) - GS 2438 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2438']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2454 (HORDE NIGHT (GS 250+)) - GS 2454 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2454']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2469 (HORDE NIGHT (GS 250+)) - GS 2469 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2469']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2485 (HORDE NIGHT (GS 250+)) - GS 2485 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2485']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2501 (HORDE NIGHT (GS 250+)) - GS 2501 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2501']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2517 (HORDE NIGHT (GS 250+)) - GS 2517 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2517']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2532 (HORDE NIGHT (GS 250+)) - GS 2532 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2532']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2548 (HORDE NIGHT (GS 250+)) - GS 2548 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2548']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2564 (HORDE NIGHT (GS 250+)) - GS 2564 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2564']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2580 (HORDE NIGHT (GS 250+)) - GS 2580 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2580']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2596 (HORDE NIGHT (GS 250+)) - GS 2596 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2596']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2612 (HORDE NIGHT (GS 250+)) - GS 2612 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2612']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2628 (HORDE NIGHT (GS 250+)) - GS 2628 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2628']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2644 (HORDE NIGHT (GS 250+)) - GS 2644 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2644']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2660 (HORDE NIGHT (GS 250+)) - GS 2660 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2660']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2676 (HORDE NIGHT (GS 250+)) - GS 2676 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2676']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2692 (HORDE NIGHT (GS 250+)) - GS 2692 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2692']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2708 (HORDE NIGHT (GS 250+)) - GS 2708 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2708']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2724 (HORDE NIGHT (GS 250+)) - GS 2724 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2724']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2740 (HORDE NIGHT (GS 250+)) - GS 2740 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2740']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2756 (HORDE NIGHT (GS 250+)) - GS 2756 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2756']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2772 (HORDE NIGHT (GS 250+)) - GS 2772 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2772']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2789 (HORDE NIGHT (GS 250+)) - GS 2789 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2789']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2805 (HORDE NIGHT (GS 250+)) - GS 2805 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2805']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2821 (HORDE NIGHT (GS 250+)) - GS 2821 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2821']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2838 (HORDE NIGHT (GS 250+)) - GS 2838 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2838']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2854 (HORDE NIGHT (GS 250+)) - GS 2854 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2854']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2870 (HORDE NIGHT (GS 250+)) - GS 2870 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2870']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2887 (HORDE NIGHT (GS 250+)) - GS 2887 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2887']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2903 (HORDE NIGHT (GS 250+)) - GS 2903 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2903']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2920 (HORDE NIGHT (GS 250+)) - GS 2920 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2920']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2936 (HORDE NIGHT (GS 250+)) - GS 2936 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2936']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2953 (HORDE NIGHT (GS 250+)) - GS 2953 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2953']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2969 (HORDE NIGHT (GS 250+)) - GS 2969 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2969']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS2986 (HORDE NIGHT (GS 250+)) - GS 2986 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2986']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3003 (HORDE NIGHT (GS 250+)) - GS 3003 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3003']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3019 (HORDE NIGHT (GS 250+)) - GS 3019 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3019']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3036 (HORDE NIGHT (GS 250+)) - GS 3036 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3036']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3053 (HORDE NIGHT (GS 250+)) - GS 3053 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3053']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3069 (HORDE NIGHT (GS 250+)) - GS 3069 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3069']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3086 (HORDE NIGHT (GS 250+)) - GS 3086 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3086']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3103 (HORDE NIGHT (GS 250+)) - GS 3103 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3103']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3120 (HORDE NIGHT (GS 250+)) - GS 3120 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3120']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3136 (HORDE NIGHT (GS 250+)) - GS 3136 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3136']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3153 (HORDE NIGHT (GS 250+)) - GS 3153 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3153']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3170 (HORDE NIGHT (GS 250+)) - GS 3170 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3170']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3187 (HORDE NIGHT (GS 250+)) - GS 3187 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3187']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3204 (HORDE NIGHT (GS 250+)) - GS 3204 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3204']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3221 (HORDE NIGHT (GS 250+)) - GS 3221 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3221']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3238 (HORDE NIGHT (GS 250+)) - GS 3238 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3238']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3255 (HORDE NIGHT (GS 250+)) - GS 3255 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3255']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3272 (HORDE NIGHT (GS 250+)) - GS 3272 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3272']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3289 (HORDE NIGHT (GS 250+)) - GS 3289 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3289']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3306 (HORDE NIGHT (GS 250+)) - GS 3306 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3306']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3324 (HORDE NIGHT (GS 250+)) - GS 3324 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3324']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3341 (HORDE NIGHT (GS 250+)) - GS 3341 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3341']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3358 (HORDE NIGHT (GS 250+)) - GS 3358 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3358']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3375 (HORDE NIGHT (GS 250+)) - GS 3375 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3375']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3392 (HORDE NIGHT (GS 250+)) - GS 3392 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3392']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3410 (HORDE NIGHT (GS 250+)) - GS 3410 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3410']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3427 (HORDE NIGHT (GS 250+)) - GS 3427 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3427']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3444 (HORDE NIGHT (GS 250+)) - GS 3444 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3444']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3462 (HORDE NIGHT (GS 250+)) - GS 3462 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3462']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3479 (HORDE NIGHT (GS 250+)) - GS 3479 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3479']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3496 (HORDE NIGHT (GS 250+)) - GS 3496 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3496']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3514 (HORDE NIGHT (GS 250+)) - GS 3514 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3514']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3531 (HORDE NIGHT (GS 250+)) - GS 3531 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3531']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3549 (HORDE NIGHT (GS 250+)) - GS 3549 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3549']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3566 (HORDE NIGHT (GS 250+)) - GS 3566 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3566']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3584 (HORDE NIGHT (GS 250+)) - GS 3584 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3584']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3601 (HORDE NIGHT (GS 250+)) - GS 3601 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3601']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3619 (HORDE NIGHT (GS 250+)) - GS 3619 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3619']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3637 (HORDE NIGHT (GS 250+)) - GS 3637 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3637']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3654 (HORDE NIGHT (GS 250+)) - GS 3654 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3654']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3672 (HORDE NIGHT (GS 250+)) - GS 3672 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3672']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3690 (HORDE NIGHT (GS 250+)) - GS 3690 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3690']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3707 (HORDE NIGHT (GS 250+)) - GS 3707 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3707']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3725 (HORDE NIGHT (GS 250+)) - GS 3725 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3725']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3743 (HORDE NIGHT (GS 250+)) - GS 3743 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3743']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3761 (HORDE NIGHT (GS 250+)) - GS 3761 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3761']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3779 (HORDE NIGHT (GS 250+)) - GS 3779 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3779']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3796 (HORDE NIGHT (GS 250+)) - GS 3796 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3796']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3814 (HORDE NIGHT (GS 250+)) - GS 3814 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3814']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3832 (HORDE NIGHT (GS 250+)) - GS 3832 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3832']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3850 (HORDE NIGHT (GS 250+)) - GS 3850 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3850']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3868 (HORDE NIGHT (GS 250+)) - GS 3868 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3868']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3886 (HORDE NIGHT (GS 250+)) - GS 3886 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3886']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3904 (HORDE NIGHT (GS 250+)) - GS 3904 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3904']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3922 (HORDE NIGHT (GS 250+)) - GS 3922 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3922']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3940 (HORDE NIGHT (GS 250+)) - GS 3940 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3940']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3958 (HORDE NIGHT (GS 250+)) - GS 3958 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3958']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3976 (HORDE NIGHT (GS 250+)) - GS 3976 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3976']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS3995 (HORDE NIGHT (GS 250+)) - GS 3995 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3995']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS4013 (HORDE NIGHT (GS 250+)) - GS 4013 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4013']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS4031 (HORDE NIGHT (GS 250+)) - GS 4031 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4031']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS4049 (HORDE NIGHT (GS 250+)) - GS 4049 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4049']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS4067 (HORDE NIGHT (GS 250+)) - GS 4067 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4067']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- feralHordeStageGS4086 (HORDE NIGHT (GS 250+)) - GS 4086 -->
+	<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4086']/text()" delim="\n" op="add" >
+		belphegor, 0.120
+		asmodeus, 0.120
+		mammon, 0.120
+		leviathan, 0.120
+		beelzebub, 0.120
+		satan, 0.120
+		lucifer, 0.120
+		malphas, 0.120
+		gluttoth, 0.120
+		gorger, 0.120
+		valefor, 0.120
+		asteroth, 0.120
+		baal, 0.120
+		paimon, 0.120
+		beleth, 0.120
+		purson, 0.120
+		azazel, 0.120
+		goliath, 0.120
+	</csv>
+
+	<!-- ZombiesSnow (SNOW BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnow']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesSnowNight (SNOW BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesAllWasteland (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAllWasteland']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWasteland (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWastelandDowntown (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWastelandNight (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWastelandNight2 (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWastelandNight2NoBears (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+	<!-- ZombiesWastelandNightNoBears (WASTELAND BIOME) - GS N/A -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add" >
+		belphegor, 0.100
+		asmodeus, 0.100
+		mammon, 0.100
+		leviathan, 0.100
+		beelzebub, 0.100
+		satan, 0.100
+		lucifer, 0.100
+		malphas, 0.100
+		gluttoth, 0.100
+		gorger, 0.100
+		valefor, 0.100
+		asteroth, 0.100
+		baal, 0.100
+		paimon, 0.100
+		beleth, 0.100
+		purson, 0.100
+		azazel, 0.100
+		goliath, 0.100
+	</csv>
+
+</configs>

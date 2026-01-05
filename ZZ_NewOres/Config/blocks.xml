@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <remove xpath="/blocks/block[@name='terrOreIron']"/>
+    <remove xpath="/blocks/block[@name='terrOreLead']"/>
+    <remove xpath="/blocks/block[@name='terrOreCoal']"/>
+    <remove xpath="/blocks/block[@name='terrOrePotassiumNitrate']"/>
+    <remove xpath="/blocks/block[@name='terrOreOilDeposit']"/>
+    <remove xpath="/blocks/block[@name='terrOreStoneIronRandom']"/>
+    <remove xpath="/blocks/block[@name='terrOreStoneLeadRandom']"/>
+    <remove xpath="/blocks/block[@name='terrOreStoneCoalRandom']"/>
+    <remove xpath="/blocks/block[@name='terrOreStonePotassiumRandom']"/>
+    <remove xpath="/blocks/block[@name='terrOreStoneOilRandom']"/>
+    <remove xpath="/blocks/block[@name='forge']"/>
+  <append xpath="/blocks">
+
+    <block name="terrOreIron">
+        <property name="CanMobsSpawnOn" value="true"/>
+        <property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+        <property name="DisplayType" value="blockTerrain"/>
+        <property name="Map.Color" value="255,150,50"/>
+        <property name="Material" value="MoreMetal"/>
+        <property name="Shape" value="Terrain"/>
+        <property name="Mesh" value="terrain"/>
+        <property name="Texture" value="33"/>
+        <property name="ImposterExclude" value="true"/>
+        <drop event="Harvest" name="resourceIron" count="50" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="resourceIron" count="150" prob="0.4" stick_chance="0"/>
+        <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="0950"/>
+        <property name="Tags" value="ore,deepOre"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+    </block>
+
+    <block name="terrOreStoneIronRandom">
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreIron" />
+      <property name="DescriptionKey" value="terrOreStoneIronRandomDesc" />
+      <property name="Map.Color" value="255,150,50"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="33"/>
+      <property name="SortOrder1" value="0000"/>
+      <property name="SortOrder2" value="1000"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceIron" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreLead">
+        <property name="CanMobsSpawnOn" value="true"/>
+        <property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+        <property name="DisplayType" value="blockTerrain"/>
+        <property name="Map.Color" value="50,200,250"/>
+        <property name="Material" value="MoreMetal"/>
+        <property name="Shape" value="Terrain"/>
+        <property name="Mesh" value="terrain"/>
+        <property name="Texture" value="316"/>
+        <property name="ImposterExclude" value="true"/>
+        <property name="Weight" value="100"/>
+        <property name="EconomicValue" value="5"/>
+        <property name="EconomicBundleSize" value="1"/>
+        <property name="SellableToTrader" value="false"/>
+        <drop event="Harvest" name="resourceLead" count="50" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="resourceLead" count="50" prob="0.4" stick_chance="0"/>
+        <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="1000"/>
+        <property name="Tags" value="ore,deepOre"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+    </block>
+
+    <block name="terrOreStoneLeadRandom">
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreLead" />
+      <property name="DescriptionKey" value="terrOreStoneLeadRandomDesc" />
+      <property name="Map.Color" value="50,200,250"/>
+      <property name="Material" value="MoreStone"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="SortOrder1" value="0000"/>
+      <property name="SortOrder2" value="1000"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceLead" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreCoal">
+        <property name="CanMobsSpawnOn" value="true"/>
+        <property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+        <property name="DisplayType" value="blockTerrain"/>
+        <property name="Map.Color" value="0,0,0"/>
+        <property name="Material" value="MoreStone"/>
+        <property name="Shape" value="Terrain"/>
+        <property name="Mesh" value="terrain"/>
+        <property name="Texture" value="34"/>
+        <property name="ImposterExclude" value="true"/>
+        <drop event="Harvest" name="resourceCoal" count="50" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="resourceCoal" count="50" prob="0.4" stick_chance="0"/>
+        <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="1050"/>
+        <property name="Tags" value="ore,deepOre,coalBurnedDmg"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+    </block>
+
+    <block name="terrOreStoneCoalRandom">
+      <property name="Extends" value="terrOreStoneIronRandom" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreCoal" />
+      <property name="DescriptionKey" value="terrOreStoneCoalRandomDesc" />
+      <property name="Map.Color" value="0,0,0"/>
+      <property name="Material" value="MoreStone"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="34"/>
+      <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="1050"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCoal" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    
+
+    <block name="terrOrePotassiumNitrate">
+        <property name="CanMobsSpawnOn" value="true"/>
+        <property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+        <property name="DisplayType" value="blockTerrain"/>
+        <property name="Map.Color" value="255,255,255"/>
+        <property name="Material" value="MoreStone"/>
+        <property name="Shape" value="Terrain"/>
+        <property name="Mesh" value="terrain"/>
+        <property name="Texture" value="300"/>
+        <property name="ImposterExclude" value="true"/>
+        <drop event="Harvest" name="resourcePotassiumNitratePowder" count="50" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="resourcePotassiumNitratePowder" count="50" prob="0.4" stick_chance="0"/>
+        <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="1100"/>
+        <property name="Tags" value="ore,deepOre"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+    </block>
+
+    <block name="terrOreStonePotassiumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreOil" />
+      <property name="DescriptionKey" value="terrOreStoneOilRandomDesc" />
+      <property name="Map.Color" value="255,255,255"/>
+      <property name="Material" value="MoreStone"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="300"/>
+      <property name="SortOrder1" value="0000"/>
+      <property name="SortOrder2" value="1050"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourcePotassiumNitratePowder" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreOilDeposit">
+        <property name="CanMobsSpawnOn" value="true"/>
+        <property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+        <property name="DisplayType" value="blockTerrain"/>
+        <property name="Map.Color" value="200,150,250"/>
+        <property name="Material" value="MoreStone"/>
+        <property name="Shape" value="Terrain"/>
+        <property name="Mesh" value="terrain"/>
+        <property name="Texture" value="440"/>
+        <property name="ImposterExclude" value="true"/>
+        <property name="LPHardnessScale" value="2"/>
+        <drop event="Harvest" name="resourceOilShale" count="50" tag="oreWoodHarvest"/>
+        <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="resourceOilShale" count="50" prob="0.4" stick_chance="0"/>
+        <property name="SortOrder1" value="0000"/>
+        <property name="SortOrder2" value="1150"/>
+        <property name="Tags" value="ore,deepOre"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+    </block>
+
+    <block name="terrOreStoneOilRandom">
+      <property name="Extends" value="terrOreStoneIronRandom" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreOil" />
+      <property name="DescriptionKey" value="terrOreStoneOilRandomDesc" />
+      <property name="Map.Color" value="200,150,250"/>
+      <property name="Material" value="MoreStone"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="440"/>
+      <property name="SortOrder1" value="0000"/>
+      <property name="SortOrder2" value="1050"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCoal" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Cobalt (new resource): MicroSplat voxel terrain ore + prefab-friendly names + zz* aliases -->
+    <block name="terrOreCobalt">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzCobaltOreDesc" />
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="60,120,255" />
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <!-- Fallback for installs without MicroSplat: use a vanilla ore texture. -->
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelCobalt0"/>
+      <property name="TerrainIndex" value="26"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceCobalt" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceCobalt" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreCobaltBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder" />
+      <property name="CreativeMode" value="Player" />
+      <property name="DescriptionKey" value="zzCobaltOreDesc" />
+      <property name="Map.Color" value="60,120,255" />
+      <property name="CustomIconTint" value="3B77FF" />
+      <property name="TintColor" value="3B77FF" />
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCobalt" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Compatibility: some vein prefabs use this block name (e.g. deco_cobalt_vein). -->
+    <!-- Vanilla vein blocks extend terrOreStoneIronRandom (a prefab-safe stone block). -->
+    <block name="terrOreStoneCobaltRandom">
+      <property name="Extends" value="terrOreStoneIronRandom" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="terrOreCobalt" />
+      <property name="DescriptionKey" value="terrOreStoneCobaltRandomDesc" />
+      <property name="Map.Color" value="60,120,255" />
+      <!-- Render blue with MicroSplat when available; fall back to a vanilla ore texture otherwise. -->
+      <property name="MicroSplatVoxel" value="voxelCobalt0"/>
+      <property name="TerrainIndex" value="26"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other" />
+      <property name="SortOrder2" value="1450" />
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCobalt" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+
+
+    <!-- Additional ores (copy of cobalt workflow) -->
+
+    <!-- Quartz -->
+    <block name="terrOreQuartz">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzQuartzOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="230,240,255"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelQuartz0"/>
+      <property name="TerrainIndex" value="24"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceQuartz" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceQuartz" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreQuartzBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzQuartzOreDesc"/>
+      <property name="Map.Color" value="230,240,255"/>
+      <property name="CustomIconTint" value="E6F0FF"/>
+      <property name="TintColor" value="E6F0FF"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceQuartz" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneQuartzRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreQuartz"/>
+      <property name="DescriptionKey" value="terrOreStoneQuartzRandomDesc"/>
+      <property name="Map.Color" value="230,240,255"/>
+      <property name="MicroSplatVoxel" value="voxelQuartz0"/>
+      <property name="TerrainIndex" value="24"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceQuartz" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Aluminium (bauxite-colored voxel) -->
+    <block name="terrOreAluminium">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzAluminiumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="190,120,70"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelBauxite0"/>
+      <property name="TerrainIndex" value="25"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceAluminium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceAluminium" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreAluminiumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzAluminiumOreDesc"/>
+      <property name="Map.Color" value="190,120,70"/>
+      <property name="CustomIconTint" value="BE7846"/>
+      <property name="TintColor" value="BE7846"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceAluminium" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneAluminiumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreAluminium"/>
+      <property name="DescriptionKey" value="terrOreStoneAluminiumRandomDesc"/>
+      <property name="Map.Color" value="190,120,70"/>
+      <property name="MicroSplatVoxel" value="voxelBauxite0"/>
+      <property name="TerrainIndex" value="25"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceAluminium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Copper -->
+    <block name="terrOreCopper">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzCopperOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="184,115,51"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelCopper0"/>
+      <property name="TerrainIndex" value="27"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceCopper" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceCopper" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreCopperBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzCopperOreDesc"/>
+      <property name="Map.Color" value="184,115,51"/>
+      <property name="CustomIconTint" value="B87333"/>
+      <property name="TintColor" value="B87333"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCopper" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneCopperRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreCopper"/>
+      <property name="DescriptionKey" value="terrOreStoneCopperRandomDesc"/>
+      <property name="Map.Color" value="184,115,51"/>
+      <property name="MicroSplatVoxel" value="voxelCopper0"/>
+      <property name="TerrainIndex" value="27"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceCopper" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Zinc -->
+    <block name="terrOreZinc">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzZincOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="169,183,198"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelZinc0"/>
+      <property name="TerrainIndex" value="28"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceZinc" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceZinc" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreZincBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzZincOreDesc"/>
+      <property name="Map.Color" value="169,183,198"/>
+      <property name="CustomIconTint" value="A9B7C6"/>
+      <property name="TintColor" value="A9B7C6"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceZinc" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneZincRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreZinc"/>
+      <property name="DescriptionKey" value="terrOreStoneZincRandomDesc"/>
+      <property name="Map.Color" value="169,183,198"/>
+      <property name="MicroSplatVoxel" value="voxelZinc0"/>
+      <property name="TerrainIndex" value="28"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceZinc" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Titanium -->
+    <block name="terrOreTitanium">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzTitaniumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="150,160,175"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelTitanium0"/>
+      <property name="TerrainIndex" value="31"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceTitanium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceTitanium" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreTitaniumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzTitaniumOreDesc"/>
+      <property name="Map.Color" value="150,160,175"/>
+      <property name="CustomIconTint" value="96A0AF"/>
+      <property name="TintColor" value="96A0AF"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceTitanium" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneTitaniumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreTitanium"/>
+      <property name="DescriptionKey" value="terrOreStoneTitaniumRandomDesc"/>
+      <property name="Map.Color" value="150,160,175"/>
+      <property name="MicroSplatVoxel" value="voxelTitanium0"/>
+      <property name="TerrainIndex" value="31"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceTitanium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Lithium -->
+    <block name="terrOreLithium">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzLithiumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="199,125,255"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelLithium0"/>
+      <property name="TerrainIndex" value="30"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceLithium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceLithium" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreLithiumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzLithiumOreDesc"/>
+      <property name="Map.Color" value="199,125,255"/>
+      <property name="CustomIconTint" value="C77DFF"/>
+      <property name="TintColor" value="C77DFF"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceLithium" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneLithiumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreLithium"/>
+      <property name="DescriptionKey" value="terrOreStoneLithiumRandomDesc"/>
+      <property name="Map.Color" value="199,125,255"/>
+      <property name="MicroSplatVoxel" value="voxelLithium0"/>
+      <property name="TerrainIndex" value="30"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceLithium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Chromium (chromite-colored voxel) -->
+    <block name="terrOreChromium">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzChromiumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="80,85,90"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="MicroSplatVoxel" value="voxelChromite0"/>
+      <property name="TerrainIndex" value="29"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceChromium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceChromium" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreChromiumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzChromiumOreDesc"/>
+      <property name="Map.Color" value="80,85,90"/>
+      <property name="CustomIconTint" value="50555A"/>
+      <property name="TintColor" value="50555A"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceChromium" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneChromiumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreChromium"/>
+      <property name="DescriptionKey" value="terrOreStoneChromiumRandomDesc"/>
+      <property name="Map.Color" value="80,85,90"/>
+      <property name="MicroSplatVoxel" value="voxelChromite0"/>
+      <property name="TerrainIndex" value="29"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceChromium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Nickel (no custom voxel texture available yet) -->
+    <block name="terrOreNickel">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzNickelOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="150,170,160"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceNickel" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceNickel" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreNickelBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzNickelOreDesc"/>
+      <property name="Map.Color" value="150,170,160"/>
+      <property name="CustomIconTint" value="96AAA0"/>
+      <property name="TintColor" value="96AAA0"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceNickel" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneNickelRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreNickel"/>
+      <property name="DescriptionKey" value="terrOreStoneNickelRandomDesc"/>
+      <property name="Map.Color" value="150,170,160"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceNickel" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Uranium (no custom voxel texture available yet) -->
+    <block name="terrOreUranium">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzUraniumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="100,255,110"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceUranium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceUranium" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreUraniumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzUraniumOreDesc"/>
+      <property name="Map.Color" value="100,255,110"/>
+      <property name="CustomIconTint" value="64FF6E"/>
+      <property name="TintColor" value="64FF6E"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceUranium" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneUraniumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreUranium"/>
+      <property name="DescriptionKey" value="terrOreStoneUraniumRandomDesc"/>
+      <property name="Map.Color" value="100,255,110"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceUranium" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Platinum (no custom voxel texture available yet) -->
+    <block name="terrOrePlatinum">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzPlatinumOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="230,230,226"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourcePlatinum" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourcePlatinum" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="orePlatinumBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzPlatinumOreDesc"/>
+      <property name="Map.Color" value="230,230,226"/>
+      <property name="CustomIconTint" value="E5E4E2"/>
+      <property name="TintColor" value="E5E4E2"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourcePlatinum" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStonePlatinumRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOrePlatinum"/>
+      <property name="DescriptionKey" value="terrOreStonePlatinumRandomDesc"/>
+      <property name="Map.Color" value="230,230,226"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourcePlatinum" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="advanced"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- Gold (no custom voxel texture available yet) -->
+    <block name="terrOreGold">
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="DescriptionKey" value="zzGoldOreDesc"/>
+      <property name="DisplayType" value="blockTerrain"/>
+      <property name="Map.Color" value="212,175,55"/>
+      <property name="Material" value="MoreMetal"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="316"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="Tags" value="ore,deepOre"/>
+      <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+      <drop event="Harvest" name="resourceGold" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="resourceGold" count="50" prob="0.4" stick_chance="0"/>
+    </block>
+
+    <block name="oreGoldBoulder">
+      <property name="Extends" value="orePotassiumNitrateBoulder"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="zzGoldOreDesc"/>
+      <property name="Map.Color" value="212,175,55"/>
+      <property name="CustomIconTint" value="D4AF37"/>
+      <property name="TintColor" value="D4AF37"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceGold" count="50" tag="oreWoodHarvest"/>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <block name="terrOreStoneGoldRandom">
+      <property name="Extends" value="terrOreStoneIronRandom"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="terrOreGold"/>
+      <property name="DescriptionKey" value="terrOreStoneGoldRandomDesc"/>
+      <property name="Map.Color" value="212,175,55"/>
+      <property name="Texture" value="316"/>
+      <property name="ItemTypeIcon" value="other"/>
+      <property name="SortOrder2" value="1450"/>
+      <dropextendsoff/>
+      <drop event="Harvest" name="resourceGold" count="50" tag="oreWoodHarvest">
+        <requirement name="HoldingItemHasTags" tags="superior"/></drop>
+      <drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+      <drop event="Destroy" count="0"/>
+    </block>
+
+    <!-- =================================================================================== -->
+    <!-- NEW BUILDING BLOCKS (Shapes) -->
+    <!-- Progression: Steel -> Cobalt -> Chromium -> Uranium -> Platinum -> Lithium -> Titanium -->
+    <!-- =================================================================================== -->
+    
+
+
+    <!-- 1. Cobalt Shapes (Blue-ish) -->
+    <block name="zzCobaltShapes" shapes="All">
+        <property name="DescriptionKey" value="cobaltShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Mcobalt_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="537"/> <!-- Blue Concrete Texture -->
+        <property name="UiBackgroundTexture" value="537"/>
+        <property name="EconomicValue" value="200"/>
+        <property class="RepairItems">
+            <property name="resourceForgedCobalt" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedCobalt" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="zzChromiumShapes"/>
+            <property name="Item" value="resourceForgedChromium"/>
+            <property name="ItemCount" value="10"/>
+            <property name="UpgradeHitCount" value="4"/>
+        </property>
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S031"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- 2. Chromium Shapes (Grey/Chrome-ish) -->
+    <block name="zzChromiumShapes" shapes="All">
+        <property name="DescriptionKey" value="chromiumShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Mchromium_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="379"/> <!-- Steel Texture (Grey/Chrome) -->
+        <property name="UiBackgroundTexture" value="379"/>
+        <property name="EconomicValue" value="300"/>
+        <property class="RepairItems">
+            <property name="resourceForgedChromium" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedChromium" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="zzUraniumShapes"/>
+            <property name="Item" value="resourceForgedUranium"/>
+            <property name="ItemCount" value="10"/>
+            <property name="UpgradeHitCount" value="4"/>
+        </property>
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S032"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- 3. Uranium Shapes (Green-ish) -->
+    <block name="zzUraniumShapes" shapes="All">
+        <property name="DescriptionKey" value="uraniumShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Muranium_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="544"/> <!-- Green Concrete Texture -->
+        <property name="UiBackgroundTexture" value="544"/>
+        <property name="EconomicValue" value="400"/>
+        <property class="RepairItems">
+            <property name="resourceForgedUranium" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedUranium" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="zzPlatinumShapes"/>
+            <property name="Item" value="resourceForgedPlatinum"/>
+            <property name="ItemCount" value="10"/>
+            <property name="UpgradeHitCount" value="4"/>
+        </property>
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S033"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- 4. Platinum Shapes (White/Grey-ish) -->
+    <block name="zzPlatinumShapes" shapes="All">
+        <property name="DescriptionKey" value="platinumShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Mplatinum_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="52"/> <!-- White Siding Texture (closest to shiny white/platinum) -->
+        <property name="UiBackgroundTexture" value="52"/>
+        <property name="EconomicValue" value="500"/>
+        <property class="RepairItems">
+            <property name="resourceForgedPlatinum" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedPlatinum" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="zzLithiumShapes"/>
+            <property name="Item" value="resourceForgedLithium"/>
+            <property name="ItemCount" value="10"/>
+            <property name="UpgradeHitCount" value="4"/>
+        </property>
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S034"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- 5. Lithium Shapes (Purple-ish) -->
+    <block name="zzLithiumShapes" shapes="All">
+        <property name="DescriptionKey" value="lithiumShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Mlithium_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="543"/> <!-- Purple Concrete Texture -->
+        <property name="UiBackgroundTexture" value="543"/>
+        <property name="EconomicValue" value="600"/>
+        <property class="RepairItems">
+            <property name="resourceForgedLithium" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedLithium" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property class="UpgradeBlock">
+            <property name="ToBlock" value="zzTitaniumShapes"/>
+            <property name="Item" value="resourceForgedTitanium"/>
+            <property name="ItemCount" value="10"/>
+            <property name="UpgradeHitCount" value="4"/>
+        </property>
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S035"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- 6. Titanium Shapes (Black/Dark-ish) -->
+    <block name="zzTitaniumShapes" shapes="All">
+        <property name="DescriptionKey" value="titaniumShapesDesc"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="Material" value="Mtitanium_shapes"/>
+        <property name="Shape" value="New"/>
+        <property name="Texture" value="443"/> <!-- Rust Black Texture -->
+        <property name="UiBackgroundTexture" value="443"/>
+        <property name="EconomicValue" value="800"/>
+        <property class="RepairItems">
+            <property name="resourceForgedTitanium" value="10"/>
+        </property>
+        <drop event="Harvest" name="resourceForgedTitanium" count="8" tag="allHarvest,perkJunkMiner"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <!-- Top tier, no upgrade -->
+        <property name="UpgradeSound" value="place_block_metal"/>
+        <property name="SoundPickup" value="metal_grab"/>
+        <property name="SoundPlace" value="metal_place"/>
+        <property name="SortOrder1" value="S036"/>
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <!-- Forge -->
+    <block name="forge">
+	<!-- Class -->
+    <property name="Class" value="Forge"/>
+    <property class="Workstation">
+      <property name="CraftingAreaRecipes" value="forge"/>
+      <property name="Modules" value="tools,output,fuel,material_input"/>
+      <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+      <property name="ToolNames" value="1,2,3"/>
+    </property>
+    <property name="UnlockedBy" value="craftingWorkstations"/>
+    <!-- UI_Info -->
+    <property name="CreativeMode" value="Player"/>
+    <property name="DescriptionKey" value="forgeDesc"/>
+    <property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+    <property name="Stacknumber" value="1"/>
+    <!-- Visual -->
+    <property name="Material" value="Mstone_scrap"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Crafting/forgeWorkstationPrefab.prefab"/>
+    <property name="MultiBlockDim" value="2,2,1"/>
+    <property name="ImposterDontBlock" value="true"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="ParticleName" value="forgeWorkstation"/>
+    <property name="ParticleOffset" value="0,0.4,0.5"/>
+    <!-- Placement -->
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property name="OnlySimpleRotations" value="true"/>
+    <property name="Path" value="solid"/>
+    <property name="IsTerrainDecoration" value="true"/>
+    <property name="StabilitySupport" value="true"/>
+    <!-- Value -->
+    <property name="Weight" value="0"/>
+    <property name="EconomicValue" value="1000"/>
+    <property name="TraderStageTemplate" value="midTier0"/><!-- forge -->
+    <!-- Interaction -->
+    <property name="MaxDamage" value="800"/>
+    <property name="HeatMapStrength" value="6"/>
+    <property name="HeatMapTime" value="5000"/>
+    <property name="HeatMapFrequency" value="1000"/>
+    <property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+    <property name="ActiveRadiusEffects" value="buffCampfireAOE,5"/>
+    <property name="OpenSound" value="forge_open"/>
+    <property name="CloseSound" value="forge_close"/>
+    <property name="CraftSound" value="forge_smelt_click"/>
+    <property name="CraftCompleteSound" value="forge_item_complete"/>
+    <property name="TakeDelay" value="15"/>
+    <property class="RepairItems">
+      <property name="resourceCobblestones" value="50"/>
+    </property>
+    <drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest,perkJunkMiner"/>
+    <drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest,perkJunkMiner"/>
+    <drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest,perkJunkMiner"/>
+    <drop event="Destroy" count="0"/>
+    <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+    <!-- Sorting -->
+    <property name="SortOrder1" value="B281"/>
+    <property name="SortOrder2" value="0200"/>
+    <property name="Group" value="Building,TCScience,advBuilding"/>
+    <property name="Tags" value="workstationSkill,twitch_workstation"/>
+    <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+    <property name="SoundPickup" value="forge_grab"/>
+    <property name="SoundPlace" value="forge_place"/>
+  </block>
+
+    <!-- Superior Forge -->
+    <block name="superiorForge">
+	<property name="DescriptionKey" value="superiorForgeDesc"/>
+	<property name="CustomIcon" value="forge"/>
+	<property name="CustomIconTint" value="255,215,0"/>
+	<property name="TintColor" value="255,215,0"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Forge"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="superiorforge"/>
+		<property name="Modules" value="tools,output,fuel,material_input"/>
+		<property name="InputMaterials" value="cobalt,quartz,zinc,gold,nickel,copper"/>
+		<property name="ToolNames" value="1,2,3"/>
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/forgeWorkstationPrefab.prefab"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="EconomicValue" value="3500"/>
+	<property name="TraderStageTemplate" value="baseTier3"/>
+	<property name="MaxDamage" value="10000"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="InputCapacity" value="25"/>
+	<property name="FuelCapacity" value="25"/>
+	<property name="OutputCapacity" value="25"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="30"/>
+		<property name="resourceConcreteMix" value="15"/>
+	</property>
+	<drop event="Harvest" name="resourceForgedSteel" count="25,45" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceConcreteMix" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="2" prob="0.8" stick_chance="1"/>
+	<property name="SortOrder1" value="B201"/>
+	<property name="SortOrder2" value="0010"/>
+	<property name="Group" value="Building,TCBuilding"/>
+	<property name="Tags" value="forge"/>
+	<property name="FilterTags" value="MC_building,SC_industrial"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+    <property name="WorkstationWindow" value="workstation_forge"/>
+    </block>
+
+<!-- Advanced Forge -->
+    <block name="advancedForge2">
+	<property name="DescriptionKey" value="advancedForge2Desc"/>
+	<property name="CustomIcon" value="forge"/>
+	<property name="CustomIconTint" value="138,43,226"/>
+	<property name='TintColor' value='138,43,226'/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Forge"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="advancedforge2"/>
+		<property name="Modules" value="tools,output,fuel,material_input"/>
+		<property name="InputMaterials" value="lithium,aluminium,chromium,titanium,uranium,platinum"/>
+		<property name="ToolNames" value="1,2,3"/>
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/forgeWorkstationPrefab.prefab"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="EconomicValue" value="3500"/>
+	<property name="TraderStageTemplate" value="baseTier3"/>
+	<property name="MaxDamage" value="10000"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="InputCapacity" value="25"/>
+	<property name="FuelCapacity" value="25"/>
+	<property name="OutputCapacity" value="25"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="30"/>
+		<property name="resourceConcreteMix" value="15"/>
+	</property>
+	<drop event="Harvest" name="resourceForgedSteel" count="25,45" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceConcreteMix" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="2" prob="0.8" stick_chance="1"/>
+	<property name="SortOrder1" value="B201"/>
+	<property name="SortOrder2" value="0010"/>
+	<property name="Group" value="Building,TCBuilding"/>
+	<property name="Tags" value="forge"/>
+	<property name="FilterTags" value="MC_building,SC_industrial"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+    <property name="WorkstationWindow" value="workstation_forge"/>
+  </block>
+
+  <!-- Workstations -->
+<!-- Superior Workbench -->
+    <block name="superiorWorkbench">
+	<property name="DescriptionKey" value="superiorWorkbenchDesc"/>
+	<property name="CustomIcon" value="workbench"/>
+	<property name="CustomIconTint" value="255,215,0"/>
+	<property name="TintColor" value="255,215,0"/>
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="player,workbench,superiorWorkbench"/>
+	</property>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="superiorWorkbenchDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/woodWorkBenchPrefab.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="midTier1"/><!-- workbench -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceMechanicalParts" value="20"/>
+		<property name="resourceWood" value="50"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest,lumberjackHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="workbench_grab"/>
+	<property name="SoundPlace" value="workbench_place"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+    <property name="WorkstationWindow" value="workstation_workbench"/>
+    <property name="ToolCategory" value="all"/>
+    </block>
+<!-- Advanced Workbench -->
+    <block name="advancedWorkbench">
+	<property name="DescriptionKey" value="advancedWorkbenchDesc"/>
+	<property name="CustomIcon" value="workbench"/>
+	<property name="CustomIconTint" value="138,43,226"/>
+	<property name='TintColor' value='138,43,226'/>
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="player,workbench,superiorWorkbench,advancedWorkbench"/>
+	</property>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="advancedWorkbenchDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/woodWorkBenchPrefab.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="midTier1"/><!-- workbench -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceMechanicalParts" value="20"/>
+		<property name="resourceWood" value="50"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest,lumberjackHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="workbench_grab"/>
+	<property name="SoundPlace" value="workbench_place"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+    <property name="WorkstationWindow" value="workstation_workbench"/>
+    <property name="ToolCategory" value="all"/>
+    </block>
+
+
+
+<!-- Superior Dew Collector -->
+    <block name="superiorDewCollector">
+    <property name="Extends" value="cntDewCollector"/>
+	<property name="DescriptionKey" value="superiorDewCollectorDesc"/>
+	<property name="CustomIcon" value="cntDewCollector"/>
+	<property name="CustomIconTint" value="255,215,0"/>
+    <property name="TintColor" value="255,215,0"/>
+	<property name="Class" value="Collector"/>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<property name="ItemIconBackdrop" value="ui_game_symbol_water"/>
+	<property name="ItemBackgroundColor" value="202,190,33,255"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="LootLabelKey" value="xuiDewCollector"/>
+	<property name="DescriptionKey" value="dewCollectorDesc"/>
+	<property name="Material" value="MFuelBarrelPolymer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Furniture/collectorDewPrefab.prefab"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="77"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="RestrictSubmergedPlacement" value="true"/>
+	<property name="AllowedRotations" value="Basic90"/>
+	<property name="Path" value="solid"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OpenSound" value="collector_open"/>
+	<property name="CloseSound" value="collector_close"/>
+	<property name="ConvertSound" value="collector_complete_item"/>
+	<property name="MinConvertTime" value="16200"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+	<property name="MaxConvertTime" value="27000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+	<property name="ConvertToItem" value="drinkJarRiverWater"/>
+	<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+	<property name="ModdedConvertSpeed" value="4"/>
+	<property name="ModdedConvertCount" value="12"/>
+	<property name="ModTransformEnableNames" value="1,2,3"/>
+	<property name="ModTypes" value="Speed,Count,Type"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value=".8"/>
+	<property name="HeatMapTime" value="0"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapPolymers" value="50"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapPolymers" count="10,15" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,3" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="10,15"/>
+	<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0100"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="dewcollector_grab"/>
+	<property name="SoundPlace" value="dewcollector_place"/>
+	<property name="RequiredMods" value="toolDewGatherer,toolDewTarp,toolDewFilter"/>
+	<property name="RequiredModsOnly" value="true"/>
+	<property name="CollectorEmptyText" value="dewCollectorEmpty"/>
+	<property name="CollectorHasItem1Text" value="dewCollectorHasDirtyWater"/>
+	<property name="CollectorHasItem2Text" value="dewCollectorHasWater"/>
+    </block>
+
+<!-- Advanced Dew Collector -->
+    <block name="advancedDewCollector">
+    <property name="Extends" value="cntDewCollector"/>
+	<property name="DescriptionKey" value="advancedDewCollectorDesc"/>
+	<property name="CustomIcon" value="cntDewCollector"/>
+	<property name="CustomIconTint" value="138,43,226"/>
+    <property name="TintColor" value="138,43,226"/>
+	<property name="Class" value="Collector"/>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<property name="ItemIconBackdrop" value="ui_game_symbol_water"/>
+	<property name="ItemBackgroundColor" value="202,190,33,255"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="LootLabelKey" value="xuiDewCollector"/>
+	<property name="DescriptionKey" value="dewCollectorDesc"/>
+	<property name="Material" value="MFuelBarrelPolymer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Furniture/collectorDewPrefab.prefab"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="77"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="RestrictSubmergedPlacement" value="true"/>
+	<property name="AllowedRotations" value="Basic90"/>
+	<property name="Path" value="solid"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OpenSound" value="collector_open"/>
+	<property name="CloseSound" value="collector_close"/>
+	<property name="ConvertSound" value="collector_complete_item"/>
+	<property name="MinConvertTime" value="10500"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+	<property name="MaxConvertTime" value="18000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+	<property name="ConvertToItem" value="drinkJarRiverWater"/>
+	<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+	<property name="ModdedConvertSpeed" value="6"/>
+	<property name="ModdedConvertCount" value="20"/>
+	<property name="ModTransformEnableNames" value="1,2,3"/>
+	<property name="ModTypes" value="Speed,Count,Type"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="HeatMapStrength" value=".8"/>
+	<property name="HeatMapTime" value="0"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapPolymers" value="50"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapPolymers" count="10,15" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,3" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="10,15"/>
+	<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0100"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="dewcollector_grab"/>
+	<property name="SoundPlace" value="dewcollector_place"/>
+	<property name="RequiredMods" value="toolDewGatherer,toolDewTarp,toolDewFilter"/>
+	<property name="RequiredModsOnly" value="true"/>
+	<property name="CollectorEmptyText" value="dewCollectorEmpty"/>
+	<property name="CollectorHasItem1Text" value="dewCollectorHasDirtyWater"/>
+	<property name="CollectorHasItem2Text" value="dewCollectorHasWater"/>
+    </block>
+
+  </append>
+
+  <remove xpath="/blocks/block[@name='steelShapes']/property[@class='UpgradeBlock']"/>
+  <append xpath="/blocks/block[@name='steelShapes']">
+    <property class="UpgradeBlock">
+        <property name="ToBlock" value="zzCobaltShapes"/>
+        <property name="Item" value="resourceForgedCobalt"/>
+        <property name="ItemCount" value="10"/>
+        <property name="UpgradeHitCount" value="4"/>
+    </property>
+  </append>
+
+
+</configs>

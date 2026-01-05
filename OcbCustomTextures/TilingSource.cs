@@ -1,0 +1,6 @@
+public abstract class TilingSource
+{
+	public Vector2i Dst;
+
+	public UVRectTiling Tiling;
+}

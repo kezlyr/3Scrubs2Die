@@ -1,0 +1,110 @@
+
+<config>
+
+
+<append xpath="/progression/perks">
+<crafting_skill name="egtmodifier" max_level="100" parent="attCrafting" name_key="Enhanced Modifier" desc_key="Learn strong armor and weapon modifiers by reading Enhanced Modifier Magazines." long_desc_key="craftingvmodsCraftingLongDesc" icon="ui_game_symbol_twitch_top_good">
+
+		<display_entry icon="modArmorTripleStoragePocket" name_key="Tier 1 Armor Modifiers" has_quality="false" unlock_level="1,3,6,8,11,13,16,19" >
+			<unlock_entry item="egt1backpack,egt1usage" unlock_tier="1" />
+			<unlock_entry item="egt1nerd,egt1hp,egt1stamina" unlock_tier="2" />
+			<unlock_entry item="egt1lightweight,egt1atkspeed" unlock_tier="3" />
+			<unlock_entry item="egt1lumber,egt1harvest" unlock_tier="4" />
+			<unlock_entry item="egt1barter,egt1looter" unlock_tier="5" />
+			<unlock_entry item="egt1resist,egt1zombiedamage" unlock_tier="6" />
+			<unlock_entry item="egt1xp" unlock_tier="7" />
+			<unlock_entry item="egt1damage" unlock_tier="8" />
+		</display_entry>
+
+		<display_entry icon="armorNomadHelmet" name_key="Tier 2 Armor Modifiers" has_quality="false" unlock_level="20,23,26,29,32,34,37,39" >
+			<unlock_entry item="egt2backpack,egt2usage" unlock_tier="1" />
+			<unlock_entry item="egt2nerd,egt2hp,egt2stamina" unlock_tier="2" />
+			<unlock_entry item="egt2lightweight,egt2atkspeed" unlock_tier="3" />
+			<unlock_entry item="egt1reward,egt2xp" unlock_tier="4" />
+			<unlock_entry item="egt2lumber,egt2harvest" unlock_tier="5" />
+			<unlock_entry item="egt2barter,egt2looter" unlock_tier="6" />
+			<unlock_entry item="egt2resist,egt2zombiedamage" unlock_tier="7" />
+			<unlock_entry item="egt2damage" unlock_tier="8" />
+		</display_entry>
+
+		<display_entry icon="resourceRawDiamond" name_key="Tier 3 Armor Modifiers" has_quality="false" unlock_level="40,44,46,47,49,52,56,60" >
+			<unlock_entry item="egt3backpack,egt3usage" unlock_tier="1" />
+			<unlock_entry item="egt3nerd,egt3hp,egt3stamina" unlock_tier="2" />
+			<unlock_entry item="egmodArmorPerception,egmodArmorStrength,egmodArmorFortitude,egmodArmorAgility,egmodArmorIntellect" unlock_tier="3" />
+			<unlock_entry item="egt3lightweight,egt3atkspeed" unlock_tier="4" />
+			<unlock_entry item="egt2reward,egt3xp"  unlock_tier="5" />
+			<unlock_entry item="egt3lumber,egt3harvest" unlock_tier="6" />
+			<unlock_entry item="egt3barter,egt3looter" unlock_tier="7" />
+			<unlock_entry item="egt3resist,egt3zombiedamage,egt3damage" unlock_tier="8" />
+		</display_entry>
+
+		<display_entry icon="gunMGT1AK47" name_key="Tier 2 Weapon Modifiers" has_quality="false" unlock_level="61,63,67,69,72,74,77,80" >
+			<unlock_entry item="egt2arrowreload,egt2crippleem,egt2battery" unlock_tier="1" />
+			<unlock_entry item="egt2grip,egt2brace,egt2rods" unlock_tier="2" />
+			<unlock_entry item="egt2stock,egt2ergonomicgrip,egt2shred" unlock_tier="3" />
+			<unlock_entry item="egt2magazineex,egt2fortgrip,egt2heat" unlock_tier="4" />
+			<unlock_entry item="egt2drummag,egt2oil,egt2slayup" unlock_tier="5" />
+			<unlock_entry item="egt2blessedmetal,egt2triggerauto,egt2brasscatcher" unlock_tier="6" />
+			<unlock_entry item="egt2bipod,egt2barrelex,egt2bullettipcatcher" unlock_tier="7" />
+			<unlock_entry item="egt2muzzlebrake,egt2silencer,egt2fuelcatcher" unlock_tier="8" />
+		</display_entry>
+
+		<display_entry icon="gunRifleT2LeverActionRifle" name_key="Tier 3 Weapon Modifiers" has_quality="false" unlock_level="81,85,88,91,94,95,97,100" >
+			<unlock_entry item="egt3arrowreload,egt3crippleem,egt3battery" unlock_tier="1" />
+			<unlock_entry item="egt3grip,egt3brace,egt3rods" unlock_tier="2" />
+			<unlock_entry item="egt3stock,egt3ergonomicgrip,egt3shred" unlock_tier="3" />
+			<unlock_entry item="egt3magazineex,egt3fortgrip,egt3heat" unlock_tier="4" />
+			<unlock_entry item="egt3drummag,egt3oil,egt3slayup" unlock_tier="5" />
+			<unlock_entry item="egt3blessedmetal,egt3triggerauto,egt3brasscatcher" unlock_tier="6" />
+			<unlock_entry item="egt3bipod,egt3barrelex,egt3bullettipcatcher" unlock_tier="7" />
+			<unlock_entry item="egt3muzzlebrake,egt3silencer,egt3fuelcatcher" unlock_tier="8" />			
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="egt1backpack,egt1usage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="egt1nerd,egt1hp,egt1stamina"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="egt1lightweight,egt1atkspeed"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="egt1lumber,egt1harvest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="egt1barter,egt1looter"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="13,100" value="1" tags="egt1resist,egt1zombiedamage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="egt1xp"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="19,100" value="1" tags="egt1damage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="egt2backpack,egt2usage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="egt2nerd,egt2hp,egt2stamina"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="egt2lightweight,egt2atkspeed"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="29,100" value="1" tags="egt1reward,egt2xp"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="egt2lumber,egt2harvest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="34,100" value="1" tags="egt2barter,egt2looter"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="37,100" value="1" tags="egt2resist,egt2zombiedamage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="egt2damage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="egt3backpack,egt3usage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="44,100" value="1" tags="egt3nerd,egt3hp,egt3stamina"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="egmodArmorPerception,egmodArmorStrength,egmodArmorFortitude,egmodArmorAgility,egmodArmorIntellect"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="47,100" value="1" tags="egt3lightweight,egt3atkspeed"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="49,100" value="1" tags="egt2reward,egt3xp"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="52,100" value="1" tags="egt3lumber,egt3harvest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="56,100" value="1" tags="egt3barter,egt3looter"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="egt3resist,egt3zombiedamage,egt3damage"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="egt2arrowreload,egt2crippleem,egt2battery"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="63,100" value="1" tags="egt2grip,egt2brace,egt2rods"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="67,100" value="1" tags="egt2stock,egt2ergonomicgrip,egt2shred"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,100" value="1" tags="egt2magazineex,egt2fortgrip,egt2heat"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="72,100" value="1" tags="egt2drummag,egt2oil,egt2slayup"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="74,100" value="1" tags="egt2blessedmetal,egt2triggerauto,egt2brasscatcher"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="77,100" value="1" tags="egt2bipod,egt2barrelex,egt2bullettipcatcher"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="egt2muzzlebrake,egt2silencer,egt2fuelcatcher"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="81,100" value="1" tags="egt3arrowreload,egt3crippleem,egt3battery"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="egt3grip,egt3brace,egt3rods"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="88,100" value="1" tags="egt3stock,egt3ergonomicgrip,egt3shred"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="91,100" value="1" tags="egt3magazineex,egt3fortgrip,egt3heat"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="94,100" value="1" tags="egt3drummag,egt3oil,egt3slayup"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="95,100" value="1" tags="egt3blessedmetal,egt3triggerauto,egt3brasscatcher"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="97,100" value="1" tags="egt3bipod,egt3barrelex,egt3bullettipcatcher"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="egt3muzzlebrake,egt3silencer,egt3fuelcatcher"/>					
+		</effect_group>
+	</crafting_skill>
+
+
+	</append>
+</config>

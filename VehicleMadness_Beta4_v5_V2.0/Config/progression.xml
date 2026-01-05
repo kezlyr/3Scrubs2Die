@@ -1,0 +1,13 @@
+<VMconfigs>
+<!--  Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group/passive_effect[@level='5,100']/@tags">,vehicleVMWheels</append>
+<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT1']/unlock_entry/@item">,vehicleVMWheels</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group/passive_effect[@level='5,100']/@tags">,MonsterSuspensionAssembly</append>
+<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT4']/unlock_entry/@item">,MonsterSuspensionAssembly</append>
+
+</VMconfigs>
+
+
+
+

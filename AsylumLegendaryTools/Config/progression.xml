@@ -1,0 +1,17 @@
+<configs>
+
+	<!-- Add Asylum Legendary Tools display entry after mechanical tools -->
+	<!-- Note: TheAsylumCore already sets craftingHarvestingTools max_level to 130, so we don't need to set it again -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@name_key='harvestToolsMechanical']">
+		<display_entry icon="SMALTPickaxe" name_key="asylumLegendaryTools" has_quality="true" unlock_level="100,105,110,115,120,130">
+			<unlock_entry item="SMALTPickaxe,SMALTAxe,SMALTShovel,SMALTKnife,SMALTCrowbar,SMALTHammer,SMALTWrench" unlock_tier="1"/>
+		</display_entry>
+	</insertAfter>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group[1]">
+		<!-- Asylum Legendary Tools - Recipe unlock and quality scaling via CraftingTier -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,130" value="1" tags="SMALTPickaxe,SMALTAxe,SMALTShovel,SMALTKnife,SMALTCrowbar,SMALTHammer,SMALTWrench"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="100,105,110,115,120,130" value="1,2,3,4,5,5" tags="SMALTPickaxe,SMALTAxe,SMALTShovel,SMALTKnife,SMALTCrowbar,SMALTHammer,SMALTWrench"/>
+	</append>
+
+</configs>

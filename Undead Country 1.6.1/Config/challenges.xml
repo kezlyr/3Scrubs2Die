@@ -1,0 +1,58 @@
+<config>
+
+<remove xpath="/challenges/challenge[@name='gatherResources' or @name='gatherResourcesStoneAxe' or @name='craftClothes' or @name='wearClothes' or @name='craftWoodClub' or @name='craftBow' or @name='craftArrows']"/>
+
+<csv xpath="/challenges/challenge[@name='burntSurvivalKillZombie']/objective[@type='Kill']/@entity_names" op="add">zombieBurntDB1,zombieBurntDB2,zombieBurntDB3,zombieBurntDB4,zombieWeakenedSoldier,zombieWeakenedCop,zombieWeakenedFeralWight,zombieWeakenedSpider,zombieWeakenedBiker,zombieWeakenedCorpse,zombieWeakenedTourist,zombieDiseased</csv>
+
+<csv xpath="/challenges/challenge[@name='desertSurvivalKillZombie']/objective[@type='Kill']/@entity_names" op="add">zombieWeakenedSoldier,zombieHobo,zombieWeakenedCop,zombieWeakenedFeralWight,zombieWeakenedSpider,zombieWeakenedBiker,zombieWeakenedCorpse,zombieWeakenedTourist,zombieDiseased</csv>
+
+<csv xpath="/challenges/challenge[@name='snowSurvivalKillZombie']/objective[@type='Kill']/@entity_names" op="add">zombieWeakenedSoldier,zombieWeakenedCop,zombieWeakenedFeralWight,zombieWeakenedSpider,zombieWeakenedBiker,zombieWeakenedCorpse,zombieWeakenedTourist,zombieDiseased</csv>
+
+<csv xpath="/challenges/challenge[@name='wastelandSurvivalKillZombie']/objective[@type='Kill']/@entity_names" op="add">zombieSuperMutated,zombieWeakenedSoldier,zombieWeakenedCop,zombieWeakenedFeralWight,zombieWeakenedSpider,zombieWeakenedBiker,zombieWeakenedCorpse,zombieWeakenedTourist,zombieDiseased</csv>
+
+<remove xpath="/challenges/challenge[@name='burntSurvivalGatherGear' or @name='desertSurvivalGatherGear' or @name='snowSurvivalGatherGear' or @name='wastelandSurvivalGatherGear']"/>
+
+<append xpath="/challenges">
+
+<challenge name="burntSurvivalGatherGear" title_key="challengeBurntGatherGear" icon="ui_game_symbol_assemble" group="Burnt Survival"
+	short_description_key="challengeBurntGatherGearShort" description_key="challengeBurntGatherGearDesc"
+	reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+	<objective type="Gather" item="resourceScrapPolymers" count="30"/>
+	<objective type="Gather" item="resourceCloth" count="20"/>
+	<objective type="Gather" item="resourceCharcoal" count="25"/>
+	<objective type="Gather" item="resourceForgedIron" count="10"/>
+</challenge>
+
+<challenge name="desertSurvivalGatherGear" title_key="challengeDesertGatherGear" icon="ui_game_symbol_assemble" group="Desert Survival"
+		short_description_key="challengeDesertGatherGearShort" description_key="challengeDesertGatherGearDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		<objective type="Gather" item="resourceScrapPolymers" count="10"/>
+		<objective type="Gather" item="resourceCloth" count="20"/>
+		<objective type="Gather" item="resourceSewingKit" count="1"/>
+		<objective type="Gather" item="resourceCropCottonPlant" count="50"/>
+		<objective type="Gather" item="resourceYuccaFibers" count="50"/>
+	</challenge>
+	
+	<challenge name="snowSurvivalGatherGear" title_key="challengeSnowGatherGear" icon="ui_game_symbol_assemble" group="Snow Survival"
+		short_description_key="challengeSnowGatherGearShort" description_key="challengeSnowGatherGearDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		<objective type="Gather" item="resourceFeather" count="25"/>
+		<objective type="Gather" item="resourceCloth" count="20"/>
+		<objective type="Gather" item="modDyeRed" count="1"/>
+		<objective type="Gather" item="resourceSewingKit" count="3"/>
+		<objective type="Gather" item="resourceCropCottonPlant" count="30"/>
+	</challenge>
+	
+	<challenge name="wastelandSurvivalGatherGear" title_key="challengeWastelandGatherGear" icon="ui_game_symbol_assemble" group="Wasteland Survival"
+		short_description_key="challengeWastelandGatherGearShort" description_key="challengeWastelandGatherGearDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		<objective type="Gather" item="resourceScrapLead" count="300"/>
+		<objective type="Gather" item="resourceForgedSteel" count="20"/>
+		<objective type="Gather" item="resourceAcid" count="3"/>
+		<objective type="Gather" item="resourceSilverNugget" count="3"/>
+		<objective type="Gather" item="resourceGoldNugget" count="1"/>
+	</challenge>
+
+</append>
+
+</config>

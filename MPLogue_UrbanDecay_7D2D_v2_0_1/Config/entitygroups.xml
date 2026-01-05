@@ -1,0 +1,97 @@
+<mplogue>
+<!-- 
+	<append xpath="/entitygroups">
+		<entitygroup name="mpl_animalRatGroup">mpl_animalRat</entitygroup>
+	</append>
+
+	<append xpath="/entitygroups">
+		<entitygroup name="mpl_animalZombieBatGroup">mpl_animalZombieBat</entitygroup>
+	</append>
+	
+	
+	
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnowNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForest']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add">
+        mpl_animalRat
+		mpl_animalZombieBat
+    </csv>
+	
+ -->
+
+
+
+
+
+
+	
+</mplogue>

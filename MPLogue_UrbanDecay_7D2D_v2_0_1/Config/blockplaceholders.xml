@@ -1,0 +1,1479 @@
+﻿<blockplaceholders>
+ 	
+		
+		
+	<append xpath="/blockplaceholders">
+
+
+
+		<placeholder name="utilityInsulator">
+			<block name="mpl_ud_utilityInsulator" prob="1"/>
+		</placeholder>
+
+
+
+
+		<placeholder name="mpl_ud_RoadMsg_Trailer_Helper">
+			<block name="mpl_ud_RoadMsg_01_Trailer" prob=".1"/>
+			<block name="mpl_ud_RoadMsg_02_Trailer" prob=".1"/>
+			<block name="mpl_ud_RoadMsg_03_Trailer" prob=".1"/>
+			<block name="mpl_ud_RoadMsg_04_Trailer" prob=".1"/>
+			<block name="air" prob=".6"/>
+		</placeholder>
+		
+		
+
+
+		<placeholder name="mpl_ud_RoadMsg_Flat_Helper">
+			<block name="mpl_ud_RoadMsgRekt_02" prob=".25"/>
+			<block name="mpl_ud_RoadMsgRekt_01" prob=".25"/>
+			<block name="mpl_ud_RoadMsg_03" prob=".25"/>
+			<block name="mpl_ud_RoadMsg_01" prob=".25"/>
+		</placeholder>
+		
+		
+		<placeholder name="mpl_ud_Firefly_lrg">
+			<block name="mpl_ud_Firefly_lrg_biomes" prob="1" biome="pine_forest"/>
+			<block name="air" prob="1" biome="snow"/>
+			<block name="mpl_ud_Firefly_lrg_biomes" prob="1" biome="desert"/>
+			<block name="mpl_ud_Firefly_lrg_biomes" prob="1" biome="burnt_forest"/>
+			<block name="mpl_ud_Firefly_lrg_biomes" prob="1" biome="wasteland"/>
+		</placeholder>
+
+
+
+		<placeholder name="mpl_ud_Fog_Wispy">
+			<block name="mpl_ud_Fog_Wispy_White" prob="1" biome="pine_forest"/>
+			<block name="mpl_ud_Fog_Wispy_White" prob="1" biome="snow"/>
+			<block name="mpl_ud_Fog_Wispy_White" prob="1" biome="desert"/>
+			<block name="mpl_ud_Fog_Wispy_White" prob="1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fog_Wispy_Wasteland" prob=".5" biome="wasteland"/>
+			<block name="mpl_ud_Fog_Wispy_Wasteland2" prob=".5" biome="wasteland"/>
+		</placeholder>
+
+
+		<placeholder name="utilityTransformerHanging">
+			<block name="mpl_udx_utilityTransformerHanging" prob=".15"/>
+			<block name="mpl_udg_utilityTransformerHanging" prob=".65"/>
+			<block name="mpl_ud_Transformer_Sparks" prob=".2"/>
+		</placeholder>
+
+
+
+		<placeholder name="fireHydrant">
+			<block name="mpl_ud_Hydrant_Red" prob=".98"/>
+			<block name="mpl_ud_Hydrant_spout" prob=".02"/>
+		</placeholder>
+
+
+
+		<placeholder name="mpl_ud_HardAir">
+			<block name="mpl_ud_HardAir_Fixed" prob="1"/>
+		</placeholder>
+
+
+
+
+		<placeholder name="mpl_ud_Duckweed_Random_Helper">
+		
+			<block name="mpl_ud_Duckweed_Corner_A" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_C" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_A2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt2" prob=".023" biome="pine_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_C2" prob=".023" biome="pine_forest"/>		
+					
+			<block name="mpl_ud_Duckweed_Corner_A" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_B" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_C" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Large_A" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_A" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_B" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_C" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_A2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_B2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_C2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Large_A2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_A2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_B2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt2" prob=".023" biome="desert"/>
+			<block name="mpl_ud_Duckweed_Middle_C2" prob=".023" biome="desert"/>		
+			
+			<block name="mpl_ud_Duckweed_Dead_Corner_A" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_A_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_B_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Corner_C_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Large_A_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_A_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Middle_B_alt2" prob=".023" biome="burnt_forest"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C2" prob=".023" biome="burnt_forest"/>	
+			
+			
+			<block name="mpl_ud_Duckweed_Dead_Corner_A" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B_alt" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B_alt2" prob=".023" biome="snow"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C2" prob=".023" biome="snow"/>		
+			
+			
+			
+			
+			
+<!-- 
+			<block name="mpl_ud_IceSheet01" prob=".1" biome="snow"/>
+			<block name="mpl_ud_IceSheet02" prob=".1" biome="snow"/>
+			<block name="mpl_ud_IceSheet03" prob=".2" biome="snow"/>
+			<block name="mpl_ud_IceSheet04" prob=".2" biome="snow"/>
+			<block name="mpl_ud_IceSheet05" prob=".2" biome="snow"/>
+			<block name="mpl_ud_IceSheet06" prob=".2" biome="snow"/>
+ -->
+			<block name="mpl_ud_Duckweed_Dead_Corner_A" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B_alt" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_A_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_B_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Corner_C_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Large_A_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_A_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_B_alt2" prob=".023" biome="wasteland"/>
+			<block name="mpl_ud_Duckweed_Dead_Middle_C2" prob=".023" biome="wasteland"/>		
+		
+		</placeholder>
+
+
+
+
+
+		<placeholder name="mpl_ud_DecoCarParts_Helper">
+			<block name="decoCarBackBumperUpright" prob="1"/>
+			<block name="decoCarBackBumperFlipped" prob="1"/>
+			<block name="decoCarFrontBumperFlat" prob="1"/>
+			<block name="decoCarFrontDoorFlat" prob="1"/>
+			<block name="decoCarFrontBumperFlipped" prob="1"/>
+			<block name="decoCarFrontDoorFlipped" prob="1"/>
+			<block name="decoCarBackDoorFlat" prob="1"/>
+			<block name="decoCarBackDoorFlipped" prob="1"/>
+			<block name="decoCarRadiatorFlat" prob="1"/>
+			<block name="decoCarRadiatorFlipped" prob="1"/>
+			<block name="decoCarSeatUpright" prob="1"/>
+			<block name="decoCarSeatFlipped" prob="1"/>
+			<block name="decoCarFenderFlat" prob="1"/>
+			<block name="decoCarFenderFlipped" prob="1"/>
+			<block name="decoCarHoodFlat" prob="1"/>
+			<block name="decoCarHoodFlipped" prob="1"/>
+			<block name="decoCarTrunkLidFlat" prob="1"/>
+			<block name="decoCarTrunkLidFlipped" prob="1"/>
+		</placeholder>
+
+
+
+		<placeholder name="mpl_ud_cntShoppingCartTipped_Helper">
+			<block name="cntShoppingCartTippedWhite" prob="1"/>
+			<block name="cntShoppingCartTippedRed" prob="1"/>
+			<block name="cntShoppingCartTippedOrange" prob="1"/>
+			<block name="cntShoppingCartTippedYellow" prob="1"/>
+			<block name="cntShoppingCartTippedGreen" prob="1"/>
+			<block name="cntShoppingCartTippedBlue" prob="1"/>
+			<block name="cntShoppingCartTippedGrey" prob="1"/>
+		</placeholder>
+
+
+		
+			<!-- *** PICKUP_TRUCK -->
+		<placeholder name="mpl_ud_cntPickupTruck_Flat_RandomHelper">
+			<block name="mpl_ud_cntPickupTruck01White_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Brown_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Red_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Orange_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Yellow_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Green_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Blue_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Purple_Flat" prob="0.5"/>
+			<block name="mpl_ud_cntPickupTruck01Grey_Flat" prob="1"/>
+			<block name="mpl_ud_cntPickupTruck01Pink_Flat" prob="0.5"/>
+		</placeholder>
+
+
+
+
+		<placeholder name="mpl_ud_WallIvy_L_Helper">
+			<block name="mpl_ud_WallIvy_Live_L_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_L_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_L_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_L_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_L_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_L_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Dead_L_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_L_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_L_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_L_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_L_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_L_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Spike_L_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_L_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_L_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_L_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_L_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_L_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+		<placeholder name="mpl_ud_WallIvy_R_Helper">
+			<block name="mpl_ud_WallIvy_Live_R_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_R_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_R_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_R_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_R_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_R_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Dead_R_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_R_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_R_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_R_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_R_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_R_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Spike_R_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_R_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_R_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_R_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_R_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_R_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+		<placeholder name="mpl_ud_WallIvy_Mid_Helper">
+			<block name="mpl_ud_WallIvy_Live_Mid_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_Mid_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_Mid_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_Mid_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_Mid_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_Mid_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Spike_Mid_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_Mid_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_Mid_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_Mid_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+		<placeholder name="mpl_ud_WallIvy_O_C_Helper">
+			<block name="mpl_ud_WallIvy_Live_O_C_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_O_C_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_O_C_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_O_C_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_O_C_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_O_C_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Spike_O_C_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_O_C_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_O_C_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_O_C_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+
+		<placeholder name="mpl_ud_WallIvy_I_C_Helper">
+			<block name="mpl_ud_WallIvy_Live_I_C_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_I_C_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_I_C_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Live_I_C_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_I_C_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Live_I_C_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Spike_I_C_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_I_C_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Spike_I_C_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Dead_I_C_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+
+
+		<placeholder name="mpl_ud_PoleIvy_Helper">
+			<block name="mpl_ud_PoleIvy_Live_01" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_PoleIvy_Live_02" prob=".2" biome="pine_forest"/>
+			<block name="mpl_ud_PoleIvy_Live_03" prob=".2" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_PoleIvy_Live_01" prob=".2" biome="desert"/>
+			<block name="mpl_ud_PoleIvy_Live_02" prob=".2" biome="desert"/>
+			<block name="mpl_ud_PoleIvy_Live_03" prob=".2" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_PoleIvy_Dead_01" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_PoleIvy_Dead_02" prob=".2" biome="burnt_forest"/>
+			<block name="mpl_ud_PoleIvy_Dead_03" prob=".2" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_PoleIvy_Dead_01" prob=".2" biome="snow"/>
+			<block name="mpl_ud_PoleIvy_Dead_02" prob=".2" biome="snow"/>
+			<block name="mpl_ud_PoleIvy_Dead_03" prob=".2" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_PoleIvy_Spike_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_PoleIvy_Spike_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_PoleIvy_Spike_03" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_PoleIvy_Dead_01" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_PoleIvy_Dead_02" prob=".1" biome="wasteland"/>
+			<block name="mpl_ud_PoleIvy_Dead_03" prob=".1" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+	<!-- Residential Fence Ivy Helper -->
+
+		<placeholder name="mpl_ud_Fence_Res_Helper">
+			<block name="mpl_ud_Fence_Res_Live_01" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_Res_Live_02" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_Res_Live_03" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_Res_Live_04" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_Res_Live_05" prob=".1" biome="pine_forest"/>
+			<block name="air" prob=".5" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_Res_Live_01" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_Res_Live_02" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_Res_Live_03" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_Res_Live_04" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_Res_Live_05" prob=".1" biome="desert"/>
+			<block name="air" prob=".5" biome="desert"/>
+			<block name="mpl_ud_Fence_Res_Dead_01" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_Res_Dead_02" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_Res_Dead_03" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_Res_Dead_04" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_Res_Dead_05" prob=".1" biome="burnt_forest"/>
+			<block name="air" prob=".5" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_Res_Dead_01" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_Res_Dead_02" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_Res_Dead_03" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_Res_Dead_04" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_Res_Dead_05" prob=".1" biome="snow"/>
+			<block name="air" prob=".5" biome="snow"/>
+			<block name="mpl_ud_Fence_Res_Spike_01" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Spike_02" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Spike_03" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Spike_04" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Spike_05" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Dead_01" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Dead_02" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Dead_03" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Dead_04" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_Res_Dead_05" prob=".05" biome="wasteland"/>
+			<block name="air" prob=".5" biome="wasteland"/>
+		</placeholder>
+
+
+	<!-- Country Residential Fence Ivy Helper (Low)-->
+
+		<placeholder name="mpl_ud_Fence_CtryRes_Helper">
+			<block name="mpl_ud_Fence_CtryRes_Live_01" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_02" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_03" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_04" prob=".1" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_05" prob=".1" biome="pine_forest"/>
+			<block name="air" prob=".5" biome="pine_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_01" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_02" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_03" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_04" prob=".1" biome="desert"/>
+			<block name="mpl_ud_Fence_CtryRes_Live_05" prob=".1" biome="desert"/>
+			<block name="air" prob=".5" biome="desert"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_01" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_02" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_03" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_04" prob=".1" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_05" prob=".1" biome="burnt_forest"/>
+			<block name="air" prob=".5" biome="burnt_forest"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_01" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_02" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_03" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_04" prob=".1" biome="snow"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_05" prob=".1" biome="snow"/>
+			<block name="air" prob=".5" biome="snow"/>
+			<block name="mpl_ud_Fence_CtryRes_Spike_01" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Spike_02" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Spike_03" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Spike_04" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Spike_05" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_01" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_02" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_03" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_04" prob=".05" biome="wasteland"/>
+			<block name="mpl_ud_Fence_CtryRes_Dead_05" prob=".05" biome="wasteland"/>
+			<block name="air" prob=".5" biome="wasteland"/>
+		</placeholder>
+
+
+
+
+
+
+
+
+
+
+
+	!-- Power Pole Ivy Helper -->
+
+		<placeholder name="mpl_ud_Pole_Pow_Helper">
+			<block name="mpl_ud_Pole_Pow_Live_01" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_Pole_Pow_Live_02" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_Pole_Pow_Live_03" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_Pole_Pow_Live_04" prob=".15" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_Pole_Pow_Live_01" prob=".15" biome="desert"/>
+			<block name="mpl_ud_Pole_Pow_Live_02" prob=".15" biome="desert"/>
+			<block name="mpl_ud_Pole_Pow_Live_03" prob=".15" biome="desert"/>
+			<block name="mpl_ud_Pole_Pow_Live_04" prob=".15" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_Pole_Pow_Dead_01" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_Pole_Pow_Dead_02" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_Pole_Pow_Dead_03" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_Pole_Pow_Dead_04" prob=".15" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_Pole_Pow_Dead_01" prob=".15" biome="snow"/>
+			<block name="mpl_ud_Pole_Pow_Dead_02" prob=".15" biome="snow"/>
+			<block name="mpl_ud_Pole_Pow_Dead_03" prob=".15" biome="snow"/>
+			<block name="mpl_ud_Pole_Pow_Dead_04" prob=".15" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_Pole_Pow_Spike_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Spike_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Spike_03" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Spike_04" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Dead_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Dead_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Dead_03" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_Pole_Pow_Dead_04" prob=".075" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+	<!-- Flat Wall Ivy Helper -->
+
+		<placeholder name="mpl_ud_WallIvy_Flat_Helper">
+			<block name="mpl_ud_WallIvy_Flat_Live_01" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Live_02" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Live_03" prob=".15" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Live_01" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat_Live_02" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat_Live_03" prob=".15" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_01" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_02" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_03" prob=".15" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_01" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_02" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_03" prob=".15" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat_Spike_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat_Spike_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat_Spike_03" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat_Dead_03" prob=".075" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+	<!-- Flat Wall Ivy 2h -->
+
+
+		<placeholder name="mpl_ud_WallIvy_Flat2h_Helper">
+			<block name="mpl_ud_WallIvy_Flat2h_Live_01" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Live_02" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Live_03" prob=".15" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Live_01" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Live_02" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Live_03" prob=".15" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_01" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_02" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_03" prob=".15" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_01" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_02" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_03" prob=".15" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Spike_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Spike_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Spike_03" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_Flat2h_Dead_03" prob=".075" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+
+	<!-- Square Column Ivy Helper -->
+
+		<placeholder name="mpl_ud_WallIvy_SqCol_Helper">
+			<block name="mpl_ud_WallIvy_SqCol_Live_01" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Live_02" prob=".15" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Live_03" prob=".15" biome="pine_forest"/>
+			<block name="air" prob=".4" biome="pine_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Live_01" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_SqCol_Live_02" prob=".15" biome="desert"/>
+			<block name="mpl_ud_WallIvy_SqCol_Live_03" prob=".15" biome="desert"/>
+			<block name="air" prob=".4" biome="desert"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_01" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_02" prob=".15" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_03" prob=".15" biome="burnt_forest"/>
+			<block name="air" prob=".4" biome="burnt_forest"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_01" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_02" prob=".15" biome="snow"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_03" prob=".15" biome="snow"/>
+			<block name="air" prob=".4" biome="snow"/>
+			<block name="mpl_ud_WallIvy_SqCol_Spike_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_SqCol_Spike_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_SqCol_Spike_03" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_01" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_02" prob=".075" biome="wasteland"/>
+			<block name="mpl_ud_WallIvy_SqCol_Dead_03" prob=".075" biome="wasteland"/>
+			<block name="air" prob=".4" biome="wasteland"/>
+		</placeholder>
+
+
+
+
+
+
+		<placeholder name="mpl_LargeVehicleHelper">
+			<block name="cntBusCity" prob="0.077"/>
+			<block name="cntBusSchool" prob="0.077"/>
+			<block name="cntBusSchoolShort" prob="0.077"/>
+			<block name="cntBusShuttle" prob="0.077"/>
+			<block name="cntArmyTruckOpen" prob="0.077"/>
+			<block name="cntArmyTruckClosed" prob="0.077"/>
+			<block name="cntAmbulanceTruck01RandomLootHelper" prob="0.077"/>
+			<block name="cntServiceTruckMoPowerRandomLootHelper" prob="0.077"/>
+			<block name="cntServiceTruckWorkingStiffToolsRandomLootHelper" prob="0.077"/>
+			<block name="cntFarmTruckOpen" prob="0.077"/>
+			<block name="cntFireTruck01RandomHelper" prob="0.077"/>
+			<block name="cntServiceTruckRandomLootHelper" prob="0.077"/>
+			<block name="cntSemiTruck01RandomHelper" prob="0.077"/>
+		</placeholder>
+
+
+
+
+		<placeholder name="mpl_corpseHangingRopeHelper">
+			<block name="corpseHangingRope1White" prob="0.167"/>
+			<block name="corpseHangingRope1Brown" prob="0.167"/>
+			<block name="corpseHangingRope1Red" prob="0.167"/>
+			<block name="corpseHangingRope1Green" prob="0.167"/>
+			<block name="corpseHangingRope1Blue" prob="0.167"/>
+			<block name="corpseHangingRope1Grey" prob="0.167"/>
+		</placeholder>
+
+
+
+
+
+		<placeholder name="mpl_billboard_helper_9x6">
+			<block name="mpl_billboard_01_9x6" prob="0.027"/>
+			<block name="mpl_billboard_02_9x6" prob="0.027"/>
+			<block name="mpl_billboard_03_9x6" prob="0.027"/>
+			<block name="mpl_billboard_06_9x6" prob="0.027"/>
+			<block name="mpl_billboard_07_9x6" prob="0.027"/>
+			<block name="mpl_billboard_08_9x6" prob="0.027"/>
+			<block name="mpl_billboard_09_9x6" prob="0.027"/>
+			<block name="mpl_billboard_10_9x6" prob="0.027"/>
+			<block name="mpl_billboard_11_9x6" prob="0.027"/>
+			<block name="mpl_billboard_12_9x6" prob="0.027"/>
+			<block name="mpl_billboard_13_9x6" prob="0.027"/>
+			<block name="mpl_billboard_14_9x6" prob="0.027"/>
+			<block name="mpl_billboard_15_9x6" prob="0.027"/>
+			<block name="mpl_billboard_16_9x6" prob="0.027"/>
+			<block name="mpl_billboard_17_9x6" prob="0.027"/>
+			<block name="mpl_billboard_18_9x6" prob="0.027"/>
+			<block name="mpl_billboard_19_9x6" prob="0.027"/>
+			<block name="mpl_billboard_20_9x6" prob="0.027"/>
+			<block name="mpl_billboard_21_9x6" prob="0.027"/>
+			<block name="mpl_billboard_22_9x6" prob="0.027"/>
+			<block name="mpl_billboard_23_9x6" prob="0.027"/>
+			<block name="mpl_billboard_26_9x6" prob="0.027"/>
+			<block name="mpl_billboard_27_9x6" prob="0.027"/>
+			<block name="mpl_billboard_28_9x6" prob="0.027"/>
+			<block name="mpl_billboard_29_9x6" prob="0.027"/>
+			<block name="mpl_billboard_30_9x6" prob="0.027"/>
+			<block name="mpl_billboard_31_9x6" prob="0.027"/>
+			<block name="mpl_billboard_32_9x6" prob="0.027"/>
+			<block name="mpl_billboard_33_9x6" prob="0.027"/>
+			<block name="mpl_billboard_34_9x6" prob="0.027"/>
+			<block name="mpl_billboard_35_9x6" prob="0.027"/>
+			<block name="mpl_billboard_36_9x6" prob="0.027"/>
+			<block name="mpl_billboard_37_9x6" prob="0.027"/>
+			<block name="mpl_billboard_38_9x6" prob="0.027"/>
+			<block name="mpl_billboard_39_9x6" prob="0.027"/>
+			<block name="mpl_billboard_40_9x6" prob="0.027"/>
+			<block name="mpl_billboard_41_9x6" prob="0.027"/>
+		</placeholder>
+
+
+
+
+
+		<placeholder name="mpl_ud_DecorTrashHelper">
+			<block name="garbage_decor1" prob=".0344"/>
+			<block name="garbage_decor2" prob=".0344"/>
+			<block name="garbage_decor3" prob=".0344"/>
+			<block name="newspaperDecor01" prob=".0344"/>
+			<block name="newspaperDecor02" prob=".0344"/>
+			<block name="newspaperDecor03" prob=".0344"/>
+			<block name="newspaperDecor04" prob=".0344"/>
+			<block name="rubbishDecor01" prob=".0344"/>
+			<block name="rubbishDecor02" prob=".0344"/>
+			<block name="rubbishDecor03" prob=".0344"/>
+			<block name="rubbishDecor04" prob=".0344"/>
+			<block name="rubbishDecor05" prob=".0344"/>
+			<block name="rubbishDecor06" prob=".0344"/>
+			<block name="rubbishDecor07" prob=".0344"/>
+			<block name="rubbishDecor08" prob=".0344"/>
+			<block name="rubbishDecor09" prob=".0344"/>
+			<block name="rubbishDecor10" prob=".0344"/>
+			<block name="rubbishDecor11" prob=".0344"/>
+			<block name="rubbishDecor12" prob=".0344"/>
+			<block name="rubbishDecor13" prob=".0344"/>		
+			<block name="cntTrashPile01" prob=".0344"/>
+			<block name="cntTrashPile02" prob=".0344"/>
+			<block name="cntTrashPile03" prob=".0344"/>
+			<block name="cntTrashPile04" prob=".0344"/>
+			<block name="cntTrashPile05" prob=".0344"/>
+			<block name="cntTrashPile06" prob=".0344"/>
+			<block name="cntTrashPile07" prob=".0344"/>
+			<block name="cntTrashPile08" prob=".0344"/>
+			<block name="cntTrashPile09" prob=".0344"/>
+		</placeholder>
+		
+		<placeholder name="mpl_Grafitti_Helper_Column_c2">
+			<block name="mpl_Grafitti_02c2" prob=".025"/>
+			<block name="mpl_Grafitti_08c2" prob=".025"/>
+			<block name="mpl_Grafitti_16c2" prob=".025"/>
+			<block name="mpl_Grafitti_18c2" prob=".025"/>
+			<block name="mpl_Grafitti_19c2" prob=".025"/>
+			<block name="mpl_Grafitti_24c2" prob=".025"/>
+			<block name="mpl_Grafitti_25c2" prob=".025"/>
+			<block name="mpl_Grafitti_30c2" prob=".025"/>
+			<block name="mpl_Grafitti_36c2" prob=".025"/>
+			<block name="mpl_Grafitti_50c2" prob=".025"/>
+			<block name="mpl_Grafitti_52c2" prob=".025"/>
+		</placeholder>
+	
+	
+		<placeholder name="mpl_ud_RoachSpawnCorpse">
+			<block name="mpl_ud_RoachScatterSingle" prob=".04"/>
+			<block name="mpl_ud_RoachStreamSingle" prob=".04"/>
+			<block name="mpl_ud_RoachUnevenSingle" prob=".04"/>
+			<block name="mpl_ud_FliesSingle" prob=".08"/>
+			<block name="air" prob=".80"/>			
+		</placeholder>
+		
+		
+		
+		<placeholder name="mpl_ud_scat_Fallen_soldier_pile_helper">
+			<block name="mpl_ud_scat_Fallen_soldier_pile_v1" prob=".2"/>
+			<block name="mpl_ud_scat_Fallen_soldier_pile_v2" prob=".2"/>
+			<block name="air" prob=".6"/>			
+		</placeholder>		
+		
+		
+<!-- 		
+		<placeholder name="mpl_terrDirtGravelMixHelper">
+			<block name="terrDirt" prob=".3"/>
+			<block name="terrGravel" prob=".4"/>
+			<block name="terrTopSoil" prob=".1"/>		
+			<block name="terrDestroyedStone" prob=".1"/>
+			<block name="terrDestroyedWoodDebris" prob=".1"/>
+		</placeholder>
+		 -->
+		<placeholder name="mpl_ud_terrDirtGravelMixHelper">
+			<block name="terrDirt" prob=".3"/>
+			<block name="terrGravel" prob=".4"/>
+			<block name="terrTopSoil" prob=".1"/>		
+			<block name="terrDestroyedStone" prob=".1"/>
+			<block name="terrDestroyedWoodDebris" prob=".1"/>
+		</placeholder>
+			
+	
+		<placeholder name="mpl_ud_terrAsphaltMixHelper">
+			<block name="terrGravel" prob=".2"/>
+			<block name="terrDirt" prob=".3"/>
+			<block name="terrOreCoal" prob=".1"/>
+			<block name="terrSand" prob=".1"/>
+			<block name="terrAsphalt" prob=".73"/>
+		</placeholder>
+	
+
+<!-- Random Flat Wall Grafitti -->
+
+		<placeholder name="MPL_GrafittiHelper_wf_1x3">	
+			<block name="mpl_Grafitti02_wf" prob="0.05"/>
+			<block name="mpl_Grafitti07_wf" prob="0.05"/>
+			<block name="mpl_Grafitti08_wf" prob="0.05"/>
+			<block name="mpl_Grafitti16_wf" prob="0.05"/>
+			<block name="mpl_Grafitti18_wf" prob="0.05"/>
+			<block name="mpl_Grafitti30_wf" prob="0.05"/>
+			<block name="mpl_Grafitti65_wf" prob="0.05"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_2x2">	
+			<block name="mpl_Grafitti59_wf" prob="0.03"/>
+			<block name="mpl_Grafitti61_wf" prob="0.03"/>
+			<block name="mpl_Grafitti63_wf" prob="0.03"/>
+			<block name="mpl_Grafitti64_wf" prob="0.03"/>
+			<block name="mpl_Grafitti66_wf" prob="0.03"/>
+			<block name="mpl_Grafitti70_wf" prob="0.03"/>
+			<block name="mpl_Grafitti71_wf" prob="0.03"/>
+			<block name="mpl_Grafitti72_wf" prob="0.03"/>
+			<block name="mpl_Grafitti73_wf" prob="0.03"/>
+			<block name="mpl_Grafitti74_wf" prob="0.03"/>
+			<block name="mpl_Grafitti75_wf" prob="0.03"/>
+			<block name="mpl_Grafitti76_wf" prob="0.03"/>
+			<block name="mpl_Grafitti77_wf" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_2x3">	
+			<block name="mpl_Grafitti19_wf" prob="0.03"/>
+			<block name="mpl_Grafitti24_wf" prob="0.03"/>
+			<block name="mpl_Grafitti25_wf" prob="0.03"/>
+			<block name="mpl_Grafitti36_wf" prob="0.03"/>
+			<block name="mpl_Grafitti46_wf" prob="0.03"/>
+			<block name="mpl_Grafitti50_wf" prob="0.03"/>
+			<block name="mpl_Grafitti51_wf" prob="0.03"/>
+			<block name="mpl_Grafitti67_wf" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_3x2">	
+			<block name="mpl_Grafitti04_wf" prob="0.018"/>
+			<block name="mpl_Grafitti05_wf" prob="0.018"/>
+			<block name="mpl_Grafitti06_wf" prob="0.018"/>
+			<block name="mpl_Grafitti10_wf" prob="0.018"/>
+			<block name="mpl_Grafitti11_wf" prob="0.018"/>
+			<block name="mpl_Grafitti12_wf" prob="0.018"/>
+			<block name="mpl_Grafitti13_wf" prob="0.018"/>
+			<block name="mpl_Grafitti14_wf" prob="0.018"/>
+			<block name="mpl_Grafitti15_wf" prob="0.018"/>
+			<block name="mpl_Grafitti17_wf" prob="0.018"/>
+			<block name="mpl_Grafitti21_wf" prob="0.018"/>
+			<block name="mpl_Grafitti22_wf" prob="0.018"/>
+			<block name="mpl_Grafitti27_wf" prob="0.018"/>
+			<block name="mpl_Grafitti28_wf" prob="0.018"/>
+			<block name="mpl_Grafitti29_wf" prob="0.018"/>
+			<block name="mpl_Grafitti37_wf" prob="0.018"/>
+			<block name="mpl_Grafitti41_wf" prob="0.018"/>
+			<block name="mpl_Grafitti42_wf" prob="0.018"/>
+			<block name="mpl_Grafitti43_wf" prob="0.018"/>
+			<block name="mpl_Grafitti45_wf" prob="0.018"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_3x3">	
+			<block name="mpl_Grafitti03_wf" prob="0.025"/>
+			<block name="mpl_Grafitti47_wf" prob="0.025"/>
+			<block name="mpl_Grafitti48_wf" prob="0.025"/>
+			<block name="mpl_Grafitti49_wf" prob="0.025"/>
+			<block name="mpl_Grafitti52_wf" prob="0.025"/>
+			<block name="mpl_Grafitti55_wf" prob="0.025"/>
+			<block name="mpl_Grafitti56_wf" prob="0.025"/>
+			<block name="mpl_Grafitti58_wf" prob="0.025"/>
+			<block name="mpl_Grafitti60_wf" prob="0.025"/>
+			<block name="mpl_Grafitti62_wf" prob="0.025"/>
+			<block name="mpl_Grafitti68_wf" prob="0.025"/>
+			<block name="mpl_Grafitti69_wf" prob="0.025"/>
+			<block name="mpl_Grafitti78_wf" prob="0.025"/>
+			<block name="mpl_Grafitti79_wf" prob="0.025"/>
+			<block name="mpl_Grafitti80_wf" prob="0.025"/>
+			<block name="mpl_Grafitti81_wf" prob="0.025"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_4x2">	
+			<block name="mpl_Grafitti09_wf" prob="0.03"/>
+			<block name="mpl_Grafitti26_wf" prob="0.03"/>
+			<block name="mpl_Grafitti31_wf" prob="0.03"/>
+			<block name="mpl_Grafitti32_wf" prob="0.03"/>
+			<block name="mpl_Grafitti33_wf" prob="0.03"/>
+			<block name="mpl_Grafitti34_wf" prob="0.03"/>
+			<block name="mpl_Grafitti35_wf" prob="0.03"/>
+			<block name="mpl_Grafitti38_wf" prob="0.03"/>
+			<block name="mpl_Grafitti39_wf" prob="0.03"/>
+			<block name="mpl_Grafitti40_wf" prob="0.03"/>
+			<block name="mpl_Grafitti44_wf" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_4x3">	
+			<block name="mpl_Grafitti23_wf" prob="0.35"/>
+			<block name="mpl_Grafitti54_wf" prob="0.35"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_4x4">	
+			<block name="mpl_Grafitti53_wf" prob=".75"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_wf_5x3">	
+			<block name="mpl_Grafitti01_wf" prob="0.25"/>
+			<block name="mpl_Grafitti20_wf" prob="0.25"/>
+			<block name="mpl_Grafitti57_wf" prob="0.25"/>
+		</placeholder>	
+			
+
+
+
+		<!-- Random Quarter Wall Grafitti -->
+
+
+		<placeholder name="MPL_GrafittiHelper_w.25_1x3">	
+			<block name="mpl_Grafitti02_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti07_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti08_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti16_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti18_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti30_w.25" prob="0.1071"/>
+			<block name="mpl_Grafitti65_w.25" prob="0.1071"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_2x2">	
+			<block name="mpl_Grafitti59_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti61_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti63_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti64_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti66_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti70_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti71_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti72_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti73_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti74_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti75_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti76_w.25" prob="0.0576"/>
+			<block name="mpl_Grafitti77_w.25" prob="0.0576"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_2x3">	
+			<block name="mpl_Grafitti19_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti24_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti25_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti36_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti46_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti50_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti51_w.25" prob="0.0833"/>
+			<block name="mpl_Grafitti67_w.25" prob="0.0833"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_3x2">	
+			<block name="mpl_Grafitti04_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti05_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti06_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti10_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti11_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti12_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti13_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti14_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti15_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti17_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti21_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti22_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti27_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti28_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti29_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti37_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti41_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti42_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti43_w.25" prob="0.0375"/>
+			<block name="mpl_Grafitti45_w.25" prob="0.0375"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_3x3">	
+			<block name="mpl_Grafitti03_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti47_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti48_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti49_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti52_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti55_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti56_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti58_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti60_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti62_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti68_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti69_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti78_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti79_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti80_w.25" prob="0.0468"/>
+			<block name="mpl_Grafitti81_w.25" prob="0.0468"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_4x2">	
+			<block name="mpl_Grafitti09_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti26_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti31_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti32_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti33_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti34_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti35_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti38_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti39_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti40_w.25" prob="0.03"/>
+			<block name="mpl_Grafitti44_w.25" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_4x3">	
+			<block name="mpl_Grafitti23_w.25" prob="0.33"/>
+			<block name="mpl_Grafitti54_w.25" prob="0.33"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_4x4">	
+			<block name="mpl_Grafitti53_w.25" prob=".75"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.25_5x3">	
+			<block name="mpl_Grafitti01_w.25" prob="0.25"/>
+			<block name="mpl_Grafitti20_w.25" prob="0.25"/>
+			<block name="mpl_Grafitti57_w.25" prob="0.25"/>
+		</placeholder>	
+
+
+
+
+		<!-- Random Half Wall Grafitti -->
+
+		<placeholder name="MPL_GrafittiHelper_w.5_1x3">	
+			<block name="mpl_Grafitti02_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti07_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti08_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti16_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti18_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti30_w.5" prob="0.1071"/>
+			<block name="mpl_Grafitti65_w.5" prob="0.1071"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_2x2">	
+			<block name="mpl_Grafitti59_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti61_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti63_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti64_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti66_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti70_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti71_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti72_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti73_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti74_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti75_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti76_w.5" prob="0.0576"/>
+			<block name="mpl_Grafitti77_w.5" prob="0.0576"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_2x3">	
+			<block name="mpl_Grafitti19_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti24_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti25_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti36_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti46_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti50_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti51_w.5" prob="0.0937"/>
+			<block name="mpl_Grafitti67_w.5" prob="0.0937"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_3x2">	
+			<block name="mpl_Grafitti04_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti05_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti06_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti10_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti11_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti12_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti13_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti14_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti15_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti17_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti21_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti22_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti27_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti28_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti29_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti37_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti41_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti42_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti43_w.5" prob="0.0375"/>
+			<block name="mpl_Grafitti45_w.5" prob="0.0375"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_3x3">	
+			<block name="mpl_Grafitti03_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti47_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti48_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti49_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti52_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti55_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti56_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti58_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti60_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti62_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti68_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti69_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti78_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti79_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti80_w.5" prob="0.0468"/>
+			<block name="mpl_Grafitti81_w.5" prob="0.0468"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_4x2">	
+			<block name="mpl_Grafitti09_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti26_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti31_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti32_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti33_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti34_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti35_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti38_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti39_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti40_w.5" prob="0.03"/>
+			<block name="mpl_Grafitti44_w.5" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_4x3">	
+			<block name="mpl_Grafitti23_w.5" prob="0.33"/>
+			<block name="mpl_Grafitti54_w.5" prob="0.33"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_4x4">	
+			<block name="mpl_Grafitti53_w.5" prob=".75"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_w.5_5x3">	
+			<block name="mpl_Grafitti01_w.5" prob="0.25"/>
+			<block name="mpl_Grafitti20_w.5" prob="0.25"/>
+			<block name="mpl_Grafitti57_w.5" prob="0.25"/>
+		</placeholder>	
+
+
+
+
+
+		<!-- Random Ground Grafitti -->
+
+		<placeholder name="MPL_GrafittiHelper_g_1x3">	
+			<block name="mpl_Grafitti02_g" prob="0.1071"/>
+			<block name="mpl_Grafitti07_g" prob="0.1071"/>
+			<block name="mpl_Grafitti08_g" prob="0.1071"/>
+			<block name="mpl_Grafitti16_g" prob="0.1071"/>
+			<block name="mpl_Grafitti18_g" prob="0.1071"/>
+			<block name="mpl_Grafitti30_g" prob="0.1071"/>
+			<block name="mpl_Grafitti65_g" prob="0.1071"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_2x2">	
+			<block name="mpl_Grafitti59_g" prob="0.0576"/>
+			<block name="mpl_Grafitti61_g" prob="0.0576"/>
+			<block name="mpl_Grafitti63_g" prob="0.0576"/>
+			<block name="mpl_Grafitti64_g" prob="0.0576"/>
+			<block name="mpl_Grafitti66_g" prob="0.0576"/>
+			<block name="mpl_Grafitti70_g" prob="0.0576"/>
+			<block name="mpl_Grafitti71_g" prob="0.0576"/>
+			<block name="mpl_Grafitti72_g" prob="0.0576"/>
+			<block name="mpl_Grafitti73_g" prob="0.0576"/>
+			<block name="mpl_Grafitti74_g" prob="0.0576"/>
+			<block name="mpl_Grafitti75_g" prob="0.0576"/>
+			<block name="mpl_Grafitti76_g" prob="0.0576"/>
+			<block name="mpl_Grafitti77_g" prob="0.0576"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_2x3">	
+			<block name="mpl_Grafitti19_g" prob="0.0937"/>
+			<block name="mpl_Grafitti24_g" prob="0.0937"/>
+			<block name="mpl_Grafitti25_g" prob="0.0937"/>
+			<block name="mpl_Grafitti36_g" prob="0.0937"/>
+			<block name="mpl_Grafitti46_g" prob="0.0937"/>
+			<block name="mpl_Grafitti50_g" prob="0.0937"/>
+			<block name="mpl_Grafitti51_g" prob="0.0937"/>
+			<block name="mpl_Grafitti67_g" prob="0.0937"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_3x2">	
+			<block name="mpl_Grafitti04_g" prob="0.0375"/>
+			<block name="mpl_Grafitti05_g" prob="0.0375"/>
+			<block name="mpl_Grafitti06_g" prob="0.0375"/>
+			<block name="mpl_Grafitti10_g" prob="0.0375"/>
+			<block name="mpl_Grafitti11_g" prob="0.0375"/>
+			<block name="mpl_Grafitti12_g" prob="0.0375"/>
+			<block name="mpl_Grafitti13_g" prob="0.0375"/>
+			<block name="mpl_Grafitti14_g" prob="0.0375"/>
+			<block name="mpl_Grafitti15_g" prob="0.0375"/>
+			<block name="mpl_Grafitti17_g" prob="0.0375"/>
+			<block name="mpl_Grafitti21_g" prob="0.0375"/>
+			<block name="mpl_Grafitti22_g" prob="0.0375"/>
+			<block name="mpl_Grafitti27_g" prob="0.0375"/>
+			<block name="mpl_Grafitti28_g" prob="0.0375"/>
+			<block name="mpl_Grafitti29_g" prob="0.0375"/>
+			<block name="mpl_Grafitti37_g" prob="0.0375"/>
+			<block name="mpl_Grafitti41_g" prob="0.0375"/>
+			<block name="mpl_Grafitti42_g" prob="0.0375"/>
+			<block name="mpl_Grafitti43_g" prob="0.0375"/>
+			<block name="mpl_Grafitti45_g" prob="0.0375"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_3x3">	
+			<block name="mpl_Grafitti03_g" prob="0.0468"/>
+			<block name="mpl_Grafitti47_g" prob="0.0468"/>
+			<block name="mpl_Grafitti48_g" prob="0.0468"/>
+			<block name="mpl_Grafitti49_g" prob="0.0468"/>
+			<block name="mpl_Grafitti52_g" prob="0.0468"/>
+			<block name="mpl_Grafitti55_g" prob="0.0468"/>
+			<block name="mpl_Grafitti56_g" prob="0.0468"/>
+			<block name="mpl_Grafitti58_g" prob="0.0468"/>
+			<block name="mpl_Grafitti60_g" prob="0.0468"/>
+			<block name="mpl_Grafitti62_g" prob="0.0468"/>
+			<block name="mpl_Grafitti68_g" prob="0.0468"/>
+			<block name="mpl_Grafitti69_g" prob="0.0468"/>
+			<block name="mpl_Grafitti78_g" prob="0.0468"/>
+			<block name="mpl_Grafitti79_g" prob="0.0468"/>
+			<block name="mpl_Grafitti80_g" prob="0.0468"/>
+			<block name="mpl_Grafitti81_g" prob="0.0468"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_4x2">	
+			<block name="mpl_Grafitti09_g" prob="0.03"/>
+			<block name="mpl_Grafitti26_g" prob="0.03"/>
+			<block name="mpl_Grafitti31_g" prob="0.03"/>
+			<block name="mpl_Grafitti32_g" prob="0.03"/>
+			<block name="mpl_Grafitti33_g" prob="0.03"/>
+			<block name="mpl_Grafitti34_g" prob="0.03"/>
+			<block name="mpl_Grafitti35_g" prob="0.03"/>
+			<block name="mpl_Grafitti38_g" prob="0.03"/>
+			<block name="mpl_Grafitti39_g" prob="0.03"/>
+			<block name="mpl_Grafitti40_g" prob="0.03"/>
+			<block name="mpl_Grafitti44_g" prob="0.03"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_4x3">	
+			<block name="mpl_Grafitti23_g" prob="0.33"/>
+			<block name="mpl_Grafitti54_g" prob="0.33"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_4x4">	
+			<block name="mpl_Grafitti53_g" prob=".75"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_g_5x3">	
+			<block name="mpl_Grafitti01_g" prob="0.25"/>
+			<block name="mpl_Grafitti20_g" prob="0.25"/>
+			<block name="mpl_Grafitti57_g" prob="0.25"/>
+		</placeholder>	
+
+
+
+<!-- Random Subway Grafitti -->
+
+
+
+		<placeholder name="MPL_GrafittiHelper_sw_1x3">	
+			<block name="mpl_Grafitti02_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti07_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti08_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti16_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti18_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti30_sw" prob="0.1429"/>
+			<block name="mpl_Grafitti65_sw" prob="0.1429"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_2x2">	
+			<block name="mpl_Grafitti59_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti61_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti63_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti64_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti66_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti70_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti71_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti72_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti73_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti74_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti75_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti76_sw" prob="0.0769"/>
+			<block name="mpl_Grafitti77_sw" prob="0.0769"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_2x3">	
+			<block name="mpl_Grafitti19_sw" prob="0.125"/>
+			<block name="mpl_Grafitti24_sw" prob="0.125"/>
+			<block name="mpl_Grafitti25_sw" prob="0.125"/>
+			<block name="mpl_Grafitti36_sw" prob="0.125"/>
+			<block name="mpl_Grafitti46_sw" prob="0.125"/>
+			<block name="mpl_Grafitti50_sw" prob="0.125"/>
+			<block name="mpl_Grafitti51_sw" prob="0.125"/>
+			<block name="mpl_Grafitti67_sw" prob="0.125"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_3x2">	
+			<block name="mpl_Grafitti04_sw" prob="0.05"/>
+			<block name="mpl_Grafitti05_sw" prob="0.05"/>
+			<block name="mpl_Grafitti06_sw" prob="0.05"/>
+			<block name="mpl_Grafitti10_sw" prob="0.05"/>
+			<block name="mpl_Grafitti11_sw" prob="0.05"/>
+			<block name="mpl_Grafitti12_sw" prob="0.05"/>
+			<block name="mpl_Grafitti13_sw" prob="0.05"/>
+			<block name="mpl_Grafitti14_sw" prob="0.05"/>
+			<block name="mpl_Grafitti15_sw" prob="0.05"/>
+			<block name="mpl_Grafitti17_sw" prob="0.05"/>
+			<block name="mpl_Grafitti21_sw" prob="0.05"/>
+			<block name="mpl_Grafitti22_sw" prob="0.05"/>
+			<block name="mpl_Grafitti27_sw" prob="0.05"/>
+			<block name="mpl_Grafitti28_sw" prob="0.05"/>
+			<block name="mpl_Grafitti29_sw" prob="0.05"/>
+			<block name="mpl_Grafitti37_sw" prob="0.05"/>
+			<block name="mpl_Grafitti41_sw" prob="0.05"/>
+			<block name="mpl_Grafitti42_sw" prob="0.05"/>
+			<block name="mpl_Grafitti43_sw" prob="0.05"/>
+			<block name="mpl_Grafitti45_sw" prob="0.05"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_3x3">	
+			<block name="mpl_Grafitti03_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti47_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti48_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti49_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti52_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti55_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti56_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti58_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti60_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti62_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti68_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti69_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti78_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti79_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti80_sw" prob="0.0625"/>
+			<block name="mpl_Grafitti81_sw" prob="0.0625"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_4x2">	
+			<block name="mpl_Grafitti09_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti26_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti31_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti32_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti33_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti34_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti35_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti38_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti39_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti40_sw" prob="0.0909"/>
+			<block name="mpl_Grafitti44_sw" prob="0.0909"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_4x3">	
+			<block name="mpl_Grafitti23_sw" prob="0.5"/>
+			<block name="mpl_Grafitti54_sw" prob="0.5"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_4x4">	
+			<block name="mpl_Grafitti53_sw" prob="1"/>
+		</placeholder>	
+		<placeholder name="MPL_GrafittiHelper_sw_5x3">	
+			<block name="mpl_Grafitti01_sw" prob="0.5333"/>
+			<block name="mpl_Grafitti20_sw" prob="0.5333"/>
+			<block name="mpl_Grafitti57_sw" prob="0.5333"/>
+		</placeholder>	
+			
+
+<!-- Shocking Electrical Blocks -->
+
+
+		<placeholder name="breakerBoxClosed">
+			<block name="mpl_udx_breakerBoxClosed" prob=".15"/>
+			<block name="mpl_udg_breakerBoxClosed" prob=".85"/>
+		</placeholder>
+		
+
+		<placeholder name="breakerBoxOpen">
+			<block name="mpl_udx_breakerBoxOpen" prob=".15"/>
+			<block name="mpl_udg_breakerBoxOpen" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="breakerBoxBroken">
+			<block name="mpl_udx_breakerBoxBroken" prob=".15"/>
+			<block name="mpl_udg_breakerBoxBroken" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="breakerBoxWallClosed">
+			<block name="mpl_udx_breakerBoxWallClosed" prob=".15"/>
+			<block name="mpl_udg_breakerBoxWallClosed" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="breakerBoxWallOpen">
+			<block name="mpl_udx_breakerBoxWallOpen" prob=".15"/>
+			<block name="mpl_udg_breakerBoxWallOpen" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="residentialSingleMeterDisconnect">
+			<block name="mpl_udx_residentialSingleMeterDisconnect" prob=".15"/>
+			<block name="mpl_udg_residentialSingleMeterDisconnect" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialDistributionBox">
+			<block name="mpl_udx_commercialDistributionBox" prob=".15"/>
+			<block name="mpl_udg_commercialDistributionBox" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialSingleMeterDisconnect">
+			<block name="mpl_udx_commercialSingleMeterDisconnect" prob=".15"/>
+			<block name="mpl_udg_commercialSingleMeterDisconnect" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialSingleMeter">
+			<block name="mpl_udx_commercialSingleMeter" prob=".15"/>
+			<block name="mpl_udg_commercialSingleMeter" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialDualMeter">
+			<block name="mpl_udx_commercialDualMeter" prob=".15"/>
+			<block name="mpl_udg_commercialDualMeter" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialTripleMeter">
+			<block name="mpl_udx_commercialTripleMeter" prob=".15"/>
+			<block name="mpl_udg_commercialTripleMeter" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="commercialQuadMeter">
+			<block name="mpl_udx_commercialQuadMeter" prob=".15"/>
+			<block name="mpl_udg_commercialQuadMeter" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="utilityTransformer">
+			<block name="mpl_udx_utilityTransformer" prob=".15"/>
+			<block name="mpl_udg_utilityTransformer" prob=".85"/>
+		</placeholder>
+
+
+
+		<placeholder name="streetLight01">
+			<block name="mpl_udx_streetLight01" prob=".15"/>
+			<block name="mpl_udg_streetLight01" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="streetLight02">
+			<block name="mpl_udx_streetLight02" prob=".15"/>
+			<block name="mpl_udg_streetLight02" prob=".85"/>
+		</placeholder>
+
+
+		<placeholder name="streetLight03">
+			<block name="mpl_udx_streetLight03" prob=".15"/>
+			<block name="mpl_udg_streetLight03" prob=".85"/>
+		</placeholder>
+
+		<placeholder name="streetLight04">
+			<block name="mpl_udx_streetLight04" prob=".15"/>
+			<block name="mpl_udg_streetLight04" prob=".85"/>
+		</placeholder>
+
+		<placeholder name="streetLightBrokenDestroyed">
+			<block name="mpl_udx_streetLightBrokenDestroyed" prob=".15"/>
+			<block name="mpl_udg_streetLightBrokenDestroyed" prob=".85"/>
+		</placeholder>
+
+		<placeholder name="streetLightBroken">
+			<block name="mpl_udx_streetLightBroken" prob=".15"/>
+			<block name="mpl_udg_streetLightBroken" prob=".85"/>
+		</placeholder>
+
+		
+
+			
+    </append>
+	
+</blockplaceholders>

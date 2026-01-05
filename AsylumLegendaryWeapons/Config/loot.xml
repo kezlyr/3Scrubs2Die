@@ -1,0 +1,169 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootqualitytemplates">
+		<lootqualitytemplate name="SMAQuality">
+			<qualitytemplate level="1,999999" default_quality="1">
+				<loot quality="1" prob="0.654"/>
+				<loot quality="2" prob="0.532"/>
+				<loot quality="3" prob="0.412"/>
+				<loot quality="4" prob="0.381"/>
+				<loot quality="5" prob="0.312"/>
+				<loot quality="6" prob="0.288"/>
+			</qualitytemplate>
+		</lootqualitytemplate>
+	</append>
+
+	<append xpath="/lootcontainers/lootprobtemplates">
+		<lootprobtemplate name="SMAT1">
+			<loot level="1,999999" prob="0.001"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAT2">
+			<loot level="1,999999" prob="0.005"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAT3">
+			<loot level="1,999999" prob="0.04"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAT4">
+			<loot level="1,999999" prob="0.08"/>
+		</lootprobtemplate>
+		<lootprobtemplate name="SMAT5">
+			<loot level="1,999999" prob="0.15"/>
+		</lootprobtemplate>
+	</append>
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+		<lootgroup name="groupSMA" count="1" loot_quality_template="SMAQuality">
+			<item name="SMAAutumnsCall"/>
+			<item name="asylumgrimscythe"/>
+			<item name="SMABrasswindBlade"/>
+			<item name="SMASerpentsEdge"/>
+			<item name="SMAMjölnirsEcho"/>
+			<item name="SMAAbyssalReach"/>
+			<item name="SMAWhisperingDeath"/>
+			<item name="SMARadiance"/>
+			<item name="SMAGrimVortex"/>
+			<item name="SMACrimsonWrath"/>
+			<item name="SMAStoneboundHammer"/>
+			<item name="SMAClockworkReaver"/>
+			<item name="SMAReapersMaul"/>
+			<item name="SMADrakesFang"/>
+			<item name="SMAIronwyrm"/>
+			<item name="SMALWDragonFist"/>
+			<item name="SMACarapaceClub"/>
+			<item name="SMABeonKnife"/>
+			<item name="SMASpearNew"/>
+			<item name="SMAThunderBreaker"/>
+			<item name="SMATwoHandedKatana"/>
+			<item name="SMASpineEdge"/>
+			<item name="SMAMace"/>
+			<item name="SMAKopesh"/>
+			<item name="LWWakizashi"/>
+			<item name="LWFantasySword2"/>
+			<item name="LWOneHanded"/>
+			<item name="LWIceSword"/>
+			<item name="LWFantasySword"/>
+			<item name="LWMoltenGreatSword"/>
+			<item name="LWDragonKnife"/>
+			<item name="LWNewScythe"/>
+			<item name="HolyScythe"/>
+			<item name="LWFangtian"/>
+			<item name="LWShamanGlaive"/>
+			<item name="LWNokia"/>
+			<item name="LWShamanMace"/>
+			<item name="LWVolendrung"/>
+			<item name="LWHornyBat"/>
+			<item name="LWDragonSkullAxe"/>
+			<item name="LWFantasyAxe"/>
+			<item name="LWFireAxe"/>
+			<item name="LWMaelstromAxe"/>
+			<item name="LWSylphAxe"/>
+			<item name="LWDragonBow"/>
+			<item name="LWEpicBow"/>
+			<item name="LWRustBow"/>
+		</lootgroup>
+		
+	</insertBefore>
+
+	<append xpath="//lootgroup[@name='groupSmallSafeLoot']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupGunSafeSecure']">
+		<item group="groupSMA" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupReinforcedChestT2']">
+		<item group="groupSMA" loot_prob_template="SMAT2" force_prob="true"/>
+	</append>	
+
+	<append xpath="//lootgroup[@name='groupReinforcedChestT3']">
+		<item group="groupSMA" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupHardenedChestT4']">
+		<item group="groupSMA" loot_prob_template="SMAT4" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupHardenedChestT5']">
+		<item group="groupSMA" loot_prob_template="SMAT5" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupZpackBoss']">
+		<item group="groupSMA" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackStrong']">
+		<item group="groupSMA" loot_prob_template="SMAT2" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackReg']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupHiddenStash']">
+		<item group="groupSMA" loot_prob_template="SMAT2" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupBuriedWeaponChest']">
+		<item group="groupSMA" loot_prob_template="SMAT2" force_prob="true"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupBuriedTreasure']">
+		<item group="groupSMA" loot_prob_template="SMAT2" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupInfestedT5']">
+		<item group="groupSMA" loot_prob_template="SMAT5" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupArmyTruck']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupPoliceCar']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupAirDrop']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupFireTruck']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupLargeWeaponBag']">
+		<item group="groupSMA" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupSmallWeaponBag']">
+		<item group="groupSMA" loot_prob_template="SMAT1" force_prob="true"/>
+	</append>
+	
+	
+	<append xpath="//lootgroup[@name='groupCarWeaponsTools']">
+		<item name="resourceSMALegendaryRepairKit" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupUtilityItems']">
+		<item name="resourceSMALegendaryRepairKit" loot_prob_template="SMAT3" force_prob="true"/>
+	</append>
+	
+</configs>

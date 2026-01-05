@@ -1,0 +1,2466 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configs>
+	<append xpath="/items/item[@name='carBattery']">
+		<property name="CustomIcon" value="battery" />
+	</append>
+	<append xpath="/items/item[@name='vehicleWheels']">
+		<property name="Stacknumber" value="20" />
+	</append>
+	<append xpath="/items">
+		<item name="Tire">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="6" />
+			<property name="Stacknumber" value="20" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarTireFlat" />
+		</item>
+		<item name="damagedTire">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="3" />
+			<property name="Stacknumber" value="20" />
+			<property name="EconomicValue" value="8" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarTireFlat" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carAlternator">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="6" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="42" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="altenator" />
+		</item>
+		<item name="damagedcarAlternator">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="3" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="28" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="altenator" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carEngineAssembly">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="70" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="200" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="engineassembly" />
+		</item>
+		<item name="carElectricalAssembly">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="50" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="120" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="electricalassembly" />
+		</item>
+		<item name="carBodyAssembly">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="40" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="300" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="bodyassembly" />
+		</item>
+		<item name="carEngine">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="60" />
+			<property name="Stacknumber" value="10" />
+			<property name="EconomicValue" value="200" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="engine" />
+		</item>
+		<item name="damagedcarEngine">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="30" />
+			<property name="Stacknumber" value="10" />
+			<property name="EconomicValue" value="42" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="engine" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carCarburetor">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="20" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="carb" />
+		</item>
+		<item name="damagedcarCarburetor">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="7" />
+			<property name="Stacknumber" value="20" />
+			<property name="EconomicValue" value="22" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="carb" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carSeats">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Mcloth" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="10" />
+			<property name="EconomicValue" value="40" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="seats" />
+		</item>
+		<item name="damagedcarSeats">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Mcloth" />
+			<property name="Weight" value="6" />
+			<property name="Stacknumber" value="10" />
+			<property name="EconomicValue" value="15" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="seats" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="damagedcarBattery">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Mlead_scrap" />
+			<property name="Weight" value="5" />
+			<property name="Stacknumber" value="10" />
+			<property name="EconomicValue" value="22" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="battery" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carTransmission">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="25" />
+			<property name="Stacknumber" value="4" />
+			<property name="EconomicValue" value="42" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="transmission" />
+		</item>
+		<item name="damagedcarTransmission">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="15" />
+			<property name="Stacknumber" value="4" />
+			<property name="EconomicValue" value="22" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="transmission" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carChassis">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="15" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="45" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="chassis" />
+		</item>
+		<item name="damagedcarChassis">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="5" />
+			<property name="Stacknumber" value="4" />
+			<property name="EconomicValue" value="16" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="chassis" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="carDoors">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarBackDoorFlipped" />
+		</item>
+		<item name="carHood">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="15" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarHoodFlipped" />
+		</item>
+		<item name="carTrunk">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="15" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarTrunkLidFlat" />
+		</item>
+		<item name="carBodyKit">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="35" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="100" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="BodyKit" />
+		</item>
+		<item name="carFender">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="8" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarFenderFlipped" />
+		</item>
+		<item name="carBumperFront">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="decoCarFrontBumperFlat" />
+		</item>
+		<item name="carWheelrims">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="20" />
+			<property name="EconomicValue" value="32" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="carWheelrim" />
+		</item>
+		<item name="vehicleVMWheels">
+			<property name="Extends" value="vehicleWheels" />
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="EconomicValue" value="250" />
+			<property name="Stacknumber" value="20" />
+			<property name="UnlockedBy" value="craftingVehicles" />
+			<property name="Weight" value="60" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="VMwheels" />
+		</item>
+		<item name="damagedWheel">
+			<property name="Extends" value="vehicleWheels" />
+			<property name="Tags" value="vehiclesSkill" />
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="EconomicValue" value="70" />
+			<property name="Stacknumber" value="20" />
+			<property name="UnlockedBy" value="craftingVehicles" />
+			<property name="Weight" value="20" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="VMwheels" />
+			<property name="CustomIconTint" value="ff0000" />
+		</item>
+		<item name="VMToolCarLift">
+			<property name="DescriptionKey" value="VMToolCarLiftDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="10" />
+			<property name="Stacknumber" value="2" />
+			<property name="EconomicValue" value="325" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="carlift" />
+		</item>
+		<item name="VMToolRatchetSet">
+			<property name="DescriptionKey" value="VMToolRatchetSetDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="1" />
+			<property name="Stacknumber" value="30" />
+			<property name="EconomicValue" value="20" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="wrenchset" />
+		</item>
+		<item name="VMToolCompressor">
+			<property name="DescriptionKey" value="VMToolCompressorDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="52" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="compressor" />
+		</item>
+		<item name="Footpump">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="38" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="Footpump" />
+		</item>
+		<item name="BatteryChargerUnit">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="33" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="PortableBatterCharger" />
+		</item>
+		<item name="HotwireKit">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="16" />
+			<property name="EconomicValue" value="20" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="Hot wirekit" />
+		</item>
+		<item name="WireCutters">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="30" />
+			<property name="EconomicValue" value="6" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="Wirecutters" />
+		</item>
+		<item name="ElectricalWire">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="2" />
+			<property name="Stacknumber" value="50" />
+			<property name="EconomicValue" value="2" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="Electrical Wire" />
+		</item>
+		<item name="MonsterSuspensionAssembly">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Miron_scrap" />
+			<property name="Weight" value="20" />
+			<property name="Stacknumber" value="2" />
+			<property name="EconomicValue" value="634" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="MonsterSuspension" />
+			<property name="SellableToTrader" value="false" />
+		</item>
+		<item name="VMPickupShell">
+			<property name="DescriptionKey" value="TireDesc" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="MresourceForgedSteel" />
+			<property name="Weight" value="35" />
+			<property name="Stacknumber" value="5" />
+			<property name="EconomicValue" value="100" />
+			<property name="Group" value="Resources" />
+			<property name="CustomIcon" value="PickupShell" />
+		</item>
+		<item name="vehicleVMPickupPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor" />
+			<property name="CustomIcon" value="guppyVehiclePickup_1" />
+			<property name="DescriptionKey" value="vehicleVMPickupPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms5.unity3d?VMPickupAC.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10000" />
+			<property name="Stacknumber" value="1" />
+			<property name="SellableToTrader" value="false" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMPickup" />
+			</property>
+			<effect_group name="vehicleVMPickupPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMFastbackPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor" />
+			<property name="CustomIcon" value="vehicleGuppyFastback_1" />
+			<property name="DescriptionKey" value="vehicleVMFastbackPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?VMFastback2AC.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMFastback" />
+			</property>
+			<effect_group name="vehicleVMFastbackPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMArmoredCobraPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor,vseat" />
+			<property name="CustomIcon" value="VehicleCarArmoredCobra_1" />
+			<property name="DescriptionKey" value="vehicleVMArmoredCobraPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMArmoredCobra.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10800" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMArmoredCobra" />
+			</property>
+			<effect_group name="vehicleVMArmoredCobraPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBuggyPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="guppyVehicleBuggy_1" />
+			<property name="DescriptionKey" value="vehicleVMBuggyPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?VMBuggy.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="9000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBuggy" />
+			</property>
+			<effect_group name="vehicleVMBuggyPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSedanPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="guppyVehicleSedan_1" />
+			<property name="DescriptionKey" value="vehicleVMSedanPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMSedan.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="4000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSedan" />
+			</property>
+			<effect_group name="vehicleVMSedanPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="12000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMHotRodPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="guppyVehicleHotRod_1" />
+			<property name="DescriptionKey" value="vehicleVMHotRodPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMHotRod.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10200" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMHotRod" />
+			</property>
+			<effect_group name="vehicleVMHotRodPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMQuadPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="guppyVehicleQuad_1" />
+			<property name="DescriptionKey" value="vehicleVMQuadPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?guppyVehicleQuad.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMQuad" />
+			</property>
+			<effect_group name="vehicleVMQuadPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMRustySedanPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="guppyVehicleWhiteSedanRusted_2" />
+			<property name="DescriptionKey" value="vehicleVMRustySedanPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMWhiteSedanRusted.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMRustySedan" />
+			</property>
+			<effect_group name="vehicleVMRustySedanPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTaxiRustedPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="guppyVehicleTaxiRusted_2" />
+			<property name="DescriptionKey" value="vehicleVMTaxiRustedPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMTaxiRusted.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTaxiRusted" />
+			</property>
+			<effect_group name="vehicleVMTaxiRustedPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBMWredPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="RedRust1" />
+			<property name="DescriptionKey" value="vehicleVMBMWredPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMBMWredAC.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBMWred" />
+			</property>
+			<effect_group name="vehicleVMBMWredPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBMWwhitePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="WhiteRust1" />
+			<property name="DescriptionKey" value="vehicleVMBMWwhitePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMBMWwhiteAC.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBMWwhite" />
+			</property>
+			<effect_group name="vehicleVMBMWwhitePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMNPCVanPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="guppyVehicleVan_1" />
+			<property name="DescriptionKey" value="vehicleVMNPCVanPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMVan.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="6100" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMNPCVan" />
+			</property>
+			<effect_group name="vehicleVMNPCVanPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMPoliceCarPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="guppyVehicleEMSPoliceCar_1" />
+			<property name="DescriptionKey" value="vehicleVMPoliceCarPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?EMSPoliceCar.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="6000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMPoliceCar" />
+			</property>
+			<effect_group name="vehicleVMPoliceCarPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMAmbulanceDamagedPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="DamagedAmbulance" />
+			<property name="DescriptionKey" value="vehicleVMAmbulanceDamagedPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?EMSAmbulanceDamaged.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="15000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMAmbulanceDamaged" />
+			</property>
+			<effect_group name="vehicleVMAmbulanceDamagedPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMilitaryTruckPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="guppyVehicleMilitaryTruck_1" />
+			<property name="DescriptionKey" value="vehicleVMMilitaryTruckPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMMilitaryTruck.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="50000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMilitaryTruck" />
+			</property>
+			<effect_group name="vehicleVMMilitaryTruckPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="60000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMilitaryHumVeePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,vseat" />
+			<property name="CustomIcon" value="guppyVehicleMilitaryCar_1" />
+			<property name="DescriptionKey" value="vehicleVMMilitaryHumVeePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMMilitaryCar.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="38000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMilitaryHumVee" />
+			</property>
+			<effect_group name="vehicleVMMilitaryHumVeePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="60000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBoxTruckPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor,vseat" />
+			<property name="CustomIcon" value="guppyVehicleBoxTruck_1" />
+			<property name="DescriptionKey" value="vehicleVMBoxTruckPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMBoxTruck.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="12500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBoxTruck" />
+			</property>
+			<effect_group name="vehicleVMBoxTruckPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBigRigPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="guppyVehicleCarBigRig_1" />
+			<property name="DescriptionKey" value="vehicleVMBigRigPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMBigRig.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="12500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBigRig" />
+			</property>
+			<effect_group name="vehicleVMBigRigPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBigRig2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow" />
+			<property name="CustomIcon" value="guppyVehicleCarBigRig2_1" />
+			<property name="DescriptionKey" value="vehicleVMBigRig2PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMBigRig2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="12500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBigRig2" />
+			</property>
+			<effect_group name="vehicleVMBigRig2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMHunterPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="VMHunterAPO" />
+			<property name="DescriptionKey" value="vehicleVMHunterPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMHunterAPO.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="52000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMHunter" />
+			</property>
+			<effect_group name="vehicleVMHunterPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMVan2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMRagsnTigerVan" />
+			<property name="DescriptionKey" value="vehicleVMVan2PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?VMRagsnTigerVan.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="8100" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMVan2" />
+			</property>
+			<effect_group name="vehicleVMVan2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMCrusaderPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMCrusader" />
+			<property name="DescriptionKey" value="vehicleVMCrusaderPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMCrusader.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="8000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMCrusader" />
+			</property>
+			<effect_group name="vehicleVMCrusaderPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMInterceptorPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="InterceptorMM" />
+			<property name="DescriptionKey" value="vehicleVMInterceptorPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMInterceptor.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="51000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMInterceptor" />
+			</property>
+			<effect_group name="vehicleVMInterceptorPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMalicePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMmarauder" />
+			<property name="DescriptionKey" value="vehicleVMMalicePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMmarauder.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="43000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMalice" />
+			</property>
+			<effect_group name="vehicleVMMalicePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSpikerPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor,vseat" />
+			<property name="CustomIcon" value="VMSpikeCar" />
+			<property name="DescriptionKey" value="vehicleVMSpikerPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMSpikeCar.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="50000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSpiker" />
+			</property>
+			<effect_group name="vehicleVMSpikerPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTurboPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMTurboMuscle" />
+			<property name="DescriptionKey" value="vehicleVMTurboPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMTurboMuscle.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="48000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTurbo" />
+			</property>
+			<effect_group name="vehicleVMTurboPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMotoGuppyPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="DescriptionKey" value="vehicleVMMotoGuppyPlaceableDesc" />
+			<property name="CustomIcon" value="MotoGuppy" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?VMminibike.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="4100" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleVMMotoGuppy" />
+				<property name="VehicleSize" value="1.7, 1.8, 3" />
+			</property>
+			<effect_group name="vehicleVMMotoGuppyPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="12000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMVespaPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="VMVespa1" />
+			<property name="DescriptionKey" value="vehicleVMVespaPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?VMvespa1.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="3000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleVMVespa" />
+				<property name="VehicleSize" value="1.7, 1.8, 3" />
+			</property>
+			<effect_group name="vehicleVMVespaPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="12000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMRVPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor,vseat" />
+			<property name="CustomIcon" value="VMRV" />
+			<property name="DescriptionKey" value="vehicleVMRVPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?VehicleMadnessRV.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="30000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMRV" />
+			</property>
+			<effect_group name="vehicleVMRVPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMApoTruckPlaceable">
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="APOTruck" />
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="DescriptionKey" value="vehicleVMApoTruckPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?ApoTruck.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="31000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMApoTruck" />
+			</property>
+			<effect_group name="vehicleVMApoTruckPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMFlatbedPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="FlatbedTruck" />
+			<property name="DescriptionKey" value="vehicleVMFlatbedPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMFlatbedAC.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="24000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMFlatbed" />
+			</property>
+			<effect_group name="vehicleVMFlatbedPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMM3ATruckPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="M33ATruck" />
+			<property name="DescriptionKey" value="vehicleVMM3ATruckPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?M3ATruck.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="47000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMM3ATruck" />
+			</property>
+			<effect_group name="vehicleVMM3ATruckPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMonsterPickupPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="VMMonsterPickup" />
+			<property name="DescriptionKey" value="vehicleVMMonsterPickupPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?MonsterPickup.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="50000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMonsterPickup" />
+			</property>
+			<effect_group name="vehicleVMMonsterPickupPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMonsterVanPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="MonsterVan" />
+			<property name="DescriptionKey" value="vehicleVMMonsterVanPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?MonsterVan.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="50000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMonsterVan" />
+			</property>
+			<effect_group name="vehicleVMMonsterVanPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMWarthogPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="WartHog" />
+			<property name="DescriptionKey" value="vehicleVMWarthogPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?Warthog.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="52000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMWarthog" />
+			</property>
+			<effect_group name="vehicleVMWarthogPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMustangMach1Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMMach1" />
+			<property name="DescriptionKey" value="vehicleVMMustangMach1PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms5.unity3d?VMMach1Mustang.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="30000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMustangMach1" />
+			</property>
+			<effect_group name="vehicleVMMustangMach1Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMilitaryTruck2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="MilitaryTruck2" />
+			<property name="DescriptionKey" value="vehicleVMMilitaryTruck2PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?MilitaryTruck2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="40000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMilitaryTruck2" />
+			</property>
+			<effect_group name="vehicleVMMilitaryTruck2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="60000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTacticalJeepPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="TacticalJeep" />
+			<property name="DescriptionKey" value="vehicleVMTacticalJeepPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMJeepTA.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="54000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTacticalJeep" />
+			</property>
+			<effect_group name="vehicleVMTacticalJeepPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMVenenoPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="Veneno" />
+			<property name="DescriptionKey" value="vehicleVMVenenoPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?Veneno.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="44000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMVeneno" />
+			</property>
+			<effect_group name="vehicleVMVenenoPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMJeepCPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="Jeep" />
+			<property name="DescriptionKey" value="vehicleVMJeepCPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMJeep.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="8200" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMJeepC" />
+			</property>
+			<effect_group name="vehicleVMJeepCPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMOldsMobilePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="VMOldsMobile" />
+			<property name="DescriptionKey" value="vehicleVMoldsMobilePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMOldsMobile.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMOldsMobile" />
+			</property>
+			<effect_group name="vehicleVMOldsMobilePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBuggy2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow" />
+			<property name="CustomIcon" value="Buggy2" />
+			<property name="DescriptionKey" value="vehicleVMBuggy2PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?VMBuggy22.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="30000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBuggy2" />
+			</property>
+			<effect_group name="vehicleVMBuggy2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMStrikerPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="Striker" />
+			<property name="DescriptionKey" value="vehicleVMStrikerPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom2.unity3d?VMStriker2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="80000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMStriker" />
+			</property>
+			<effect_group name="vehicleVMStrikerPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="60000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMQuad2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="DescriptionKey" value="vehicleVMQuad2PlaceableDesc" />
+			<property name="CustomIcon" value="RedQUAD" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms1.unity3d?VMQuad2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="4100" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMQuad2" />
+			</property>
+			<effect_group name="vehicleVMQuad2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="12000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBeetlePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="VMBeetle" />
+			<property name="DescriptionKey" value="vehicleVMBeetlePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VMBeetleOld.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBeetle" />
+			</property>
+			<effect_group name="vehicleVMBeetlePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMCombiPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMCombi1" />
+			<property name="DescriptionKey" value="vehicleVMCombiPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?VMCombi.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="6000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMCombi" />
+			</property>
+			<effect_group name="vehicleVMCombiPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMOldSemiPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,canHaveCosmetic" />
+			<property name="CustomIcon" value="vmoldsemi" />
+			<property name="DescriptionKey" value="vehicleVMOldSemiPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms5.unity3d?VMoldsemi.prefab?VMoldsemi" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="44000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMOldSemi" />
+			</property>
+			<effect_group name="vehicleVMOldSemiPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMCombi2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMCombi2" />
+			<property name="DescriptionKey" value="vehicleVMCombi2PlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?Combi1963.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="6000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMCombi2" />
+			</property>
+			<effect_group name="vehicleVMCombi2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTruckAmbulancePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMTruckAmbulancePlaceable" />
+			<property name="DescriptionKey" value="vehicleVMTruckAmbulancePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckAmbulance.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="20000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTruckAmbulance" />
+			</property>
+			<effect_group name="vehicleVMTruckAmbulancePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTruckMoPowerPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMTruckMoPowerPlaceable" />
+			<property name="DescriptionKey" value="vehicleVMTruckMoPowerPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckMoPower.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="20000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTruckMoPower" />
+			</property>
+			<effect_group name="vehicleVMTruckMoPowerPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMTruckWorkingStiffsPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="VMTruckWorkingStiffPlaceable" />
+			<property name="DescriptionKey" value="vehicleVMTruckWorkingStiffsPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?TruckWorkingStiff.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="20000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMTruckWorkingStiffs" />
+			</property>
+			<effect_group name="vehicleVMTruckWorkingStiffsPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMuscle2Placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,varmor,vseat" />
+			<property name="DescriptionKey" value="vehicleVMMuscle2PlaceableDesc" />
+			<property name="CustomIcon" value="VMMuscle2" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms3.unity3d?VMMuscle2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="48000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMuscle2" />
+			</property>
+			<effect_group name="vehicleVMMuscle2Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBusSchoolPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="Minibus_School" />
+			<property name="DescriptionKey" value="vehicleVMBusSchoolPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMBuses.unity3d?VMSchoolBus.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="25000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBusSchool" />
+			</property>
+			<effect_group name="vehicleVMBusSchoolPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBusShuttlePlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="Minibus_Shuttle" />
+			<property name="DescriptionKey" value="vehicleVMBusShuttlePlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMBuses.unity3d?VMShuttleBus.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="25000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBusShuttle" />
+			</property>
+			<effect_group name="vehicleVMBusShuttlePlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMBusCityPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="Minibus_City" />
+			<property name="DescriptionKey" value="vehicleVMBusCityPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMBuses.unity3d?VMCityBus1.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="25000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMBusCity" />
+			</property>
+			<effect_group name="vehicleVMBusCityPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMCamaroPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow,vseat" />
+			<property name="DescriptionKey" value="vehicleVMCamaroPlaceableDesc" />
+			<property name="CustomIcon" value="Camaro67" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms5.unity3d?VMCamaroSS1967.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="15000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMCamaro" />
+			</property>
+			<effect_group name="vehicleVMCamaroPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSedanCutlasPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMCutlass" />
+			<property name="DescriptionKey" value="vehicleVMSedanCutlasPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?SedanCutlas.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSedanCutlas" />
+			</property>
+			<effect_group name="vehicleVMSedanCutlasPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSedanFairHPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="CustomIcon" value="DirtySedan4" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="DescriptionKey" value="vehicleVMSedanFairHPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?SedanFairHaven.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="11000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSedanFairH" />
+			</property>
+			<effect_group name="vehicleVMSedanFairHPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMStationWagonPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMStationwagon" />
+			<property name="DescriptionKey" value="vehicleVMStationWagonPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?StationWagon.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="13000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMStationWagon" />
+			</property>
+			<effect_group name="vehicleVMStationWagonPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSmallPickUpPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="VMCompactPickup" />
+			<property name="DescriptionKey" value="vehicleVMSmallPickUpPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms2.unity3d?VMPickUpSmall.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="9000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSmallPickUp" />
+			</property>
+			<effect_group name="vehicleVMSmallPickUpPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMSkylineGTRPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="VMSkylineGTR" />
+			<property name="DescriptionKey" value="vehicleVMSkylineGTRPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?VMSkyline.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="19000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMSkylineGTR" />
+			</property>
+			<effect_group name="vehicleVMSkylineGTRPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMMuscleRedPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="RedMuscle" />
+			<property name="DescriptionKey" value="vehicleVMMuscleRedPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?VMRedSport.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="24000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMMuscleRed" />
+			</property>
+			<effect_group name="vehicleVMMuscleRedPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMJunkerMustangPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight" />
+			<property name="CustomIcon" value="Junker" />
+			<property name="DescriptionKey" value="vehicleVMJunkerMustangPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?VMMustangJunker.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="10000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMJunkerMustang" />
+			</property>
+			<effect_group name="vehicleVMJunkerMustangPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="24000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMExplorerPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow,varmor" />
+			<property name="CustomIcon" value="ExplorerJeep" />
+			<property name="DescriptionKey" value="vehicleVMExplorerPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?VMExploreJeep.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="30000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMExplorer" />
+			</property>
+			<effect_group name="vehicleVMExplorerPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMCaterhamPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic" />
+			<property name="CustomIcon" value="VMCaterham" />
+			<property name="DescriptionKey" value="vehicleVMCaterhamPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?SportOpen2.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="21000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMCaterham" />
+			</property>
+			<effect_group name="vehicleVMCaterhamPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMDumperTruckPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,vplow" />
+			<property name="CustomIcon" value="Dumpertruck" />
+			<property name="DescriptionKey" value="vehicleVMDumperTruckPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?VMDumperTruck.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="22500" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMDumperTruck" />
+			</property>
+			<effect_group name="vehicleVMDumperTruckPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMVanRedPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vseat,vfuel,vlight" />
+			<property name="CustomIcon" value="VMRedVan5" />
+			<property name="DescriptionKey" value="vehicleVMVanRedPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCars.unity3d?VehicleVM_Van5.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="11100" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMVanRed" />
+			</property>
+			<effect_group name="vehicleVMVanRedPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="48000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMEvoLancerPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat" />
+			<property name="CustomIcon" value="VMEvoLancer" />
+			<property name="DescriptionKey" value="vehicleVMEvoLancerPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/VMCustoms4.unity3d?VMEVOLancer.prefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="9000" />
+			<property name="SellableToTrader" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMEvoLancer" />
+			</property>
+			<effect_group name="vehicleVMEvoLancerPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="36000" />
+			</effect_group>
+		</item>
+		<item name="vehicleVMVespakartPlaceable">
+			<property name="CustomIcon" value="vmvespakart" />
+			<property name="Extends" value="vehicleMinibikePlaceable" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vplow," />
+			<property name="DescriptionKey" value="vehicleVMVespakartPlaceableDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/vmcars2.unity3d?vmvespakart" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="EconomicValue" value="5000" />
+			<property name="Stacknumber" value="1" />
+			<property name="SellableToTrader" value="false" />
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle" />
+				<property name="Vehicle" value="vehicleVMVespakart" />
+			</property>
+			<effect_group name="vehicleVMVespakartPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="8" />
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+				<passive_effect name="DegradationMax" operation="base_set" value="12000" />
+			</effect_group>
+		</item>
+		<item name="MilitaryHumVeeRestorationTool">
+			<property name="CustomIcon" value="MilitaryCarRepair" />
+			<property name="DescriptionKey" value="RepairToolDesc1" />
+			<property name="Tags" value="blunt,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,salvageTool,salvagingSkill" />
+			<property name="DisplayType" value="melee" />
+			<property name="HoldType" value="74" />
+			<property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab" />
+			<property name="TintColor" value="179, 54, 0" />
+			<property name="RepairTools" value="resourceRepairKit" />
+			<property name="DegradationBreaksAfter" value="false" />
+			<property name="SoundJammed" value="ItemNeedsRepair" />
+			<property name="SoundDestroy" value="metaldestroy" />
+			<property name="EconomicValue" value="1500" />
+			<property name="TraderStageTemplate" value="baseTier2" />
+			<property name="Material" value="MMotorToolParts" />
+			<property name="Weight" value="1" />
+			<property name="UnlockedBy" value="craftingSalvageTools" />
+			<property name="ShowQuality" value="false" />
+			<property name="Stacknumber" value="1" />
+			<property name="Group" value="Tools/Traps" />
+			<property name="RepairExpMultiplier" value="5.5" />
+			<property name="SoundUnholster" value="weapon_unholster" />
+			<property name="SoundHolster" value="weapon_holster" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMilitaryHumVeePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMilitaryHumVee" />
+				<property name="Sound_start" value="impactdriver" />
+			</property>
+			<effect_group name="gunToolNailgun" tiered="false">
+				<passive_effect name="DegradationMax" operation="base_set" value="3" tags="nailgun" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="nailgun" />
+				<passive_effect name="BlockRange" operation="base_set" value="5" />
+				<passive_effect name="MaxRange" operation="base_set" value="5.5" />
+				<passive_effect name="ModSlots" operation="base_set" value="0" />
+			</effect_group>
+		</item>
+		<item name="M3AMilitaryRestorationTool">
+			<property name="CustomIcon" value="M33ARepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMM3ATruckPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableM3ATruck" />
+			</property>
+		</item>
+		<item name="MilitaryTruckRestorationTool">
+			<property name="CustomIcon" value="MilitaryTruckRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMilitaryTruckPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMilitaryTruck" />
+			</property>
+		</item>
+		<item name="MilitaryTruck2RestorationTool">
+			<property name="CustomIcon" value="Truck2Repair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMilitaryTruck2Placeable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMilitaryTruck2" />
+			</property>
+		</item>
+		<item name="StrikerAPCRestorationTool">
+			<property name="CustomIcon" value="StrikerRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMStrikerPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableStrikerAPC" />
+			</property>
+		</item>
+		<item name="TacticalJeepRestorationTool">
+			<property name="CustomIcon" value="TacticalJeepRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTacticalJeepPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableTacticalJeep" />
+			</property>
+		</item>
+		<item name="CobraMustangRestorationTool">
+			<property name="CustomIcon" value="CobraRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMArmoredCobraPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableCobra" />
+			</property>
+		</item>
+		<item name="HunterRestorationTool">
+			<property name="CustomIcon" value="HunterRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMHunterPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableHunter" />
+			</property>
+		</item>
+		<item name="WarthogRestorationTool">
+			<property name="CustomIcon" value="WartHogRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMWarthogPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableWarthog" />
+			</property>
+		</item>
+		<item name="MadMaxInterceptorRestorationTool">
+			<property name="CustomIcon" value="InterceptorTool" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMInterceptorPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableInterceptor" />
+			</property>
+		</item>
+		<item name="Mach1RestorationTool">
+			<property name="CustomIcon" value="Mach1Repair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMustangMach1Placeable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMustangMach1" />
+			</property>
+		</item>
+		<item name="GyroRestorationTool">
+			<property name="CustomIcon" value="GyroRepair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleGyrocopterPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableGyro" />
+			</property>
+		</item>
+		<item name="SpikerRestorationTool">
+			<property name="CustomIcon" value="SpikerTool" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMSpikerPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableSpiker" />
+			</property>
+		</item>
+		<item name="TFP4x4RestorationTool">
+			<property name="CustomIcon" value="TFP4x4Repair" />
+			<property name="Extends" value="MilitaryHumVeeRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleTruck4x4Placeable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="Repairable4x4Truck" />
+			</property>
+		</item>
+		<item name="HotRodRestorationTool">
+			<property name="CustomIcon" value="HotRodrepair" />
+			<property name="Tags" value="blunt,grunting,light,tool,attPerception,perkSalvageOperations,salvagingSkill" />
+			<property name="DescriptionKey" value="RepairToolDesc2" />
+			<property name="DisplayType" value="melee" />
+			<property name="HoldType" value="72" />
+			<property name="Meshfile" value="@:Other/Items/Tools/ratchetPrefab.prefab" />
+			<property name="RepairTools" value="resourceRepairKit" />
+			<property name="DegradationBreaksAfter" value="false" />
+			<property name="SoundJammed" value="ItemNeedsRepair" />
+			<property name="SoundDestroy" value="metaldestroy" />
+			<property name="EconomicValue" value="700" />
+			<property name="Stacknumber" value="1" />
+			<property name="TraderStageTemplate" value="baseTier1" />
+			<property name="Material" value="MmeleeToolAllSteel" />
+			<property name="Weight" value="1" />
+			<property name="UnlockedBy" value="craftingSalvageTools" />
+			<property name="ShowQuality" value="false" />
+			<property name="Group" value="Tools/Traps" />
+			<property name="Stacknumber" value="1" />
+			<property name="RepairExpMultiplier" value="12.5" />
+			<property name="SoundUnholster" value="weapon_unholster" />
+			<property name="SoundHolster" value="weapon_holster" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMHotRodPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableHotRod" />
+				<property name="Sound_start" value="repair_block" />
+			</property>
+			<effect_group name="gunToolNailgun" tiered="false">
+				<passive_effect name="DegradationMax" operation="base_set" value="3" tags="nailgun" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="nailgun" />
+				<passive_effect name="BlockRange" operation="base_set" value="10" />
+				<passive_effect name="MaxRange" operation="base_set" value="10" />
+				<passive_effect name="ModSlots" operation="base_set" value="0" />
+			</effect_group>
+		</item>
+		<item name="FastbackRestorationTool">
+			<property name="CustomIcon" value="FastbackRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMFastbackPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableFastback" />
+			</property>
+		</item>
+		<item name="BigBuggyRestorationTool">
+			<property name="CustomIcon" value="BuggyRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBuggyPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBigBuggy" />
+			</property>
+		</item>
+		<item name="YellowSchoolBusRestorationTool">
+			<property name="CustomIcon" value="SchoolRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBusSchoolPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableSchoolBus" />
+			</property>
+		</item>
+		<item name="MaliceRestorationTool">
+			<property name="CustomIcon" value="MarauderRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMalicePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMalice" />
+			</property>
+		</item>
+		<item name="BoxTruckRedRestorationTool">
+			<property name="CustomIcon" value="Boxtruckrepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBoxTruckPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBoxTruckRed" />
+			</property>
+		</item>
+		<item name="BigRig2RestorationTool">
+			<property name="CustomIcon" value="BigRig2repair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBigRig2Placeable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBigRig2" />
+			</property>
+		</item>
+		<item name="MuscleTurboRestorationTool">
+			<property name="CustomIcon" value="MuscleRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTurboPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableTurboMuscle" />
+			</property>
+		</item>
+		<item name="SmallAPOtruckRestorationTool">
+			<property name="CustomIcon" value="APOTruckRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMApoTruckPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableSmallAPOTruck" />
+			</property>
+		</item>
+		<item name="OldSemiRestorationTool">
+			<property name="CustomIcon" value="OldSemiRepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMOldSemiPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableOldSemi" />
+			</property>
+		</item>
+		<item name="FlatbedRestorationTool">
+			<property name="CustomIcon" value="FlatbedRepairTool" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMFlatbedPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableFlatBed" />
+			</property>
+		</item>
+		<item name="RVRestorationTool">
+			<property name="CustomIcon" value="RVRepairTool" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMRVPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableRV" />
+			</property>
+		</item>
+		<item name="Van2RestorationTool">
+			<property name="CustomIcon" value="Van2Repair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMVan2Placeable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableVan2" />
+			</property>
+		</item>
+		<item name="EVOLancerRestorationTool">
+			<property name="CustomIcon" value="EVORepair" />
+			<property name="Extends" value="HotRodRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMEvoLancerPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableEvoLancer" />
+			</property>
+		</item>
+		<item name="SedanRestorationTool">
+			<property name="CustomIcon" value="NewSedanRepair" />
+			<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,salvageTool,salvagingSkill" />
+			<property name="DescriptionKey" value="RepairToolDesc3" />
+			<property name="DisplayType" value="melee" />
+			<property name="HoldType" value="29" />
+			<property name="Meshfile" value="@:Other/Items/Tools/wrenchPrefab.prefab" />
+			<property name="Material" value="Mmetal" />
+			<property name="RepairTools" value="resourceRepairKit" />
+			<property name="DegradationBreaksAfter" value="false" />
+			<property name="SoundJammed" value="ItemNeedsRepair" />
+			<property name="SoundDestroy" value="metaldestroy" />
+			<property name="EconomicValue" value="350" />
+			<property name="Stacknumber" value="1" />
+			<property name="TraderStageTemplate" value="baseTier0" />
+			<property name="UnlockedBy" value="craftingSalvageTools" />
+			<property name="ShowQuality" value="false" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMSedanFairHPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableSedan" />
+				<property name="Sound_start" value="wrench_harvest" />
+			</property>
+			<property name="Group" value="Tools/Traps" />
+		</item>
+		<item name="BeetleRestorationTool">
+			<property name="CustomIcon" value="BeetleRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBeetlePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBeetle" />
+			</property>
+		</item>
+		<item name="ExplorerRestorationTool">
+			<property name="CustomIcon" value="ExplorerRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMExplorerPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableExplorer" />
+			</property>
+		</item>
+		<item name="RedBMWRestorationTool">
+			<property name="CustomIcon" value="BMWRedRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBMWredPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableRedBMW" />
+			</property>
+		</item>
+		<item name="WhiteBMWRestorationTool">
+			<property name="CustomIcon" value="BMWwhiteRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMBMWwhitePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableWhiteBMW" />
+			</property>
+		</item>
+		<item name="BrownJeepRestorationTool">
+			<property name="CustomIcon" value="BrownJeepRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMJeepCPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBrownJeep" />
+			</property>
+		</item>
+		<item name="CombiVan1RestorationTool">
+			<property name="CustomIcon" value="Combi1Repair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMCombiPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableCombiVan1" />
+			</property>
+		</item>
+		<item name="Van1RestorationTool">
+			<property name="CustomIcon" value="Van1Repair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMNPCVanPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableNPCVan" />
+			</property>
+		</item>
+		<item name="WSVanRestorationTool">
+			<property name="CustomIcon" value="VanillaWorkingStiffs" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTruckWorkingStiffsPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableWorkingStiffs" />
+			</property>
+		</item>
+		<item name="MOpowerVanRestorationTool">
+			<property name="CustomIcon" value="VanillaMopower" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTruckMoPowerPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMoPower" />
+			</property>
+		</item>
+		<item name="TFPAmbulanceRestorationTool">
+			<property name="CustomIcon" value="VanillaAmbo" />
+			<property name="CustomIconTint" value="8080FF" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTruckAmbulancePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableAmbulance" />
+			</property>
+		</item>
+		<item name="CrusaderRestorationTool">
+			<property name="CustomIcon" value="RepairCrusader" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMCrusaderPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableCrusader4x4" />
+			</property>
+		</item>
+		<item name="CutlassRestorationTool">
+			<property name="CustomIcon" value="RepairCutlass" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMSedanCutlasPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableCutlass" />
+			</property>
+		</item>
+		<item name="PoliceRestorationTool">
+			<property name="CustomIcon" value="PoliceRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMPoliceCarPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairablePoliceCar" />
+			</property>
+		</item>
+		<item name="BrownQuadRestorationTool">
+			<property name="CustomIcon" value="Quad1Repair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMQuadPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBrownQuad" />
+			</property>
+		</item>
+		<item name="TaxiRestorationTool">
+			<property name="CustomIcon" value="TaxiRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMTaxiRustedPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableRustyTaxi" />
+			</property>
+		</item>
+		<item name="RedVanRestorationTool">
+			<property name="CustomIcon" value="RedVanRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMVanRedPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableRedVan" />
+			</property>
+		</item>
+		<item name="TFPMotorcycleRestorationTool">
+			<property name="CustomIcon" value="RoadhogRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleMotorcyclePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMotorcycle" />
+			</property>
+		</item>
+		<item name="VespaRestorationTool">
+			<property name="CustomIcon" value="VespaRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMVespaPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableVespa" />
+			</property>
+		</item>
+		<item name="VespaKartRestorationTool">
+			<property name="CustomIcon" value="vespaKartRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMVespakartPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableVespaKart" />
+			</property>
+		</item>
+		<item name="MotoGuppyRestorationTool">
+			<property name="CustomIcon" value="MotoGuppyRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleVMMotoGuppyPlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableMotoGuppy" />
+			</property>
+		</item>
+		<item name="TFPBicycleRestorationTool">
+			<property name="CustomIcon" value="BicycleRepair" />
+			<property name="Extends" value="SedanRestorationTool" />
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem" />
+				<property name="Delay" value="1.0" />
+				<property name="Change_item_to" value="vehicleBicyclePlaceable" />
+				<property name="Change_block_to" value="air" />
+				<property name="Focused_blockname_1" value="RepairableBicycle" />
+			</property>
+		</item>
+	</append>
+	<set xpath="/items/item[@name='vehicleWheels']/property[@name='Group']/@value">Resources</set>
+</configs>

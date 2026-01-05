@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<set xpath="//block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value" >15</set>
+
+<set xpath="//block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value" >15</set>
+
+<append xpath="//block[@name='cntCar03SedanDamage0Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntCar03SedanDamage1Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntCar03SedanDamage2Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='burntSedan3Wide01']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='burntSedan01']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSedan3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFrontCrumpledSedan01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntMinivan01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntMinivan3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSUV01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSUV3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPickupTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPickupTruck3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSemiTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSemiTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPoliceCar01AlarmUnlocked']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFireTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntBusSchool']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntArmyTruckOpen']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,8" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFarmTruckClosed']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,8" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='forkliftWhite']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,6" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='forklift2White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,6" tag="greaseMonkeyHarvest"/>
+</append>
+
+  <append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+    <property name="Tags" value="trapz"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+    <property name="Tags" value="trapz"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='barbedFence']">
+    <property name="Tags" value="trapz"/>
+  </append>
+  
+  	<set xpath="//block[@name='farmPlotBlock']">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="Material" value="Mfarmland"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="@:Shapes/farm_plot.fbx"/>
+	<property name="Texture" value="47,84,84,84,84,84"/>
+	<property name="UseGlobalUV" value="G,L,L,L,L,L"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="5"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="EconomicValue" value="50"/>
+<!-- <property class="RepairItems">
+	<property name="resourceClayLump" value="14"/> Removed ability to repair because smart players might figure out that repairing the block could grant infinite farm plot blocks. Easily exploitable.
+	</property>-->
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest,FarmPlotNoHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4" tag="oreWoodHarvest,FarmPlotNoHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotHarvest"/>
+	<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="SortOrder1" value="B965"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+	</set>
+	
+	<set xpath="//block[@name='farmPlotBlockPlayer']">
+	<property name="Extends" value="farmPlotBlock"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="CustomIcon" value="farmPlotBlock"/>
+	<drop event="Harvest" name="resourceClayLump" count="0" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="0" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotHarvest"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotNoHarvestPlayer"/>
+	<drop event="Destroy" name="farmPlotBlockVariantHelper" count="0"/>
+	<property name="SortOrder2" value="0001"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</set>
+	
+	<append xpath="/blocks/block[@name='terrOreIron']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreLead']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreCoal']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOrePotassiumNitrate']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	<append xpath="/blocks">
+	<block name="seedSVETGTomato">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGTomatogrowing"/>
+	<property name="CustomIcon" value="IconSVETGtomatoSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGTomatoPlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGTomato" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGTomatogrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGTomatoPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGTomatoPlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGTomato" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGTomatoPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGTomatoPlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="SVETGTomatoEmpty"/>
+	</block>
+	<block name="SVETGTomatoPlantPlayer">
+	<property name="Extends" value="SVETGTomatoPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGTomatoHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGTomato" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGTomato" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGTomato" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="SVETGTomatoEmpty"/>
+	</block>
+	<block name="SVETGTomatoEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGTomatoPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGTomatoPlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGTomato" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGOnion">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGOniongrowing"/>
+	<property name="CustomIcon" value="IconSVETGonionSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGOnion" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGOniongrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGOnionPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGOnionPlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGOnion" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGOnionPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGOnionPlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="seedSVETGOnion"/>
+	</block>
+	<block name="SVETGOnionPlantPlayer">
+	<property name="Extends" value="SVETGOnionPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGOnionHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOnion" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGOnion" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGOnion" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="seedSVETGOnion"/>
+	</block>
+	<block name="seedSVETGCabbage">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGCabbagegrowing"/>
+	<property name="CustomIcon" value="IconSVETGcabbageSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGCabbage" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGCabbagegrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGCabbagePlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGCabbage" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGCabbagePlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="seedSVETGCabbage"/>
+	</block>
+	<block name="SVETGCabbagePlantPlayer">
+	<property name="Extends" value="SVETGCabbagePlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGCabbageHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGCabbage" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGCabbage" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGCabbage" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="seedSVETGCabbage"/>
+	</block>
+	<block name="seedSVETGPaprika">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGPaprikagrowing"/>
+	<property name="CustomIcon" value="IconSVETGpaprikaSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGPaprika" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGPaprikagrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGPaprikaPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPaprikaPlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGPaprika" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGPaprikaPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPaprikaPlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="SVETGPaprikaEmpty"/>
+	</block>
+	<block name="SVETGPaprikaPlantPlayer">
+	<property name="Extends" value="SVETGPaprikaPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGPaprikaHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPaprika" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGPaprika" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGPaprika" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="SVETGPaprikaEmpty"/>
+	</block>
+	<block name="SVETGPaprikaEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGPaprikaPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPaprikaPlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGPaprika" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGRedChillies">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGRedChilliesgrowing"/>
+	<property name="CustomIcon" value="IconSVETGredchilliesSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGRedChillies" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGRedChilliesgrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGRedChilliesPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPaprikaPlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGRedChillies" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGRedChilliesPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGChilliPlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="SVETGRedChilliesEmpty"/>
+	</block>
+	<block name="SVETGRedChilliesPlantPlayer">
+	<property name="Extends" value="SVETGPaprikaPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGRedChilliesHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRedChilli" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGRedChillies" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGRedChillies" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="SVETGRedChilliesEmpty"/>
+	</block>
+	<block name="SVETGRedChilliesEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGRedChilliesPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGChilliPlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGRedChillies" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGSoyBeans">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="SVETGSoyBeangrowing"/>
+	<property name="CustomIcon" value="IconSVETGSoyBeansSeed"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGSoyBeans" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="SVETGSoyBeangrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGSoyBeanPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPaprikaPlantStage2.prefab"/>
+	<drop event="Destroy" name="seedSVETGSoyBeans" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="SVETGSoyBeanPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGSoyBeanPlantHarvestable.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="SVETGSoyBeanEmpty"/>
+	</block>
+	<block name="SVETGSoyBeanPlantPlayer">
+	<property name="Extends" value="SVETGSoyBeanPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGSoyBeanHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGSoyBeans" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGSoyBeans" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGSoyBeans" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="SVETGSoyBeanEmpty"/>
+	</block>
+	<block name="SVETGSoyBeanEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="SVETGSoyBeanPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGSoyBeanPlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGSoyBeans" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGRice">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="seedSVETGRicegrowing"/>
+	<property name="CustomIcon" value="IconSVETGRiceSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGRice" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="seedSVETGRicegrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="seedSVETGRicePlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGRicePlantMiddle.prefab"/>
+	<drop event="Destroy" name="seedSVETGRice" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGRicePlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGRicePlantEnd.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGRice" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRice" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRice" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="seedSVETGRiceEmpty"/>
+	</block>
+	<block name="seedSVETGRicePlantPlayer">
+	<property name="Extends" value="seedSVETGRicePlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGRiceHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGRice" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRice" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGRice" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGRice" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGRice" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="seedSVETGRiceEmpty"/>
+	</block>
+	<block name="seedSVETGRiceEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="seedSVETGRicePlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGRicePlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGRice" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGMint">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="seedSVETGMintgrowing"/>
+	<property name="CustomIcon" value="IconSVETGMintSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGMint" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="seedSVETGMintgrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="seedSVETGMintPlantPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGMintPlantMiddle.prefab"/>
+	<drop event="Destroy" name="seedSVETGMint" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGMintPlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGMintPlantEnd.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="seedSVETGMint"/>
+	</block>
+	<block name="seedSVETGMintPlantPlayer">
+	<property name="Extends" value="seedSVETGMintPlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGMintHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGMintLeaves" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGMint" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGMint" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="seedSVETGMint"/>
+	</block>
+	<block name="seedSVETGPineapple">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="seedSVETGPineapplegrowing"/>
+	<property name="CustomIcon" value="IconSVETGPineappleSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGCabbagePlantStart.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="seedSVETGPineapple" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	</block>
+	<block name="seedSVETGPineapplegrowing">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="seedSVETGPineapplePlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPineapplePlantMiddle.prefab"/>
+	<drop event="Destroy" name="seedSVETGPineapple" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<block name="seedSVETGPineapplePlant">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPineapplePlantEnd.prefab"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" count="1" tag="farmerBonusHarvest"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="DowngradeBlock" value="seedSVETGPineappleEmpty"/>
+	</block>
+	<block name="seedSVETGPineapplePlayer">
+	<property name="Extends" value="seedSVETGPineapplePlant"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedSVETGPineappleHarvestDesc"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGPineapple" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="seedSVETGPineapple" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="seedSVETGPineapple" count="1" prob="0.5"/>
+	<property name="SortOrder2" value="0005"/>
+	<property name="DowngradeBlock" value="seedSVETGPineappleEmpty"/>
+	</block>
+	<block name="seedSVETGPineappleEmpty">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="seedSVETGPineapplePlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGCrops.unity3d?SVETGPineapplePlantEmpty.prefab"/>
+	<drop event="Destroy" name="seedSVETGPineapple" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+	</block>
+	<!--   Trees   -->
+	<block name="seedSVETGApple">
+	<property name="Extends" value="treeMasterGrowing" param1="CustomIcon,Harvest"/>
+	<property name="CustomIcon" value="IconSVETGAppleSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGTreeSapling.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="Collide" value="melee"/>
+	<property name="FallOver" value="false"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeAppleYoung"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Destroy" name="seedSVETGApple" count="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="ParticleOnDeath" value="treeGib_sapling"/>
+	<property name="SortOrder2" value="0142"/>
+	<!--   SortTree   -->
+	<property name="ActivationDistance" value="4"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeAppleYoung">
+	<property name="PlantGrowing.Next" value="SVETGTreeAppleEnd"/>
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGAppleTreeStage2.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<drop event="Destroy" name="seedSVETGApple" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeAppleEnd">
+	<property name="DescriptionKey" value="SVETGTreeAppleEndDesc"/>
+	<property name="DowngradeBlock" value="SVETGAppleTreeEndEmpty"/>
+	<property name="Extends" value="woodMaster"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Material" value="MtreeWoodFull"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGAppleTreeHarvestable.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,7,1"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="SortOrder2" value="0400"/>
+	<drop event="Harvest" name="foodCropSVETGApple" count="7" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGApple" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGApple" count="1" tag="farmerBonusHarvest"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGAppleTreeEndEmpty">
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGAppleTreeEmpty.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeAppleEnd"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="seedSVETGApple" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="seedSVETGLime">
+	<property name="Extends" value="treeMasterGrowing" param1="CustomIcon,Harvest"/>
+	<property name="CustomIcon" value="IconSVETGLimeSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGTreeSapling.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="Collide" value="melee"/>
+	<property name="FallOver" value="false"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeLimeYoung"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Destroy" name="seedSVETGLime" count="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="ParticleOnDeath" value="treeGib_sapling"/>
+	<property name="SortOrder2" value="0142"/>
+	<!--   SortTree   -->
+	<property name="ActivationDistance" value="4"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeLimeYoung">
+	<property name="PlantGrowing.Next" value="SVETGTreeLimeEnd"/>
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGLimeTreeStage2.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<drop event="Destroy" name="seedSVETGLime" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeLimeEnd">
+	<property name="DescriptionKey" value="SVETGTreeLimeEndDesc"/>
+	<property name="DowngradeBlock" value="SVETGTreeLimeEndEmpty"/>
+	<property name="Extends" value="woodMaster"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Material" value="MtreeWoodFull"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGLimeTreeHarvestable.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="MultiBlockDim" value="1,7,1"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="SortOrder2" value="0400"/>
+	<drop event="Harvest" name="foodCropSVETGLime" count="7" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGLime" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGLime" count="1" tag="farmerBonusHarvest"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	<property name="MaxDamage" value="300"/>
+	</block>
+	<block name="SVETGTreeLimeEndEmpty">
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGLimeTreeEmpty.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeLimeEnd"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="seedSVETGLime" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="seedSVETGOrange">
+	<property name="Extends" value="treeMasterGrowing" param1="CustomIcon,Harvest"/>
+	<property name="CustomIcon" value="IconSVETGOrangeSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGTreeSapling.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="Collide" value="melee"/>
+	<property name="FallOver" value="false"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeOrangeYoung"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Destroy" name="seedSVETGOrange" count="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="ParticleOnDeath" value="treeGib_sapling"/>
+	<property name="SortOrder2" value="0142"/>
+	<!--   SortTree   -->
+	<property name="ActivationDistance" value="4"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeOrangeYoung">
+	<property name="PlantGrowing.Next" value="SVETGTreeOrangeEnd"/>
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGOrangeTreeStage2.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<drop event="Destroy" name="seedSVETGOrange" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeOrangeEnd">
+	<property name="DescriptionKey" value="SVETGTreeOrangeEndDesc"/>
+	<property name="DowngradeBlock" value="SVETGTreeLimeOrangeEmpty"/>
+	<property name="Extends" value="woodMaster"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Material" value="MtreeWoodFull"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGOrangeTreeHarvestable.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="MultiBlockDim" value="1,7,1"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="SortOrder2" value="0400"/>
+	<drop event="Harvest" name="foodCropSVETGOrange" count="7" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOrange" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOrange" count="1" tag="farmerBonusHarvest"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeLimeOrangeEmpty">
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGOrangeTreeEmpty.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeOrangeEnd"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="seedSVETGOrange" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="seedSVETGOlives">
+	<property name="Extends" value="treeMasterGrowing" param1="CustomIcon,Harvest"/>
+	<property name="CustomIcon" value="IconSVETGOliveSeeds"/>
+	<property name="UnlockedBy" value="craftingSeeds"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGTreeSapling.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="Collide" value="melee"/>
+	<property name="FallOver" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeOliveYoung"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Destroy" name="seedSVETGOlives" count="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="ParticleOnDeath" value="treeGib_sapling"/>
+	<property name="SortOrder2" value="0142"/>
+	<!--   SortTree   -->
+	<property name="ActivationDistance" value="4"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeOliveYoung">
+	<property name="PlantGrowing.Next" value="SVETGTreeOliveEnd"/>
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGLimeTreeStage2.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<drop event="Destroy" name="seedSVETGOlives" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeOliveEnd">
+	<property name="DescriptionKey" value="SVETGTreeOliveEndDesc"/>
+	<property name="DowngradeBlock" value="SVETGTreeLimeOliveEmpty"/>
+	<property name="Extends" value="woodMaster"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Material" value="MtreeWoodFull"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGOliveTreeHarvestable.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,7,1"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<property name="SortOrder2" value="0400"/>
+	<drop event="Harvest" name="foodCropSVETGOlives" count="7" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOlives" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropSVETGOlives" count="1" tag="farmerBonusHarvest"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	<block name="SVETGTreeLimeOliveEmpty">
+	<property name="Extends" value="treeMasterGrowing"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:Resources/SVETGTrees.unity3d?SVETGOliveTreeEmpty.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlantGrowing.Next" value="SVETGTreeOliveEnd"/>
+	<property name="PlantGrowing.GrowthRate" value="60"/>
+	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="seedSVETGOlives" count="1"/>
+	<property name="SortOrder2" value="0144"/>
+	<!--   SortTree   -->
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	</block>
+	</append>
+
+</config>

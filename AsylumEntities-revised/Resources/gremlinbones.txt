@@ -1,0 +1,55 @@
+Mesh: Group63391
+Bones:
+- Bip01 Head
+- Bip01 Spine4
+- Bip01 RDigit31
+- Bip01 RDigit21
+- Bip01 R Hand
+- Bip01 HeadBone002
+- Bip01 R Forearm
+- Bip01 R Finger2
+- Bip01 R Finger1
+- Bip01 R UpperArm
+- Bip01 Spine3
+- Bip01 Spine2
+- Bip01 R Thigh
+- Bip01 R Calf
+- Bip01 R3
+- Bip01 R Toe0
+- Bip01 R Foot
+- Bip01 R Clavicle
+- Bip01 Spine1
+- Bip01 Pelvis
+- Bip01 RDigit23
+- Bip01 Neck
+- Bip01 RDigit41
+- Bip01 L Clavicle
+- Bip01 R Finger3
+- Bip01 RDigit43
+- Bip01 RDigit33
+- Bip01 RDigit32
+- Bip01 RDigit22
+- Bip01 RDigit42
+- Bip01 L Thigh
+- Bip01 PelvisBone01
+- Bip01 LDigit31
+- Bip01 LDigit21
+- Bip01 L Hand
+- Bip01 HeadBone001
+- Bip01 L Forearm
+- Bip01 L Finger2
+- Bip01 L Finger1
+- Bip01 L UpperArm
+- Bip01 L Calf
+- Bip01 L3
+- Bip01 L Toe0
+- Bip01 L Foot
+- Bip01 LDigit23
+- Bip01 LDigit41
+- Bip01 L Finger3
+- Bip01 LDigit43
+- Bip01 LDigit33
+- Bip01 LDigit32
+- Bip01 LDigit22
+- Bip01 LDigit42
+

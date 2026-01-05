@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="AsylumQuestClassSystem" />
+	<DisplayName value="Asylum Quest Class System" />
+	<Version value="1.0.0" />
+	<Author value="AsylumMods/Duhwolf" />
+	<Description value="Advanced class-based quest system for The Asylum. Features 7 character classes with 320+ total quests: Builder (30), Farmer (50), Chef (50), Hunter (30), Medic (30), Mechanic (30), and Soldier (100). Complete with class-specific rewards, casino coin economy, trophies, and vending machines. Integrates seamlessly with Asylum Core starter classes." />
+	<Website value="" />
+</ModInfo>

@@ -1,0 +1,96 @@
+﻿<config>
+    <append xpath="/blocks">
+        <block name="quantumElevatorBlockSecure">
+            <property name="Extends" value="pressureplate" />
+            <property name="DescriptionKey" value="quantumElevatorBlockSecureDesc" />
+            <property name="MultiBlockDim" value="1,3,1" />
+            <property name="DisplayType" value="blockMulti" />
+
+            <property name="CustomIcon" value="pressureplate" />
+            <property name="ItemTypeIcon" value="lock" />
+            <property name="Map.Color" value="007fff" />
+
+            <property name="Model" value="@:Entities/Electrical/pressure_platePrefab.prefab" />
+            <property name="Texture" value="355,355,356,356,356,356" />
+            <property name="ImposterExchange" value="imposterPlate" param1="144" />
+            <property name="Group" value="Science" />
+            <property name="SortOrder2" value="0050" />
+
+            <property name="CanMobsSpawnOn" value="false" />
+            <property name="CanPlayersSpawnOn" value="false" />
+
+            <!-- don't let vehicle damage this -->
+            <property name="VehicleHitScale" value=".1" />
+
+            <property name="Class" value="CompositeTileEntity" />
+            <property class="CompositeFeatures">
+                <property class="TEFeatureLockable" />
+            </property>
+            <property name="Place" value="TowardsPlacerInverted" />
+
+            <property class="RepairItems">
+                <property name="resourceForgedSteel" value="8" />
+                <property name="resourceScrapPolymers" value="15" />
+                <property name="resourceElectricParts" value="30" />
+            </property>
+
+            <property name="CreativeMode" value="Player" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="StabilitySupport" value="false" />
+
+            <property name="IsTerrainDecoration" value="false" />
+            <property name="OnlySimpleRotations" value="true" />
+
+            <property name="Stacknumber" value="5" />
+            <property name="EconomicValue" value="2100" />
+            <property name="TraderStageTemplate" value="electricTier2" />
+            <property name="UnlockedBy" value="craftingElectrician" />
+
+            <property name="BuffsWhenWalkedOn" value="triggerQuantumElevator" />
+        </block>
+        <block name="quantumElevatorBlockPortable">
+            <property name="Extends" value="pressureplate" />
+            <property name="DescriptionKey" value="quantumElevatorBlockPortableDesc" />
+            <property name="MultiBlockDim" value="1,3,1" />
+            <property name="DisplayType" value="blockMulti" />
+
+            <property name="CustomIcon" value="pressureplate" />
+            <property name="ItemTypeIcon" value="hand" />
+            <property name="Map.Color" value="007fff" />
+
+            <property name="Model" value="@:Entities/Electrical/pressure_platePrefab.prefab" />
+            <property name="Texture" value="355,355,356,356,356,356" />
+            <property name="ImposterExchange" value="imposterPlate" param1="144" />
+            <property name="Group" value="Science" />
+            <property name="SortOrder2" value="0050" />
+
+            <property name="CanMobsSpawnOn" value="false" />
+            <property name="CanPlayersSpawnOn" value="false" />
+
+            <!-- don't let vehicle damage this -->
+            <property name="VehicleHitScale" value=".1" />
+
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CanPickup" value="true" />
+
+            <property class="RepairItems">
+                <property name="resourceForgedSteel" value="8" />
+                <property name="resourceScrapPolymers" value="10" />
+                <property name="resourceElectricParts" value="20" />
+            </property>
+
+            <property name="CreativeMode" value="Player" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="StabilitySupport" value="false" />
+            <property name="IsTerrainDecoration" value="false" />
+            <property name="OnlySimpleRotations" value="true" />
+
+            <property name="Stacknumber" value="5" />
+            <property name="EconomicValue" value="1700" />
+            <property name="TraderStageTemplate" value="electricTier2" />
+            <property name="UnlockedBy" value="craftingElectrician" />
+
+            <property name="BuffsWhenWalkedOn" value="triggerQuantumElevator" />
+        </block>
+    </append>
+</config>

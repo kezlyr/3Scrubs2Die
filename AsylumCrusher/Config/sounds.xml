@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/Sounds">
+    <!-- Custom craft sound for Asylum Crusher -->
+    <SoundDataNode name="asylumCrusher_craft">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+      <!-- Point to your custom audio in a Unity bundle placed under Mods/AsylumCrusher/Resources -->
+      <AudioClip ClipName="#@modfolder:Resources/shredder.unity3d?crusher_craft"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="0.5"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="10"/>
+      <MaxRepeatRate value="1.111"/>
+    </SoundDataNode>
+  </append>
+</configs>
+

@@ -1,0 +1,107 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+--------------------
+## HELLISH ASYLUM QUEST ENTRIES ##
+
+quest_tier2_superinfested_clear,Quest,Quest Info,,,[FF4500]Descent into Madness[-] - [8B0000]Tier II[-]
+quest_tier3_superinfested_clear,Quest,Quest Info,,,[FF4500]Chambers of Torment[-] - [8B0000]Tier III[-]
+quest_tier4_superinfested_clear,Quest,Quest Info,,,[FF4500]Halls of Damnation[-] - [8B0000]Tier IV[-]
+quest_tier5_superinfested_clear,Quest,Quest Info,,,[FF4500]Gates of Hell[-] - [8B0000]Tier V[-]
+quest_tier6_superinfested_clear,Quest,Quest Info,,,[FF4500]Infernal Depths[-] - [8B0000]Tier VI[-]
+
+quest_tier2_ultrainfested_clear,Quest,Quest Info,,,[DC143C]Crimson Nightmare[-] - [8B0000]Tier II[-]
+quest_tier3_ultrainfested_clear,Quest,Quest Info,,,[DC143C]Blood-Soaked Asylum[-] - [8B0000]Tier III[-]
+quest_tier4_ultrainfested_clear,Quest,Quest Info,,,[DC143C]Screaming Abyss[-] - [8B0000]Tier IV[-]
+quest_tier5_ultrainfested_clear,Quest,Quest Info,,,[DC143C]Realm of Suffering[-] - [8B0000]Tier V[-]
+quest_tier6_ultrainfested_clear,Quest,Quest Info,,,[DC143C]Eternal Torment[-] - [8B0000]Tier VI[-]
+
+quest_tier2_nightmare_clear,Quest,Quest Info,,,[800080]Soul Harvest[-] - [8B0000]Tier II[-]
+quest_tier3_nightmare_clear,Quest,Quest Info,,,[800080]Demon's Playground[-] - [8B0000]Tier III[-]
+quest_tier4_nightmare_clear,Quest,Quest Info,,,[800080]Apocalypse Rising[-] - [8B0000]Tier IV[-]
+quest_tier5_nightmare_clear,Quest,Quest Info,,,[800080]End of Days[-] - [8B0000]Tier V[-]
+quest_tier6_nightmare_clear,Quest,Quest Info,,,[800080]Final Judgment[-] - [8B0000]Tier VI[-]
+
+quest_superinfestation_response1,Quest,Quest Info,,,[FF4500]🔥 HELLISH PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-] [228B22]Tier I Sanctum[-]
+quest_superinfestation_response2,Quest,Quest Info,,,[FF4500]🔥 HELLISH PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-] [FFD700]Tier II Sanctum[-]
+quest_superinfestation_response3,Quest,Quest Info,,,[FF4500]🔥 HELLISH PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-] [FF4500]Tier III Sanctum[-] 
+quest_superinfestation_response4,Quest,Quest Info,,,[FF4500]🔥 HELLISH PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-] [8B0000]Tier IV Sanctum[-] 
+quest_superinfestation_response5,Quest,Quest Info,,,[FF4500]🔥 HELLISH PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-] [4B0000]Tier V Sanctum[-] 
+
+quest_ultrainfestation_response1,Quest,Quest Info,,,[DC143C]💀 BLOOD RITUAL[-] ([8B0000]{poi.distance} {poi.direction}[-]) at [FF1493]{poi.name}[-] [228B22]Tier I Crypt[-] 
+quest_ultrainfestation_response2,Quest,Quest Info,,,[DC143C]💀 BLOOD RITUAL[-] ([8B0000]{poi.distance} {poi.direction}[-]) at [FF1493]{poi.name}[-] [FFD700]Tier II Crypt[-] 
+quest_ultrainfestation_response3,Quest,Quest Info,,,[DC143C]💀 BLOOD RITUAL[-] ([8B0000]{poi.distance} {poi.direction}[-]) at [FF1493]{poi.name}[-] [FF4500]Tier III Crypt[-] 
+quest_ultrainfestation_response4,Quest,Quest Info,,,[DC143C]💀 BLOOD RITUAL[-] ([8B0000]{poi.distance} {poi.direction}[-]) at [FF1493]{poi.name}[-] [8B0000]Tier IV Crypt[-] 
+quest_ultrainfestation_response5,Quest,Quest Info,,,[DC143C]💀 BLOOD RITUAL[-] ([8B0000]{poi.distance} {poi.direction}[-]) at [FF1493]{poi.name}[-] [4B0000]Tier V Crypt[-] 
+
+quest_nightmare_response1,Quest,Quest Info,,,[800080]👹 SOUL HARVEST[-] ([2F0F2F]{poi.distance} {poi.direction}[-]) at [9932CC]{poi.name}[-] [228B22]Tier I Abyss[-] 
+quest_nightmare_response2,Quest,Quest Info,,,[800080]👹 SOUL HARVEST[-] ([2F0F2F]{poi.distance} {poi.direction}[-]) at [9932CC]{poi.name}[-] [FFD700]Tier II Abyss[-] 
+quest_nightmare_response3,Quest,Quest Info,,,[800080]👹 SOUL HARVEST[-] ([2F0F2F]{poi.distance} {poi.direction}[-]) at [9932CC]{poi.name}[-] [FF4500]Tier III Abyss[-] 
+quest_nightmare_response4,Quest,Quest Info,,,[800080]👹 SOUL HARVEST[-] ([2F0F2F]{poi.distance} {poi.direction}[-]) at [9932CC]{poi.name}[-] [8B0000]Tier IV Abyss[-] 
+quest_nightmare_response5,Quest,Quest Info,,,[800080]👹 SOUL HARVEST[-] ([2F0F2F]{poi.distance} {poi.direction}[-]) at [9932CC]{poi.name}[-] [4B0000]Tier V Abyss[-]
+
+quest_tier2_superinfested_clear_offer,,,,,The [FF4500]flames of hell[-] have consumed [FF6347]{poi.name}[-]. [8B0000]Demonic entities[-] now roam its cursed halls. Steel yourself, survivor - the [DC143C]infernal horde[-] awaits your blade. [FF4500]May your soul survive the descent...[-]
+quest_tier2_ultrainfested_clear_offer,,,,,A [DC143C]crimson plague[-] has befallen [FF1493]{poi.name}[-]. The [8B0000]blood-soaked chambers[-] echo with unholy screams. Venture forth if you dare, but know that [800080]madness[-] lurks in every shadow. [DC143C]The asylum hungers for fresh souls...[-]
+quest_tier2_nightmare_clear_offer,,,,,The [800080]veil between worlds[-] has torn at [9932CC]{poi.name}[-]. [2F0F2F]Nightmarish abominations[-] now walk among the damned. This is no mere infestation - this is [FF0000]HELL ON EARTH[-]. [800080]Abandon hope, all ye who enter...[-]
+
+quest_tier3_superinfested_clear_offer,Quest,Quest Info,,,Our [FF4500]sanctuary[-] at [FF6347]{poi.name}[-] has been [8B0000]consumed by hellfire[-]. The [DC143C]demonic presence[-] grows stronger with each passing hour. [FF4500]Purge the unholy[-] before it spreads further into our realm!
+quest_tier3_ultrainfested_clear_offer,Quest,Quest Info,,,The [DC143C]blood moon[-] has cursed our refuge at [FF1493]{poi.name}[-]. [8B0000]Crimson horrors[-] now feast upon the innocent. [800080]The asylum's curse[-] spreads like a plague. [DC143C]End this blasphemy[-] before all is lost!
+quest_tier3_nightmare_clear_offer,Quest,Quest Info,,,Our stronghold at [9932CC]{poi.name}[-] has become a [800080]gateway to the abyss[-]. [2F0F2F]Soul-devouring entities[-] pour forth from the depths. This is beyond nightmare - this is [FF0000]APOCALYPSE[-]!
+
+quest_tier4_superinfested_clear_offer,Quest,Quest Info,,,The [FF4500]legions of hell[-] have claimed our warriors at [FF6347]{poi.name}[-]. Their [8B0000]tortured souls[-] now serve the darkness. Arm yourself with [DC143C]holy fire[-] and [FF4500]UNLEASH DIVINE WRATH[-] upon the damned!
+quest_tier4_hyperinfested_clear_offer,Quest,Quest Info,,,A [DC143C]blood ritual[-] has transformed our brothers at [FF1493]{poi.name}[-] into [8B0000]crimson abominations[-]. The [800080]asylum's curse[-] grows ever stronger. [DC143C]SPILL DEMON BLOOD[-] and reclaim what was lost!
+quest_tier4_nightmare_clear_offer,Quest,Quest Info,,,The [800080]apocalypse[-] has begun at [9932CC]{poi.name}[-]. Our entire battalion has been [2F0F2F]consumed by the void[-]. This is the [FF0000]END OF DAYS[-] - [800080]FIGHT OR BE ETERNALLY DAMNED[-]!
+
+quest_tier5_superinfested_clear_offer,Quest,Quest Info,,,[FF0000]BY THE FIRES OF HELL![-] An entire city burns at [FF6347]{poi.name}[-]. [8B0000]Demonic overlords[-] now rule from their [FF4500]infernal throne[-]. This is [DC143C]ARMAGEDDON[-] itself. [FF4500]May God have mercy on your soul...[-]
+quest_tier5_hyperinfested_clear_offer,Quest,Quest Info,,,[DC143C]THE BLOOD MOON RISES![-] A metropolis drowns in [8B0000]crimson horror[-] at [FF1493]{poi.name}[-]. [800080]Ancient evils[-] have awakened from their slumber. [DC143C]THE ASYLUM'S FINAL CURSE[-] has been unleashed!
+quest_tier5_nightmare_clear_offer,Quest,Quest Info,,,[800080]THE VOID CONSUMES ALL![-] [9932CC]{poi.name}[-] is no more - only [2F0F2F]endless darkness[-] remains. [FF0000]DO NOT GO THERE![-] [800080]FLEE WHILE YOUR SOUL STILL BELONGS TO YOU![-]
+
+quest_superinfestation_subtitle,Quest,Quest Info,,,[FF4500]Purge the Infernal Sanctum[-]
+quest_ultrainfestation_subtitle,Quest,Quest Info,,,[DC143C]Cleanse the Blood-Soaked Crypt[-]
+quest_nightmare_subtitle,Quest,Quest Info,,,[800080]Harvest Souls from the Abyss[-]
+
+---------------------
+## vanilla entries ##
+
+<conditional>
+	<if cond="mod_loaded('MoreQuests') == 'false'">
+		quest_clear_response,Quest,Quest Info,,,[FF4500]🔥 PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) [FF6347]{poi.name}[-]
+		quest_fetch_response,Quest,Quest Info,,,[FFD700]⚡ RETRIEVE[-] ([B22222]{poi.distance} {poi.direction}[-]) [FF6347]{poi.name}[-]
+		quest_fetch_clear_response,Quest,Quest Info,,,[DC143C]💀 FETCH & PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) [FF6347]{poi.name}[-]
+		quest_infestation_response,Quest,Quest Info,,,[8B0000]🩸 BLOOD CLEANSING[-] ([B22222]{poi.distance} {poi.direction}[-]) [FF6347]{poi.name}[-]
+		quest_restore_power_response,Quest,Quest Info,,,[800080]⚡ DARK RITUAL[-] [[FF0000]Night Only[-]] ([B22222]{poi.distance} {poi.direction}[-]) [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+
+
+
+
+---------------------------------------
+## Trader Quest Addendum mod entries ##
+
+<conditional>
+	<if cond="mod_loaded('CautiousPancakeExpeditedEradication') == 'true'">
+		quest_speed_clear_response,Quest,Quest Info,,,[FF0000]⚡ LIGHTNING PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+<conditional>
+	<if cond="mod_loaded('CautiousPancakeDefendPOIFromHorde') == 'true'">
+		courier_rescue_response,Quest,Quest Info,,,[800080]🛡️ DEFEND SANCTUARY[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+<conditional>
+	<if cond="mod_loaded('CautiousPancakeFeedTheFamished') == 'true'">
+		tier1_feed_the_famished_response,Quest,Quest Info,,,[DC143C]🍖 BLOOD & SUSTENANCE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+<conditional>
+	<if cond="mod_loaded('CautiousPancakeAidTheAfflicted') == 'true'">
+		tier1_aid_the_afflicted_response,Quest,Quest Info,,,[8B0000]💉 DARK HEALING[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+<conditional>
+	<if cond="mod_loaded('CautiousPancakeAcceleratedAnnihilation') == 'true'">
+		quest_accelerated_annihiliation_response,Quest,Quest Info,,,[FF4500]⚡ INFERNAL SPEED PURGE[-] ([B22222]{poi.distance} {poi.direction}[-]) at [FF6347]{poi.name}[-]
+	</if>
+</conditional>
+
+--------------------------------------------

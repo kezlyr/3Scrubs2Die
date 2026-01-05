@@ -1,0 +1,122 @@
+<AsylumLegendaryTools>
+
+	<append xpath="/recipes">
+
+	<!-- Cursed Repair Kit -->
+
+		<recipe name="resourceSMALegendaryRepairKit" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+			<ingredient name="resourceBone" count="5"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- PICKAXE - Soul Ripper                     -->
+	<!-- ========================================== -->
+		<recipe name="SMALTPickaxe" count="1" craft_area="workbench" tags="learnable,SMALTPickaxe,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceLegendaryParts" count="5"/>
+			<ingredient name="resourceBone" count="25"/>
+			<ingredient name="resourceAnimalFat" count="15"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- AXE - Lobotomy Cleaver                    -->
+	<!-- ========================================== -->
+		<recipe name="SMALTAxe" count="1" craft_area="workbench" tags="learnable,SMALTAxe,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceLegendaryParts" count="5"/>
+			<ingredient name="resourceBone" count="25"/>
+			<ingredient name="resourceAnimalFat" count="15"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- SHOVEL - Gravedigger's Lament             -->
+	<!-- ========================================== -->
+		<recipe name="SMALTShovel" count="1" craft_area="workbench" tags="learnable,SMALTShovel,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceLegendaryParts" count="5"/>
+			<ingredient name="resourceBone" count="25"/>
+			<ingredient name="resourceAnimalFat" count="15"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- KNIFE - Bloodletter's Edge                -->
+	<!-- ========================================== -->
+		<recipe name="SMALTKnife" count="1" craft_area="workbench" tags="learnable,SMALTKnife,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceLegendaryParts" count="3"/>
+			<ingredient name="resourceBone" count="15"/>
+			<ingredient name="resourceAnimalFat" count="10"/>
+			<ingredient name="resourceForgedIron" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,6" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- CROWBAR - Restraint Breaker               -->
+	<!-- ========================================== -->
+		<recipe name="SMALTCrowbar" count="1" craft_area="workbench" tags="learnable,SMALTCrowbar,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceLegendaryParts" count="4"/>
+			<ingredient name="resourceBone" count="20"/>
+			<ingredient name="resourceAnimalFat" count="12"/>
+			<ingredient name="resourceForgedIron" count="25"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,8" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- HAMMER - Skull Crusher                    -->
+	<!-- ========================================== -->
+		<recipe name="SMALTHammer" count="1" craft_area="workbench" tags="learnable,SMALTHammer,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceLegendaryParts" count="4"/>
+			<ingredient name="resourceBone" count="20"/>
+			<ingredient name="resourceAnimalFat" count="12"/>
+			<ingredient name="resourceForgedIron" count="25"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,8" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	<!-- ========================================== -->
+	<!-- WRENCH - Tormentor's Grip                 -->
+	<!-- ========================================== -->
+		<recipe name="SMALTWrench" count="1" craft_area="workbench" tags="learnable,SMALTWrench,craftingHarvestingTools,workbenchCrafting" craft_time="300">
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceLegendaryParts" count="4"/>
+			<ingredient name="resourceBone" count="20"/>
+			<ingredient name="resourceAnimalFat" count="12"/>
+			<ingredient name="resourceForgedIron" count="25"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,2" tags="resourceForgedSteel,resourceForgedIron,resourceBone,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,8" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	</append>
+
+</AsylumLegendaryTools>

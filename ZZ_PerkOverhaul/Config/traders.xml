@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- Extend trader quality to QL10 -->
+
+	<!-- Keep QL6 pricing roughly consistent after extending max quality to 10.
+		If the game interpolates from low..high across the quality range, this keeps old QL6 ~= new QL6.
+	-->
+	<set xpath="/traders/@quality_mod">1,2.8</set>
+
+	<!-- Any stage template that already reaches QL5 (and has no QL6 yet) can now roll QL6–QL10 at high trader stages. -->
+	<append xpath="/traders/traderstage_templates/traderstage_template[entry[@quality='5' and @max='999999'] and not(entry[@quality='6'])]">
+		<entry min="95" max="999999" quality="6"/>
+		<entry min="115" max="999999" quality="7"/>
+		<entry min="135" max="999999" quality="8"/>
+		<entry min="155" max="999999" quality="9"/>
+		<entry min="175" max="999999" quality="10"/>
+	</append>
+
+	<!-- Templates that already include QL6 get extended to QL10 (avoids duplicate QL6 entries). -->
+	<append xpath="/traders/traderstage_templates/traderstage_template[entry[@quality='6'] and not(entry[@quality='7'])]">
+		<entry min="115" max="999999" quality="7"/>
+		<entry min="135" max="999999" quality="8"/>
+		<entry min="155" max="999999" quality="9"/>
+		<entry min="175" max="999999" quality="10"/>
+	</append>
+
+	<!-- Expand trader inventory item quality ranges (many groups are hard-capped at 5 in vanilla). -->
+	<set xpath="/traders/trader_item_groups//item[@quality='1,5']/@quality">1,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='2,5']/@quality">2,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='3,5']/@quality">3,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='4,5']/@quality">4,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='1,6']/@quality">1,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='2,6']/@quality">2,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='3,6']/@quality">3,10</set>
+	<set xpath="/traders/trader_item_groups//item[@quality='4,6']/@quality">4,10</set>
+
+	<!-- Specific vanilla hard-cap: solar cells are explicitly QL6. Allow them to roll as 6..10. -->
+	<set xpath="/traders/trader_item_groups//item[@name='solarCell']/@quality">6,10</set>
+	
+	<!--  TRADER JOEL - Set to 24/7 instead of removing attributes -->
+	<set xpath="/traders/trader_info[@id='1']/@open_time">0:00</set>
+	<set xpath="/traders/trader_info[@id='1']/@close_time">23:59</set>
+	<!--  TRADER JEN - Set to 24/7 instead of removing attributes -->
+	<set xpath="/traders/trader_info[@id='2']/@open_time">0:00</set>
+	<set xpath="/traders/trader_info[@id='2']/@close_time">23:59</set>
+	<!--  TRADER BOB - Set to 24/7 instead of removing attributes -->
+	<set xpath="/traders/trader_info[@id='6']/@open_time">0:00</set>
+	<set xpath="/traders/trader_info[@id='6']/@close_time">23:59</set>
+	<!--  TRADER HUGH - Set to 24/7 instead of removing attributes -->
+	<set xpath="/traders/trader_info[@id='7']/@open_time">0:00</set>
+	<set xpath="/traders/trader_info[@id='7']/@close_time">23:59</set>
+	<!--  TRADER REKT - Set to 24/7 instead of removing attributes -->
+	<set xpath="/traders/trader_info[@id='8']/@open_time">0:00</set>
+	<set xpath="/traders/trader_info[@id='8']/@close_time">23:59</set>
+	
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">1</set>
+	<set xpath="/traders/trader_info[@id='2']/@reset_interval">1</set>
+	<set xpath="/traders/trader_info[@id='6']/@reset_interval">1</set>
+	<set xpath="/traders/trader_info[@id='7']/@reset_interval">1</set>
+	<set xpath="/traders/trader_info[@id='8']/@reset_interval">1</set>
+</configs>

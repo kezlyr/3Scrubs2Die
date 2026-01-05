@@ -1,0 +1,581 @@
+<ASAO>
+	<append xpath="/items">
+	 <item name="modCrossbowTripleshotSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ui_game_symbol_schematic"/> <!-- Schematic Icon -->
+            <property name="CustomIconTint" value="0,206,209"/> <!-- Matching Teal Tint -->
+			<property name="Unlocks" value="modCrossbowTripleshot"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modCrossbowTripleshot" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<item name="rewardTheory">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleBooks"/>
+			<property name="CustomIconTint" value="66FF66"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="rewardTheoryDesc"/>
+			<property class="Action0">
+			<property name="Create_item" value="trapsSkillMagazine,vehiclesSkillMagazine,harvestingToolsSkillMagazine,workstationSkillMagazine,electricianSkillMagazine,medicalSkillMagazine"/>
+			<property name="Create_item_count" value="1-3,0-3,0-3,0-3,0-3,0-3"/>
+		</property>
+		</item>
+		<!--Cultist Reward?-->
+		<item name="resourceCulttotem"> <!-- scrap material -->
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<!--<property name="HoldType" value="2"/>
+	<property name="Meshfile" value="@:Other/Items/Crafting/femur.fbx"/>-->
+	<property name="Material" value="MresourceBone"/>
+	<property name="Weight" value="1"/>
+	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
+	<property name="RepairAmount" value="270"/>
+	<property name="EconomicValue" value="5"/>
+	<!-- <property name="EconomicBundleSize" value="5"/> -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+	<property name="SoundPickup" value="bones_grab"/>
+	<property name="SoundPlace" value="bones_place"/>
+</item>
+<!-- 
+            ************************************************************************************
+            ********** NEW FORAGER ITEMS *******************************************************
+            ************************************************************************************
+        -->
+
+        <!-- Special Herb for Healing Poultice -->
+        <item name="resourceForagersHerbHealing">
+            <property name="Tags" value="resource"/>
+            <property name="DisplayType" value="resource"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Morganic"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="20"/>
+            <property name="Group" value="Resources"/>
+            <property name="CustomIcon" value="resourceYuccaFibers"/>
+            <property name="CustomIconTint" value="255,100,100"/>
+        </item>
+
+        <!-- Special Herb for Combat Poultice -->
+        <item name="resourceForagersHerbCombat">
+            <property name="Extends" value="resourceForagersHerbHealing"/>
+            <property name="CustomIcon" value="resourceYuccaFibers"/>
+            <property name="CustomIconTint" value="100,100,255"/>
+        </item>
+
+        <!-- Special Herb for Utility Poultice -->
+        <item name="resourceForagersHerbUtility">
+            <property name="Extends" value="resourceForagersHerbHealing"/>
+            <property name="CustomIcon" value="resourceYuccaFibers"/>
+            <property name="CustomIconTint" value="100,255,100"/>
+        </item>
+
+        <!-- Special Pelt from Animals -->
+        <item name="resourcePristinePelt">
+            <property name="Extends" value="resourceForagersHerbHealing"/>
+            <property name="CustomIcon" value="resourceLeather"/>
+            <property name="CustomIconTint" value="255,255,200"/>
+        </item>
+
+        <!-- Healing Poultice Consumable -->
+        <item name="consumableForagerPoulticeHeal">
+            <property name="Tags" value="medical,medicalSkill"/>
+            <property name="DisplayType" value="medical"/>
+            <property name="HoldType" value="64"/>
+            <property name="Meshfile" value="@:Other/Items/Health/bandage.FBX"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Morganic"/>
+            <property name="Stacknumber" value="15"/>
+            <property name="EconomicValue" value="150"/>
+            <property name="Group" value="Medical"/>
+            <property name="CustomIcon" value="medicalBandage"/>
+            <property name="CustomIconTint" value="255,100,100"/>
+            <property class="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Sound_start" value="player_ointment"/>
+            </property>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffForagerPoulticeHeal"/>
+            </effect_group>
+        </item>
+        
+        <!-- Combat Poultice Consumable -->
+        <item name="consumableForagerPoulticeCombat">
+            <property name="Extends" value="consumableForagerPoulticeHeal"/>
+            <property name="CustomIconTint" value="100,100,255"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffForagerPoulticeCombat"/>
+            </effect_group>
+        </item>
+
+        <!-- Utility Poultice Consumable -->
+        <item name="consumableForagerPoulticeUtility">
+            <property name="Extends" value="consumableForagerPoulticeHeal"/>
+            <property name="CustomIconTint" value="100,255,100"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffForagerPoulticeUtility"/>
+            </effect_group>
+		</item>
+		<item name="LumberjackBadge">
+            <property name="CustomIcon" value="biomeBadge1"/>
+            <property name="CustomIconTint" value="139,69,19"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="PreacherBadge">
+            <property name="CustomIcon" value="biomeBadge2"/>
+            <property name="CustomIconTint" value="255,255,255"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="RogueBadge">
+            <property name="CustomIcon" value="biomeBadge3"/>
+            <property name="CustomIconTint" value="105,105,105"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="AthleticBadge">
+            <property name="CustomIcon" value="biomeBadge4"/>
+            <property name="CustomIconTint" value="0,0,255"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="EnforcerBadge">
+            <property name="CustomIcon" value="biomeBadge1"/>
+            <property name="CustomIconTint" value="255,215,0"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+        <item name="FarmerBadge">
+            <property name="CustomIcon" value="biomeBadge2"/>
+            <property name="CustomIconTint" value="0,128,0"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="BikerBadge">
+            <property name="CustomIcon" value="biomeBadge3"/>
+            <property name="CustomIconTint" value="255,0,0"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="ScavengerBadge">
+            <property name="CustomIcon" value="biomeBadge4"/>
+            <property name="CustomIconTint" value="210,180,140"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="RangerBadge">
+            <property name="CustomIcon" value="biomeBadge1"/>
+            <property name="CustomIconTint" value="34,139,34"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="CommandoBadge">
+            <property name="CustomIcon" value="biomeBadge2"/>
+            <property name="CustomIconTint" value="107,142,35"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="AssassinBadge">
+            <property name="CustomIcon" value="biomeBadge3"/>
+            <property name="CustomIconTint" value="50,50,50"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+        <item name="MinerBadge">
+            <property name="CustomIcon" value="biomeBadge4"/>
+            <property name="CustomIconTint" value="128,128,128"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="NomadBadge">
+            <property name="CustomIcon" value="biomeBadge1"/>
+            <property name="CustomIconTint" value="244,164,96"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="NerdBadge">
+            <property name="CustomIcon" value="biomeBadge2"/>
+            <property name="CustomIconTint" value="128,0,128"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+        <item name="RaiderBadge">
+            <property name="CustomIcon" value="biomeBadge3"/>
+            <property name="CustomIconTint" value="220,20,60"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="Items/Misc/Quest/Trophy01Prefab"/>
+            <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="10"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+
+        <!-- ******************** ARMOR CRAFTING KITS ******************** -->
+
+        <!-- Light Armor Kits -->
+        <item name="LumberjackCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="139,69,19"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="PreacherCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="255,255,255"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="RogueCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="105,105,105"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="AthleticCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="0,0,255"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="EnforcerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="255,215,0"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        
+        <!-- Medium Armor Kits -->
+        <item name="FarmerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="0,128,0"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="BikerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="255,0,0"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="ScavengerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="210,180,140"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="RangerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="34,139,34"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="CommandoCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="107,142,35"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="AssassinCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="50,50,50"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+
+        <!-- Heavy Armor Kits -->
+        <item name="MinerCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="128,128,128"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="NomadCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="244,164,96"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="NerdCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="128,0,128"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+        <item name="RaiderCraftingKit"><property name="CustomIcon" value="resourceArmorCraftingKit"/><property name="CustomIconTint" value="220,20,60"/><property name="HoldType" value="45"/><property name="Meshfile" value="Items/Misc/BookPrefab"/><property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/><property name="Material" value="Mpaper"/><property name="Stacknumber" value="10"/><property name="EconomicValue" value="600"/><property name="Group" value="Resources"/></item>
+
+	</append>
+	<!--Change Armor GROUPS!
+	<setattribute xpath="/items/item[@name'armorLumberjackHelmet']/property[@name='ArmorGroup']" value>groupLumberjack,groupHelper
+	</setattribute>
+	-->
+	<!--Pipe Weapon Tag-->
+	<!--Would have been better if this works than the armor changes-->
+	<append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">,pipe,healgun,chemicalGun
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='Tags']/@value">,pipe
+	</append>
+	<append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@name='Tags']/@value">,pipe
+	</append>
+	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@name='Tags']/@value">,pipe
+	</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">,ar15
+	</append>
+	<!--Vehicle Shit vehicleMotorcyclePlaceable-->
+	<append xpath="/items/item[@name='vehicleMotorcyclePlaceable']/property[@name='Tags']/@value">,moto
+	</append>
+	<!--LightArmor-->
+	<!--Lumberjack-->
+	<set xpath="/items/item[@name='armorLumberjackHelmet']/property[@name='ArmorGroup']/@value">groupLumberjack,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorLumberjackOutfit']/property[@name='ArmorGroup']/@value">groupLumberjack,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorLumberjackGloves']/property[@name='ArmorGroup']/@value">groupLumberjack,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorLumberjackBoots']/property[@name='ArmorGroup']/@value">groupLumberjack,groupHelper
+	</set>
+	<!--eNFORCER-->
+	<set xpath="/items/item[@name='armorEnforcerHelmet']/property[@name='ArmorGroup']/@value">groupEnforcer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorEnforcerOutfit']/property[@name='ArmorGroup']/@value">groupEnforcer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorEnforcerGloves']/property[@name='ArmorGroup']/@value">groupEnforcer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorEnforcerBoots']/property[@name='ArmorGroup']/@value">groupEnforcer,groupHelper
+	</set>
+	<!--Preacher-->
+	<set xpath="/items/item[@name='armorPreacherHelmet']/property[@name='ArmorGroup']/@value">groupPreacher,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorPreacherOutfit']/property[@name='ArmorGroup']/@value">groupPreacher,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorPreacherGloves']/property[@name='ArmorGroup']/@value">groupPreacher,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorPreacherBoots']/property[@name='ArmorGroup']/@value">groupPreacher,groupHelper
+	</set>
+	<!--Rogue-->
+	<set xpath="/items/item[@name='armorRogueHelmet']/property[@name='ArmorGroup']/@value">groupRogue,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRogueOutfit']/property[@name='ArmorGroup']/@value">groupRogue,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRogueGloves']/property[@name='ArmorGroup']/@value">groupRogue,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRogueBoots']/property[@name='ArmorGroup']/@value">groupRogue,groupHelper
+	</set>
+	<!--Athletic-->
+	<set xpath="/items/item[@name='armorAthleticHelmet']/property[@name='ArmorGroup']/@value">groupAthletic,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAthleticOutfit']/property[@name='ArmorGroup']/@value">groupAthletic,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAthleticGloves']/property[@name='ArmorGroup']/@value">groupAthletic,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAthleticBoots']/property[@name='ArmorGroup']/@value">groupAthletic,groupHelper
+	</set>
+	<!--Medium Armor-->
+	<!--Farmer-->
+	<set xpath="/items/item[@name='armorFarmerHelmet']/property[@name='ArmorGroup']/@value">groupFarmer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorFarmerOutfit']/property[@name='ArmorGroup']/@value">groupFarmer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorFarmerGloves']/property[@name='ArmorGroup']/@value">groupFarmer,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorFarmerBoots']/property[@name='ArmorGroup']/@value">groupFarmer,groupHelper
+	</set>
+	<!--Biker-->
+	<set xpath="/items/item[@name='armorBikerHelmet']/property[@name='ArmorGroup']/@value">groupBiker,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorBikerOutfit']/property[@name='ArmorGroup']/@value">groupBiker,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorBikerGloves']/property[@name='ArmorGroup']/@value">groupBiker,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorBikerBoots']/property[@name='ArmorGroup']/@value">groupBiker,groupHelper
+	</set>
+	<!--Scavenger-->
+	<set xpath="/items/item[@name='armorScavengerHelmet']/property[@name='ArmorGroup']/@value">groupScavenger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorScavengerOutfit']/property[@name='ArmorGroup']/@value">groupScavenger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorScavengerGloves']/property[@name='ArmorGroup']/@value">groupScavenger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorScavengerBoots']/property[@name='ArmorGroup']/@value">groupScavenger,groupHelper
+	</set>
+	<!--Ranger-->
+	<set xpath="/items/item[@name='armorRangerHelmet']/property[@name='ArmorGroup']/@value">groupRanger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRangerOutfit']/property[@name='ArmorGroup']/@value">groupRanger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRangerGloves']/property[@name='ArmorGroup']/@value">groupRanger,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRangerBoots']/property[@name='ArmorGroup']/@value">groupRanger,groupHelper
+	</set>
+	<!--Commando-->
+	<set xpath="/items/item[@name='armorCommandoHelmet']/property[@name='ArmorGroup']/@value">groupCommando,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorCommandoOutfit']/property[@name='ArmorGroup']/@value">groupCommando,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorCommandoGloves']/property[@name='ArmorGroup']/@value">groupCommando,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorCommandoBoots']/property[@name='ArmorGroup']/@value">groupCommando,groupHelper
+	</set>
+	<!--Assassin-->
+	<set xpath="/items/item[@name='armorAssassinHelmet']/property[@name='ArmorGroup']/@value">groupAssassin,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAssassinOutfit']/property[@name='ArmorGroup']/@value">groupAssassin,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAssassinGloves']/property[@name='ArmorGroup']/@value">groupAssassin,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorAssassinBoots']/property[@name='ArmorGroup']/@value">groupAssassin,groupHelper
+	</set>
+	<!--Heavy Armor-->
+	<!--Miner-->
+	<set xpath="/items/item[@name='armorMinerHelmet']/property[@name='ArmorGroup']/@value">groupMiner,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorMinerOutfit']/property[@name='ArmorGroup']/@value">groupMiner,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorMinerGloves']/property[@name='ArmorGroup']/@value">groupMiner,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorMinerBoots']/property[@name='ArmorGroup']/@value">groupMiner,groupHelper
+	</set>
+	<!--Nomad-->
+	<set xpath="/items/item[@name='armorNomadHelmet']/property[@name='ArmorGroup']/@value">groupNomad,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNomadOutfit']/property[@name='ArmorGroup']/@value">groupNomad,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNomadGloves']/property[@name='ArmorGroup']/@value">groupNomad,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNomadBoots']/property[@name='ArmorGroup']/@value">groupNomad,groupHelper
+	</set>
+	<!--Nerd-->
+	<set xpath="/items/item[@name='armorNerdHelmet']/property[@name='ArmorGroup']/@value">groupNerd,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNerdOutfit']/property[@name='ArmorGroup']/@value">groupNerd,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNerdGloves']/property[@name='ArmorGroup']/@value">groupNerd,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorNerdBoots']/property[@name='ArmorGroup']/@value">groupNerd,groupHelper
+	</set>
+	<!--Raider-->
+	<set xpath="/items/item[@name='armorRaiderHelmet']/property[@name='ArmorGroup']/@value">groupRaider,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRaiderOutfit']/property[@name='ArmorGroup']/@value">groupRaider,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRaiderGloves']/property[@name='ArmorGroup']/@value">groupRaider,groupHelper
+	</set>
+	<set xpath="/items/item[@name='armorRaiderBoots']/property[@name='ArmorGroup']/@value">groupRaider,groupHelper
+	</set>
+	 <append xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='Junk Sledge pushback / knockdown']">
+        <requirement name="!HasBuff" buff="buffBitminerSetBonus"/>
+    </append>
+	 <!-- 
+        ****************************************************************************************************
+        ********************************** AMMO PENETRATION MOD ******************************************
+        ****************************************************************************************************
+        This mod adds target penetration to standard and HP ammo types and increases the penetration
+        of existing AP rounds.
+    -->
+
+    <!-- ### Standard & HP Ammo ### -->
+    <!-- Adds 1 target penetration to all standard and HP ammo types. -->
+
+    <append xpath="/items/item[@name='ammo9mmBulletBall']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammo9mmBulletHP']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammo762mmBulletBall']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammo762mmBulletHP']/effect_group">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+        <display_value name="dTargetPenetration" value="1"/>
+    </append>
+
+    <!-- ### AP & Special Ammo ### -->
+    <!-- Increases penetration of all AP and special ammo types by 1. -->
+
+    <set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group/passive_effect[@name='EntityPenetrationCount']/@value">2</set>
+    <set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group/display_value[@name='dTargetPenetration']/@value">2</set>
+
+    <set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group/passive_effect[@name='EntityPenetrationCount']/@value">2</set>
+    <set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group/display_value[@name='dTargetPenetration']/@value">2</set>
+
+    <set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group/passive_effect[@name='EntityPenetrationCount']/@value">2</set>
+    <set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group/display_value[@name='dTargetPenetration']/@value">2</set>
+    
+    <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='EntityPenetrationCount']/@value">3</set>
+    <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/display_value[@name='dTargetPenetration']/@value">3</set>
+
+    <append xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+        <display_value name="dTargetPenetration" value="2"/>
+    </append>
+
+    <append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+        <display_value name="dTargetPenetration" value="2"/>
+    </append>
+	<!-- Primitive Armor: Point to the new hidden perk that is granted automatically at Player Level 1 -->
+	<set xpath="/items/item[@name='armorPrimitiveMaster']/property[@name='UnlockedBy']/@value">perkPrimitiveArmorHidden</set>
+    <!-- Light Armor -->
+    <set xpath="/items/item[@name='armorLightMaster']/property[@name='UnlockedBy']/@value">perkLightArmorCrafter</set>
+    <!-- Medium Armor -->
+    <set xpath="/items/item[@name='armorMediumMaster']/property[@name='UnlockedBy']/@value">perkMediumArmorCrafter</set>
+    <!-- Heavy Armor -->
+    <set xpath="/items/item[@name='armorHeavyMaster']/property[@name='UnlockedBy']/@value">perkHeavyArmorCrafter</set>
+</ASAO> 
+<!-- Stuff in Yellow is Element, Green is Attributes, Blue are Value of Attribute
+Pathing:Positional Lookup  /recipes/recipe/ingredient[1]
+Pathing:Name Lookup  /recipes/recipe/ingredient[@name='resourcesScrapIron']
+Pathing: other Name Lookup  /recipes/recipe/ingredient[@craft_area='campfire']/ingredient[@count='1'] != is the not equals sign!
+Selecting with OR /recipes/recipe[@name='drink1' or @name='drink2']
+/recipes/recipe[@name='drink1']/@craft_tool
+/recipes/recipe[not@craft_area] loof for things w/o craft_area
+-->

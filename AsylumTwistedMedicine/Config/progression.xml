@@ -1,0 +1,30 @@
+<configs>
+<!-- ASYLUM TWISTED MEDICINE PROGRESSION INTEGRATION -->
+<!-- Add corrupted medical experiments to the medical skill tree -->
+
+<!-- Extend the medical crafting skill with asylum medicine recipes -->
+<append xpath="//crafting_skill[@name='craftingMedical']/effect_group">
+    <!-- Asylum Medicine Tier 1 - Mid-level corruption experiments -->
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="curebiotics"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="bleednomore"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="fatigueout"/>
+    
+    <!-- Asylum Medicine Tier 2 - Advanced corruption experiments -->
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="theswiftshot"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="medicalration"/>
+</append>
+
+<!-- Add display entries to show asylum medicine in the skill tree -->
+<append xpath="//crafting_skill[@name='craftingMedical']">
+    <display_entry icon="curebiotics,bleednomore,fatigueout" name_key="asylumMedicalT1-1,asylumMedicalT1-2,asylumMedicalT1-3" has_quality="false" unlock_level="45,55,65">
+        <unlock_entry item="curebiotics" unlock_tier="1"/>
+        <unlock_entry item="bleednomore" unlock_tier="2"/>
+        <unlock_entry item="fatigueout" unlock_tier="3"/>
+    </display_entry>
+    <display_entry icon="theswiftshot,medicalration" name_key="asylumMedicalT2-1,asylumMedicalT2-2" has_quality="false" unlock_level="70,75">
+        <unlock_entry item="theswiftshot" unlock_tier="1"/>
+        <unlock_entry item="medicalration" unlock_tier="2"/>
+    </display_entry>
+</append>
+
+</configs>

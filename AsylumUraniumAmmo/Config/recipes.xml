@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+<!-- *** DEPLETED URANIUM CORE RECIPE *** -->
+<append xpath="/recipes">
+<recipe name="resourceDepletedUraniumCore" count="2" craft_time="45" craft_area="chemistryStation" tags="learnable,chemistryStationCrafting">
+	<ingredient name="resourceForgedChromium" count="1"/>
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceAcid" count="1"/>
+</recipe>
+</append>
+
+<!-- *** NAPALM GEL RECIPE *** -->
+<append xpath="/recipes">
+<recipe name="resourceNapalmGel" count="3" craft_time="40" craft_area="chemistryStation" tags="learnable,chemistryStationCrafting">
+	<ingredient name="resourceOil" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+	<ingredient name="resourceAcid" count="1"/>
+</recipe>
+</append>
+
+<!-- *** URANIUM AMMUNITION RECIPES *** -->
+
+<!-- 9mm Uranium Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoUraniumBullet9mm" count="5" craft_time="25" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceDepletedUraniumCore" count="1"/>
+	<ingredient name="resourceBulletTip" count="5"/>
+	<ingredient name="resourceGunPowder" count="8"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- .44 Magnum Uranium Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoUraniumBullet44Mag" count="5" craft_time="30" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceDepletedUraniumCore" count="1"/>
+	<ingredient name="resourceBulletTip" count="8"/>
+	<ingredient name="resourceGunPowder" count="10"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- 7.62mm Uranium Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoUraniumBullet762mm" count="5" craft_time="35" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceDepletedUraniumCore" count="1"/>
+	<ingredient name="resourceBulletTip" count="8"/>
+	<ingredient name="resourceGunPowder" count="13"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- Uranium Shotgun Shell Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoUraniumShotgunShell" count="5" craft_time="40" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceDepletedUraniumCore" count="1"/>
+	<ingredient name="resourceBuckshot" count="5"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+</append>
+
+
+<!-- *** INCENDIARY AMMUNITION RECIPES *** -->
+
+<!-- 9mm Incendiary Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoIncendiaryBullet9mm" count="5" craft_time="20" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceNapalmGel" count="1"/>
+	<ingredient name="resourceBulletTip" count="5"/>
+	<ingredient name="resourceGunPowder" count="10"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- .44 Magnum Incendiary Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoIncendiaryBullet44Mag" count="5" craft_time="25" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceNapalmGel" count="1"/>
+	<ingredient name="resourceBulletTip" count="8"/>
+	<ingredient name="resourceGunPowder" count="12"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- 7.62mm Incendiary Bullet Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoIncendiaryBullet762mm" count="5" craft_time="30" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceNapalmGel" count="1"/>
+	<ingredient name="resourceBulletTip" count="8"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceBulletCasing" count="5"/>
+</recipe>
+</append>
+
+<!-- Incendiary Shotgun Shell Recipe -->
+<append xpath="/recipes">
+<recipe name="ammoIncendiaryShotgunShell" count="5" craft_time="35" craft_area="ammopress" tags="learnable,ammopressCrafting">
+	<ingredient name="resourceNapalmGel" count="1"/>
+	<ingredient name="resourceBuckshot" count="5"/>
+	<ingredient name="resourceGunPowder" count="18"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+</append>
+
+
+</configs>

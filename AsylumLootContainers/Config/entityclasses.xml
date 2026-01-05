@@ -1,0 +1,21 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='Mesh']/@value">#@modfolder:Resources/AsylumLootContainers.unity3d?playerbackpack</set>
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='Mesh']/@value">#@modfolder:Resources/AsylumLootContainers.unity3d?yellowbag</set>
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='Mesh']/@value">#@modfolder:Resources/AsylumLootContainers.unity3d?bluebag</set>
+	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='Mesh']/@value">#@modfolder:Resources/AsylumLootContainers.unity3d?redbag</set>
+		<!-- Increase despawn time to 2 hours (7200s) for backpack and loot bags -->
+		<set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">7200</set>
+		<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">7200</set>
+		<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">7200</set>
+		<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">7200</set>
+
+		<!-- Define new boss loot container that uses the 'bosslootgreen' prefab from the same unity3d bundle -->
+		<append xpath="/entity_classes">
+			<entity_class name="EntityLootContainerBossGreen" extends="EntityLootContainerBoss">
+				<property name="Mesh" value="#@modfolder:Resources/AsylumLootContainers.unity3d?bosslootgreen"/>
+				<property name="TimeStayAfterDeath" value="7200"/>
+				<property name="LootListOnDeath" value="zPackBossGreen"/>
+			</entity_class>
+		</append>
+
+</configs>

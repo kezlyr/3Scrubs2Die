@@ -1,0 +1,107 @@
+<AsylumOverhaul>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="BloodPhoenix_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="BloodPhoenix_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="BloodPhoenix_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="DustDevil_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="DustDevil_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="DustDevil_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="MadMax_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="MadMax_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="MadMax_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="RustyMate_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="RustyMate_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="RustyMate_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="DHLTruck_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="DHLTruck_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="DHLTruck_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="Forklift_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Forklift_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Forklift_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="AsylumClassic_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="AsylumClassic_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="AsylumClassic_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="AsylumHotrod_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="AsylumHotrod_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="AsylumHotrod_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+
+
+
+
+
+
+
+</AsylumOverhaul>

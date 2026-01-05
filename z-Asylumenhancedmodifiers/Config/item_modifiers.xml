@@ -1,0 +1,1878 @@
+<configs>
+	
+	<append xpath="/item_modifiers">
+	<!-- 52 new modifiers -->
+	<!-- Backpack 1Tag -->
+		<item_modifier name="egt1backpack" installable_tags="armor" modifier_tags="vita1" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modArmorQuadStoragePocket"/>
+			<property name="DescriptionKey" value="egt1backpackdesc"/>
+			<property name="CustomIconTint" value="#1e9d16"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="Material" value="Mleather"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="16"/>
+				<display_value name="dCarryCapacity" value="16"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2backpack" installable_tags="armor" modifier_tags="vita1" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modArmorQuadStoragePocket"/>
+			<property name="DescriptionKey" value="egt2backpackdesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="Material" value="Mleather"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="20"/>
+				<display_value name="dCarryCapacity" value="20"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3backpack" installable_tags="armor" modifier_tags="vita1" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modArmorQuadStoragePocket"/>
+			<property name="DescriptionKey" value="egt3backpackdesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="Material" value="Mleather"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="32"/>
+				<display_value name="dCarryCapacity" value="32"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+	<!-- Nerd Chest DONT STACK 2Tag -->
+		<item_modifier name="egt1nerd" installable_tags="armor" modifier_tags="vita2" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="CustomIconTint" value="#1e9d16"/>
+			<property name="DescriptionKey" value="egt1nerddesc"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="33" >
+					<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+		<item_modifier name="egt2nerd" installable_tags="armor" modifier_tags="vita2" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="DescriptionKey" value="egt2nerddesc"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="66" >
+					<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+		<item_modifier name="egt3nerd" installable_tags="armor" modifier_tags="vita2" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="DescriptionKey" value="egt3nerddesc"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="100" >
+					<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Attribute +2 3Tag -->
+		<item_modifier name="egmodArmorPerception" installable_tags="armor" modifier_tags="vita3" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorPerception"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="Material" value="Msteel"/>
+				<property name="EconomicValue" value="1000"/>
+				<property name="DescriptionKey" value="egmodArmorPerceptiondesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egmodArmorStrength" installable_tags="armor" modifier_tags="vita3" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorStrength"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="Material" value="Msteel"/>
+				<property name="EconomicValue" value="1000"/>
+				<property name="DescriptionKey" value="egmodArmorStrengthdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egmodArmorFortitude" installable_tags="armor" modifier_tags="vita3" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorFortitude"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="Material" value="Msteel"/>
+				<property name="EconomicValue" value="1000"/>
+				<property name="DescriptionKey" value="egmodArmorFortitudedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egmodArmorAgility" installable_tags="armor" modifier_tags="vita3" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorAgility"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="Material" value="Msteel"/>
+				<property name="EconomicValue" value="1000"/>
+				<property name="DescriptionKey" value="egmodArmorAgilitydesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egmodArmorIntellect" installable_tags="armor" modifier_tags="vita3" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorIntellect"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="Material" value="Msteel"/>
+				<property name="EconomicValue" value="1000"/>
+				<property name="DescriptionKey" value="egmodArmorIntellectdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Movementspeed 4Tag-->
+		<item_modifier name="egt1lightweight" installable_tags="armor" modifier_tags="vita4" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceFeather"/>
+				<property name="CustomIconTint" value="#1e9d16"/>
+				<property name="DescriptionKey" value="egt1lightweightdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<passive_effect name="RunSpeed" operation="perc_add" value=".05"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".05"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2lightweight" installable_tags="armor" modifier_tags="vita4" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceFeather"/>
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="DescriptionKey" value="egt2lightweightdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<passive_effect name="RunSpeed" operation="perc_add" value=".10"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".10"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3lightweight" installable_tags="armor" modifier_tags="vita4" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceFeather"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="DescriptionKey" value="egt3lightweightdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Questreward +1 5Tag-->
+		<item_modifier name="egt1reward" installable_tags="armor" modifier_tags="vita5" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceRawDiamond"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt1rewarddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<passive_effect name="QuestRewardChoiceCount" operation="base_add" value="1"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<item_modifier name="egt2reward" installable_tags="armor" modifier_tags="vita5" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceRawDiamond"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="DescriptionKey" value="egt2rewarddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="750"/>
+			<effect_group tiered="false">
+				<passive_effect name="QuestRewardChoiceCount" operation="base_add" value="2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3reward" installable_tags="armor" modifier_tags="vita5" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceRawDiamond"/>
+				<property name="CustomIconTint" value="#ff0000"/>
+				<property name="DescriptionKey" value="egt3rewarddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="EconomicValue" value="1500"/>
+			<effect_group tiered="false">
+				<passive_effect name="QuestRewardChoiceCount" operation="base_add" value="3"/>
+			</effect_group>
+		</item_modifier>
+
+
+	<!-- Harvestcount 6Tag-->
+		<item_modifier name="egt1lumber" installable_tags="armor" modifier_tags="vita6" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="vehicleBicycleHandlebars"/>
+				<property name="DescriptionKey" value="egt1lumberdesc"/>
+				<property name="CustomIconTint" value="#1e9d16"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".10"/>			
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2lumber" installable_tags="armor" modifier_tags="vita6" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="vehicleBicycleHandlebars"/>
+				<property name="DescriptionKey" value="egt2lumberdesc"/>
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".20"/>			
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3lumber" installable_tags="armor" modifier_tags="vita6" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="vehicleBicycleHandlebars"/>
+				<property name="DescriptionKey" value="egt3lumberdesc"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" value=".30"/>			
+			</effect_group>
+		</item_modifier>		
+
+
+
+
+	<!-- Bartering better Buy -->
+		<item_modifier name="egt1barter" installable_tags="armor" modifier_tags="vita7" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="modRoboticDroneMoraleBoosterMod"/>
+				<property name="CustomIconTint" value="#1e9d16"/>
+				<property name="DescriptionKey" value="egt1barterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="BarteringBuying" operation="base_add" value=".3"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2barter" installable_tags="armor" modifier_tags="vita7" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="modRoboticDroneMoraleBoosterMod"/>
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="DescriptionKey" value="egt2barterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="BarteringBuying" operation="base_add" value=".6"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3barter" installable_tags="armor" modifier_tags="vita7" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="modRoboticDroneMoraleBoosterMod"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="DescriptionKey" value="egt3barterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="BarteringBuying" operation="base_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Damage resist against zombies-->
+		<item_modifier name="egt1resist" installable_tags="armor" modifier_tags="vita8" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorParts"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1resistdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".03"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2resist" installable_tags="armor" modifier_tags="vita8" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorParts"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2resistdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".06"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3resist" installable_tags="armor" modifier_tags="vita8" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorParts"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3resistdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- entity damage against zombies -->
+		<item_modifier name="egt1zombiedamage" installable_tags="armor" modifier_tags="vita9" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="ammoArrowIron"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1zombiedamagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
+					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+			</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="egt2zombiedamage" installable_tags="armor" modifier_tags="vita9" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="ammoArrowIron"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2zombiedamagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3zombiedamage" installable_tags="armor" modifier_tags="vita9" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="ammoArrowIron"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3zombiedamagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15"/>
+					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- loot time -->
+		<item_modifier name="egt1looter" installable_tags="armor" modifier_tags="vita10" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceScopeLens"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1looterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.1"/>	
+			</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="egt2looter" installable_tags="armor" modifier_tags="vita10" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceScopeLens"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2looterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.2"/>	
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3looter" installable_tags="armor" modifier_tags="vita10" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="resourceScopeLens"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3looterdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.3"/>	
+			</effect_group>
+		</item_modifier>			
+
+
+
+
+	<!-- Health bonus -->
+		<item_modifier name="egt1hp" installable_tags="armor" modifier_tags="vita11" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugSteroids"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1hpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="5"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2hp" installable_tags="armor" modifier_tags="vita11" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugSteroids"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2hpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="10"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3hp" installable_tags="armor" modifier_tags="vita11" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugSteroids"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3hpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_add" value="20"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Stamina bonus -->
+		<item_modifier name="egt1stamina" installable_tags="armor" modifier_tags="vita12" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="medicalPlasterCast"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1staminadesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_add" value="10"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2stamina" installable_tags="armor" modifier_tags="vita12" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="medicalPlasterCast"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2staminadesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_add" value="20"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3stamina" installable_tags="armor" modifier_tags="vita12" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="medicalPlasterCast"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3staminadesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_add" value="30"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Harvest count for plants -->
+		<item_modifier name="egt1harvest" installable_tags="armor" modifier_tags="vita13" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="treePlantedMountainPine1m"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1harvestdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2harvest" installable_tags="armor" modifier_tags="vita13" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="treePlantedMountainPine1m"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2harvestdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="base_add" value="2" tags="farmerBonusHarvest"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3harvest" installable_tags="armor" modifier_tags="vita13" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="treePlantedMountainPine1m"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3harvestdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="base_add" value="3" tags="farmerBonusHarvest"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Entity Damage -->
+		<item_modifier name="egt1damage" installable_tags="armor" modifier_tags="vita14" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1damagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2damage" installable_tags="armor" modifier_tags="vita14" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2damagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3damage" installable_tags="armor" modifier_tags="vita14" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3damagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15"/>
+			</effect_group>
+		</item_modifier>		
+
+
+	<!-- Attackspeed bonus -->
+		<item_modifier name="egt1atkspeed" installable_tags="armor" modifier_tags="vita15" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugVitamins"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1atkspeeddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".05"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2atkspeed" installable_tags="armor" modifier_tags="vita15" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugVitamins"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2atkspeeddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".10"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".10"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3atkspeed" installable_tags="armor" modifier_tags="vita15" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugVitamins"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3atkspeeddesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".15"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+	<!-- Food Water usage -->
+		<item_modifier name="egt1usage" installable_tags="armor" modifier_tags="vita16" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorNomadHelmet"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1usagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2usage" installable_tags="armor" modifier_tags="vita16" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorNomadHelmet"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2usagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3usage" installable_tags="armor" modifier_tags="vita16" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="armorNomadHelmet"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3usagedesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+			</effect_group>
+		</item_modifier>		
+
+
+
+
+	<!-- Player exp gain -->
+		<item_modifier name="egt1xp" installable_tags="armor" modifier_tags="vita17" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugRecog"/>
+				<property name="CustomIconTint" value="#1e9d16"/>	
+				<property name="DescriptionKey" value="egt1xpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt2xp" installable_tags="armor" modifier_tags="vita17" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugRecog"/>
+				<property name="CustomIconTint" value="#bc52e7"/>	
+				<property name="DescriptionKey" value="egt2xpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".35"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3xp" installable_tags="armor" modifier_tags="vita17" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster"/>
+				<property name="CustomIcon" value="drugRecog"/>
+				<property name="CustomIconTint" value="#fb4f21"/>	
+				<property name="DescriptionKey" value="egt3xpdesc"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="Material" value="Mleather"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".5"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Weapon Mods -->
+
+		<item_modifier name="egt2arrowreload" installable_tags="perkArchery" type="attachment" rarity="1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMeleeTheHunter"/>
+			<property name="DescriptionKey" value="egt2ArrowRDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".4"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3arrowreload" installable_tags="perkArchery" type="attachment" rarity="1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMeleeTheHunter"/>
+			<property name="DescriptionKey" value="egt3ArrowRDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".8"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<!-- Blessed Metal Mod -->
+
+		<item_modifier name="egt2blessedmetal" installable_tags="weapon,tool" modifier_tags="DoubleDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="DescriptionKey" value="egt2BlessDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Do double damage to evil / undead-->
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".45"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="Bosszombie"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".75"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="egt3blessedmetal" installable_tags="weapon,tool" modifier_tags="DoubleDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+			<property name="DescriptionKey" value="egt3BlessDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Do double damage to evil / undead-->
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".9"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="Bosszombie"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+		<!-- Foregrip Handle -->
+
+		<item_modifier name="egt2grip" installable_tags="bottomAttachments,turretRanged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunForegrip"/>
+			<property name="DescriptionKey" value="egt2ForegripDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.2"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.2"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.2"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.1">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.6"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.6"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.6"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.6"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3grip" installable_tags="bottomAttachments,turretRanged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunForegrip"/>
+			<property name="DescriptionKey" value="egt3ForegripDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.3"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.3"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.2">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.8"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.8"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<!-- Retracting Stock-->
+
+		<item_modifier name="egt2stock" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunRetractingStock"/>
+			<property name="DescriptionKey" value="egt2RetractingDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3stock" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunRetractingStock"/>
+			<property name="DescriptionKey" value="egt3RetractingDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.5"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- Magazine Extender -->
+
+		<item_modifier name="egt2magazineex" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMagazineExtender"/>
+			<property name="DescriptionKey" value="egt2magazineexMagazineExtenderDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value=".60"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3magazineex" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMagazineExtender"/>
+			<property name="DescriptionKey" value="egt3magazineexMagazineExtenderDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value=".100"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- Drum Magazine Extender -->
+
+		<item_modifier name="egt2drummag" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+			<property name="DescriptionKey" value="egt2DrumDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="1.5"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3drummag" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+			<property name="DescriptionKey" value="egt3DrumDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- Bipod -->
+
+		<item_modifier name="egt2bipod" installable_tags="bottomAttachments" modifier_tags="accuracy" blocked_tags="noMods,shortRange" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunBipod"/>
+			<property name="DescriptionKey" value="egt2BipodDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.16"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".1"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".5">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3bipod" installable_tags="bottomAttachments" modifier_tags="accuracy" blocked_tags="noMods,shortRange" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunBipod"/>
+			<property name="DescriptionKey" value="egt3BipodDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.15"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".7">
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+
+		<!-- Muzzle Brake -->
+
+		<item_modifier name="egt2muzzlebrake" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMuzzleBrake"/>
+			<property name="DescriptionKey" value="egt2MuzzleDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
+			<effect_group tiered="false">
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.4"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.4"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.2"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.2"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".15"/>
+			</effect_group>
+				<!-- <passive_effect name="DamageFalloffRange" operation="base_add" value="-5"/> -->
+		</item_modifier>
+
+		<item_modifier name="egt3muzzlebrake" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunMuzzleBrake"/>
+			<property name="DescriptionKey" value="egt3MuzzleDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
+			<effect_group tiered="false">
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.3"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+			</effect_group>
+				<!-- <passive_effect name="DamageFalloffRange" operation="base_add" value="-5"/> -->
+		</item_modifier>
+
+		<!-- Barrel Extender -->
+
+		<item_modifier name="egt2barrelex" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunBarrelExtender"/>
+			<property name="DescriptionKey" value="egt2BarrelExtenderDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--DamageFalloffRange increased by x meters-->
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".20"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value=".35"/>
+				<passive_effect name="MaxRange" operation="perc_add" value=".8"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".2"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.16">
+					<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3barrelex" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunBarrelExtender"/>
+			<property name="DescriptionKey" value="egt3BarrelExtenderDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--DamageFalloffRange increased by x meters-->
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".40"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value=".35"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="1.1"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".2"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value=".1"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.16">
+					<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+
+
+	<!-- Silencer (Debug) -->
+		<item_modifier name="egt2silencer" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+			<property name="DescriptionKey" value="egt2SilencerDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Decreases sound footprint by x% -->
+			<item_property_overrides name="*">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT0PipePistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT1Pistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,-.006,.127"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3SMG5">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT2Magnum44">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,.028,.165"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT1DoubleBarrel">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT2PumpShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT3AutoShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT1HuntingRifle">
+				<property name="Sound_start" value="hunting_rifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.009,.551"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT2LeverActionRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT1AK47">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-.001,-.0197,.3197"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="0,.005,.275"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT3M60">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT0PipeMachineGun">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+			</item_property_overrides>
+
+			<!-- visible attachment: silencer -->
+			<effect_group tiered="false" name="internal attachment prefab (A19)">
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+			</effect_group>
+
+			<effect_group tiered="false" name="mod effects">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".10">
+					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="LT" value="1"/>
+				</passive_effect>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="-.5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.05"/>
+				<!--<passive_effect name="MaxRange" operation="perc_add" value="-.25">
+					<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+				</passive_effect>-->
+			</effect_group>
+		</item_modifier>
+
+<item_modifier name="egt3silencer" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+			<property name="DescriptionKey" value="egt3SilencerDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Decreases sound footprint by x% -->
+			<item_property_overrides name="*">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT0PipePistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="Sound_loop" value="pistol_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT1Pistol">
+				<property name="Sound_start" value="pistol_s_fire"/>
+				<property name="BarrelOffset" value="0,-.006,.127"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3SMG5">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT2Magnum44">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,.028,.165"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunHandgunT3DesertVulture">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT1DoubleBarrel">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT2PumpShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunShotgunT3AutoShotgun">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
+				<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+				<property name="BarrelOffset" value="0,-.0322,.4516"/>
+				<property name="BarrelScale" value="1.1,1.1,1.5"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT1HuntingRifle">
+				<property name="Sound_start" value="hunting_rifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.009,.551"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT2LeverActionRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunRifleT3SniperRifle">
+				<property name="Sound_start" value="sniperrifle_s_fire"/>
+				<property name="Sound_loop" value="sniperrifle_s_fire"/>
+				<property name="BarrelOffset" value="0,-.02,.2182"/>
+				<property name="BarrelScale" value=".88,.88,.88"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT1AK47">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="-.001,-.0197,.3197"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT2TacticalAR">
+				<property name="Sound_start" value="ak47_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="ak47_s_fire"/>
+				<property name="BarrelOffset" value="0,.005,.275"/>
+				<property name="BarrelScale" value="1,1,1"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT3M60">
+				<property name="Sound_start" value="m60_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="m60_s_fire"/>
+				<property name="BarrelOffset" value="0,-.005,.31"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="gunMGT0PipeMachineGun">
+				<property name="Sound_start" value="smg_s_fire"/>
+				<property name="Sound_end" value="silencefiller"/>
+				<property name="Sound_loop" value="smg_s_fire"/>
+			</item_property_overrides>
+
+			<!-- visible attachment: silencer -->
+			<effect_group tiered="false" name="internal attachment prefab (A19)">
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+			</effect_group>
+
+			<effect_group tiered="false" name="mod effects">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".20">
+					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="LT" value="1"/>
+				</passive_effect>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="-.5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.05"/>
+				<!--<passive_effect name="MaxRange" operation="perc_add" value="-.25">
+					<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+				</passive_effect>-->
+			</effect_group>
+		</item_modifier>
+
+
+	<!-- Cripple em-->
+		<item_modifier name="egt2crippleem" installable_tags="ranged" modifier_tags="crippling" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/>
+			<property name="DescriptionKey" value="egt2CrippleDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Each shot has a chance to cripple-->
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="!HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,800" operation="LTE" value="20"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+		<item_modifier name="egt3crippleem" installable_tags="ranged" modifier_tags="crippling" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/>
+			<property name="DescriptionKey" value="egt3CrippleDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--Each shot has a chance to cripple-->
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="!HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="EntityTagCompare" target="other" tags="walker"/>
+				<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,800" operation="LTE" value="20"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Trigger Automatic -->
+		<item_modifier name="egt2triggerauto" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+			<property name="DescriptionKey" value="egt2TriggerDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="999"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".30"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".06"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<item_modifier name="egt3triggerauto" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+			<property name="DescriptionKey" value="egt3TriggerDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="999"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".60"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".06"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Structural Brace 35% -->
+		<item_modifier name="egt2brace" installable_tags="melee,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+			<property name="DescriptionKey" value="egt2StructuralBraceDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Increases durability, increases block efficiency, all melee -->
+			<effect_group tiered="false">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.30" tags="perkArchery,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3brace" installable_tags="melee,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+			<property name="DescriptionKey" value="egt3StructuralBraceDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Increases durability, increases block efficiency, all melee -->
+			<effect_group tiered="false">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.60" tags="perkArchery,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Ergonomic Grip 15%-->
+		<item_modifier name="egt2ergonomicgrip" installable_tags="melee,bow" modifier_tags="health" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+			<property name="DescriptionKey" value="egt2ErgonomicGripDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Reduces Stamina usage on all attacks, all melee -->
+			<effect_group tiered="false">
+				<requirement name="!HoldingItemHasTags" tags="perkArchery"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.15" tags="primary,secondary"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".15"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3ergonomicgrip" installable_tags="melee,bow" modifier_tags="health" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+			<property name="DescriptionKey" value="egt3ErgonomicGripDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Reduces Stamina usage on all attacks, all melee -->
+			<effect_group tiered="false">
+				<requirement name="!HoldingItemHasTags" tags="perkArchery"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.30" tags="primary,secondary"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".30"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+	<!-- Fortifying Grip +2 HP--> 
+		<item_modifier name="egt2fortgrip" installable_tags="melee" modifier_tags="health" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeFortifyingGrip"/>
+			<property name="DescriptionKey" value="egt2FortGripDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Gain HP/sec when under 50% HP -->
+			<effect_group tiered="false">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".5"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".4"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3fortgrip" installable_tags="melee" modifier_tags="health" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeFortifyingGrip"/>
+			<property name="DescriptionKey" value="egt3FortGripDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+
+			<!-- Gain HP/sec when under 50% HP -->
+			<effect_group tiered="false">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".5"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".6"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+	<!-- Flammable Oil -->
+		<item_modifier name="egt2oil" installable_tags="weapon,ranged,melee" modifier_tags="specialDamage3" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeClubBurningShaft"/>
+			<property name="DescriptionKey" value="egt2FOilDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3oil" installable_tags="weapon,ranged,melee" modifier_tags="specialDamage3" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modMeleeClubBurningShaft"/>
+			<property name="DescriptionKey" value="egt3FOilDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="60"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+			</effect_group>
+		</item_modifier>
+
+
+	<!-- Shock Battery -->
+		<item_modifier name="egt2battery" installable_tags="weapon,ranged,melee" modifier_tags="specialDamage2" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="DescriptionKey" value="egt2ShockDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>	
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3battery" installable_tags="weapon,ranged,melee" modifier_tags="specialDamage2" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="DescriptionKey" value="egt3ShockDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>	
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+		</item_modifier>
+
+
+	<!-- Rod and Spring -->
+		<item_modifier name="egt2rods" installable_tags="ranged" modifier_tags="fireRate" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="resourceSpring"/>
+			<property name="DescriptionKey" value="egt2RodSpringDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".15"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3rods" installable_tags="ranged" modifier_tags="fireRate" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="resourceSpring"/>
+			<property name="DescriptionKey" value="egt3RodSpringDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+
+
+	<!-- Armor Shredder -->
+		<item_modifier name="egt2shred" installable_tags="ranged,turretRanged" modifier_tags="ArmorShredding" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modArmorBandolier"/>
+			<property name="DescriptionKey" value="egt2ArmorShreddDesc"/>
+			<property name="CustomIconTint" value="#bc52e7"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--<item_property_overrides name="*">
+				<property name="Material" value="Mmetal"/>
+				<property name="Damage_type" value="Piercing"/>
+			</item_property_overrides> -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3shred" installable_tags="ranged,turretRanged" modifier_tags="ArmorShredding" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modArmorBandolier"/>
+			<property name="DescriptionKey" value="egt3ArmorShreddDesc"/>
+			<property name="CustomIconTint" value="#fb4f21"/>
+			<property name="UnlockedBy" value="egtmodifier"/>
+			<!--<item_property_overrides name="*">
+				<property name="Material" value="Mmetal"/>
+				<property name="Damage_type" value="Piercing"/>
+			</item_property_overrides> -->
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.20"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Feel the Heat -->
+		<item_modifier name="egt2heat" installable_tags="ranged,turretRanged" modifier_tags="damage" blocked_tags="noMods" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorHelmetLight"/>
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt2FTHDesc"/>	
+				<property name="Stacknumber" value="1"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffPerkGunslinger"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$GunslingerCombo" operation="add" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1"/>	
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.3"/>
+		</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3heat" installable_tags="ranged,turretRanged" modifier_tags="damage" blocked_tags="noMods" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modArmorHelmetLight"/>
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt3FTHDesc"/>	
+				<property name="Stacknumber" value="1"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffPerkGunslinger"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$GunslingerCombo" operation="add" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15"/>	
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.25"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.35"/>
+		</effect_group>
+		</item_modifier>
+
+	<!-- Slay Up! -->
+		<item_modifier name="egt2slayup" installable_tags="melee" blocked_tags="noMods" modifier_tags="slay" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="drugSteroids" />
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt2SlayUpDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffSlayUpVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffSlayUpVi"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<item_modifier name="egt3slayup" installable_tags="melee" blocked_tags="noMods" modifier_tags="slay" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="drugSteroids" />
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt3SlayUpDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffSlayUpVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffSlayUpVi"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- New Brass Catcher, bind to Gameevent instead of buffs only -->
+		<item_modifier name="egt2brasscatcher" installable_tags="ranged,turretRanged" blocked_tags="noMods" modifier_tags="brassCatcherV" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="resourceBulletCasing" />
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt2CatcherCaseDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBrassCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffBrassCatcherVi"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3brasscatcher" installable_tags="ranged,turretRanged" blocked_tags="noMods" modifier_tags="brassCatcherV" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="resourceBulletCasing" />
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt3CatcherCaseDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBrassCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffBrassCatcherVi"/>
+			</effect_group>
+		</item_modifier>		
+
+	<!-- New BulletTip Catcher, bind to Gameevent instead of buffs only -->
+		<item_modifier name="egt2bullettipcatcher" installable_tags="ranged,turretRanged" blocked_tags="noMods" modifier_tags="brassCatcherV" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="resourceBulletTip" />
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt2CatcherBulletDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBulletTipCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffBulletTipCatcherVi"/>
+			</effect_group>
+		</item_modifier>
+
+
+		<item_modifier name="egt3bullettipcatcher" installable_tags="ranged,turretRanged" blocked_tags="noMods" modifier_tags="brassCatcherV" type="attachment" rarity="0.5">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="resourceBulletTip" />
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt3CatcherBulletDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBulletTipCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffBulletTipCatcherVi"/>
+			</effect_group>
+		</item_modifier>
+
+	<!-- Fuel Saver aka Fuel Catcher for Auger -->
+		<item_modifier name="egt2fuelcatcher" installable_tags="motorTool" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modFuelTankSmall" />
+				<property name="CustomIconTint" value="#bc52e7"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt2CatcherFuelDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffFuelCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffFuelCatcherVi"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="egt3fuelcatcher" installable_tags="motorTool" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+				<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+				<property name="CustomIcon" value="modFuelTankSmall" />
+				<property name="CustomIconTint" value="#fb4f21"/>
+				<property name="UnlockedBy" value="egtmodifier"/>
+				<property name="DescriptionKey" value="egt3CatcherFuelDesc"/>	
+				<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+					<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffFuelCatcherVi"/>
+					<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffFuelCatcherVi"/>
+			</effect_group>
+		</item_modifier>
+
+	</append>
+</configs>
+

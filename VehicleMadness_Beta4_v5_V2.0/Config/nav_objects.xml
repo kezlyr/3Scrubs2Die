@@ -1,0 +1,249 @@
+<configs>
+
+<!--   Vehicle_Madness_Overhaul_v5_Beta_4.0 October 2024 for Version 1.1 ...For immersion we removed in A19 and
+Nav stuff for newer vehicles V1.0 Onwards will be included at some point  THEY ARE NOW ALL 4X4 iCONS MAINLY FOR VERSION 1 -->
+
+
+<append xpath="nav_object_classes">
+	<nav_object_class name="BMWred" extends="bicycle">
+		<property name="requirement_type" value="IsVehicleOwner" />
+		<compass_settings>
+		<property name="sprite_name" value="BMWred"/>
+		</compass_settings>
+		<onscreen_settings>
+			<property name="sprite_name" value="BMWred"/>
+		</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="VMVespakart" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="vmvespakartui"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="vmvespakartui"/>
+			</onscreen_settings>
+		</nav_object_class>
+	
+	<nav_object_class name="BMWwhite_UI" extends="bicycle">
+		<property name="requirement_type" value="IsVehicleOwner" />
+		<compass_settings>
+			<property name="sprite_name" value="BMWwhite_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+			<property name="sprite_name" value="BMWwhite_UI"/>
+		</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="HotRod_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="HotRod_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="HotRod_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+	
+		<nav_object_class name="Taxi_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Taxi_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Taxi_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Van_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Van_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Van_UI"/>
+			</onscreen_settings>
+		</nav_object_class>		
+		
+		<nav_object_class name="WhiteSedan_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="WhiteSedan_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="WhiteSedan_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="WhiteSedanRusted_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="WhiteSedanRusted_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="WhiteSedanRusted_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Quad_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Quad_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Quad_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+				
+		<nav_object_class name="ArmoredCobra_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="ArmoredCobra_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="ArmoredCobra_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Buggy_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Buggy_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Buggy_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EMSPoliceCar_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="EMSPoliceCar_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="EMSPoliceCar_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="EMSAmbulance_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="EMSAmbulance_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="EMSAmbulance_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Fastback_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Fastback_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Fastback_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+				
+		<nav_object_class name="Pickup_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Pickup_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Pickup_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="Sedan_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="Sedan_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Sedan_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="TaxiRusted_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="TaxiRusted_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="TaxiRusted_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="guppyVehicleMilitaryTruck_UI" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="guppyVehicleMilitaryTruck_UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="guppyVehicleMilitaryTruck_UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="guppyVehicleBoxTruck_UI_1" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="guppyVehicleBoxTruck_UI_1"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="guppyVehicleBoxTruck_UI_1"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="guppyVehicleCarBigRig_UI_1" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="guppyVehicleCarBigRig_UI_1"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="guppyVehicleCarBigRig_UI_1"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="guppyVehicleCarBigRig2_UI_1" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="guppyVehicleCarBigRig2_UI_1"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="guppyVehicleCarBigRig2_UI_1"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="guppyVehicleMilitaryCar_UI_1" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+			<compass_settings>
+				<property name="sprite_name" value="guppyVehicleMilitaryCar_UI_1"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="guppyVehicleMilitaryCar_UI_1"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="VMOldSemi" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="vmoldsemiui"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="vmoldsemiui"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="VMMach1" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="VMMach1UI"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="VMMach1UI"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+</append>	
+</configs>

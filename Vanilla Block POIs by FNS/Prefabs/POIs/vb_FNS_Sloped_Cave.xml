@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="1" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="25, 45, 25" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="POIMarkerSize" value="18, 4, 1#1, 3, 3#1, 3, 3" />
+  <property name="POIMarkerStart" value="2, 1, -1#-1, 1, 0#25, 1, 0" />
+  <property name="POIMarkerGroup" value="cave,cave,cave" />
+  <property name="POIMarkerTags" value="cavenode#cavenode#cavenode" />
+  <property name="POIMarkerType" value="None,None,None" />
+  <property name="POIMarkerPartToSpawn" value=",," />
+  <property name="POIMarkerPartRotations" value="2,1,3" />
+  <property name="POIMarkerPartSpawnChance" value="1,1,1" />
+  <property name="YOffset" value="-25" />
+  <property name="Tags" value="wilderness, rural, cave, entrance" />
+  <property name="SleeperVolumeSize" value="25, 21, 17#25, 3, 5#25, 4, 8" />
+  <property name="SleeperVolumeStart" value="0, 1, 8#0, 6, 0#0, 1, 0" />
+  <property name="SleeperVolumeGroupId" value="0,0,0" />
+  <property name="SleeperVolumeGroup" value="GroupGenericZombie,0,0,GroupGenericZombie,0,0,GroupGenericZombie,4,4" />
+  <property name="SleeperIsLootVolume" value="False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,True,False" />
+  <property name="SleeperVolumeFlags" value="0,3,4" />
+  <property name="SleeperVolumeTriggeredBy" value=" #1#1" />
+  <property name="Zoning" value="none" />
+  <property name="QuestTags" value="clear, fetch, infested" />
+  <property name="SVS1" value="sleep 60^spawn zombieSpider 3^sleep 12^spawn zombieSpider 1^sleep 7^spawn zombieSpider 1" />
+  <property name="TriggerVolumeSize" value="23, 4, 3" />
+  <property name="TriggerVolumeStart" value="2, 5, 5" />
+  <property name="TriggerVolumeTriggers" value="1" />
+  <property name="DuplicateRepeatDistance" value="4000" />
+  <property name="SVS0" value="spawn GroupGenericZombie 2^waitalive 1^spawn GroupsZomBadass 1^sleep 7^spawn GroupGenericZombie 2" />
+  <property class="Stats">
+    <property name="TotalVertices" value="73487" />
+    <property name="TotalTriangles" value="57308" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="65935" />
+      <property name="Triangles" value="44448" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="136" />
+      <property name="Triangles" value="68" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="7416" />
+      <property name="Triangles" value="12792" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="FetchContainer">
+      <property name="0" value="13, 9, 14" />
+    </property>
+    <property class="challenge_gore">
+      <property name="0" value="19, 1, 1" />
+      <property name="1" value="21, 1, 1" />
+      <property name="2" value="17, 1, 2" />
+      <property name="3" value="16, 8, 10" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="3, 25, 23" />
+    </property>
+    <property class="quest_stone_boulder">
+      <property name="0" value="13, 25, 16" />
+    </property>
+    <property class="quest_wood_trees">
+      <property name="0" value="19, 25, 20" />
+    </property>
+    <property class="Rally">
+      <property name="0" value="1, 25, 23" />
+    </property>
+    <property class="challenge_stump">
+      <property name="0" value="16, 25, 2" />
+    </property>
+  </property>
+</prefab>

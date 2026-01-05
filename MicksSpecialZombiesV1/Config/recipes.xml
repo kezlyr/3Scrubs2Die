@@ -1,0 +1,29 @@
+
+<configs>
+	<append xpath="/recipes" >
+		
+	<recipe name="CurseCure" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceRawDiamond" count="1"/>
+		</recipe>
+		
+	<recipe name="CurseCure" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceGoldNugget" count="3"/>
+		</recipe>
+		
+	<recipe name="CurseCure" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceSilverNugget" count="5"/>
+		</recipe>
+		
+	<recipe name="HostingCure" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="drugVitamins" count="1"/>
+			<ingredient name="foodCropMushrooms" count="1"/>
+			<ingredient name="medicalBloodBag" count="1"/>
+		</recipe>
+
+</append>
+
+</configs>

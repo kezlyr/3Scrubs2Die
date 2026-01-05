@@ -1,0 +1,111 @@
+<configs>
+		
+
+<!-- Old (Remove the Seperation to get back the Toolbelt Masteryname and EXP Bar for that )
+    	<append xpath="windows/window[@name='windowToolbelt']">
+		<rect pos="255,48" width="460" height="65" cursor_area="false" >
+			
+			<label depth="15" pos="495,-25" name="Skill" width="250" height="60" pivot="right" justify="right" text_key="V_ML_Name{#cvar('$V_SI')}" font_size="25" controller="HUDStatBar"/>
+
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_1_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_1_Exp:0)}/{cvar($V_ML_1_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 1}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_2_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_2_Exp:0)}/{cvar($V_ML_2_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 2}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_3_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_3_Exp:0)}/{cvar($V_ML_3_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 3}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_4_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_4_Exp:0)}/{cvar($V_ML_4_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 4}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_5_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_5_Exp:0)}/{cvar($V_ML_5_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 5}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_6_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_6_Exp:0)}/{cvar($V_ML_6_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 6}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_7_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_7_Exp:0)}/{cvar($V_ML_7_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 7}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_8_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_8_Exp:0)}/{cvar($V_ML_8_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 8}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_9_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_9_Exp:0)}/{cvar($V_ML_9_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 9}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_10_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_10_Exp:0)}/{cvar($V_ML_10_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 10}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_11_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_11_Exp:0)}/{cvar($V_ML_11_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 11}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_12_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_12_Exp:0)}/{cvar($V_ML_12_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 12}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_13_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_13_Exp:0)}/{cvar($V_ML_13_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 13}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_14_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_14_Exp:0)}/{cvar($V_ML_14_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 14}" font_size="25" controller="HUDStatBar"/>
+			
+			
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_15_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_15_Exp:0)}/{cvar($V_ML_15_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 15}" font_size="25" controller="HUDStatBar"/>
+			
+
+			<label depth="15" pos="-254,-25" name="label" width="255" height="60" pivot="left" justify="left" text="[FFFFFF]Lv.{#cvar('$V_ML_16_Lv')}[-]  [FFFFFF]Experience[-] [FFFFFF]({cvar($V_ML_16_Exp:0)}/{cvar($V_ML_16_NextExp:0)})[-]" visible="{#cvar('$V_SI') = 16}" font_size="25" controller="HUDStatBar"/>
+		</rect>
+        </append>
+-->
+
+
+		<append xpath="windows/window[@name='windowPagingHeader']">
+			<button pos="-22,-21" name="Ext_Status" sprite="ui_game_symbol_perk" tooltip_key="ttkey_vam" defaultcolor="255,0,0" style="press,hover,paging.window.icon" rotation="0"/>
+		</append>
+
+		<append xpath="windows">
+			<window name="windowExtStatus">
+				<rect name="MainContent" size="1500,800" depth="1" pos="-750,400" anchor="CenterTop" controller="ToolbeltWindow">
+					<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="100%" height="100%" color="[white]" type="sliced" fillcenter="false" />
+					<sprite color="0,0,0" type="sliced" globalopacity="false"/>
+
+					<rect name="SkillList" pos="0,0" size="750,800">
+						<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="100%" height="100%" color="[white]" type="sliced" fillcenter="false" />
+						<sprite color="0,0,0,240" type="sliced" globalopacity="true"/>
+						<label pos=" 2, -22" 	depth="10" name="" height="[Vam_RH]" text_key="Vam_SI_SkillListTitle" justify="center" font_size="[Vam_FS]" pivot="left" tooltip_key="Vam_SI_SkillListTitle_Tooltip"/>
+						<Vam_SI index="0" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name1" lv="{cvar($V_ML_1_Lv:0)}" exp_ratio="{cvar($V_ML_1_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color1]" />
+						<Vam_SI index="1" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name2" lv="{cvar($V_ML_2_Lv:0)}" exp_ratio="{cvar($V_ML_2_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color2]" />
+						<Vam_SI index="2" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name3" lv="{cvar($V_ML_3_Lv:0)}" exp_ratio="{cvar($V_ML_3_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color3]" />
+						<Vam_SI index="3" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name4" lv="{cvar($V_ML_4_Lv:0)}" exp_ratio="{cvar($V_ML_4_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color4]" />
+						<Vam_SI index="4" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name5" lv="{cvar($V_ML_5_Lv:0)}" exp_ratio="{cvar($V_ML_5_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color5]" />
+						<Vam_SI index="5" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name6" lv="{cvar($V_ML_6_Lv:0)}" exp_ratio="{cvar($V_ML_6_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color6]" />
+						<Vam_SI index="6" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name7" lv="{cvar($V_ML_7_Lv:0)}" exp_ratio="{cvar($V_ML_7_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color7]" />
+						<Vam_SI index="7" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name8" lv="{cvar($V_ML_8_Lv:0)}" exp_ratio="{cvar($V_ML_8_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color8]" />
+						<Vam_SI index="8" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name9" lv="{cvar($V_ML_9_Lv:0)}" exp_ratio="{cvar($V_ML_9_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color9]" />
+						<Vam_SI index="9" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name10" lv="{cvar($V_ML_10_Lv:0)}" exp_ratio="{cvar($V_ML_10_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color10]" />
+						<Vam_SI index="10" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name11" lv="{cvar($V_ML_11_Lv:0)}" exp_ratio="{cvar($V_ML_11_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color11]" />
+						<Vam_SI index="11" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name12" lv="{cvar($V_ML_12_Lv:0)}" exp_ratio="{cvar($V_ML_12_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color12]" />
+						<Vam_SI index="12" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name13" lv="{cvar($V_ML_13_Lv:0)}" exp_ratio="{cvar($V_ML_13_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color13]" />
+						<Vam_SI index="13" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name14" lv="{cvar($V_ML_14_Lv:0)}" exp_ratio="{cvar($V_ML_14_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color14]" />
+						<Vam_SI index="14" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name15" lv="{cvar($V_ML_15_Lv:0)}" exp_ratio="{cvar($V_ML_15_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color15]" />
+						<Vam_SI index="15" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_ML_Name16" lv="{cvar($V_ML_16_Lv:0)}" exp_ratio="{cvar($V_ML_16_Exp_R:0.00)}" gauge_color="[V_SKill_Exp_Gauge_Color16]" />
+					</rect>
+					
+					<rect name="EffectList" pos="750,0" size="750,800">
+						<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="100%" height="100%" color="[white]" type="sliced" fillcenter="false" />
+						<sprite color="0,0,0,240" type="sliced" globalopacity="true"/>
+						<label pos=" 2, -22" depth="10" name="" height="[Vam_RH]" text_key="Vam_SI_EffectTitle" justify="center" font_size="[Vam_FS]" pivot="left" tooltip_key="Vam_SI_EffectTitle_Tooltip"/>
+						<Vam_EI index="0" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_EntityDamage" value="+{cvar($V_ML_Bonus1:P2)}" />
+						<Vam_EI index="1" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_BlockDamage_Tools" value="+{cvar($V_ML_Bonus1:P2)}" />
+						<Vam_EI index="2" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_BlockDamage_Melee" value="+{cvar($V_ML_Bonus_Melee:P2)}" />
+						<Vam_EI index="3" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_BlockDamage_Ranged" value="+{cvar($V_ML_Bonus_Ranged:P2)}" />
+						<Vam_EI index="4" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_AttackSpeed" value="+{cvar($V_ML_Bonus1:P2)}" />
+						<Vam_EI index="5" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_MagazineSize" value="+{cvar($V_ML_Bonus1:P2)}" />
+						<Vam_EI index="6" height="[Vam_RH]" font_size="[Vam_FS]" name_key="V_Info_DegradationPerUse" value="-{cvar($V_ML_Bonus2:P2)}" />
+					</rect>
+				</rect>
+			</window>
+		</append>
+
+
+</configs>

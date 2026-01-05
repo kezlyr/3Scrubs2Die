@@ -1,0 +1,131 @@
+<configs>
+	  <!-- 
+        This section removes all non-primitive armor progression from the original 'craftingArmor' skill,
+        preventing conflicts with the new custom perks.
+    -->
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@name_key='armorT2']"/>
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@name_key='armorT3']"/>
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@name_key='armorT4']"/>
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[contains(@tags, 'armorLightMaster')]"/>
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[contains(@tags, 'armorMediumMaster')]"/>
+    <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[contains(@tags, 'armorHeavyMaster')]"/>
+
+    <!-- This appends a new passive effect to grant bonus health from the original crafting skill. -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group">
+        <passive_effect name="HealthMax" operation="base_add" level="1,100" value="0.5,50"/>
+    </append>
+    
+    <!-- This appends the logic to automatically grant levels of the hidden Primitive Armor perk. -->
+    <append xpath="/progression/attributes/attribute[@name='attGeneralPerks']">
+        <effect_group name="Primitive Armor Auto-Grant">
+            <passive_effect name="PerkLevel" operation="base_set" value="1" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="1"/>
+            </passive_effect>
+            <passive_effect name="PerkLevel" operation="base_set" value="2" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="3"/>
+            </passive_effect>
+            <passive_effect name="PerkLevel" operation="base_set" value="3" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="5"/>
+            </passive_effect>
+            <passive_effect name="PerkLevel" operation="base_set" value="4" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="7"/>
+            </passive_effect>
+            <passive_effect name="PerkLevel" operation="base_set" value="5" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="9"/>
+            </passive_effect>
+            <passive_effect name="PerkLevel" operation="base_set" value="6" tags="perkPrimitiveArmorHidden">
+                <requirement name="PlayerLevel" operation="GTE" value="10"/>
+            </passive_effect>
+        </effect_group>
+    </append>
+    
+    <!-- This xpath appends the new perks to the perks list. -->
+    <append xpath="/progression/perks">
+        <!-- PRIMITIVE ARMOR HIDDEN PERK (Granted Automatically) -->
+        <perk name="perkPrimitiveArmorHidden" max_level="6" parent="skillGeneralPerks" hidden="true">
+            <effect_group>
+                <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,6" value="1" tags="armorPrimitiveMaster"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,6" value="1,2,3,4,5" tags="armorPrimitiveMaster,armorPrimitiveHelmet,armorPrimitiveOutfit,armorPrimitiveGloves,armorPrimitiveBoots"/>
+            </effect_group>
+        </perk>
+
+        <!-- LIGHT ARMOR CRAFTER PERK -->
+        <perk name="perkLightArmorCrafter" max_level="6" parent="skillGeneralPerks" name_key="perkLightArmorCrafterName" desc_key="perkLightArmorCrafterDesc" icon="ui_game_symbol_light_armor" override_cost="1,1,2,2,2,3">
+            <level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="60" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="80" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqGenericPoints01"/></level_requirements>
+            
+            <display_entry icon="armorLumberjackHelmet" name_key="armorT2" has_quality="true" unlock_level="1,2,3,4,5,6">
+                <unlock_entry item="armorLumberjackOutfit,armorPreacherOutfit,armorRogueOutfit,armorAthleticOutfit,armorEnforcerOutfit" unlock_tier="1" recipes="armorLightMaster,armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots,armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots,armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots,armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots,armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
+            </display_entry>
+
+            <effect_group>
+                <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,6" value="1" tags="armorLightMaster,armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots,armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots,armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots,armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots,armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,6,7" value="1,2,3,4,5,6" tags="armorLightMaster,armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots,armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots,armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots,armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots,armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
+               
+			   <effect_description level="1" desc_key="perkLightArmorCrafterRank1Desc" long_desc_key="perkLightArmorCrafterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkLightArmorCrafterRank2Desc" long_desc_key="perkLightArmorCrafterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkLightArmorCrafterRank3Desc" long_desc_key="perkLightArmorCrafterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkLightArmorCrafterRank4Desc" long_desc_key="perkLightArmorCrafterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkLightArmorCrafterRank5Desc" long_desc_key="perkLightArmorCrafterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkLightArmorCrafterRank6Desc" long_desc_key="perkLightArmorCrafterRank6LongDesc"/>
+			</effect_group>
+        </perk>
+
+        <!-- MEDIUM ARMOR CRAFTER PERK -->
+        <perk name="perkMediumArmorCrafter" max_level="6" parent="skillGeneralPerks" name_key="perkMediumArmorCrafterName" desc_key="perkMediumArmorCrafterDesc" icon="ui_game_symbol_light_armor2" override_cost="1,1,2,2,2,3">
+            <level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="60" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="80" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqGenericPoints01"/></level_requirements>
+            
+            <display_entry icon="armorAssassinHelmet" name_key="armorT3" has_quality="true" unlock_level="1,2,3,4,5,6">
+                <unlock_entry item="armorFarmerOutfit,armorBikerOutfit,armorScavengerOutfit,armorRangerOutfit,armorCommandoOutfit,armorAssassinOutfit" unlock_tier="1" recipes="armorMediumMaster,armorFarmerHelmet,armorFarmerOutfit,armorFarmerGloves,armorFarmerBoots,armorBikerHelmet,armorBikerOutfit,armorBikerGloves,armorBikerBoots,armorScavengerHelmet,armorScavengerOutfit,armorScavengerGloves,armorScavengerBoots,armorRangerHelmet,armorRangerOutfit,armorRangerGloves,armorRangerBoots,armorCommandoHelmet,armorCommandoOutfit,armorCommandoGloves,armorCommandoBoots,armorAssassinHelmet,armorAssassinOutfit,armorAssassinGloves,armorAssassinBoots"/>
+            </display_entry>
+            
+            <effect_group>
+                <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,6" value="1" tags="armorMediumMaster,armorFarmerHelmet,armorFarmerOutfit,armorFarmerGloves,armorFarmerBoots,armorBikerHelmet,armorBikerOutfit,armorBikerGloves,armorBikerBoots,armorScavengerHelmet,armorScavengerOutfit,armorScavengerGloves,armorScavengerBoots,armorRangerHelmet,armorRangerOutfit,armorRangerGloves,armorRangerBoots,armorCommandoHelmet,armorCommandoOutfit,armorCommandoGloves,armorCommandoBoots,armorAssassinHelmet,armorAssassinOutfit,armorAssassinGloves,armorAssassinBoots"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,6,7" value="1,2,3,4,5,6" tags="armorMediumMaster,armorFarmerHelmet,armorFarmerOutfit,armorFarmerGloves,armorFarmerBoots,armorBikerHelmet,armorBikerOutfit,armorBikerGloves,armorBikerBoots,armorScavengerHelmet,armorScavengerOutfit,armorScavengerGloves,armorScavengerBoots,armorRangerHelmet,armorRangerOutfit,armorRangerGloves,armorRangerBoots,armorCommandoHelmet,armorCommandoOutfit,armorCommandoGloves,armorCommandoBoots,armorAssassinHelmet,armorAssassinOutfit,armorAssassinGloves,armorAssassinBoots"/>
+                
+				
+				<effect_description level="1" desc_key="perkMediumArmorCrafterRank1Desc" long_desc_key="perkMediumArmorCrafterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkMediumArmorCrafterRank2Desc" long_desc_key="perkMediumArmorCrafterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkMediumArmorCrafterRank3Desc" long_desc_key="perkMediumArmorCrafterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkMediumArmorCrafterRank4Desc" long_desc_key="perkMediumArmorCrafterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkMediumArmorCrafterRank5Desc" long_desc_key="perkMediumArmorCrafterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkMediumArmorCrafterRank6Desc" long_desc_key="perkMediumArmorCrafterRank6LongDesc"/>
+            </effect_group>
+        </perk>
+
+        <!-- HEAVY ARMOR CRAFTER PERK -->
+        <perk name="perkHeavyArmorCrafter" max_level="6" parent="skillGeneralPerks" name_key="perkHeavyArmorCrafterName" desc_key="perkHeavyArmorCrafterDesc" icon="ui_game_symbol_armor_iron" override_cost="1,1,2,2,2,3">
+            <level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="60" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="80" desc_key="reqGenericPoints01"/></level_requirements>
+            <level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqGenericPoints01"/></level_requirements>
+            
+            <display_entry icon="armorRaiderHelmet" name_key="armorT4" has_quality="true" unlock_level="1,2,3,4,5,6">
+                <unlock_entry item="armorMinerOutfit,armorNomadOutfit,armorNerdOutfit,armorRaiderOutfit" unlock_tier="1" recipes="armorHeavyMaster,armorMinerHelmet,armorMinerOutfit,armorMinerGloves,armorMinerBoots,armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots,armorNerdHelmet,armorNerdOutfit,armorNerdGloves,armorNerdBoots,armorRaiderHelmet,armorRaiderOutfit,armorRaiderGloves,armorRaiderBoots"/>
+            </display_entry>
+            
+            <effect_group>
+                <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,6" value="1" tags="armorHeavyMaster,armorMinerHelmet,armorMinerOutfit,armorMinerGloves,armorMinerBoots,armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots,armorNerdHelmet,armorNerdOutfit,armorNerdGloves,armorNerdBoots,armorRaiderHelmet,armorRaiderOutfit,armorRaiderGloves,armorRaiderBoots"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,6,7" value="1,2,3,4,5,6" tags="armorHeavyMaster,armorMinerHelmet,armorMinerOutfit,armorMinerGloves,armorMinerBoots,armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots,armorNerdHelmet,armorNerdOutfit,armorNerdGloves,armorNerdBoots,armorRaiderHelmet,armorRaiderOutfit,armorRaiderGloves,armorRaiderBoots"/>
+            
+				<effect_description level="1" desc_key="perkHeavyArmorCrafterRank1Desc" long_desc_key="perkHeavyArmorCrafterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHeavyArmorCrafterRank2Desc" long_desc_key="perkHeavyArmorCrafterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHeavyArmorCrafterRank3Desc" long_desc_key="perkHeavyArmorCrafterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHeavyArmorCrafterRank4Desc" long_desc_key="perkHeavyArmorCrafterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHeavyArmorCrafterRank5Desc" long_desc_key="perkHeavyArmorCrafterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkHeavyArmorCrafterRank6Desc" long_desc_key="perkHeavyArmorCrafterRank6LongDesc"/>
+			</effect_group>
+        </perk>
+    </append>
+</configs>

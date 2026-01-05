@@ -1,0 +1,209 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+# BACKUP: Original localization backed up to Localization_Original_Backup.txt
+# Asylum Legendary Weapons - Forged in the depths of madness
+# "Where sanity ends, legendary power begins"
+SMAAutumnsCall,Items,Weapons,,,"Crimson Eclipse"
+SMAAutumnsCallDesc,Items,Weapons,,,"Crimson Eclipse was crafted by an ancient sorcerer whose final spell etched a rune of immense power into the blade.\nThe rune’s crimson glow is said to herald the fall of those who dare to cross its path, eclipsing their fate in shadows.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMABrasswindBlade,Items,Weapons,,,"Brasswind Blade"
+SMABrasswindBladeDesc,Items,Weapons,,,"Brasswind Blade was once the favored weapon of a legendary airship captain, renowned for its lightning-fast strikes.\nNow, it commands the wind with each swing, guiding its wielder through the storm of battle.\n\n\n\nScales with Electrocutioner.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMASerpentsEdge,Items,Weapons,,,"Serpent's Edge"
+SMASerpentsEdgeDesc,Items,Weapons,,,"Serpent's Edge glows with a sinister light, said to be the venomous essence of a long-extinct serpent.\nIts blade strikes with the silent precision of a serpent's bite, leaving no trace but the glow of its fatal mark.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAMjölnirsEcho,Items,Weapons,,,"Mjölnir's Echo"
+SMAMjölnirsEchoDesc,Items,Weapons,,,"Mjölnir's Echo is adorned with intricate gold carvings, echoing the grandeur of forgotten deities.\nWhen wielded, it strikes with a thunderous force, sending shockwaves that resound like the roar of ancient storms.\n\n\n\nScales with Skull Crusher.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAAbyssalReach,Items,Weapons,,,"Abyssal Reach"
+SMAAbyssalReachDesc,Items,Weapons,,,"Abyssal Reach boasts a pink crystal embedded in a handle that appears petrified by ancient magic.\nThe spear’s eerie glow and unyielding grip channel the dark energy of the abyss, piercing through shadows with chilling precision.\n\n\n\nScales with Javelin Master.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAWhisperingDeath,Items,Weapons,,,"Runescar Blade"
+SMAWhisperingDeathDesc,Items,Weapons,,,"Runescar Blade gleams with a polished silver surface, its intricate engravings etched deeply into the metal.\nThe knife's precise edge uncovers hidden paths and truths, revealing secrets that lie just beneath the surface with each cut.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMARadiance,Items,Weapons,,,"Radiance"
+SMARadianceDesc,Items,Weapons,,,"Radiance is a formidable club carried by paladins, its solid form etched with intricate symbols of faith.\nThough it lacks a mystical glow, its strikes are infused with divine strength, bringing clarity and justice to every battle.\n\n\n\nScales with Pummel Pete.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAGrimVortex,Items,Weapons,,,"Grim Vortex"
+SMAGrimVortexDesc,Items,Weapons,,,"Grim Vortex is a fearsome scythe with a curved blade that seems to pull shadows into its wake.\nEach swing creates a swirling maelstrom of darkness, drawing in and dispelling the spirits of those who fall before it.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMACrimsonWrath,Items,Weapons,,,"Crimson Wrath"
+SMACrimsonWrathDesc,Items,Weapons,,,"Crimson Wrath is a dark red sword, its blade marked with the deep stains of countless battles.\nWith each swing, its menacing edge delivers swift, relentless vengeance, leaving only echoes of its wrathful fury.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAStoneboundHammer,Items,Weapons,,,"Stonebound Hammer"
+SMAStoneboundHammerDesc,Items,Weapons,,,"Stonebound Hammer is a sturdy one-handed weapon forged from solid rock, its weight and durability unmatched.\nEvery blow it delivers resonates with the power of the earth itself, breaking barriers and fortifying the wielder's resolve.\n\n\n\nScales with Pummel Pete.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAClockworkReaver,Items,Weapons,,,"Clockwork Reaver"
+SMAClockworkReaverDesc,Items,Weapons,,,"Clockwork Reaver is a versatile sword-baton with intricate, mechanized gears that hum softly as it moves.\nEach swing combines precision engineering with devastating impact, its clockwork design ensuring both elegance and efficiency in combat.\n\n\n\nScales with Electrocutioner.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAReapersMaul,Items,Weapons,,,"Reaper's Maul"
+SMAReapersMaulDesc,Items,Weapons,,,"Reaper's Maul is a fearsome two-handed warhammer adorned with menacing skulls on each side.\nWhen swung, it delivers crushing blows imbued with the dread of those who have fallen before it, each impact echoing the grim reaper's call.\n\n\n\nScales with Skull Crusher.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMADrakesFang,Items,Weapons,,,"Glyphbound Dagger"
+SMADrakesFangDesc,Items,Weapons,,,"Glyphbound Dagger features intricate engravings that tell the tale of ancient magic and forgotten lore.\nEach cut it makes is guided by the runes etched into its blade, unlocking hidden powers and revealing secrets long buried in shadow.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMAIronwyrm,Items,Weapons,,,"Ironwyrm"
+SMAIronwyrmDesc,Items,Weapons,,,"Forged from dragon bone and adorned with golden wings, Ironwyrm is a paladin's weapon of divine might.\nIt channels holy power to vanquish evil but tests its wielder's purity, as only the righteous can resist its dark whispers.\n\n\n\nScales with Javelin Master.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMALWDragonFist,Items,Weapons,,,"Drakefang Gauntlets"
+SMALWDragonFistDesc,Items,Weapons,,,"The Drakefang Gauntlet was forged from the fangs of a vanquished dragon lord, imbuing its wearer with the beast's fiery rage and unmatched strength.\n\n\n\nScales with Brawler.\n\n\n\nUses legendary repair kits to repair."
+
+SMABeonKnife,Items,Weapons,,,"Beon Knife"
+SMABeonKnifeDesc,Items,Weapons,,,"The Beon Knife, forged from a rare blue crystal found deep within the frozen caverns of the Aelorian Mountains, is said to hold the soul of a fallen star. Its ethereal glow not only cuts through flesh but also severs the threads of fate, making it a weapon feared by both mortal and immortal alike.\n\n\n\nScales with Deep Cuts.\n\n\n\n\nUses legendary repair kits to repair."
+
+SMASpearNew,Items,Weapons,,,"Valkyria's Dawn"
+SMASpearNewDesc,Items,Weapons,,,"This legendary weapon is said to glow with the radiant pink light of the first morning after a great battle, symbolizing both the end of darkness and the power of rebirth.\n\n\n\nScales with Javelin Master.\n\n\n\nUses legendary repair kits to repair."
+
+SMAThunderBreaker,Items,Weapons,,,"Thunder Breaker"
+SMAThunderBreakerDesc,Items,Weapons,,,"Thunder Breaker, the war hammer forged in the heart of a storm by the gods themselves, channels the fury of lightning with every strike. It is said that a single blow can shatter mountains and summon tempests, leaving only thunderous echoes in its wake.\n\n\n\nScales with Skull Crusher.\n\n\n\nUses legendary repair kits to repair."
+
+SMATwoHandedKatana,Items,Weapons,,,"Scarlet Requiem"
+SMATwoHandedKatanaDesc,Items,Weapons,,,"This fabled blade is said to sing a haunting, silent song of vengeance with every strike, its red light marking the final moments of those who fall before it.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+SMASpineEdge,Items,Weapons,,,"Spine Edge"
+SMASpineEdgeDesc,Items,Weapons,,,"Spine Edge, a knife forged from the bones of an ancient wyrm, is said to paralyze its victims with a single cut. Infused with dark magic, the blade whispers the last moments of those it has slain, sending shivers down the spines of all who hear its deadly song.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+SMAMace,Items,Weapons,,,"Amethyst Warden"
+SMAMaceDesc,Items,Weapons,,,"This powerful weapon is said to protect its wielder with a mystical aura, while each strike channels the ancient power of the enchanted crystal to shatter both armor and spirit.\n\n\n\nScales with Pummel Pete.\n\n\n\nUses legendary repair kits to repair."
+
+SMAKopesh,Items,Weapons,,,"Sunfire Crescent"
+SMAKopeshDesc,Items,Weapons,,,"This radiant weapon is said to carry the heat of a thousand suns, scorching enemies with every arc and leaving trails of molten light in its wake.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+SMACarapaceClub,Items,Weapons,,,"Exoskeletal Sunderer"
+SMACarapaceClubDesc,Items,Weapons,,,"This brutal weapon is crafted from the indestructible shells of ancient beasts, its hardened surface capable of crushing stone and bone alike with the force of nature's wrath.\n\n\n\nScales with Pummel Pete.\n\n\n\nUses legendary repair kits to repair."
+
+LWHornyBat,Items,Weapons,,,"Horny Bat"
+LWHornyBatDesc,Items,Weapons,,,"Bonk the Heretics!\n\n\n\nScales with Electrocutioner.\n\n\n\nUses legendary repair kits to repair."
+
+LWWakizashi,Items,Weapons,,,"Fallen Blossom"
+LWWakizashiDesc,Items,Weapons,,,"Fallen Blossom was forged from the steel of a shattered katana, its blade engraved with a sakura tree to honor a warrior's final battle under cherry blossoms.\nLegend says that each cut made by the wakizashi carries the weight of those fallen petals, striking with both beauty and sorrow.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWFantasySword2,Items,Weapons,,,"Nightfall"
+LWFantasySword2Desc,Items,Weapons,,,"Nightfall, a blade forged from the darkest iron, absorbs the last light of day with each sunset, growing sharper as night descends.\nLegends say that in the hands of its master, the sword can slice through shadows themselves, making its wielder nearly invisible under the cover of darkness.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWOneHanded,Items,Weapons,,,"Copperstrike"
+LWOneHandedDesc,Items,Weapons,,,"Copperstrike, forged from an ancient, mysterious bronze, gleams with an otherworldly light that pulses with each swing.\nLegends claim that its edge can cut through both steel and shadow, and that its bronze hue shifts with the changing tides of fate, reflecting the destiny of its wielder.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWIceSword,Items,Weapons,,,"Crystalbane"
+LWIceSwordDesc,Items,Weapons,,,"Crystalbane, forged from the heart of a frozen glacier, gleams with a cold, crystalline light that never fades.\nLegends say it can shatter even the strongest of icebound defenses and that its blade channels the raw power of winter, freezing anything it touches with an unforgiving chill.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWFantasySword,Items,Weapons,,,"Blazing Dawn"
+LWFantasySwordDesc,Items,Weapons,,,"Blazing Dawn, with its blade etched in fiery orange runes, is said to harness the first light of every sunrise, igniting with a searing brilliance at dawn.\nLegends tell of its power to cut through darkness and shadow, burning with an unquenchable fire that pierces both armor and spirit alike.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWMoltenGreatSword,Items,Weapons,,,"Molten Greatsword"
+LWMoltenGreatSwordDesc,Items,Weapons,,,"Molten Greatsword, forged in the heart of an active volcano, radiates with the intense heat of molten lava flowing through its blade.\nAncient tales speak of its ability to sear through the toughest defenses and that it blazes with the fury of the earth itself, scorching everything in its path.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWDragonKnife,Items,Weapons,,,"Vermis Blade"
+LWDragonKnifeDesc,Items,Weapons,,,"Vermis Blade, etched with the image of a fearsome dragon coiled around its edge, was forged from a meteorite that fell in a blaze of fire.\nLegends claim that the dragon's engraving imbues the knife with a fiery breath, allowing it to cut through any material as if it were paper and strike fear into the hearts of those who see it.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWNewScythe,Items,Weapons,,,"Gravebane"
+LWNewScytheDesc,Items,Weapons,,,"Gravebane, a scythe adorned with a fearsome skull at its base, was crafted from the bones of ancient, fallen warriors and infused with dark, necromantic energies.\nLegends whisper that it can cut through both the living and the dead, its blade draining the life force of those it touches and ensuring that even the most defiant souls cannot escape their fate.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+HolyScythe,Items,Weapons,,,"Celestial Reaper"
+HolyScytheDesc,Items,Weapons,,,"Celestial Reaper, a scythe imbued with the essence of the heavens, shimmers with a radiant light that cuts through darkness and shadow.\nIt is said that this holy weapon guides the souls of the departed with divine grace, ensuring their passage to the afterlife is both swift and serene.\n\n\n\nScales with Deep Cuts.\n\n\n\nUses legendary repair kits to repair."
+
+LWFangtian,Items,Weapons,,,"Celestial Stinger"
+LWFangtianDesc,Items,Weapons,,,"Celestial Stinger, forged from meteoric iron and imbued with stardust, gleams with a celestial light that pierces the heavens.\nLegends tell that its strikes can channel the power of the stars themselves, allowing its wielder to summon shooting stars and meteoric energy to devastate enemies and protect the innocent.\n\n\n\nScales with Javelin Master.\n\n\n\nUses legendary repair kits to repair."
+
+LWShamanGlaive,Items,Weapons,,,"Shaman Glaive"
+LWShamanGlaiveDesc,Items,Weapons,,,"The Shaman’s Glaive, carved from sacred wood and adorned with ancient runes, channels the primal forces of nature through its elegant, curved blade.\nLegends say that this glaive can summon storms, command the spirits of the wild, and harness the raw power of the earth, making its wielder a formidable conduit between the physical and spiritual realms.\n\n\n\nScales with Javelin Master.\n\n\n\nUses legendary repair kits to repair."
+
+LWNokia,Items,Weapons,,,"Nokia on a Stick"
+LWNokiaDesc,Items,Weapons,,,"The most destructive weapon ever made!\n\n\n\nScales with Pummel Pete.\n\n\n\nUses legendary repair kits to repair."
+
+LWShamanMace,Items,Weapons,,,"Shaman Mace"
+LWShamanMaceDesc,Items,Weapons,,,"The Shaman's Mace, crafted from enchanted stone and bound with ancient vines, pulses with the raw energy of the natural world.\nLegends say that each swing of this mighty weapon channels the spirits of the earth, unleashing tremors that can shatter the ground and summon the fury of the elements.\n\n\n\nScales with Pummel Pete.\n\n\n\nUses legendary repair kits to repair."
+
+LWVolendrung,Items,Weapons,,,"Volendrung"
+LWVolendrungDesc,Items,Weapons,,,"Volendrung, a colossal warhammer forged in the heart of a dying star, radiates with a dark, otherworldly power.\nLegends speak of its ability to crush mountains and break the very fabric of reality, wielding a force so immense that it is said to have reshaped the world in its wake.\n\n\n\nScales with Skull Crusher.\n\n\n\nUses legendary repair kits to repair."
+
+LWDragonSkullAxe,Items,Weapons,,,"Dragonskull Axe"
+LWDragonSkullAxeDesc,Items,Weapons,,,"The Dragonskull Axe, forged from the bones of an ancient drake, is said to carry the fury of the beast it was carved from, making its strikes both swift and relentless.\nWielded by those with the courage to tame its fiery spirit, the axe glows faintly with embers that flare brighter with every kill.\n\n\n\nScales with Deep Cuts & Miner69er.\n\n\n\nUses legendary repair kits to repair."
+
+LWFantasyAxe,Items,Weapons,,,"Emberbane Waraxe"
+LWFantasyAxeDesc,Items,Weapons,,,"The Emberbane Waraxe, forged in the molten heart of a cursed volcano, was designed to extinguish even the fiercest of flames, earning its name from countless battles against fire-wielding foes.\nIts blackened blade hums with a chilling power, snuffing out heat and light with each devastating swing.\n\n\n\nScales with Deep Cuts & Miner69er.\n\n\n\nUses legendary repair kits to repair."
+
+LWFireAxe,Items,Weapons,,,"Molten Waraxe"
+LWFireAxeDesc,Items,Weapons,,,"The Molten Waraxe was forged in the core of an erupting volcano, its blade eternally flowing with fiery magma that sears through armor and bone alike.\nLegends say the axe hungers for battle, growing hotter with every strike, until it ignites the battlefield in a blaze of unstoppable fury.\n\n\n\nScales with Deep Cuts & Miner69er.\n\n\n\nUses legendary repair kits to repair."
+
+LWMaelstromAxe,Items,Weapons,,,"Maelstrom Waraxe"
+LWMaelstromAxeDesc,Items,Weapons,,,"The Maelstrom Waraxe was born from the heart of a raging tempest, its blade crackling with the fury of trapped storms.\nWielders of this weapon command the winds and thunder, each swing unleashing a torrent of destructive force that engulfs enemies like a relentless cyclone.\n\n\n\nScales with Deep Cuts & Miner69er.\n\n\n\nUses legendary repair kits to repair."
+
+LWSylphAxe,Items,Weapons,,,"Slyph Waraxe"
+LWSylphAxeDesc,Items,Weapons,,,"The Sylph Waraxe, adorned with glowing emeralds, is said to be blessed by the wind spirits, allowing its wielder to move with unparalleled speed and grace in battle.\nEach swing of its blade leaves a shimmering trail of green light, as if the very air bends to the axe's will, slicing through enemies with the whisper of a breeze.\n\n\n\nScales with Deep Cuts & Miner69er.\n\n\n\nUses legendary repair kits to repair."
+
+
+LWDragonBow,Items,Weapons,,,"Ryujin's Embrace"
+LWDragonBowDesc,Items,Weapons,,,"Ryujin’s Embrace features a fearsome dragonhead perched at its top, said to channel the ancient power of the dragon god Ryujin himself.\nWhen drawn, the bow unleashes arrows imbued with the essence of storm and flame, each shot carrying the wrath and majesty of the dragon’s fiery breath.\n\n\n\nScales with Archery.\n\n\n\nUses legendary repair kits to repair."
+
+LWEpicBow,Items,Weapons,,,"Nightbloom Bow"
+LWEpicBowDesc,Items,Weapons,,,"The Nightbloom Bow, adorned with shimmering purple runes, draws its power from the essence of moonlit nights and hidden enchantments.\nWhen drawn, it emits a soft, ethereal glow, its arrows streaking through the darkness like ghostly trails, guided by the subtle magic of the night.\n\n\n\nScales with Archery.\n\n\n\nUses legendary repair kits to repair."
+
+LWRustBow,Items,Weapons,,,"Voidshot Longbow"
+LWRustBowDesc,Items,Weapons,,,"The Voidshot Longbow, crafted with darkened, mysterious wood and adorned with shifting obsidian runes, channels the essence of the void itself.\nEach arrow it fires vanishes into a swirling shadow before reappearing with devastating impact, leaving a trail of dark energy in its wake.\n\n\n\nScales with Archery.\n\n\n\nUses legendary repair kits to repair."
+
+
+resourceSMALegendaryRepairKit,Items,Item,,,"Legendary Repair Kit"
+resourceSMALegendaryRepairKitDesc,Items,Item,,,"This repair kit is used to repair various legendary weapons and tools."
+
+
+
+decoSMALWDrakefangShield,Blocks,Block,,,"Drakefang Gauntlet & Bloodveil Shield Pedestal"
+decoSMALWDrakefangShieldDesc,Blocks,Block,,,"A pedestal with the Drakefang Gauntlet & Bloodveil Shield on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWPedestalBlank,Blocks,Block,,,"Empty Pedestal"
+decoSMALWPedestalBlankDesc,Blocks,Block,,,"An empty pedestal... maybe I can combine this with something?"
+
+decoSMALWKatana,Blocks,Block,,,"Crimson Eclipse Pedestal"
+decoSMALWKatanaDesc,Blocks,Block,,,"A pedestal with the Crimson Blade on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWSerpentsEdge,Blocks,Block,,,"Serpent's Edge Pedestal"
+decoSMALWSerpentsEdgeDesc,Blocks,Block,,,"A pedestal with the Serpent's Edge on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWBrassWindBlade,Blocks,Block,,,"Brasswind Blade Pedestal"
+decoSMALWBrassWindBladeDesc,Blocks,Block,,,"A pedestal with the Brasswind Blade on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWMjölnirsEcho,Blocks,Block,,,"Mjölnir's Echo Pedestal"
+decoSMALWMjölnirsEchoDesc,Blocks,Block,,,"A pedestal with the Mjölnir's Echo on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWAbyssalReach,Blocks,Block,,,"Abyssal Reach Pedestal"
+decoSMALWAbyssalReachDesc,Blocks,Block,,,"A pedestal with the Abyssal Reach on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWWhisperingDeath,Blocks,Block,,,"Runescar Blade Pedestal"
+decoSMALWWhisperingDeathDesc,Blocks,Block,,,"A pedestal with the Runescar Blade on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWRadiance,Blocks,Block,,,"Radiance Pedestal"
+decoSMALWRadianceDesc,Blocks,Block,,,"A pedestal with the Radiance on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWGrimVortex,Blocks,Block,,,"Grim Vortex Pedestal"
+decoSMALWGrimVortexDesc,Blocks,Block,,,"A pedestal with the Grim Vortex on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWCrimsonWrath,Blocks,Block,,,"Crimson Wrath Pedestal"
+decoSMALWCrimsonWrathDesc,Blocks,Block,,,"A pedestal with the Crimson Wrath on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWStoneboundHammer,Blocks,Block,,,"Stonebound Hammer Pedestal"
+decoSMALWStoneboundHammerDesc,Blocks,Block,,,"A pedestal with the Stonebound Hammer on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWClockworkReaver,Blocks,Block,,,"Clockwork Reaver Pedestal"
+decoSMALWClockworkReaverDesc,Blocks,Block,,,"A pedestal with the Clockwork Reaver on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWReapersMaul,Blocks,Block,,,"Reaper's Maul Pedestal"
+decoSMALWReapersMaulDesc,Blocks,Block,,,"A pedestal with the Reaper's Maul on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWDrakesFang,Blocks,Block,,,"Glyphbound Dagger Pedestal"
+decoSMALWDrakesFangDesc,Blocks,Block,,,"A pedestal with the Glyphbound Dagger on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+decoSMALWIronwyrm,Blocks,Block,,,"Ironwyrm Pedestal"
+decoSMALWIronwyrmDesc,Blocks,Block,,,"A pedestal with the Ironwyrm on it.\n\n\n\n\n\n\n\n\n\n\nAttention:\nUncrafting will result in your weapon's rarity dropping down to 1!"
+
+
+decoLWMallfaka,Blocks,Block,,,"Mallfaka Picture Frame"
+decoLWMallfakaDesc,Blocks,Block,,,"Look at my big, glowing sword!"
+
+decoLWSteen,Blocks,Block,,,"Steeniemo Picture Frame"
+decoLWSteenDesc,Blocks,Block,,,"And I'm freeeee...free falling!"
+
+decoLWWorm,Blocks,Block,,,"Worm Guy Picture Frame"
+decoLWWormDesc,Blocks,Block,,,"But hey, he got a showel atleast..which he didn't find himself."
+
+decoLWWorm2,Blocks,Block,,,"Worm Guy Picture Frame 2"
+decoLWWorm2Desc,Blocks,Block,,,"Unlucky."
