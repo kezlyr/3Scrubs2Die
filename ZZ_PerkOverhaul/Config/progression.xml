@@ -2090,30 +2090,7 @@
     <setattribute xpath="/progression/perks/perk[@name='perkFlurryOfPerception']" name="override_cost">1,1,1,1,1,2,2,2,3,3</setattribute>
 	<setattribute xpath="/progression/perks/perk[@name='perkFlurryOfPerception']" name="max_level">10</setattribute>
 
-	<append xpath="/progression/perks/perk[@name='perkFlurryOfPerception']">
-    <effect_group>
-		<requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="GTE" value="1"/>
-        <requirement name="HoldingItemHasTags" tags="SpearMaxRangeBW"/>
-        <requirement name="IsAlive" target="other"/>
-        <requirement name="EntityTagCompare" target="other" tags="zombie,animal"/>
-        
-        <passive_effect name="EntityDamage" operation="base_add" level="1,10" value="150,1500" tags="SpearMaxRangeBW"/>
-        
-        </effect_group>
-
-    <effect_group>
-		<requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="GTE" value="1"/>
-        <requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="LTE" value="5"/>
-        <requirement name="TargetRange" target="other" operation="GTE" value="2.7"/>
-        <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" level="1,5" value="10,30"/>
-        <passive_effect name="EntityDamage" operation="base_add" value="1" tags="SpearMaxRangeBW"/> </effect_group>
-
-    <effect_group>
-        <requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="GTE" value="6"/>
-        <requirement name="TargetRange" target="other" operation="GTE" value="4.0"/>
-        <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" level="6,10" value="35,55"/>
-        <passive_effect name="EntityDamage" operation="base_add" value="1" tags="SpearMaxRangeBW"/> </effect_group>
-
+	<set xpath="/progression/perks/perk[@name='perkFlurryOfPerception']/effect_group[last()]">
 		<effect_description level="1" desc_base="Speed +10%, Tip Chance 10%" long_desc_key="Flurry 1: +10% Spear speed and range. 10% chance for +150 dmg at tip range."/>
 		<effect_description level="2" desc_base="Speed +15%, Tip Chance 15%" long_desc_key="Flurry 2: +15% Spear speed and range. 15% chance for +300 dmg at tip range."/>
 		<effect_description level="3" desc_base="Speed +21%, Tip Chance 20%" long_desc_key="Flurry 3: +21% Spear speed and range. 20% chance for +450 dmg at tip range."/>
@@ -2124,9 +2101,23 @@
 		<effect_description level="8" desc_base="Speed +48%, Tip Chance 45%" long_desc_key="Flurry 8: +48% Spear speed and range. 45% chance for +1200 dmg at tip range."/>
 		<effect_description level="9" desc_base="Speed +54%, Tip Chance 50%" long_desc_key="Flurry 9: +54% Spear speed and range. 50% chance for +1350 dmg at tip range."/>
 		<effect_description level="10" desc_base="Master: Speed +60%, Tip Chance 55%" long_desc_key="The Point of Impact: +60% Spear speed and range. 55% chance for +1500 dmg when striking at max range (4m)."/>
-	</append>
+	</set>
 
 	<append xpath="/progression/perks/perk[@name='perkFlurryOfPerception']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="SpearMaxRangeBW"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1,5" value="150,750">
+				<requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="LTE" value="5"/>
+				<requirement name="TargetRange" target="other" operation="GTE" value="2.7"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" level="1,5" value="10,30"/>
+			</passive_effect>
+			<passive_effect name="EntityDamage" operation="base_add" level="6,10" value="900,1500">
+				<requirement name="ProgressionLevel" progression_name="perkFlurryOfPerception" operation="GTE" value="6"/>
+				<requirement name="TargetRange" target="other" operation="GTE" value="4.0"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" level="6,10" value="35,55"/>
+			</passive_effect>
+		</effect_group>
+
 		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" /></level_requirements>
 		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="14" /></level_requirements>
 		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="16" /></level_requirements>
@@ -2135,6 +2126,9 @@
 	</append>
 
     <!-- Flurry of Agility -->
+	<setattribute xpath="/progression/perks/perk[@name='perkFlurryOfAgility']" name="override_cost">1,1,1,1,1,2,2,2,3,3</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkFlurryOfAgility']" name="max_level">10</setattribute>
+	
     <set xpath="/progression/perks/perk[@name='perkFlurryOfAgility']/effect_group[1]">
     <passive_effect name="AttacksPerMinute" operation="perc_add" level="1,10" value=".1,.6" tags="perkFlurryOfAgility">
         <requirement name="HoldingItemHasTags" tags="perkFlurryOfAgility"/>

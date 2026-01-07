@@ -1,0 +1,41 @@
+<ZZ_DiskStorage>
+	<!-- Disk Reader UX additions inside the normal looting window:
+	     - 10x7 visible grid (with pagination via the built-in pager)
+	     - search box (only shown for diskReaderContainer)
+	-->
+
+	<!-- Add search + pager controls to the looting header, but only show them for the disk reader -->
+	<append xpath="/windows/window[@name='windowLooting']/panel[@name='header']">
+		<label depth="2" name="zzDiskStorageTitle" pos="39,-6" width="172" height="32" text="{zz_diskstorage_title}" font_size="32" anchor_left="queue,0,39" anchor_right="queue,1,-230" visible="{zz_diskstorage_visible}" />
+		<panel name="zzDiskReaderControls" width="260" height="43" pos="215,0" disableautobackground="true" visible="{zz_diskreader_visible}">
+			<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+			<textfield depth="5" pos="22,-7" width="140" height="30" name="zzDiskSearchInput" focus_on_open="false" search_field="true" close_group_on_tab="true" clear_button="true"/>
+			<button depth="6" name="zzDiskPrevPage" pos="175,-22" pivot="center" style="icon32px, press, hover" sprite="ui_game_symbol_arrow_left" sound="[paging_click]" />
+			<button depth="6" name="zzDiskNextPage" pos="215,-22" pivot="center" style="icon32px, press, hover" sprite="ui_game_symbol_arrow_right" sound="[paging_click]" />
+		</panel>
+	</append>
+	
+	<!-- Add category tabs directly to the window, positioned below the header (which ends at -43) -->
+	<append xpath="/windows/window[@name='windowLooting']">
+		<!-- height 43 to match usual header height style. pos is below header. -->
+		<panel name="zzDiskReaderTabs" width="220" height="43" pos="39,-46" disableautobackground="true" visible="{zz_diskreader_visible}" depth="100">
+			<button depth="101" name="zzDiskCatAll" pos="0,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_shopping_cart" tooltip="All" sound="[paging_click]" />
+			<button depth="101" name="zzDiskCatWeapons" pos="35,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_knife" tooltip="Weapons/Ammo" sound="[paging_click]" />
+			<button depth="101" name="zzDiskCatTools" pos="70,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_tool" tooltip="Tools" sound="[paging_click]" />
+			<button depth="101" name="zzDiskCatArmor" pos="105,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_armor_iron" tooltip="Armor/Clothing" sound="[paging_click]" />
+			<button depth="101" name="zzDiskCatFood" pos="140,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_medical" tooltip="Food/Medical" sound="[paging_click]" />
+			<button depth="101" name="zzDiskCatResources" pos="175,-22" width="30" height="30" pivot="center" style="icon30px, press, hover" sprite="ui_game_symbol_resource" tooltip="Resources" sound="[paging_click]" />
+		</panel>
+	</append>
+
+	<!-- Clean up header for DiskStorage containers: hide the vanilla icon and label -->
+	<setattribute xpath="/windows/window[@name='windowLooting']/panel[@name='header']/sprite[@name='windowIcon']" name="visible">{zz_diskstorage_vanilla_header_visible}</setattribute>
+	<setattribute xpath="/windows/window[@name='windowLooting']/panel[@name='header']/label[@name='lootName']" name="visible">{zz_diskstorage_vanilla_header_visible}</setattribute>
+
+	<!-- Increase looting window height only for the disk reader so the 8x10 grid is actually visible -->
+	<setattribute xpath="/windows/window[@name='windowLooting']" name="height">{zz_diskreader_window_height}</setattribute>
+
+	<!-- XUi does not reliably support bindings for grid rows/cols. Use literals to guarantee the grid renders. -->
+	<setattribute xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']" name="rows">10</setattribute>
+	<setattribute xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']" name="cols">8</setattribute>
+</ZZ_DiskStorage>

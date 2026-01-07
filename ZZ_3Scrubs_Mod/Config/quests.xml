@@ -1,0 +1,515 @@
+<configs>
+
+<!-- Set Quest Tiers to 10.	For faster or slower progression adjust quests_per_tier value -->
+	<set xpath="/quests/@max_quest_tier">10</set>
+	
+<!-- Quests Required Per Tier -->
+	<set xpath="/quests/@quests_per_tier">5</set>
+
+<!-- Skip Intro Quest (other part in dialogs) -->
+	<remove xpath="/quests/quest_list[starts-with(@id,'trader_') and (contains(@id,'_quests'))]/quest[@id='intro_buried_supplies']"/>
+
+<!-- Restore-Power Quest allowed hours -->
+	<set xpath="/quests/quest[@id='tier2_restore_power']/objective[@type='RallyPoint']/property[@name='allowed_start_hour']/@value">22</set>
+	<set xpath="/quests/quest[@id='tier2_restore_power']/objective[@type='RallyPoint']/property[@name='allowed_end_hour']/@value">4</set>
+
+<!-- Add new quest types -->
+	<insertAfter xpath="/quests/quest[@id='tier6_clear_infested']">
+		<quest id="tier2_clear_superinfested">
+			<property name="name_key" value="quest_tier2_superinfested_clear" param1="name"/>
+			<property name="subtitle_key" value="quest_superinfestation_subtitle"/>
+			<property name="description_key" value="quest_tier2_superinfested_clear_offer"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_tier2_superinfested_clear_offer" param1="offer"/>
+			<property name="difficulty_tier" value="2" param1="difficulty"/>
+			<property name="statement_key" value="quest_infestation_statement"/>
+			<property name="response_key" value="quest_superinfestation_response1" param1="response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="infested" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="spawn_multiplier" value="3" param1="spawn_multiplier"/>
+			<property name="gamestage_mod" value=".8" param1="gamestage_mod"/>
+			<property name="gamestage_bonus" value="30" param1="gamestage_bonus"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_clear_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+				<property name="poi_tier" value="1" param1="poi_tier"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<action type="UnlockPOI">
+				<property name="phase" value="4"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="10000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="2"/>
+		</quest>
+		<quest id="tier3_clear_superinfested" template="tier2_clear_superinfested">
+			<variable name="name" value="quest_tier3_superinfested_clear"/>
+			<variable name="offer" value="quest_tier3_superinfested_clear_offer"/>
+			<variable name="difficulty" value="4"/>
+			<variable name="response" value="quest_superinfestation_response2"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="2"/>
+			<variable name="spawn_multiplier" value="3"/>
+			<variable name="gamestage_mod" value=".8"/>
+			<variable name="gamestage_bonus" value="30"/>
+			<reward type="Exp" value="14000"/>
+			<reward type="Item" id="casinoCoin" value="3500"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier4_clear_superinfested" template="tier2_clear_superinfested">
+			<variable name="name" value="quest_tier4_superinfested_clear"/>
+			<variable name="offer" value="quest_tier4_superinfested_clear_offer"/>
+			<variable name="difficulty" value="6"/>
+			<variable name="response" value="quest_superinfestation_response3"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="3"/>
+			<variable name="spawn_multiplier" value="3"/>
+			<variable name="gamestage_mod" value=".8"/>
+			<variable name="gamestage_bonus" value="30"/>
+			<reward type="Exp" value="17500"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier5_clear_superinfested" template="tier2_clear_superinfested">
+			<variable name="name" value="quest_tier5_superinfested_clear"/>
+			<variable name="offer" value="quest_tier5_superinfested_clear_offer"/>
+			<variable name="difficulty" value="8"/>
+			<variable name="response" value="quest_superinfestation_response4"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="4"/>
+			<variable name="spawn_multiplier" value="3"/>
+			<variable name="gamestage_mod" value=".8"/>
+			<variable name="gamestage_bonus" value="30"/>
+			<reward type="Exp" value="20000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier6_clear_superinfested" template="tier2_clear_superinfested">
+			<variable name="name" value="quest_tier6_superinfested_clear"/>
+			<variable name="offer" value="quest_tier5_superinfested_clear_offer"/>
+			<variable name="difficulty" value="10"/>
+			<variable name="response" value="quest_superinfestation_response5"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="4"/>
+			<variable name="spawn_multiplier" value="3"/>
+			<variable name="gamestage_mod" value=".8"/>
+			<variable name="gamestage_bonus" value="30"/>
+			<reward type="Exp" value="30000"/>
+			<reward type="Item" id="casinoCoin" value="10000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<!-- *** Ultra Infested Quests -->
+		<quest id="tier2_clear_ultrainfested">
+			<property name="name_key" value="quest_tier2_ultrainfested_clear" param1="name"/>
+			<property name="subtitle_key" value="quest_ultrainfestation_subtitle"/>
+			<property name="description_key" value="quest_tier2_ultrainfested_clear_offer"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_tier2_ultrainfested_clear_offer" param1="offer"/>
+			<property name="difficulty_tier" value="2" param1="difficulty"/>
+			<property name="statement_key" value="quest_infestation_statement"/>
+			<property name="response_key" value="quest_ultrainfestation_response1" param1="response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="infested" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="spawn_multiplier" value="4" param1="spawn_multiplier"/>
+			<property name="gamestage_mod" value="1" param1="gamestage_mod"/>
+			<property name="gamestage_bonus" value="50" param1="gamestage_bonus"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_clear_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+				<property name="poi_tier" value="1" param1="poi_tier"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<action type="UnlockPOI">
+				<property name="phase" value="4"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="15000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="2"/>
+		</quest>
+		<quest id="tier3_clear_ultrainfested" template="tier2_clear_ultrainfested">
+			<variable name="name" value="quest_tier3_ultrainfested_clear"/>
+			<variable name="offer" value="quest_tier3_ultrainfested_clear_offer"/>
+			<variable name="difficulty" value="4"/>
+			<variable name="response" value="quest_ultrainfestation_response2"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="2"/>
+			<variable name="spawn_multiplier" value="4"/>
+			<variable name="gamestage_mod" value="1"/>
+			<variable name="gamestage_bonus" value="50"/>
+			<reward type="Exp" value="20000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier4_clear_ultrainfested" template="tier2_clear_ultrainfested">
+			<variable name="name" value="quest_tier4_ultrainfested_clear"/>
+			<variable name="offer" value="quest_tier4_ultrainfested_clear_offer"/>
+			<variable name="difficulty" value="6"/>
+			<variable name="response" value="quest_ultrainfestation_response3"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="3"/>
+			<variable name="spawn_multiplier" value="4"/>
+			<variable name="gamestage_mod" value="1"/>
+			<variable name="gamestage_bonus" value="50"/>
+			<reward type="Exp" value="30000"/>
+			<reward type="Item" id="casinoCoin" value="7000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier5_clear_ultrainfested" template="tier5_clear_ultrainfested">
+			<variable name="name" value="quest_tier5_ultrainfested_clear"/>
+			<variable name="offer" value="quest_tier5_ultrainfested_clear_offer"/>
+			<variable name="difficulty" value="8"/>
+			<variable name="response" value="quest_ultrainfestation_response4"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="4"/>
+			<variable name="spawn_multiplier" value="4"/>
+			<variable name="gamestage_mod" value="1"/>
+			<variable name="gamestage_bonus" value="50"/>
+			<reward type="Exp" value="40000"/>
+			<reward type="Item" id="casinoCoin" value="10000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier6_clear_ultrainfested" template="tier2_clear_ultrainfested">
+			<variable name="name" value="quest_tier6_ultrainfested_clear"/>
+			<variable name="offer" value="quest_tier5_ultrainfested_clear_offer"/>
+			<variable name="difficulty" value="10"/>
+			<variable name="response" value="quest_ultrainfestation_response5"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="5"/>
+			<variable name="spawn_multiplier" value="4"/>
+			<variable name="gamestage_mod" value="1"/>
+			<variable name="gamestage_bonus" value="50"/>
+			<reward type="Exp" value="60000"/>
+			<reward type="Item" id="casinoCoin" value="15000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<!-- *** Nightmare QUESTS -->
+		<quest id="tier2_clear_nightmare">
+			<property name="name_key" value="quest_tier2_nightmare_clear" param1="name"/>
+			<property name="subtitle_key" value="quest_nightmare_subtitle"/>
+			<property name="description_key" value="quest_tier1_nightmare_clear_offer"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_tier2_nightmare_clear_offer" param1="offer"/>
+			<property name="difficulty_tier" value="6" param1="difficulty"/>
+			<property name="statement_key" value="quest_infestation_statement"/>
+			<property name="response_key" value="quest_nightmare_response1" param1="response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="infested" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="spawn_multiplier" value="12" param1="spawn_multiplier"/>
+			<property name="gamestage_mod" value="2" param1="gamestage_mod"/>
+			<property name="gamestage_bonus" value="100" param1="gamestage_bonus"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_clear_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+				<property name="poi_tier" value="1" param1="poi_tier"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<action type="UnlockPOI">
+				<property name="phase" value="4"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="20000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="3"/>
+		</quest>
+		<quest id="tier3_clear_nightmare" template="tier2_clear_nightmare">
+			<variable name="name" value="quest_tier3_nightmare_clear"/>
+			<variable name="offer" value="quest_tier3_nightmare_clear_offer"/>
+			<variable name="difficulty" value="7"/>
+			<variable name="response" value="quest_nightmare_response2"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="2"/>
+			<variable name="spawn_multiplier" value="10"/>
+			<variable name="gamestage_mod" value="2"/>
+			<variable name="gamestage_bonus" value="100"/>
+			<reward type="Exp" value="30000"/>
+			<reward type="Item" id="casinoCoin" value="7000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier4_clear_nightmare" template="tier2_clear_nightmare">
+			<variable name="name" value="quest_tier4_nightmare_clear"/>
+			<variable name="offer" value="quest_tier4_nightmare_clear_offer"/>
+			<variable name="difficulty" value="8"/>
+			<variable name="response" value="quest_nightmare_response3"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="3"/>
+			<variable name="spawn_multiplier" value="9"/>
+			<variable name="gamestage_mod" value="2"/>
+			<variable name="gamestage_bonus" value="100"/>
+			<reward type="Exp" value="50000"/>
+			<reward type="Item" id="casinoCoin" value="10000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier5_clear_nightmare" template="tier2_clear_nightmare">
+			<variable name="name" value="quest_tier5_nightmare_clear"/>
+			<variable name="offer" value="quest_tier5_nightmare_clear_offer"/>
+			<variable name="difficulty" value="9"/>
+			<variable name="response" value="quest_nightmare_response4"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="4"/>
+			<variable name="spawn_multiplier" value="8"/>
+			<variable name="gamestage_mod" value="2"/>
+			<variable name="gamestage_bonus" value="100"/>
+			<reward type="Exp" value="75000"/>
+			<reward type="Item" id="casinoCoin" value="15000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier6_clear_nightmare" template="tier2_clear_nightmare">
+			<variable name="name" value="quest_tier6_nightmare_clear"/>
+			<variable name="offer" value="quest_tier5_nightmare_clear_offer"/>
+			<variable name="difficulty" value="10"/>
+			<variable name="response" value="quest_nightmare_response5"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="5"/>
+			<variable name="spawn_multiplier" value="7"/>
+			<variable name="gamestage_mod" value="2"/>
+			<variable name="gamestage_bonus" value="100"/>
+			<reward type="Exp" value="100000"/>
+			<reward type="Item" id="casinoCoin" value="20000"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSteel01" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+	</insertAfter>
+
+<!-- Add the new quests to the existing quest lists (use this method so it is compatible with QuestBalancer mod) -->
+	<insertAfter xpath="/quests/quest_list[@id='trader_rekt_quests' or @id='trader_jen_quests' or @id='trader_bob_quests' or @id='trader_hugh_quests' or @id='trader_joel_quests']/quest[@id='tier6_clear_infested']">
+		<quest id="tier2_clear_superinfested"/>
+		<quest id="tier2_clear_ultrainfested"/>
+		<quest id="tier2_clear_nightmare"/>
+		<quest id="tier3_clear_superinfested"/>
+		<quest id="tier3_clear_ultrainfested"/>
+		<quest id="tier3_clear_nightmare"/>
+		<quest id="tier4_clear_superinfested"/>
+		<quest id="tier4_clear_ultrainfested"/>
+		<quest id="tier4_clear_nightmare"/>
+		<quest id="tier5_clear_superinfested"/>
+		<quest id="tier5_clear_ultrainfested"/>
+		<quest id="tier5_clear_nightmare"/>
+		<quest id="tier6_clear_superinfested"/>
+		<quest id="tier6_clear_ultrainfested"/>
+		<quest id="tier6_clear_nightmare"/>
+	</insertAfter>
+
+	<!-- change existing quest reward list -->
+	<set xpath="/quests/quest_tier_rewards/quest_tier_reward[@tier='4']/reward/@id">quest_tier2complete</set>
+	<set xpath="/quests/quest_tier_rewards/quest_tier_reward[@tier='5']/reward/@id">quest_tier3complete</set>
+	<set xpath="/quests/quest_tier_rewards/quest_tier_reward[@tier='6']/reward/@id">quest_tier3complete</set>
+	<set xpath="/quests/quest_tier_rewards/quest_tier_reward[@tier='7']/reward/@id">quest_tier4complete</set>
+	<!-- add updated reward tiers -->
+	<insertAfter xpath="/quests/quest_tier_rewards/quest_tier_reward[@tier='7']">
+		<quest_tier_reward tier="8">
+			<reward type="Quest" id="quest_tier4complete"/>
+		</quest_tier_reward>
+		<quest_tier_reward tier="9">
+			<reward type="Quest" id="quest_tier5complete"/>
+		</quest_tier_reward>
+		<quest_tier_reward tier="10">
+			<reward type="Quest" id="quest_tier5complete"/>
+		</quest_tier_reward>
+		<quest_tier_reward tier="11">
+			<reward type="Quest" id="quest_tier6complete"/>
+		</quest_tier_reward>
+	</insertAfter>
+
+<!-- Vanilla Quest Progression: by vanilla default spawn_multiplier=2, gamestage_mod=.6, and gamestage_bonus=30; these all increase -->
+	<set xpath="/quests/quest[@id='tier2_clear_infested']/property[@name='spawn_multiplier']/@value">2</set>
+	<set xpath="/quests/quest[@id='tier2_clear_infested']/property[@name='gamestage_mod']/@value">.6</set>
+	<set xpath="/quests/quest[@id='tier2_clear_infested']/property[@name='gamestage_bonus']/@value">45</set>
+
+	<set xpath="/quests/quest[@id='tier3_clear_infested']/variable[@name='spawn_multiplier']/@value">3</set>
+	<set xpath="/quests/quest[@id='tier3_clear_infested']/variable[@name='gamestage_mod']/@value">.7</set>
+	<set xpath="/quests/quest[@id='tier3_clear_infested']/variable[@name='gamestage_bonus']/@value">60</set>
+		
+	<set xpath="/quests/quest[@id='tier4_clear_infested']/variable[@name='spawn_multiplier']/@value">4</set>
+	<set xpath="/quests/quest[@id='tier4_clear_infested']/variable[@name='gamestage_mod']/@value">.8</set>
+	<set xpath="/quests/quest[@id='tier4_clear_infested']/variable[@name='gamestage_bonus']/@value">75</set>
+		
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='spawn_multiplier']/@value">5</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_mod']/@value">.9</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_bonus']/@value">90</set>
+		
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='spawn_multiplier']/@value">6</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_bonus']/@value">120</set>
+
+<!-- Balance vanilla tier6 with these new quests since T6 only has one vanilla quest (if adding other quest mods that add tier6 quests then this patch probably wont be necessary and can be commented out) -->
+	<insertAfter xpath="/quests/quest_list[@id='trader_rekt_quests' or @id='trader_jen_quests' or @id='trader_bob_quests' or @id='trader_hugh_quests' or @id='trader_joel_quests']/quest[@id='tier6_clear_infested']">
+		<quest id="tier6_clear_infested"/>
+		<quest id="tier6_clear_infested"/>
+	</insertAfter>
+
+</configs>

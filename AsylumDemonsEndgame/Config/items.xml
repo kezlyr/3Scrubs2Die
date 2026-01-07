@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+  <!-- *** ASYLUM HIGHDEMON CUSTOM HAND ITEMS *** -->
+  
+  <!-- Uber Highdemon Claws Hand Item -->
+  <!-- Custom hand item for endgame uber demons with devastating effects -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumUberHighdemon">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="25"/>
+        <property name="DamageBlock" value="25"/>
+        <property name="Range" value="2.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumUberHighdemon" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <!-- Highdemon claws cause devastating laceration and infection -->
+        <!-- High laceration chance (50%) with critical effects -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryBleedingTwo,buffInfectionCatch,buffInjuryStunned01,buffPainkillerWithdrawal">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="50"/>
+        </triggered_effect>
+        <!-- Additional critical hit chance (30%) for knockdown -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryKnockdown01,buffInjuryKnockdown02">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="30"/>
+        </triggered_effect>
+        <!-- Rare devastating combo (10%) - multiple severe effects -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryBleedingBarbedWire,buffInfectionCatch,buffInjuryStunned02,buffInjuryKnockdown02">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="10"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- Uber Fatdemon Claws Hand Item -->
+  <!-- Custom hand item for endgame uber fat demons with crushing effects -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumUberFatdemon">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="30"/>
+        <property name="DamageBlock" value="30"/>
+        <property name="Range" value="2.8"/>
+      </property>
+      <effect_group name="meleeHandAsylumUberFatdemon" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <!-- Fatdemon claws cause crushing and bone-breaking effects -->
+        <!-- High crushing chance (60%) with devastating effects -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryKnockdown02,buffInjuryStunned02,buffInjuryBleedingTwo,buffBrokenLeg">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="60"/>
+        </triggered_effect>
+        <!-- Additional bone breaking chance (40%) for limb damage -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffBrokenLeg,buffInjuryArm,buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="40"/>
+        </triggered_effect>
+        <!-- Rare devastating slam (15%) - multiple severe crushing effects -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryKnockdown02,buffInjuryStunned02,buffBrokenLeg,buffInjuryArm,buffInjuryBleedingBarbedWire">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="15"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- Archdemon Hand Item - Supreme demonic devastation -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumUberArchdemon">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="38"/>
+        <property name="DamageBlock" value="38"/>
+        <property name="Range" value="3.2"/>
+      </property>
+      <effect_group name="meleeHandAsylumUberArchdemon" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+        <!-- Archdemon claws cause supreme devastation and multiple debuffs -->
+        <!-- Overwhelming devastation chance (70%) with multiple severe effects -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryKnockdown02,buffInjuryStunned02,buffInjuryBleedingBarbedWire,buffBrokenLeg,buffInjuryArm">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="70"/>
+        </triggered_effect>
+        <!-- Additional crippling chance (50%) for severe limb damage -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffBrokenLeg,buffInjuryArm,buffInjuryKnockdown02,buffInjuryStunned01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="50"/>
+        </triggered_effect>
+        <!-- Rare apocalyptic strike (20%) - devastating multi-effect assault -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+          buff="buffInjuryKnockdown02,buffInjuryStunned02,buffBrokenLeg,buffInjuryArm,buffInjuryBleedingBarbedWire,buffInfectionCatch">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- *** ENDGAME DEMON HAND ITEMS - COLOR-BASED SYSTEM *** -->
+
+  <!-- ========================================================================
+       UNIVERSAL VOID HAND ITEM
+       Used by: All Void demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumVoidAffliction (Dark + Distortion + void damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumVoid">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumVoid" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Void Reality Tear - Distorts reality in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Distortion" intensity="1" fade="5"/>
+
+        <!-- Void particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_electric_shock" parent_transform="Spine1"/>
+
+        <!-- Apply Void Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumVoidAffliction"/>
+
+        <!-- Void explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL OMEGA HAND ITEM
+       Used by: All Omega demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumOmegaAffliction (Blur + FadeToBlack + divine damage + delayed flash)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumOmega">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumOmega" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Divine Radiance - Blinds targets in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Blur" intensity="0.5" fade="3"/>
+
+        <!-- Divine particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_electric_shock" parent_transform="Spine1"/>
+
+        <!-- Apply Omega Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumOmegaAffliction"/>
+
+        <!-- Divine explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL CHAOS HAND ITEM
+       Used by: All Chaos demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumChaosAffliction (Drunk + Trippy + random damage + 15% ragdoll)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumChaos">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumChaos" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Chaos Madness - Disorients targets in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Trippy" intensity="0.3" fade="4"/>
+
+        <!-- Chaos particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_electric_shock" parent_transform="Spine1"/>
+
+        <!-- Apply Chaos Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumChaosAffliction"/>
+
+        <!-- Chaos explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL NIGHTMARE HAND ITEM
+       Used by: All Nightmare demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumNightmareAffliction (FadeToBlack + Dark + terror damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumNightmare">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumNightmare" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Nightmare Terror - Darkness spreads in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Dark" intensity="0.5" fade="5"/>
+
+        <!-- Apply Nightmare Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumNightmareAffliction"/>
+
+        <!-- Nightmare explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL ABYSSAL HAND ITEM
+       Used by: All Abyssal demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumAbyssalAffliction (Dark MAX + Distortion + crushing damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumAbyssal">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumAbyssal" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Abyssal Void - Maximum darkness in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Dark" intensity="0.8" fade="6"/>
+
+        <!-- Abyssal particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_electric_shock" parent_transform="Spine1"/>
+
+        <!-- Apply Abyssal Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumAbyssalAffliction"/>
+
+        <!-- Abyssal explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL TRANSCENDENT HAND ITEM
+       Used by: All Transcendent demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumTranscendentAffliction (Trippy + Distortion + reality damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumTranscendent">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumTranscendent" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Transcendent Reality Warp - Distorts reality in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Trippy" intensity="0.6" fade="4"/>
+
+        <!-- Transcendent particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_electric_shock" parent_transform="Spine1"/>
+
+        <!-- Apply Transcendent Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumTranscendentAffliction"/>
+
+        <!-- Transcendent explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL VOLCANIC HAND ITEM
+       Used by: All Volcanic demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+       Effect: Applies buffAsylumVolcanicAffliction (Hot3 + p_onFire + burning damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumVolcanic">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumVolcanic" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Volcanic Heat Wave - Heat distortion in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Hot3" intensity="0.5" fade="3"/>
+
+        <!-- Volcanic particle effect on primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AttachParticleEffectToEntity"
+          target="other" particle="p_onFire" parent_transform="Spine1"/>
+
+        <!-- Apply Volcanic Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumVolcanicAffliction"/>
+
+        <!-- Volcanic explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- ========================================================================
+       UNIVERSAL RADIATED HAND ITEM
+       Used by: All Radiated demons (if implemented)
+       Effect: Applies buffAsylumRadiatedAffliction (Radiation + Greyscale + toxic damage)
+       ======================================================================== -->
+  <append xpath="/items">
+    <item name="meleeHandAsylumRadiated">
+      <property name="Extends" value="meleeHandZombieStrong"/>
+      <property name="CreativeMode" value="None"/>
+      <property class="Action0">
+        <property name="DamageEntity" value="75"/>
+        <property name="DamageBlock" value="1000"/>
+        <property name="Range" value="3.5"/>
+      </property>
+      <effect_group name="meleeHandAsylumRadiated" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+        <!-- Radiated Contamination - Radiation spreads in 15-block radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyScreenEffect"
+          target="otherAOE" range="15" effect_name="Radiation" intensity="0.5" fade="4"/>
+
+        <!-- Apply Radiated Affliction buff to primary target -->
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff"
+          target="other" buff="buffAsylumRadiatedAffliction"/>
+
+        <!-- Radiated explosion damage in radius -->
+        <triggered_effect trigger="onSelfAttackedOther" action="Explode"
+          blast_power="0" entity_damage="100" entity_radius="15" damage_type="Special"/>
+      </effect_group>
+    </item>
+  </append>
+
+</configs>

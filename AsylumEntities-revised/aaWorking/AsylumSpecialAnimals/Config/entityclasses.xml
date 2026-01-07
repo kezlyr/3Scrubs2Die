@@ -1,0 +1,672 @@
+<config>
+  <append xpath="/entity_classes">
+    <entity_class name="asylumCrocodile" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="dwMonsterBody"/>
+      <property name="Mass" value="800"/>
+      <property name="Mesh" value="#@modfolder:Resources/AsylumAnimals.unity3d?crocodile"/>
+      <property name="SizeScale" value="0.8"/>
+      <property name="Weight" value="900"/>
+      <property name="RagdollOnDeathChance" value="0"/>
+      <property name="LookAtAngle" value="0"/>
+      <property name="SoundRandom" value="Animals/Bear/bearroam"/>
+      <property name="SoundAlert" value="Animals/Bear/bearalert"/>
+      <property name="SoundAttack" value="Animals/Bear/bearattack"/>
+      <property name="SoundDeath" value="Animals/Bear/beardeath"/>
+      <property name="SoundHurt" value="Animals/Bear/bearpain"/>
+      <property name="SoundSense" value="Animals/Bear/bearsense"/>
+      <property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
+      
+      <!-- Optimized Detection Settings for Ambush Predator -->
+      <property name="MaxViewAngle" value="160"/>
+      <property name="SightRange" value="22"/>
+      <property name="SightLightThreshold" value="-8,100"/>
+      <property name="AIFeralSense" value="1.3"/>
+      <property name="AISeeOffset" value=".5"/>
+
+      <!-- Optimized AI Tasks - Pure Melee Combat -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+      
+      <!-- Optimized AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,18,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+      
+      <!-- Combat Stats -->
+      <property name="PainResistPerHit" value="1"/>
+      <property name="ExperienceGain" value="1800"/>
+      <property name="DeadBodyHitPoints" value="900"/>
+      <property name="MoveSpeed" value="0.4"/>
+      <property name="MoveSpeedAggro" value="1.6, 1.8"/>
+      <property name="MoveSpeedPanic" value="1.9"/>
+      <property name="HandItem" value="meleeHandAsylumCrocodile"/>
+      <property name="NavObject" value="animaltracking_boar,clear_sleeper"/>
+      
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.7"/>
+      
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" tag="allToolsHarvest" count="25"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="70"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="18"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="15"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="30"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="10"/>
+      <drop event="Harvest" name="foodRawMeat" tag="WasteTreasuresCompleteHarvest" count="2"/>
+      <drop event="Harvest" name="resourceLeather" tag="WasteTreasuresCompleteHarvest" count="2"/>
+      <drop event="Harvest" name="resourceBone" tag="WasteTreasuresCompleteHarvest" count="2"/>
+      
+      <!-- Balanced Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="2400"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.10"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="30" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="90" tags="buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurningElement"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="50" tags="buffRadiationPool"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.25"/>
+        <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleedingTwo">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="45"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInfectionCatch">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="30"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryStunned01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
+        </triggered_effect>
+      </effect_group>
+    </entity_class>
+
+    <!-- *** ASYLUM ELEPHANT *** -->
+    <entity_class name="Asylumanimalelephant" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="elephantBody"/>
+      <property name="Mass" value="2500"/>
+      <property name="SizeScale" value="1.0"/>
+      <property name="Weight" value="2500"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumelephant.unity3d?elephant"/>
+
+      <!-- Enhanced Detection - Massive Creature -->
+      <property name="SightRange" value="30"/>
+      <property name="MaxViewAngle" value="180"/>
+      <property name="SightLightThreshold" value="-2,120"/>
+      <property name="AIFeralSense" value="1.4"/>
+      <property name="AISeeOffset" value=".8"/>
+      <property name="LookAtAngle" value="0"/>
+
+      <!-- Sound Configuration -->
+      <property name="SoundRandom" value="bearroam"/>
+      <property name="SoundAlert" value="bearalert"/>
+      <property name="SoundHurt" value="bearpain"/>
+      <property name="SoundDeath" value="beardeath"/>
+      <property name="SoundAttack" value="bearattack"/>
+      <property name="SoundSense" value="bearsense"/>
+      <property name="SoundGiveUp" value="beargiveup"/>
+      <property name="SoundStepType" value="animalhvystep"/>
+
+      <!-- Pure Melee AI Tasks - Tank Behavior -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+
+      <!-- Enhanced AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,30,25,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+
+      <!-- Combat Stats - Tank -->
+      <property name="PainResistPerHit" value="1"/>
+      <property name="ExperienceGain" value="3000"/>
+      <property name="DeadBodyHitPoints" value="1200"/>
+      <property name="MoveSpeed" value="0.3"/>
+      <property name="MoveSpeedAggro" value="1.8, 2.2"/>
+      <property name="MoveSpeedPanic" value="2.0"/>
+      <property name="HandItem" value="meleeHandAsylumElephant"/>
+      <property name="NavObject" value="animaltracking_bear,clear_sleeper"/>
+
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.8"/>
+
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="90"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="25"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="40"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="20"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="20"/>
+
+      <!-- Tank Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="4400"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.15"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.40"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="30" tags="buffInjuryKnockdown01,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="50" tags="buffBurningEnvironment,buffBurningElement,buffBurningFlamingArrow,buffBurningMolotov"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="25" tags="buffRadiationPool"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- *** ASYLUM HIPPO *** -->
+    <entity_class name="Asylumanimalhippo" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="hippoBody"/>
+      <property name="Mass" value="2000"/>
+      <property name="SizeScale" value="1.1"/>
+      <property name="Weight" value="2000"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumhippo.unity3d?hippo"/>
+
+      <!-- Amphibious Detection -->
+      <property name="SightRange" value="28"/>
+      <property name="MaxViewAngle" value="190"/>
+      <property name="SightLightThreshold" value="-3,110"/>
+      <property name="AIFeralSense" value="1.3"/>
+      <property name="LookAtAngle" value="0"/>
+
+      <!-- Sound Configuration -->
+      <property name="SoundRandom" value="bearroam"/>
+      <property name="SoundAlert" value="bearalert"/>
+      <property name="SoundHurt" value="bearpain"/>
+      <property name="SoundDeath" value="beardeath"/>
+      <property name="SoundAttack" value="bearattack"/>
+      <property name="SoundSense" value="bearsense"/>
+      <property name="SoundGiveUp" value="beargiveup"/>
+      <property name="SoundStepType" value="animalhvystep"/>
+
+      <!-- Aggressive Melee AI Tasks -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+
+      <!-- Aggressive AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,28,23,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+
+      <!-- Combat Stats - Aggressive Bruiser -->
+      <property name="PainResistPerHit" value="1"/>
+      <property name="ExperienceGain" value="2200"/>
+      <property name="DeadBodyHitPoints" value="1000"/>
+      <property name="MoveSpeed" value="0.35"/>
+      <property name="MoveSpeedAggro" value="2.0, 2.4"/>
+      <property name="MoveSpeedPanic" value="2.1"/>
+      <property name="SwimSpeed" value="1.8"/>
+      <property name="SwimStrokeRate" value="1.4,1.6"/>
+      <property name="HandItem" value="meleeHandAsylumHippo"/>
+      <property name="NavObject" value="animaltracking_bear,clear_sleeper"/>
+
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.75"/>
+
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="80"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="22"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="35"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="18"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="18"/>
+
+      <!-- Bruiser Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="3600"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.12"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.35"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="12"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="25" tags="buffInjuryKnockdown01,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="40" tags="buffBurningEnvironment,buffBurningElement"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="15" tags="buffRadiationPool"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- *** ASYLUM LION - APEX PREDATOR *** -->
+    <entity_class name="Asylumanimallion" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="lionBody"/>
+      <property name="Mass" value="2200"/>
+      <property name="SizeScale" value="1.15"/>
+      <property name="Weight" value="2200"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumlion.unity3d?lion"/>
+      <property name="AISeeOffset" value=".9"/>
+      <property name="LookAtAngle" value="0"/>
+
+      <!-- Apex Predator Detection -->
+      <property name="SightRange" value="32"/>
+      <property name="MaxViewAngle" value="210"/>
+      <property name="SightLightThreshold" value="-2,150"/>
+      <property name="AIFeralSense" value="3"/>
+
+      <!-- Sound Configuration -->
+      <property name="SoundRandom" value="bearroam"/>
+      <property name="SoundAlert" value="bearalert"/>
+      <property name="SoundHurt" value="bearpain"/>
+      <property name="SoundDeath" value="beardeath"/>
+      <property name="SoundAttack" value="bearattack"/>
+      <property name="SoundSense" value="bearsense"/>
+      <property name="SoundGiveUp" value="beargiveup"/>
+      <property name="SoundStepType" value="animalhvystep"/>
+
+      <!-- Apex Predator AI Tasks -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+
+      <!-- Apex AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,32,28,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+
+      <!-- Combat Stats - Apex Predator -->
+      <property name="PainResistPerHit" value="0.9"/>
+      <property name="ExperienceGain" value="2500"/>
+      <property name="DeadBodyHitPoints" value="1200"/>
+      <property name="MoveSpeed" value="0.45"/>
+      <property name="MoveSpeedAggro" value="2.2, 2.6"/>
+      <property name="MoveSpeedPanic" value="2.4"/>
+      <property name="SwimSpeed" value="1.6"/>
+      <property name="SwimStrokeRate" value="1.2,1.4"/>
+      <property name="HandItem" value="meleeHandAsylumLion"/>
+      <property name="NavObject" value="animaltracking_bear,clear_sleeper"/>
+
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.8"/>
+
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="95"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="28"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="45"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="22"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="22"/>
+
+      <!-- Apex Predator Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="4400"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.15"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.45"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="18"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="35" tags="buffInjuryKnockdown01,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="40" tags="buffBurningEnvironment,buffBurningElement"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="35" tags="buffRadiationPool"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- Asylum Lioness - Female Apex Predator -->
+    <entity_class name="Asylumanimallioness" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="lionessBody"/>
+      <property name="Mass" value="2000"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumlioness.unity3d?lioness"/>
+      <property name="SizeScale" value="1.1"/>
+      <property name="Weight" value="1800"/>
+      <property name="RagdollOnDeathChance" value="0"/>
+      <property name="LookAtAngle" value="0"/>
+      <property name="SoundRandom" value="Animals/Bear/bearroam"/>
+      <property name="SoundAlert" value="Animals/Bear/bearalert"/>
+      <property name="SoundAttack" value="Animals/Bear/bearattack"/>
+      <property name="SoundDeath" value="Animals/Bear/beardeath"/>
+      <property name="SoundHurt" value="Animals/Bear/bearpain"/>
+      <property name="SoundSense" value="Animals/Bear/bearsense"/>
+      <property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
+
+      <!-- Enhanced Detection Settings for Female Hunter -->
+      <property name="MaxViewAngle" value="220"/>
+      <property name="SightRange" value="34"/>
+      <property name="SightLightThreshold" value="-10,100"/>
+      <property name="AIFeralSense" value="3.2"/>
+      <property name="AISeeOffset" value=".9"/>
+
+      <!-- Optimized AI Tasks - Pack Hunter -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+
+      <!-- Enhanced Turning Speed -->
+      <property name="MaxTurnSpeed" value="340"/>
+
+      <!-- Female Apex AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,34,30,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+
+      <!-- Combat Stats - Female Apex Predator -->
+      <property name="PainResistPerHit" value="0.85"/>
+      <property name="ExperienceGain" value="2300"/>
+      <property name="DeadBodyHitPoints" value="1100"/>
+      <property name="MoveSpeed" value="0.5"/>
+      <property name="MoveSpeedAggro" value="2.4, 2.8"/>
+      <property name="MoveSpeedPanic" value="2.6"/>
+      <property name="SwimSpeed" value="1.8"/>
+      <property name="SwimStrokeRate" value="1.3,1.5"/>
+      <property name="HandItem" value="meleeHandAsylumLioness"/>
+      <property name="NavObject" value="animaltracking_bear,clear_sleeper"/>
+
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.85"/>
+
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="90"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="26"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="42"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="20"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="20"/>
+
+      <!-- Female Apex Predator Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="4200"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.12"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.42"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="16"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="32" tags="buffInjuryKnockdown01,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="38" tags="buffBurningEnvironment,buffBurningElement"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="32" tags="buffRadiationPool"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- *** ASYLUM RHINO - ARMORED CHARGER *** -->
+    <entity_class name="Asylumrhino" extends="animalTemplateHostile">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zombie,hostile"/>
+      <property name="EntityFlags" value="animal,zombie"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+      <property name="IsEntityAnimal" value="true"/>
+      <property name="IsEnemyEntity" value="true"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="PhysicsBody" value="rhinoBody"/>
+      <property name="Mass" value="2800"/>
+      <property name="SizeScale" value="1.2"/>
+      <property name="Weight" value="2800"/>
+      <property name="Mesh" value="#@modfolder:Resources/AsylumRhino.unity3d?rhino"/>
+      <property name="AISeeOffset" value="1.0"/>
+      <property name="LookAtAngle" value="0"/>
+
+      <!-- Armored Charger Detection -->
+      <property name="SightRange" value="26"/>
+      <property name="MaxViewAngle" value="160"/>
+      <property name="SightLightThreshold" value="-5,100"/>
+      <property name="AIFeralSense" value="1.8"/>
+
+      <!-- Sound Configuration -->
+      <property name="SoundRandom" value="bearroam"/>
+      <property name="SoundAlert" value="bearalert"/>
+      <property name="SoundHurt" value="bearpain"/>
+      <property name="SoundDeath" value="beardeath"/>
+      <property name="SoundAttack" value="bearattack"/>
+      <property name="SoundSense" value="bearsense"/>
+      <property name="SoundGiveUp" value="beargiveup"/>
+      <property name="SoundStepType" value="animalhvystep"/>
+
+      <!-- Charging AI Tasks -->
+      <property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40"/>
+      <property name="AITask-2" value="BreakBlock"/>
+      <property name="AITask-3" value="Territorial"/>
+      <property name="AITask-4" value="ApproachDistraction"/>
+      <property name="AITask-5" value="ApproachSpot"/>
+      <property name="AITask-6" value="Look"/>
+      <property name="AITask-7" value="Wander"/>
+      <property name="AITask-8" value=""/>
+      <property name="AITask-9" value=""/>
+
+      <!-- Charging AI Targeting -->
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,26,22,EntityBandit,0,-8,EntityAnimalStag,0,0"/>
+      <property name="AITarget-4" value=""/>
+
+      <!-- Combat Stats - Armored Charger -->
+      <property name="PainResistPerHit" value="1.2"/>
+      <property name="ExperienceGain" value="2800"/>
+      <property name="DeadBodyHitPoints" value="1400"/>
+      <property name="MoveSpeed" value="0.25"/>
+      <property name="MoveSpeedAggro" value="2.8, 3.2"/>
+      <property name="MoveSpeedPanic" value="2.9"/>
+      <property name="HandItem" value="meleeHandAsylumRhino"/>
+      <property name="NavObject" value="animaltracking_bear,clear_sleeper"/>
+
+      <!-- Loot Configuration -->
+      <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+      <property name="LootDropProb" value="0.9"/>
+
+      <!-- Harvest Drops -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="100"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="30"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="50"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="25"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="25"/>
+
+      <!-- Armored Charger Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="5000"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="0.18"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.50"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="50" tags="buffInjuryKnockdown01,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="60" tags="buffBurningEnvironment,buffBurningElement"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="40" tags="buffRadiationPool"/>
+
+        <!-- Charging Attack Effects -->
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="35"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryStunned01">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="25"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleedingTwo">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="40"/>
+        </triggered_effect>
+      </effect_group>
+    </entity_class>
+
+    <!-- *** ASYLUM ZEBRA - PASSIVE PLAINS RUNNER *** -->
+    <entity_class name="Asylumzebra" extends="animalTemplateTimid">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,animal,zebra,perkAT02,perkAT03,perkAT04,perkAT05"/>
+      <property name="EntityFlags" value="animal,edible"/>
+      <property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
+      <property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
+      <property name="IsAnimalEntity" value="true"/>
+      <property name="IsEnemyEntity" value="false"/>
+      <property name="Prefab" value="NPC"/>
+      <property name="Parent" value="Animals"/>
+      <property name="Faction" value="animals"/>
+      <property name="AvatarController" value="AvatarAnimalController"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="HasRagdoll" value="false"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="RootMotion" value="true"/>
+      <property name="RotateToGround" value="true"/>
+      <property name="PhysicsBody" value="zebraBody"/>
+      <property name="Mass" value="220"/>
+      <property name="Weight" value="85"/>
+      <property name="Mesh" value="#@modfolder:Resources/AsylumZebra.unity3d?zebra"/>
+      <property name="AISeeOffset" value="0.6"/>
+      <property name="LookAtAngle" value="50"/>
+
+      <!-- Plains Runner Detection -->
+      <property name="SightRange" value="42"/>
+      <property name="MaxViewAngle" value="220"/>
+      <property name="SightLightThreshold" value="-2,150"/>
+      <property name="SleeperNoiseToSense" value="3,8"/>
+      <property name="SleeperNoiseToWake" value="9,12"/>
+
+      <!-- Sound Configuration -->
+      <property name="SoundHurt" value="stagpain"/>
+      <property name="SoundDeath" value="stagdeath"/>
+      <property name="SoundStepType" value="animalhoofstep"/>
+      <property name="SurfaceCategory" value="organic"/>
+      <property name="ParticleOnDeath" value="blood_death"/>
+
+      <!-- Passive AI Tasks - Vanilla Pattern -->
+      <property name="AITask-1" value="RunawayWhenHurt"/>
+      <property name="AITask-2" value="RunawayFromEntity" data="class=EntityPlayer,EntityZombie,EntityEnemyAnimal;safeDistance=25"/>
+      <property name="AITask-3" value="Look"/>
+      <property name="AITask-4" value="Wander"/>
+
+      <!-- Movement Stats - Fast Plains Runner -->
+      <property name="PainResistPerHit" value="0.8"/>
+      <property name="MaxTurnSpeed" value="280"/>
+      <property name="MoveSpeed" value="0.8"/>
+      <property name="MoveSpeedPanic" value="2.2"/>
+      <property name="JumpDelay" value="0.1"/>
+      <property name="SwimSpeed" value="1.4"/>
+      <property name="SwimStrokeRate" value="1.6,1.7"/>
+      <property name="CanClimbLadders" value="false"/>
+      <property name="AIPathCostScale" value="100,100"/>
+
+      <!-- Experience and Loot -->
+      <property name="ExperienceGain" value="280"/>
+      <property name="TimeStayAfterDeath" value="300"/>
+      <property name="DeadBodyHitPoints" value="400"/>
+      <property name="NavObject" value="animaltracking_stag"/>
+
+      <!-- Harvest Drops - Medium Herbivore -->
+      <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="35"/>
+      <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
+      <drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
+      <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="28"/>
+      <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="8"/>
+
+      <!-- Plains Runner Effects -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="240"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="-0.15,0.20"/>
+        <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal"/>
+        <passive_effect name="BuffResistance" operation="base_set" value="8" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+      </effect_group>
+    </entity_class>
+
+
+
+
+
+
+
+
+
+  </append>
+</config>

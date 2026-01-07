@@ -1,0 +1,137 @@
+<config>
+
+<append xpath="/Sounds">
+
+<SoundDataNode name="zombieSnore"> <AudioSource name="@:Sounds/Prefabs/AudioSource_CreatureSenseAlert.prefab"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep1.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep2.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep3.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep4.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep5.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep6.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Common/sleeperbacktosleep7.wav"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="0.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+	
+	<SoundDataNode name="hulkroamLow"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Acid_Puking_Hulk/hulkroam1.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Acid_Puking_Hulk/hulkroam2.wav"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Acid_Puking_Hulk/hulkroam3.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.65"/>
+	<HighestPitch name="0.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+
+<SoundDataNode name="screamerStun"> <AudioSource name="@:Sounds/Prefabs/AudioSource_ScreamerAlert.prefab"/>
+	<AudioClip ClipName="@:Sounds/Enemies/Scout_Zombie/zombiefemalescoutalert3.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.65"/>
+	<HighestPitch name="0.75"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="3"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+
+<SoundDataNode name="VolRandom"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+	<AudioClip ClipName="@:Sounds/Animals/Vulture/vulturevomitwarning.wav"/>
+	<AudioClip ClipName="@:Sounds/Animals/Bear/bear_footstep1.wav"/>
+	<AudioClip ClipName="@:Sounds/Animals/Bear/bear_footstep2.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+<!--<SoundDataNode name="Grumm0"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Player.prefab"/>
+	<AudioClip ClipName="@:Sounds/Ambient_Loops/a_radiated_kill_lp.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="5"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.10"/>
+	<HighestPitch name="0.11"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="3"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+</SoundDataNode> -->
+
+<SoundDataNode name="Zroar"> <AudioSource name="@:Sounds/Prefabs/AudioSource_HandTool.prefab"/>
+	<AudioClip ClipName="@:Sounds/Animals/Vulture/vulturevomitattack.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.8"/> 
+</SoundDataNode>
+
+<SoundDataNode name="Zscream"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Pain.prefab"/>
+	<AudioClip ClipName="@:Sounds/Animals/Vulture/vulturevomitwarning.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+	
+<SoundDataNode name="1911_Pistol_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/PistolSounds.unity3d?1911_shot_1"/>
+<!--	<AudioClip ClipName="#@modfolder:Resources/PistolSounds.unity3d?1911_shot"/> -->
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="6"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="GS_Pistol_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/PistolSounds.unity3d?GS_Shot_1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="Jericho_Pistol_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/PistolSounds.unity3d?Jericho_Shot_1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="Thompson_SMG_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/SMGSounds.unity3d?Thompson_Fire_1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="EVO3_SMG_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/SMGSounds.unity3d?EVO3_Fire_3"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="Saiga12_Shotgun_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/ShotgunSounds.unity3d?Shotgun_Fire_1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="Trenchgun_Shotgun_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/ShotgunSounds.unity3d?Shotgun_Fire_3"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="AR15_Rifle_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/ARSounds.unity3d?AR_Fire_4"/>
+	<AudioClip ClipName="#@modfolder:Resources/ARSounds.unity3d?AR_Fire_5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ARSounds.unity3d?AR_Fire_6"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="M4A1_Rifle_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/ARSounds.unity3d?M4_Fire_1"/>
+	<AudioClip ClipName="#@modfolder:Resources/ARSounds.unity3d?M4_Fire_2"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="Bolt_Sniper_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/SniperSounds.unity3d?Sniper_Fire_3"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+	<SoundDataNode name="SaintEdge_Sniper_Fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/SniperSounds.unity3d?Sniper_Fire_1"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+
+</append>
+
+</config>

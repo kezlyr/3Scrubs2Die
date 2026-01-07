@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/lootcontainers">
+		<lootcontainer id="800" name="LxSChest" count="0" size="11,11" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+		<item name="cobweb" count="1,2"/>
+		</lootcontainer>
+	</append>
+</configs>

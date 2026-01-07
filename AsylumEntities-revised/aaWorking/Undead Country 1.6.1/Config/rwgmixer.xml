@@ -1,0 +1,67 @@
+<Config>
+
+<set xpath="/rwgmixer/township[@name='forest_countrytown']/property[@name='outskirt_district']/@value">rural</set>
+
+<!--<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='count']/@value">0, 0, 0</set>
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='tiles']/@value">5, 5</set>
+
+<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='count']/@value">0, 0, 0</set>
+<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='tiles']/@value">6, 6</set>
+
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='count']/@value">0, 0, 0</set>
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='tiles']/@value">7, 8</set>
+
+<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='count']/@value">0, 0, 0</set>
+<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='tiles']/@value">7, 8</set>-->
+
+
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='count']/@value">1, 2, 2</set>
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='tiles']/@value">5, 5</set>
+
+<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='count']/@value">1, 2, 2</set>
+<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='tiles']/@value">6, 6</set>
+
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='count']/@value">1, 2, 2</set>
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='tiles']/@value">7, 8</set>
+
+<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='count']/@value">1, 2, 2</set>
+<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='tiles']/@value">7, 8</set>
+
+
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='citybig']/property[@name='count']/@value">1, 2, 2</set>
+
+<set xpath="/rwgmixer/world[@name='small']/property[@class='citybig']/property[@name='count']/@value">1, 2, 2</set>
+
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='citybig']/property[@name='count']/@value">1, 2, 2</set>
+
+<set xpath="/rwgmixer/world[@name='large']/property[@class='citybig']/property[@name='count']/@value">2, 2, 3</set>
+
+
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='city']/property[@name='count']/@value">2, 3, 4</set>
+
+<set xpath="/rwgmixer/world[@name='small']/property[@class='city']/property[@name='count']/@value">2, 3, 4</set>
+
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='city']/property[@name='count']/@value">3, 4, 4</set>
+
+<set xpath="/rwgmixer/world[@name='large']/property[@class='city']/property[@name='count']/@value">3, 4, 4</set>
+
+
+<set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_city']/property[@name='count']/@value">2, 3, 4</set>
+
+<set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_city']/property[@name='count']/@value">2, 3, 4</set>
+
+<set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_city']/property[@name='count']/@value">3, 4, 4</set>
+
+<set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_city']/property[@name='count']/@value">3, 4, 4</set>
+
+
+
+<set xpath="/rwgmixer/township[@name='countrytown']/property[@name='biomes']/@value">desert</set>
+<set xpath="/rwgmixer/township[@name='oldwest']/property[@name='biomes']/@value">burntforest,wasteland,desert</set>
+
+<set xpath="/rwgmixer/township[@name='wasteland_city']/property[@name='biomes']/@value">burntforest,wasteland,desert,snow</set>
+<set xpath="/rwgmixer/township[@name='city']/property[@name='biomes']/@value">burntforest,wasteland,forest,desert,snow</set>
+<set xpath="/rwgmixer/township[@name='town']/property[@name='biomes']/@value">burntforest,wasteland,forest,desert,snow</set>
+<set xpath="/rwgmixer/township[@name='citybig']/property[@name='biomes']/@value">burntforest,wasteland,desert,snow</set>
+
+</Config>

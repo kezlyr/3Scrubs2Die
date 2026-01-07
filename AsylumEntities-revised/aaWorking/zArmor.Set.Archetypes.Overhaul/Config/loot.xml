@@ -1,0 +1,8 @@
+<ASAO>
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT1']">
+		<item name="modCrossbowTripleshot"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="modCrossbowTripleshotSchematic"/>
+	</append>
+</ASAO> 

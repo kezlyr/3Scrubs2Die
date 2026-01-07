@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/worldglobal">
+    <!-- Cobalt voxel (vendored from AsylumCore) -->
+    <microsplat-voxel name="voxelCobalt0">
+      <texture name="26" weight="1"/>
+    </microsplat-voxel>
+    <!-- Additional ore voxels (vendored from AsylumCore) -->
+    <microsplat-voxel name="voxelQuartz0">
+      <texture name="24" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelBauxite0">
+      <texture name="25" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelCopper0">
+      <texture name="27" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelZinc0">
+      <texture name="28" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelChromite0">
+      <texture name="29" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelLithium0">
+      <texture name="30" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-voxel name="voxelTitanium0">
+      <texture name="31" weight="1"/>
+    </microsplat-voxel>
+    <microsplat-texture name="26">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[2]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[2]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[2]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="24">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[5]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[5]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[5]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="25">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[0]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[0]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[0]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="27">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[3]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[3]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[3]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="28">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[7]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[7]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[7]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="29">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[1]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[1]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[1]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="30">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[4]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[4]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[4]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+    <microsplat-texture name="31">
+      <property name="Diffuse" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_diff_tarray[6]"/>
+      <property name="Normal" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_norm_tarray[6]"/>
+      <property name="Specular" value="#@modfolder:Resources/AsylumMining.unity3d?neffasOreVoxels_shao_tarray[6]"/>
+      <property name="SwitchNormal" value="false"/>
+      <property name="SplatUVScale" value="4,4"/>
+    </microsplat-texture>
+  </append>
+</configs>

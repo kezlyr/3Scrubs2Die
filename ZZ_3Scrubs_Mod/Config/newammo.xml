@@ -1,0 +1,1494 @@
+<!-- ITEMS -->
+<!-- 9mm, 44Magnum, 762mm, Shotgun-->
+<!-- Cobalt = +25% Entity Damage, +10% Shock Chance -->
+<!-- Quartz = +15% Entity Damage, +100% damage with Rend -->
+<!-- Gold = -10% Entity Damage, Heals Ally -->
+<!-- Nickel = -10% Entity Damage, Slow/Small chance to freeze-->
+<!-- Copper = +10% Entity Damage, Chance to replenish ammo-->
+
+
+175
+
+<passive_effect name="EntityDamage" operation="base_set" value="64.9" tags="perkArchery"/>
+
+<!-- Arrows -->
+    <item name="ammoArrowCobalt">
+        <property name="DisplayType" value="ammoArrow"/>
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoArrowCobalt"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".25"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value="1"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+        <property class="Action1">
+            <property name="Gravity" value="-3.5"/>
+        </property>
+
+        <effect_group name="ammoArrowCobalt" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="47.5" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+            <!-- Fully drawn bow shots bypass enemy armor, dealing full damage and deal an extra 25% damage. -->
+            <triggered_effect trigger="onProjectilePreImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="1">
+                <requirement name="ProgressionLevel" progression_name="perkAgilityMastery" operation="Equals" value="5"/>
+                <requirement name="CatapultStrainAmount" operation="GTE" value="1"/>
+            </triggered_effect>
+
+            <passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <passive_effect name="TargetArmor" operation="perc_add" value="-1" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="0"/>
+        </effect_group>
+    </item>
+    <item name="ammoArrowQuartz">
+        <property name="DisplayType" value="ammoArrow"/>
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoArrowQuartz"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".25"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value="1"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+        <property class="Action1">
+            <property name="Gravity" value="-3.5"/>
+        </property>
+
+        <effect_group name="ammoArrowQuartz" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="43.7" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+            <!-- Fully drawn bow shots bypass enemy armor, dealing full damage and deal an extra 25% damage. -->
+            <triggered_effect trigger="onProjectilePreImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="1">
+                <requirement name="ProgressionLevel" progression_name="perkAgilityMastery" operation="Equals" value="5"/>
+                <requirement name="CatapultStrainAmount" operation="GTE" value="1"/>
+            </triggered_effect>
+
+            <passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <passive_effect name="TargetArmor" operation="perc_add" value="-1" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="0"/>
+        </effect_group>
+    </item>
+    <item name="ammoArrowGold">
+        <property name="DisplayType" value="ammoArrow"/>
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoArrowGold"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".25"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value="1"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+        <property class="Action1">
+            <property name="Gravity" value="-3.5"/>
+        </property>
+
+        <effect_group name="ammoArrowGold" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="34.2" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" target="other" stat="Health" operation="add" value="5">
+                <requirement name="EntityTagCompare" target="other" tags="player"/>
+                <requirement name="IsAlly" target="other"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+            <!-- Fully drawn bow shots bypass enemy armor, dealing full damage and deal an extra 25% damage. -->
+            <triggered_effect trigger="onProjectilePreImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="1">
+                <requirement name="ProgressionLevel" progression_name="perkAgilityMastery" operation="Equals" value="5"/>
+                <requirement name="CatapultStrainAmount" operation="GTE" value="1"/>
+            </triggered_effect>
+
+            <passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <passive_effect name="TargetArmor" operation="perc_add" value="-1" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="0"/>
+        </effect_group>
+    </item>
+    <item name="ammoArrowNickel">
+        <property name="DisplayType" value="ammoArrow"/>
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoArrowNickel"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".25"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value="1"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+        <property class="Action1">
+            <property name="Gravity" value="-3.5"/>
+        </property>
+
+        <effect_group name="ammoArrowNickel" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="34.2" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+            <!-- Fully drawn bow shots bypass enemy armor, dealing full damage and deal an extra 25% damage. -->
+            <triggered_effect trigger="onProjectilePreImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="1">
+                <requirement name="ProgressionLevel" progression_name="perkAgilityMastery" operation="Equals" value="5"/>
+                <requirement name="CatapultStrainAmount" operation="GTE" value="1"/>
+            </triggered_effect>
+
+            <passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <passive_effect name="TargetArmor" operation="perc_add" value="-1" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="0"/>
+        </effect_group>
+    </item>
+    <item name="ammoArrowCopper">
+        <property name="DisplayType" value="ammoArrow"/>
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoArrowCopper"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".25"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value="1"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+        <property class="Action1">
+            <property name="Gravity" value="-3.5"/>
+        </property>
+
+        <effect_group name="ammoArrowCopper" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="41.8" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+            <!-- Fully drawn bow shots bypass enemy armor, dealing full damage and deal an extra 25% damage. -->
+            <triggered_effect trigger="onProjectilePreImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="1">
+                <requirement name="ProgressionLevel" progression_name="perkAgilityMastery" operation="Equals" value="5"/>
+                <requirement name="CatapultStrainAmount" operation="GTE" value="1"/>
+            </triggered_effect>
+
+            <passive_effect name="EntityDamage" operation="perc_add" value=".25" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <passive_effect name="TargetArmor" operation="perc_add" value="-1" tags="perkArchery">
+                <requirement name="CVarCompare" cvar="$perkPiercingPrecision" operation="EQ" value="1"/>
+            </passive_effect>
+
+            <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" cvar="$perkPiercingPrecision" operation="set" value="0"/>
+        </effect_group>
+    </item>
+<!-- Bolts -->
+    <item name="ammoBoltCobalt">
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoBoltCobalt"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".13"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value=".75"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+
+        <property class="Action1">
+            <property name="Class" value="Projectile"/>
+            <property name="Explosion.ParticleIndex" value="0"/>
+            <property name="Gravity" value="-2.5"/>
+            <property name="FlyTime" value="0"/>
+            <property name="LifeTime" value="14"/>
+        </property>
+        <property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true"/>
+        </property>
+
+        <effect_group name="ammoBoltCobalt" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="73.75" tags="perkArchery"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.4">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="5"/></passive_effect>
+        </effect_group>
+    </item>
+    <item name="ammoBoltQuartz">
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoBoltQuartz"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".13"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value=".75"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+
+        <property class="Action1">
+            <property name="Class" value="Projectile"/>
+            <property name="Explosion.ParticleIndex" value="0"/>
+            <property name="Gravity" value="-2.5"/>
+            <property name="FlyTime" value="0"/>
+            <property name="LifeTime" value="14"/>
+        </property>
+        <property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true"/>
+        </property>
+
+        <effect_group name="ammoBoltQuartz" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="67.85" tags="perkArchery"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.4">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="5"/></passive_effect>
+        </effect_group>
+    </item>
+    <item name="ammoBoltGold">
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoBoltGold"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".13"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value=".75"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+
+        <property class="Action1">
+            <property name="Class" value="Projectile"/>
+            <property name="Explosion.ParticleIndex" value="0"/>
+            <property name="Gravity" value="-2.5"/>
+            <property name="FlyTime" value="0"/>
+            <property name="LifeTime" value="14"/>
+        </property>
+        <property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true"/>
+        </property>
+
+        <effect_group name="ammoBoltGold" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="53.1" tags="perkArchery"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.4">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="5"/></passive_effect>
+        </effect_group>
+    </item>
+    <item name="ammoBoltNickel">
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoBoltNickel"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".13"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value=".75"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+
+        <property class="Action1">
+            <property name="Class" value="Projectile"/>
+            <property name="Explosion.ParticleIndex" value="0"/>
+            <property name="Gravity" value="-2.5"/>
+            <property name="FlyTime" value="0"/>
+            <property name="LifeTime" value="14"/>
+        </property>
+        <property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true"/>
+        </property>
+
+        <effect_group name="ammoBoltNickel" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="53.1" tags="perkArchery"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.4">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="5"/></passive_effect>
+        </effect_group>
+    </item>
+    <item name="ammoBoltCopper">
+        <property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+        <property name="CustomIcon" value="ammoBoltCopper"/>
+        <property name="DisplayType" value="ammoArrowAP"/>
+        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_ironPrefab.prefab"/>
+        <property name="HoldType" value="45"/>
+        <property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsSticky" value="true"/>
+        <property name="StickyOffset" value=".13"/>
+        <property name="StickyColliderUp" value="2"/>
+        <property name="StickyColliderRadius" value=".05"/>
+        <property name="StickyColliderLength" value=".75"/>
+        <property name="Stacknumber" value="150"/>
+        <property name="EconomicValue" value="25"/>
+        <property name="TraderStageTemplate" value="arrowsTier1"/>
+        <property name="EconomicBundleSize" value="5"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="arrows_grab"/>
+        <property name="SoundPlace" value="arrows_place"/>
+
+        <property class="Action1">
+            <property name="Class" value="Projectile"/>
+            <property name="Explosion.ParticleIndex" value="0"/>
+            <property name="Gravity" value="-2.5"/>
+            <property name="FlyTime" value="0"/>
+            <property name="LifeTime" value="14"/>
+        </property>
+        <property class="Attributes">
+            <property name="GetQualityFromWeapon" value="true"/>
+        </property>
+
+        <effect_group name="ammoBoltCopper" tiered="false">
+            <passive_effect name="EntityDamage" operation="base_set" value="64.9" tags="perkArchery"/>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+            <display_value name="dTargetArmor" value="-.2"/>
+            <passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+            <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+            <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,cloth"/>
+            <passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+            <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+                <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+                <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+            </triggered_effect>
+        </effect_group>
+
+        <effect_group name="perkPenetrator" tiered="false">
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.4">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+            <passive_effect name="TargetArmor" operation="perc_add" value="-.5">
+                <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="5"/></passive_effect>
+        </effect_group>
+    </item>
+
+<!-- 9mm Ammo -->
+    <item name="ammo9mmCobalt">
+        <property name="Tags" value="ammo,ammo9mm"/>
+        <property name="CustomIcon" value="ammo9mmCobalt"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo9mmCobalt" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="45" />
+        <passive_effect name="BlockDamage" operation="base_set" value="6" />
+        <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo9mmQuartz">
+        <property name="Tags" value="ammo,ammo9mm"/>
+        <property name="CustomIcon" value="ammo9mmQuartz"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo9mmQuartz" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="36.8" />
+        <passive_effect name="BlockDamage" operation="base_set" value="6" />
+        <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo9mmGold">
+        <property name="Tags" value="ammo,ammo9mm"/>
+        <property name="CustomIcon" value="ammo9mmGold"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo9mmGold" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="36.8" />
+        <passive_effect name="BlockDamage" operation="base_set" value="6" />
+        <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" target="other" stat="Health" operation="add" value="5">
+            <requirement name="EntityTagCompare" target="other" tags="player"/>
+            <requirement name="IsAlly" target="other"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo9mmNickel">
+        <property name="Tags" value="ammo,ammo9mm"/>
+        <property name="CustomIcon" value="ammo9mmNickel"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo9mmNickel" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="36.8" />
+        <passive_effect name="BlockDamage" operation="base_set" value="6" />
+        <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo9mmCopper">
+        <property name="Tags" value="ammo,ammo9mm"/>
+        <property name="CustomIcon" value="ammo9mmCopper"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo9mmCopper" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="36.8" />
+        <passive_effect name="BlockDamage" operation="base_set" value="6" />
+        <passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+
+<!-- 762mm Ammo -->
+    <item name="ammo762mmCobalt">
+        <property name="Tags" value="ammo,ammo762mm"/>
+        <property name="CustomIcon" value="ammo762mmCobalt"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mcobalt"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo762mmCobalt" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="58.75" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo762mmQuartz">
+        <property name="Tags" value="ammo,ammo762mm"/>
+        <property name="CustomIcon" value="ammo762mmQuartz"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo762mmQuartz" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="54.05" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo762mmGold">
+        <property name="Tags" value="ammo,ammo762mm"/>
+        <property name="CustomIcon" value="ammo762mmGold"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo762mmGold" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="42.3" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" target="other" stat="Health" operation="add" value="5">
+            <requirement name="EntityTagCompare" target="other" tags="player"/>
+            <requirement name="IsAlly" target="other"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo762mmNickel">
+        <property name="Tags" value="ammo,ammo762mm"/>
+        <property name="CustomIcon" value="ammo762mmNickel"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo762mmNickel" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="42.3" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo762mmCopper">
+        <property name="Tags" value="ammo,ammo762mm"/>
+        <property name="CustomIcon" value="ammo762mmCopper"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo762mmCopper" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="51.7" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+
+
+<!-- 44Magnum Ammo -->
+    <item name="ammo44MagnumCobalt">
+        <property name="Tags" value="ammo,ammo44Magnum"/>
+        <property name="CustomIcon" value="ammo44MagnumCobalt"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo44MagnumCobalt" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="87.5" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo44MagnumQuartz">
+        <property name="Tags" value="ammo,ammo44Magnum"/>
+        <property name="CustomIcon" value="ammo44MagnumQuartz"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo44MagnumQuartz" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="80.5" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo44MagnumGold">
+        <property name="Tags" value="ammo,ammo44Magnum"/>
+        <property name="CustomIcon" value="ammo44MagnumGold"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo44MagnumGold" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="63" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" target="other" stat="Health" operation="add" value="5">
+            <requirement name="EntityTagCompare" target="other" tags="player"/>
+            <requirement name="IsAlly" target="other"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo44MagnumNickel">
+        <property name="Tags" value="ammo,ammo44Magnum"/>
+        <property name="CustomIcon" value="ammo44MagnumNickel"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo44MagnumNickel" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="63" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammo44MagnumCopper">
+        <property name="Tags" value="ammo,ammo44Magnum"/>
+        <property name="CustomIcon" value="ammo44MagnumCopper"/>
+        <property name="DisplayType" value="ammoBullet"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="Mbrass"/>
+        <property name="MeltTimePerUnit" value=".4"/>
+        <property name="Stacknumber" value="300"/>
+        <property name="EconomicValue" value="9"/>
+        <property name="TraderStageTemplate" value="ammoTier1"/>
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="SoundPickup" value="bullets_grab"/>
+        <property name="SoundPlace" value="bullets_place"/>
+
+        <effect_group name="ammo44MagnumCopper" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="77" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+
+<!-- Shotgun Ammo -->
+    <item name="ammoShotgunCobalt">
+        <property name="CustomIcon" value="ammoShotgunCobalt"/>
+        <property name="Tags" value="ammo,shotgun,ammoShells"/>
+        <property name="DisplayType" value="ammoShotgunSlug"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="MresourceScrapPolymers"/>
+        <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+        <property name="EconomicValue" value="20"/>
+        <property name="TraderStageTemplate" value="ammoTier2"/><!-- ammoShotgunSlug -->
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="UnlockedBy" value="perkShotgunMessiahSlugs"/> <!-- BOOK_PERK -->
+        <property name="SoundPickup" value="shotgunshells_grab"/>
+        <property name="SoundPlace" value="shotgunshells_place"/>
+
+        <effect_group name="ammoShotgunCobalt" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="218.75" />
+		<passive_effect name="BlockDamage" operation="base_set" value="80" />
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" />
+		<passive_effect name="MaxRange" operation="base_set" value="18" />
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" />
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" />
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" />
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" />
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" />
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" />
+		<display_value name="dTargetPenetration" value="2"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammoShotgunQuartz">
+        <property name="CustomIcon" value="ammoShotgunQuartz"/>
+        <property name="Tags" value="ammo,shotgun,ammoShells"/>
+        <property name="DisplayType" value="ammoShotgunSlug"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="MresourceScrapPolymers"/>
+        <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+        <property name="EconomicValue" value="20"/>
+        <property name="TraderStageTemplate" value="ammoTier2"/><!-- ammoShotgunSlug -->
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="UnlockedBy" value="perkShotgunMessiahSlugs"/> <!-- BOOK_PERK -->
+        <property name="SoundPickup" value="shotgunshells_grab"/>
+        <property name="SoundPlace" value="shotgunshells_place"/>
+
+        <effect_group name="ammoShotgunQuartz" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="201.25" />
+		<passive_effect name="BlockDamage" operation="base_set" value="80" />
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" />
+		<passive_effect name="MaxRange" operation="base_set" value="18" />
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" />
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" />
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" />
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" />
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" />
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" />
+		<display_value name="dTargetPenetration" value="2"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryRend">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammoShotgunGold">
+        <property name="CustomIcon" value="ammoShotgunGold"/>
+        <property name="Tags" value="ammo,shotgun,ammoShells"/>
+        <property name="DisplayType" value="ammoShotgunSlug"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="MresourceScrapPolymers"/>
+        <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+        <property name="EconomicValue" value="20"/>
+        <property name="TraderStageTemplate" value="ammoTier2"/><!-- ammoShotgunSlug -->
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="UnlockedBy" value="perkShotgunMessiahSlugs"/> <!-- BOOK_PERK -->
+        <property name="SoundPickup" value="shotgunshells_grab"/>
+        <property name="SoundPlace" value="shotgunshells_place"/>
+
+        <effect_group name="ammoShotgunGold" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="157.5" />
+		<passive_effect name="BlockDamage" operation="base_set" value="80" />
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" />
+		<passive_effect name="MaxRange" operation="base_set" value="18" />
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" />
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" />
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" />
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" />
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" />
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" />
+		<display_value name="dTargetPenetration" value="2"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" target="other" stat="Health" operation="add" value="5">
+            <requirement name="EntityTagCompare" target="other" tags="player"/>
+            <requirement name="IsAlly" target="other"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammoShotgunNickel">
+        <property name="CustomIcon" value="ammoShotgunNickel"/>
+        <property name="Tags" value="ammo,shotgun,ammoShells"/>
+        <property name="DisplayType" value="ammoShotgunSlug"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="MresourceScrapPolymers"/>
+        <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+        <property name="EconomicValue" value="20"/>
+        <property name="TraderStageTemplate" value="ammoTier2"/><!-- ammoShotgunSlug -->
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="UnlockedBy" value="perkShotgunMessiahSlugs"/> <!-- BOOK_PERK -->
+        <property name="SoundPickup" value="shotgunshells_grab"/>
+        <property name="SoundPlace" value="shotgunshells_place"/>
+
+        <effect_group name="ammoShotgunNickel" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="157.5" />
+		<passive_effect name="BlockDamage" operation="base_set" value="80" />
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" />
+		<passive_effect name="MaxRange" operation="base_set" value="18" />
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" />
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" />
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" />
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" />
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" />
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" />
+		<display_value name="dTargetPenetration" value="2"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelSlow">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryNickelFreeze">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+    <item name="ammoShotgunCopper">
+        <property name="CustomIcon" value="ammoShotgunCopper"/>
+        <property name="Tags" value="ammo,shotgun,ammoShells"/>
+        <property name="DisplayType" value="ammoShotgunSlug"/>
+        <property name="HoldType" value="45"/>
+        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+        <property name="Material" value="MresourceScrapPolymers"/>
+        <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+        <property name="EconomicValue" value="20"/>
+        <property name="TraderStageTemplate" value="ammoTier2"/><!-- ammoShotgunSlug -->
+        <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+        <property name="UnlockedBy" value="perkShotgunMessiahSlugs"/> <!-- BOOK_PERK -->
+        <property name="SoundPickup" value="shotgunshells_grab"/>
+        <property name="SoundPlace" value="shotgunshells_place"/>
+
+        <effect_group name="ammoShotgunCopper" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="192.5" />
+        <passive_effect name="BlockDamage" operation="base_set" value="80" />
+		<passive_effect name="BlockDamage" operation="base_add" value="100" tags="barrelExplosive"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" />
+		<passive_effect name="MaxRange" operation="base_set" value="18" />
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" />
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" />
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" />
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" />
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" />
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" />
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" />
+		<display_value name="dTargetPenetration" value="2"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffAmmoRefundProc">
+            <requirement name="EntityTagCompare" target="other" tags="zombie,animal,enemy"/>
+            <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="33"/>
+        </triggered_effect>
+        </effect_group>
+    </item>
+
+
+<!-- RECIPES -->
+
+<!-- Possible Ideas
+
+“Only on headshots,” “only while airborne,” “only after reloading,” “only if target is above/below X% HP,” etc.
+
+Damage / Combat Tempo
+
+Shatter Round — deals bonus damage to armor; if armor breaks, creates a small frag burst.
+
+Breach Round — ignores a % of cover/obstruction DR; reduced damage if target is fully exposed (anti-cover tech).
+
+Rend — each hit adds a stack; at X stacks, target takes a % max-HP “tear” and stacks reset.
+
+Execution Mark — first hit “marks”; next headshot within N seconds deals a big finisher bonus.
+
+Chain Spark — on hit, arcs to up to 2 nearby enemies for reduced damage (no arc if ally nearby, for positioning).
+
+Overpenetrator — passes through first target; second target takes bonus damage, first takes reduced (skill shot ammo).
+
+Crowd Control / Positioning
+
+Tether Shot — anchors target with a short-range leash (slow + cannot sprint/charge past radius).
+
+Kinetic Knockback — consistent shove; if target hits a wall, they get briefly dazed.
+
+Pinning Round — forces a “stagger” if target is mid-attack or mid-jump (interrupt ammo).
+
+Gravity Well — creates a tiny pull zone on impact for a second (micro-vortex).
+
+Slip Round — applies “slick”: next movement input causes a brief slide and accuracy penalty.
+
+Cripple — disables one capability (jump, sprint, or dodge) chosen randomly or by hit location.
+
+Debuffs that aren’t just “DoT”
+
+Hemorrhage — bleed stacks, but only ticks when the enemy moves/attacks (pressure mechanic).
+
+Sleep — builds “drowsy” stacks; at threshold, target sleeps until damaged or timer ends (great for stealth builds).
+
+Panic — target’s aim/accuracy tanks and they path erratically for N seconds (AI disruption).
+
+Silence — blocks special abilities/ranged attacks briefly (boss-safe via diminishing returns).
+
+Corrosion — reduces armor AND makes the target take extra stagger from hits.
+
+Fragile — next instance of damage taken is increased, then the debuff ends (burst setup).
+
+Utility / Economy / Sustain
+
+Resourceful — chance to refund ammo on hit; higher chance on weakspot hits.
+
+Scavenger Tag — kills from this ammo drop extra scrap/loot but reduce XP (tradeoff economy).
+
+Siphon — converts a % of damage into stamina/energy instead of health (build fuel).
+
+Leech Round — healing on hit, but capped per second (keeps it from being god mode).
+
+Emergency Patch — on ally hit, applies a short heal-over-time + brief damage reduction (your “heal ammo” idea, expanded).
+
+Teamplay / Support / Control Tech
+
+Beacon Shot — marks target so allies deal +% damage to it for N seconds (raid utility).
+
+Ward Round — on impact creates a tiny shield bubble for allies for a moment (positional support).
+
+Cleanse Dart — removes 1 debuff from an ally; if no debuff, grants brief immunity to the next debuff.
+
+Stim Round — on ally hit, grants move/reload speed; on enemy hit, applies slow (dual-mode).
+
+Weird, High-Flavor Effects
+
+Echo Round — repeats the last bullet’s effect at 50% strength (proc doubler; fun with combos).
+
+Betrayer Round — briefly “turns” a weak enemy to fight for you OR forces them to attack nearest unit (PvE chaos).
+
+Temporal Round — stores a % of damage dealt for 2 seconds, then “replays” it as delayed damage (burst timing).
+
+Ricochet Logic — first impact ricochets toward nearest enemy within a cone (smart bounce).
+
+Corner-Cutter — bullets slightly “bend” around cover edges (soft aim assist, feels magical/tech).
+
+Wall Stitch — shots that miss leave a short-lived tripwire between impact points; enemies crossing it get slowed.
+
+Spike Carpet — impact creates a tiny caltrop patch (slow + minor damage) that persists briefly.
+
+Anchor Mine — if bullet hits terrain, it becomes a sticky micro-mine detonating when an enemy nears.
+
+Rewind Step — on hit, you can “snap back” to your position 1 second ago (cooldown gated).
+
+Timing / Rhythm Effects
+
+Metronome — consecutive hits within a short window ramp damage; missing resets.
+
+Afterimage — every 3rd shot fires a ghost round at 60% damage.
+
+Overheat — each shot boosts damage but increases recoil; swapping weapons vents instantly.
+
+Cold Chamber — first shot after reloading deals bonus + applies slow; encourages reload cadence.
+
+Delay Fuse — shots “prime” enemies; primed enemies explode when they die (chain kill ammo).
+
+Final Round — last bullet in magazine always crits / always applies effect (big “counting” gameplay).
+
+“Anti-Thing” Tech (Counters)
+
+Shieldbreaker — does bonus to shields; converts a % of shield damage into overshield for you.
+
+Regeneration Lock — disables enemy healing/regen for N seconds (anti-troll sustain).
+
+Summon Bane — extra damage + fear/stun vs summoned/minion-tagged enemies.
+
+Armor Audit — reveals target’s resistances/weakness (UI ping) + small debuff to their highest resist.
+
+Stealth Dust — reveals cloaked/invisible targets; also prevents re-stealth briefly.
+
+Ability Jam — increases cooldowns / drains ability energy on hit (boss-safe via DR).
+
+Status Effects with Personality
+
+Rust — reduces weapon damage of armed enemies (or their melee damage) for a short time.
+
+Maddening Buzz — target occasionally “twitches” (micro-stagger) interrupting long attacks.
+
+Blind — reduces detection range and accuracy; headshots refresh duration.
+
+Confuse — reverses movement inputs for a second (short but hilarious).
+
+Vulnerability Flip — converts one damage type resist into weakness (temporary).
+
+Sunder Footing — target takes extra knockback; if knocked down, they stay down longer.
+
+Ally-Focused / Utility Payloads
+
+Ammo Donation — shooting an ally transfers a small amount of ammo to them (from your reserve) and buffs reload speed.
+
+Adrenal Shot — ally hit gains stamina + brief “can’t be staggered” (anti-CC).
+
+Guardian Tag — ally hit gains a “bodyguard” mark: you take reduced damage while near them.
+
+Medic Ping — ally hit emits a small healing pulse to nearby teammates (AoE support).
+
+Purity Round — ally hit converts one harmful status into a buff (burn → haste, slow → armor, etc.).
+
+Rescue Hook — ally hit grants them a short dash toward you (panic button, cooldown gated).
+
+Loot/World Interaction (great for survival/mod vibes)
+
+Harvest Round — hitting resource nodes yields extra fragments but reduces node durability more (risk/efficiency).
+
+Salvage Shot — destroys mechanical enemies into bonus components; less XP (tradeoff).
+
+Heat Signature — marks enemies through walls for a few seconds (hunter ammo).
+
+Noise Suppressor — shots are quieter; enemies alerted less (stealth ammo).
+
+Disarm — low chance to knock a held item/weapon off weaker enemies (loot pinata energy).
+
+Firestarter — shots ignite flammables/grass/oil patches reliably (environmental control).
+
+“Boss-safe” Control (designed to not trivialize)
+
+Diminishing Stun — first stun strong, then rapidly weaker per target (built-in anti-perma-CC).
+
+Expose Window — briefly increases weakspot size or makes weakspot appear (skill reward).
+
+Guard Break — fills a “stagger meter”; at threshold, boss enters vulnerable state for 1 sec.
+
+Stability Tax — reduces boss attack speed slightly but increases their damage slightly (strategic tradeoff).

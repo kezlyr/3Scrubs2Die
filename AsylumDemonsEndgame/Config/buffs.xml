@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Asylum Demons Endgame - Creative boss auras using vanilla prefabs -->
+  <append xpath="/buffs">
+    <buff name="asylumBossAura_Infernal" hidden="true" remove_on_death="true">
+      <stack_type value="replace"/>
+      <effect_group>
+        <!-- Chest/torso effects -->
+
+        <!-- Back-mounted relics -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/electrical/smallGeneratorPrefab.prefab" local_offset="0.0,0.1,-0.25" local_rotation="-90,0,0" local_scale="0.35,0.35,0.35" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/Electrical/lightIndustrialMountedWallRedPrefab.prefab" local_offset="0.18,0.35,-0.12" local_rotation="0,90,0" local_scale="0.25,0.25,0.25" parent_transform="spine_03"/>
+
+        <!-- Head totem -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0.22,0.08" local_rotation="10,0,0" local_scale="0.08,0.08,0.08" parent_transform="head"/>
+
+        <!-- Hands crackle -->
+      </effect_group>
+      <effect_group>
+        <!-- Clean up on removal -->
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_electric_fence_sparks" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_nozzlesmoke" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="smallGeneratorPrefab" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="lightIndustrialMountedWallRedPrefab" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="cowSkullPrefab" parent_transform="head"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_electric_shock_small" parent_transform="spine_03"/>
+      </effect_group>
+    </buff>
+
+    <buff name="asylumBossAura_Charged" hidden="true" remove_on_death="true">
+      <stack_type value="replace"/>
+      <effect_group>
+        <!-- Chest/shoulder arcs -->
+
+        <!-- Tech totem on back -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/electrical/satelliteUnitSmallFloorPrefab.prefab" local_offset="0.0,0.15,-0.28" local_rotation="0,180,0" local_scale="0.45,0.45,0.45" parent_transform="spine_01"/>
+
+        <!-- Venting smoke -->
+      </effect_group>
+      <effect_group>
+        <!-- Clean up on removal -->
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_electric_fence_sparks" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="satelliteUnitSmallFloorPrefab" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_nozzlesmoke_m136" parent_transform="spine_03"/>
+      </effect_group>
+    </buff>
+
+    <!-- Abyssal aura: dark ritual obelisks + smoke/sparks -->
+    <buff name="asylumBossAura_Abyssal" hidden="true" remove_on_death="true">
+      <stack_type value="replace"/>
+      <effect_group>
+        <!-- Twin obelisks on shoulders (use posts as obelisks) -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/StreetSigns/1_wood_post.prefab" local_offset="0.28,0.35,-0.05" local_rotation="0,0,5" local_scale="0.18,0.45,0.18" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/StreetSigns/1_wood_post.prefab" local_offset="-0.28,0.35,-0.05" local_rotation="0,0,-5" local_scale="0.18,0.45,0.18" parent_transform="spine_03"/>
+
+        <!-- Floating skull centerpiece -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,0.48,0.15" local_rotation="5,0,0" local_scale="0.09,0.09,0.09" parent_transform="spine_03"/>
+
+        <!-- Ominous smoke rising -->
+        <!-- Occasional sparks -->
+      </effect_group>
+      <effect_group>
+        <!-- Clean up -->
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="1_wood_post" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="cowSkullPrefab" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_nozzlesmoke" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_electric_fence_sparks" parent_transform="spine_03"/>
+      </effect_group>
+    </buff>
+
+    <!-- Storm aura: antenna, generator, satellite, sparks/smoke -->
+    <buff name="asylumBossAura_Storm" hidden="true" remove_on_death="true">
+      <stack_type value="replace"/>
+      <effect_group>
+        <!-- Back tech-station -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/electrical/smallGeneratorPrefab.prefab" local_offset="0.0,0.11,-0.27" local_rotation="-90,0,0" local_scale="0.33,0.33,0.33" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/electrical/radioHamPrefab.prefab" local_offset="0.0,0.24,-0.18" local_rotation="0,180,0" local_scale="0.5,0.5,0.5" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/electrical/satelliteUnitSmallFloorPrefab.prefab" local_offset="0.0,0.16,-0.36" local_rotation="0,180,0" local_scale="0.35,0.35,0.35" parent_transform="spine_01"/>
+
+        <!-- Electrical storm visuals -->
+      </effect_group>
+      <effect_group>
+        <!-- Clean up -->
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="smallGeneratorPrefab" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="radioHamPrefab" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="satelliteUnitSmallFloorPrefab" parent_transform="spine_01"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_electric_fence_sparks" parent_transform="spine_03"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="p_nozzlesmoke_m136" parent_transform="spine_03"/>
+      </effect_group>
+    </buff>
+
+    <!-- *** ENDGAME DEMON HAND ITEM BUFFS - COLOR-BASED SYSTEM *** -->
+
+    <!-- ========================================================================
+         VOID AFFLICTION - Dark purple-black void energy
+         Applied by: All Void demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Void/darkness/reality displacement/nothingness
+         ======================================================================== -->
+    <buff name="buffAsylumVoidAffliction" name_key="buffAsylumVoidAfflictionName" description_key="buffAsylumVoidAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumVoidAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Darkness -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0.7" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Reality distortion -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0.4" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Void energy -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+
+        <!-- Progressive void damage: 8 → 12 → 18 HP over 8 seconds -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract"
+          duration="0,4,8" value="8,12,18"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         OMEGA AFFLICTION - Brilliant white-gold divine energy
+         Applied by: All Omega demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Divine/holy/blinding light/overwhelming power
+         ======================================================================== -->
+    <buff name="buffAsylumOmegaAffliction" name_key="buffAsylumOmegaAfflictionName" description_key="buffAsylumOmegaAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumOmegaAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Blinding blur -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Blur" intensity="0.8" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Blur" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Blur" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Overwhelmed vision -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0.3" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Divine energy -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+
+        <!-- Divine damage: 12 HP per second (simplified) -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="12"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         CHAOS AFFLICTION - Chaotic red energy
+         Applied by: All Chaos demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Chaotic/unpredictable/madness/insanity
+         ======================================================================== -->
+    <buff name="buffAsylumChaosAffliction" name_key="buffAsylumChaosAfflictionName" description_key="buffAsylumChaosAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumChaosAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Disorienting drunk effect -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Drunk" intensity="0.7" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Drunk" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Drunk" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Psychedelic distortion -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0.5" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Chaotic energy -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+
+        <!-- Chaos damage: 12 HP per second (simplified for testing) -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="12"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         NIGHTMARE AFFLICTION - Deep blood red darkness
+         Applied by: All Nightmare demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Terror/fear/darkness/dread
+         ======================================================================== -->
+    <buff name="buffAsylumNightmareAffliction" name_key="buffAsylumNightmareAfflictionName" description_key="buffAsylumNightmareAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumNightmareAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Encroaching darkness -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0.6" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="FadeToBlack" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Fear darkness -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0.4" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="0"/>
+
+        <!-- Nightmare damage: 18 HP per second -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="18"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         ABYSSAL AFFLICTION - Void black crushing darkness
+         Applied by: All Abyssal demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Deep darkness/crushing void/abyss/drowning
+         ======================================================================== -->
+    <buff name="buffAsylumAbyssalAffliction" name_key="buffAsylumAbyssalAfflictionName" description_key="buffAsylumAbyssalAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumAbyssalAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Maximum darkness -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="1.0" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Dark" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Crushing pressure -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0.3" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Abyssal energy -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+
+        <!-- Abyssal crushing damage: 20 HP per second (highest) -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="20"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         TRANSCENDENT AFFLICTION - Ethereal blue-white reality manipulation
+         Applied by: All Transcendent demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Ethereal/otherworldly/reality manipulation/ascension
+         ======================================================================== -->
+    <buff name="buffAsylumTranscendentAffliction" name_key="buffAsylumTranscendentAfflictionName" description_key="buffAsylumTranscendentAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumTranscendentAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Reality manipulation -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0.9" fade="3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0" fade="3"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Trippy" intensity="0" fade="0"/>
+
+        <!-- Secondary screen effect: Ethereal distortion -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0.5" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Distortion" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Ethereal energy -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_electric_shock"/>
+
+        <!-- Transcendent damage: 20 HP per second -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="20"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         VOLCANIC AFFLICTION - Molten orange burning
+         Applied by: All Volcanic demons (Highdemon, Fatdemon, Archdemon, Facelessdemon, Sixeyesdemon, Tankdemon)
+         Theme: Fire/heat/molten/burning/eruption
+         ======================================================================== -->
+    <buff name="buffAsylumVolcanicAffliction" name_key="buffAsylumVolcanicAfflictionName" description_key="buffAsylumVolcanicAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumVolcanicAfflictionTooltip" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Intense heat -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Hot3" intensity="0.9" fade="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Hot3" intensity="0" fade="1"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Hot3" intensity="0" fade="0"/>
+
+        <!-- Particle effect: Burning -->
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity"
+          particle="p_onFire" parent_transform="Spine1" local_offset="0,0.1,0.3"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity"
+          particle="p_onFire"/>
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity"
+          particle="p_onFire"/>
+
+        <!-- Volcanic burn damage: 18 HP per second -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="18"/>
+      </effect_group>
+    </buff>
+
+    <!-- ========================================================================
+         RADIATED AFFLICTION - Radioactive green contamination
+         Applied by: All Radiated demons (if implemented)
+         Theme: Radiation/toxic/sickness/contamination
+         ======================================================================== -->
+    <buff name="buffAsylumRadiatedAffliction" name_key="buffAsylumRadiatedAfflictionName" description_key="buffAsylumRadiatedAfflictionDesc"
+          icon="ui_game_symbol_radiation" tooltip_key="buffAsylumRadiatedAfflictionTooltip" remove_on_death="true">
+      <damage_type value="radiation"/>
+      <stack_type value="replace"/>
+      <duration value="8"/>
+      <effect_group>
+        <!-- Primary screen effect: Radiation sickness (matching vanilla pattern) -->
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect"
+          effect_name="Radiation" intensity=".6" fade="2"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect"
+          effect_name="Radiation" intensity="0" fade="2"/>
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect"
+          effect_name="Radiation" intensity="0" fade="0"/>
+
+        <!-- Radiation damage: 15 HP per second -->
+        <passive_effect name="HealthChangeOT" operation="base_subtract" value="15"/>
+      </effect_group>
+    </buff>
+
+  </append>
+</configs>

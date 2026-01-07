@@ -1,0 +1,7 @@
+<Duhwolf>
+	<append xpath="/recipes">
+		<recipe name="SkillCoinComplete" count="1">
+			<ingredient name="SkillCoinPart" count="10"/>
+			</recipe>
+			</append>
+</Duhwolf>

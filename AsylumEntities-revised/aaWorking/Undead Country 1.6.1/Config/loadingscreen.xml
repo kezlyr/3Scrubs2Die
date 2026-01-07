@@ -1,0 +1,46 @@
+<config>
+
+<remove xpath="/doc/backgrounds"/>
+
+<remove xpath="/doc/tips"/> 
+
+<append xpath="/doc"> 
+
+<backgrounds> 
+	<tex file="@modfolder:/BG/LoadingScreenDB1.jpg"/>
+	<tex file="@modfolder:/BG/LoadingScreenDB2.jpg"/>
+	<tex file="@modfolder:/BG/LoadingScreenDB3.jpg"/>
+	<tex file="@modfolder:/BG/LoadingScreenDB4.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB6.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB7.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB8.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB9.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB10.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB11.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB12.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB13.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB14.jpg"/>
+    <tex file="@modfolder:/BG/LoadingScreenDB15.jpg"/>		
+</backgrounds> 
+
+<tips>
+	<tip key="loadingTipDB1" />
+	<tip key="loadingTipDB2" />
+	<tip key="loadingTipDB3" />
+	<tip key="loadingTipDB4" />
+	<tip key="loadingTipDB5" />
+	<tip key="loadingTipDB6" />
+	<tip key="loadingTipDB7" />
+	<tip key="loadingTipDB8" />
+	<tip key="loadingTipDB9" /> 
+	<tip key="loadingTipDB10" />
+	<tip key="loadingTipDB11" />
+	<tip key="loadingTipDB12" />
+	<tip key="loadingTipDB13" />
+	<tip key="loadingTipDB14" />
+	<tip key="loadingTipDB15" />
+</tips> 
+
+</append> 
+
+</config>

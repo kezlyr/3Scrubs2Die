@@ -1,0 +1,608 @@
+<configs>
+
+<set xpath="progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">10,20,32,45,60</set>
+
+<set xpath="progression/perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">98</set>
+
+<set xpath="progression/perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">98</set>
+
+<set xpath="/progression/perks/perk[@name='perkAnimalTracker']/@icon">ui_game_symbol_tracking_wolf</set> 
+
+<insertAfter xpath="progression/attributes/attribute[@name='attGeneralPerks']"> 
+
+<attribute name="attMutationPerks" name_key="Mutation_Perks" desc_key="Mutation_Perks_Perks" icon="LightRayIcon" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+	<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+</attribute>
+
+</insertAfter>
+
+<append xpath="/progression/skills">
+
+   <skill name="skillMutationPerks" parent="attMutationPerks" name_key="Mutation_Key" desc_key="Mutation_TestDesc" long_desc_key="General_TestLongDesc" icon="LightRayIcon" hidden="true"><effect_group/></skill>
+
+</append>
+
+<append xpath="/progression/perks">
+
+<!--    <perk name="perkbeastmaster" max_level="3" parent="skillMutationPerks" name_key="perkbeastmasterKey" desc_key="perkbeastmasterDesc" icon="ui_game_symbol_tracking_wolf" override_cost="1,1,1">
+
+      <effect_group>
+		 <requirement name="EntityTagCompare" target="other" tags="zombieAnimal,animal"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="1,3" value=".1,.15"/>
+			<passive_effect name="GeneralDamageResist" operation="base_add" level="1,3" value=".1,.2"/>	
+	  </effect_group>
+	  
+	  <effect_group>
+			<effect_description level="1" desc_key="perkbeastmasterRank1Desc" long_desc_key="perkbeastmasterRank1LongDesc"/>	
+			<effect_description level="2" desc_key="perkbeastmasterRank2Desc" long_desc_key="perkbeastmasterRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkbeastmasterRank3Desc" long_desc_key="perkbeastmasterRank3LongDesc"/>
+	  </effect_group>
+	
+	</perk>
+	
+	<perk name="perkVulture" max_level="1" parent="skillMutationPerks" name_key="perkbeastmasterKey" desc_key="perkbeastmasterDesc" icon="ui_game_symbol_shopping_cart" override_cost="1">
+
+      <effect_group tiered="false">
+			<passive_effect name="BuffResistance" operation="base_add" level="1" value="1" tags="buffDysenteryCatchFood"/>
+	  </effect_group>
+	  
+	  <effect_group>
+			<effect_description level="1" desc_key="perkbeastmasterRank1Desc" long_desc_key="perkbeastmasterRank1LongDesc"/>	
+	  </effect_group>
+	
+	</perk> -->
+	
+  <perk name="perkDeadsTreasure" max_level="1" parent="skillMutationPerks" name_key="perkDeadsTreasureKey" desc_key="perkDeadsTreasureDesc" icon="ui_game_symbol_diamond" override_cost="1">
+
+      <effect_group>
+	        <requirement name="ProgressionLevel" progression_name="perkDeadsTreasure" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfLootContainer" action="AddBuff" buff="buffDeadTreasure"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkDeadsTreasureRank1Desc" long_desc_key="perkDeadsTreasureRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkWelcomeParty" max_level="1" parent="skillMutationPerks" name_key="perkWelcomePartyKey" desc_key="perkWelcomePartyDesc" icon="ui_game_symbol_bat" override_cost="1">
+
+      <effect_group>
+	        <requirement name="InBiome" biome="9"/>
+			<requirement name="ProgressionLevel" progression_name="perkWelcomeParty" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfEnteredBiome" action="AddBuff" buff="buffWelcomeParty01"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="InBiome" biome="5"/>
+			<requirement name="ProgressionLevel" progression_name="perkWelcomeParty" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfEnteredBiome" action="AddBuff" buff="buffWelcomeParty02"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="InBiome" biome="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkWelcomeParty" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfEnteredBiome" action="AddBuff" buff="buffWelcomeParty03"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="InBiome" biome="8"/>
+			<requirement name="ProgressionLevel" progression_name="perkWelcomeParty" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfEnteredBiome" action="AddBuff" buff="buffWelcomeParty04"/>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkWelcomePartyRank1Desc" long_desc_key="perkWelcomePartyRank1LongDesc"/>	
+	    </effect_group>
+	
+  </perk> 
+  
+   <perk name="perkStrayDogs" max_level="1" parent="skillMutationPerks" name_key="perkStrayDogsKey" desc_key="perkStrayDogsDesc" icon="ui_game_symbol_animal_tracker" override_cost="1">
+
+      <effect_group>
+	        <requirement name="ProgressionLevel" progression_name="perkStrayDogs" operation="GTE" value="1"/>
+			<triggered_effect trigger="onCombatEntered" action="AddBuff" buff="buffStrayDogs"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkStrayDogsRank1Desc" long_desc_key="perkStrayDogsRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkGigaFly" max_level="1" parent="skillMutationPerks" name_key="perkGigaFlyKey" desc_key="perkGigaFlyDesc" icon="ui_game_symbol_wind" override_cost="1">
+
+      <effect_group>
+	        <requirement name="ProgressionLevel" progression_name="perkGigaFly" operation="GTE" value="1"/>
+			<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffGigaFly"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkGigaFlyRank1Desc" long_desc_key="perkGigaFlyRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+   <perk name="perkWakeVultures" max_level="1" parent="skillMutationPerks" name_key="perkWakeVultureskey" desc_key="perkWakeVulturesDesc" icon="BirdIconTwo" override_cost="1">
+
+      <effect_group>
+	        <requirement name="ProgressionLevel" progression_name="perkWakeVultures" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffWakeVultures"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkWakeVulturesRank1Desc" long_desc_key="perkWakeVulturesRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkSunAndMoon" max_level="1" parent="skillMutationPerks" name_key="perkSunAndMoonKey" desc_key="perkSunAndMoonDesc" icon="ui_game_symbol_hot" override_cost="2">
+		<effect_group>
+			<requirement name="IsNight"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".3" tags="Kill"/>
+			<passive_effect name="StaminaMax" operation="base_subtract" level="1" value="25"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="IsDay"/>
+			<passive_effect name="PlayerExpGain" operation="perc_subtract" level="1" value=".1" tags="Kill"/>
+			<passive_effect name="StaminaMax" operation="base_add" level="1" value="30"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="IsBloodMoon"/>
+			<passive_effect name="PlayerExpGain" operation="perc_subtract" level="1" value=".2" tags="Kill"/>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkSunAndMoonRank1Desc" long_desc_key="perkSunAndMoonRank1LongDesc"/>	
+	    </effect_group>
+   </perk>
+   
+   <perk name="perkCorpseRobber" max_level="1" parent="skillMutationPerks" name_key="perkCorpseRobberkey" desc_key="perkCorpseRobberDesc" icon="ui_game_symbol_twitch_resurrect" override_cost="2">
+
+      <effect_group>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkCorpseRobberRank1Desc" long_desc_key="perkCorpseRobberRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+   <perk name="perkSecretStash" max_level="1" parent="skillMutationPerks" name_key="perkSecretStashkey" desc_key="perkSecretStashDesc" icon="ui_game_symbol_safe" override_cost="2">
+
+      <effect_group>
+	        <passive_effect name="TraderStage" operation="base_add" level="1" value="10"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkSecretStashRank1Desc" long_desc_key="perkSecretStashRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+   <perk name="perkBrainDamage" max_level="1" parent="skillMutationPerks" name_key="perkBrainDamageKey" desc_key="perkBrainDamageDesc" icon="ui_game_symbol_head_shot" override_cost="3">
+
+      <effect_group>
+	       <requirement name="ProgressionLevel" progression_name="perkCorpseRobber00" operation="GTE" value="1"/>
+	       <requirement name="EntityTagCompare" target="other" tags="radiated,charged,infernal,frenzied"/> <!-- abomination -->
+	       <passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="head"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkBrainDamageRank1Desc" long_desc_key="perkBrainDamageRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkBrinkOfDeath" max_level="1" parent="skillMutationPerks" name_key="perkBrinkOfDeathKey" desc_key="perkBrinkOfDeathDesc" icon="ui_game_symbol_critical" override_cost="3">
+
+      <effect_group>
+	        <requirement name="HasBuff" buff="buffLegSprained"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		 <effect_group>
+	        <requirement name="HasBuff" buff="buffArmSprained"/> 
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffLegBroken"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffArmBroken"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffFatigued"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffLaceration"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffInjuryConcussion"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<!--<effect_group>
+	        <requirement name="HasBuff" buff="buffInfectionMain"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+		</effect_group> -->
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkBrinkOfDeathRank1Desc" long_desc_key="perkBrinkOfDeathRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkZombification" max_level="1" parent="skillMutationPerks" name_key="perkZombificationKey" desc_key="perkZombificationDesc" icon="ui_game_symbol_zombie" override_cost="3">
+
+      <effect_group>
+	        <requirement name="HasBuff" buff="buffInfection01Untreated"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".05"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".05"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffInfection02Untreated"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+			<passive_effect name="RunSpeed" operation="perc_add" level="1" value=".1"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".5"/>
+			<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+			<passive_effect name="FoodLossPerHealthPointGained" operation="perc_add" value="-.25"/>
+		</effect_group>
+		
+		<effect_group>
+	        <requirement name="HasBuff" buff="buffInfection03Untreated"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".15"/>
+			<passive_effect name="RunSpeed" operation="perc_add" level="1" value=".15"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".8"/>
+			<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+			<passive_effect name="FoodLossPerHealthPointGained" operation="perc_add" value="-.5"/>
+			<passive_effect name="BarteringBuying" operation="base_add" value=".05"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".05"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkZombificationRank1Desc" long_desc_key="perkZombificationRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+  
+  <perk name="perkBloodMoonRage" max_level="1" parent="skillMutationPerks" name_key="perkBloodMoonRageKey" desc_key="perkBloodMoonRageDesc" icon="ui_game_symbol_trex" override_cost="5"> <!-- ui_game_symbol_7th_curse -->
+
+      <effect_group> 
+	        <requirement name="IsBloodMoon"/>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.2"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value=".3"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
+			<passive_effect name="JumpStrength" operation="perc_add" value=".2"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2"/>
+		</effect_group>
+		
+		<effect_group> 
+	        <requirement name="IsBloodMoon"/>
+			<requirement name="ItemHasTags" tags="melee"/>
+	        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".5"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value=".5"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="50" delay="1.0"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="5"/>
+		</effect_group>
+		
+		 <effect_group>
+			<effect_description level="1" desc_key="perkBloodMoonRageRank1Desc" long_desc_key="perkBloodMoonRageRank1LongDesc"/>	
+	  </effect_group>
+	
+  </perk>
+
+<!-- er65 7lni h32t 92g7 -->
+
+</append>
+
+<!-- Workstations -->
+
+<insertBefore xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']">
+
+<crafting_skill name="craftingAppliances" max_level="75" parent="attCrafting" name_key="craftingAppliancesName" desc_key="craftingAppliancesDesc" long_desc_key="craftingAppliancesLongDesc" icon="ui_game_symbol_computer">
+        
+		<display_entry icon="cntRetroFridgeVer1Closed,cntFridgeStainlessSteel,cntMilitaryMetalShelvesFull,palletCartonMilitaryTileCovered,cntFreezerBeveragesLeftEmptyClosed,wineBarrelPlain,tableSaw" name_key="AppliancesT1-1,AppliancesT1-2,AppliancesT1-3,AppliancesT1-4,AppliancesT1-5,AppliancesT1-6,AppliancesT1-7" has_quality="false" unlock_level="3,3,5,5,6,9,10">
+			<unlock_entry item="DBRetroFridge" unlock_tier="1" />
+			<unlock_entry item="DBFridge" unlock_tier="2" />
+			<unlock_entry item="DBGearShelves" unlock_tier="3" />
+			<unlock_entry item="DBAmmoStorage" unlock_tier="4" />
+			<unlock_entry item="DBCooler" unlock_tier="5" />
+			<unlock_entry item="DBFermentationBarrel" unlock_tier="6" /> 
+			<unlock_entry item="DBTableSaw" unlock_tier="7" /> 
+		</display_entry> 
+		
+		<display_entry icon="cntWoodBurningStove,cntSodaFountain,cntCoffeeMaker,DBCommercialCoffeeMaker,cntChemPileLarge,plantHydroponicAloe,cntToaster,cntStoveModernVer1Closed,decoComputerMonitorKeyboardMousePC" name_key="AppliancesT2-1,AppliancesT2-2,AppliancesT2-3,AppliancesT2-4,AppliancesT2-5,AppliancesT2-6,AppliancesT2-7,AppliancesT2-8,AppliancesT2-9" has_quality="false" unlock_level="11,13,15,18,20,25,25,27,30">
+			<unlock_entry item="DBWoodBurningStove" unlock_tier="1" />
+			<unlock_entry item="cntCompactWaterFilter" unlock_tier="2" />
+			<unlock_entry item="DBCoffeeMaker" unlock_tier="3" />
+			<unlock_entry item="DBCommercialCoffeeMaker" unlock_tier="4" />
+			<unlock_entry item="ChemStationSmall" unlock_tier="5" />
+			<unlock_entry item="DBHydrophonic" unlock_tier="6" />
+			<unlock_entry item="DBToaster" unlock_tier="7" />
+			<unlock_entry item="DBOven" unlock_tier="8" />
+			<unlock_entry item="DBComputer" unlock_tier="9" />			
+		</display_entry>
+		
+		<effect_group>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="DBRetroFridge"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="DBFridge"/>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="DBGearShelves"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="DBAmmoStorage"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="DBCooler"/>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="DBFermentationBarrel"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="DBTableSaw"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="DBWoodBurningStove"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="13,100" value="1" tags="cntCompactWaterFilter"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="DBCoffeeMaker"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="DBCommercialCoffeeMaker"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="ChemStationSmall"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="DBHydrophonic"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="DBToaster"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="DBOven"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="DBComputer"/>
+		</effect_group>
+	</crafting_skill>
+
+</insertBefore>
+
+<insertBefore xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']">
+
+<crafting_skill name="craftingMeals" max_level="100" parent="attCrafting" name_key="craftingMealsName" desc_key="craftingMealsDesc" long_desc_key="craftingMealsLongDesc" icon="ui_game_symbol_cookware">
+        
+		<display_entry icon="foodBoneSoup,foodDBShamSandwich,foodGrilledYucca,foodGoulash" name_key="MealsT1-1,MealsT1-2,MealsT1-3,MealsT1-4" has_quality="false" unlock_level="3,5,7,10">
+		
+			<unlock_entry item="foodBoneSoup" unlock_tier="1" />
+			<unlock_entry item="foodDBShamSandwich" unlock_tier="2" />
+			<unlock_entry item="foodGrilledYucca" unlock_tier="3" />
+			<unlock_entry item="foodGoulash" unlock_tier="4" />
+		</display_entry> 
+		
+		<display_entry icon="foodSupercornSoup,foodSuperCornOnTheCob,foodSuperCornBread" name_key="MealsT2-1,MealsT2-2,MealsT2-3" has_quality="false" unlock_level="15,20,25">
+			<unlock_entry item="foodSuperCornOnTheCob" unlock_tier="1" />
+			<unlock_entry item="foodSuperCornBread" unlock_tier="2" />
+			<unlock_entry item="foodSupercornSoup" unlock_tier="3" />		
+		</display_entry>
+		
+		<effect_group>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="foodBoneSoup"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="foodDBShamSandwich"/>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,100" value="1" tags="foodGrilledYucca"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="foodGoulash"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="foodSuperCornOnTheCob"/>
+		    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="foodSuperCornBread"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="foodSupercornSoup"/>
+		</effect_group>
+	</crafting_skill>
+
+</insertBefore>
+
+
+  
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']">
+
+	<display_entry item="meleeWarMace" unlock_level="69,70,71,72,73,75"/>
+	
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,75" value="1" tags="meleeWarMace"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="70,71,72,73,75" value="1,2,3,4,5" tags="meleeWarMace"/>
+	</effect_group>
+	
+  </append>
+  
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']">
+
+	<display_entry item="meleeFlangedMace" unlock_level="69,70,71,72,73,75"/>
+	
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,75" value="1" tags="meleeFlangedMace"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="70,71,72,73,75" value="1,2,3,4,5" tags="meleeFlangedMace"/>
+	</effect_group>
+	
+  </append>
+  
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+
+	<display_entry item="MeleeZweihander" unlock_level="69,70,71,72,73,75"/>
+	
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,75" value="1" tags="MeleeZweihander"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="70,71,72,73,75" value="1,2,3,4,5" tags="MeleeZweihander"/>
+	</effect_group>
+	
+  </append>
+  
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']">
+
+	<display_entry item="meleeDarkSpear" unlock_level="69,70,71,72,73,75"/>
+	
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,75" value="1" tags="meleeDarkSpear"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="70,71,72,73,75" value="1,2,3,4,5" tags="meleeDarkSpear"/>
+	</effect_group>
+	
+  </append>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolRepairT0StoneAxe']">
+
+    <display_entry icon="meleeScrapAxe" name_key="harvestToolsScrap" has_quality="true" unlock_level="3,6,8,12,14,18" >
+	   <unlock_entry item="meleeScrapAxe,meleeScrapPickaxe" unlock_tier="1"/>
+    </display_entry>
+	
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="meleeScrapAxe,meleeScrapPickaxe"/>
+
+		<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,100" value="1,2,3,4,5,5" tags="meleeScrapAxe,meleeScrapPickaxe"/>
+	</effect_group>
+	
+  </insertAfter>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']/display_entry[@item='meleeWpnClubT0WoodenClub']">
+
+        <display_entry item="MeleeSpikedClub" unlock_level="3,6,8,12,14,18"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,75" value="1" tags="MeleeSpikedClub"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,75" value="1,2,3,4,5,5" tags="MeleeSpikedClub"/>
+		</effect_group>
+	
+  </insertAfter>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/display_entry[@item='meleeWpnBladeT0BoneKnife']">
+
+        <display_entry item="meleeScrapCleaver" unlock_level="3,6,8,12,14,18"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,75" value="1" tags="meleeScrapCleaver"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,75" value="1,2,3,4,5,5" tags="meleeScrapCleaver"/>
+		</effect_group>
+	
+  </insertAfter>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/display_entry[@item='meleeWpnSledgeT0StoneSledgehammer']">
+
+        <display_entry item="meleeScrapSledgeHammer" unlock_level="3,6,8,12,14,18"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,75" value="1" tags="meleeScrapSledgeHammer"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,75" value="1,2,3,4,5,5" tags="meleeScrapSledgeHammer"/>
+		</effect_group>
+	
+  </insertAfter>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/display_entry[@item='meleeWpnSpearT0StoneSpear']">
+
+        <display_entry item="meleeScrapSpear" unlock_level="3,6,8,12,14,18"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,75" value="1" tags="meleeScrapSpear"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,75" value="1,2,3,4,5,5" tags="meleeScrapSpear"/>
+		</effect_group>
+	
+  </insertAfter>
+  
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']/display_entry[@item='meleeWpnKnucklesT0LeatherKnuckles']">
+
+        <display_entry item="meleeScrapKnuckles" unlock_level="3,6,8,12,14,18"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,75" value="1" tags="meleeScrapKnuckles"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="6,8,12,14,18,75" value="1,2,3,4,5,5" tags="meleeScrapKnuckles"/>
+		</effect_group>
+	
+  </insertAfter>
+
+<!-- weapons -->
+
+<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']">
+
+    <crafting_skill name="craftingAdvancedHandguns" max_level="100" parent="attCrafting" name_key="craftingAdvancedHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_near_death_trauma" icon_color="149, 52, 235">
+
+		<display_entry item="gunGSPistol" unlock_level="11,13,16,19,22,25"/>
+		<display_entry item="gun1911Pistol" unlock_level="26,29,33,37,41,45"/>
+		<display_entry item="gunScorpionEVO3SMG" unlock_level="26,29,33,37,41,45"/>
+		<display_entry item="gunJerichoPistol" unlock_level="46,50,55,60,65,70"/>
+		<display_entry item="gunThompsonSMG" unlock_level="46,50,55,60,65,70"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunGSPistol"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="gun1911Pistol"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="gunScorpionEVO3SMG"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="gunJerichoPistol"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="gunThompsonSMG"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5,5" tags="gunGSPistol"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="29,33,37,41,45,100" value="1,2,3,4,5,5" tags="gun1911Pistol"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="29,33,37,41,45,100" value="1,2,3,4,5,5" tags="gunScorpionEVO3SMG"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="50,55,60,65,70,100" value="1,2,3,4,5,5" tags="gunJerichoPistol"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="50,55,60,65,70,100" value="1,2,3,4,5,5" tags="gunThompsonSMG"/>
+		</effect_group>
+	</crafting_skill>  
+	
+</insertAfter>
+
+<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']">
+
+    <crafting_skill name="craftingAdvancedShotguns" max_level="100" parent="attCrafting" name_key="craftingAdvancedShotgunsName" desc_key="craftingShotgunsDesc" long_desc_key="craftingShotgunsLongDesc" icon="ui_game_symbol_near_death_trauma">
+
+		<display_entry item="gunTrenchgun" unlock_level="26,32,39,46,53,60"/>
+		<display_entry item="gunSaiga12Shotgun" unlock_level="61,68,76,84,92,100"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="gunTrenchgun"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="gunSaiga12Shotgun"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="gunTrenchgun"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="gunSaiga12Shotgun"/>
+		</effect_group>
+	</crafting_skill>
+
+</insertAfter>
+
+<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
+
+    <crafting_skill name="craftingAdvancedRifles" max_level="100" parent="attCrafting" name_key="craftingAdvancedRiflesName" desc_key="craftingRiflesDesc" long_desc_key="craftingRiflesLongDesc" icon="ui_game_symbol_near_death_trauma">
+
+		<display_entry item="gunBoltActionSniper" unlock_level="26,32,39,46,53,60"/>
+		<display_entry item="gunSaintEdgeSniper" unlock_level="61,68,76,84,92,100"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="gunBoltActionSniper"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="gunSaintEdgeSniper"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="gunBoltActionSniper"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="gunSaintEdgeSniper"/>
+		</effect_group>
+	</crafting_skill>
+
+</insertAfter>
+
+<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']">
+
+<crafting_skill name="craftingAdvancedMachineGuns" max_level="100" parent="attCrafting" name_key="craftingAdvancedMachineGunsName" desc_key="craftingMachineGunsDesc" long_desc_key="craftingMachineGunsLongDesc" icon="ui_game_symbol_near_death_trauma">
+
+		<display_entry item="gunAR15Rifle" unlock_level="11,13,16,19,22,25"/>
+		<display_entry item="gunM4A1Rifle" unlock_level="26,32,39,46,53,60"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunAR15Rifle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="gunM4A1Rifle"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5,5" tags="gunAR15Rifle"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="32,39,46,53,60,100" value="1,2,3,4,5,5" tags="gunM4A1Rifle"/>
+		</effect_group>
+	</crafting_skill>
+
+</insertAfter>
+
+</configs>

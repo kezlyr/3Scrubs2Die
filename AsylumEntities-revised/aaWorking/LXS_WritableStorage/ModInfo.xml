@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="LxS_WritableStorage"/>
+		<Description value="Adds new writable storage!"/>
+		<DisplayName value="LxS Writable Storage"/>
+		<Author value="LxSun"/>
+		<Version value="2.0"/>
+		<Website value=""/>
+</xml>

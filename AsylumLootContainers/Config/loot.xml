@@ -1,0 +1,105 @@
+<configs>
+  <!-- New elite boss container and group forcing Tier 6 quality on all quality-bearing items -->
+  <insertBefore xpath="/lootcontainers/lootcontainer[1]">
+    <!-- Curated T6-only subgroups (no nested quality templates) -->
+
+
+    <lootgroup name="groupZpackBossGreenToolsLegendary" count="1">
+      <item name="meleeToolAxeT3Chainsaw"/>
+      <item name="meleeToolPickT3Auger"/>
+      <!-- Asylum Legendary Tools -->
+      <item name="SMALTAxe"/>
+      <item name="SMALTCrowbar"/>
+      <item name="SMALTHammer"/>
+      <item name="SMALTKnife"/>
+      <item name="SMALTPickaxe"/>
+      <item name="SMALTShovel"/>
+      <item name="SMALTWrench"/>
+    </lootgroup>
+
+    <lootgroup name="groupZpackBossGreenLegendary" count="1">
+      <!-- Asylum Legendary Weapons -->
+      <item name="SMAAutumnsCall"/>
+      <item name="asylumgrimscythe"/>
+      <item name="SMABrasswindBlade"/>
+      <item name="SMASerpentsEdge"/>
+      <item name="SMAMjölnirsEcho"/>
+      <item name="SMAAbyssalReach"/>
+      <item name="SMAWhisperingDeath"/>
+      <item name="SMARadiance"/>
+      <item name="SMAGrimVortex"/>
+      <item name="SMACrimsonWrath"/>
+      <item name="SMAStoneboundHammer"/>
+      <item name="SMAClockworkReaver"/>
+      <item name="SMAReapersMaul"/>
+      <item name="SMADrakesFang"/>
+      <item name="SMAIronwyrm"/>
+      <item name="SMALWDragonFist"/>
+      <item name="SMACarapaceClub"/>
+      <item name="SMABeonKnife"/>
+      <item name="SMASpearNew"/>
+      <item name="SMAThunderBreaker"/>
+      <item name="SMATwoHandedKatana"/>
+      <item name="SMASpineEdge"/>
+      <item name="SMAMace"/>
+      <item name="SMAKopesh"/>
+      <item name="LWWakizashi"/>
+    </lootgroup>
+
+    <lootgroup name="groupZpackBossGreenAsylumGuns" count="1">
+      <!-- Asylum Core custom firearms (curated high-tier list) -->
+      <item name="M4A1WZZS1"/>
+      <item name="M4A1YJ"/>
+      <item name="M4A1MJXW1"/>
+      <item name="M4A1ZSMC"/>
+      <item name="M4A1LS"/>
+      <item name="M4A1NT1"/>
+      <item name="M4A1LSQSZB"/>
+      <item name="AKNT1"/>
+      <item name="MG3XL"/>
+      <item name="XJJTL"/>
+      <item name="M249"/>
+      <item name="50ZDH"/>
+      <item name="VEPR12"/>
+      <item name="AA12LT"/>
+      <item name="M200MMT"/>
+      <item name="M200HS"/>
+      <item name="MK23HS"/>
+      <item name="JYSS2"/>
+      <item name="JYSS"/>
+    </lootgroup>
+
+    <!-- Infernal Armors removed - now crafting-only (500 Black Stones each) -->
+
+    <!-- Master group: forces T6 and adds ammo, mags, and mods -->
+    <!-- One-of weapon/tool/gun selector -->
+    <lootgroup name="groupZpackBossGreenOneWeaponOrTool" count="1">
+      <item group="groupZpackBossGreenAsylumGuns"/>
+      <item group="groupZpackBossGreenLegendary"/>
+      <item group="groupZpackBossGreenToolsLegendary"/>
+    </lootgroup>
+
+
+
+    <lootgroup name="groupZpackBossGreen" count="all" loot_quality_template="qualTwitchT6Template">
+      <item group="groupZpackBossGreenOneWeaponOrTool"/>
+      <!-- Massive ammo payload (no quality) -->
+
+      <!-- Skill magazines (all categories) -->
+      <item group="weaponSkillMagazinesOnly" count="6"/>
+      <item group="groupChallengeRewardSkillMagazinesAll" count="2"/>
+
+      <!-- Infernal Armors removed - now crafting-only (500 Black Stones each) -->
+
+      <!-- Weapon mods -->
+      <item group="groupWeaponModsScaled" count="2"/>
+    </lootgroup>
+  </insertBefore>
+
+  <append xpath="/lootcontainers">
+    <lootcontainer name="zPackBossGreen" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualTwitchT6Template" ignore_loot_abundance="true">
+      <item group="groupZpackBossGreen"/>
+    </lootcontainer>
+  </append>
+</configs>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!-- Without touching AsylumCore, we hook into starter kit use to grant the first class quest. -->
+	<append xpath="/items/item[@name='StartWardNurse']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumM_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartWorkshopPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumMech_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartGardenPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumF_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartGroundskeeperPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumB_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartKitchenPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumC_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartSecurityPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumH_start"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='StartOrderlyPatient']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveQuestSDX, SCore" target="self" quest="quest_AsylumS_start"/>
+		</effect_group>
+	</append>
+
+</configs>

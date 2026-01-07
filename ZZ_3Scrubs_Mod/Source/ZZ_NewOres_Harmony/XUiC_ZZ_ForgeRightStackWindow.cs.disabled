@@ -1,0 +1,253 @@
+using System;
+
+namespace ZZ_NewOres_Harmony;
+
+// Controls the forge's replacement right panel: a scrollable vertical stack with collapsible sections.
+// Persistence requirement: per-session only -> static fields.
+public class XUiC_ZZ_ForgeRightStackWindow : XUiController
+{
+	private const int PanelWidth = 228;
+	private const int HeaderHeight = 43;
+	private const int HeaderOffset = 46; // vanilla header.panel uses content pos="0,-46"
+
+	private const int ToolsBodyHeight = 75;
+	private const int FuelBodyHeight = 120;
+	private const int SmeltingBodyHeight = 153;
+	private const int ContentsBodyHeight = 432;
+	private const int OutputBodyHeight = 150;
+
+	private const float ScrollStep = 40f;
+
+	private static bool s_toolsExpanded = true;
+	private static bool s_fuelExpanded = true;
+	private static bool s_smeltingExpanded = true;
+	private static bool s_contentsExpanded = true;
+	private static bool s_outputExpanded = true;
+	private static float s_scrollOffset;
+
+	private XUiController _scrollArea;
+	private XUiController _stack;
+
+	private XUiController _secTools;
+	private XUiController _bodyTools;
+	private XUiController _hdrToolsToggle;
+
+	private XUiController _secFuel;
+	private XUiController _bodyFuel;
+	private XUiController _hdrFuelToggle;
+
+	private XUiController _secForge;
+	private XUiController _hdrSmelting;
+	private XUiController _bodySmelting;
+	private XUiController _hdrSmeltingToggle;
+	private XUiController _hdrContents;
+	private XUiController _bodyContents;
+	private XUiController _hdrContentsToggle;
+
+	private XUiController _secOutput;
+	private XUiController _bodyOutput;
+	private XUiController _hdrOutputToggle;
+
+	private float _maxScroll;
+
+	public override void Init()
+	{
+		base.Init();
+
+		_scrollArea = GetChildById("scrollArea");
+		_stack = GetChildById("stack");
+
+		_secTools = GetChildById("secTools");
+		_bodyTools = GetChildById("bodyTools");
+		_hdrToolsToggle = GetChildById("hdrToolsToggle");
+
+		_secFuel = GetChildById("secFuel");
+		_bodyFuel = GetChildById("bodyFuel");
+		_hdrFuelToggle = GetChildById("hdrFuelToggle");
+
+		_secForge = GetChildById("secForge");
+		_hdrSmelting = GetChildById("hdrSmelting");
+		_bodySmelting = GetChildById("bodySmelting");
+		_hdrSmeltingToggle = GetChildById("hdrSmeltingToggle");
+		_hdrContents = GetChildById("hdrContents");
+		_bodyContents = GetChildById("bodyContents");
+		_hdrContentsToggle = GetChildById("hdrContentsToggle");
+
+		_secOutput = GetChildById("secOutput");
+		_bodyOutput = GetChildById("bodyOutput");
+		_hdrOutputToggle = GetChildById("hdrOutputToggle");
+
+		TryHookHeader(_hdrToolsToggle);
+		TryHookHeader(_hdrFuelToggle);
+		TryHookHeader(_hdrSmeltingToggle);
+		TryHookHeader(_hdrContentsToggle);
+		TryHookHeader(_hdrOutputToggle);
+
+		if (_scrollArea != null)
+			_scrollArea.OnScroll += HandleScroll;
+
+		ApplyLayout(recomputeMaxScroll: true);
+	}
+
+	private static string GetId(XUiController c)
+	{
+		try { return c?.ViewComponent?.ID; }
+		catch { return null; }
+	}
+
+	private void TryHookHeader(XUiController headerButton)
+	{
+		try
+		{
+			if (headerButton == null)
+				return;
+			headerButton.OnPress += HandleHeaderPressed;
+		}
+		catch { }
+	}
+
+	private void HandleHeaderPressed(XUiController sender, int mouseButton)
+	{
+		try
+		{
+			// Left click only.
+			if (mouseButton != 0)
+				return;
+
+			switch (GetId(sender))
+			{
+				case "hdrToolsToggle":
+					s_toolsExpanded = !s_toolsExpanded;
+					break;
+				case "hdrFuelToggle":
+					s_fuelExpanded = !s_fuelExpanded;
+					break;
+				case "hdrSmeltingToggle":
+					s_smeltingExpanded = !s_smeltingExpanded;
+					break;
+				case "hdrContentsToggle":
+					s_contentsExpanded = !s_contentsExpanded;
+					break;
+				case "hdrOutputToggle":
+					s_outputExpanded = !s_outputExpanded;
+					break;
+				default:
+					return;
+			}
+
+			ApplyLayout(recomputeMaxScroll: true);
+		}
+		catch { }
+	}
+
+	private void HandleScroll(XUiController sender, float delta)
+	{
+		try
+		{
+			// Typical UI convention: positive delta scrolls up; adjust content offset accordingly.
+			s_scrollOffset = Clamp(s_scrollOffset - (delta * ScrollStep), 0f, _maxScroll);
+			ApplyLayout(recomputeMaxScroll: false);
+		}
+		catch { }
+	}
+
+	private static float Clamp(float v, float min, float max)
+	{
+		if (v < min) return min;
+		if (v > max) return max;
+		return v;
+	}
+
+	private void ApplyLayout(bool recomputeMaxScroll)
+	{
+		try
+		{
+			if (_stack?.ViewComponent == null)
+				return;
+
+			// Reposition the internal "Contents" sub-section inside secForge.
+			ApplyForgeInternalLayout();
+
+			var y = 0;
+			y = PlaceSection(_secTools, _bodyTools, s_toolsExpanded, HeaderOffset + ToolsBodyHeight, ref y);
+			y = PlaceSection(_secFuel, _bodyFuel, s_fuelExpanded, HeaderOffset + FuelBodyHeight, ref y);
+
+			// secForge is special (it contains two collapsible sub-sections).
+			var forgeHeight = ComputeForgeTotalHeight();
+			if (_secForge?.ViewComponent != null)
+			{
+				_secForge.ViewComponent.Position = new Vector2i(0, y);
+				_secForge.ViewComponent.Size = new Vector2i(PanelWidth, forgeHeight);
+			}
+			y -= forgeHeight;
+
+			y = PlaceSection(_secOutput, _bodyOutput, s_outputExpanded, HeaderOffset + OutputBodyHeight, ref y);
+
+			var contentHeight = -y;
+			if (recomputeMaxScroll)
+			{
+				var viewportHeight = _scrollArea?.ViewComponent?.Size.y ?? 702;
+				_maxScroll = Math.Max(0, contentHeight - viewportHeight);
+				s_scrollOffset = Clamp(s_scrollOffset, 0f, _maxScroll);
+			}
+
+			_stack.ViewComponent.Position = new Vector2i(0, (int)-s_scrollOffset);
+			_stack.ViewComponent.Size = new Vector2i(PanelWidth, Math.Max(contentHeight, _scrollArea?.ViewComponent?.Size.y ?? contentHeight));
+		}
+		catch { }
+	}
+
+	private int PlaceSection(XUiController section, XUiController body, bool expanded, int expandedHeight, ref int y)
+	{
+		try
+		{
+			if (section?.ViewComponent == null)
+				return y;
+
+			var height = expanded ? expandedHeight : HeaderOffset;
+
+			section.ViewComponent.Position = new Vector2i(0, y);
+			section.ViewComponent.Size = new Vector2i(PanelWidth, height);
+
+			if (body?.ViewComponent != null)
+				body.ViewComponent.IsVisible = expanded;
+
+			y -= height;
+			return y;
+		}
+		catch
+		{
+			return y;
+		}
+	}
+
+	private int ComputeForgeTotalHeight()
+	{
+		var smelt = HeaderOffset + (s_smeltingExpanded ? SmeltingBodyHeight : 0);
+		var contents = HeaderOffset + (s_contentsExpanded ? ContentsBodyHeight : 0);
+		return smelt + contents;
+	}
+
+	private void ApplyForgeInternalLayout()
+	{
+		try
+		{
+			if (_hdrContents?.ViewComponent == null || _bodyContents?.ViewComponent == null)
+				return;
+
+			// Smelting header is always at y=0 inside secForge (already in XML).
+			if (_bodySmelting?.ViewComponent != null)
+				_bodySmelting.ViewComponent.IsVisible = s_smeltingExpanded;
+
+			// Place Contents header immediately after smelting section.
+			var contentsHeaderY = -(HeaderOffset + (s_smeltingExpanded ? SmeltingBodyHeight : 0));
+			_hdrContents.ViewComponent.Position = new Vector2i(0, contentsHeaderY);
+
+			// Contents body sits below its header.
+			var contentsBodyY = contentsHeaderY - HeaderOffset;
+			_bodyContents.ViewComponent.Position = new Vector2i(0, contentsBodyY);
+			_bodyContents.ViewComponent.IsVisible = s_contentsExpanded;
+		}
+		catch { }
+	}
+}

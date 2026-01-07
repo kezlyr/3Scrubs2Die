@@ -1,0 +1,53 @@
+<configs>
+<!-- ============================================================================
+     ASYLUM TIERED TREASURE MAP SYSTEM - ITEMS
+     Three tiers of treasure maps that drop from Asylum demons
+     ============================================================================ -->
+
+<!-- Tier 1: Infernal Treasure Map - Drops from Midgame Demons (45-60k HP) -->
+<append xpath="/items">
+    <item name="qt_asylum_infernal">
+        <property name="Extends" value="treasureQuestMaster"/>
+        <property name="CustomIcon" value="treasureQuestMaster"/>
+        <property name="CustomIconTint" value="FF6B35"/>
+        <property name="DescriptionKey" value="qt_asylum_infernal_desc"/>
+        <property name="SoundPickup" value="map_grab"/>
+        <property name="SoundPlace" value="map_place"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="treasure_asylum_infernal"/>
+        </property>
+    </item>
+</append>
+
+<!-- Tier 2: Demonic Treasure Map - Drops from Heavy Midgame Demons (75-90k HP) -->
+<append xpath="/items">
+    <item name="qt_asylum_demonic">
+        <property name="Extends" value="treasureQuestMaster"/>
+        <property name="CustomIcon" value="treasureQuestMaster"/>
+        <property name="CustomIconTint" value="9B59B6"/>
+        <property name="DescriptionKey" value="qt_asylum_demonic_desc"/>
+        <property name="SoundPickup" value="map_grab"/>
+        <property name="SoundPlace" value="map_place"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="treasure_asylum_demonic"/>
+        </property>
+    </item>
+</append>
+
+<!-- Tier 3: Abyssal Treasure Map - Drops from Uber Demons (150k HP) -->
+<append xpath="/items">
+    <item name="qt_asylum_abyssal">
+        <property name="Extends" value="treasureQuestMaster"/>
+        <property name="CustomIcon" value="treasureQuestMaster"/>
+        <property name="CustomIconTint" value="1ABC9C"/>
+        <property name="DescriptionKey" value="qt_asylum_abyssal_desc"/>
+        <property name="SoundPickup" value="map_grab"/>
+        <property name="SoundPlace" value="map_place"/>
+        <property class="Action0">
+            <property name="QuestGiven" value="treasure_asylum_abyssal"/>
+        </property>
+    </item>
+</append>
+
+</configs>
+

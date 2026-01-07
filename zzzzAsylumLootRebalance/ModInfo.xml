@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="AsylumLootRebalance" />
+    <DisplayName value="Asylum Loot Rebalance" />
+    <Description value="Rebalances the Asylum Overhaul mod's loot system to improve early game progression. Prevents high-tier weapons from appearing in T0 containers, adds level-gated drop rates for legendary items, and scales item quality with player level." />
+    <Author value="Asylum Team" />
+    <Version value="1.0.0" />
+    <Website value="" />
+</xml>
+

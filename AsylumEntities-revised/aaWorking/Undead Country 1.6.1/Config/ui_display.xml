@@ -1,0 +1,140 @@
+<configs>
+
+<!--<append xpath="/ui_display_info/trader_category_display">
+ <trader_category name="Quests" icon="ui_game_symbol_map" display_name="lblCategoryBooks" />
+</append> -->
+<append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='campfire']">
+
+    <crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+
+</append>
+
+<append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='chemistryStation']">
+
+    <crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+
+</append>
+
+<append xpath="/ui_display_info/crafting_category_display">
+
+<crafting_category_list display_type="Advancedforge">
+		<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+		<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+		<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+	</crafting_category_list>
+	
+<crafting_category_list display_type="cntCollapsedWorkbench">
+	<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+	<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+	<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+	<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+	<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+</crafting_category_list>	
+
+<crafting_category_list display_type="GunWorkbench">
+	<!-- <crafting_category name="" icon="ui_game_symbol_workbench" display_name="lblAll" /> -->
+	<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+	<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+	<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+	<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+	<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+	<!-- <crafting_category name="Vehicles" icon="ui_game_symbol_4x4" display_name="lblCategoryVehicles" /> -->
+</crafting_category_list>
+
+<crafting_category_list display_type="DBFirePlace">	
+   <crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />		
+</crafting_category_list>
+
+<crafting_category_list display_type="ChemStationSmall">			
+	<crafting_category name="Chemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+	<crafting_category name="Medical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />	
+    <crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />	
+</crafting_category_list>
+
+<crafting_category_list display_type="cntCompactWaterFilter">
+  <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink"/>
+</crafting_category_list>
+
+<crafting_category_list display_type="DBOven">
+  <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+  <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+  <crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+  <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list> 
+		
+<crafting_category_list display_type="DBWoodBurningStove">
+  <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+  <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+  <crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+  <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list> 
+
+<crafting_category_list display_type="cntWoodBurningStove">
+  <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+  <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+  <crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+  <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list> 
+
+<crafting_category_list display_type="DBTableSaw">
+    <crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+    <crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" /> 
+<!--	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+	<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+	<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+	<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" /> -->
+</crafting_category_list>
+	
+<crafting_category_list display_type="DBMicrowave">
+  <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+  <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+  <crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+  <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list> 	
+
+<crafting_category_list display_type="DBHydrophonic">
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" /> 
+</crafting_category_list>
+
+<crafting_category_list display_type="DBCoffeeMaker">
+	<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink"/>
+</crafting_category_list>
+	
+<crafting_category_list display_type="DBCommercialCoffeeMaker">
+	<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink"/>
+</crafting_category_list>	
+
+<crafting_category_list display_type="DBToaster">
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" /> 
+</crafting_category_list>	
+
+<crafting_category_list display_type="DBResearchBench">
+    <crafting_category name="Books" icon="ui_game_symbol_book" display_name="lblCategoryBooks" />
+	<crafting_category name="Medical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+ <!--   <crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" /> -->
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />	
+	<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" /> 
+</crafting_category_list>
+	
+<crafting_category_list display_type="DBFermentationBarrel">
+	<crafting_category name="Chemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+	<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+</crafting_category_list>		
+	
+</append>
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ZZ_DiskStorage" />
+	<DisplayName value="Disk Storage (POC)" />
+	<Description value="Disk-style storage system: disk drive + disk reader." />
+	<Author value="Local" />
+	<Version value="0.1.0" />
+	<Website value="" />
+</xml>

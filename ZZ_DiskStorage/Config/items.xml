@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/items">
+    <item name="diskStorageEmpty">
+	  <property name="Extends" value="resourceScrapPolymers" />
+	  <property name="Material" value="MresourceScrapPolymers" />
+	  <property name="CustomIcon" value="diskStorageT0" />
+	  <property name="Stacknumber" value="1" />
+	  <property name="EconomicValue" value="500" />
+	  <property name="DescriptionKey" value="Disk Storage T0" />
+	  <property name="Group" value="Resources" />
+	  <property name="Tags" value="disk_storage" />
+    </item>
+
+    <item name="diskStorageEmptyT1">
+	  <property name="Extends" value="resourceScrapPolymers" />
+	  <property name="Material" value="MresourceScrapPolymers" />
+	  <property name="CustomIcon" value="diskStorageT1" />
+	  <property name="Stacknumber" value="1" />
+	  <property name="EconomicValue" value="1200" />
+	  <property name="DescriptionKey" value="Disk Storage T1" />
+      <property name="Group" value="Resources" />
+	  <property name="Tags" value="disk_storage" />
+    </item>
+
+    <item name="diskStorageEmptyT2">
+	  <property name="Extends" value="resourceScrapPolymers" />
+	  <property name="Material" value="MresourceScrapPolymers" />
+	  <property name="CustomIcon" value="diskStorageT2" />
+	  <property name="Stacknumber" value="1" />
+	  <property name="EconomicValue" value="1200" />
+	  <property name="DescriptionKey" value="Disk Storage T2" />
+      <property name="Group" value="Resources" />
+	  <property name="Tags" value="disk_storage" />
+    </item>
+  </append>
+</configs>

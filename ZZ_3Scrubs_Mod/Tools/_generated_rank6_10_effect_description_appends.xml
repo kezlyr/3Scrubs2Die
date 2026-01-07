@@ -1,0 +1,129 @@
+<!-- ZZ_PerkOverhaul: replicated rank 6-10 effect_description blocks -->
+
+<append xpath="/progression/perks/perk[@name='perkBetterBarter']/effect_group[1]">
+        <effect_description level="6" desc_key="perkBetterBarterRank6Desc" long_desc_key="perkBetterBarterRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkBetterBarterRank7Desc" long_desc_key="perkBetterBarterRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkBetterBarterRank8Desc" long_desc_key="perkBetterBarterRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkBetterBarterRank9Desc" long_desc_key="perkBetterBarterRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkBetterBarterRank10Desc" long_desc_key="perkBetterBarterRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/effect_group[1]">
+        <effect_description level="6" desc_key="perkCharismaticNatureRank6Desc" long_desc_key="perkCharismaticNatureRank6LongDesc"/>
+        <effect_description level="7" desc_key="perkCharismaticNatureRank7Desc" long_desc_key="perkCharismaticNatureRank7LongDesc"/>
+        <effect_description level="8" desc_key="perkCharismaticNatureRank8Desc" long_desc_key="perkCharismaticNatureRank8LongDesc"/>
+        <effect_description level="9" desc_key="perkCharismaticNatureRank9Desc" long_desc_key="perkCharismaticNatureRank9LongDesc"/>
+        <effect_description level="10" desc_key="perkCharismaticNatureRank10Desc" long_desc_key="perkCharismaticNatureRank10LongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group[1]">
+        <effect_description level="6" desc_key="perkElectrocutionerRank6Desc" long_desc_key="perkElectrocutionerRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkElectrocutionerRank7Desc" long_desc_key="perkElectrocutionerRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkElectrocutionerRank8Desc" long_desc_key="perkElectrocutionerRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkElectrocutionerRank9Desc" long_desc_key="perkElectrocutionerRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkElectrocutionerRank10Desc" long_desc_key="perkElectrocutionerRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkFlurryOfFortitude']/effect_group[1]">
+        <effect_description level="6" desc_key="perkFlurryOfFortitudeRank6Desc" long_desc_key="perkFlurryOfFortitudeRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkFlurryOfFortitudeRank7Desc" long_desc_key="perkFlurryOfFortitudeRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkFlurryOfFortitudeRank8Desc" long_desc_key="perkFlurryOfFortitudeRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkFlurryOfFortitudeRank9Desc" long_desc_key="perkFlurryOfFortitudeRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkFlurryOfFortitudeRank10Desc" long_desc_key="perkFlurryOfFortitudeRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkFromTheShadows']/effect_group[1]">
+        <effect_description level="6" desc_key="perkFromTheShadowsRank6Desc" long_desc_key="perkFromTheShadowsRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkFromTheShadowsRank7Desc" long_desc_key="perkFromTheShadowsRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkFromTheShadowsRank8Desc" long_desc_key="perkFromTheShadowsRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkFromTheShadowsRank9Desc" long_desc_key="perkFromTheShadowsRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkFromTheShadowsRank10Desc" long_desc_key="perkFromTheShadowsRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group[1]">
+        <effect_description level="6" desc_key="perkGreaseMonkeyRank6Desc" long_desc_key="perkGreaseMonkeyRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkGreaseMonkeyRank7Desc" long_desc_key="perkGreaseMonkeyRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkGreaseMonkeyRank8Desc" long_desc_key="perkGreaseMonkeyRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkGreaseMonkeyRank9Desc" long_desc_key="perkGreaseMonkeyRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkGreaseMonkeyRank10Desc" long_desc_key="perkGreaseMonkeyRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkHiddenStrike']/effect_group[1]">
+        <effect_description level="6" desc_key="perkHiddenStrikeRank6Desc" long_desc_key="perkHiddenStrikeRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkHiddenStrikeRank7Desc" long_desc_key="perkHiddenStrikeRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkHiddenStrikeRank8Desc" long_desc_key="perkHiddenStrikeRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkHiddenStrikeRank9Desc" long_desc_key="perkHiddenStrikeRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkHiddenStrikeRank10Desc" long_desc_key="perkHiddenStrikeRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group[1]">
+        <effect_description level="6" desc_key="perkInfiltratorRank6Desc" long_desc_key="perkInfiltratorRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkInfiltratorRank7Desc" long_desc_key="perkInfiltratorRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkInfiltratorRank8Desc" long_desc_key="perkInfiltratorRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkInfiltratorRank9Desc" long_desc_key="perkInfiltratorRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkInfiltratorRank10Desc" long_desc_key="perkInfiltratorRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkJunkMiner']/effect_group[1]">
+        <effect_description level="6" desc_key="perkJunkMinerRank6Desc" long_desc_key="perkJunkMinerRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkJunkMinerRank7Desc" long_desc_key="perkJunkMinerRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkJunkMinerRank8Desc" long_desc_key="perkJunkMinerRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkJunkMinerRank9Desc" long_desc_key="perkJunkMinerRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkJunkMinerRank10Desc" long_desc_key="perkJunkMinerRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group[1]">
+        <effect_description level="6" desc_key="perkLuckyLooterRank6Desc" long_desc_key="perkLuckyLooterRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkLuckyLooterRank7Desc" long_desc_key="perkLuckyLooterRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkLuckyLooterRank8Desc" long_desc_key="perkLuckyLooterRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkLuckyLooterRank9Desc" long_desc_key="perkLuckyLooterRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkLuckyLooterRank10Desc" long_desc_key="perkLuckyLooterRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkPainTolerance']/effect_group[1]">
+        <effect_description level="6" desc_key="perkPainToleranceRank6Desc" long_desc_key="perkPainToleranceRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkPainToleranceRank7Desc" long_desc_key="perkPainToleranceRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkPainToleranceRank8Desc" long_desc_key="perkPainToleranceRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkPainToleranceRank9Desc" long_desc_key="perkPainToleranceRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkPainToleranceRank10Desc" long_desc_key="perkPainToleranceRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkRunAndGun']/effect_group[1]">
+        <effect_description level="6" desc_key="perkRunAndGunRank6Desc" long_desc_key="perkRunAndGunRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkRunAndGunRank7Desc" long_desc_key="perkRunAndGunRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkRunAndGunRank8Desc" long_desc_key="perkRunAndGunRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkRunAndGunRank9Desc" long_desc_key="perkRunAndGunRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkRunAndGunRank10Desc" long_desc_key="perkRunAndGunRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkSiphoningStrikes']/effect_group[1]">
+        <effect_description level="6" desc_key="perkSiphoningStrikesRank6Desc" long_desc_key="perkSiphoningStrikesRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkSiphoningStrikesRank7Desc" long_desc_key="perkSiphoningStrikesRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkSiphoningStrikesRank8Desc" long_desc_key="perkSiphoningStrikesRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkSiphoningStrikesRank9Desc" long_desc_key="perkSiphoningStrikesRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkSiphoningStrikesRank10Desc" long_desc_key="perkSiphoningStrikesRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group[1]">
+        <effect_description level="6" desc_key="perkSlowMetabolismRank6Desc" long_desc_key="perkSlowMetabolismRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkSlowMetabolismRank7Desc" long_desc_key="perkSlowMetabolismRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkSlowMetabolismRank8Desc" long_desc_key="perkSlowMetabolismRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkSlowMetabolismRank9Desc" long_desc_key="perkSlowMetabolismRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkSlowMetabolismRank10Desc" long_desc_key="perkSlowMetabolismRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group[1]">
+        <effect_description level="6" desc_key="perkTreasureHunterRank6Desc" long_desc_key="perkTreasureHunterRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkTreasureHunterRank7Desc" long_desc_key="perkTreasureHunterRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkTreasureHunterRank8Desc" long_desc_key="perkTreasureHunterRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkTreasureHunterRank9Desc" long_desc_key="perkTreasureHunterRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkTreasureHunterRank10Desc" long_desc_key="perkTreasureHunterRank10BWLongDesc"/>
+</append>
+
+<append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group[1]">
+        <effect_description level="6" desc_key="perkTurretsRank6Desc" long_desc_key="perkTurretsRank6BWLongDesc"/>
+        <effect_description level="7" desc_key="perkTurretsRank7Desc" long_desc_key="perkTurretsRank7BWLongDesc"/>
+        <effect_description level="8" desc_key="perkTurretsRank8Desc" long_desc_key="perkTurretsRank8BWLongDesc"/>
+        <effect_description level="9" desc_key="perkTurretsRank9Desc" long_desc_key="perkTurretsRank9BWLongDesc"/>
+        <effect_description level="10" desc_key="perkTurretsRank10Desc" long_desc_key="perkTurretsRank10BWLongDesc"/>
+</append>

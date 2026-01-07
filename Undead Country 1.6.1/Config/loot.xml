@@ -719,7 +719,7 @@
 	<item group="groupReinforcedChestT3_7" count="2"/> 
 	<item group="groupReinforcedChestT3_8" count="2"/>
 	<item group="groupReinforcedChestT3_9" count="2"/>
-	<item group="groupAllArmor" count="1"/>
+	<!-- <item group="groupAllArmor" count="1"/> -->
 </lootgroup>
 
 <lootgroup name="groupHardenedChestT4_1">
@@ -801,7 +801,7 @@
 	<item group="groupHardenedChestT4_9" count="2"/>
 	<item group="groupHardenedChestT4_10" count="1"/>
 	<item group="groupHardenedChestT4_11" count="1"/>
-	<item group="groupAllArmor" count="1"/>
+	<!-- <item group="groupAllArmor" count="1"/> -->
 	<item group="groupRareMelee" count="1"/>
 </lootgroup>
 
@@ -904,7 +904,7 @@
 	<item group="groupHardenedChestT5_12" count="1"/>
 	<item group="groupHardenedChestT5_13" count="1"/>
 	<item group="groupHardenedChestT5_14" count="1"/>
-	<item group="groupAllArmor" count="1"/>
+	<!-- <item group="groupAllArmor" count="1"/> -->
 	<item group="groupRareMelee" count="1"/>
 </lootgroup>
 

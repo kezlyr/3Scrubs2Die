@@ -1,0 +1,17 @@
+<configs>
+  <append xpath="/buffs">
+    <buff name="buffPointSurge" name_key="buffPointSurgeName"
+          description_key="buffPointSurgeDesc" icon="ui_game_symbol_levelup"
+          duration="600" remove_on_death="false">
+      <effect_group>
+        <!-- 10 dk boyunca %15 XP ve +3 taşıma -->
+        <passive_effect name="PlayerExpGain" operation="perc_add" value=".15"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+
+        <!-- Buff bittiğinde kilidi aç -->
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar"
+                          cvar="$pointSurgeCD" operation="set" value="0"/>
+      </effect_group>
+    </buff>
+  </append>
+</configs>

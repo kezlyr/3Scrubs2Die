@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/lootcontainers">
+    <!-- Player-made disk storage containers (no generated loot) -->
+
+    <!-- Disk Drive: just holds disks (acts like a shelf / drive bay). -->
+    <lootcontainer name="diskDriveContainer" count="0" size="4,1" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" ignore_loot_abundance="true" />
+
+    <!-- Disk Reader: slots 0-3 are disk bays; slots 4-33 are disk 0 contents (30 slots); slot 34 is locked/unused. -->
+    <lootcontainer name="diskReaderContainer" count="0" size="7,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" ignore_loot_abundance="true" />
+    <!-- Drop Box: staging container that auto-pushes into adjacent Disk Drive on close. -->
+    <lootcontainer name="diskDropBoxContainer" count="0" size="4,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" ignore_loot_abundance="true" />
+  </append>
+</configs>

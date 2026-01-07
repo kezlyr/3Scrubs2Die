@@ -1,0 +1,617 @@
+<configs>
+
+<!-- ============================================================================
+     ASYLUM TIERED TREASURE MAP SYSTEM - LOOT GROUPS
+     Three tiers of treasure loot that scale with demon difficulty
+     NOTE: Using <append> so vanilla groups are already defined
+     ============================================================================ -->
+
+<!-- Tier 1: Infernal Treasure - Midgame Demons (45-60k HP) -->
+<append xpath="/lootcontainers">
+    <lootgroup name="groupAsylumTreasureT1" count="all">
+        <!-- Base valuables from vanilla -->
+        <item group="groupValuablesExtraLarge" count="1"/>
+        <item group="groupAmmoPileLarge" count="1,2"/>
+        <item name="oldCash" count="100,300"/>
+        <item name="casinoCoin" count="500,1500"/>
+        <!-- Infernal stones -->
+        <item name="infernalBlackStone" count="15,30"/>
+        <item name="infernalConcentratedStone" count="2,5" prob="0.50"/>
+        <item name="infernalCronStone" count="1" prob="0.10"/>
+        <!-- Resources -->
+        <item name="resourceForgedTitanium" count="5,15"/>
+        <item name="SkillCoinPart" count="1,2" prob="0.15"/>
+        <!-- Legendary weapons/tools - moderate chance -->
+        <item group="groupSMA" loot_prob_template="SMALevelGated_T2"/>
+        <item group="groupSMATools" loot_prob_template="SMAToolsLevelGated_T2"/>
+        <!-- Weapons/armor - using vanilla tiered groups -->
+        <item group="groupWeaponsT2_Ranged" count="1" loot_quality_template="qualPlus1Template"/>
+        <item group="groupWeaponsT2_Melee" count="1" prob="0.50" loot_quality_template="qualPlus1Template"/>
+        <item group="groupAllArmor" count="1" prob="0.50" loot_quality_template="qualPlus1Template"/>
+    </lootgroup>
+
+    <!-- Tier 2: Demonic Treasure - Heavy Midgame Demons (75-90k HP) -->
+    <lootgroup name="groupAsylumTreasureT2" count="all">
+        <!-- Base valuables from vanilla -->
+        <item group="groupValuablesExtraLarge" count="1,2"/>
+        <item group="groupAmmoPileLarge" count="2,3"/>
+        <item name="oldCash" count="200,500"/>
+        <item name="casinoCoin" count="1500,4000"/>
+        <!-- Infernal stones - more -->
+        <item name="infernalBlackStone" count="30,60"/>
+        <item name="infernalConcentratedStone" count="5,12"/>
+        <item name="infernalCronStone" count="1,3" prob="0.35"/>
+        <!-- Torment essences - EXTREMELY RARE -->
+        <item name="infernalTormentMinor" count="1" prob="0.03"/>
+        <item name="infernalTormentMajor" count="1" prob="0.01"/>
+        <!-- Resources -->
+        <item name="resourceForgedTitanium" count="15,30"/>
+        <item name="SkillCoinPart" count="2,4" prob="0.25"/>
+        <!-- Legendary weapons/tools - better chance -->
+        <item group="groupSMA" loot_prob_template="SMALevelGated_T3"/>
+        <item group="groupSMATools" loot_prob_template="SMAToolsLevelGated_T3"/>
+        <!-- Weapons/armor - using vanilla T3 tiered groups -->
+        <item group="groupWeaponsT3_Ranged" count="1" loot_quality_template="qualPlus1Template"/>
+        <item group="groupWeaponsT2_Melee" count="1" loot_quality_template="qualPlus1Template"/>
+        <item group="groupAllArmor" count="1" prob="0.60" loot_quality_template="qualPlus1Template"/>
+        <!-- Teleport potion chance -->
+        <item name="drinkTeleportToBedroll" count="1" prob="0.15"/>
+    </lootgroup>
+
+    <!-- Tier 3: Abyssal Treasure - Uber Demons (150k HP) -->
+    <lootgroup name="groupAsylumTreasureT3" count="all" loot_quality_template="qualTwitchT6Template">
+        <!-- Base valuables - massive -->
+        <item group="groupValuablesExtraLarge" count="2,3"/>
+        <item group="groupAmmoPileLarge" count="3,5"/>
+        <item name="oldCash" count="500,1500"/>
+        <item name="casinoCoin" count="5000,15000"/>
+        <!-- Infernal stones - massive amounts -->
+        <item name="infernalBlackStone" count="75,150"/>
+        <item name="infernalConcentratedStone" count="15,30"/>
+        <item name="infernalCronStone" count="3,8"/>
+        <!-- Torment essences - EXTREMELY RARE -->
+        <item name="infernalTormentMinor" count="1" prob="0.05"/>
+        <item name="infernalTormentMajor" count="1" prob="0.02"/>
+        <item name="infernalTormentSuperior" count="1" prob="0.005"/>
+        <!-- Resources -->
+        <item name="resourceForgedTitanium" count="30,60"/>
+        <item name="SkillCoinPart" count="3,6" prob="0.50"/>
+        <item name="SkillCoinComplete" count="1" prob="0.15"/>
+        <!-- Legendary weapons/tools - high chance, uses T6 quality from parent -->
+        <item group="groupZpackBossGreenOneWeaponOrTool" prob="0.40"/>
+        <item group="groupSMA" loot_prob_template="SMALevelGated_T5"/>
+        <item group="groupSMATools" loot_prob_template="SMAToolsLevelGated_T5"/>
+        <!-- Weapons/armor - T3 (highest vanilla tier) with T6 quality from parent -->
+        <item group="groupWeaponsT3_Ranged" count="1"/>
+        <item group="groupWeaponsT2_Melee" count="1"/>
+        <item group="groupAllArmor" count="1"/>
+        <!-- Guaranteed teleport potion -->
+        <item name="drinkTeleportToBedroll" count="1,2"/>
+        <!-- Skill magazines -->
+        <item group="groupChallengeRewardSkillMagazinesAll" count="2,4"/>
+    </lootgroup>
+</append>
+
+<!-- Loot containers for tiered treasure chests -->
+<append xpath="/lootcontainers">
+    <lootcontainer name="asylumBuriedTreasureT1" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template" destroy_on_close="empty">
+        <item group="groupAsylumTreasureT1"/>
+    </lootcontainer>
+
+    <lootcontainer name="asylumBuriedTreasureT2" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template" destroy_on_close="empty">
+        <item group="groupAsylumTreasureT2"/>
+    </lootcontainer>
+
+    <lootcontainer name="asylumBuriedTreasureT3" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualTwitchT6Template" destroy_on_close="empty">
+        <item group="groupAsylumTreasureT3"/>
+    </lootcontainer>
+</append>
+
+<!-- ============================================================================
+     TREASURE MAP DROPS - Add maps to demon loot bags
+     ============================================================================ -->
+
+<!-- Midgame Demons (45-60k HP) drop T1 Infernal Maps - EXTREMELY RARE -->
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss']">
+    <item name="qt_asylum_infernal" count="1" prob="0.005"/>
+</append>
+
+<!-- Heavy Midgame Demons would also use groupZpackBoss, but with higher chance -->
+<!-- Note: Individual demon loot adjustments may need entityclasses.xml changes -->
+
+<!-- Uber Demons (150k HP) drop T2 Demonic Maps and rare T3 Abyssal Maps - EXTREMELY RARE -->
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackBossGreen']">
+    <item name="qt_asylum_demonic" count="1" prob="0.01"/>
+    <item name="qt_asylum_abyssal" count="1" prob="0.0025"/>
+</append>
+
+<!-- ============================================================================
+     ASYLUM LOOT REBALANCE - PROBABILITY TEMPLATES
+     These templates add level-gating to legendary weapon/tool drops
+     ============================================================================ -->
+
+<!-- Level-gated templates for Legendary Weapons (replaces SMAT1-SMAT5) -->
+<append xpath="/lootcontainers/lootprobtemplates">
+
+    <!-- T1: Common containers (zombie packs, small safes, police cars) -->
+    <!-- Original SMAT1 was 0.1% from level 1. Now requires level 40+ -->
+    <lootprobtemplate name="SMALevelGated_T1">
+        <loot level="1,39" prob="0"/>
+        <loot level="40,79" prob="0.0003"/>
+        <loot level="80,124" prob="0.0006"/>
+        <loot level="125,164" prob="0.001"/>
+        <loot level="165,999999" prob="0.0015"/>
+    </lootprobtemplate>
+
+    <!-- T2: Uncommon containers (buried treasure, hidden stash, reinforced chests T2) -->
+    <!-- Original SMAT2 was 0.5% from level 1. Now requires level 60+ -->
+    <lootprobtemplate name="SMALevelGated_T2">
+        <loot level="1,59" prob="0"/>
+        <loot level="60,99" prob="0.001"/>
+        <loot level="100,139" prob="0.003"/>
+        <loot level="140,179" prob="0.005"/>
+        <loot level="180,999999" prob="0.008"/>
+    </lootprobtemplate>
+
+    <!-- T3: Rare containers (gun safes, large weapon bags, reinforced chests T3) -->
+    <!-- Original SMAT3 was 4% from level 1. Now requires level 80+ -->
+    <lootprobtemplate name="SMALevelGated_T3">
+        <loot level="1,79" prob="0"/>
+        <loot level="80,119" prob="0.01"/>
+        <loot level="120,159" prob="0.02"/>
+        <loot level="160,199" prob="0.035"/>
+        <loot level="200,999999" prob="0.05"/>
+    </lootprobtemplate>
+
+    <!-- T4: Very Rare containers (hardened chests T4) -->
+    <!-- Original SMAT4 was 8% from level 1. Now requires level 100+ -->
+    <lootprobtemplate name="SMALevelGated_T4">
+        <loot level="1,99" prob="0"/>
+        <loot level="100,139" prob="0.02"/>
+        <loot level="140,179" prob="0.04"/>
+        <loot level="180,219" prob="0.06"/>
+        <loot level="220,999999" prob="0.08"/>
+    </lootprobtemplate>
+
+    <!-- T5: Endgame containers (hardened chests T5, infested T5) -->
+    <!-- Original SMAT5 was 15% from level 1. Now requires level 125+ -->
+    <lootprobtemplate name="SMALevelGated_T5">
+        <loot level="1,124" prob="0"/>
+        <loot level="125,164" prob="0.05"/>
+        <loot level="165,204" prob="0.10"/>
+        <loot level="205,999999" prob="0.15"/>
+    </lootprobtemplate>
+
+    <!-- Level-gated templates for Legendary Tools (replaces SMAToolsT1-T5) -->
+    <lootprobtemplate name="SMAToolsLevelGated_T1">
+        <loot level="1,39" prob="0"/>
+        <loot level="40,79" prob="0.0003"/>
+        <loot level="80,124" prob="0.0006"/>
+        <loot level="125,164" prob="0.001"/>
+        <loot level="165,999999" prob="0.0015"/>
+    </lootprobtemplate>
+
+    <lootprobtemplate name="SMAToolsLevelGated_T2">
+        <loot level="1,59" prob="0"/>
+        <loot level="60,99" prob="0.001"/>
+        <loot level="100,139" prob="0.003"/>
+        <loot level="140,179" prob="0.005"/>
+        <loot level="180,999999" prob="0.008"/>
+    </lootprobtemplate>
+
+    <lootprobtemplate name="SMAToolsLevelGated_T3">
+        <loot level="1,79" prob="0"/>
+        <loot level="80,119" prob="0.01"/>
+        <loot level="120,159" prob="0.02"/>
+        <loot level="160,199" prob="0.035"/>
+        <loot level="200,999999" prob="0.05"/>
+    </lootprobtemplate>
+
+    <lootprobtemplate name="SMAToolsLevelGated_T4">
+        <loot level="1,99" prob="0"/>
+        <loot level="100,139" prob="0.02"/>
+        <loot level="140,179" prob="0.04"/>
+        <loot level="180,219" prob="0.06"/>
+        <loot level="220,999999" prob="0.08"/>
+    </lootprobtemplate>
+
+    <lootprobtemplate name="SMAToolsLevelGated_T5">
+        <loot level="1,124" prob="0"/>
+        <loot level="125,164" prob="0.05"/>
+        <loot level="165,204" prob="0.10"/>
+        <loot level="205,999999" prob="0.15"/>
+    </lootprobtemplate>
+
+    <!-- Titanium resource level gate - mid-game and beyond -->
+    <lootprobtemplate name="titaniumLevelGated">
+        <loot level="1,59" prob="0"/>
+        <loot level="60,99" prob="0.15"/>
+        <loot level="100,139" prob="0.25"/>
+        <loot level="140,179" prob="0.35"/>
+        <loot level="180,999999" prob="0.50"/>
+    </lootprobtemplate>
+
+    <!-- Special metals (aluminum, cobalt, copper, zinc) - early-mid gate -->
+    <lootprobtemplate name="specialMetalsLevelGated">
+        <loot level="1,39" prob="0"/>
+        <loot level="40,79" prob="0.20"/>
+        <loot level="80,119" prob="0.30"/>
+        <loot level="120,159" prob="0.40"/>
+        <loot level="160,999999" prob="0.50"/>
+    </lootprobtemplate>
+
+    <!-- Teleport potions - late game only -->
+    <lootprobtemplate name="teleportPotionLevelGated">
+        <loot level="1,79" prob="0"/>
+        <loot level="80,124" prob="0.02"/>
+        <loot level="125,164" prob="0.05"/>
+        <loot level="165,999999" prob="0.08"/>
+    </lootprobtemplate>
+
+</append>
+
+<!-- ============================================================================
+     LEVEL-GATED QUALITY TEMPLATES
+     Replaces the overly generous SMAQuality template
+     ============================================================================ -->
+
+<append xpath="/lootcontainers/lootqualitytemplates">
+
+    <!-- Level-gated quality for Legendary Weapons -->
+    <lootqualitytemplate name="SMAQualityLevelGated">
+        <!-- Early game (1-59): Only Q1-Q2 possible -->
+        <qualitytemplate level="1,59" default_quality="1">
+            <loot quality="1" prob="0.85"/>
+            <loot quality="2" prob="0.15"/>
+        </qualitytemplate>
+        <!-- Mid game (60-99): Q1-Q3 possible -->
+        <qualitytemplate level="60,99" default_quality="1">
+            <loot quality="1" prob="0.60"/>
+            <loot quality="2" prob="0.30"/>
+            <loot quality="3" prob="0.10"/>
+        </qualitytemplate>
+        <!-- Late-mid game (100-139): Q1-Q4 possible -->
+        <qualitytemplate level="100,139" default_quality="1">
+            <loot quality="1" prob="0.45"/>
+            <loot quality="2" prob="0.30"/>
+            <loot quality="3" prob="0.18"/>
+            <loot quality="4" prob="0.07"/>
+        </qualitytemplate>
+        <!-- Late game (140-179): Q1-Q5 possible -->
+        <qualitytemplate level="140,179" default_quality="1">
+            <loot quality="1" prob="0.35"/>
+            <loot quality="2" prob="0.28"/>
+            <loot quality="3" prob="0.20"/>
+            <loot quality="4" prob="0.12"/>
+            <loot quality="5" prob="0.05"/>
+        </qualitytemplate>
+        <!-- Endgame (180+): Full range, Q6 possible but rare -->
+        <qualitytemplate level="180,999999" default_quality="1">
+            <loot quality="1" prob="0.28"/>
+            <loot quality="2" prob="0.25"/>
+            <loot quality="3" prob="0.22"/>
+            <loot quality="4" prob="0.14"/>
+            <loot quality="5" prob="0.08"/>
+            <loot quality="6" prob="0.03"/>
+        </qualitytemplate>
+    </lootqualitytemplate>
+
+    <!-- Level-gated quality for Legendary Tools -->
+    <lootqualitytemplate name="SMAToolsQualityLevelGated">
+        <qualitytemplate level="1,59" default_quality="1">
+            <loot quality="1" prob="0.85"/>
+            <loot quality="2" prob="0.15"/>
+        </qualitytemplate>
+        <qualitytemplate level="60,99" default_quality="1">
+            <loot quality="1" prob="0.60"/>
+            <loot quality="2" prob="0.30"/>
+            <loot quality="3" prob="0.10"/>
+        </qualitytemplate>
+        <qualitytemplate level="100,139" default_quality="1">
+            <loot quality="1" prob="0.45"/>
+            <loot quality="2" prob="0.30"/>
+            <loot quality="3" prob="0.18"/>
+            <loot quality="4" prob="0.07"/>
+        </qualitytemplate>
+        <qualitytemplate level="140,179" default_quality="1">
+            <loot quality="1" prob="0.35"/>
+            <loot quality="2" prob="0.28"/>
+            <loot quality="3" prob="0.20"/>
+            <loot quality="4" prob="0.12"/>
+            <loot quality="5" prob="0.05"/>
+        </qualitytemplate>
+        <qualitytemplate level="180,999999" default_quality="1">
+            <loot quality="1" prob="0.28"/>
+            <loot quality="2" prob="0.25"/>
+            <loot quality="3" prob="0.22"/>
+            <loot quality="4" prob="0.14"/>
+            <loot quality="5" prob="0.08"/>
+            <loot quality="6" prob="0.03"/>
+        </qualitytemplate>
+    </lootqualitytemplate>
+
+</append>
+
+<!-- ============================================================================
+     WEAPON GROUP REORGANIZATION
+     Move assault rifles from T0 to appropriate higher tiers
+     ============================================================================ -->
+
+<!-- Remove assault rifles from T0 Machinegunner group -->
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']/item[@name='M4A1CL1']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']/item[@name='M4A1TJS1']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']/item[@name='AK47NMW1']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']/item[@name='M4A1NMW1']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Machinegunner']/item[@name='HK417CL1']"/>
+
+<!-- Remove pistols from T0 Gunslinger that should be T1 -->
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Gunslinger']/item[@name='MK23']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT0_Gunslinger']/item[@name='TT-33']"/>
+
+<!-- Add removed T0 weapons to T1 groups with proper probability -->
+<append xpath="//lootgroup[@name='groupWeaponsT1_Machinegunner']">
+    <item name="M4A1CL1"/>
+    <item name="M4A1TJS1"/>
+    <item name="AK47NMW1"/>
+    <item name="M4A1NMW1"/>
+    <item name="HK417CL1"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupWeaponsT1_Gunslinger']">
+    <item name="MK23"/>
+    <item name="TT-33"/>
+</append>
+
+<!-- Move some T1 weapons that are too strong to T2 -->
+<remove xpath="//lootgroup[@name='groupWeaponsT1_Machinegunner']/item[@name='M4A1KK1']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT1_Machinegunner']/item[@name='HK417CXLH1']"/>
+
+<append xpath="//lootgroup[@name='groupWeaponsT2_Machinegunner']">
+    <item name="M4A1KK1"/>
+    <item name="HK417CXLH1"/>
+</append>
+
+<!-- Move heavy snipers from T2 to T3 -->
+<remove xpath="//lootgroup[@name='groupWeaponsT2_DeadEye']/item[@name='50ZDH']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT2_Machinegunner']/item[@name='50ZDH']"/>
+<remove xpath="//lootgroup[@name='groupWeaponsT2_Machinegunner']/item[@name='BQ']"/>
+
+<append xpath="//lootgroup[@name='groupWeaponsT3_DeadEye']">
+    <item name="50ZDH"/>
+</append>
+
+<!-- ============================================================================
+     LEGENDARY WEAPON DROP RATE FIXES
+     Replace original SMAT templates with level-gated versions
+     ============================================================================ -->
+
+<!-- Update groupSMA to use level-gated quality template -->
+<set xpath="//lootgroup[@name='groupSMA']/@loot_quality_template">SMAQualityLevelGated</set>
+
+<!-- Update groupSMATools to use level-gated quality template -->
+<set xpath="//lootgroup[@name='groupSMATools']/@loot_quality_template">SMAToolsQualityLevelGated</set>
+
+<!-- Replace legendary weapon prob templates in common containers -->
+<!-- groupSmallSafeLoot - T1 containers -->
+<set xpath="//lootgroup[@name='groupSmallSafeLoot']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupSmallSafeLoot']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupZpackReg - regular zombies -->
+<set xpath="//lootgroup[@name='groupZpackReg']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupZpackReg']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupSmallWeaponBag -->
+<set xpath="//lootgroup[@name='groupSmallWeaponBag']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupSmallWeaponBag']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupPoliceCar -->
+<set xpath="//lootgroup[@name='groupPoliceCar']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupPoliceCar']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupArmyTruck -->
+<set xpath="//lootgroup[@name='groupArmyTruck']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupArmyTruck']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupAirDrop -->
+<set xpath="//lootgroup[@name='groupAirDrop']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupAirDrop']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- groupFireTruck -->
+<set xpath="//lootgroup[@name='groupFireTruck']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T1</set>
+<set xpath="//lootgroup[@name='groupFireTruck']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T1</set>
+
+<!-- T2 containers - Hidden stash, buried treasure, reinforced chests -->
+<set xpath="//lootgroup[@name='groupHiddenStash']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupHiddenStash']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T2</set>
+
+<set xpath="//lootgroup[@name='groupBuriedTreasure']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupBuriedTreasure']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T2</set>
+
+<set xpath="//lootgroup[@name='groupBuriedWeaponChest']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupBuriedWeaponChest']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T2</set>
+
+<set xpath="//lootgroup[@name='groupReinforcedChestT2']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupReinforcedChestT2']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T2</set>
+
+<set xpath="//lootgroup[@name='groupZpackStrong']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupZpackStrong']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T3</set>
+
+<!-- T3 containers - Gun safes, large weapon bags, reinforced T3 -->
+<set xpath="//lootgroup[@name='groupGunSafeSecure']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T3</set>
+<set xpath="//lootgroup[@name='groupGunSafeSecure']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T3</set>
+
+<set xpath="//lootgroup[@name='groupLargeWeaponBag']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T3</set>
+<set xpath="//lootgroup[@name='groupLargeWeaponBag']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T3</set>
+
+<set xpath="//lootgroup[@name='groupReinforcedChestT3']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T3</set>
+<set xpath="//lootgroup[@name='groupReinforcedChestT3']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T3</set>
+
+<set xpath="//lootgroup[@name='groupZpackBoss']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T3</set>
+<set xpath="//lootgroup[@name='groupZpackBoss']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T5</set>
+
+<!-- T4 containers - Hardened chests T4 -->
+<set xpath="//lootgroup[@name='groupHardenedChestT4']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T4</set>
+<set xpath="//lootgroup[@name='groupHardenedChestT4']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T5</set>
+
+<!-- T5 containers - Hardened chests T5, Infested T5 -->
+<set xpath="//lootgroup[@name='groupHardenedChestT5']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T5</set>
+<set xpath="//lootgroup[@name='groupHardenedChestT5']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T5</set>
+
+<set xpath="//lootgroup[@name='groupInfestedT5']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T5</set>
+<set xpath="//lootgroup[@name='groupInfestedT5']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T5</set>
+
+<!-- ============================================================================
+     TELEPORT POTION LEVEL GATING
+     These powerful items should only appear in mid-late game
+     ============================================================================ -->
+
+<!-- Update teleport potions in groupDrinksCommon to use level-gated template -->
+<set xpath="//lootgroup[@name='groupDrinksCommon']/item[@name='drinkTeleportToBedroll']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='groupDrinksCommon']/item[@name='drinkTeleportToBackpack']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='groupDrinksCommon']/item[@name='drinkTeleportToLandClaim']/@loot_prob_template">teleportPotionLevelGated</set>
+
+<!-- Update teleport potions in rareFoodDrink -->
+<set xpath="//lootgroup[@name='rareFoodDrink']/item[@name='drinkTeleportToBedroll']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='rareFoodDrink']/item[@name='drinkTeleportToBackpack']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='rareFoodDrink']/item[@name='drinkTeleportToLandClaim']/@loot_prob_template">teleportPotionLevelGated</set>
+
+<!-- Update teleport potions in airdropdrink -->
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToBedroll']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToBackpack']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToLandClaim']/@loot_prob_template">teleportPotionLevelGated</set>
+
+<!-- ============================================================================
+     FORGED TITANIUM AND SPECIAL METALS LEVEL GATING
+     Prevent high-tier resources from appearing too early
+     Items added via append don't have loot_prob_template, so we add it
+     ============================================================================ -->
+
+<!-- groupCraftingRare - add level gate to titanium and special metals -->
+<append xpath="//lootgroup[@name='groupCraftingRare']/item[@name='resourceForgedTitanium']" operation="attributes">loot_prob_template="titaniumLevelGated"</append>
+<append xpath="//lootgroup[@name='groupCraftingRare']/item[@name='resourceForgedAluminium']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupCraftingRare']/item[@name='resourceForgedCobalt']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupCraftingRare']/item[@name='resourceForgedCopper']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupCraftingRare']/item[@name='resourceForgedZinc']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+
+<!-- groupBuildingRare -->
+<append xpath="//lootgroup[@name='groupBuildingRare']/item[@name='resourceForgedTitanium']" operation="attributes">loot_prob_template="titaniumLevelGated"</append>
+
+<!-- groupWorkbenchLoot03 -->
+<append xpath="//lootgroup[@name='groupWorkbenchLoot03']/item[@name='resourceForgedTitanium']" operation="attributes">loot_prob_template="titaniumLevelGated"</append>
+<append xpath="//lootgroup[@name='groupWorkbenchLoot03']/item[@name='resourceForgedAluminium']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupWorkbenchLoot03']/item[@name='resourceForgedCobalt']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupWorkbenchLoot03']/item[@name='resourceForgedCopper']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupWorkbenchLoot03']/item[@name='resourceForgedZinc']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+
+<!-- groupForge02 - reduce titanium amounts and add level gate -->
+<append xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedTitanium']" operation="attributes">loot_prob_template="titaniumLevelGated"</append>
+<set xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedTitanium']/@count">2,8</set>
+<append xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedAluminium']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedCobalt']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedCopper']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+<append xpath="//lootgroup[@name='groupForge02']/item[@name='resourceForgedZinc']" operation="attributes">loot_prob_template="specialMetalsLevelGated"</append>
+
+<!-- groupConstructionCrate02 - replace medLow with level gate -->
+<set xpath="//lootgroup[@name='groupConstructionCrate02']/item[@name='resourceForgedTitanium']/@loot_prob_template">titaniumLevelGated</set>
+<set xpath="//lootgroup[@name='groupConstructionCrate02']/item[@name='resourceForgedAluminium']/@loot_prob_template">specialMetalsLevelGated</set>
+<set xpath="//lootgroup[@name='groupConstructionCrate02']/item[@name='resourceForgedCobalt']/@loot_prob_template">specialMetalsLevelGated</set>
+<set xpath="//lootgroup[@name='groupConstructionCrate02']/item[@name='resourceForgedCopper']/@loot_prob_template">specialMetalsLevelGated</set>
+<set xpath="//lootgroup[@name='groupConstructionCrate02']/item[@name='resourceForgedZinc']/@loot_prob_template">specialMetalsLevelGated</set>
+
+<!-- ============================================================================
+     SKILL COIN LEVEL GATING
+     Add level requirements to skill coin parts
+     Items have prob but not loot_prob_template, so we add it
+     ============================================================================ -->
+
+<!-- Add level gate to SkillCoinPart drops - require level 60+ -->
+<append xpath="//lootgroup[@name='groupSmallSafeLoot']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T2"</append>
+<append xpath="//lootgroup[@name='groupGunSafeSecure']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T2"</append>
+<append xpath="//lootgroup[@name='groupReinforcedChestT3']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T3"</append>
+<append xpath="//lootgroup[@name='groupHardenedChestT4']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T3"</append>
+<append xpath="//lootgroup[@name='groupHardenedChestT5']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T4"</append>
+<append xpath="//lootgroup[@name='groupBuriedTreasure']/item[@name='SkillCoinPart']" operation="attributes">loot_prob_template="SMALevelGated_T2"</append>
+
+<!-- SkillCoinComplete should be endgame only - require level 150+ -->
+<append xpath="//lootgroup[@name='groupHardenedChestT5']/item[@name='SkillCoinComplete']" operation="attributes">loot_prob_template="SMALevelGated_T5"</append>
+
+<!-- ============================================================================
+     AIRDROP/SUPPLY CRATE IMPROVEMENTS
+     Make airdrops more rewarding with Asylum-specific items
+     Balanced between Tiered Treasure T1 and T2
+     ============================================================================ -->
+
+<!--
+     AIRDROP BALANCE PHILOSOPHY:
+     - Airdrops should feel special and worth the risk of claiming
+     - Loot should scale with player level (not fixed early-game items)
+     - Better than random loot containers but not as good as demon treasure maps
+     - Include Asylum progression items (infernal stones, skill coins)
+     - Legendary weapons/tools at moderate rates with proper level gating
+-->
+
+<!-- Add Asylum items to the main groupAirDrop -->
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+    <!-- Infernal stones - moderate amounts, good for enhancement progression -->
+    <item name="infernalBlackStone" count="8,20"/>
+    <item name="infernalConcentratedStone" count="1,4" prob="0.25"/>
+    <item name="infernalCronStone" count="1" prob="0.05"/>
+
+    <!-- Skill Coin parts - rare but possible -->
+    <item name="SkillCoinPart" count="1,2" loot_prob_template="SMALevelGated_T2"/>
+
+    <!-- Titanium resources - level gated -->
+    <item name="resourceForgedTitanium" count="5,15" loot_prob_template="titaniumLevelGated"/>
+
+    <!-- Torment Essence - EXTREMELY RARE -->
+    <item name="infernalTormentMinor" count="1" prob="0.005"/>
+</append>
+
+<!-- Upgrade legendary weapon chance in airdrops from T1 to T2 -->
+<!-- The original mod adds at T1, we upgrade it to T2 for better mid-game scaling -->
+<set xpath="//lootgroup[@name='groupAirDrop']/item[@group='groupSMA']/@loot_prob_template">SMALevelGated_T2</set>
+<set xpath="//lootgroup[@name='groupAirDrop']/item[@group='groupSMATools']/@loot_prob_template">SMAToolsLevelGated_T2</set>
+
+<!-- Add Asylum custom firearms to groupAirDrop03 (the weapons/gear section) -->
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop03']">
+    <!-- Chance for Asylum modded weapons at higher levels -->
+    <item group="groupWeaponsT2_Machinegunner" loot_prob_template="ProbT1"/>
+    <item group="groupWeaponsT3_Machinegunner" loot_prob_template="ProbT2"/>
+    <item group="groupWeaponsT3_DeadEye" loot_prob_template="ProbT2"/>
+</append>
+
+<!-- Improve airdrop drink group with better teleport chances -->
+<!-- Note: Asylum Core already adds teleport potions at "low" prob -->
+<!-- We upgrade to better rates using level-gated templates -->
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToBedroll']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToBackpack']/@loot_prob_template">teleportPotionLevelGated</set>
+<set xpath="//lootgroup[@name='airdropdrink']/item[@name='drinkTeleportToLandClaim']/@loot_prob_template">teleportPotionLevelGated</set>
+
+<!-- Improve T4/T5 bundles with Asylum resources -->
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDropT4Bundles']">
+    <item name="infernalBlackStone" count="15,30"/>
+    <item name="infernalConcentratedStone" count="2,6"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDropT5Bundles']">
+    <item name="infernalBlackStone" count="20,40"/>
+    <item name="infernalConcentratedStone" count="4,10"/>
+    <item name="infernalCronStone" count="1,2" prob="0.15"/>
+    <item name="SkillCoinPart" count="1,3" prob="0.15"/>
+    <item name="infernalTormentMinor" count="1" prob="0.01"/>
+</append>
+
+<!-- Upgrade the airdrop container quality template for better scaling -->
+<!-- Change from qualBaseTemplate to qualPlus1Template for better item quality -->
+<set xpath="/lootcontainers/lootcontainer[@name='airDrop']/@loot_quality_template">qualPlus1Template</set>
+
+<!-- ============================================================================
+     AIRDROP HORDE SPAWN TRIGGER
+     When players open an airdrop, spawn a zombie horde to increase risk
+     The horde scales with gamestage (defined in gameevents.xml)
+     ============================================================================ -->
+
+<!-- Add on_open_event to trigger zombie horde when opening supply crates -->
+<append xpath="/lootcontainers/lootcontainer[@name='airDrop']" operation="attributes">on_open_event="airdrop_horde_spawn"</append>
+
+</configs>

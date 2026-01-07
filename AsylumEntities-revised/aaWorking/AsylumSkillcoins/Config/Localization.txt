@@ -1,0 +1,6 @@
+Key,File,Type,english
+
+SkillCoinPart,,,"Asylum Knowledge Fragment"
+SkillCoinPartDesc,,,"[8B0000]Twisted fragments of forbidden knowledge from the Asylum's depths. Collect 10 to forge a complete understanding... if you dare."
+SkillCoinComplete,,,,,"[8B0000]Asylum Knowledge Token"
+SkillCoinCompleteDesc,,,"[FF4500]A complete token of dark wisdom from the Asylum. Use to unlock forbidden knowledge and enhance your abilities. The whispers grow stronger..."

@@ -1,0 +1,20 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+qt_asylum_infernal,items,Item,,,Infernal Treasure Map,,,,,,,,,,,,,
+qt_asylum_infernal_desc,items,Item,,,"A mysterious map recovered from a slain demon. It points to a cache of infernal treasures buried somewhere in the wasteland. The demons guard their hoards jealously.",,,,,,,,,,,,,
+
+qt_asylum_demonic,items,Item,,,Demonic Treasure Map,,,,,,,,,,,,,
+qt_asylum_demonic_desc,items,Item,,,"An ancient parchment inscribed with demonic runes, taken from a powerful demon. It reveals the location of a substantial demonic treasure trove filled with rare materials.",,,,,,,,,,,,,
+
+qt_asylum_abyssal,items,Item,,,Abyssal Treasure Map,,,,,,,,,,,,,
+qt_asylum_abyssal_desc,items,Item,,,"A map that seems to shift and writhe in your hands, recovered from an uber demon of the abyss. It leads to an enormous hoard of the most powerful treasures known to exist.",,,,,,,,,,,,,
+
+treasure_asylum_infernal,quests,Quest,,,Infernal Treasure Hunt,,,,,,,,,,,,,
+treasure_asylum_infernal_offer,quests,Quest,,,"You've recovered an Infernal Treasure Map from a slain demon. Follow it to uncover hidden riches and powerful equipment. Beware - the demons may have left guardians.",,,,,,,,,,,,,
+
+treasure_asylum_demonic,quests,Quest,,,Demonic Treasure Hunt,,,,,,,,,,,,,
+treasure_asylum_demonic_offer,quests,Quest,,,"This Demonic Treasure Map promises significant rewards. The demons have hoarded rare infernal stones, concentrated materials, and powerful weapons. Dig deep to claim your prize.",,,,,,,,,,,,,
+
+treasure_asylum_abyssal,quests,Quest,,,Abyssal Treasure Hunt,,,,,,,,,,,,,
+treasure_asylum_abyssal_offer,quests,Quest,,,"The Abyssal Treasure Map leads to the greatest hoard ever assembled. Legendary weapons, mountains of infernal stones, and treasures beyond imagination await. This is the ultimate prize.",,,,,,,,,,,,,
+

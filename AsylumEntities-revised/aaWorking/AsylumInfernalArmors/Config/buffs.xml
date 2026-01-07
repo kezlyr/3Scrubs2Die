@@ -1,0 +1,2482 @@
+<configs>
+<remove xpath="/buffs/buff[@name='buffLumberjackSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffLumberjackSetBonus" name_key="buffLumberjackSetBonusName" description_key="buffLumberjackSetBonusBWDesc" tooltip_key="buffLumberjackSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="perc_add" value="1" tags="oreWoodHarvest">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+			</passive_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay02" operation="set" value="100"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay02" operation="set" value="100"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.05">
+					<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.1">
+					<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.15">
+					<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".4">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.2">
+					<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.25">
+					<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".8">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorLumberjackFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorLumberjackFSBDisplay01"/>
+				
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.3">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="chainzaw"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="chainzaw"/>
+				</passive_effect>
+				
+				
+				<passive_effect name="DismemberChance" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="chainzaw"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value="1">
+				<requirement name="HoldingItemHasTags" tags="axe"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.3" tags="running"> 
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.3" tags="jumping"> 
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="CarryCapacity" operation="base_add" value="100">
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".7">
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="TraderStage" operation="base_add" value="70">
+				<requirement name="InBiome" biome="1"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="boltaction"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="boltaction"/>
+				</passive_effect>
+				
+				<passive_effect name="MagazineSize" operation="perc_add" value="6" >
+				<requirement name="HoldingItemHasTags" tags="boltaction"/>
+				</passive_effect>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="boltaction"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffPreacherSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffPreacherSetBonus" name_key="buffPreacherSetBonusName" description_key="buffPreacherSetBonusBWDesc" tooltip_key="buffPreacherSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".1" tags="buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="10"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".15" tags="buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="15"/>
+			    
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="20"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="25"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".3" tags="buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="30"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay01" operation="set" value="40"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".4" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInfectionCatch"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay02" operation="set" value="100"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay01,.armorPreacherFSBDisplay02"/>
+				
+				
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" stat="Health" operation="add" value="300">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".4"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+				</triggered_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1" tags="running"> 
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1" tags="jumping"> 
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<passive_effect name="CarryCapacity" operation="base_add" value="100">
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock">
+				<requirement name="EntityTagCompare" target="other" tags="radiated"/>
+				</triggered_effect>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".5">
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<passive_effect name="TraderStage" operation="base_add" value="50">
+				<requirement name="InBiome" biome="9"/>
+				</passive_effect>
+				
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" buff="buffBurningElement">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+		
+		<passive_effect name="EntityDamage" operation="perc_add" value="6">
+		<requirement name="HasBuff" buff="buffInjuryBleedingTwo,buffInjuryBleeding"/>
+		<requirement name="HoldingItemHasTags" tags="melee"/>
+		</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffRogueSetBonus']"/>
+<append xpath="/buffs">
+	<buff name="buffRogueSetBonus" name_key="buffRogueSetBonusName" description_key="buffRogueSetBonusBWDesc" tooltip_key="buffRogueSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value=".1" tags="dukes"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value=".2" tags="dukes"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value=".4" tags="dukes"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value=".6" tags="dukes"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value=".8" tags="dukes"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRogueFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRogueFSBDisplay"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value="1" tags="dukes"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value="1" tags="resourceLockPick"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value="10" tags="gems"/>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value="5" tags="safes,door"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
+				</passive_effect>
+				
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkDeepCuts"/>
+				
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.3">
+				<requirement name="IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.3">
+				<requirement name="IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="CrouchSpeed" operation="perc_add" value="0.5">
+				<requirement name="!IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".25" tags="running">
+				<requirement name="IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".25" tags="jumping">
+				<requirement name="IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="CrouchSpeed" operation="perc_add" value="1">
+				<requirement name="IsNight"/>
+				</passive_effect>
+				
+				<passive_effect name="BarteringBuying" operation="base_add" value=".3"/>
+				<passive_effect name="BarteringSelling" operation="base_add" value=".3"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="berettah"/>
+				</passive_effect>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="berettah"/>
+				</passive_effect>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".3"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffAthleticSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffAthleticSetBonus" name_key="buffAthleticSetBonusName" description_key="buffAthleticSetBonusBWDesc" tooltip_key="buffAthleticSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.6"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.6"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.7"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.7"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.25" tags="running"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.25" tags="jumping"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".25" tags="running"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".25" tags="jumping"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.2"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.2"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value=".4"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".05">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+				
+				<passive_effect name="CarryCapacity" operation="base_add" value="100">
+				<requirement name="InBiome" biome="3"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkPummelPete"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkPummelPete"/>
+				</passive_effect>
+				
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkPummelPete"/>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".4">
+				<requirement name="InBiome" biome="3"/>
+				</passive_effect>
+				
+				<passive_effect name="TraderStage" operation="base_add" value="40">
+				<requirement name="InBiome" biome="3"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffBurnt_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="LT" value="@$BurntHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBurnt_Hazard01,buffBurnt_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffEnforcerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffEnforcerSetBonus" name_key="buffEnforcerSetBonusName" description_key="buffEnforcerSetBonusBWDesc" tooltip_key="buffEnforcerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+		
+		<!-- Damage increase on all .44 ammo -->
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
+					<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2">
+					<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3">
+					<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".4">
+					<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorEnforcerFSBDisplay01" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorEnforcerFSBDisplay01"/>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+				
+				<passive_effect name="WeaponHandling" operation="perc_add"  value=".9">
+				<requirement name="HoldingItemHasTags" tags="enforcerReload"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffFarmerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffFarmerSetBonus" name_key="buffFarmerSetBonusName" description_key="buffFarmerSetBonusBWDesc" tooltip_key="buffFarmerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.15">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.15">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.15">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.2">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.2">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.2">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.4">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.4">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.4">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.6">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.6">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.6">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.8">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.8">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.8">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorFarmerFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorFarmerFSBDisplay"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="2">
+					<requirement name="HoldingItemHasTags" tags="food"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="2">
+					<requirement name="HoldingItemHasTags" tags="drink"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="2">
+					<requirement name="HoldingItemHasTags" tags="medical"/>
+				</triggered_effect>
+				
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="modGunShotgunTubeExtenderMagazine"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="EntityTagCompare" target="other" tags="animal"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkJavelinMaster"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkJavelinMaster"/>
+				</passive_effect>
+				
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkJavelinMaster"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".6" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="6" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add"  value="10" tags="bonusCropHarvest"/>
+				
+		<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".6"/>
+		
+		<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".15"/>
+		<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".15"/>
+		<passive_effect name="VehicleEntityDamage" operation="perc_add" value="3"/>
+		<passive_effect name="VehicleBlockDamage" operation="perc_add" value="3"/>
+		<passive_effect name="VehicleStrongSelfDamage" operation="perc_add" value="-.66" tags="vehicle"/>
+		<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.66" tags="vehicle"/>
+		
+		<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+		<requirement name="HoldingItemHasTags" tags="modGunShotgunTubeExtenderMagazine"/>
+		</passive_effect>
+		
+		<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+		<requirement name="HoldingItemHasTags" tags="modGunShotgunTubeExtenderMagazine"/>
+		</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffBikerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffBikerSetBonus" name_key="buffBikerSetBonusName" description_key="buffBikerSetBonusBWDesc" tooltip_key="buffBikerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="1"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="10"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".1" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="2"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="12"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="12"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".12" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="3"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="14"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="14"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".14" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="4"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="16"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="16"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".16" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="5"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="18"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="18"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".18" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay01" operation="set" value="6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay02" operation="set" value="20"/>
+				<passive_effect name="VehicleFuelUsePer" operation="perc_subtract" value=".2" tags="bikerSetBonus"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay01,.armorBikerFSBDisplay02"/>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".8">
+				<requirement name="HoldingItemHasTags" tags="dBarrel"/>
+				</passive_effect>
+				<passive_effect name="ExplosionBlockDamage" operation="perc_add" value=".6"/>
+				<passive_effect name="ExplosionEntityDamage" operation="perc_add" value=".6"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkFlurryOfFortitude">
+				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
+				</passive_effect>
+				
+		<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".3"/>
+		<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".3"/>
+		<passive_effect name="VehicleEntityDamage" operation="perc_add" value="6"/>
+		<passive_effect name="VehicleBlockDamage" operation="perc_add" value="6"/>
+		<passive_effect name="VehicleStrongSelfDamage" operation="perc_add" value="-.99" tags="vehicle"/>
+		<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.99" tags="vehicle"/>
+		
+		<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+		<requirement name="HoldingItemHasTags" tags="dBarrel"/>
+		</passive_effect>
+		
+		<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+		<requirement name="HoldingItemHasTags" tags="dBarrel"/>
+		</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffScavengerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffScavengerSetBonus" name_key="buffScavengerSetBonusName" description_key="buffScavengerSetBonusBWDesc" tooltip_key="buffScavengerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".05"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".1"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".15"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".2"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".25"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".3"/>
+				<passive_effect name="LootDropProb" operation="perc_add" value=".15"/>
+				<passive_effect name="LootQuantity" operation="perc_add" value="1" tags="ammo"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".9">			
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".3" tags="kill">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				
+				<passive_effect name="LootQuantity" operation="perc_add" value=".6" notags="ammo"/>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".3"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffRangerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffRangerSetBonus" name_key="buffRangerSetBonusName" description_key="buffRangerSetBonusBWDesc" tooltip_key="buffRangerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".4">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRangerFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRangerFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="MagazineSize" operation="perc_add" value=".4" >
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.1">
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.1">
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.1">
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.1">
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				
+				<passive_effect name="WeaponHandling" operation="perc_add"  value=".9">			
+				<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1" tags="running"> 
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1" tags="jumping"> 
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="CarryCapacity" operation="base_add" value="100">
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.1">
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".6">
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+				
+				<passive_effect name="TraderStage" operation="base_add" value="60">
+				<requirement name="InBiome" biome="5"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffCommandoSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffCommandoSetBonus" name_key="buffCommandoSetBonusName" description_key="buffCommandoSetBonusBWDesc" tooltip_key="buffCommandoSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".25"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".4"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".6"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".8"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorCommandoFSBDisplay" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				</passive_effect>
+				
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				</passive_effect>
+				
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25">
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".9">			
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">			
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">			
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
+				</passive_effect>
+				
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
+				<requirement name="IsIndoors"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25" tags="running"> 
+				<requirement name="IsIndoors"/>
+				</passive_effect>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25" tags="jumping">
+				<requirement name="IsIndoors"/>
+				</passive_effect>
+				
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.3">
+				<requirement name="IsIndoors"/>
+				</passive_effect>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.2">
+				<requirement name="IsIndoors"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffAssassinSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffAssassinSetBonus" name_key="buffAssassinSetBonusName" description_key="buffAssassinSetBonusBWDesc" tooltip_key="buffAssassinSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.4"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.5"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="60"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.6"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.7"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="80"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.8"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="99"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAssassinFSBDisplay" operation="set" value="99"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
+				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.99"/>
+				
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.999">
+				<requirement name="EntityHasMovementTag" tags="jumping,running,player"/>
+				</passive_effect>
+				
+				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
+				</passive_effect>
+				<passive_effect name="JumpStrength" operation="perc_add" value=".8"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".1">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="MagazineSize" operation="base_add" value="5" tags="crossbowz"/>
+				<passive_effect name="ProjectileVelocity" operation="base_add" value="25" tags="perkArchery"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6" tags="perkArchery"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6" tags="bowDrawPenalty"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".6" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.5"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.5"/>
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ItemHasTags" tags="bowz"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+			<requirement name="HitLocation" body_parts="Head"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffMinerSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffMinerSetBonus" name_key="buffMinerSetBonusName" description_key="buffMinerSetBonusBWDesc" tooltip_key="buffMinerSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.2">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.25">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.3">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.4">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorMinerFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorMinerFSBDisplay"/>
+				
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.5">
+					<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+				
+				<passive_effect name="FallingBlockDamage" operation="perc_add" value="-.4"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="1" tags="Harvesting">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				</passive_effect>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".6">
+				<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
+				</passive_effect>
+				
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkSkullCrusher"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="shrek"/>
+				</passive_effect>
+				
+				<passive_effect name="DismemberChance" operation="perc_add" value="5">
+				<requirement name="HoldingItemHasTags" tags="shrek"/>
+				</passive_effect>
+				
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.3">
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+			</passive_effect>
+			
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.3" tags="secondary">
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+			</passive_effect>
+			
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.15">
+			<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
+			</passive_effect>
+			
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.15" tags="secondary">
+			<requirement name="HoldingItemHasTags" tags="perkSkullCrusher"/>
+			</passive_effect>
+			
+			<passive_effect name="ExplosionBlockDamage" operation="perc_add" value="6"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffDesert_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="LT" value="@$DesertHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDesert_Hazard01,buffDesert_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffNomadSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffNomadSetBonus" name_key="buffNomadSetBonusName" description_key="buffNomadSetBonusBWDesc" tooltip_key="buffNomadSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.15"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.15"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNomadFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNomadFSBDisplay"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="toxic,radiation"/>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5" tags="running"> 
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5" tags="jumping">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="CarryCapacity" operation="base_add" value="100">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="LootStage" operation="perc_add" value=".8">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="80">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".35">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".35">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".35">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+
+<remove xpath="/buffs/buff[@name='buffNerdSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffNerdSetBonus" name_key="buffNerdSetBonusName" description_key="buffNerdSetBonusBWDesc" tooltip_key="buffNerdSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<property name="DescriptionKey" value="buffNerdSetBonusBWDesc"/>
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.1">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.2">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.3">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.4">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorNerdFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorNerdFSBDisplay"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.5">
+					<requirement name="HoldingItemHasTags" tags="tool,weapon"/>
+				</passive_effect>
+				
+				<passive_effect name="CraftingTime" operation="perc_add" value="-0.3"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".3"/>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="enemy" duration="1" buff="buffShocked">
+				<requirement name="!IsAttachedToEntity"/> 
+				<requirement name="IsAlive" target="other"/>
+				</triggered_effect>
+			
+			<passive_effect name="EntityDamage" operation="perc_add" value=".6" tags="perkTurrets"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".6" tags="turretMelee"/>
+			<passive_effect name="EntityDamage" operation="perc_add"  value=".6" tags="turretMelee"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="1" tags="turretRanged"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25" tags="turretMelee"/>
+			<passive_effect name="MagazineSize" operation="base_add" value="25" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="12"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$WastelandHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffWasteland_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$WastelandHazardTimer" operation="LT" value="@$WastelandHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffWasteland_Hazard01,buffWasteland_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<remove xpath="/buffs/buff[@name='buffRaiderSetBonus']"/>
+<append xpath="/buffs">
+<buff name="buffRaiderSetBonus" name_key="buffRaiderSetBonusName" description_key="buffRaiderSetBonusBWDesc" tooltip_key="buffRaiderSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".20" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".3" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="35"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="35"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".35" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="40"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".4" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorRaiderFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorRaiderFSBDisplay"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".6" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				
+				<passive_effect name="FoodLossPerHealthPointGained" operation="perc_add" value="-.3"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".6">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".6"/>
+				</passive_effect>
+				<passive_effect name="BuffResistance" operation="base_add"  value=".3" tags="buffLegBroken,buffArmBroken"/>
+
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="5">
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				</triggered_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".6"/>
+				
+				<passive_effect name="HealthChangeOT" operation="base_add" value=".16">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".3"/>
+				</passive_effect>
+				<passive_effect name="BuffResistance" operation="base_add"  value=".6" tags="buffLegBroken,buffArmBroken">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".3"/>
+				</passive_effect>
+
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="12">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".3"/>
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				</triggered_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="1.2">
+				<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".3"/>
+				</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="add" value="1">
+			<requirement name="!HasBuff" buff="buffSnow_Hazard_Over"/>
+			<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="LT" value="@$SnowHazardTimerMax"/>
+			</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSnow_Hazard01,buffSnow_Hazard02"/>
+		</effect_group>
+</buff>
+</append>
+
+<!-- Hazard buff requirements to prevent hazards when wearing appropriate armor sets -->
+<append xpath="/buffs/buff[@name='buffSnow_Hazard']/effect_group[3]">
+<requirement name="!HasBuff" buff="buffLumberjackSetBonus"/>
+<requirement name="!HasBuff" buff="buffFarmerSetBonus"/>
+<requirement name="!HasBuff" buff="buffEnforcerSetBonus"/>
+<requirement name="!HasBuff" buff="buffRaiderSetBonus"/>
+</append>
+
+<append xpath="/buffs/buff[@name='buffBurnt_Hazard']/effect_group[3]">
+<requirement name="!HasBuff" buff="buffPreacherSetBonus"/>
+<requirement name="!HasBuff" buff="buffAthleticSetBonus"/>
+<requirement name="!HasBuff" buff="buffRogueSetBonus"/>
+</append>
+
+<append xpath="/buffs/buff[@name='buffDesert_Hazard']/effect_group[3]">
+<requirement name="!HasBuff" buff="buffRangerSetBonus"/>
+<requirement name="!HasBuff" buff="buffBikerSetBonus"/>
+<requirement name="!HasBuff" buff="buffAssassinSetBonus"/>
+<requirement name="!HasBuff" buff="buffMinerSetBonus"/>
+</append>
+
+<append xpath="/buffs/buff[@name='buffWasteland_Hazard']/effect_group[3]">
+<requirement name="!HasBuff" buff="buffNomadSetBonus"/>
+<requirement name="!HasBuff" buff="buffCommandoSetBonus"/>
+<requirement name="!HasBuff" buff="buffScavengerSetBonus"/>
+<requirement name="!HasBuff" buff="buffNerdSetBonus"/>
+</append>
+
+</configs>

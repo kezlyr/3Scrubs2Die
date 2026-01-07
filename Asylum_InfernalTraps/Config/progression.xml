@@ -1,0 +1,23 @@
+<configs>
+	<!-- Shows unlock Level -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingTraps']/display_entry[@icon='bladeTrap']">
+		<unlock_entry item="infernalBladeTrap" unlock_tier="1" />
+	</append>
+
+	<!-- Unlock on craft on Level X -->
+	<insertAfter xpath="//crafting_skill[@name='craftingTraps']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='electricfencepost,dartTrap,bladeTrap']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="infernalBladeTrap"/>
+	</insertAfter>
+
+
+	<!-- Shows unlock Level -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingTraps']/display_entry[@icon='bladeTrap']">
+		<unlock_entry item="infernalElectricFence" unlock_tier="1" />
+	</append>
+
+	<!-- Unlock on craft on Level X -->
+	<insertAfter xpath="//crafting_skill[@name='craftingTraps']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='electricfencepost,dartTrap,bladeTrap']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="infernalElectricFence"/>
+	</insertAfter>
+
+</configs>

@@ -1,0 +1,8 @@
+<CATUI>
+	<!-- Add Rend icon to CATUI target bar (requires Harmony bindings from this mod's DLL). -->
+	<append xpath="/windows/window[@name='windowTargetBar']/window[@name='windowTargetBar']//rect[@name='targetHealthBarNotboss']/table">
+		<CATUI_entity_buff_item width="26" height="26" buff_color="255,0,0" buff_icon="ui_game_symbol_critical" buff_corner_text="{CATUI_EntityRendStacks}" buff_icon_text="" buff_timer="" visible="{# defined('CATUI_EntityRendStacks') &amp;&amp; int(CATUI_EntityRendStacks) > 0 }" />
+		<CATUI_entity_buff_item width="26" height="26" buff_color="150,220,255" buff_icon="ui_game_symbol_twitch_slow" buff_corner_text="{CATUI_EntityNickelSlowStacks}" buff_icon_text="" buff_timer="" visible="{# defined('CATUI_EntityNickelSlowStacks') &amp;&amp; int(CATUI_EntityNickelSlowStacks) > 0 }" />
+		<CATUI_entity_buff_item width="26" height="26" buff_color="0,80,200" buff_icon="ui_game_symbol_cold" buff_corner_text="" buff_icon_text="" buff_timer="" visible="{# defined('CATUI_EntityIsNickelFrozen') &amp;&amp; CATUI_EntityIsNickelFrozen }" />
+	</append>
+</CATUI>

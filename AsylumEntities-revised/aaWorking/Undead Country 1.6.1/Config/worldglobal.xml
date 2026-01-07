@@ -1,0 +1,14 @@
+<config>
+
+
+<!--<set xpath="worldglobal/environment/property[@name='ambientMoon']/@value">0,0</set>
+
+<set xpath="worldglobal/environment/property[@name='ambientInsideSpeed']/@value">.1</set>
+<set xpath="worldglobal/environment/property[@name='ambientInsideThreshold']/@value">.1</set>
+<set xpath="worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">.3, .15</set>
+<set xpath="worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">.1, .1</set>
+<set xpath="worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.3, .1</set> 
+ -->
+<set xpath="worldglobal/environment/property[@name='fogPower']/@value">1.5, 1.5</set> 
+
+</config>

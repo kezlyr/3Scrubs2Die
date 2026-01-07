@@ -1,0 +1,9 @@
+Key,Source,Context,Changes,English
+blockdiskDriveName,,, ,Disk Drive
+blockdiskReaderName,,, ,Disk Reader
+blockdiskDropBoxName,,, ,Disk Drop Box
+itemdiskStorageEmptyName,,, ,Storage Disk
+diskDriveDesc,,, ,Holds storage disks.
+diskReaderDesc,,, ,Insert a disk to access its contents.
+diskDropBoxDesc,,, ,Dump items here to push them into the adjacent Disk Drive. Leftovers stay here when disks are full.
+diskStorageEmptyDesc,,, ,A blank storage disk.

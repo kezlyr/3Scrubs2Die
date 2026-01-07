@@ -1,0 +1,196 @@
+<configs>
+
+<!-- ============================================================================
+     ASYLUM AIRDROP HORDE SPAWN SYSTEM
+     Spawns zombies when players open supply crates to increase risk vs reward
+     Difficulty scales with player gamestage
+     ============================================================================ -->
+
+<!-- 
+     AIRDROP HORDE BALANCE PHILOSOPHY:
+     - Opening an airdrop should feel risky and exciting
+     - Zombie count and difficulty scales with gamestage
+     - Early game: Small group of basic zombies (4-6)
+     - Mid game: Larger group with some ferals (6-10)
+     - Late game: Dangerous horde with radiated zombies (10-15)
+     - Uses WanderingHorde spawn type so zombies approach from distance
+     - Spawns are aggressive and will immediately attack the player
+-->
+
+<append xpath="/gameevents">
+
+    <!-- *** AIRDROP_HORDE_SPAWN -->
+    <!-- Triggered when a player opens a supply crate -->
+    <!-- 75% chance to spawn a horde (similar to car alarm 80%, treasure dig 50%) -->
+    <action_sequence name="airdrop_horde_spawn">
+        <property name="action_type" value="Game" />
+        <property name="target_type" value="Entity" />
+        <property name="allow_while_dead" value="false" />
+
+        <!-- 75% chance for horde to spawn - roll 0-100, if <= 75 then spawn -->
+        <requirement class="RandomRoll">
+            <property name="min_max" value="0,100" />
+            <property name="operation" value="LTE" />
+            <property name="value" value="75" />
+        </requirement>
+
+        <!-- Play warning sound before zombies spawn -->
+        <action class="PlaySound">
+            <property name="sound" value="twitch_bad_spawn" />
+            <property name="phase" value="0" />
+        </action>
+
+        <!-- EARLY GAME (Gamestage 1-49): 4-6 basic zombies -->
+        <action class="SpawnEntity">
+            <property name="entity_group" value="SleeperGSList" />
+            <property name="spawn_count" value="4" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="12" />
+            <property name="max_distance" value="25" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="LT" />
+                <property name="game_stage" value="50" />
+            </requirement>
+        </action>
+
+        <!-- MID GAME (Gamestage 50-99): 6-8 zombies with some ferals -->
+        <action class="SpawnEntity">
+            <property name="entity_group" value="SleeperGSList" />
+            <property name="spawn_count" value="6" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="12" />
+            <property name="max_distance" value="25" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="50" />
+            </requirement>
+            <requirement class="Gamestage">
+                <property name="operation" value="LT" />
+                <property name="game_stage" value="100" />
+            </requirement>
+        </action>
+
+        <!-- Add feral zombies at mid-game -->
+        <action class="SpawnEntity">
+            <property name="entity_names" value="zombieFemaleFatFeral,zombieMaleFatFeral,zombieBoeFeral,zombieJoeFeral" />
+            <property name="spawn_count" value="2" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="15" />
+            <property name="max_distance" value="30" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="50" />
+            </requirement>
+            <requirement class="Gamestage">
+                <property name="operation" value="LT" />
+                <property name="game_stage" value="100" />
+            </requirement>
+        </action>
+
+        <!-- LATE GAME (Gamestage 100-149): 8-10 zombies with ferals -->
+        <action class="SpawnEntity">
+            <property name="entity_group" value="SleeperGSList" />
+            <property name="spawn_count" value="8" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="12" />
+            <property name="max_distance" value="25" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="100" />
+            </requirement>
+            <requirement class="Gamestage">
+                <property name="operation" value="LT" />
+                <property name="game_stage" value="150" />
+            </requirement>
+        </action>
+
+        <!-- Add more ferals at late game -->
+        <action class="SpawnEntity">
+            <property name="entity_names" value="zombieFemaleFatFeral,zombieMaleFatFeral,zombieBoeFeral,zombieJoeFeral,zombieArleneFeral" />
+            <property name="spawn_count" value="3" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="15" />
+            <property name="max_distance" value="30" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="100" />
+            </requirement>
+            <requirement class="Gamestage">
+                <property name="operation" value="LT" />
+                <property name="game_stage" value="150" />
+            </requirement>
+        </action>
+
+        <!-- ENDGAME (Gamestage 150+): 10-12 zombies with radiated -->
+        <action class="SpawnEntity">
+            <property name="entity_group" value="SleeperGSList" />
+            <property name="spawn_count" value="10" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="12" />
+            <property name="max_distance" value="25" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="150" />
+            </requirement>
+        </action>
+
+        <!-- Add radiated zombies at endgame -->
+        <action class="SpawnEntity">
+            <property name="entity_names" value="zombieBoeRadiated,zombieJoeRadiated,zombieArleneRadiated,zombieFemaleFatRadiated" />
+            <property name="spawn_count" value="3" />
+            <property name="air_spawn" value="false" />
+            <property name="add_to_group" value="zombies" />
+            <property name="safe_spawn" value="true" />
+            <property name="min_distance" value="18" />
+            <property name="max_distance" value="35" />
+            <property name="spawn_type" value="WanderingHorde" />
+            <property name="is_aggressive" value="true" />
+
+            <requirement class="Gamestage">
+                <property name="operation" value="GTE" />
+                <property name="game_stage" value="150" />
+            </requirement>
+        </action>
+
+        <!-- Zombie alert sound after spawn -->
+        <action class="PlaySound">
+            <property name="sound" value="zombiemalealert" />
+            <property name="phase" value="1" />
+        </action>
+
+    </action_sequence>
+
+</append>
+
+</configs>
+

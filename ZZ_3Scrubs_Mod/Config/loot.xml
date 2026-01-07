@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <!-- Enable QL6–QL10 drops from loot quality templates -->
+  <!-- qualBaseTemplate: only touch the very-high loot stage bracket -->
+  <remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualBaseTemplate']/qualitytemplate[@level='250,999999']/loot"/>
+  <append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualBaseTemplate']/qualitytemplate[@level='250,999999']">
+    <loot quality="1" prob="0.104"/>
+    <loot quality="2" prob="0.2"/>
+    <loot quality="3" prob="0.306"/>
+    <loot quality="4" prob="0.44"/>
+    <loot quality="5" prob="0.98"/>
+    <loot quality="6" prob="0.2"/>
+    <loot quality="7" prob="0.1"/>
+    <loot quality="8" prob="0.05"/>
+    <loot quality="9" prob="0.02"/>
+    <loot quality="10" prob="1"/>
+  </append>
+  <!-- qualPlus1Template: only touch the very-high loot stage bracket -->
+  <remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualPlus1Template']/qualitytemplate[@level='250,999999']/loot"/>
+  <append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualPlus1Template']/qualitytemplate[@level='250,999999']">
+    <loot quality="1" prob="0.07"/>
+    <loot quality="2" prob="0.129"/>
+    <loot quality="3" prob="0.222"/>
+    <loot quality="4" prob="0.373"/>
+    <loot quality="5" prob="0.98"/>
+    <loot quality="6" prob="0.2"/>
+    <loot quality="7" prob="0.1"/>
+    <loot quality="8" prob="0.05"/>
+    <loot quality="9" prob="0.02"/>
+    <loot quality="10" prob="1"/>
+  </append>
+  <!-- qualPrimitiveItemsTemplate (backpacks): allow rare high-quality pulls -->
+  <remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualPrimitiveItemsTemplate']/qualitytemplate[@level='1,999999']/loot"/>
+  <append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualPrimitiveItemsTemplate']/qualitytemplate[@level='1,999999']">
+    <loot quality="2" prob="0.6"/>
+    <loot quality="3" prob="0.56"/>
+    <loot quality="4" prob="0.57"/>
+    <loot quality="5" prob="0.98"/>
+    <loot quality="6" prob="0.2"/>
+    <loot quality="7" prob="0.1"/>
+    <loot quality="8" prob="0.05"/>
+    <loot quality="9" prob="0.02"/>
+    <loot quality="10" prob="1"/>
+  </append>
+  <!-- Twitch: turn the old T6 template into a high-end roll (still mostly QL6) -->
+  <append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='qualTwitchT6Template']/qualitytemplate[@level='1,999999']">
+    <loot quality="6" prob="0.9"/>
+    <loot quality="7" prob="0.4"/>
+    <loot quality="8" prob="0.2"/>
+    <loot quality="9" prob="0.1"/>
+    <loot quality="10" prob="1"/>
+  </append>
+  <!-- Quest rewards: allow QL6–QL10 only at the very top end of the quest quality ladder -->
+  <remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='questT3QualTemplate']/qualitytemplate[@level='6,7']/loot"/>
+  <append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate[@name='questT3QualTemplate']/qualitytemplate[@level='6,7']">
+    <loot quality="5" prob="0.98"/>
+    <loot quality="6" prob="0.2"/>
+    <loot quality="7" prob="0.1"/>
+    <loot quality="8" prob="0.05"/>
+    <loot quality="9" prob="0.02"/>
+    <loot quality="10" prob="1"/>
+  </append>
+</configs>

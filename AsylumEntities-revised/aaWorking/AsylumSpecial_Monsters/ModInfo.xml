@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+  <ModInfo>
+    <Name value="DWSM"/>
+    <DisplayName value="DW_Special_Monsters"/>
+    <Version value="1.2"/>
+    <Description value="Adds new enemies to the game with physics body warning suppression"/>
+    <Author value="PsuedoPosse/Asylummods/Duhwolf"/>
+  </ModInfo>

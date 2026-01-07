@@ -1,0 +1,921 @@
+<AsylumOverhaul>
+
+<!-- ADVANCED FORGE -->
+
+    <!-- <append xpath="//lootgroup[contains (@name, 'workstations') -->
+						<!-- or (contains (@name, 'groupQuestForge'))]"> -->
+
+        <!-- <item name="advancedForge"/> -->
+	<!-- </append> -->
+
+<!-- SCRAP TOOLS -->
+
+    <append xpath="//lootgroup[contains (@name, 'groupToolsT0')
+						or (contains (@name, 'prefabQuestLoot'))
+						or (contains (@name, 'groupRottenChest03'))
+                        or (contains (@name, 'groupOldWestChest02'))]">
+
+        <item name="meleeToolPickT0ScrapPickaxe"/>
+        <item name="meleeToolShovelT0ScrapShovel"/>
+        <item name="meleeToolAxeT0ScrapAxe"/>
+	</append>
+
+<!-- TITANIUM TOOLS -->
+
+    <append xpath="//lootgroup[contains (@name, 'prefabQuestLoot')
+						or (contains (@name, 'groupToolsT2'))
+						or (contains (@name, 'groupQuestToolsT2'))
+                        or (contains (@name, 'groupInfestedT5MeleeRanged'))
+                        or (contains (@name, 'twitch_tier2tool'))]">
+
+        <item name="meleeToolAxeT2TitaniumAxe"/>
+        <item name="meleeToolPickT2TitaniumPickaxe"/>
+        <item name="meleeToolShovelT2TitaniumShovel"/>
+	</append>
+
+    <append xpath="//lootgroup[@name='toolParts']">
+        <item name="meleeToolAllTitaniumParts" count="1,3"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupQuestMeleeCrafting']">
+        <item name="questRewardTitaniumToolsCraftingBundle"/>
+    </append>
+
+<!-- JACKHAMMER - REMOVED -->
+
+    <!-- Jackhammer loot entries removed - Auger restored to vanilla functionality
+    <append xpath="//lootgroup[contains (@name, 'groupToolsT3')
+						or (contains (@name, 'groupQuestToolsT3'))
+						or (contains (@name, 'groupInfestedT5MeleeRanged'))
+                        or (contains (@name, 'twitch_toolauger'))
+                        or (contains (@name, 'twitch_tier3tool'))]">
+
+        <item name="meleeToolPickT3Jackhammer"/>
+	</append>
+    -->
+
+<!-- CRAFTING TOOLS -->
+
+    <append xpath="//lootgroup[@name='workstationToolsScaled']">
+        <item name="toolForgeGrinder" loot_prob_template="ProbT1Cap"/>
+        <item name="toolForgeTongs" loot_prob_template="ProbT1Cap"/>
+	</append>
+
+<!-- CRAFTING TOOLS MAGAZINE -->
+
+    <append xpath="//lootgroup[contains (@name, 'skillMagazines')
+						or (contains (@name, 'groupWorkingStiffsBooks'))
+						or (contains (@name, 'groupAirDrop03'))]">
+
+        <item name="machineToolsSkillMagazine"/>
+	</append>
+
+    <append xpath="//lootgroup[contains (@name, 'groupQuestRewardSkillMagazinesAll01')
+						or (contains (@name, 'groupChallengeRewardSkillMagazinesAll01'))
+						or (contains (@name, 'groupAirDrop03'))]">
+
+        <item name="machineToolsSkillMagazine" count="2"/>
+	</append>
+
+    <append xpath="//lootgroup[contains (@name, 'groupWorkingStiffs01')
+						or (contains (@name, 'groupWorkbenchLoot04'))
+                        or (contains (@name, 'groupChemistryStationLoot03'))
+                        or (contains (@name, 'groupDewCollectorLoot01'))]">
+
+        <item name="machineToolsSkillMagazine" loot_prob_template="high"/>
+	</append>
+
+    <append xpath="//lootgroup[contains (@name, 'groupForge')
+						or (contains (@name, 'groupCementMixerLoot'))]">
+
+        <item name="machineToolsSkillMagazine" loot_prob_template="high" force_prob="true"/>
+	</append>
+
+    <append xpath="//lootgroup[contains (@name, 'groupDewCollectorLoot02')
+						or (contains (@name, 'groupConstructionCrate02'))]">
+
+        <item name="machineToolsSkillMagazine" loot_prob_template="med"/>
+	</append>
+
+    <append xpath="//lootgroup[contains (@name, 'groupLootChestBonusItems')]">
+        <item name="machineToolsSkillMagazine" count="1" loot_prob_template="med"/>
+	</append>
+
+<!-- INGOTS AND RESOURCES -->
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="groupQuestForgedTitanium" count="all">
+            <item name="resourceForgedTitanium" count="100"/>
+        </lootgroup>
+
+        <lootgroup name="groupQuestTitanium01" count="all">
+            <item name="resourceForgedTitanium" count="50"/>
+        </lootgroup>
+    </insertAfter>
+
+    <append xpath="//lootgroup[@name='groupCraftingRare']">
+        <item name="resourceForgedTitanium" count="4,8"/>
+        <item name="resourceForgedAluminium" count="5,10"/>
+        <item name="resourceForgedCobalt" count="5,10"/>
+        <item name="resourceForgedCopper" count="5,10"/>
+        <item name="resourceForgedZinc" count="5,10"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupBuildingRare']">
+        <item name="resourceForgedTitanium" count="1,4"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupAirDropT5Bundles']">
+        <item group="groupQuestForgedTitanium"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupWorkbenchLoot03']">
+        <item name="resourceForgedAluminium" count="5,10"/>
+        <item name="resourceForgedCobalt" count="5,10"/>
+        <item name="resourceForgedCopper" count="5,10"/>
+        <item name="resourceForgedZinc" count="5,10"/>
+        <item name="resourceForgedTitanium" count="4,8"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupForge02']">
+        <item name="resourceForgedAluminium" count="5,10"/>
+        <item name="resourceForgedCobalt" count="5,10"/>
+        <item name="resourceForgedCopper" count="5,10"/>
+        <item name="resourceForgedZinc" count="5,10"/>
+        <item name="resourceForgedTitanium" count="4,18"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupRollingToolbox02']">
+        <item name="resourceForgedAluminium" count="1,4" loot_prob_template="low"/>
+        <item name="resourceForgedCobalt" count="1,4" loot_prob_template="low"/>
+        <item name="resourceForgedCopper" count="1,4" loot_prob_template="low"/>
+        <item name="resourceForgedZinc" count="1,4" loot_prob_template="low"/>
+        <item name="resourceForgedTitanium" count="1,4" loot_prob_template="low"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupConstructionCrate02']">
+        <item name="resourceForgedAluminium" count="5,10" loot_prob_template="medLow"/>
+        <item name="resourceForgedCobalt" count="5,10" loot_prob_template="medLow"/>
+        <item name="resourceForgedCopper" count="5,10" loot_prob_template="medLow"/>
+        <item name="resourceForgedZinc" count="5,10" loot_prob_template="medLow"/>
+        <item name="resourceForgedTitanium" count="5,10" loot_prob_template="medLow"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='groupRollingToolbox03']">
+        <item name="resourceForgedTitanium" count="1,4" loot_prob_template="veryLow"/>
+    </append>
+
+    <append xpath="//lootgroup[@name='twitch_resources3']">
+        <item name="resourceForgedTitanium" count="5,20"/>
+    </append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
+<item name="drinkSVETGRum"/>
+<item name="drinkSVETGVodka"/>
+<item name="drinkSVETGTequila"/>
+<item name="drinkSVETGGin"/>
+<item name="drinkSVETGTripleSec"/>
+<item name="drinkSVETGWhiskey"/>
+<item name="drinkSVETGSaksSpecialBrew"/>
+<item name="drinkSVETGXcalibersQuest"/>
+<item name="drinkSVETGSagesSingularityCocktail"/>
+<item name="drinkSVETGMarkosBane"/>
+<item name="drinkSVETGGaramanOnTheBeach"/>
+<item name="drinkSVETGLykensRedemption"/>
+<item name="drinkSVETGFilbertsDelight"/>
+<item name="drinkSVETGWolfOnTheIce"/>
+<item name="drinkSVETGDadricksIslandBreeze"/>
+<item name="drinkSVETGJTKePartyPunch"/>
+<item name="drinkSVETGJivaiiRocketFuel"/>
+<item name="drinkSVETGJensColdBrew"/>
+<item name="drinkSVETGScriptsMoistElixir"/>
+<item name="drinkSVETGBlackTea"/>
+<item name="drinkSVETGMintTea"/>
+<item name="drinkSVETGWhiskeysWhiskey"/>
+<item name="drinkSVETGZanesRedemption"/>
+<item name="drinkSVETGSteensBane"/>
+<item name="drinkSVETGMallfakasFavourite"/>
+<item name="drinkTeleportToBedroll" loot_prob_template="low"/>
+<item name="drinkTeleportToBackpack" loot_prob_template="low"/>
+<item name="drinkTeleportToLandClaim" loot_prob_template="low"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']">
+<item name="drinkSVETGIceTea"/>
+<item name="drinkSVETGSixDown"/>
+<item name="drinkSVETGCanta"/>
+<item name="drinkSVETGLocaCona"/>
+<item name="drinkSVETGValleyDed"/>
+<item name="drinkSVETGMilk"/>
+<item name="drinkSVETGOrangeJuice"/>
+<item name="drinkSVETGPineAppleJuice"/>
+<item name="drinkSVETGBlackTea"/>
+<item name="drinkSVETGMintTea"/>
+<item name="foodCropSVETGTeaBag"/>
+<item name="drinkSVETGRum" loot_prob_template="low"/>
+<item name="drinkSVETGGaramanOnTheBeach" loot_prob_template="veryLow"/>
+<item name="drinkSVETGLykensRedemption" loot_prob_template="veryLow"/>
+<item name="drinkSVETGXcalibersQuest" loot_prob_template="veryLow"/>
+<item name="drinkSVETGMarkosBane" loot_prob_template="veryLow"/>
+<item name="drinkSVETGFilbertsDelight" loot_prob_template="veryLow"/>
+<item name="drinkSVETGWolfOnTheIce" loot_prob_template="veryLow"/>
+<item name="drinkSVETGDadricksIslandBreeze" loot_prob_template="veryLow"/>
+<item name="drinkSVETGSagesSingularityCocktail" loot_prob_template="veryLow"/>
+<item name="drinkSVETGWhiskeysWhiskey" loot_prob_template="veryLow"/>
+<item name="drinkSVETGJTKePartyPunch" loot_prob_template="veryLow"/>
+<item name="drinkSVETGJivaiiRocketFuel" loot_prob_template="veryLow"/>
+<item name="drinkSVETGScriptsMoistElixir" loot_prob_template="veryLow"/>
+<item name="drinkSVETGPineAppleJuice" loot_prob_template="medHigh"/>
+<item name="drinkSVETGVodka" loot_prob_template="low"/>
+<item name="drinkSVETGSaksSpecialBrew" loot_prob_template="low"/>
+<item name="drinkSVETGWhiskey" loot_prob_template="low"/>
+<item name="drinkSVETGTequila" loot_prob_template="low"/>
+<item name="drinkSVETGGin" loot_prob_template="low"/>
+<item name="drinkSVETGTripleSec" loot_prob_template="low"/>
+<item name="drinkSVETGZanesRedemption" loot_prob_template="veryLow"/>
+<item name="drinkSVETGSteensBane" loot_prob_template="veryLow"/>
+<item name="drinkSVETGMallfakasFavourite" loot_prob_template="veryLow"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupDrinksCommon']">
+<item name="drinkSVETGIceTea"/>
+<item name="drinkSVETGSixDown"/>
+<item name="drinkSVETGCanta"/>
+<item name="drinkSVETGLocaCona"/>
+<item name="drinkSVETGValleyDed"/>
+<item name="drinkSVETGMilk"/>
+<item name="drinkSVETGOrangeJuice"/>
+<item name="drinkSVETGPineAppleJuice"/>
+<item name="drinkSVETGBlackTea"/>
+<item name="drinkSVETGMintTea"/>
+<item name="foodCropSVETGTeaBag"/>
+<item name="drinkTeleportToBedroll" loot_prob_template="low"/>
+<item name="drinkTeleportToBackpack" loot_prob_template="low"/>
+<item name="drinkTeleportToLandClaim" loot_prob_template="low"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupDrinksRare']">
+<item name="drinkSVETGRum"/>
+<item name="drinkSVETGTequila"/>
+<item name="drinkSVETGGin"/>
+<item name="drinkSVETGTripleSec"/>
+<item name="drinkSVETGVodka"/>
+<item name="drinkSVETGWhiskey"/>
+<item name="drinkSVETGSaksSpecialBrew"/>
+<item name="drinkSVETGSagesSingularityCocktail"/>
+<item name="drinkSVETGXcalibersQuest"/>
+<item name="drinkSVETGMarkosBane"/>
+<item name="drinkSVETGGaramanOnTheBeach"/>
+<item name="drinkSVETGLykensRedemption"/>
+<item name="drinkSVETGFilbertsDelight"/>
+<item name="drinkSVETGWolfOnTheIce"/>
+<item name="drinkSVETGDadricksIslandBreeze"/>
+<item name="drinkSVETGJTKePartyPunch"/>
+<item name="drinkSVETGJivaiiRocketFuel"/>
+<item name="drinkSVETGJensColdBrew"/>
+<item name="drinkSVETGScriptsMoistElixir"/>
+<item name="drinkSVETGBlackTea"/>
+<item name="drinkSVETGMintTea"/>
+<item name="drinkSVETGWhiskeysWhiskey"/>
+<item name="drinkSVETGZanesRedemption"/>
+<item name="drinkSVETGSteensBane"/>
+<item name="drinkSVETGMallfakasFavourite"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='foodCandy']">
+<item name="drinkSVETGSaksSpecialBrew"/>
+<item name="drinkSVETGSagesSingularityCocktail"/>
+<item name="drinkSVETGXcalibersQuest"/>
+<item name="drinkSVETGMarkosBane"/>
+<item name="drinkSVETGGaramanOnTheBeach"/>
+<item name="drinkSVETGLykensRedemption"/>
+<item name="drinkSVETGFilbertsDelight"/>
+<item name="drinkSVETGWolfOnTheIce"/>
+<item name="drinkSVETGDadricksIslandBreeze"/>
+<item name="drinkSVETGJTKePartyPunch"/>
+<item name="drinkSVETGJivaiiRocketFuel"/>
+<item name="drinkSVETGJensColdBrew"/>
+<item name="drinkSVETGScriptsMoistElixir"/>
+<item name="drinkSVETGWhiskeysWhiskey"/>
+<item name="drinkSVETGZanesRedemption"/>
+<item name="drinkSVETGSteensBane"/>
+<item name="drinkSVETGMallfakasFavourite"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupBeerCooler01']">
+<item name="drinkSVETGRum" loot_prob_template="low"/>
+<item name="drinkSVETGGaramanOnTheBeach" loot_prob_template="veryLow"/>
+<item name="drinkSVETGLykensRedemption" loot_prob_template="veryLow"/>
+<item name="drinkSVETGXcalibersQuest" loot_prob_template="veryLow"/>
+<item name="drinkSVETGMarkosBane" loot_prob_template="veryLow"/>
+<item name="drinkSVETGFilbertsDelight" loot_prob_template="veryLow"/>
+<item name="drinkSVETGWolfOnTheIce" loot_prob_template="veryLow"/>
+<item name="drinkSVETGDadricksIslandBreeze" loot_prob_template="veryLow"/>
+<item name="drinkSVETGSagesSingularityCocktail" loot_prob_template="veryLow"/>
+<item name="drinkSVETGWhiskeysWhiskey" loot_prob_template="veryLow"/>
+<item name="drinkSVETGJTKePartyPunch" loot_prob_template="veryLow"/>
+<item name="drinkSVETGJivaiiRocketFuel" loot_prob_template="veryLow"/>
+<item name="drinkSVETGScriptsMoistElixir" loot_prob_template="veryLow"/>
+<item name="drinkSVETGZanesRedemption" loot_prob_template="veryLow"/>
+<item name="drinkSVETGPineAppleJuice" loot_prob_template="medHigh"/>
+<item name="drinkSVETGVodka" loot_prob_template="low"/>
+<item name="drinkSVETGSaksSpecialBrew" loot_prob_template="low"/>
+<item name="drinkSVETGWhiskey" loot_prob_template="low"/>
+<item name="drinkSVETGTequila" loot_prob_template="low"/>
+<item name="drinkSVETGGin" loot_prob_template="low"/>
+<item name="drinkSVETGTripleSec" loot_prob_template="low"/>
+<item name="drinkSVETGOrangeJuice" loot_prob_template="low"/>
+<item name="drinkSVETGMilk" loot_prob_template="medHigh"/>
+<item name="drinkSVETGMintTea" loot_prob_template="low"/>
+<item name="drinkSVETGBlackTea" loot_prob_template="low"/>
+<item name="drinkSVETGSteensBane" loot_prob_template="veryLow"/>
+<item name="drinkSVETGMallfakasFavourite" loot_prob_template="veryLow"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='airdropdrink']">
+<item name="drinkSVETGIceTea"/>
+<item name="drinkSVETGSixDown"/>
+<item name="drinkSVETGCanta"/>
+<item name="drinkSVETGLocaCona"/>
+<item name="drinkSVETGValleyDed"/>
+<item name="drinkSVETGMilk"/>
+<item name="drinkSVETGOrangeJuice"/>
+<item name="drinkSVETGPineAppleJuice"/>
+<item name="drinkSVETGBlackTea"/>
+<item name="drinkSVETGMintTea"/>
+<item name="foodCropSVETGTeaBag"/>
+<item name="drinkTeleportToBedroll" loot_prob_template="low"/>
+<item name="drinkTeleportToBackpack" loot_prob_template="low"/>
+<item name="drinkTeleportToLandClaim" loot_prob_template="low"/>
+</append>
+<!--  Food  -->
+<append xpath="/lootcontainers/lootgroup[@name='groupDumpsterFood']">
+<item name="foodCropSVETGRice"/>
+<item name="foodSVETGSoySauce"/>
+<item name="foodSVETGTomatoSauce"/>
+<item name="foodSVETGOliveOil"/>
+<item name="foodSVETGPeanutButter"/>
+<item name="foodSVETGCheese"/>
+<item name="foodSVETGJam"/>
+<item name="foodSVETGMapleSyrup"/>
+<item name="foodSVETGPeanutButterAndJam"/>
+<item name="foodCanSVETGBoxOfCereal" count="1,2"/>
+<item name="foodSVETGProteinBar" count="1,2"/>
+<item name="foodCanSVETGCoconutCream" count="1,2"/>
+<item name="foodSVETGBagOfChips" count="1,2"/>
+<item name="foodSVETGChocolate" count="1,2"/>
+<item name="foodSVETGDsNuts" count="1,2"/>
+<item name="foodSVETGCandyBag" count="1,2"/>
+<item name="foodSVETGTurkishDelight" count="1,2"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+<item name="foodCropSVETGRice"/>
+<item name="foodSVETGSmitesHellSalsa" loot_prob_template="low"/>
+<item name="foodSVETGSoySauce"/>
+<item name="foodSVETGOliveOil"/>
+<item name="foodSVETGTomatoSauce"/>
+<item name="foodSVETGBagOfChips"/>
+<item name="foodSVETGPeanutButter"/>
+<item name="foodSVETGJam"/>
+<item name="foodSVETGMapleSyrup"/>
+<item name="foodCanSVETGCoconutCream" count="1,2"/>
+<item name="foodCanSVETGBoxOfCereal"/>
+<item name="foodSVETGChocolate"/>
+<item name="foodSVETGTurkishDelight" count="1,2"/>
+<item name="foodSVETGCandyBag" count="1,2"/>
+<item name="foodSVETGDsNuts" count="1,2"/>
+<item name="foodSVETGProteinBar" count="1,2"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrashUncommon']">
+<item name="foodCropSVETGCabbage" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGLime" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGMintLeaves" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGOnion" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGPaprika" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGRedChilli" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGTomato" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGRice" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGSoyBeans" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGPineapple" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGOrange" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGApple" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGOlives" count="1,2" loot_prob_template="med"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']">
+<item name="foodCropSVETGCabbage" count="1,5" loot_prob_template="med"/>
+<item name="foodSVETGCheese" count="1,3" loot_prob_template="med"/>
+<item name="foodCropSVETGLime" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGMintLeaves" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGOnion" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGPineapple" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGOrange" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGApple" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGOlives" count="1,2" loot_prob_template="med"/>
+<item name="foodCropSVETGPaprika" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGRedChilli" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGSoyBeans" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGTomato" count="1,5" loot_prob_template="med"/>
+<item name="foodCropSVETGRice" count="1,3" loot_prob_template="med"/>
+<item name="foodSVETGFishSalmon" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawChicken" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawSalmon" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawPork" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawBacon" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGBread" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawChickenStripes" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawBeefStripes" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawBeefGround" count="1,2" loot_prob_template="med"/>
+<item name="foodSVETGRawPasta" count="1,2" loot_prob_template="med"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsRare']">
+<item name="foodSVETGCheese" count="1,2"/>
+<item name="foodSVETGDough" count="1,2"/>
+<item name="foodSVETGSoySauce"/>
+<item name="foodSVETGOliveOil"/>
+<item name="foodSVETGTomatoSauce"/>
+<item name="foodSVETGFlourTortilla" count="1,2"/>
+<item name="drinkSVETGMilk" count="1,2"/>
+<item name="foodSVETGSausage" count="1,2"/>
+<item name="foodSVETGCroissant" count="1,2"/>
+<item name="foodSVETGCereal" count="1,2"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupFoodRare']">
+<item name="foodSVETGSashimi" count="1,2"/>
+<item name="foodSVETGSushi" count="1,2"/>
+<item name="foodSVETGEggFriedRice" count="1,2"/>
+<item name="foodSVETGTomatoSoup" count="1,2"/>
+<item name="foodSVETGPotatoSoup" count="1,2"/>
+<item name="foodSVETGGrilledPorkchop" count="1,2"/>
+<item name="foodSVETGStirFry" count="1,2"/>
+<item name="foodSVETGBurgerAndFries" count="1,2"/>
+<item name="foodSVETGFishAndChips" count="1,2"/>
+<item name="foodSVETGFullEnglish" count="1,2"/>
+<item name="foodSVETGLasagna" count="1,2"/>
+<item name="foodSVETGPizza" count="1,2"/>
+<item name="foodSVETGSchnitzel" count="1,2"/>
+<item name="foodSVETGShawarma" count="1,2"/>
+<item name="foodSVETGRamen" count="1,2"/>
+<item name="foodSVETGPierogi" count="1,2"/>
+<item name="foodSVETGMRE" count="2,5"/>
+<item name="foodSVETGPeanutButterAndJam" count="1,2"/>
+<item name="foodSVETGBruschetta" count="1,2"/>
+<item name="foodSVETGSmitesHellSalsa" count="1,2"/>
+<item name="foodSVETGNachosAndSalsa" count="1,2"/>
+<item name="foodSVETGRiceNoodles" count="2,5"/>
+<item name="foodSVETGSoyBeanPaste" count="2,5"/>
+<item name="foodSVETGTofu" count="2,5"/>
+<item name="foodSVETGTofuBurger" count="1,2"/>
+<item name="foodSVETGDeepFriedTofu" count="1,2"/>
+<item name="foodSVETGSoyGlazedRoastPork" count="1,2"/>
+<item name="foodSVETGCookedRice" count="1,2"/>
+<item name="foodSVETGGrilledChicken" count="1,2"/>
+<item name="foodSVETGGrilledSalmon" count="1,2"/>
+<item name="foodSVETGPierogi" count="1,2"/>
+<item name="foodSVETGFrenchFries" count="1,2"/>
+<item name="foodSVETGKoefte" count="1,2"/>
+<item name="foodSVETGPancakesAndSyrup" count="1,2"/>
+<item name="foodSVETGPadThai" count="1,2"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='airdropfood']">
+<item name="foodSVETGSashimi" count="1,2"/>
+<item name="foodSVETGSushi" count="1,2"/>
+<item name="foodSVETGEggFriedRice" count="1,2"/>
+<item name="foodSVETGTomatoSoup" count="1,2"/>
+<item name="foodSVETGPotatoSoup" count="1,2"/>
+<item name="foodSVETGGrilledPorkchop" count="1,2"/>
+<item name="foodSVETGStirFry" count="1,2"/>
+<item name="foodSVETGBurgerAndFries" count="1,2"/>
+<item name="foodSVETGFishAndChips" count="1,2"/>
+<item name="foodSVETGFullEnglish" count="1,2"/>
+<item name="foodSVETGLasagna" count="1,2"/>
+<item name="foodSVETGPizza" count="1,2"/>
+<item name="foodSVETGSchnitzel" count="1,2"/>
+<item name="foodSVETGShawarma" count="1,2"/>
+<item name="foodSVETGRamen" count="1,2"/>
+<item name="foodSVETGPierogi" count="1,2"/>
+<item name="foodSVETGMRE" count="2,5"/>
+<item name="foodSVETGPeanutButterAndJam" count="1,2"/>
+<item name="foodSVETGBruschetta" count="1,2"/>
+<item name="foodSVETGSmitesHellSalsa" count="1,2"/>
+<item name="foodSVETGNachosAndSalsa" count="1,2"/>
+<item name="foodSVETGRiceNoodles" count="2,5"/>
+<item name="foodSVETGSoyBeanPaste" count="2,5"/>
+<item name="foodSVETGTofu" count="2,5"/>
+<item name="foodSVETGTofuBurger" count="1,2"/>
+<item name="foodSVETGDeepFriedTofu" count="1,2"/>
+<item name="foodSVETGSoyGlazedRoastPork" count="1,2"/>
+<item name="foodSVETGCookedRice" count="1,2"/>
+<item name="foodSVETGGrilledChicken" count="1,2"/>
+<item name="foodSVETGGrilledSalmon" count="1,2"/>
+<item name="foodSVETGPierogi" count="1,2"/>
+<item name="foodSVETGFrenchFries" count="1,2"/>
+<item name="foodSVETGKoefte" count="1,2"/>
+<item name="foodSVETGPancakesAndSyrup" count="1,2"/>
+<item name="foodSVETGPadThai" count="1,2"/>
+</append>
+<!--  Utensils  -->
+<append xpath="/lootcontainers/lootgroup[@name='workstationToolsScaled']">
+<item name="toolSVETGKitchenKnife" loot_prob_template="med"/>
+<item name="toolSVETGPan" loot_prob_template="med"/>
+<item name="toolSVETGMoka" loot_prob_template="med"/>
+<item name="toolSVETGMortarPestle" loot_prob_template="med"/>
+<item name="toolSVETGKettle" loot_prob_template="med"/>
+<item name="toolSVETGCocktailShaker" loot_prob_template="low"/>
+<item name="toolSVETGJuicer" loot_prob_template="low"/>
+</append>
+<!--  Seeds  -->
+<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+<item name="seedSVETGTomato"/>
+<item name="seedSVETGOnion"/>
+<item name="seedSVETGCabbage"/>
+<item name="seedSVETGPaprika"/>
+<item name="seedSVETGRedChillies"/>
+<item name="seedSVETGSoyBeans"/>
+<item name="seedSVETGRice"/>
+<item name="seedSVETGMint"/>
+<item name="seedSVETGPineapple"/>
+<item name="seedSVETGOlives"/>
+<item name="seedSVETGOrange"/>
+<item name="seedSVETGLime"/>
+<item name="seedSVETGApple"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']">
+<item name="seedSVETGTomato"/>
+<item name="seedSVETGOnion"/>
+<item name="seedSVETGCabbage"/>
+<item name="seedSVETGPaprika"/>
+<item name="seedSVETGRedChillies"/>
+<item name="seedSVETGSoyBeans"/>
+<item name="seedSVETGRice"/>
+<item name="seedSVETGMint"/>
+<item name="seedSVETGPineapple"/>
+<item name="seedSVETGOlives"/>
+<item name="seedSVETGOrange"/>
+<item name="seedSVETGLime"/>
+<item name="seedSVETGApple"/>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootChickenTrap" size="2,1" count="2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="resourceSVETGChicken" count="1,2" prob="1"/>
+<item name="resourceFeather" count="2,4" prob="0.04"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootBoarTrap" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="resourceSVETGBoar" count="1" prob="1"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootDeerTrap" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="resourceSVETGDeer" count="1" prob="1"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootFishTrap" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="foodSVETGFishSalmon" count="1,3" prob="1"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootChickenCoop" size="2,1" count="2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="foodEgg" count="2,6" prob="1"/>
+<item name="resourceFeather" count="2,8"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGLootBeeHive" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true">
+<item name="foodHoney" count="1,2" prob="1"/>
+</lootcontainer>
+</append>
+<append xpath="/lootcontainers">
+<lootcontainer name="SVETGFridge" count="0" size="9,10" sound_open="UseActions/crate_steel_open" sound_close="UseActions/crate_steel_close"> </lootcontainer>
+</append>
+
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Machinegunner']">
+<!--  Machine Gunner  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Machinegunner']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Machinegunner']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Machinegunner']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Gunslinger']">
+<!--  Pistol  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Gunslinger']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Gunslinger']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Gunslinger01']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Gunslinger02']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Boomstick']">
+<!--  Shotgun  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Boomstick']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Boomstick']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Boomstick']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_DeadEye']">
+<!--  Sniper  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_DeadEye']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_DeadEye']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_DeadEye']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT1']">
+<!--  Melee Weapons  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT2']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMelee']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='twitch_tier0ammo']">
+<!--  Translated  -->
+</remove>
+<remove xpath="/lootcontainers/lootgroup[@name='twitch_tier1ammo']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='twitch_tier2ammo']"> </remove>
+<remove xpath="/lootcontainers/lootgroup[@name='twitch_tier3ammo']"> </remove>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+<lootgroup name="groupWeaponsT0_Machinegunner" count="1" loot_quality_template="QLTemplateT0">
+<!--  Machine Gunner  -->
+<item name="gunMGT0PipeMachineGun"/>
+<item name="M4A1CL1"/>
+<item name="M4A1TJS1"/>
+<item name="AK47NMW1"/>
+<item name="M4A1NMW1"/>
+<item name="HK417CL1"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT1_Machinegunner" count="1" loot_quality_template="QLTemplateT1">
+<item name="gunMGT1AK47"/>
+<item name="M4A1KK1"/>
+<item name="HK417CXLH1"/>
+<item name="HK417CXLH1"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_Machinegunner" count="1" loot_quality_template="QLTemplateT2">
+<item name="gunMGT2TacticalAR"/>
+<item name="M4A1LX"/>
+<item name="AK47HS"/>
+<item name="M4A1HQS"/>
+<item name="M4A1LS"/>
+<item name="M4A1HL"/>
+<item name="HQL"/>
+<item name="50ZDH"/>
+<item name="M4A1LS"/>
+<item name="BQ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT3_Machinegunner" count="1" loot_quality_template="QLTemplateT3">
+<item name="gunMGT3M60"/>
+<item name="M4A1WZZS1"/>
+<item name="M4A1YJ"/>
+<item name="M4A1MJXW1"/>
+<item name="M4A1ZSMC"/>
+<item name="M4A1LS"/>
+<item name="M4A1NT1"/>
+<item name="M4A1LSQSZB"/>
+<item name="AKNT1"/>
+<item name="WZZX"/>
+<item name="QY"/>
+<item name="HXZX"/>
+<item name="MG3XL"/>
+<item name="XJJTL"/>
+<item name="M249"/>
+<item name="50ZDH"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT0_Gunslinger" count="1" loot_quality_template="QLTemplateT0">
+<!--  Pistol  -->
+<item name="gunHandgunT0PipePistol"/>
+<item name="MK23"/>
+<item name="TT-33"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT1_Gunslinger" count="1" loot_quality_template="QLTemplateT1">
+<item name="gunHandgunT1Pistol"/>
+<item name="SQ"/>
+<item name="CLBSQL"/>
+<item name="TDTPSS"/>
+<item name="TQCL"/>
+<item name="HSBS"/>
+<item name="QG"/>
+<item name="JGDR"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_Gunslinger" count="1" loot_quality_template="QLTemplateT2">
+<item name="gunHandgunT2Magnum44"/>
+<item name="JYSS2"/>
+<item name="JYSS"/>
+<item name="MK23HS"/>
+<item name="SQ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT3_Gunslinger01" count="1" loot_quality_template="QLTemplateT3">
+<item name="gunHandgunT3SMG5"/>
+<item name="JYSS2"/>
+<item name="JYSS"/>
+<item name="MK23HS"/>
+<item name="BQ"/>
+<item name="CFQ"/>
+<item name="TDDTRY"/>
+<item name="JGB"/>
+<item name="WWZM"/>
+<item name="QLC"/>
+<item name="JGDRSD"/>
+<item name="JZ"/>
+<item name="NBELT"/>
+<item name="HLZF"/>
+<item name="TDHXCS"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT3_Gunslinger02" count="1" loot_quality_template="QLTemplateT3">
+<item name="gunHandgunT3DesertVulture"/>
+<item name="JYSS2"/>
+<item name="JYSS"/>
+<item name="MK23HS"/>
+<item name="BQ"/>
+<item name="CFQ"/>
+<item name="TDDTRY"/>
+<item name="JGB"/>
+<item name="WWZM"/>
+<item name="QLC"/>
+<item name="JGDRSD"/>
+<item name="JZ"/>
+<item name="NBELT"/>
+<item name="HLZF"/>
+<item name="TDHXCS"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT0_Boomstick" count="1" loot_quality_template="QLTemplateT0">
+<!--  Shotgun  -->
+<item name="gunShotgunT0PipeShotgun"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT1_Boomstick" count="1" loot_quality_template="QLTemplateT1">
+<item name="gunShotgunT1DoubleBarrel"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_Boomstick" count="1" loot_quality_template="QLTemplateT2">
+<item name="gunShotgunT2PumpShotgun"/>
+<item name="VEPR12"/>
+<item name="AA12LT"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT3_Boomstick" count="1" loot_quality_template="QLTemplateT3">
+<item name="gunShotgunT3AutoShotgun"/>
+<item name="VEPR12"/>
+<item name="AA12LT"/>
+<item name="JZ"/>
+<item name="50ZDH"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT0_DeadEye" count="1" loot_quality_template="QLTemplateT0">
+<!--  Sniper  -->
+<item name="gunRifleT0PipeRifle"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT1_DeadEye" count="1" loot_quality_template="QLTemplateT1">
+<item name="gunRifleT1HuntingRifle"/>
+<item name="M200BJL1"/>
+<item name="M200AJ"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_DeadEye" count="1" loot_quality_template="QLTemplateT2">
+<item name="gunRifleT2LeverActionRifle"/>
+<item name="BLTCL1"/>
+<item name="BLTNMW1"/>
+<item name="BLTPTJL"/>
+<item name="BLTPTKL"/>
+<item name="CFQ"/>
+<item name="50ZDH"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT3_DeadEye" count="1" loot_quality_template="QLTemplateT3">
+<item name="gunRifleT3SniperRifle"/>
+<item name="M200MMT"/>
+<item name="M200HS"/>
+<item name="BQ"/>
+<item name="50ZDH"/>
+<item name="JQ"/>
+</lootgroup>
+<lootgroup name="groupQuestWeaponsMeleeT1" count="1" loot_quality_template="QLTemplateT1">
+<!--  Melee Weapons  -->
+<item name="meleeWpnSpearT1IronSpear"/>
+<item name="meleeWpnClubT1BaseballBat"/>
+<item name="meleeWpnSledgeT1IronSledgehammer"/>
+<item name="meleeWpnKnucklesT1IronKnuckles"/>
+<item name="meleeWpnBladeT1HuntingKnife"/>
+<item name="gunBotT1JunkSledge"/>
+<item name="CLBSQL"/>
+<item name="TDTPSS"/>
+<item name="TQCL"/>
+<item name="HSBS"/>
+<item name="QG"/>
+<item name="JGDR"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupQuestWeaponsMeleeT2" count="1" loot_quality_template="QLTemplateT2">
+<item name="meleeWpnBatonT2StunBaton"/>
+<item name="meleeWpnClubT3SteelClub"/>
+<item name="meleeWpnSledgeT3SteelSledgehammer"/>
+<item name="meleeWpnKnucklesT3SteelKnuckles"/>
+<item name="meleeWpnBladeT3Machete"/>
+<item name="meleeWpnSpearT3SteelSpear"/>
+<item name="TDDTRY"/>
+<item name="JGB"/>
+<item name="WWZM"/>
+<item name="QLC"/>
+<item name="JGDRSD"/>
+<item name="JZ"/>
+<item name="NBELT"/>
+<item name="HLZF"/>
+<item name="TDHXCS"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupQuestWeaponsMeleeT3" count="1" loot_quality_template="QLTemplateT3">
+<item name="meleeWpnBatonT2StunBaton"/>
+<item name="meleeWpnClubT3SteelClub"/>
+<item name="meleeWpnSledgeT3SteelSledgehammer"/>
+<item name="meleeWpnKnucklesT3SteelKnuckles"/>
+<item name="meleeWpnBladeT3Machete"/>
+<item name="meleeWpnSpearT3SteelSpear"/>
+<item name="TDDTRY"/>
+<item name="JGB"/>
+<item name="WWZM"/>
+<item name="QLC"/>
+<item name="JGDRSD"/>
+<item name="JZ"/>
+<item name="NBELT"/>
+<item name="HLZF"/>
+<item name="TDHXCS"/>
+<item name="JZ"/>
+</lootgroup>
+<lootgroup name="groupQuestWeaponsMelee">
+<item group="groupQuestWeaponsMeleeT1" loot_prob_template="QuestT1Prob"/>
+<item group="groupQuestWeaponsMeleeT2" loot_prob_template="QuestT2Prob"/>
+<item group="groupQuestWeaponsMeleeT3" loot_prob_template="QuestT3Prob"/>
+</lootgroup>
+<lootgroup name="twitch_tier0ammo" count="1" loot_quality_template="QLTemplateT0">
+<!--  Translated  -->
+<item name="ammo9mmBulletBall" count="15,35"/>
+<item name="ammo762mmBulletBall" count="25,50"/>
+<item name="ammoShotgunShell" count="8,15"/>
+<item name="ammoCrossbowBoltIron" count="8,15" prob="0.8"/>
+<item name="HXB" count="50,100"/>
+<item name="SQ"/>
+<item name="CFQ"/>
+</lootgroup>
+<lootgroup name="twitch_tier1ammo" count="1" loot_quality_template="QLTemplateT1">
+<item name="ammo9mmBulletBall" count="25,50"/>
+<item name="ammo762mmBulletBall" count="50,75"/>
+<item name="ammoShotgunShell" count="15,30"/>
+<item name="ammoCrossbowBoltIron" count="15,30" prob="0.8"/>
+<item name="SQ"/>
+<item name="BQ"/>
+<item name="CFQ"/>
+<item name="HXB" count="50,100"/>
+</lootgroup>
+<lootgroup name="twitch_tier2ammo" count="1" loot_quality_template="QLTemplateT2">
+<item name="ammo9mmBulletBall" count="50,75"/>
+<item name="ammo762mmBulletBall" count="75,100"/>
+<item name="ammoShotgunShell" count="30,45"/>
+<item name="ammo44MagnumBulletBall" count="50,75"/>
+<item name="50ZDH" count="1"/>
+<item name="HXB" count="100,200"/>
+<item name="TY"/>
+<item name="JZ"/>
+<item name="JQ"/>
+<item name="BQ"/>
+</lootgroup>
+<lootgroup name="twitch_tier3ammo" count="1" loot_quality_template="QLTemplateT3">
+<item name="ammo9mmBulletBall" count="50,75"/>
+<item name="ammo762mmBulletBall" count="75,100"/>
+<item name="ammoShotgunShell" count="30,45"/>
+<item name="ammo44MagnumBulletBall" count="50,75"/>
+<item name="ammoCrossbowBoltIron" count="15,30" prob="0.8"/>
+<item name="HXB" count="100,300"/>
+<item name="50ZDH" count="1"/>
+<item name="TY"/>
+<item name="JZ"/>
+<item name="JQ"/>
+<item name="BQ"/>
+</lootgroup>
+</insertAfter>
+<append xpath="lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT1']">
+<!--  Translated  -->
+<item name="QG"/>
+<item name="JGDR"/>
+<item name="TT-33"/>
+<item name="MK23"/>
+<item name="50ZDH"/>
+<item name="SQ"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT2']">
+<item name="50ZDH"/>
+<item name="JZ"/>
+<item name="CFQ"/>
+<item name="M4A1CL1"/>
+<item name="M4A1NMW1"/>
+<item name="VEPR12"/>
+<item name="HK417CL1"/>
+<item name="CLBSQL"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT3']">
+<item name="50ZDH"/>
+<item name="BQ"/>
+<item name="TY"/>
+<item name="JGDR"/>
+<item name="BLTPTJL"/>
+<item name="AK47NMW1"/>
+<item name="M4A1TJS1"/>
+<item name="TDTPSS"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupInfestedT5MeleeRanged']">
+<item name="TDDTRY"/>
+<item name="TQCL"/>
+<item name="WWZM"/>
+<item name="M4A1LX"/>
+<item name="M4A1LS"/>
+<item name="JGDRSD"/>
+<item name="TY"/>
+<item name="JQ"/>
+<item name="50ZDH"/>
+<item name="M4A1KK1"/>
+<item name="M249"/>
+</append>
+
+
+
+</AsylumOverhaul>

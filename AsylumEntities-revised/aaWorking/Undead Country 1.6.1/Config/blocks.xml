@@ -1,0 +1,1987 @@
+<config>
+
+<append xpath="/blocks/block[@name='plantHydroponicAloe']"> <property name="Class" value="Loot"/> <property name="LootList" value="SneedsSeed"/> </append>
+
+<append xpath="/blocks/block[@name='palletCartonMilitaryBase']"> <property name="Class" value="Loot"/> <property name="LootList" value="CrateAmmo"/> </append>
+
+<append xpath="/blocks/block[@name='wineBarrel']"> <property name="Class" value="Loot"/> <property name="LootList" value="WineBarrel1"/> </append>
+
+<append xpath="/blocks/block[@name='palletBrownBoxesBase']"> <property name="Class" value="Loot"/> <property name="LootList" value="BoxTrash"/> </append>  
+
+<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']"> <property name="Class" value="Loot"/> <property name="LootList" value="WaterJug"/> </append>  
+
+<append xpath="/blocks/block[@name='decoClassicDogHouse']"> <property name="Class" value="Loot"/> <property name="LootList" value="DogHouse"/> </append>  
+
+<append xpath="/blocks/block[@name='palletCompressedCardboard']"> <property name="Class" value="Loot"/> <property name="LootList" value="PalletPaper"/> </append>  
+
+<append xpath="/blocks/block[@name='cntIceMachine']"> <property name="Class" value="Loot"/> <property name="LootList" value="IceChest"/> </append>  
+
+<append xpath="/blocks/block[@name='cntToaster']"> <property name="Class" value="Loot"/> <property name="LootList" value="FoodToaster"/> </append>
+
+<append xpath="/blocks/block[@name='bed02']"> <property name="Class" value="Loot"/> <property name="LootList" value="BedLoot"/> </append> 
+
+<append xpath="/blocks/block[@name='cntVendingMachine2Broken']"> <property name="Class" value="Loot"/> <property name="LootList" value="DrinkVendingLoot"/> </append>
+
+<append xpath="/blocks/block[@name='cntVendingMachineSnacksEmptyBroken']"> <property name="Class" value="Loot"/> <property name="LootList" value="VendingLoot"/> </append>    
+
+<append xpath="/blocks/block[@name='cntVendingMachineSnacksEmpty']"> <property name="Class" value="Loot"/> <property name="LootList" value="VendingLoot"/> </append>
+
+<append xpath="/blocks/block[@name='palletBagCowFeedBaseFull']"> <property name="Class" value="Loot"/> <property name="LootList" value="FeedBag"/> </append>
+
+<append xpath="/blocks/block[@name='palletBagFertilizerBaseFull']"> <property name="Class" value="Loot"/> <property name="LootList" value="Fertilizer"/> </append> 
+
+<append xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']"> <property name="Class" value="Loot"/> <property name="LootList" value="TVBox"/> </append>
+
+<append xpath="/blocks/block[@name='decoComputerDeskTopPC']"> <property name="Class" value="Loot"/> <property name="LootList" value="Computer"/> </append>    
+
+<append xpath="/blocks/block[@name='cntTraderSuperChest']"> <property name="Class" value="Loot"/> <property name="LootList" value="SuperChest01"/> </append>                              
+
+<!-- Sneeds 
+
+<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']"> <property name="CanPickup" value="true" param1="resourceCropChrysanthemumPlant"/> </append>
+
+<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']"> <property name="CanPickup" value="true" param1="resourceCropGoldenrodPlant"/> </append>
+
+<append xpath="/blocks/block[@name='plantedCotton3Harvest']"> <property name="CanPickup" value="true" param1="resourceCropCottonPlant"/> </append> -->
+
+<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedYucca1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedCotton1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedCoffee1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedGoldenrod1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedAloe1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedBlueberry1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedPotato1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedChrysanthemum1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedCorn1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedGraceCorn1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedHop1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedPumpkin1"/> </append>
+
+<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']"> <property name="DowngradeBlock" value="plantedMushroom1"/> </append>
+
+
+<remove xpath="/blocks/block[@name='cntWoodBurningStove']"/>
+
+<remove xpath="/blocks/block[@name='cntCollapsedWorkbench']"/>
+
+<remove xpath="/blocks/block[@name='cntIceMachine']/drop[@event='Harvest'][@name='resourceSnowBall']"/>
+
+<set xpath="/blocks/block[@name='4x4Static' or @name='gyrocopterStatic' or @name='minibikeStatic' or @name='motorcycleStatic' or @name='bicycleStatic']/property[@name='CreativeMode']/@value">Player</set>
+
+<csv xpath="/blocks/block[@name='workbench']/property[@class='Workstation']/property[@name='CraftingAreaRecipes']/@value" op="Add">cntCollapsedWorkbench</csv>
+
+
+
+<!--<set xpath="/blocks/block[@name='terrSnow']/property[@name='RepairItems']/property/@name">resourceDirtySnowBall</set>
+
+<set xpath="/blocks/block[@name='terrSnow']/drop[@event='fall']/@name">resourceDirtySnowBall</set> 
+
+<set xpath="/blocks/block[@name='terrSnow']/drop[@event='harvest']/@name">resourceDirtySnowBall</set>-->
+
+<!-- <set xpath="/blocks/block[@name='forge']/property[@name='ToolNames']/@value">1,2</set> -->
+
+
+<!-- <append xpath="/blocks/block[@name='treeStump']"> <property name="Class" value="Loot"/> <property name="LootList" value="LootTreeStump"/> </append> -->
+
+<append xpath="/blocks">
+
+<block name="cropsFertilizedGrowingMaster">
+	<!-- Class -->
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="cropsHarvestableMaster"/>
+	<property name="PlantGrowing.GrowthRate" value="42.0"/> <!-- 42 For testing, this rate (in minutes) should be set no lower than 2 -->
+	<property name="PlantGrowing.FertileLevel" value="15"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="HarvestOverdamage" value="false"/>
+	<!-- UI_Info -->
+	<property name="CustomIcon" value="plantedHydroBlueberry1"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="DescriptionKey" value="plantedHydroCropsGroupDesc"/>
+	<!-- Visual -->
+	<property name="Material" value="Mplants"/>
+	<property name="Shape" value="BillboardPlant"/>
+	<property name="Mesh" value="grass"/>
+	<property name="Texture" value="395"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="melee"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+	<!-- Value -->
+	<property name="VehicleHitScale" value=".1"/>
+	<property name="EconomicValue" value="20"/>
+	<!-- Interaction -->
+	<drop event="Destroy" count="0"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="M180"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+</block>
+
+<block name="plantedHydroCorn1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedCorn1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCorn2"/>
+	
+	<property name="Material" value="Mcorn"/>
+	<property name="TintColor" value="3440eb"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,3,1"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroCorn1" count="1"/>
+	<property name="SortOrder1" value="B960"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_corn_grab"/>
+	<property name="SoundPlace" value="seeds_corn_place"/>
+</block>
+
+<!-- growing, stage 2 -->
+<block name="plantedHydroCorn2">
+	<property name="Extends" value="plantedHydroCorn1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCorn3HarvestPlayer"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroCorn1" count="1"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroCorn3HarvestPlayer">
+	<property name="Extends" value="plantedCorn3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedCorn1"/>
+	<property name="DescriptionKey" value="plantedHydroCorn3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropCorn" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropCorn" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropCorn" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroCorn1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroCorn1" count="1" prob="0"/>
+	 <property name="DowngradeBlock" value="plantedHydroCorn1"/>
+	<property name="SortOrder2" value="0004"/>
+</block>
+
+	<!-- *** SEEDS_MUSHROOM -->
+<block name="plantedHydroMushroom1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon,DescriptionKey,MultiBlockDim,OnlySimpleRotations"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CustomIcon" value="plantedMushroom1"/>
+	<property name="DescriptionKey" value="plantedHydroCropsGroupDesc"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroMushroom2"/>
+	
+	<property name="Material" value="Mmushrooms"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
+	<property name="HandleFace" value="Bottom"/>
+	<drop event="Destroy" name="plantedHydroMushroom1" count="1"/>
+	<property name="SortOrder1" value="B951"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic2_grab"/>
+	<property name="SoundPlace" value="seeds_generic2_place"/>
+</block>
+
+<!-- Player_Stage_2 -->
+<block name="plantedHydroMushroom2">
+	<property name="Extends" value="plantedHydroMushroom1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroMushroom3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroMushroom1"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
+	<property name="SortOrder2" value="0003"/>
+</block>
+
+<block name="plantedHydroMushroom3HarvestPlayer">
+	<property name="Extends" value="plantedMushroom3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedMushroom3Harvest"/>
+	<property name="DescriptionKey" value="plantedHydroMushroom3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropMushrooms" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropMushrooms" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropMushrooms" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroMushroom1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroMushroom1" count="1" prob="0"/>
+    <property name="DowngradeBlock" value="plantedHydroMushroom1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="plantedHydroYucca1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedYucca1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroYucca2"/>
+	
+	<property name="Material" value="Mcorn"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroYucca1" count="1"/>
+	<property name="SortOrder1" value="B952"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic1_grab"/>
+	<property name="SoundPlace" value="seeds_generic1_place"/>
+</block>
+
+<block name="plantedHydroYucca2">
+	<property name="Extends" value="plantedHydroYucca1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroYucca3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedYucca1"/>
+	<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroYucca1" count="1"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroYucca3HarvestPlayer">
+	<property name="Extends" value="plantedYucca3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroYucca1"/>
+	<property name="DescriptionKey" value="plantedHydroYucca3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroYucca1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroYucca1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroYucca1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="plantedHydroCotton1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedCotton1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCotton2"/>
+	
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroCotton1" count="1"/>
+	<property name="SortOrder1" value="B953"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="Group" value="Resources"/>
+	<property name="SoundPickup" value="seeds_generic1_grab"/>
+	<property name="SoundPlace" value="seeds_generic1_place"/>
+</block>
+
+<block name="plantedHydroCotton2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroCotton1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCotton3HarvestPlayer"/>
+	<drop event="Destroy" name="plantedHydroCotton1" count="1"/>
+	<property name="SortOrder1" value="B953"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroCotton3HarvestPlayer">
+	<property name="Extends" value="plantedCotton3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroCotton1"/>
+	<property name="DescriptionKey" value="plantedHydroCotton3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropCottonPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropCottonPlant" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroCotton1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroCotton1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroCotton1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="plantedHydroCoffee1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedCoffee1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCoffee2"/>
+	
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="CraftingIngredientTime" value="5"/>
+	<drop event="Destroy" name="plantedHydroCoffee1" count="1"/>
+	<property name="SortOrder1" value="B954"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_coffee_grab"/>
+	<property name="SoundPlace" value="seeds_coffee_place"/>
+</block>
+
+<block name="plantedHydroCoffee2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroCoffee3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroCoffee1"/>
+	<drop event="Destroy" name="plantedHydroCoffee1" count="1"/>
+	<property name="SortOrder1" value="B954"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroCoffee3HarvestPlayer">
+	<property name="Extends" value="plantedCoffee3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroCoffee1"/>
+	<property name="DescriptionKey" value="plantedHydroCoffee3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropCoffeeBeans" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropCoffeeBeans" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropCoffeeBeans" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroCoffee1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroCoffee1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroCoffee1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+	<!-- *** SEEDS_GOLDENROD -->
+<block name="plantedHydroGoldenrod1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedGoldenrod1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroGoldenrod2"/>
+	
+	<property name="Texture" value="401"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroGoldenrod1" count="1"/>
+	<property name="SortOrder1" value="B955"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic1_grab"/>
+	<property name="SoundPlace" value="seeds_generic1_place"/>
+</block>
+
+<block name="plantedHydroGoldenrod2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroGoldenrod3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroGoldenrod1"/>
+	<property name="Texture" value="402"/>
+	<drop event="Destroy" name="plantedHydroGoldenrod1" count="1"/>
+	<property name="SortOrder1" value="B955"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroGoldenrod3HarvestPlayer">
+	<property name="Extends" value="plantedGoldenrod3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="plantedHydroGoldenrod3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropGoldenrodPlant" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropGoldenrodPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropGoldenrodPlant" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroGoldenrod1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroGoldenrod1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroGoldenrod1"/>
+	<property name="SortOrder2" value="0004"/>
+</block>
+
+	<!-- *** SEEDS_ALOE -->
+<block name="plantedHydroAloe1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedAloe1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroAloe2"/>
+	
+	<property name="Material" value="Mcorn"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroAloe1" count="1"/>
+	<property name="SortOrder1" value="B956"/>
+	<property name="Group" value="Food/Cooking,Science"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic1_grab"/>
+	<property name="SoundPlace" value="seeds_generic1_place"/>
+</block>
+
+<block name="plantedHydroAloe2">
+	<property name="Extends" value="plantedHydroAloe1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroAloe3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroAloe1"/>
+	<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroAloe1" count="1"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroAloe3HarvestPlayer">
+	<property name="Extends" value="plantedAloe3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroAloe1"/>
+	<property name="DescriptionKey" value="plantedHydroAloe3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropAloeLeaf" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropAloeLeaf" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropAloeLeaf" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroAloe1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroAloe1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroAloe1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+	<!-- *** SEEDS_BLUEBERRY -->
+<block name="plantedHydroBlueberry1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedBlueberry1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroBlueberry2"/>
+	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroBlueberry1" count="1"/>
+	<property name="SortOrder1" value="B957"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic1_grab"/>
+	<property name="SoundPlace" value="seeds_generic1_place"/>
+</block>
+
+<block name="plantedHydroBlueberry2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroBlueberry3HarvestPlayer"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroBlueberry1" count="1"/>
+	<property name="SortOrder1" value="B957"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroBlueberry3HarvestPlayer">
+	<property name="Extends" value="plantedBlueberry3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroBlueberry1"/>
+	<property name="DescriptionKey" value="plantedHydroBlueberry3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropBlueberries" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropBlueberries" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropBlueberries" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroBlueberry1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroBlueberry1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroBlueberry1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+	<!-- *** SEEDS_POTATO -->
+			<!-- Sprout -->
+<block name="plantedHydroPotato1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedPotato1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroPotato2"/>
+	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroPotato1" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic2_grab"/>
+	<property name="SoundPlace" value="seeds_generic2_place"/>
+</block>
+			<!-- Growing -->
+<block name="plantedHydroPotato2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroPotato3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroPotato1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroPotato1" count="1"/>
+	<property name="SortOrder1" value="B958"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroPotato3HarvestPlayer">
+	<property name="Extends" value="plantedPotato3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroPotato1"/>
+	<property name="DescriptionKey" value="plantedHydroPotato3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropPotato" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropPotato" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropPotato" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroPotato1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroPotato1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroPotato1"/> 
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="plantedHydroChrysanthemum1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedChrysanthemum1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroChrysanthemum2"/>
+	
+	<property name="Texture" value="550"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroChrysanthemum1" count="1"/>
+	<property name="SortOrder1" value="B959"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic2_grab"/>
+	<property name="SoundPlace" value="seeds_generic2_place"/>
+</block>
+
+<block name="plantedHydroChrysanthemum2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroChrysanthemum3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroChrysanthemum1"/>
+	<property name="Texture" value="551"/>
+	<drop event="Destroy" name="plantedHydroChrysanthemum1" count="1"/>
+	<property name="SortOrder1" value="B959"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroChrysanthemum3HarvestPlayer">
+	<property name="Extends" value="plantedChrysanthemum3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroChrysanthemum1"/>
+	<property name="DescriptionKey" value="plantedHydroChrysanthemum3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropChrysanthemumPlant" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropChrysanthemumPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropChrysanthemumPlant" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroChrysanthemum1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroChrysanthemum1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroChrysanthemum1"/>
+	<property name="SortOrder2" value="0004"/>
+</block>
+
+<block name="plantedHydroGraceCorn1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedGraceCorn1"/>
+	<property name="CustomIconTint" value="8c4aff"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroGraceCorn2"/>
+	<property name="CustomIcon" value="plantedCorn1"/>
+	<property name="Material" value="Mcorn"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,3,1"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroGraceCorn1" count="1"/>
+	<property name="TraderStageTemplate" value="midTier3"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="SortOrder1" value="B961"/>
+	<property name="SoundPickup" value="seeds_corn_grab"/>
+	<property name="SoundPlace" value="seeds_corn_place"/>
+</block>
+
+<!-- growing, stage 2 -->
+<block name="plantedHydroGraceCorn2">
+	<property name="Extends" value="plantedHydroGraceCorn1" param1="CustomIcon,CustomIconTint"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroGraceCorn3HarvestPlayer"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroGraceCorn1" count="1"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroGraceCorn3HarvestPlayer">
+	<property name="Extends" value="plantedGraceCorn3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedCorn1"/>
+	<property name="CustomIconTint" value="ff9f9f"/>
+	<property name="DescriptionKey" value="plantedHydroGraceCorn3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropGraceCorn" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropGraceCorn" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropGraceCorn" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroGraceCorn1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroGraceCorn1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroGraceCorn1"/> 
+	<property name="SortOrder2" value="0004"/>
+</block>
+
+	<!-- *** SEEDS_HOPS -->
+<block name="plantedHydroHop1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedHop1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantHopsSproutPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroHop2"/>
+	
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroHop1" count="1"/>
+	<property name="SortOrder1" value="B962"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_generic2_grab"/>
+	<property name="SoundPlace" value="seeds_generic2_place"/>
+</block>
+
+<block name="plantedHydroHop2">
+	<property name="Extends" value="cropsFertilizedGrowingMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroHop1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantHopsGrowthPrefab.prefab"/>
+	<property name="PlantGrowing.Next" value="plantedHydroHop3HarvestPlayer"/>
+	<drop event="Destroy" name="plantedHydroHop1" count="1"/>
+	<property name="SortOrder1" value="B962"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroHop3HarvestPlayer">
+	<property name="Extends" value="plantedHop3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroHop1"/>
+	<property name="DescriptionKey" value="plantedHydroHop3HarvestDesc"/>
+	<drop event="Harvest" name="resourceCropHopsFlower" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropHopsFlower" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropHopsFlower" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroHop1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroHop1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroHop1"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+	<!-- *** SEEDS_PUMPKIN -->
+<block name="plantedHydroPumpkin1">
+	<property name="Extends" value="cropsFertilizedGrowingMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="plantedPumpkin1"/>
+	<property name="CustomIconTint" value="a4eefc"/>
+	<property name="ItemTypeIcon" value="foliage"/>
+	<property name="PlantGrowing.Next" value="plantedHydroPumpkin2"/>
+	
+	<property name="Material" value="Mcorn"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<drop event="Destroy" name="plantedHydroPumpkin1" count="1"/>
+	<property name="SortOrder1" value="B964"/>
+	<property name="Tags" value="seedSkill"/>
+	<property name="SoundPickup" value="seeds_pumpkin_grab"/>
+	<property name="SoundPlace" value="seeds_pumpkin_place"/>
+</block>
+
+<block name="plantedHydroPumpkin2">
+	<property name="Extends" value="plantedHydroPumpkin1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="PlantGrowing.Next" value="plantedHydroPumpkin3HarvestPlayer"/>
+	<property name="CustomIcon" value="plantedHydroPumpkin1"/>
+	<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
+	<drop event="Destroy" name="plantedHydroPumpkin1" count="1"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
+<block name="plantedHydroPumpkin3HarvestPlayer">
+	<property name="Extends" value="plantedPumpkin3Harvest"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="plantedHydroPumpkin1"/>
+	<property name="DescriptionKey" value="plantedHydroPumpkin3HarvestDesc"/>
+	<drop event="Harvest" name="foodCropPumpkin" count="2" tag="cropHarvest"/>
+	<drop event="Harvest" name="foodCropPumpkin" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="foodCropPumpkin" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedHydroPumpkin1" count="1" tag="farmerBonusSeed"/>
+	<drop event="Destroy" name="plantedHydroPumpkin1" count="1" prob="0"/>
+	<property name="DowngradeBlock" value="plantedHydroPumpkin1"/>
+	<property name="SortOrder2" value="0004"/>
+</block>
+
+<block name="Advancedforge">
+	<!-- Class -->
+	<property name="Class" value="Forge"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="forge"/>
+		<property name="Modules" value="tools,output,fuel,material_input"/>
+		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+		<property name="ToolNames" value="1,2,3"/>
+	</property>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="forgeDesc"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mstone_scrap"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Crafting/forgeWorkstationBrokenPrefab"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="forgeWorkstation"/>
+	<property name="ParticleOffset" value="0,0.4,0.5"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="true"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="midTier0"/><!-- forge -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value="6"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+	<property name="OpenSound" value="forge_open"/>
+	<property name="CloseSound" value="forge_close"/>
+	<property name="CraftSound" value="forge_smelt_click"/>
+	<property name="CraftCompleteSound" value="forge_item_complete"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceCobblestones" value="50"/>
+	</property>
+	<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0200"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="forge_grab"/>
+	<property name="SoundPlace" value="forge_place"/>
+</block>
+
+<block name="cntCollapsedWorkbench">
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="cntCollapsedWorkbench"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntCollapsedWorkbenchDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_tool"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="CustomIcon" value="officeDesk"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Furniture/deskOfficePrefab.prefab"/>
+<!--	<property name="ModelOffset" value="0,.5,0"/> -->
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="TraderStageTemplate" value="midTier1"/><!-- workbench -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="400"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="3000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="autoturret_grab"/>
+	<property name="CloseSound" value="autoturret_place"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="CanPickup" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest,lumberjackHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Basics,Building,TCScience"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="rocketcasing_grab"/>
+	<property name="SoundPlace" value="rocketcasing_place"/>
+</block>
+
+<!--<block name="BrokenMinibike01">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="BrokenMinibike"/>
+	<property name="DescriptionKey" value="BrokenMinibikeDesc01"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="TintColor" value="798991"/>
+	<property name="NoScrapping" value="false"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="100"/>
+	<property name="ScrapTimeOverride" value="8"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Model" value="#@modfolder:Resources/MiniBikeBrokenPrefab.unity3d?MiniBikeBroken"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Group" value="Science"/>
+	<property name="WaterFlow" value="permitted"/>
+	<drop event="Destroy" name="BrokenMinibike01" count="1"/>
+	<property name="SortOrder1" value="LD04"/>
+	<property name="SortOrder2" value="0701"/>
+</block>
+
+<block name="BrokenMotorcycle">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
+	<property name="DescriptionKey" value="BrokenMotorcycleDesc"/>
+	<property name="CustomIconTint" value="122, 108, 91"/>
+	<property name="TintColor" value="808080"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="150"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/MotorcycleBrokenPrefab.unity3d?MotorcycleBroken"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,3,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="MaxDamage" value="500"/>
+	<drop event="Destroy" name="BrokenMotorcycle" count="1"/>
+	<property name="SortOrder1" value="LD04"/>
+	<property name="SortOrder2" value="0702"/>
+</block>
+
+
+<block name="Broken4x4">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="vehicleTruck4x4Placeable"/>
+	<property name="DescriptionKey" value="Broken4x4Desc"/>
+	<property name="CustomIconTint" value="122, 108, 91"/>
+	<property name="TintColor" value="D45454"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="250"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/4x4BrokenPrefab.unity3d?4x4Broken"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,1,4"/>
+	<property name="WaterFlow" value="permitted"/>
+	<drop event="Destroy" name="Broken4x4" count="1"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="SortOrder1" value="LD04"/>
+	<property name="SortOrder2" value="0703"/>
+</block>
+
+<block name="gyrocopterBroken">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="gyrocopterStatic"/>
+	<property name="DescriptionKey" value="gyrocopterBrokenDesc"/>
+	<property name="CustomIconTint" value="122, 108, 91"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="300"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Vehicles/TraderVehicles/traderGyrocopterStaticPrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,1,4"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="MaxDamage" value="1200"/>
+	<drop event="Destroy" name="gyrocopterBroken" count="1"/>
+	<property name="SortOrder1" value="LD04"/>
+	<property name="SortOrder2" value="0704"/>
+</block> -->
+
+<block name="ChemStationSmall">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="ChemStationSmall"/>
+	</property>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntChemPileLarge"/>
+	<property name="DescriptionKey" value="ChemStationSmallDesc"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_chemistry"/>
+	<property name="CraftIcon" value="ui_game_symbol_chemistry"/>
+	<property name="CraftActionName" value="lblContextActionMix"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Miron_scrap"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/chemistrySetLargePrefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.25,0.1,0.7"/>  <!-- <property name="ParticleOffset" value="0.2,0.1,0.7"/>  -->
+	
+	<property name="ModelOffset" value="0,0,0"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TraderStageTemplate" value="midTier2"/><!-- chemistryStation -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="200"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="OpenSound" value="steroids_grab"/>
+	<property name="CloseSound" value="steroids_place"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="chem_station_complete_item"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMetalPipe" value="10"/>
+		<property name="resourceWood" value="40"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="allHarvest,lumberjackHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="15" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0500"/>
+	<property name="Group" value="Building,Science,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="chemistrystation_grab"/>
+	<property name="SoundPlace" value="chemistrystation_place"/>
+</block>
+
+<block name="DBFermentationBarrel">
+    <property name="Class" value="Workstation"/>
+	 <property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBFermentationBarrel"/>
+	</property>
+
+	<property name="CreativeMode" value="Player"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_infection"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="CustomIcon" value="wineBarrelPlain"/>
+	<property name="DescriptionKey" value="DBFermentationBarrelDesc"/>
+	
+	<property name="Material" value="Mwood_regular"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Decor/BarrelPrefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="MaxDamage" value="600"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="coffin_wood_open"/>
+	<property name="CloseSound" value="coffin_wood_close"/>
+	<property name="TakeDelay" value="5"/>
+	
+	<property class="RepairItems">
+		<property name="resourceWood" value="50"/>
+		<property name="resourceScrapIron" value="25"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0302"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="FilterTags" value="MC_building,SC_decor"/>
+</block>
+
+<block name="DBResearchBench">
+    <property name="Class" value="Workstation"/>
+	 <property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBResearchBench"/>
+	</property>
+
+	<property name="CreativeMode" value="Player"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_book"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="CustomIcon" value="cntCollapsedWorkbenchEmpty"/>
+	<property name="DescriptionKey" value="DBResearchBenchDesc"/>
+	
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/woodWorkBenchCollapsedEmptyPrefab.prefab"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="open_suitcase"/>
+	<property name="CloseSound" value="close_suitcase"/>
+	<property name="TakeDelay" value="5"/>
+	
+	<property class="RepairItems">
+		<property name="resourceWood" value="50"/>
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="50" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0302"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="FilterTags" value="MC_building,SC_decor"/>
+</block>
+
+	<!-- *** BANDIT_BARBWIRE_SPINDLE -->
+<block name="DBbarbedCoiledRazorWire">
+	<property name="Class" value="Damage"/>
+	<property name="Damage" value="20"/>
+	<property name="Damage_received" value="1"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="MaxDamage" value="1500"/>
+	<property name="CustomIcon" value="barbedWireSpindle"/>
+	<property name="UnlockedBy" value="DBbarbedCoiledRazorWireSchematic"/>
+	<property name="Material" value="MbarbedWire"/>
+	<property name="Texture" value="68"/>
+	<property name="ShapeMinBB" value="0.3,0,0.3"/>
+	<property name="DescriptionKey" value="DBbarbedCoiledRazorWireDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Bandits/Barbedwire/barbedwire_spindlePrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,-0.25"/>
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="SortOrder1" value="B753"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+    <property name="EconomicValue" value="15"/>
+	<property name="VehicleHitScale" value="8"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="8"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+	<property name="Group" value="Building"/>
+	<property name="BlockTag" value="Spike"/>
+	
+</block>
+
+<block name="cntRustyGasBarrel">
+	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
+	<property name="LootList" value="gasBarrel"/>
+	<property name="CustomIcon" value="cntBarrelGasSingle00"/>
+	<property name="Explosion.ParticleIndex" value="14"/>
+	<property name="EconomicValue" value="12"/>
+	<property name="DescriptionKey" value="cntRustyGasBarrelDesc"/>
+	<property name="Model" value="@:Entities/Industrial/barrelGasPrefab.prefab"/>
+	<property name="SortOrder1" value="B260"/>
+	<property name="SortOrder2" value="0100"/>
+</block>
+
+<block name="DBRetroFridge">
+	<property name="CreativeMode" value="Player"/>
+<!--<property name="OpenSound" value="open_fridge"/> I can't change the open sounds AHHH
+	<property name="CloseSound" value="close_fridge"/> -->
+	<property name="CustomIcon" value="cntRetroFridgeVer1Closed"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="playerFridgeStorage"/>
+	<property name="DescriptionKey" value="DBRetroFridgeDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Appliances/fridgeRetroClosedPrefab.prefab" param1="main_mesh"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="27"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="192"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMetalPipe" value="2"/>
+		<property name="resourceElectricParts" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3,6"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
+	<property name="DowngradeBlock" value="cntRetroFridgeVer2Open"/>
+	<property name="SortOrder1" value="B156"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+</block>
+
+<block name="DBFridge">
+	<property name="Extends" value="DBRetroFridge"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntFridgeStainlessSteel"/>
+	<property name="Model" value="@:Entities/Appliances/fridgeStainlessSteelClosedPrefab.prefab" param1="main_mesh"/>
+	<property name="DescriptionKey" value="DBFridgeDesc"/>
+	<property name="Class" value="SecureLoot"/>
+    <property name="LootList" value="playerFridgeStorage"/>
+	<property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
+	<property name="DowngradeBlock" value="cntFridgeStainlessSteelVer2Open"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SortOrder1" value="B156"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="DBComputer"> 
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="VendingMachine"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="CustomIcon" value="decoComputerMonitorKeyboardMousePC"/>
+	<property name="DescriptionKey" value="DBComputerDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Electrical/monitorKeyboardMousePCPrefab.prefab"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="TraderID" value="15"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="EconomicValue" value="6000"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="2"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="1,3" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Destroy" count="0"/>
+	<property name="SortOrder1" value="B456"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="Group" value="Science"/>
+	<property name="FilterTags" value="MC_building,SC_electrical,SC_commercial"/>
+</block>
+
+<block name="cntCompactWaterFilter">
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="cntCompactWaterFilter"/>
+	</property> 
+	<!-- UI_Info -->
+	<property name="CustomIcon" value="cntSodaFountain"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntCompactWaterFilterDesc"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Electrical/sodaFountainPrefab.prefab"/> 
+	<property name="ImposterDontBlock" value="true"/>
+<!--	<property name="ParticleName" value="FridgeLP"/> -->
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="500"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="collector_open"/>
+	<property name="CloseSound" value="collector_close"/>
+	<property name="CraftSound" value="bucketbail_water"/>
+	<property name="CraftCompleteSound" value="bucketfill_water"/>
+	<property name="TriggerSound" value="FridgeLP"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+		<property name="resourceMechanicalParts" value="2"/>
+		<property name="resourceCoal" value="5"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBWoodBurningStove">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="campfire,WoodBurningStove"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBWoodBurningStoveDesc"/> 
+	<property name="CustomIcon" value="cntWoodBurningStove"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Furniture/woodBurningStovePrefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="chemistryStation"/>
+	<property name="ParticleOffset" value="-0.5,0.7,0.6"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="500"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+		<property name="resourceCobblestones" value="20"/>
+		<property name="resourceWood" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="cntWoodBurningStove">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="campfire,WoodBurningStove"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+<!--	<property name="DescriptionKey" value="DBWoodBurningStoveDesc"/> 
+	<property name="CustomIcon" value="cntWoodBurningStove"/> -->
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Furniture/woodBurningStovePrefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="chemistryStation"/>
+	<property name="ParticleOffset" value="-0.5,0.7,0.6"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="500"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+		<property name="resourceCobblestones" value="20"/>
+		<property name="resourceWood" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBOven">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="campfire,WoodBurningStove,Oven"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBOvenDesc"/>
+	<property name="CustomIcon" value="cntStoveModernVer1Closed"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/LootContainers/stoveElectricModern_01Prefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="500"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMetalPipe" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+	
+<block name="DBTableSaw">	
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+	</property>
+	<property name="CraftingAreaRecipes" value="DBTableSaw"/>
+	<!-- UI_Info -->
+	<property name="DescriptionKey" value="DBTableSawDesc"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="CustomIcon" value="tableSaw"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_table_saw"/>
+    <property name="CraftIcon" value="ui_game_symbol_table_saw"/>
+	<property name="CraftActionName" value="lblContextActionCraft"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Miron_scrap"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Crafting/table_sawPrefab.prefab"/>
+<!--	<property name="ModelOffset" value="0,0,0"/> -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/> 
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="true"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2500"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+    <property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftSound" value="chainsaw_equip"/>
+	<property name="CraftCompleteSound" value="chainsaw_empty"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceSpring" value="4"/>
+		<property name="resourceMechanicalParts" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="300" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+    <property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0600"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBMicrowave">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBMicrowaveDesc"/> 
+	<property name="CustomIcon" value="cntMicrowaveOvenVer1Closed"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/LootContainers/microwaveElectricModern_01Prefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="500"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="OpenSound" value="open_fridge"/> 
+	<property name="CloseSound" value="close_fridge"/> 
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBCooler">
+	<property name="Extends" value="DBRetroFridge"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBCoolerDesc"/> 
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntFreezerBeveragesMiddleFullClosedBroken"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="Model" value="@:Entities/Commercial/freezer_Beverage_Standalone_FullPrefab.prefab"/>
+	<property name="DescriptionKey" value="CoolaDesc"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="playerFridgeStorage"/>
+	<property name="ModelOffset" value="0,0,0"/> 
+	<property name="MultiBlockDim" value="1,3,1"/>
+	<property name="MaxDamage" value="600"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="4"/>
+		<property name="resourceMetalPipe" value="3"/>
+		<property name="resourceElectricParts" value="6"/>
+	</property>
+	<property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
+	<property name="DowngradeBlock" value="cntFreezerBeveragesStandaloneEmptyClosedBroken"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="SortOrder1" value="B156"/>
+	<property name="SortOrder2" value="0005"/>
+</block>
+
+<block name="DBGearShelves"> 
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="CustomIcon" value="cntMilitaryMetalShelvesFull"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="reinforcedChestT2"/>
+	<property name="DescriptionKey" value="DBGearShelveshDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Commercial/militaryMetalShelvesFullPrefab.prefab"/>
+	<property name="MultiBlockDim" value="1,2,2"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Path" value="solid"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="MaxDamage" value="400"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="5,8" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B460"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_building,SC_loot,SC_commercial,A21_NEW"/>	
+</block>
+
+<block name="DBAmmoStorage">
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="reinforcedChestT1"/>
+	<property name="CustomIcon" value="palletCartonMilitaryTileCovered"/>
+	<property name="DescriptionKey" value="DBAmmoStorageDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Industrial/palletCartonMilitaryTileCoveredPrefab.prefab"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	<property name="EconomicValue" value="6"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="MaxDamage" value="400"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+	</property>
+	<property name="SortOrder1" value="B278"/>
+	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="SortOrder2" value="0500"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_decor,A21_NEW"/>
+</block>
+
+<block name="DBHydrophonic">
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBHydrophonic"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBHydrophonicDesc"/>
+	<property name="CustomIcon" value="plantHydroponicAloe"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_crops"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Plants/plantHydroponicAloePrefab.prefab"/>
+<!--	<property name="ModelOffset" value="0,.5,0"/> -->
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2500"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="600"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="open_medicine_cabinet"/> 
+	<property name="CloseSound" value="close_medicine_cabinet"/>
+	<property name="CraftSound" value="plantdestroy"/>
+	<property name="CraftCompleteSound" value="plantdestroy"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceElectricParts" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBCoffeeMaker">
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBCoffeeMaker"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBCoffeeMakerDesc"/>
+	<property name="CustomIcon" value="cntCoffeeMaker"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_beer"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Appliances/coffeeMakerPrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0.5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="200"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CraftSound" value="charge_beep"/>
+	<property name="CraftCompleteSound" value="chem_station_mix_click"/>
+	<property name="OpenSound" value="open_cooler"/> 
+	<property name="CloseSound" value="close_cooler"/> 
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBCommercialCoffeeMaker">
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBCoffeeMaker"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBCoffeeMakerDesc"/>
+	<property name="CustomIcon" value="cntCoffeeMakerCommercial"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_beer"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Appliances/commercialCoffeeMakerPrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="200"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CraftSound" value="charge_beep"/>
+	<property name="CraftCompleteSound" value="chem_station_mix_click"/>
+	<property name="OpenSound" value="open_cooler"/> 
+	<property name="CloseSound" value="close_cooler"/> 
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DBToaster">                                                            
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="DBToaster"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="UnlockedBy" value="craftingAppliances"/>
+	<property name="DescriptionKey" value="DBToasterDesc"/>
+	<property name="CustomIcon" value="cntToaster"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_safe"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Appliances/toasterPrefab.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="200"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CraftSound" value="light_on"/>
+	<property name="CraftCompleteSound" value="light_off"/>
+	<property name="OpenSound" value="vehicle_storage_open"/> 
+	<property name="CloseSound" value="vehicle_storage_close"/> 
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceElectricParts" value="5"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0300"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="cntSuperChest">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="474531"/>
+	<property name="TintColor" value="474531"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/LootContainers/super_chestPrefab.prefab"/>
+	<property name="ModelOffset" value="0.5,0.5,0"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="SortOrder1" value="B104"/>
+	<property name="SortOrder2" value="0300"/>
+</block>
+
+<block name="DBFirePlace">
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="DBFirePlaceDesc"/>
+	<property name="CustomIcon" value="DBFirePlace"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Miron_scrap"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/HomeFirePit.unity3d?FirePlace01"/>
+	<property name="MultiBlockDim" value="2,3,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0,0.2,0.6"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TraderStageTemplate" value="midTier2"/><!-- chemistryStation -->
+	<!-- Interaction -->
+	<property name="MaxDamage" value="600"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ActiveRadiusEffects" value="buffCastleAOE,5"/>
+	<property name="OpenSound" value="stone_grab"/>
+	<property name="CloseSound" value="stone_place"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="TakeDelay" value="8"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceWood" value="20"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="allHarvest,lumberjackHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="15" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0500"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Tags" value="workstationSkill,twitch_workstation"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SoundPickup" value="forge_grab"/>
+	<property name="SoundPlace" value="forge_place"/>
+</block>
+
+</append>
+
+</config>

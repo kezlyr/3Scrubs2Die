@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Better distribution (XML-only): add cobalt ore subbiomes with multiple noise bands. -->
+  <!-- This keeps vanilla ore generation intact while introducing cobalt patches you can tune. -->
+  <!-- Pine Forest: rare cobalt patches -->
+  <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+    <!-- Common band -->
+    <subbiome noise=".041, 0, 1" noiseoffset="6000, 666">
+      <layers>
+        <layer depth="1" blockname="terrForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="1" blockname="terrStone">
+          <resource blockname="terrGravel" prob="0.75" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrOreIron" prob="0.65" rwgGenerationType="all"/>
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_iron_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lead_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_nitrate_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Medium band -->
+    <subbiome noise=".027, 0, .08" noiseoffset="12000, 1266">
+      <layers>
+        <layer depth="1" blockname="terrForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="1" blockname="terrStone">
+          <resource blockname="terrGravel" prob="0.75" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrOreIron" prob="0.65" rwgGenerationType="all"/>
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_iron_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lead_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_nitrate_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Rare band -->
+    <subbiome noise=".041, 0, .03" noiseoffset="6000, 666">
+      <layers>
+        <layer depth="1" blockname="terrForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="1" blockname="terrStone">
+          <resource blockname="terrGravel" prob="0.75" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrOreIron" prob="0.65" rwgGenerationType="all"/>
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_iron_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lead_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_nitrate_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+  </append>
+  <!-- Snow: primary cobalt biome (common + rare bands for more natural clustering) -->
+  <append xpath="/worldgeneration/biomes/biome[@name='snow']">
+    <!-- Common band: smaller, more frequent patches -->
+    <subbiome noise=".041, 0, 1" noiseoffset="6000, 666">
+      <layers>
+        <layer depth="1" blockname="terrSnow"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="1" blockname="terrStone">
+          <resource blockname="terrGravel" prob="0.75" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_cobalt_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_quartz_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lithium_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Medium band -->
+    <subbiome noise=".027, 0, .08" noiseoffset="12000, 1266">
+      <layers>
+        <layer depth="1" blockname="terrSnow"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="1" blockname="terrStone">
+          <resource blockname="terrGravel" prob="0.75" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_cobalt_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_quartz_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lithium_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Rare band: larger/denser patches, much rarer coverage -->
+    <subbiome noise=".014, 0, .02" noiseoffset="16000, 1666">
+      <layers>
+        <layer depth="1" blockname="terrSnow"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone">
+          <resource blockname="terrOreCobalt" prob="0.85" rwgGenerationType="all"/>
+          <resource blockname="terrGravel" prob="1" rwgGenerationType="all"/>
+        </layer>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_cobalt_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_quartz_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_lithium_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+  </append>
+  <!-- Desert: copper + aluminium + platinum (keep gold out to avoid looking like copper) -->
+  <append xpath="/worldgeneration/biomes/biome[@name='desert']">
+    <!-- Common band -->
+    <subbiome noise=".038, 0, 1" noiseoffset="22000, 2222">
+      <layers>
+        <layer depth="4" blockname="terrDesertGround"/>
+        <layer depth="*" blockname="terrSandStone"/>
+        <layer depth="1" blockname="terrSandStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_copper_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_aluminium_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_platinum_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Medium band -->
+    <subbiome noise=".023, 0, .08" noiseoffset="24000, 2444">
+      <layers>
+        <layer depth="4" blockname="terrDesertGround"/>
+        <layer depth="*" blockname="terrSandStone"/>
+        <layer depth="1" blockname="terrSandStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_copper_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_aluminium_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_platinum_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Rare band -->
+    <subbiome noise=".038, 0, .05" noiseoffset="22000, 2222">
+      <layers>
+        <layer depth="4" blockname="terrDesertGround"/>
+        <layer depth="*" blockname="terrSandStone"/>
+        <layer depth="1" blockname="terrSandStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_copper_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_aluminium_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_platinum_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+  </append>
+  <!-- Burnt Forest: zinc + gold + chromium (keep other greys out to avoid overlap) -->
+  <append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']">
+    <!-- Common band -->
+    <subbiome noise=".033, 0, 1" noiseoffset="26000, 2666">
+      <layers>
+        <layer depth="1" blockname="terrBurntForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <!-- TESTING: high vein spawn chance (split across 3 bands) -->
+        <decoration type="prefab" name="deco_zinc_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_gold_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_chromium_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Medium band -->
+    <subbiome noise=".021, 0, .08" noiseoffset="28000, 2866">
+      <layers>
+        <layer depth="1" blockname="terrBurntForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_zinc_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_gold_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_chromium_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Rare band -->
+    <subbiome noise=".033, 0, .05" noiseoffset="26000, 2666">
+      <layers>
+        <layer depth="1" blockname="terrBurntForestGround"/>
+        <layer depth="3" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_zinc_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_gold_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_chromium_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+  </append>
+  <!-- Wasteland: nickel + uranium (keep other greys out to avoid overlap) -->
+  <append xpath="/worldgeneration/biomes/biome[@name='wasteland']">
+    <!-- Common band -->
+    <subbiome noise=".03, 0, 1" noiseoffset="30000, 3333">
+      <layers>
+        <layer depth="2" blockname="terrDestroyedGrass"/>
+        <layer depth="2" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <!-- TESTING: high vein spawn chance (split across 3 bands) -->
+        <decoration type="prefab" name="deco_nickel_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+        <decoration type="prefab" name="deco_uranium_vein" onslopes="true" prob="0.001875" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Medium band -->
+    <subbiome noise=".019, 0, .08" noiseoffset="32000, 3666">
+      <layers>
+        <layer depth="2" blockname="terrDestroyedGrass"/>
+        <layer depth="2" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_nickel_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_uranium_vein" onslopes="true" prob="0.00125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+    <!-- Rare band -->
+    <subbiome noise=".03, 0, .05" noiseoffset="30000, 3333">
+      <layers>
+        <layer depth="2" blockname="terrDestroyedGrass"/>
+        <layer depth="2" blockname="terrDirt"/>
+        <layer depth="*" blockname="terrStone"/>
+        <layer depth="3" blockname="terrBedrock"/>
+      </layers>
+      <decorations>
+        <decoration type="prefab" name="deco_nickel_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+        <decoration type="prefab" name="deco_uranium_vein" onslopes="true" prob="0.00078125" rotatemax="3"/>
+      </decorations>
+    </subbiome>
+  </append>
+</configs>

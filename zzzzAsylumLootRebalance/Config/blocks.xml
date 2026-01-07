@@ -1,0 +1,92 @@
+<configs>
+<!-- ============================================================================
+     ASYLUM TIERED TREASURE MAP SYSTEM - BLOCKS
+     Treasure chest containers for each tier
+     ============================================================================ -->
+
+<!-- Tier 1: Infernal Treasure Chest - Orange tint -->
+<append xpath="/blocks">
+    <block name="cntAsylumTreasureT1">
+        <property name="Extends" value="cntLootChestHero" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT1"/>
+        <property name="CustomIcon" value="cntLootChestHero"/>
+        <property name="CustomIconTint" value="FF6B35"/>
+        <property name="TintColor" value="FF6B35"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="DowngradeBlock" value="cntAsylumTreasureT1Insecure"/>
+        <property name="SortOrder2" value="0110"/>
+        <property name="Tags" value="buriedTreasure,timecharge"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+
+    <block name="cntAsylumTreasureT1Insecure">
+        <property name="Extends" value="cntLootChestHeroInsecure" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT1"/>
+        <property name="TintColor" value="FF6B35"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="SortOrder2" value="0111"/>
+        <property name="Tags" value="buriedTreasure"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+</append>
+
+<!-- Tier 2: Demonic Treasure Chest - Purple tint -->
+<append xpath="/blocks">
+    <block name="cntAsylumTreasureT2">
+        <property name="Extends" value="cntLootChestHero" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT2"/>
+        <property name="CustomIcon" value="cntLootChestHero"/>
+        <property name="CustomIconTint" value="9B59B6"/>
+        <property name="TintColor" value="9B59B6"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="DowngradeBlock" value="cntAsylumTreasureT2Insecure"/>
+        <property name="SortOrder2" value="0112"/>
+        <property name="Tags" value="buriedTreasure,timecharge"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+
+    <block name="cntAsylumTreasureT2Insecure">
+        <property name="Extends" value="cntLootChestHeroInsecure" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT2"/>
+        <property name="TintColor" value="9B59B6"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="SortOrder2" value="0113"/>
+        <property name="Tags" value="buriedTreasure"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+</append>
+
+<!-- Tier 3: Abyssal Treasure Chest - Teal tint -->
+<append xpath="/blocks">
+    <block name="cntAsylumTreasureT3">
+        <property name="Extends" value="cntLootChestHero" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT3"/>
+        <property name="CustomIcon" value="cntLootChestHero"/>
+        <property name="CustomIconTint" value="1ABC9C"/>
+        <property name="TintColor" value="1ABC9C"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="DowngradeBlock" value="cntAsylumTreasureT3Insecure"/>
+        <property name="SortOrder2" value="0114"/>
+        <property name="Tags" value="buriedTreasure,timecharge"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+
+    <block name="cntAsylumTreasureT3Insecure">
+        <property name="Extends" value="cntLootChestHeroInsecure" param1="DescriptionKey"/>
+        <property name="CreativeMode" value="None"/>
+        <property name="LootList" value="asylumBuriedTreasureT3"/>
+        <property name="TintColor" value="1ABC9C"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="SortOrder2" value="0115"/>
+        <property name="Tags" value="buriedTreasure"/>
+        <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+    </block>
+</append>
+
+</configs>
+

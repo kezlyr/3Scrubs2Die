@@ -1,0 +1,19 @@
+<configs>
+  <!-- A) Seviye başına skill point = 3 -->
+  <set xpath="/progression/level/@skill_points_per_level">3</set>
+
+  <!-- B) Point Surge: bir perke puan harcadığında 10 dk buff ver; buff aktifken yeniden tetiklenmesin -->
+  <append xpath="//perk">
+    <effect_group>
+      <!-- Buff kilidi açıksa buff ver -->
+      <triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPointSurge">
+        <requirement name="CVarCompare" cvar="$pointSurgeCD" operation="EQ" value="0"/>
+      </triggered_effect>
+      <!-- Buff kilidini kapat -->
+      <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar"
+                        cvar="$pointSurgeCD" operation="set" value="1">
+        <requirement name="CVarCompare" cvar="$pointSurgeCD" operation="EQ" value="0"/>
+      </triggered_effect>
+    </effect_group>
+  </append>
+</configs>

@@ -1,0 +1,22 @@
+Key,english
+asylumCrocodile,Asylum Crocodile
+meleeHandAsylumCrocodile,Crocodile Jaws
+Asylumanimalelephant,Asylum Elephant
+meleeHandAsylumElephant,Elephant Tusks
+Asylumanimalhippo,Asylum Hippo
+meleeHandAsylumHippo,Hippo Jaws
+Asylumanimallion,Asylum Lion
+meleeHandAsylumLion,Lion Claws
+Asylumanimallioness,Asylum Lioness
+meleeHandAsylumLioness,Lioness Claws
+Asylumrhino,Asylum Rhino
+meleeHandAsylumRhino,Rhino Horn
+Asylumzebra,Asylum Zebra
+Asylumalvus,Asylum Ingenalvus
+meleeHandAsylumIngenalvus,Ingenalvus Fangs
+Asylumkingspawn,Asylum Kingspawn
+meleeHandAsylumKingspawn,Kingspawn Claws
+Asylumtitan,Asylum Titan
+meleeHandAsylumTitan,Titan Fists
+Asylumonyx,Asylum Onyx
+meleeHandAsylumOnyx,Onyx Armor

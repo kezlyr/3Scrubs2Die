@@ -1,0 +1,32 @@
+Key,Source,Context,Changes,English
+diskDrive,,, ,Disk Drive
+diskDriveT1,,, ,Disk Drive (T1)
+diskDriveT2,,, ,Disk Drive (T2)
+diskReader,,, ,Disk Reader
+diskReaderT1,,, ,Disk Reader (T1)
+diskReaderT2,,, ,Disk Reader (T2)
+diskDropBox,,, ,Disk Drop Box
+diskDropBoxT1,,, ,Disk Drop Box (T1)
+diskDropBoxT2,,, ,Disk Drop Box (T2)
+blockdiskDriveName,,, ,Disk Drive
+blockdiskDriveT1Name,,, ,Disk Drive (T1)
+blockdiskDriveT2Name,,, ,Disk Drive (T2)
+blockdiskReaderName,,, ,Disk Reader
+blockdiskReaderT1Name,,, ,Disk Reader (T1)
+blockdiskReaderT2Name,,, ,Disk Reader (T2)
+blockdiskDropBoxName,,, ,Disk Drop Box
+blockdiskDropBoxT1Name,,, ,Disk Drop Box (T1)
+blockdiskDropBoxT2Name,,, ,Disk Drop Box (T2)
+itemdiskStorageEmptyName,,, ,Storage Disk
+itemdiskStorageEmptyT1Name,,, ,Storage Disk (T1)
+itemdiskStorageEmptyT2Name,,, ,Storage Disk (T2)
+diskDriveDesc,,, ,Holds storage disks.
+diskDriveT1Desc,,, ,Holds storage disks. (T1)
+diskDriveT2Desc,,, ,Holds storage disks. (T2)
+diskReaderDesc,,, ,Insert a disk to access its contents.
+diskDropBoxDesc,,, ,Dump items here to push them into the adjacent Disk Drive. Leftovers stay here when disks are full.
+diskDropBoxT1Desc,,, ,Dump items here to push them into the adjacent Disk Drive. Leftovers stay here when disks are full. (T1)
+diskDropBoxT2Desc,,, ,Dump items here to push them into the adjacent Disk Drive. Leftovers stay here when disks are full. (T2)
+diskStorageEmptyDesc,,, ,A blank storage disk.
+diskStorageEmptyT1Desc,,, ,A blank storage disk. (T1)
+diskStorageEmptyT2Desc,,, ,A blank storage disk. (T2)

@@ -1,0 +1,17 @@
+A guide for Undead Country intended to help you learn the mod.
+
+Pre game: It's best to make a randomly generated world after you install the mod.
+
+Frist spawn: Once you start you'll be given a starter kit selector. These kits will help you along so read the description of choose the best one for you.
+
+Above your stamina bar you'll see a green skull icon. This is an invasion. Once the timer reaches 0, a small horde of zombies will come and attack you. Each time an invasion finishes, you'll get a harder one next time. If you want to cure this invasion you'll have to consume Z-Xide plus. It'll take some time to be able to make it, so you can also find it sold at traders. If you die and have death penalties on, the invasion will come back. If you cure the invasion and want it back you can drink a Hive Concoction.
+
+Once you make it to the trader and complete the intro quest, he will give you a bag of supplies. In this bag are the parts to repair a minibike. Go to the Basic Workbench next to the destroyed forge to craft your minibike. The Basic Workbench is required to craft many low tech items. You should create it as soon as possible. In the supplies bag you will also get the schematic to craft protective gear. Protective gear protects you from the harmful effects of the biomes. They are the gas mask, cooling mesh, insulated liner and Radiation resistant foil. You can also unlock the protective gear by completing the biome challenges.
+
+Research bench: Crafted at the basic workbench. The research bench allows you to use scrapped magazines and paper to make magazines you want. You can also unlock various schematics too.
+
+Food: To cook better foods you'll need to have better cook stations. A wood burning stove is a tier 2 stove and can be crafted and found at trader Rekt's. Better foods also give special buffs.
+
+Craft stations: There are many useful craft stations in this mod. Go into the "crafting skills" tab and find Appliances. There you can see the various stations.  Acid can be crafted at the fermentation barrel, and enhanced seeds can be made at the hydroponic for example. Leveled up by forge ahead magazines. 
+
+Farming: Grown crops revert to growth stage one when harvested. Enhanced seeds are created at the hydroponic and grow 30% faster.

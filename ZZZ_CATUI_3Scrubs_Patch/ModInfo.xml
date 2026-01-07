@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+	<Name value="ZZZ_CATUI_3Scrubs_Patch" />
+	<DisplayName value="CATUI 3Scrubs Patch" />
+	<Description value="Adds additional CATUI target-bar bindings for 3Scrubs debuffs (Harmony patch)." />
+	<Author value="3Scrubs" />
+	<Version value="0.1.0" />
+	<Website value="" />
+</ModInfo>
+

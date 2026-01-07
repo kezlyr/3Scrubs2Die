@@ -1,0 +1,238 @@
+<config>
+
+    <set xpath="/spawning/biome[@name='pine_forest']">
+		<spawn id="dz01" maxcount="5" respawndelay="0.5" time="Day" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+		<spawn id="nz01" maxcount="8" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+		
+		<spawn id="dz02" maxcount="6" respawndelay="0.1" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+		<spawn id="nz02" maxcount="8" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+		<spawn id="dz03" maxcount="12" respawndelay="0.1" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
+		<spawn id="nz03" maxcount="14" respawndelay="0.1" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
+
+		<spawn id="aa01" maxcount="2" respawndelay="1.5" time="Any" entitygroup="WildGameForest" />
+		<spawn id="na01" maxcount="2" respawndelay="1.3" time="Night" entitygroup="WildGameForestNight" />
+		<spawn id="ne01" maxcount="2" respawndelay="2.9" time="Night" entitygroup="EnemyAnimalsForest" />
+	</set> 
+
+	
+    <set xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn id="dz01" maxcount="6" respawndelay="0.4" time="Day" entitygroup="ZombiesBurntForest" />
+		<spawn id="nz01" maxcount="12" respawndelay="0.4" time="Night" entitygroup="ZombiesBurntForestNight" />
+		
+		<spawn id="dz02" maxcount="10" respawndelay="0.25" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+		<spawn id="nz02" maxcount="12" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+		<spawn id="dz03" maxcount="14" respawndelay="0.15" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+		<spawn id="nz03" maxcount="14" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+
+		<spawn id="aa01" maxcount="2" respawndelay="2.1" time="Any" entitygroup="WildGameForest" />
+		<spawn id="na01" maxcount="2" respawndelay="1.6" time="Night" entitygroup="WildGameForestNight" />
+		<spawn id="ae01" maxcount="2" respawndelay="2.8" time="Any" entitygroup="EnemyAnimalsBurntForestAny" />
+		<spawn id="ne01" maxcount="2" respawndelay="2.2" time="Night" entitygroup="EnemyAnimalsBurntForestNight" />
+	</set>
+
+	
+	<set xpath="/spawning/biome[@name='desert']">
+		<spawn id="dz01" maxcount="7" respawndelay="0.4" time="Any" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+		<spawn id="nz01" maxcount="12" respawndelay="0.4" time="Night" entitygroup="ZombiesDesertNight" notags="commercial,industrial,downtown" />
+		
+		<spawn id="dz02" maxcount="10" respawndelay="0.2" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+		<spawn id="nz02" maxcount="12" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+		
+		<spawn id="dz03" maxcount="14" respawndelay="0.2" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+		<spawn id="nz03" maxcount="14" respawndelay="0.09" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+		
+		<spawn id="aa01" maxcount="1" respawndelay="1.9" time="Any" entitygroup="WildGameForest" />
+		<spawn id="ae01" maxcount="1" respawndelay="3.1" time="Any" entitygroup="EnemyAnimalsDesert" />
+		<spawn id="ne01" maxcount="1" respawndelay="1.8" time="Night" entitygroup="EnemyAnimalsDesertNight" />
+	</set>
+
+	
+	<set xpath="/spawning/biome[@name='snow']">
+		<spawn id="dz01" maxcount="7" respawndelay="0.4" time="Any" entitygroup="ZombiesSnow" notags="downtown" />
+		<spawn id="nz01" maxcount="10" respawndelay="0.4" time="Night" entitygroup="ZombiesSnowNight" notags="commercial,industrial,downtown" />
+		
+		<spawn id="dz02" maxcount="12" respawndelay="0.09" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+		<spawn id="nz02" maxcount="14" respawndelay="0.06" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+
+		<spawn id="dz03" maxcount="15" respawndelay="0.07" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+		<spawn id="nz03" maxcount="16" respawndelay="0.04" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+
+		<spawn id="aa01" maxcount="1" respawndelay="2.4" time="Any" entitygroup="WildGameForest" />
+		<spawn id="na01" maxcount="1" respawndelay="1.9" time="Night" entitygroup="WildGameStagNight" />
+		<spawn id="ae01" maxcount="1" respawndelay="2.6" time="Any" entitygroup="EnemyAnimalsSnow" />
+		<spawn id="ne01" maxcount="1" respawndelay="1.6" time="Night" entitygroup="EnemyAnimalsSnowNight" />
+	</set>
+
+	
+	<set xpath="/spawning/biome[@name='wasteland']">
+		<spawn id="dz01" maxcount="7" respawndelay="0.4" time="Day"	entitygroup="ZombiesWasteland" notags="commercial,industrial,downtown" />
+		<spawn id="dz04" maxcount="8" respawndelay="0.6" time="Day" entitygroup="ZombiesAllWasteland" notags="commercial,industrial,downtown" />
+		<spawn id="nz01" maxcount="14" respawndelay="0.4" time="Night" entitygroup="ZombiesWastelandNight" notags="commercial,industrial,downtown" />
+		
+		<spawn id="dz02" maxcount="16" respawndelay="0.033" time="Day" entitygroup="ZombiesWasteland" tags="commercial,industrial" notags="downtown" />
+		<spawn id="nz02" maxcount="18" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandNight" tags="commercial,industrial" notags="downtown" />
+
+		<spawn id="dz03" maxcount="18" respawndelay="0.0167" time="Day" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
+		<spawn id="nz03" maxcount="20" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandDowntown" tags="downtown" />
+
+		<spawn id="na01" maxcount="1" respawndelay="3.2" time="Night" entitygroup="WildGameStagNight" />
+		<spawn id="ae01" maxcount="1" respawndelay="0.9" time="Any" entitygroup="EnemyAnimalsWasteland" />
+		<spawn id="ne01" maxcount="1" respawndelay="0.6" time="Night" entitygroup="EnemyAnimalsWastelandNight" />
+	</set> 
+	
+	
+	<set xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='TotalAlive']/@value">2</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='TotalPerWave']/@value">1,3</set>
+	
+	
+	<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='TotalAlive']/@value">4</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='DelayBetweenSpawns']/@value">2</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='TotalPerWave']/@value">2,4</set>
+	
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalAlive']/@value">8</set>
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='DelayBetweenSpawns']/@value">0.5</set>
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalPerWave']/@value">4,8</set>
+	
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalAlive']/@value">8</set>
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='DelayBetweenSpawns']/@value">0.5</set>
+	
+	<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalPerWave']/@value">4,8</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Soldier -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnCave']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnCave']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnCrawlers']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnCrawlers']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+	<!-- Sneed -->
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalAlive']/@value">30</set>
+	
+	<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalPerWave']/@value">26,30</set>
+	
+
+</config>

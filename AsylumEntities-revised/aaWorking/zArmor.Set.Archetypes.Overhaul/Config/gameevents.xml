@@ -1,0 +1,388 @@
+<ASAO>
+	<append xpath="/gameevents">
+	<!--Item Givers-->
+	<action_sequence name="action_give_book">
+		<action class="AddItems">
+			<property name="added_items" value="rewardTheory"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="action_give_powder">
+		<action class="AddItems">
+			<property name="added_items" value="resourceGunPowder"/>
+			<property name="added_item_counts" value="4"/>
+		</action>
+	</action_sequence>
+	<!--action_give_totem-->
+	<action_sequence name="action_give_totem">
+		<action class="AddItems">
+			<property name="added_items" value="resourceCulttotem"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+	</action_sequence>
+		<!--*** Game Events for Cannibal Feast Buff ***
+			These actions are called by the 'buffCannibalFeast' to give the player items.
+		-->
+
+		<!-- This event gives the player 1 piece of Raw Meat. -->
+		<action_sequence name="action_give_raw_meat">
+			<action class="AddItems">
+				<property name="added_items" value="foodRawMeat"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<!-- This event gives the player 1 piece of Rotting Flesh. -->
+		<action_sequence name="action_give_rotting_flesh">
+			<action class="AddItems">
+				<property name="added_items" value="foodRottingFlesh"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<!-- 
+			************************************************************************************
+			********** NEW FORAGER GAME EVENTS *************************************************
+			************************************************************************************
+		-->
+
+		<!-- Gives the player a Pristine Pelt -->
+		<action_sequence name="action_give_forager_pelt">
+			<action class="AddItems">
+				<property name="added_items" value="resourcePristinePelt"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Sub-events for the random herb giver -->
+		<action_sequence name="action_give_forager_herb_healing">
+			<action class="AddItems">
+				<property name="added_items" value="resourceForagersHerbHealing"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_forager_herb_combat">
+			<action class="AddItems">
+				<property name="added_items" value="resourceForagersHerbCombat"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_forager_herb_utility">
+			<action class="AddItems">
+				<property name="added_items" value="resourceForagersHerbUtility"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_goldenrod">
+			<action class="AddItems">
+				<property name="added_items" value="resourceCropGoldenrodPlant"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_cotton">
+			<action class="AddItems">
+				<property name="added_items" value="resourceCropCottonPlant"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_chrysanthemum">
+			<action class="AddItems">
+				<property name="added_items" value="resourceCropChrysanthemumPlant"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+<!-- Tier 1: Gives 10 Dukes -->
+        <action_sequence name="action_give_liquidator_dukes_t1">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="10"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Tier 2: Gives 20 Dukes -->
+		<action_sequence name="action_give_liquidator_dukes_t2">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="20"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Tier 3: Gives 30 Dukes -->
+		<action_sequence name="action_give_liquidator_dukes_t3">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="30"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Tier 4: Gives 40 Dukes -->
+		<action_sequence name="action_give_liquidator_dukes_t4">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="40"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Tier 5: Gives 50 Dukes -->
+		<action_sequence name="action_give_liquidator_dukes_t5">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="50"/>
+			</action>
+		</action_sequence>
+		
+		<!-- Tier 6: Gives 60 Dukes -->
+		<action_sequence name="action_give_liquidator_dukes_t6">
+			<action class="AddItems">
+				<property name="added_items" value="casinoCoin"/>
+				<property name="added_item_counts" value="60"/>
+			</action>
+		</action_sequence>
+<!-- [mod] FREERUNNER: EVASIVE DASH EVENT -->
+    <!-- This game event is called by the Freerunner set to teleport the player a short distance forward. -->
+    <action_sequence name="action_freerunner_dash">
+        <property name="allow_user_trigger" value="false" />
+        <property name="action_type" value="Game" />
+
+        <!-- Requirement: Player must not be in a vehicle. -->
+        <requirement class="InVehicle">
+            <property name="invert" value="true" />
+        </requirement>
+
+        <!-- The teleport action -->
+        <action class="Teleport">
+            <!-- X, Y, Z: Teleports the player 2 meters backward. -->
+            <property name="target_position" value="0,1, -2" />
+            <property name="offset_type" value="Relative" />
+        </action>
+
+        <!-- A subtle sound effect for feedback -->
+        <action class="PlaySound">
+            <property name="sound" value="swoosh" />
+        </action>
+    </action_sequence>
+	<!-- Master Event for Tier 1 Food -->
+    <action_sequence name="action_wastelander_food_t1">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t1_chili,action_wastelander_food_t1_catfood,action_wastelander_food_t1_dogfood,action_wastelander_food_t1_sham"/>
+        </action>
+    </action_sequence>
+
+    <!-- Master Event for Tier 2 Food -->
+    <action_sequence name="action_wastelander_food_t2">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t2_beef,action_wastelander_food_t2_chicken,action_wastelander_food_t2_lamb,action_wastelander_food_t2_salmon"/>
+        </action>
+    </action_sequence>
+
+    <!-- Master Event for Tier 3 Food -->
+    <action_sequence name="action_wastelander_food_t3">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t3_cornbread,action_wastelander_food_t3_boiledmeat,action_wastelander_food_t3_charredmeat,action_wastelander_food_t3_bakedpotato"/>
+        </action>
+    </action_sequence>
+
+    <!-- Master Event for Tier 4 Food -->
+    <action_sequence name="action_wastelander_food_t4">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t4_grilledmeat,action_wastelander_food_t4_steakpotato,action_wastelander_food_t4_baconandeggs,action_wastelander_food_t4_fishtacos"/>
+        </action>
+    </action_sequence>
+
+    <!-- Master Event for Tier 5 Food -->
+    <action_sequence name="action_wastelander_food_t5">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t5_meatstew,action_wastelander_food_t5_vegstew,action_wastelander_food_t5_hobostew"/>
+        </action>
+    </action_sequence>
+
+    <!-- Master Event for Tier 6 Food -->
+    <action_sequence name="action_wastelander_food_t6">
+        <property name="allow_user_trigger" value="false" />
+        <action class="CallGameEvent">
+            <property name="game_events" value="action_wastelander_food_t6_gumbostew,action_wastelander_food_t6_shepardspie,action_wastelander_food_t6_chilidog"/>
+        </action>
+    </action_sequence>
+    
+    
+    <!-- INDIVIDUAL FOOD ITEM EVENTS -->
+    
+    <!-- Tier 1 -->
+    <action_sequence name="action_wastelander_food_t1_chili">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanChili"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t1_catfood">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanCatfood"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t1_dogfood">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanDogfood"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t1_sham">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanSham"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    
+    <!-- Tier 2 -->
+    <action_sequence name="action_wastelander_food_t2_beef">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanBeef"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t2_chicken">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanChicken"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t2_lamb">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanLamb"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t2_salmon">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCanSalmon"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    
+    <!-- Tier 3 -->
+    <action_sequence name="action_wastelander_food_t3_cornbread">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCornBread"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t3_boiledmeat">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodBoiledMeat"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t3_charredmeat">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodCharredMeat"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t3_bakedpotato">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodBakedPotato"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    
+    <!-- Tier 4 -->
+    <action_sequence name="action_wastelander_food_t4_grilledmeat">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodGrilledMeat"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t4_steakpotato">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodSteakAndPotato"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t4_baconandeggs">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodBaconAndEggs"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t4_fishtacos">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodFishTacos"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    
+    <!-- Tier 5 -->
+    <action_sequence name="action_wastelander_food_t5_meatstew">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodMeatStew"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t5_vegstew">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodVegetableStew"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t5_hobostew">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodHoboStew"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    
+    <!-- Tier 6 -->
+    <action_sequence name="action_wastelander_food_t6_gumbostew">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodGumboStew"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t6_shepardspie">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodShepardsPie"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+    <action_sequence name="action_wastelander_food_t6_chilidog">
+        <property name="allow_user_trigger" value="false" /><action class="AddItems"><property name="added_items" value="foodChiliDog"/><property name="added_item_counts" value="1"/></action>
+    </action_sequence>
+	
+	<action_sequence name="action_give_LumberjackBadge">
+			<action class="AddItems">
+				<property name="added_items" value="LumberjackBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_PreacherBadge">
+			<action class="AddItems">
+				<property name="added_items" value="PreacherBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_RogueBadge">
+			<action class="AddItems">
+				<property name="added_items" value="RogueBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_AthleticBadge">
+			<action class="AddItems">
+				<property name="added_items" value="AthleticBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_EnforcerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="EnforcerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<action_sequence name="action_give_FarmerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="FarmerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_BikerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="BikerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_ScavengerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="ScavengerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_RangerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="RangerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_CommandoBadge">
+			<action class="AddItems">
+				<property name="added_items" value="CommandoBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_AssassinBadge">
+			<action class="AddItems">
+				<property name="added_items" value="AssassinBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<action_sequence name="action_give_MinerBadge">
+			<action class="AddItems">
+				<property name="added_items" value="MinerBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_NomadBadge">
+			<action class="AddItems">
+				<property name="added_items" value="NomadBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_NerdBadge">
+			<action class="AddItems">
+				<property name="added_items" value="NerdBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="action_give_RaiderBadge">
+			<action class="AddItems">
+				<property name="added_items" value="RaiderBadge"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+	</append>
+	
+	
+</ASAO> 

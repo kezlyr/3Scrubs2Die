@@ -1,0 +1,229 @@
+<configs>
+
+<append xpath="/blocks">
+
+	<!-- Bladetrap -->
+	<block name="infernalBladeTrap">
+		<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+		<property name="CustomIcon" value="bladeTrap"/>
+		<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+		<property name="CreativeMode" value="Player"/>
+		<property name="Class" value="BladeTrap"/>
+		<property name="RequiredPower" value="10"/>
+		<property name="Damage" value="200"/>
+		<property name="DamageReceived" value="2"/>
+		<property name="BreakingPercentage" value="0.5"/>
+		<property name="BrokenPercentage" value="0.25"/>
+		<property name="ImpactSound" value="bladetrap_impact"/>
+		<property name="StartSound" value="bladetrap_startup"/>
+		<property name="StopSound" value="bladetrap_stop"/>
+		<property name="RunningSound" value="bladetrap_fire_lp"/>
+		<property name="RunningSoundBreaking" value="bladetrap_dm1_lp"/>
+		<property name="RunningSoundBroken" value="bladetrap_dm2_lp"/>
+		<property name="UnlockedBy" value="craftingTraps"/>
+		<property name="DisplayType" value="blockElectricalHardenedMulti"/>
+		<property name="Stacknumber" value="50"/>
+		<property name="Material" value="VMmetalBladeTrap"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Entities/Electrical/trapSpinningBladePrefab.prefab"/>
+		<property name="MultiBlockDim" value="3,1,3"/>
+		<property name="ImposterExchange" value="imposterPlate" param1="111"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="HandleFace" value="Bottom"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="EconomicValue" value="444"/>
+		<property name="TraderStageTemplate" value="electricTier3"/><!-- bladeTrap -->
+		<property name="ActivationDistance" value="6"/>
+		<property name="TakeDelay" value="10"/>
+		<property class="RepairItems">
+			<property name="resourceForgedSteel" value="15"/>
+		</property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="20,100" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="SortOrder1" value="B155"/>
+		<property name="SortOrder2" value="0021"/>
+		<property name="Group" value="Science,TCScience"/>
+		<property name="Tags" value="trapsSkill"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
+	</block>
+
+
+<!-- Electric Fence -->
+	<block name="infernalElectricFence">
+		<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+		<property name="CustomIcon" value="electricfencepost"/>
+		<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+		<property name="CreativeMode" value="Player"/>
+		<property name="Class" value="ElectricWire"/>
+		<property name="RequiredPower" value="2"/>
+		<property name="DamageReceived" value="0.5"/>
+		<property name="UnlockedBy" value="craftingTraps"/>
+		<property name="DisplayType" value="blockElectricalMulti"/>
+		<property name="Material" value="Mmetal_weak"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Entities/Electrical/electric_fencePrefab.prefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="HandleFace" value="Bottom"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="EconomicValue" value="62"/>
+		<property name="TraderStageTemplate" value="electricTier1"/><!-- electricfencepost -->
+		<property name="MaxDamage" value="5000"/>
+		<property name="Buff" value="buffShocked"/>
+		<property name="BuffChance" value="1"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="4"/>
+			<property name="resourceElectricParts" value="1"/>
+		</property>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="SortOrder1" value="B155"/>
+		<property name="SortOrder2" value="0018"/>
+		<property name="Group" value="Science,TCScience"/>
+		<property name="Tags" value="trapsSkill"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
+	</block>
+
+
+<!-- Iron Spikes -->
+	<block name="infernalSpikesMaster">
+		<property name="CustomIcon" value="ironSpikesTrap"/>
+		<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+		<property name="CreativeMode" value="None"/>
+		<property name="Class" value="TrunkTip"/>
+		<property name="Damage" value="50"/>
+		<property name="Damage_received" value="50"/>
+		<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="MtrapSpikesIron"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Entities/Traps/ironSpikesTrapPrefab.prefab"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="LightOpacity" value="6"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="Collide" value="melee"/>
+		<property name="Path" value="solid"/>
+		<property name="IsTerrainDecoration" value="false"/>
+		<property name="EconomicValue" value="30"/>
+		<property name="EconomicBundleSize" value="20"/>
+		<property name="MaxDamage" value="5000"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="2"/>
+		</property>
+		<property name="UpgradeSound" value="place_block_metal"/>
+		<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+		<drop event="Fall" count="0"/>
+		<property name="SortOrder1" value="B751"/>
+		<property name="SortOrder2" value="0000"/>
+		<property name="Group" value="Building"/>
+		<property name="BlockTag" value="Spike"/>
+		<property name="FilterTags" value="MC_building,SC_traps"/>
+	</block>
+	
+	<block name="infernalSpikes">
+		<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+		<property name="Extends" value="infernalSpikesMaster"/>
+		<property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+		<property name="SortOrder2" value="0003"/>
+	</block>
+
+
+<!-- Fence -->
+<block name="infernalFence">
+	<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+	<property name="CustomIcon" value="barbedFence"/>
+	<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+	<property name="Class" value="TrunkTip"/>
+	<property name="Damage" value="20"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="Damage_received" value="6"/>
+	<property name="CanPlayersSpawnOn" value="false"/>
+	<property name="Material" value="MbarbedFence"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/OutdoorDecor/barbedFence_01Prefab.prefab"/>
+	<property name="Texture" value="518"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="11"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest,lumberjackHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="barbedFenceDamaged01"/>
+	<property name="SortOrder1" value="B752"/>
+	<property name="SortOrder2" value="0001"/>
+	<property name="Group" value="Building"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_traps"/>
+</block>
+
+<!-- Bandit Barbed Wire Spindle -->
+<block name="infernalSpindleWireMaster">
+	<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+	<property name="CustomIcon" value="barbedWireSpindle"/>
+	<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="Damage"/>
+	<property name="Damage" value="50"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="Damage_received" value="6"/>
+	<property name="Material" value="VMbarbedWire"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/BanditProps/Barbedwire/barbedwire_spindlePrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+	<property name="Collide" value="melee,rocket"/> <!-- -rocket -->
+	<property name="VehicleHitScale" value="8"/>
+	<property name="EconomicValue" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="15"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+	<property name="SortOrder1" value="B752"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Building"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="FilterTags" value="MC_building,SC_traps"/>
+</block>
+
+<block name="infernalSpindleWire">
+	<property name="DescriptionKey" value="infernalTrapGroupDesc"/>
+	<property name="CustomIcon" value="barbedWireSpindle"/>
+	<property name="CustomIconTint" value="#FF6600"/><!-- Icon Tint -->
+	<property name="Extends" value="infernalSpindleWireMaster" param1="SortOrder1,SortOrder2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/BanditProps/Barbedwire/barbedwire_spindlePrefab.prefab"/>
+	<property name="ModelOffset" value="0,0,-0.25"/>
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="SortOrder1" value="B753"/>
+	<property name="SortOrder2" value="0000"/>
+</block>
+
+
+
+
+</append>
+
+</configs>

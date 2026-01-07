@@ -1,0 +1,297 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+# AsylumDemonsEndgame Localization
+# Endgame uber demon entities with ultimate difficulty
+# Color Code: [FF0000] (Bright Red) for Uber Endgame Entities
+
+# ========================================
+# UBER HIGHDEMON ENTITY SERIES
+# ========================================
+
+# Base Uber Highdemon - No MatColor (Muted Orange)
+asylumUberHighdemon,entities,Zombie,,,"[CC7744]Belphegor[-]"
+
+# Void Uber Highdemon - Void MatColor (Dark Purple-Black)
+asylumUberHighdemonVoid,entities,Zombie,,,"[4A0E4E]Belphegor the Void Walker[-]"
+
+# Omega Uber Highdemon - Omega MatColor (Brilliant White-Gold)
+asylumUberHighdemonOmega,entities,Zombie,,,"[FFD700]Belphegor the Omega[-]"
+
+# Chaos Uber Highdemon - Chaos MatColor (Deep Red)
+asylumUberHighdemonChaos,entities,Zombie,,,"[8B0000]Belphegor the Destroyer[-]"
+
+# Nightmare Uber Highdemon - Nightmare MatColor (Dark Blood Red)
+asylumUberHighdemonNightmare,entities,Zombie,,,"[660000]Belphegor the Nightmare[-]"
+
+# Abyssal Uber Highdemon - Abyssal MatColor (Near-Black with Blue)
+asylumUberHighdemonAbyssal,entities,Zombie,,,"[1A1A2E]Belphegor of the Abyss[-]"
+
+# Transcendent Uber Highdemon - Transcendent MatColor (Ethereal Blue-White)
+asylumUberHighdemonTranscendent,entities,Zombie,,,"[87CEEB]Belphegor the Transcendent[-]"
+
+# Volcanic Uber Highdemon - Volcanic MatColor (Molten Orange)
+asylumUberHighdemonVolcanic,entities,Zombie,,,"[FF4500]Belphegor the Infernal[-]"
+
+# ========================================
+# UBER FATDEMON ENTITY SERIES
+# ========================================
+
+# Base Uber Fatdemon - No MatColor (Muted Orange)
+asylumUberFatdemon,entities,Zombie,,,"[CC7744]Mammon[-]"
+
+# Void Uber Fatdemon - Void MatColor (Dark Purple-Black)
+asylumUberFatdemonVoid,entities,Zombie,,,"[4A0E4E]Mammon the Void Walker[-]"
+
+# Omega Uber Fatdemon - Omega MatColor (Brilliant White-Gold)
+asylumUberFatdemonOmega,entities,Zombie,,,"[FFD700]Mammon the Omega[-]"
+
+# Chaos Uber Fatdemon - Chaos MatColor (Deep Red)
+asylumUberFatdemonChaos,entities,Zombie,,,"[8B0000]Mammon the Destroyer[-]"
+
+# Nightmare Uber Fatdemon - Nightmare MatColor (Dark Blood Red)
+asylumUberFatdemonNightmare,entities,Zombie,,,"[660000]Mammon the Nightmare[-]"
+
+# Abyssal Uber Fatdemon - Abyssal MatColor (Near-Black with Blue)
+asylumUberFatdemonAbyssal,entities,Zombie,,,"[1A1A2E]Mammon of the Abyss[-]"
+
+# Transcendent Uber Fatdemon - Transcendent MatColor (Ethereal Blue-White)
+asylumUberFatdemonTranscendent,entities,Zombie,,,"[87CEEB]Mammon the Transcendent[-]"
+
+# Volcanic Uber Fatdemon - Volcanic MatColor (Molten Orange)
+asylumUberFatdemonVolcanic,entities,Zombie,,,"[FF4500]Mammon the Infernal[-]"
+
+# Radiated Uber Highdemon - Radiated MatColor (Toxic Green)
+asylumUberHighdemonRadiated,entities,Zombie,,,"[00FF00]Belphegor the Radiated[-]"
+
+# Radiated Uber Fatdemon - Radiated MatColor (Toxic Green)
+asylumUberFatdemonRadiated,entities,Zombie,,,"[00FF00]Mammon the Radiated[-]"
+
+# Base Uber Archdemon - Chaos MatColor (Deep Red)
+asylumUberArchdemon,entities,Zombie,,,"[FF0000]Asmodeus the Destroyer[-]"
+
+# Void Uber Archdemon - Void MatColor (Dark Purple)
+asylumUberArchdemonVoid,entities,Zombie,,,"[8000FF]Asmodeus the Void[-]"
+
+# Omega Uber Archdemon - Omega MatColor (Brilliant Gold)
+asylumUberArchdemonOmega,entities,Zombie,,,"[FFD700]Asmodeus the Omega[-]"
+
+# Chaos Uber Archdemon - Chaos MatColor (Deep Red)
+asylumUberArchdemonChaos,entities,Zombie,,,"[FF0000]Asmodeus the Chaotic[-]"
+
+# Nightmare Uber Archdemon - Nightmare MatColor (Blood Red)
+asylumUberArchdemonNightmare,entities,Zombie,,,"[8B0000]Asmodeus the Nightmare[-]"
+
+# Abyssal Uber Archdemon - Abyssal MatColor (Near Black)
+asylumUberArchdemonAbyssal,entities,Zombie,,,"[1C1C1C]Asmodeus the Abyssal[-]"
+
+# Transcendent Uber Archdemon - Transcendent MatColor (Ethereal Blue)
+asylumUberArchdemonTranscendent,entities,Zombie,,,"[00BFFF]Asmodeus the Transcendent[-]"
+
+# Volcanic Uber Archdemon - Volcanic MatColor (Molten Orange)
+asylumUberArchdemonVolcanic,entities,Zombie,,,"[FF4500]Asmodeus the Infernal[-]"
+
+# Radiated Uber Archdemon - Radiated MatColor (Toxic Green)
+asylumUberArchdemonRadiated,entities,Zombie,,,"[00FF00]Asmodeus the Radiated[-]"
+
+# Base Uber Facelessdemon - Chaos MatColor (Deep Red)
+asylumUberFacelessdemon,entities,Zombie,,,"[FF0000]Beelzebub the Faceless[-]"
+
+# Void Uber Facelessdemon - Void MatColor (Dark Purple)
+asylumUberFacelessdemonVoid,entities,Zombie,,,"[8000FF]Beelzebub the Void[-]"
+
+# Omega Uber Facelessdemon - Omega MatColor (Brilliant Gold)
+asylumUberFacelessdemonOmega,entities,Zombie,,,"[FFD700]Beelzebub the Omega[-]"
+
+# Chaos Uber Facelessdemon - Chaos MatColor (Deep Red)
+asylumUberFacelessdemonChaos,entities,Zombie,,,"[FF0000]Beelzebub the Chaotic[-]"
+
+# Nightmare Uber Facelessdemon - Nightmare MatColor (Blood Red)
+asylumUberFacelessdemonNightmare,entities,Zombie,,,"[8B0000]Beelzebub the Nightmare[-]"
+
+# Abyssal Uber Facelessdemon - Abyssal MatColor (Near Black)
+asylumUberFacelessdemonAbyssal,entities,Zombie,,,"[1C1C1C]Beelzebub the Abyssal[-]"
+
+# Transcendent Uber Facelessdemon - Transcendent MatColor (Ethereal Blue)
+asylumUberFacelessdemonTranscendent,entities,Zombie,,,"[00BFFF]Beelzebub the Transcendent[-]"
+
+# Volcanic Uber Facelessdemon - Volcanic MatColor (Molten Orange)
+asylumUberFacelessdemonVolcanic,entities,Zombie,,,"[FF4500]Beelzebub the Infernal[-]"
+
+# Radiated Uber Facelessdemon - Radiated MatColor (Toxic Green)
+asylumUberFacelessdemonRadiated,entities,Zombie,,,"[00FF00]Beelzebub the Radiated[-]"
+
+# Base Uber Sixeyesdemon - Chaos MatColor (Deep Red)
+asylumUberSixeyesdemon,entities,Zombie,,,"[FF0000]Malphas the Watcher[-]"
+
+# Void Uber Sixeyesdemon - Void MatColor (Dark Purple)
+asylumUberSixeyesdemonVoid,entities,Zombie,,,"[8000FF]Malphas the Void[-]"
+
+# Omega Uber Sixeyesdemon - Omega MatColor (Brilliant Gold)
+asylumUberSixeyesdemonOmega,entities,Zombie,,,"[FFD700]Malphas the Omega[-]"
+
+# Chaos Uber Sixeyesdemon - Chaos MatColor (Deep Red)
+asylumUberSixeyesdemonChaos,entities,Zombie,,,"[FF0000]Malphas the Chaotic[-]"
+
+# Nightmare Uber Sixeyesdemon - Nightmare MatColor (Blood Red)
+asylumUberSixeyesdemonNightmare,entities,Zombie,,,"[8B0000]Malphas the Nightmare[-]"
+
+# Abyssal Uber Sixeyesdemon - Abyssal MatColor (Near Black)
+asylumUberSixeyesdemonAbyssal,entities,Zombie,,,"[1C1C1C]Malphas the Abyssal[-]"
+
+# Transcendent Uber Sixeyesdemon - Transcendent MatColor (Ethereal Blue)
+asylumUberSixeyesdemonTranscendent,entities,Zombie,,,"[00BFFF]Malphas the Transcendent[-]"
+
+# Volcanic Uber Sixeyesdemon - Volcanic MatColor (Molten Orange)
+asylumUberSixeyesdemonVolcanic,entities,Zombie,,,"[FF4500]Malphas the Infernal[-]"
+
+# Radiated Uber Sixeyesdemon - Radiated MatColor (Toxic Green)
+asylumUberSixeyesdemonRadiated,entities,Zombie,,,"[00FF00]Malphas the Radiated[-]"
+
+# Base Uber Tankdemon - Chaos MatColor (Deep Red)
+asylumUberTankdemon,entities,Zombie,,,"[FF0000]Baal the Fortress[-]"
+
+# Void Uber Tankdemon - Void MatColor (Dark Purple)
+asylumUberTankdemonVoid,entities,Zombie,,,"[8000FF]Baal the Void[-]"
+
+# Omega Uber Tankdemon - Omega MatColor (Brilliant Gold)
+asylumUberTankdemonOmega,entities,Zombie,,,"[FFD700]Baal the Omega[-]"
+
+# Chaos Uber Tankdemon - Chaos MatColor (Deep Red)
+asylumUberTankdemonChaos,entities,Zombie,,,"[FF0000]Baal the Chaotic[-]"
+
+# Nightmare Uber Tankdemon - Nightmare MatColor (Blood Red)
+asylumUberTankdemonNightmare,entities,Zombie,,,"[8B0000]Baal the Nightmare[-]"
+
+# Abyssal Uber Tankdemon - Abyssal MatColor (Near Black)
+asylumUberTankdemonAbyssal,entities,Zombie,,,"[1C1C1C]Baal the Abyssal[-]"
+
+# Transcendent Uber Tankdemon - Transcendent MatColor (Ethereal Blue)
+asylumUberTankdemonTranscendent,entities,Zombie,,,"[00BFFF]Baal the Transcendent[-]"
+
+# Volcanic Uber Tankdemon - Volcanic MatColor (Molten Orange)
+asylumUberTankdemonVolcanic,entities,Zombie,,,"[FF4500]Baal the Infernal[-]"
+
+# Radiated Uber Tankdemon - Radiated MatColor (Toxic Green)
+asylumUberTankdemonRadiated,entities,Zombie,,,"[00FF00]Baal the Radiated[-]"
+
+# ========================================
+# ENDGAME DEMON HAND ITEM BUFFS
+# ========================================
+
+# HIGHDEMON BUFFS - Reality Manipulation
+buffAsylumVoidDisplacementName,buffs,Buff,,,"Void Displacement"
+buffAsylumVoidDisplacementDesc,buffs,Buff,,,"Reality tears around you, displacing your very existence."
+buffAsylumVoidDisplacementTooltip,buffs,Buff,,,"Your connection to reality is severed. Health, stamina, and movement severely reduced."
+
+buffAsylumRealityBreakName,buffs,Buff,,,"Reality Break"
+buffAsylumRealityBreakDesc,buffs,Buff,,,"The fabric of reality shatters, causing psychedelic distortions."
+buffAsylumRealityBreakTooltip,buffs,Buff,,,"Reality itself is breaking down around you. Severe penalties to all stats."
+
+buffAsylumChaosStormName,buffs,Buff,,,"Chaos Storm"
+buffAsylumChaosStormDesc,buffs,Buff,,,"Chaotic forces swirl around you, causing disorientation."
+buffAsylumChaosStormTooltip,buffs,Buff,,,"Chaos energy disrupts your coordination and balance."
+
+buffAsylumNightmareTerrorName,buffs,Buff,,,"Nightmare Terror"
+buffAsylumNightmareTerrorDesc,buffs,Buff,,,"Darkness consumes your vision as terror grips your soul."
+buffAsylumNightmareTerrorTooltip,buffs,Buff,,,"Nightmare visions cloud your sight and drain your strength."
+
+buffAsylumAbyssalVoidName,buffs,Buff,,,"Abyssal Void"
+buffAsylumAbyssalVoidDesc,buffs,Buff,,,"The void of the abyss pulls at your essence."
+buffAsylumAbyssalVoidTooltip,buffs,Buff,,,"Abyssal darkness drains your life force and mobility."
+
+buffAsylumTranscendentRealityName,buffs,Buff,,,"Transcendent Reality"
+buffAsylumTranscendentRealityDesc,buffs,Buff,,,"Reality transcends normal limits, overwhelming your senses."
+buffAsylumTranscendentRealityTooltip,buffs,Buff,,,"Transcendent forces overwhelm your physical form."
+
+buffAsylumVolcanicBurnName,buffs,Buff,,,"Volcanic Burn"
+buffAsylumVolcanicBurnDesc,buffs,Buff,,,"Volcanic fire burns through your flesh and soul."
+buffAsylumVolcanicBurnTooltip,buffs,Buff,,,"Intense volcanic heat causes continuous burning damage."
+
+buffAsylumRadiationSicknessName,buffs,Buff,,,"Radiation Sickness"
+buffAsylumRadiationSicknessDesc,buffs,Buff,,,"Deadly radiation courses through your body."
+buffAsylumRadiationSicknessTooltip,buffs,Buff,,,"Radiation poisoning weakens your body over time."
+
+# FATDEMON BUFFS - Gravitational Manipulation
+buffAsylumGravityWellName,buffs,Buff,,,"Gravity Well"
+buffAsylumGravityWellDesc,buffs,Buff,,,"Intense gravitational forces crush your body."
+buffAsylumGravityWellTooltip,buffs,Buff,,,"Gravitational compression severely limits movement and health."
+
+buffAsylumAbyssalCrushName,buffs,Buff,,,"Abyssal Crush"
+buffAsylumAbyssalCrushDesc,buffs,Buff,,,"The weight of the abyss crushes down upon you."
+buffAsylumAbyssalCrushTooltip,buffs,Buff,,,"Abyssal pressure causes massive internal damage."
+
+# ARCHDEMON BUFFS - Infernal Magic
+buffAsylumTranscendentBurnName,buffs,Buff,,,"Transcendent Burn"
+buffAsylumTranscendentBurnDesc,buffs,Buff,,,"Divine fire burns away your mortal form."
+buffAsylumTranscendentBurnTooltip,buffs,Buff,,,"Transcendent flames cause devastating continuous damage."
+
+buffAsylumVolcanicEruptionName,buffs,Buff,,,"Volcanic Eruption"
+buffAsylumVolcanicEruptionDesc,buffs,Buff,,,"Volcanic forces erupt from within your body."
+buffAsylumVolcanicEruptionTooltip,buffs,Buff,,,"Internal volcanic eruption causes severe burning damage."
+
+# FACELESSDEMON BUFFS - Identity Manipulation
+buffAsylumIdentityLossName,buffs,Buff,,,"Identity Loss"
+buffAsylumIdentityLossDesc,buffs,Buff,,,"Your sense of self dissolves into nothingness."
+buffAsylumIdentityLossTooltip,buffs,Buff,,,"Loss of identity causes confusion and weakness."
+
+buffAsylumFacelessName,buffs,Buff,,,"Faceless"
+buffAsylumFacelessDesc,buffs,Buff,,,"Your face has been stolen, leaving only emptiness."
+buffAsylumFacelessTooltip,buffs,Buff,,,"Without a face, your life force slowly drains away."
+
+# SIXEYESDEMON BUFFS - Temporal Manipulation
+buffAsylumTemporalDisruptionName,buffs,Buff,,,"Temporal Disruption"
+buffAsylumTemporalDisruptionDesc,buffs,Buff,,,"Time fractures around you, causing temporal displacement."
+buffAsylumTemporalDisruptionTooltip,buffs,Buff,,,"Temporal instability disrupts your physical form."
+
+# TANKDEMON BUFFS - Ultimate Devastation
+buffAsylumApocalypticImpactName,buffs,Buff,,,"Apocalyptic Impact"
+buffAsylumApocalypticImpactDesc,buffs,Buff,,,"The force of apocalypse tears through your being."
+buffAsylumApocalypticImpactTooltip,buffs,Buff,,,"Apocalyptic forces cause near-fatal devastation."
+
+buffAsylumStructuralCollapseName,buffs,Buff,,,"Structural Collapse"
+buffAsylumStructuralCollapseDesc,buffs,Buff,,,"Your body's structure begins to collapse."
+buffAsylumStructuralCollapseTooltip,buffs,Buff,,,"Structural integrity failure causes massive damage."
+
+buffAsylumSeismicDevastatonName,buffs,Buff,,,"Seismic Devastation"
+buffAsylumSeismicDevastatonDesc,buffs,Buff,,,"Seismic forces shake you to your core."
+buffAsylumSeismicDevastatonTooltip,buffs,Buff,,,"Earthquake-like forces disrupt your balance and health."
+
+buffAsylumAbyssalDevastatonName,buffs,Buff,,,"Abyssal Devastation"
+buffAsylumAbyssalDevastatonDesc,buffs,Buff,,,"The abyss claims your essence for its own."
+buffAsylumAbyssalDevastatonTooltip,buffs,Buff,,,"Abyssal forces drain your life force completely."
+
+# ========================================
+# NEW COLOR-BASED AFFLICTION BUFFS
+# ========================================
+
+buffAsylumVoidAfflictionName,buffs,Buff,,,"Void Affliction"
+buffAsylumVoidAfflictionDesc,buffs,Buff,,,"Reality tears around you as void energy corrupts your essence."
+buffAsylumVoidAfflictionTooltip,buffs,Buff,,,"Reality itself rejects your presence. The void hungers."
+
+buffAsylumOmegaAfflictionName,buffs,Buff,,,"Omega Affliction"
+buffAsylumOmegaAfflictionDesc,buffs,Buff,,,"Divine energy overwhelms your mortal form."
+buffAsylumOmegaAfflictionTooltip,buffs,Buff,,,"Your vision fractures. The end draws near."
+
+buffAsylumChaosAfflictionName,buffs,Buff,,,"Chaos Affliction"
+buffAsylumChaosAfflictionDesc,buffs,Buff,,,"Chaotic energy drives you to madness."
+buffAsylumChaosAfflictionTooltip,buffs,Buff,,,"Madness consumes your mind. Nothing makes sense anymore."
+
+buffAsylumNightmareAfflictionName,buffs,Buff,,,"Nightmare Affliction"
+buffAsylumNightmareAfflictionDesc,buffs,Buff,,,"Terror and darkness consume your vision."
+buffAsylumNightmareAfflictionTooltip,buffs,Buff,,,"The darkness closes in. Your worst fears manifest."
+
+buffAsylumAbyssalAfflictionName,buffs,Buff,,,"Abyssal Affliction"
+buffAsylumAbyssalAfflictionDesc,buffs,Buff,,,"The crushing void of the abyss drowns you in darkness."
+buffAsylumAbyssalAfflictionTooltip,buffs,Buff,,,"The abyss stares back. You are being unmade."
+
+buffAsylumTranscendentAfflictionName,buffs,Buff,,,"Transcendent Affliction"
+buffAsylumTranscendentAfflictionDesc,buffs,Buff,,,"Reality bends and warps around you as ethereal forces tear at your being."
+buffAsylumTranscendentAfflictionTooltip,buffs,Buff,,,"You glimpse beyond reality. Your sanity shatters."
+
+buffAsylumVolcanicAfflictionName,buffs,Buff,,,"Volcanic Affliction"
+buffAsylumVolcanicAfflictionDesc,buffs,Buff,,,"Molten heat sears your flesh and burns you from within."
+buffAsylumVolcanicAfflictionTooltip,buffs,Buff,,,"Hellfire courses through your veins. You burn from within."
+
+buffAsylumRadiatedAfflictionName,buffs,Buff,,,"Radiated Affliction"
+buffAsylumRadiatedAfflictionDesc,buffs,Buff,,,"Radioactive contamination poisons your body."
+buffAsylumRadiatedAfflictionTooltip,buffs,Buff,,,"Toxic energy corrupts your flesh. You are decaying."

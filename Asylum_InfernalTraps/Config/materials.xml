@@ -1,0 +1,35 @@
+<configs>
+
+<append xpath="/materials">
+
+<!-- Infernal Trap Materials -->
+
+<material id="VMmetalBladeTrap">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="40"/>
+	<property name="Mass" type="int" value="12"/>
+	<property name="explosionresistance" value="0.4"/>
+	<property name="MaxDamage" value="27500"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="VMbarbedWire">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="10"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="MaxDamage" value="7500"/>
+	<property name="movement_factor" value="0.2"/>
+	<property name="Experience" value="2"/>
+</material>
+
+</append>
+
+</configs>

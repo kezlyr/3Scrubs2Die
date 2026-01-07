@@ -1,0 +1,9 @@
+Key,english
+infernalTrapGroupDesc,"Forged in the depths of The Asylum. This high-tier Infernal trap delivers devastating damage to anything foolish enough to cross its path."
+infernalBladeTrap,"Infernal Blade Trap"
+infernalElectricFence,"Infernal Electric Fence"
+infernalSpikes,"Infernal Spikes"
+infernalSpikesMaster,"Infernal Spikes"
+infernalFence,"Infernal Fence"
+infernalSpindleWire,"Infernal Spindle Wire"
+infernalSpindleWireMaster,"Infernal Spindle Wire"

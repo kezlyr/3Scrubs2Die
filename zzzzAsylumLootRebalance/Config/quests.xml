@@ -1,0 +1,89 @@
+<configs>
+<!-- ============================================================================
+     ASYLUM TIERED TREASURE MAP SYSTEM - QUESTS
+     Three tiers of treasure map quests with different loot containers
+     ============================================================================ -->
+
+<!-- Tier 1: Infernal Treasure Map Quest -->
+<append xpath="/quests">
+    <quest id="treasure_asylum_infernal">
+        <property name="name_key" value="treasure_asylum_infernal"/>
+        <property name="subtitle_key" value="treasure_asylum_infernal"/>
+        <property name="description_key" value="treasure_asylum_infernal_offer"/>
+        <property name="icon" value="ui_game_symbol_map"/>
+        <property name="repeatable" value="true"/>
+        <property name="category_key" value="treasure"/>
+        <property name="offer_key" value="treasure_asylum_infernal_offer"/>
+        <property name="add_to_tier_complete" value="false"/>
+        <property name="shareable" value="false"/>
+
+        <objective type="TreasureChest">
+            <property name="block" value="cntAsylumTreasureT1"/>
+            <property name="alt_block" value="cntAsylumTreasureT1Insecure"/>
+            <property name="distance" value="500-1250"/>
+            <property name="default_radius" value="9"/>
+            <property name="nav_object" value="treasure"/>
+            <property name="direct_nav_object" value="treasure_direct"/>
+            <property name="blocks_per_reduction" value="10"/>
+            <property name="radius_reduction_sound" value="ui_radius_shrink"/>
+            <property name="explosion_event" value="quest_treasure_explosion_horde"/>
+        </objective>
+    </quest>
+</append>
+
+<!-- Tier 2: Demonic Treasure Map Quest -->
+<append xpath="/quests">
+    <quest id="treasure_asylum_demonic">
+        <property name="name_key" value="treasure_asylum_demonic"/>
+        <property name="subtitle_key" value="treasure_asylum_demonic"/>
+        <property name="description_key" value="treasure_asylum_demonic_offer"/>
+        <property name="icon" value="ui_game_symbol_map"/>
+        <property name="repeatable" value="true"/>
+        <property name="category_key" value="treasure"/>
+        <property name="offer_key" value="treasure_asylum_demonic_offer"/>
+        <property name="add_to_tier_complete" value="false"/>
+        <property name="shareable" value="false"/>
+
+        <objective type="TreasureChest">
+            <property name="block" value="cntAsylumTreasureT2"/>
+            <property name="alt_block" value="cntAsylumTreasureT2Insecure"/>
+            <property name="distance" value="750-1500"/>
+            <property name="default_radius" value="8"/>
+            <property name="nav_object" value="treasure"/>
+            <property name="direct_nav_object" value="treasure_direct"/>
+            <property name="blocks_per_reduction" value="10"/>
+            <property name="radius_reduction_sound" value="ui_radius_shrink"/>
+            <property name="explosion_event" value="quest_treasure_explosion_horde"/>
+        </objective>
+    </quest>
+</append>
+
+<!-- Tier 3: Abyssal Treasure Map Quest -->
+<append xpath="/quests">
+    <quest id="treasure_asylum_abyssal">
+        <property name="name_key" value="treasure_asylum_abyssal"/>
+        <property name="subtitle_key" value="treasure_asylum_abyssal"/>
+        <property name="description_key" value="treasure_asylum_abyssal_offer"/>
+        <property name="icon" value="ui_game_symbol_map"/>
+        <property name="repeatable" value="true"/>
+        <property name="category_key" value="treasure"/>
+        <property name="offer_key" value="treasure_asylum_abyssal_offer"/>
+        <property name="add_to_tier_complete" value="false"/>
+        <property name="shareable" value="false"/>
+
+        <objective type="TreasureChest">
+            <property name="block" value="cntAsylumTreasureT3"/>
+            <property name="alt_block" value="cntAsylumTreasureT3Insecure"/>
+            <property name="distance" value="1000-2000"/>
+            <property name="default_radius" value="7"/>
+            <property name="nav_object" value="treasure"/>
+            <property name="direct_nav_object" value="treasure_direct"/>
+            <property name="blocks_per_reduction" value="10"/>
+            <property name="radius_reduction_sound" value="ui_radius_shrink"/>
+            <property name="explosion_event" value="quest_treasure_explosion_horde"/>
+        </objective>
+    </quest>
+</append>
+
+</configs>
+

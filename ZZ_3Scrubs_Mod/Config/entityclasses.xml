@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]/passive_effect[@name='JumpStrength' and @value='0.16']">
+		<passive_effect name="JumpStrength" operation="base_set" value="0.16" tags="crouching">
+			<requirement name="ProgressionLevel" progression_name="perkParkour" operation="LT" value="4"/>
+		</passive_effect>
+</set> 															does not work at all no matter what i try, fuck this shit-->
+  <!--<append xpath="//entity_class[@name='animalInsectSwarm']/effect_group[1]">
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="0" tags="perkBoomstick">
+	<requirement name="ProgressionLevel" progression_name="perkStrengthMastery" operation="GTE" value="1"/>
+	</passive_effect>
+</append>																	TEST-->
+</config>

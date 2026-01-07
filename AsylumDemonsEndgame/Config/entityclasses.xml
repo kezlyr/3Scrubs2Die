@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+  <!-- *** ENDGAME DEMON CUSTOM MATCOLORS *** -->
+  <!-- Ultra boss tier colors - beyond standard progression -->
+
+  <!-- Void: Pure darkness with subtle purple undertones -->
+  <append xpath="/entity_classes">
+    <color name="void" value="0.15, 0.05, 0.25, 0.9"/> <!-- Dark purple-black with strong glow -->
+  </append>
+
+  <!-- Omega: Brilliant white-gold with intense emission -->
+  <append xpath="/entity_classes">
+    <color name="omega" value="5.0, 4.5, 3.0, 1.2"/> <!-- Bright white-gold with maximum glow -->
+  </append>
+
+  <!-- Chaos: Shifting dark crimson with chaotic energy -->
+  <append xpath="/entity_classes">
+    <color name="chaos" value="3.5, 0.1, 0.1, 1.0"/> <!-- Deep red with intense emission -->
+  </append>
+
+  <!-- Nightmare: Deep blood red with black undertones -->
+  <append xpath="/entity_classes">
+    <color name="nightmare" value="2.0, 0.05, 0.05, 0.85"/> <!-- Dark blood red -->
+  </append>
+
+  <!-- Abyssal: Void black with hints of blue -->
+  <append xpath="/entity_classes">
+    <color name="abyssal" value="0.05, 0.1, 0.3, 0.95"/> <!-- Near-black with blue tint -->
+  </append>
+
+  <!-- Transcendent: Ethereal light blue-white -->
+  <append xpath="/entity_classes">
+    <color name="transcendent" value="2.5, 3.5, 5.0, 1.1"/> <!-- Bright ethereal blue-white -->
+  </append>
+
+  <!-- Volcanic: Molten orange with intense heat glow -->
+  <append xpath="/entity_classes">
+    <color name="volcanic" value="3.0, 1.5, 0.06, 0.6"/> <!-- Bright molten orange -->
+  </append>
+
+  <!-- *** HIGHDEMON ENDGAME ENTITIES *** -->
+  <!-- Base highdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,highdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?highdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandAsylumChaosHighdemon"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Highdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonVoid" extends="asylumUberHighdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Highdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonOmega" extends="asylumUberHighdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Highdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonChaos" extends="asylumUberHighdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Highdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonNightmare" extends="asylumUberHighdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Highdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonAbyssal" extends="asylumUberHighdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Highdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonTranscendent" extends="asylumUberHighdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Highdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonVolcanic" extends="asylumUberHighdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- *** FATDEMON ENDGAME ENTITIES *** -->
+  <!-- Base fatdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,fatdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?fatdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandZombieFeral"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Fatdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonVoid" extends="asylumUberFatdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Fatdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonOmega" extends="asylumUberFatdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Fatdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonChaos" extends="asylumUberFatdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Fatdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonNightmare" extends="asylumUberFatdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Fatdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonAbyssal" extends="asylumUberFatdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Fatdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonTranscendent" extends="asylumUberFatdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Fatdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonVolcanic" extends="asylumUberFatdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Highdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberHighdemonRadiated" extends="asylumUberHighdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Fatdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFatdemonRadiated" extends="asylumUberFatdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Base archdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,archdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?archdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandZombieFeral"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Archdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonVoid" extends="asylumUberArchdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Archdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonOmega" extends="asylumUberArchdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Archdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonChaos" extends="asylumUberArchdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Archdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonNightmare" extends="asylumUberArchdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Archdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonAbyssal" extends="asylumUberArchdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Archdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonTranscendent" extends="asylumUberArchdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Archdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonVolcanic" extends="asylumUberArchdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Archdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberArchdemonRadiated" extends="asylumUberArchdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Base facelessdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,facelessdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?facelessdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandZombieFeral"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Facelessdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonVoid" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Facelessdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonOmega" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Facelessdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonChaos" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Facelessdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonNightmare" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Facelessdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonAbyssal" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Facelessdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonTranscendent" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Facelessdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonVolcanic" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Facelessdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberFacelessdemonRadiated" extends="asylumUberFacelessdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Base sixeyesdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,sixeyesdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?sixeyesdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandZombieFeral"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Sixeyesdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonVoid" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Sixeyesdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonOmega" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Sixeyesdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonChaos" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Sixeyesdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonNightmare" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Sixeyesdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonAbyssal" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Sixeyesdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonTranscendent" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Sixeyesdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonVolcanic" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Sixeyesdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberSixeyesdemonRadiated" extends="asylumUberSixeyesdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Base tankdemon template -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemon" extends="zombieTemplateMale">
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,asylum,allbiome,endgame,tankdemon"/>
+      <property name="Mesh" value="#@modfolder:Resources/Asylumuberdemons.unity3d?tankdemon"/>
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="AvatarController" value="AvatarZombieController"/>
+      <property name="PhysicsBody" value="asylumZombieBody"/>
+      <property name="RootMotion" value="true"/>
+      <property name="HasRagdoll" value="true"/>
+      <property name="HasDeathAnim" value="true"/>
+      <property name="HandItem" value="meleeHandZombieFeral"/>
+      <property name="RightHandJointName" value="RightHand"/>
+      <property name="LeftHandJointName" value="LeftHand"/>
+      <property name="WalkType" value="2"/>
+      <property name="LookAtAngle" value="0"/>      <property name="ExperienceGain" value="30000"/>
+      <property name="LootDropProb" value=".33"/>
+      <property name="LootDropEntityClass" value="EntityLootContainerBossGreen"/>
+      <property name="CrouchType" value="1"/>
+      <!--   Endgame Demon Properties   -->
+      <property name="DismemberMultiplierHead" value=".3"/>
+      <property name="DismemberMultiplierArms" value=".3"/>
+      <property name="DismemberMultiplierLegs" value=".3"/>
+      <property name="PainResistPerHit" value="-1"/>
+      <property name="StunResistance" value="1.0"/>
+      <property name="KnockdownProb" value="0"/>
+      <property name="KnockdownProneDamageThreshold" value="10.0"/> <!-- Impossible threshold -->
+      <property name="KnockdownKneelDamageThreshold" value="10.0"/> <!-- Impossible threshold --> <!-- 0% knockdown chance --> <!-- 100% stun resistance --> <!-- COMPLETE IMMUNITY - No pain/flinch animations -->
+      <!--   Dismemberment Gore Tags   -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+      <property name="MoveSpeedAggro" value="0.6, 1.4"/>
+      <property name="SoundRandom" value="asylumUberDemonRoam"/>
+      <property name="SoundSense" value="asylumUberDemonSense"/>
+      <property name="SoundAlert" value="asylumUberDemonAlert"/>
+      <property name="SoundAttack" value="asylumUberDemonAttack"/>
+      <property name="SoundHurt" value="asylumUberDemonPain"/>
+      <property name="SoundDeath" value="asylumUberDemonDeath"/>
+      <property name="SoundGiveUp" value="asylumUberDemonGiveup"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+        <passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffShocked"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Void Uber Tankdemon - Dark purple-black with chaos red energy -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonVoid" extends="asylumUberTankdemon">
+      <property name="MatColor" value="void"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVoid"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Omega Uber Tankdemon - Brilliant white-gold with transcendent blue highlights -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonOmega" extends="asylumUberTankdemon">
+      <property name="MatColor" value="omega"/>
+      <property name="MatColor2" value="transcendent"/>
+      <property name="HandItem" value="meleeHandAsylumOmega"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Chaos Uber Tankdemon - Deep red with void purple depths -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonChaos" extends="asylumUberTankdemon">
+      <property name="MatColor" value="chaos"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumChaos"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Nightmare Uber Tankdemon - Dark blood red with abyssal black veins -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonNightmare" extends="asylumUberTankdemon">
+      <property name="MatColor" value="nightmare"/>
+      <property name="MatColor2" value="abyssal"/>
+      <property name="HandItem" value="meleeHandAsylumNightmare"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Abyssal Uber Tankdemon - Near-black with nightmare red cracks -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonAbyssal" extends="asylumUberTankdemon">
+      <property name="MatColor" value="abyssal"/>
+      <property name="MatColor2" value="nightmare"/>
+      <property name="HandItem" value="meleeHandAsylumAbyssal"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Transcendent Uber Tankdemon - Bright ethereal blue-white with omega gold aura -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonTranscendent" extends="asylumUberTankdemon">
+      <property name="MatColor" value="transcendent"/>
+      <property name="MatColor2" value="omega"/>
+      <property name="HandItem" value="meleeHandAsylumTranscendent"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Volcanic Uber Tankdemon - Molten orange with chaos red fire -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonVolcanic" extends="asylumUberTankdemon">
+      <property name="MatColor" value="volcanic"/>
+      <property name="MatColor2" value="chaos"/>
+      <property name="HandItem" value="meleeHandAsylumVolcanic"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+  <!-- Radiated Uber Tankdemon - Toxic green with void purple corruption -->
+  <append xpath="/entity_classes">
+    <entity_class name="asylumUberTankdemonRadiated" extends="asylumUberTankdemon">
+      <property name="MatColor" value="radiated"/>
+      <property name="MatColor2" value="void"/>
+      <property name="HandItem" value="meleeHandAsylumRadiated"/>
+      <property name="ExperienceGain" value="30000"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="150000"/>
+      </effect_group>
+    </entity_class>
+  </append>
+
+</configs>
+

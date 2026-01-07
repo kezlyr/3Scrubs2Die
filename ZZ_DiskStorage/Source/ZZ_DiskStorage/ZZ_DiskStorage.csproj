@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>ZZ_DiskStorage</AssemblyName>
+    <RootNamespace>ZZ_DiskStorage</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <DebugType>portable</DebugType>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 7 Days to Die assemblies -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\7DaysToDie_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LogLibrary">
+      <HintPath>..\..\..\..\7DaysToDie_Data\Managed\LogLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\7DaysToDie_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity (needed for MonoBehaviour-based UI types like XUi) -->
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\7DaysToDie_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Harmony provided by 0_TFP_Harmony -->
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\Mods\0_TFP_Harmony\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToMod" AfterTargets="Build">
+    <PropertyGroup>
+      <ModDllDir>..\..\DLLs\</ModDllDir>
+      <ModRootDir>..\..\</ModRootDir>
+    </PropertyGroup>
+    <MakeDir Directories="$(ModDllDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModDllDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModRootDir)" />
+    <Message Text="Copied $(TargetFileName) -> $(ModDllDir)" Importance="high" />
+    <Message Text="Copied $(TargetFileName) -> $(ModRootDir)" Importance="high" />
+  </Target>
+
+</Project>

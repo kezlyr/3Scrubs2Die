@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/blocks">
+    <!--
+      Disk Drive: holds disk items (uses gun safe model for now).
+      Disk Reader: UI block that loads/saves the selected disk into a container.
+      NOTE: Actual per-disk item persistence is implemented in the DLL (ZZ_DiskStorage.dll).
+    -->
+
+    <block name="diskDrive">
+    <property name="CreativeMode" value="Player" />
+    <property name="Class" value="ZZ_DiskStorage.BlockDiskDrive, ZZ_DiskStorage" />
+    <property name="LootList" value="diskDriveContainer" />
+    <property name="DescriptionKey" value="diskDriveDesc" />
+    <property name="CustomIcon" value="cntGunSafeWhite" />
+    <property name="DisplayType" value="blockHardenedMulti" />
+    <property name="Material" value="Mmetal_hard" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab" />
+    <property name="MultiBlockDim" value="1,2,1" />
+    <property name="ImposterExchange" value="imposterBlock" param1="18" />
+    <property name="Place" value="TowardsPlacerInverted" />
+    <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+    <property name="Path" value="solid" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="MaxDamage" value="5000" />
+    <property class="RepairItems">
+    <property name="resourceForgedSteel" value="30" />
+    </property>
+    <drop event="Destroy" count="0" />
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+
+    <property name="EconomicValue" value="2500" />
+    <property name="SortOrder1" value="0200" />
+    <property name="SortOrder2" value="0200" />
+    <property name="UnlockedBy" value="perkAdvancedEngineering,3" />
+    </block>
+
+    <block name="diskReader">
+    <property name="CreativeMode" value="Player" />
+    <property name="Class" value="ZZ_DiskStorage.BlockDiskReader, ZZ_DiskStorage" />
+    <property name="LootList" value="diskReaderContainer" />
+    <property name="DescriptionKey" value="diskReaderDesc" />
+    <property name="CustomIcon" value="cntGunSafeWhite" />
+    <property name="DisplayType" value="blockHardenedMulti" />
+    <property name="Material" value="Mmetal_hard" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab" />
+    <property name="MultiBlockDim" value="1,2,1" />
+    <property name="ImposterExchange" value="imposterBlock" param1="18" />
+    <property name="Place" value="TowardsPlacerInverted" />
+    <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+    <property name="Path" value="solid" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="MaxDamage" value="5000" />
+    <property class="RepairItems">
+    <property name="resourceForgedSteel" value="30" />
+    </property>
+    <drop event="Destroy" count="0" />
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+
+    <property name="EconomicValue" value="3500" />
+    <property name="SortOrder1" value="0200" />
+    <property name="SortOrder2" value="0201" />
+    <property name="UnlockedBy" value="perkAdvancedEngineering,4" />
+    </block>
+
+  <block name="diskDropBox">
+  <property name="CreativeMode" value="Player" />
+  <property name="Class" value="BlockSecureLoot" />
+  <property name="LootList" value="diskDropBoxContainer" />
+  <property name="DescriptionKey" value="diskDropBoxDesc" />
+  <property name="CustomIcon" value="cntGunSafeWhite" />
+  <property name="DisplayType" value="blockHardenedMulti" />
+  <property name="Material" value="Mmetal_hard" />
+  <property name="Shape" value="ModelEntity" />
+  <property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab" />
+  <property name="MultiBlockDim" value="1,2,1" />
+  <property name="ImposterExchange" value="imposterBlock" param1="18" />
+  <property name="Place" value="TowardsPlacerInverted" />
+  <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+  <property name="Path" value="solid" />
+  <property name="IsTerrainDecoration" value="true" />
+  <property name="MaxDamage" value="5000" />
+  <property class="RepairItems">
+  <property name="resourceForgedSteel" value="30" />
+  </property>
+  <drop event="Destroy" count="0" />
+  <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+
+  <property name="EconomicValue" value="1500" />
+  <property name="SortOrder1" value="0200" />
+  <property name="SortOrder2" value="0202" />
+  <property name="UnlockedBy" value="perkAdvancedEngineering,3" />
+  </block>
+  </append>
+</configs>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<set xpath="//block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value" >15</set>
+
+<set xpath="//block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value" >15</set>
+
+<append xpath="//block[@name='cntCar03SedanDamage0Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntCar03SedanDamage1Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntCar03SedanDamage2Master']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='burntSedan3Wide01']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='burntSedan01']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSedan3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFrontCrumpledSedan01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,3" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntMinivan01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntMinivan3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSUV01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSUV3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPickupTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPickupTruck3Wide01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSemiTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntSemiTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntPoliceCar01AlarmUnlocked']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFireTruck01White']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntBusSchool']">
+<drop event="Harvest" name="resourceForgedSteel" count="2,10" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntArmyTruckOpen']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,8" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='cntFarmTruckClosed']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,8" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='forkliftWhite']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,6" tag="greaseMonkeyHarvest"/>
+</append>
+
+<append xpath="//block[@name='forklift2White']">
+<drop event="Harvest" name="resourceForgedSteel" count="1,6" tag="greaseMonkeyHarvest"/>
+</append>
+
+  <append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+    <property name="Tags" value="trapz"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+    <property name="Tags" value="trapz"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='barbedFence']">
+    <property name="Tags" value="trapz"/>
+  </append>
+  
+  	<set xpath="//block[@name='farmPlotBlock']">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="Material" value="Mfarmland"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="@:Shapes/farm_plot.fbx"/>
+	<property name="Texture" value="47,84,84,84,84,84"/>
+	<property name="UseGlobalUV" value="G,L,L,L,L,L"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="5"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="EconomicValue" value="50"/>
+<!-- <property class="RepairItems">
+	<property name="resourceClayLump" value="14"/> Removed ability to repair because smart players might figure out that repairing the block could grant infinite farm plot blocks. Easily exploitable.
+	</property>-->
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest,FarmPlotNoHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4" tag="oreWoodHarvest,FarmPlotNoHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotHarvest"/>
+	<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="SortOrder1" value="B965"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+	<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+	</set>
+	
+	<set xpath="//block[@name='farmPlotBlockPlayer']">
+	<property name="Extends" value="farmPlotBlock"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="CustomIcon" value="farmPlotBlock"/>
+	<drop event="Harvest" name="resourceClayLump" count="0" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="0" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotHarvest"/>
+	<drop event="Harvest" name="farmPlotBlockVariantHelper" count="1" tag="FarmPlotNoHarvestPlayer"/>
+	<drop event="Destroy" name="farmPlotBlockVariantHelper" count="0"/>
+	<property name="SortOrder2" value="0001"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</set>
+	
+	<append xpath="/blocks/block[@name='terrOreIron']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreLead']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreCoal']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOrePotassiumNitrate']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+    <drop event="Harvest" name="resourceWood" count="1,4" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceClayLump" count="10,20" prob="0.5" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCloth" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="1,3" prob="0.05" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,6" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePaper" count="1,3" prob="0.15" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCoal" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="5" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceFeather" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceBone" count="1,2" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCobblestones" count="20,30" prob="0.25" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="plantedCorn1" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="foodCornMeal" count="1" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceCement" count="30,40" prob="0.2" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="5" prob="0.1" tag="perkJunkMinerBW"/>
+	<drop event="Harvest" name="resourceLeather" count="1" prob="0.15" tag="perkJunkMinerBW"/>
+	</append>
+</config>

@@ -1,0 +1,49 @@
+<configs>
+
+<!-- Infernal Trap Recipes -->
+<append xpath="/recipes">
+
+	<recipe name="infernalBladeTrap" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable"> <!-- trap -->
+		<ingredient name="resourceForgedTitanium" count="15"/>
+		<ingredient name="resourceForgedCobalt" count="10"/>
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="12"/>
+		<ingredient name="resourceElectricParts" count="8"/>
+		<ingredient name="resourceOil" count="15"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedTitanium,resourceForgedCobalt,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="infernalElectricFence" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+		<ingredient name="resourceForgedTitanium" count="8"/>
+		<ingredient name="resourceForgedCopper" count="10"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceElectricParts" count="8"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedTitanium,resourceForgedCopper,resourceForgedSteel,resourceElectricParts"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="infernalSpikes" count="1">
+		<ingredient name="resourceForgedTitanium" count="5"/>
+		<ingredient name="resourceForgedCobalt" count="3"/>
+		<ingredient name="resourceForgedSteel" count="6"/>
+	</recipe>
+
+	<recipe name="infernalFence" count="1">
+		<ingredient name="resourceForgedTitanium" count="3"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceForgedZinc" count="4"/>
+	</recipe>
+
+	<recipe name="infernalSpindleWire" count="1">
+		<ingredient name="resourceForgedTitanium" count="4"/>
+		<ingredient name="resourceForgedChromium" count="3"/>
+		<ingredient name="resourceForgedSteel" count="6"/>
+	</recipe>
+
+
+</append>
+
+</configs>

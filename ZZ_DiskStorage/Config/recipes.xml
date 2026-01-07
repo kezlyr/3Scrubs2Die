@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/recipes">
+    <recipe name="diskStorageEmpty" count="1" craft_area="workbench" craft_time="10" >
+      <ingredient name="resourceElectricParts" count="25" />
+      <ingredient name="resourceMechanicalParts" count="25" />
+      <ingredient name="resourceForgedSteel" count="25" />
+    </recipe>
+
+    <recipe name="diskStorageEmptyT1" count="1" craft_area="workbench" craft_time="15" >
+      <ingredient name="resourceElectricParts" count="25" />
+      <ingredient name="resourceMechanicalParts" count="25" />
+      <ingredient name="resourceSmeltercoreAlloy" count="25" />
+    </recipe>
+
+    <recipe name="diskStorageEmptyT2" count="1" craft_area="workbench" craft_time="20" >
+      <ingredient name="resourceElectricParts" count="25" />
+      <ingredient name="resourceMechanicalParts" count="25" />
+      <ingredient name="resourceApexAlloy" count="25" />
+    </recipe>
+
+    <recipe name="diskDrive" count="1" craft_area="workbench" craft_time="30" >
+      <ingredient name="resourceMechanicalParts" count="100" />
+      <ingredient name="resourceForgedIron" count="25" />
+    </recipe>
+
+    <recipe name="diskDriveT1" count="1" craft_area="workbench" craft_time="40" >
+      <ingredient name="resourceMechanicalParts" count="100" />
+      <ingredient name="resourceForgedSteel" count="25" />
+      <ingredient name="resourceForgedQuartz" count="15" />
+      <ingredient name="resourceForgedGold" count="25" />
+    </recipe>
+
+    <recipe name="diskDriveT2" count="1" craft_area="workbench" craft_time="55" >
+      <ingredient name="resourceMechanicalParts" count="100" />
+      <ingredient name="resourceForgedSteel" count="20" />
+      <ingredient name="resourceForgedPlatinum" count="15" />
+      <ingredient name="resourceForgedAluminium" count="25" />
+    </recipe>
+
+    <recipe name="diskReader" count="1" craft_area="workbench" craft_time="30" >
+      <ingredient name="resourceForgedSteel" count="50" />
+      <ingredient name="resourceForgedIron" count="50" />
+      <ingredient name="resourceMechanicalParts" count="125" />
+    </recipe>
+
+    <recipe name="diskDropBox" count="1" craft_area="workbench" craft_time="15" >
+      <ingredient name="resourceElectricParts" count="25" />
+      <ingredient name="resourceMechanicalParts" count="25" />
+      <ingredient name="resourceForgedSteel" count="15" />
+    </recipe>
+
+    <recipe name="diskDropBoxT1" count="1" craft_area="workbench" craft_time="25" >
+      <ingredient name="resourceMechanicalParts" count="100" />
+      <ingredient name="resourceForgedSteel" count="5" />
+      <ingredient name="resourceForgedQuartz" count="15" />
+      <ingredient name="resourceForgedGold" count="25" />
+    </recipe>
+
+    <recipe name="diskDropBoxT2" count="1" craft_area="workbench" craft_time="35" >
+      <ingredient name="resourceMechanicalParts" count="100" />
+      <ingredient name="resourceForgedSteel" count="10" />
+      <ingredient name="resourceForgedPlatinum" count="15" />
+      <ingredient name="resourceForgedAluminium" count="25" />
+    </recipe>
+  </append>
+</configs>

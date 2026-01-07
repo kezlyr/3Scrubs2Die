@@ -1,0 +1,325 @@
+<config>
+
+<csv xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/@blocked_tags" op="Add">AR16</csv>
+
+<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">3</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group/passive_effect[@name='EntityDamage']/@value">.03</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group/passive_effect[@name='DamageFalloffRange']/@value">.2</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group/passive_effect[@name='MaxRange']/@value">.25</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/effect_group/triggered_effect/@prefab">Entities/Lighting/miningHelmetLightSource</set>
+
+<append xpath="/item_modifiers/item_modifier[@name='modDyeRed']"> <property name="Group" value="Resources,Chemicals,CFChemicals"/> </append>
+
+
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+    <item_property_overrides name="gun1911Pistol">
+       <property name="ScopeCameraOffset" value="-.0018,-.016,-.2"/>
+<!--  Left/Right - Down/Up - Back/Front  -->
+    </item_property_overrides>
+
+    <item_property_overrides name="gunGSPistol">
+       <property name="ScopeCameraOffset" value="-.0004,-.017,-.2"/>
+    </item_property_overrides>
+
+    <item_property_overrides name="gunJerichoPistol">
+       <property name="ScopeCameraOffset" value="-0.0008,-0.021,-0.03"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunSaiga12Shotgun">
+       <property name="ScopeCameraOffset" value="-.0006,-.019,0.3"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunThompsonSMG">
+       <property name="ScopeCameraOffset" value="-0.0017,-0.017,0.25"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunScorpionEVO3SMG">
+       <property name="ScopeCameraOffset" value="-0.0004,-0.035,0.05"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunAR15Rifle">
+       <property name="ScopeCameraOffset" value="-0.0008,0.003,0.005"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunBoltActionSniper">
+       <property name="ScopeCameraOffset" value="-0.0004,0.0092,0.24"/>
+    </item_property_overrides>
+	
+	<item_property_overrides name="gunSaintEdgeSniper">
+       <property name="ScopeCameraOffset" value="-0.0012,-0.01,-0.12"/>
+    </item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+
+    <item_property_overrides name="gun1911Pistol">
+		<property name="Sound_start" value="pistol_s_fire"/>
+	</item_property_overrides>
+	
+	<item_property_overrides name="gunGSPistol">
+			<property name="Sound_start" value="smg_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="smg_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunJerichoPistol">
+			<property name="Sound_start" value="44magnum_s_fire"/>
+			<property name="BarrelOffset" value="0,.028,.165"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunSaiga12Shotgun">
+			<property name="Sound_start" value="desertvulture_s_fire"/>
+			<property name="Sound_loop" value="desertvulture_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunThompsonSMG">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="ak47_s_fire"/>
+			<property name="BarrelOffset" value="-.001,-.0197,.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunScorpionEVO3SMG">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="m60_s_fire"/>
+			<property name="BarrelOffset" value="0,-.005,.31"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunTrenchgun">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="Sound_loop" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-.0322,.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunAR15Rifle">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="ak47_s_fire"/>
+			<property name="BarrelOffset" value="0,.005,.275"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunM4A1Rifle">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="Sound_loop" value="ak47_s_fire"/>
+			<property name="BarrelOffset" value="0,.005,.275"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunBoltActionSniper">
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+			<property name="Sound_loop" value="sniperrifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-.02,.2182"/>
+			<property name="BarrelScale" value=".88,.88,.88"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="gunSaintEdgeSniper">
+		    <property name="Sound_start" value="sniperrifle_s_fire"/>
+			<property name="Sound_loop" value="sniperrifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-.02,.2182"/>
+			<property name="BarrelScale" value=".88,.88,.88"/>
+		</item_property_overrides>
+
+</append>
+
+<append xpath="/item_modifiers">
+
+<item_modifier name="modMutationResilient" installable_tags="armor" modifier_tags="MutationResilient" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="CustomIcon" value="modMutationResilient"/>
+	    <property name="DescriptionKey" value="modMutationResilientDesc"/>
+
+		<effect_group tiered="false">
+		   <passive_effect name="HealthMax" operation="base_add" value="10"/>
+		   <passive_effect name="StaminaMax" operation="base_add" value="10"/>
+		   <passive_effect name="BuffResistance" operation="base_add" value=".15" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="modMutationSwiftness" installable_tags="armor" modifier_tags="mutation2" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="CustomIcon" value="modMutationSwiftness"/>
+	    <property name="DescriptionKey" value="modMutationSwiftnessDesc"/>
+
+		<effect_group tiered="false">
+		  <passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="meleeWeapon"/>
+		  <passive_effect name="RunSpeed" operation="base_add" value=".05"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="modMutationAssailant" installable_tags="armor" modifier_tags="mutation" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="CustomIcon" value="modMutationAssailant"/>
+	    <property name="DescriptionKey" value="modMutationAssailantDesc"/>
+
+		<effect_group tiered="false">
+		  <passive_effect name="EntityDamage" operation="perc_add" value=".15">
+		  <requirement name="EntityTagCompare" target="other" tags="zombie"/></passive_effect>
+		  <passive_effect name="RunSpeed" operation="base_add" value=".05"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="modMutationRampage" installable_tags="armor" modifier_tags="mutation3" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="CustomIcon" value="modMutationRampage"/>
+	    <property name="DescriptionKey" value="modMutationRampageDesc"/>
+		
+		<effect_group tiered="false">
+		   <passive_effect name="HealthMax" operation="base_add" value="5"/>
+		   <passive_effect name="StaminaMax" operation="base_add" value="5"/>
+		   <requirement name="!IsAttachedToEntity"/>
+		   <triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffRampage"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="modMutationAdrenaline" installable_tags="armor" modifier_tags="mutation5" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="CustomIcon" value="modMutationAdrenaline"/>
+	    <property name="DescriptionKey" value="modMutationAdrenalineDesc"/>
+
+		<effect_group>
+		   <requirement name="!IsAttachedToEntity"/>
+		   <triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffAdrenaline"/>
+		   <triggered_effect trigger="onOtherAttackedSelf" action="ModifyStats" stat="Stamina" operation="add" value="20"/>
+		   <passive_effect name="HealthMax" operation="base_add" value="10"/>
+		   <passive_effect name="StaminaMax" operation="base_add" value="10"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="modGunleverInternalMagazineExtender" installable_tags="leverInternalMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modGunleverInternalMagazineExtenderSchematic"/>
+		<property name="DescriptionKey" value="modGunleverInternalMagazineExtenderDesc"/>
+		<property name="CustomIcon" value="modGunleverInternalMagazineExtender"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value=".6"/>
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modGunDamage" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modGunDamageSchematic"/>
+		<property name="DescriptionKey" value="modGunDamageDesc"/>
+		<property name="CustomIcon" value="modGunDamage"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+
+		<!-- visible attachment: silencer -->
+		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+		</effect_group>
+
+		<effect_group tiered="false" name="mod effects">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".25"/>
+			
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".25"/>
+			
+			<passive_effect name="MaxRange" operation="perc_add" value=".3"/>
+
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modArmorHeadGear" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="DescriptionKey" value="modArmorHeadgearDesc"/>
+		<property name="CustomIconTint" value="#cfa008"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+		<property name="Material" value="Msteel"/>
+		<property name="EconomicValue" value="8000"/>
+
+	<effect_group tiered="false">
+	    <passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+	</effect_group>
+	</item_modifier>
+
+<item_modifier name="modBikeSpeedBoost" installable_tags="bicycle" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modBikeSpeedBoostDesc"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="CustomIconTint" value="#4f3746"/>
+        <property name="TintColor" value="#4f3746"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/> 
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".30"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".48"/>
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modArmorSimpleArmorPlating" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		
+		<property name="DescriptionKey" value="modArmorSimpleArmorPlatingDesc"/> 
+		<property name="CustomIcon" value="modArmorSim"/>
+		<property name="TraderStageTemplate" value="modsTier3"/>
+		<property name="DisplayType" value="modArmor"/>
+		<property name="Material" value="Mleather"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modVehicleSpeedBooster" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSpeedBoosterDesc"/>
+		<property name="CustomIconTint" value="#74a181"/>
+        <property name="TintColor" value="#74a181"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="UnlockedBy" value="modVehicleSpeedBoosterSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".30"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".48"/>
+		</effect_group>
+	</item_modifier>
+
+<item_modifier name="modArrowReloadMod" installable_tags="perkArchery" type="attachment" rarity="1">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modGunMeleeTheHunter"/>
+		<property name="DescriptionKey" value="modArrowReloadModDesc"/>
+		<property name="CustomIconTint" value="#5a786a"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3"/>
+		</effect_group>
+	</item_modifier>
+
+</append>
+
+</config>
